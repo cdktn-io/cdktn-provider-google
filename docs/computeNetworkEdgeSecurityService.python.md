@@ -4,7 +4,7 @@
 
 ### ComputeNetworkEdgeSecurityService <a name="ComputeNetworkEdgeSecurityService" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer"></a>
 
@@ -25,6 +25,7 @@ computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService(
   deletion_policy: str = None,
   description: str = None,
   id: str = None,
+  params: ComputeNetworkEdgeSecurityServiceParams = None,
   project: str = None,
   region: str = None,
   security_policy: str = None,
@@ -46,8 +47,9 @@ computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService(
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. Provided by the client when the resource is created. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.description">description</a></code> | <code>str</code> | Free-text description of the resource. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the gateway security policy. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.securityPolicy">security_policy</a></code> | <code>str</code> | The resource URL for the network edge security service associated with this network edge security service. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts">ComputeNetworkEdgeSecurityServiceTimeouts</a></code> | timeouts block. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the resource. Provided by the client when the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
 
 ---
 
@@ -137,7 +139,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
 
 ---
 
@@ -147,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Free-text description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
 
 ---
 
@@ -155,10 +157,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer.parameter.params"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#params ComputeNetworkEdgeSecurityService#params}
 
 ---
 
@@ -166,7 +178,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}.
 
 ---
 
@@ -176,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the gateway security policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
 
 ---
 
@@ -186,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource URL for the network edge security service associated with this network edge security service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
 
 ---
 
@@ -196,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
 
 ---
 
@@ -228,10 +240,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.putParams">put_params</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetParams">reset_params</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetSecurityPolicy">reset_security_policy</a></code> | *No description.* |
@@ -587,6 +601,28 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_params` <a name="put_params" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.putParams"></a>
+
+```python
+def put_params(
+  resource_manager_tags: typing.Mapping[str] = None
+) -> None
+```
+
+###### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.putParams.parameter.resourceManagerTags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Resource manager tags to be bound to the networkEdgeSecurityService.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#resource_manager_tags ComputeNetworkEdgeSecurityService#resource_manager_tags}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.putTimeouts"></a>
 
 ```python
@@ -601,7 +637,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}.
 
 ---
 
@@ -609,7 +645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}.
 
 ---
 
@@ -617,7 +653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}.
 
 ---
 
@@ -637,6 +673,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_params` <a name="reset_params" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetParams"></a>
+
+```python
+def reset_params() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.resetProject"></a>
@@ -777,7 +819,7 @@ The construct id used in the generated config for the ComputeNetworkEdgeSecurity
 
 The id of the existing ComputeNetworkEdgeSecurityService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,6 +851,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.creationTimestamp">creation_timestamp</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.fingerprint">fingerprint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference">ComputeNetworkEdgeSecurityServiceParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.selfLinkWithServiceId">self_link_with_service_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.serviceId">service_id</a></code> | <code>str</code> | *No description.* |
@@ -817,6 +860,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.paramsInput">params_input</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.securityPolicyInput">security_policy_input</a></code> | <code>str</code> | *No description.* |
@@ -993,6 +1037,16 @@ fingerprint: str
 
 ---
 
+##### `params`<sup>Required</sup> <a name="params" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.params"></a>
+
+```python
+params: ComputeNetworkEdgeSecurityServiceParamsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference">ComputeNetworkEdgeSecurityServiceParamsOutputReference</a>
+
+---
+
 ##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.selfLink"></a>
 
 ```python
@@ -1070,6 +1124,16 @@ name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.property.paramsInput"></a>
+
+```python
+params_input: ComputeNetworkEdgeSecurityServiceParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a>
 
 ---
 
@@ -1222,6 +1286,7 @@ computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig(
   deletion_policy: str = None,
   description: str = None,
   id: str = None,
+  params: ComputeNetworkEdgeSecurityServiceParams = None,
   project: str = None,
   region: str = None,
   security_policy: str = None,
@@ -1243,8 +1308,9 @@ computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig(
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. Provided by the client when the resource is created. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.description">description</a></code> | <code>str</code> | Free-text description of the resource. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.region">region</a></code> | <code>str</code> | The region of the gateway security policy. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.securityPolicy">security_policy</a></code> | <code>str</code> | The resource URL for the network edge security service associated with this network edge security service. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts">ComputeNetworkEdgeSecurityServiceTimeouts</a></code> | timeouts block. |
@@ -1331,7 +1397,7 @@ name: str
 
 Name of the resource. Provided by the client when the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
 
 ---
 
@@ -1352,7 +1418,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
 
 ---
 
@@ -1366,7 +1432,7 @@ description: str
 
 Free-text description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
 
 ---
 
@@ -1378,10 +1444,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.params"></a>
+
+```python
+params: ComputeNetworkEdgeSecurityServiceParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#params ComputeNetworkEdgeSecurityService#params}
 
 ---
 
@@ -1393,7 +1473,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}.
 
 ---
 
@@ -1407,7 +1487,7 @@ region: str
 
 The region of the gateway security policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
 
 ---
 
@@ -1421,7 +1501,7 @@ security_policy: str
 
 The resource URL for the network edge security service associated with this network edge security service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
 
 ---
 
@@ -1435,7 +1515,45 @@ timeouts: ComputeNetworkEdgeSecurityServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
+
+---
+
+### ComputeNetworkEdgeSecurityServiceParams <a name="ComputeNetworkEdgeSecurityServiceParams" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams.Initializer"></a>
+
+```python
+from cdktn_provider_google import compute_network_edge_security_service
+
+computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams(
+  resource_manager_tags: typing.Mapping[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | Resource manager tags to be bound to the networkEdgeSecurityService. |
+
+---
+
+##### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams.property.resourceManagerTags"></a>
+
+```python
+resource_manager_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Resource manager tags to be bound to the networkEdgeSecurityService.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#resource_manager_tags ComputeNetworkEdgeSecurityService#resource_manager_tags}
 
 ---
 
@@ -1457,9 +1575,9 @@ computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}. |
 
 ---
 
@@ -1471,7 +1589,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}.
 
 ---
 
@@ -1483,7 +1601,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}.
 
 ---
 
@@ -1495,11 +1613,314 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ComputeNetworkEdgeSecurityServiceParamsOutputReference <a name="ComputeNetworkEdgeSecurityServiceParamsOutputReference" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import compute_network_edge_security_service
+
+computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.resetResourceManagerTags">reset_resource_manager_tags</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_resource_manager_tags` <a name="reset_resource_manager_tags" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.resetResourceManagerTags"></a>
+
+```python
+def reset_resource_manager_tags() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.resourceManagerTagsInput">resource_manager_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_manager_tags_input`<sup>Optional</sup> <a name="resource_manager_tags_input" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```python
+resource_manager_tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `resource_manager_tags`<sup>Required</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.resourceManagerTags"></a>
+
+```python
+resource_manager_tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParamsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ComputeNetworkEdgeSecurityServiceParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a>
+
+---
+
 
 ### ComputeNetworkEdgeSecurityServiceTimeoutsOutputReference <a name="ComputeNetworkEdgeSecurityServiceTimeoutsOutputReference" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeoutsOutputReference"></a>
 

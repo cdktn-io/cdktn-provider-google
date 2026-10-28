@@ -4,12 +4,12 @@
 
 ### ObservabilityOrganizationSettings <a name="ObservabilityOrganizationSettings" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings google_observability_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings google_observability_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 observabilityorganizationsettings.NewObservabilityOrganizationSettings(scope Construct, id *string, config ObservabilityOrganizationSettingsConfig) ObservabilityOrganizationSettings
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 observabilityorganizationsettings.ObservabilityOrganizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 observabilityorganizationsettings.ObservabilityOrganizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ observabilityorganizationsettings.ObservabilityOrganizationSettings_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 observabilityorganizationsettings.ObservabilityOrganizationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ observabilityorganizationsettings.ObservabilityOrganizationSettings_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 observabilityorganizationsettings.ObservabilityOrganizationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ObservabilityOrganizationS
 
 The id of the existing ObservabilityOrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 &observabilityorganizationsettings.ObservabilityOrganizationSettingsConfig {
 	Connection: interface{},
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorg
 	DefaultStorageLocation: *string,
 	Id: *string,
 	KmsKeyName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts,
 }
 ```
 
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorg
 | <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.location">Location</a></code> | <code>*string</code> | The location of the settings. |
 | <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.organization">Organization</a></code> | <code>*string</code> | The organization ID. |
 | <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.defaultStorageLocation">DefaultStorageLocation</a></code> | <code>*string</code> | The default storage location for new resources, e.g. buckets. Only valid for global location. |
-| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#id ObservabilityOrganizationSettings#id}. |
+| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#id ObservabilityOrganizationSettings#id}. |
 | <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.kmsKeyName">KmsKeyName</a></code> | <code>*string</code> | The default Cloud KMS key to use for new resources. Only valid for regional locations. |
 | <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts">ObservabilityOrganizationSettingsTimeouts</a></code> | timeouts block. |
 
@@ -1003,7 +1003,7 @@ Location *string
 
 The location of the settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#location ObservabilityOrganizationSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#location ObservabilityOrganizationSettings#location}
 
 ---
 
@@ -1017,7 +1017,7 @@ Organization *string
 
 The organization ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#organization ObservabilityOrganizationSettings#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#organization ObservabilityOrganizationSettings#organization}
 
 ---
 
@@ -1031,7 +1031,7 @@ DefaultStorageLocation *string
 
 The default storage location for new resources, e.g. buckets. Only valid for global location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#default_storage_location ObservabilityOrganizationSettings#default_storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#default_storage_location ObservabilityOrganizationSettings#default_storage_location}
 
 ---
 
@@ -1043,7 +1043,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#id ObservabilityOrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#id ObservabilityOrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1060,7 @@ KmsKeyName *string
 
 The default Cloud KMS key to use for new resources. Only valid for regional locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#kms_key_name ObservabilityOrganizationSettings#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#kms_key_name ObservabilityOrganizationSettings#kms_key_name}
 
 ---
 
@@ -1074,7 +1074,7 @@ Timeouts ObservabilityOrganizationSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#timeouts ObservabilityOrganizationSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#timeouts ObservabilityOrganizationSettings#timeouts}
 
 ---
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 &observabilityorganizationsettings.ObservabilityOrganizationSettingsTimeouts {
 	Create: *string,
@@ -1096,9 +1096,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#create ObservabilityOrganizationSettings#create}. |
-| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#delete ObservabilityOrganizationSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#update ObservabilityOrganizationSettings#update}. |
+| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#create ObservabilityOrganizationSettings#create}. |
+| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#delete ObservabilityOrganizationSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#update ObservabilityOrganizationSettings#update}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#create ObservabilityOrganizationSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#create ObservabilityOrganizationSettings#create}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#delete ObservabilityOrganizationSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#delete ObservabilityOrganizationSettings#delete}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#update ObservabilityOrganizationSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_organization_settings#update ObservabilityOrganizationSettings#update}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityOrganizationSettings.ObservabilityOrganizationSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilityorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilityorganizationsettings"
 
 observabilityorganizationsettings.NewObservabilityOrganizationSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityOrganizationSettingsTimeoutsOutputReference
 ```

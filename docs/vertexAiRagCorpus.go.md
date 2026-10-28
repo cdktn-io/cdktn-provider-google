@@ -4,12 +4,12 @@
 
 ### VertexAiRagCorpus <a name="VertexAiRagCorpus" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpus"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus google_vertex_ai_rag_corpus}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus google_vertex_ai_rag_corpus}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpus(scope Construct, id *string, config VertexAiRagCorpusConfig) VertexAiRagCorpus
 ```
@@ -508,7 +508,7 @@ func ResetVertexAiSearchConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpus.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.VertexAiRagCorpus_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpus.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.VertexAiRagCorpus_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ vertexairagcorpus.VertexAiRagCorpus_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpus.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.VertexAiRagCorpus_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ vertexairagcorpus.VertexAiRagCorpus_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpus.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.VertexAiRagCorpus_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -597,7 +597,7 @@ The construct id used in the generated config for the VertexAiRagCorpus to impor
 
 The id of the existing VertexAiRagCorpus that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1061,7 +1061,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusConfig {
 	Connection: interface{},
@@ -1075,12 +1075,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpu
 	Region: *string,
 	DeletionPolicy: *string,
 	Description: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusEncryptionSpec,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusTimeouts,
-	VectorDbConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfig,
-	VertexAiSearchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVertexAiSearchConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusTimeouts,
+	VectorDbConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfig,
+	VertexAiSearchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVertexAiSearchConfig,
 }
 ```
 
@@ -1100,8 +1100,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpu
 | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.description">Description</a></code> | <code>*string</code> | Optional. The description of the RagCorpus. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusEncryptionSpec">VertexAiRagCorpusEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#id VertexAiRagCorpus#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#project VertexAiRagCorpus#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#id VertexAiRagCorpus#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#project VertexAiRagCorpus#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts">VertexAiRagCorpusTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.vectorDbConfig">VectorDbConfig</a></code> | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfig">VertexAiRagCorpusVectorDbConfig</a></code> | vector_db_config block. |
 | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusConfig.property.vertexAiSearchConfig">VertexAiSearchConfig</a></code> | <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVertexAiSearchConfig">VertexAiRagCorpusVertexAiSearchConfig</a></code> | vertex_ai_search_config block. |
@@ -1191,7 +1191,7 @@ Required.
 The display name of the RagCorpus. The name can be up to 128
 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#display_name VertexAiRagCorpus#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#display_name VertexAiRagCorpus#display_name}
 
 ---
 
@@ -1205,7 +1205,7 @@ Region *string
 
 The region of the RagCorpus. eg europe-west4.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#region VertexAiRagCorpus#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#region VertexAiRagCorpus#region}
 
 ---
 
@@ -1226,7 +1226,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#deletion_policy VertexAiRagCorpus#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#deletion_policy VertexAiRagCorpus#deletion_policy}
 
 ---
 
@@ -1240,7 +1240,7 @@ Description *string
 
 Optional. The description of the RagCorpus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#description VertexAiRagCorpus#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#description VertexAiRagCorpus#description}
 
 ---
 
@@ -1254,7 +1254,7 @@ EncryptionSpec VertexAiRagCorpusEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#encryption_spec VertexAiRagCorpus#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#encryption_spec VertexAiRagCorpus#encryption_spec}
 
 ---
 
@@ -1266,7 +1266,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#id VertexAiRagCorpus#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#id VertexAiRagCorpus#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1281,7 +1281,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#project VertexAiRagCorpus#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#project VertexAiRagCorpus#project}.
 
 ---
 
@@ -1295,7 +1295,7 @@ Timeouts VertexAiRagCorpusTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#timeouts VertexAiRagCorpus#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#timeouts VertexAiRagCorpus#timeouts}
 
 ---
 
@@ -1309,7 +1309,7 @@ VectorDbConfig VertexAiRagCorpusVectorDbConfig
 
 vector_db_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vector_db_config VertexAiRagCorpus#vector_db_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#vector_db_config VertexAiRagCorpus#vector_db_config}
 
 ---
 
@@ -1323,7 +1323,7 @@ VertexAiSearchConfig VertexAiRagCorpusVertexAiSearchConfig
 
 vertex_ai_search_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vertex_ai_search_config VertexAiRagCorpus#vertex_ai_search_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#vertex_ai_search_config VertexAiRagCorpus#vertex_ai_search_config}
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusCorpusStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusCorpusStatus {
 
@@ -1345,7 +1345,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpu
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusEncryptionSpec {
 	KmsKeyName: *string,
@@ -1376,7 +1376,7 @@ projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key.
 The key needs to be in the same region as where the resource is
 created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#kms_key_name VertexAiRagCorpus#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#kms_key_name VertexAiRagCorpus#kms_key_name}
 
 ---
 
@@ -1385,7 +1385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusTimeouts {
 	Create: *string,
@@ -1398,9 +1398,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#create VertexAiRagCorpus#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#delete VertexAiRagCorpus#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#update VertexAiRagCorpus#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#create VertexAiRagCorpus#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#delete VertexAiRagCorpus#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#update VertexAiRagCorpus#update}. |
 
 ---
 
@@ -1412,7 +1412,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#create VertexAiRagCorpus#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#create VertexAiRagCorpus#create}.
 
 ---
 
@@ -1424,7 +1424,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#delete VertexAiRagCorpus#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#delete VertexAiRagCorpus#delete}.
 
 ---
 
@@ -1436,7 +1436,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#update VertexAiRagCorpus#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#update VertexAiRagCorpus#update}.
 
 ---
 
@@ -1445,14 +1445,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfig {
-	ApiAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuth,
-	Pinecone: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigPinecone,
-	RagEmbeddingModelConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig,
-	RagManagedDb: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDb,
-	VertexVectorSearch: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigVertexVectorSearch,
+	ApiAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuth,
+	Pinecone: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigPinecone,
+	RagEmbeddingModelConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig,
+	RagManagedDb: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDb,
+	VertexVectorSearch: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigVertexVectorSearch,
 }
 ```
 
@@ -1478,7 +1478,7 @@ ApiAuth VertexAiRagCorpusVectorDbConfigApiAuth
 
 api_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_auth VertexAiRagCorpus#api_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#api_auth VertexAiRagCorpus#api_auth}
 
 ---
 
@@ -1492,7 +1492,7 @@ Pinecone VertexAiRagCorpusVectorDbConfigPinecone
 
 pinecone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#pinecone VertexAiRagCorpus#pinecone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#pinecone VertexAiRagCorpus#pinecone}
 
 ---
 
@@ -1506,7 +1506,7 @@ RagEmbeddingModelConfig VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig
 
 rag_embedding_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#rag_embedding_model_config VertexAiRagCorpus#rag_embedding_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#rag_embedding_model_config VertexAiRagCorpus#rag_embedding_model_config}
 
 ---
 
@@ -1520,7 +1520,7 @@ RagManagedDb VertexAiRagCorpusVectorDbConfigRagManagedDb
 
 rag_managed_db block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#rag_managed_db VertexAiRagCorpus#rag_managed_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#rag_managed_db VertexAiRagCorpus#rag_managed_db}
 
 ---
 
@@ -1534,7 +1534,7 @@ VertexVectorSearch VertexAiRagCorpusVectorDbConfigVertexVectorSearch
 
 vertex_vector_search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vertex_vector_search VertexAiRagCorpus#vertex_vector_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#vertex_vector_search VertexAiRagCorpus#vertex_vector_search}
 
 ---
 
@@ -1543,10 +1543,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigApiAuth {
-	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig,
+	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig,
 }
 ```
 
@@ -1568,7 +1568,7 @@ ApiKeyConfig VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig
 
 api_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_key_config VertexAiRagCorpus#api_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#api_key_config VertexAiRagCorpus#api_key_config}
 
 ---
 
@@ -1577,7 +1577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig {
 	ApiKeySecretVersion: *string,
@@ -1604,7 +1604,7 @@ ApiKeySecretVersion *string
 
 The SecretManager secret version resource name storing API key. e.g. projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_key_secret_version VertexAiRagCorpus#api_key_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#api_key_secret_version VertexAiRagCorpus#api_key_secret_version}
 
 ---
 
@@ -1618,7 +1618,7 @@ ApiKeyString *string
 
 The API key string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_key_string VertexAiRagCorpus#api_key_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#api_key_string VertexAiRagCorpus#api_key_string}
 
 ---
 
@@ -1627,7 +1627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigPinecone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigPinecone {
 	IndexName: *string,
@@ -1652,7 +1652,7 @@ IndexName *string
 
 Pinecone index name. This value cannot be changed after it's set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#index_name VertexAiRagCorpus#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#index_name VertexAiRagCorpus#index_name}
 
 ---
 
@@ -1661,10 +1661,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig {
-	VertexPredictionEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpoint,
+	VertexPredictionEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpoint,
 }
 ```
 
@@ -1686,7 +1686,7 @@ VertexPredictionEndpoint VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigV
 
 vertex_prediction_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vertex_prediction_endpoint VertexAiRagCorpus#vertex_prediction_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#vertex_prediction_endpoint VertexAiRagCorpus#vertex_prediction_endpoint}
 
 ---
 
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpoint {
 	Endpoint: *string,
@@ -1720,7 +1720,7 @@ Endpoint *string
 
 Required. The endpoint resource name. Format: projects/{project}/locations/{location}/publishers/{publisher}/models/{model} or projects/{project}/locations/{location}/endpoints/{endpoint}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#endpoint VertexAiRagCorpus#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#endpoint VertexAiRagCorpus#endpoint}
 
 ---
 
@@ -1729,11 +1729,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigRagManagedDb {
-	Ann: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbAnn,
-	Knn: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbKnn,
+	Ann: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbAnn,
+	Knn: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbKnn,
 }
 ```
 
@@ -1756,7 +1756,7 @@ Ann VertexAiRagCorpusVectorDbConfigRagManagedDbAnn
 
 ann block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#ann VertexAiRagCorpus#ann}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#ann VertexAiRagCorpus#ann}
 
 ---
 
@@ -1770,7 +1770,7 @@ Knn VertexAiRagCorpusVectorDbConfigRagManagedDbKnn
 
 knn block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#knn VertexAiRagCorpus#knn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#knn VertexAiRagCorpus#knn}
 
 ---
 
@@ -1779,7 +1779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbAnn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbAnn {
 	LeafCount: *f64,
@@ -1806,7 +1806,7 @@ LeafCount *f64
 
 Number of leaf nodes in the tree-based structure. Default value is 500.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#leaf_count VertexAiRagCorpus#leaf_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#leaf_count VertexAiRagCorpus#leaf_count}
 
 ---
 
@@ -1820,7 +1820,7 @@ TreeDepth *f64
 
 The depth of the tree-based structure. Only depth values of 2 and 3 are supported. Default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#tree_depth VertexAiRagCorpus#tree_depth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#tree_depth VertexAiRagCorpus#tree_depth}
 
 ---
 
@@ -1829,7 +1829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbKnn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbKnn {
 
@@ -1842,7 +1842,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpu
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigVertexVectorSearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVectorDbConfigVertexVectorSearch {
 	Index: *string,
@@ -1869,7 +1869,7 @@ Index *string
 
 The resource name of the Index. Format: projects/{project}/locations/{location}/indexes/{index}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#index VertexAiRagCorpus#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#index VertexAiRagCorpus#index}
 
 ---
 
@@ -1883,7 +1883,7 @@ IndexEndpoint *string
 
 The resource name of the Index Endpoint. Format: projects/{project}/locations/{location}/indexEndpoints/{index_endpoint}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#index_endpoint VertexAiRagCorpus#index_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#index_endpoint VertexAiRagCorpus#index_endpoint}
 
 ---
 
@@ -1892,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVertexAiSearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 &vertexairagcorpus.VertexAiRagCorpusVertexAiSearchConfig {
 	ServingConfig: *string,
@@ -1917,7 +1917,7 @@ ServingConfig *string
 
 Vertex AI Search Serving Config resource full name. For example, projects/{project}/locations/{location}/collections/{collection}/engines/{engine}/servingConfigs/{serving_config} or projects/{project}/locations/{location}/collections/{collection}/dataStores/{data_store}/servingConfigs/{serving_config}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#serving_config VertexAiRagCorpus#serving_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_rag_corpus#serving_config VertexAiRagCorpus#serving_config}
 
 ---
 
@@ -1928,7 +1928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusCorpusStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusCorpusStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiRagCorpusCorpusStatusList
 ```
@@ -2077,7 +2077,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusCorpusStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusCorpusStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiRagCorpusCorpusStatusOutputReference
 ```
@@ -2366,7 +2366,7 @@ func InternalValue() VertexAiRagCorpusCorpusStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusEncryptionSpecOutputReference
 ```
@@ -2637,7 +2637,7 @@ func InternalValue() VertexAiRagCorpusEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusTimeoutsOutputReference
 ```
@@ -2973,7 +2973,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfigOutputReference
 ```
@@ -3280,7 +3280,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigApiAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigApiAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigApiAuthOutputReference
 ```
@@ -3571,7 +3571,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigApiAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigOutputReference
 ```
@@ -4030,7 +4030,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigPineconeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigPineconeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigPineconeOutputReference
 ```
@@ -4301,7 +4301,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigPinecone
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigOutputReference
 ```
@@ -4592,7 +4592,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpointOutputReference
 ```
@@ -4885,7 +4885,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVerte
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbAnnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigRagManagedDbAnnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigRagManagedDbAnnOutputReference
 ```
@@ -5192,7 +5192,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigRagManagedDbAnn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbKnnOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigRagManagedDbKnnOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigRagManagedDbKnnOutputReference
 ```
@@ -5441,7 +5441,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigRagManagedDbKnn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigRagManagedDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigRagManagedDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigRagManagedDbOutputReference
 ```
@@ -5774,7 +5774,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigRagManagedDb
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVectorDbConfigVertexVectorSearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVectorDbConfigVertexVectorSearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVectorDbConfigVertexVectorSearchOutputReference
 ```
@@ -6067,7 +6067,7 @@ func InternalValue() VertexAiRagCorpusVectorDbConfigVertexVectorSearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiRagCorpus.VertexAiRagCorpusVertexAiSearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexairagcorpus"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexairagcorpus"
 
 vertexairagcorpus.NewVertexAiRagCorpusVertexAiSearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagCorpusVertexAiSearchConfigOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### DialogflowConversationProfile <a name="DialogflowConversationProfile" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile google_dialogflow_conversation_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfile.Initializer"></a>
 
@@ -731,7 +731,7 @@ The construct id used in the generated config for the DialogflowConversationProf
 
 The id of the existing DialogflowConversationProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1365,7 +1365,7 @@ public string Agent { get; set; }
 
 ID of the Dialogflow agent environment to use. Expects the format "projects/<Project ID>/locations/<Location ID>/agent/environments/<EnvironmentID>".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
 
 ---
 
@@ -1379,7 +1379,7 @@ public string SessionTtl { get; set; }
 
 Configure lifetime of the Dialogflow session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#session_ttl DialogflowConversationProfile#session_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#session_ttl DialogflowConversationProfile#session_ttl}
 
 ---
 
@@ -1436,13 +1436,13 @@ new DialogflowConversationProfileConfig {
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.humanAgentAssistantConfig">HumanAgentAssistantConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentAssistantConfig">DialogflowConversationProfileHumanAgentAssistantConfig</a></code> | human_agent_assistant_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.humanAgentHandoffConfig">HumanAgentHandoffConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileHumanAgentHandoffConfig">DialogflowConversationProfileHumanAgentHandoffConfig</a></code> | human_agent_handoff_config block. |
-| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#id DialogflowConversationProfile#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#id DialogflowConversationProfile#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.languageCode">LanguageCode</a></code> | <code>string</code> | Language code for the conversation profile. This should be a BCP-47 language tag. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileLoggingConfig">DialogflowConversationProfileLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.newMessageEventNotificationConfig">NewMessageEventNotificationConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNewMessageEventNotificationConfig">DialogflowConversationProfileNewMessageEventNotificationConfig</a></code> | new_message_event_notification_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.newRecognitionResultNotificationConfig">NewRecognitionResultNotificationConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNewRecognitionResultNotificationConfig">DialogflowConversationProfileNewRecognitionResultNotificationConfig</a></code> | new_recognition_result_notification_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.notificationConfig">NotificationConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileNotificationConfig">DialogflowConversationProfileNotificationConfig</a></code> | notification_config block. |
-| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#project DialogflowConversationProfile#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#project DialogflowConversationProfile#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.securitySettings">SecuritySettings</a></code> | <code>string</code> | Name of the CX SecuritySettings reference for the agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.sttConfig">SttConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig">DialogflowConversationProfileSttConfig</a></code> | stt_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts">DialogflowConversationProfileTimeouts</a></code> | timeouts block. |
@@ -1531,7 +1531,7 @@ public string DisplayName { get; set; }
 
 Required. Human readable name for this profile. Max length 1024 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#display_name DialogflowConversationProfile#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#display_name DialogflowConversationProfile#display_name}
 
 ---
 
@@ -1545,7 +1545,7 @@ public string Location { get; set; }
 
 The location of the conversation profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#location DialogflowConversationProfile#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#location DialogflowConversationProfile#location}
 
 ---
 
@@ -1559,7 +1559,7 @@ public DialogflowConversationProfileAutomatedAgentConfig AutomatedAgentConfig { 
 
 automated_agent_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#automated_agent_config DialogflowConversationProfile#automated_agent_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#automated_agent_config DialogflowConversationProfile#automated_agent_config}
 
 ---
 
@@ -1580,7 +1580,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#deletion_policy DialogflowConversationProfile#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#deletion_policy DialogflowConversationProfile#deletion_policy}
 
 ---
 
@@ -1594,7 +1594,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfig HumanAgentAssistan
 
 human_agent_assistant_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#human_agent_assistant_config DialogflowConversationProfile#human_agent_assistant_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#human_agent_assistant_config DialogflowConversationProfile#human_agent_assistant_config}
 
 ---
 
@@ -1608,7 +1608,7 @@ public DialogflowConversationProfileHumanAgentHandoffConfig HumanAgentHandoffCon
 
 human_agent_handoff_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#human_agent_handoff_config DialogflowConversationProfile#human_agent_handoff_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#human_agent_handoff_config DialogflowConversationProfile#human_agent_handoff_config}
 
 ---
 
@@ -1620,7 +1620,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#id DialogflowConversationProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#id DialogflowConversationProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1637,7 +1637,7 @@ public string LanguageCode { get; set; }
 
 Language code for the conversation profile. This should be a BCP-47 language tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#language_code DialogflowConversationProfile#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#language_code DialogflowConversationProfile#language_code}
 
 ---
 
@@ -1651,7 +1651,7 @@ public DialogflowConversationProfileLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#logging_config DialogflowConversationProfile#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#logging_config DialogflowConversationProfile#logging_config}
 
 ---
 
@@ -1665,7 +1665,7 @@ public DialogflowConversationProfileNewMessageEventNotificationConfig NewMessage
 
 new_message_event_notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#new_message_event_notification_config DialogflowConversationProfile#new_message_event_notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#new_message_event_notification_config DialogflowConversationProfile#new_message_event_notification_config}
 
 ---
 
@@ -1679,7 +1679,7 @@ public DialogflowConversationProfileNewRecognitionResultNotificationConfig NewRe
 
 new_recognition_result_notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#new_recognition_result_notification_config DialogflowConversationProfile#new_recognition_result_notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#new_recognition_result_notification_config DialogflowConversationProfile#new_recognition_result_notification_config}
 
 ---
 
@@ -1693,7 +1693,7 @@ public DialogflowConversationProfileNotificationConfig NotificationConfig { get;
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#notification_config DialogflowConversationProfile#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#notification_config DialogflowConversationProfile#notification_config}
 
 ---
 
@@ -1705,7 +1705,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#project DialogflowConversationProfile#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#project DialogflowConversationProfile#project}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public string SecuritySettings { get; set; }
 
 Name of the CX SecuritySettings reference for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#security_settings DialogflowConversationProfile#security_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#security_settings DialogflowConversationProfile#security_settings}
 
 ---
 
@@ -1733,7 +1733,7 @@ public DialogflowConversationProfileSttConfig SttConfig { get; set; }
 
 stt_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#stt_config DialogflowConversationProfile#stt_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#stt_config DialogflowConversationProfile#stt_config}
 
 ---
 
@@ -1747,7 +1747,7 @@ public DialogflowConversationProfileTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#timeouts DialogflowConversationProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#timeouts DialogflowConversationProfile#timeouts}
 
 ---
 
@@ -1761,7 +1761,7 @@ public string TimeZone { get; set; }
 
 The time zone of this conversational profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#time_zone DialogflowConversationProfile#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#time_zone DialogflowConversationProfile#time_zone}
 
 ---
 
@@ -1775,7 +1775,7 @@ public DialogflowConversationProfileTtsConfig TtsConfig { get; set; }
 
 tts_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#tts_config DialogflowConversationProfile#tts_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#tts_config DialogflowConversationProfile#tts_config}
 
 ---
 
@@ -1815,7 +1815,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 end_user_suggestion_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#end_user_suggestion_config DialogflowConversationProfile#end_user_suggestion_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#end_user_suggestion_config DialogflowConversationProfile#end_user_suggestion_config}
 
 ---
 
@@ -1829,7 +1829,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 human_agent_suggestion_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#human_agent_suggestion_config DialogflowConversationProfile#human_agent_suggestion_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#human_agent_suggestion_config DialogflowConversationProfile#human_agent_suggestion_config}
 
 ---
 
@@ -1843,7 +1843,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigMessageAnalysisConf
 
 message_analysis_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#message_analysis_config DialogflowConversationProfile#message_analysis_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#message_analysis_config DialogflowConversationProfile#message_analysis_config}
 
 ---
 
@@ -1857,7 +1857,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigNotificationConfig 
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#notification_config DialogflowConversationProfile#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#notification_config DialogflowConversationProfile#notification_config}
 
 ---
 
@@ -1899,7 +1899,7 @@ When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent
 
 The humanAgentAssistantConfig.notification_config must be configured and enableEventBasedSuggestion must be set to true to receive the responses from high latency features in Pub/Sub. High latency feature(s): KNOWLEDGE_ASSIST
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#disable_high_latency_features_sync_delivery DialogflowConversationProfile#disable_high_latency_features_sync_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#disable_high_latency_features_sync_delivery DialogflowConversationProfile#disable_high_latency_features_sync_delivery}
 
 ---
 
@@ -1913,7 +1913,7 @@ public IResolvable|DialogflowConversationProfileHumanAgentAssistantConfigEndUser
 
 feature_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#feature_configs DialogflowConversationProfile#feature_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#feature_configs DialogflowConversationProfile#feature_configs}
 
 ---
 
@@ -1927,7 +1927,7 @@ public string[] Generators { get; set; }
 
 List of various generator resource names used in the conversation profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#generators DialogflowConversationProfile#generators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#generators DialogflowConversationProfile#generators}
 
 ---
 
@@ -1945,7 +1945,7 @@ Different type of suggestions based on the same context will be in separate Pub/
 
 If groupSuggestionResponses set to true. All the suggestions to the same participant based on the same context will be grouped into a single Pub/Sub event or StreamingAnalyzeContentResponse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#group_suggestion_responses DialogflowConversationProfile#group_suggestion_responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#group_suggestion_responses DialogflowConversationProfile#group_suggestion_responses}
 
 ---
 
@@ -1997,7 +1997,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 conversation_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#conversation_model_config DialogflowConversationProfile#conversation_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#conversation_model_config DialogflowConversationProfile#conversation_model_config}
 
 ---
 
@@ -2011,7 +2011,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 conversation_process_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#conversation_process_config DialogflowConversationProfile#conversation_process_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#conversation_process_config DialogflowConversationProfile#conversation_process_config}
 
 ---
 
@@ -2028,7 +2028,7 @@ Disable the logging of search queries sent by human agents.
 It can prevent those queries from being stored at answer records.
 This feature is only supported for types: KNOWLEDGE_SEARCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
 
 ---
 
@@ -2042,7 +2042,7 @@ public bool|IResolvable EnableConversationAugmentedQuery { get; set; }
 
 Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
 
 ---
 
@@ -2056,7 +2056,7 @@ public bool|IResolvable EnableEventBasedSuggestion { get; set; }
 
 Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
 
 ---
 
@@ -2070,7 +2070,7 @@ public bool|IResolvable EnableQuerySuggestionOnly { get; set; }
 
 Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
 
 ---
 
@@ -2087,7 +2087,7 @@ Enable query suggestion even if we can't find its answer.
 By default, queries are suggested only if we find its answer.
 This feature is only supported for types: KNOWLEDGE_ASSIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
 
 ---
 
@@ -2101,7 +2101,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 query_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#query_config DialogflowConversationProfile#query_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#query_config DialogflowConversationProfile#query_config}
 
 ---
 
@@ -2115,7 +2115,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 suggestion_feature block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#suggestion_feature DialogflowConversationProfile#suggestion_feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#suggestion_feature DialogflowConversationProfile#suggestion_feature}
 
 ---
 
@@ -2129,7 +2129,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 suggestion_trigger_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#suggestion_trigger_settings DialogflowConversationProfile#suggestion_trigger_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#suggestion_trigger_settings DialogflowConversationProfile#suggestion_trigger_settings}
 
 ---
 
@@ -2167,7 +2167,7 @@ Version of current baseline model.
 
 It will be ignored if model is set. Valid versions are: Article Suggestion baseline model: - 0.9 - 1.0 (default) Summarization baseline model: - 1.0
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#baseline_model_version DialogflowConversationProfile#baseline_model_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#baseline_model_version DialogflowConversationProfile#baseline_model_version}
 
 ---
 
@@ -2181,7 +2181,7 @@ public string Model { get; set; }
 
 Conversation model resource name. Format: projects/<Project ID>/conversationModels/<Model ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#model DialogflowConversationProfile#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#model DialogflowConversationProfile#model}
 
 ---
 
@@ -2215,7 +2215,7 @@ public double RecentSentencesCount { get; set; }
 
 Number of recent non-small-talk sentences to use as context for article and FAQ suggestion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#recent_sentences_count DialogflowConversationProfile#recent_sentences_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#recent_sentences_count DialogflowConversationProfile#recent_sentences_count}
 
 ---
 
@@ -2261,7 +2261,7 @@ public double ConfidenceThreshold { get; set; }
 
 Confidence threshold of query result. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, SMART_REPLY, SMART_COMPOSE, KNOWLEDGE_SEARCH, KNOWLEDGE_ASSIST, ENTITY_EXTRACTION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#confidence_threshold DialogflowConversationProfile#confidence_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#confidence_threshold DialogflowConversationProfile#confidence_threshold}
 
 ---
 
@@ -2275,7 +2275,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 context_filter_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#context_filter_settings DialogflowConversationProfile#context_filter_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#context_filter_settings DialogflowConversationProfile#context_filter_settings}
 
 ---
 
@@ -2289,7 +2289,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 dialogflow_query_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#dialogflow_query_source DialogflowConversationProfile#dialogflow_query_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#dialogflow_query_source DialogflowConversationProfile#dialogflow_query_source}
 
 ---
 
@@ -2303,7 +2303,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 document_query_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#document_query_source DialogflowConversationProfile#document_query_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#document_query_source DialogflowConversationProfile#document_query_source}
 
 ---
 
@@ -2317,7 +2317,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 knowledge_base_query_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#knowledge_base_query_source DialogflowConversationProfile#knowledge_base_query_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#knowledge_base_query_source DialogflowConversationProfile#knowledge_base_query_source}
 
 ---
 
@@ -2331,7 +2331,7 @@ public double MaxResults { get; set; }
 
 Maximum number of results to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#max_results DialogflowConversationProfile#max_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#max_results DialogflowConversationProfile#max_results}
 
 ---
 
@@ -2345,7 +2345,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 sections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#sections DialogflowConversationProfile#sections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#sections DialogflowConversationProfile#sections}
 
 ---
 
@@ -2383,7 +2383,7 @@ public bool|IResolvable DropHandoffMessages { get; set; }
 
 If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#drop_handoff_messages DialogflowConversationProfile#drop_handoff_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#drop_handoff_messages DialogflowConversationProfile#drop_handoff_messages}
 
 ---
 
@@ -2397,7 +2397,7 @@ public bool|IResolvable DropIvrMessages { get; set; }
 
 If set to true, all messages from ivr stage are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#drop_ivr_messages DialogflowConversationProfile#drop_ivr_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#drop_ivr_messages DialogflowConversationProfile#drop_ivr_messages}
 
 ---
 
@@ -2411,7 +2411,7 @@ public bool|IResolvable DropVirtualAgentMessages { get; set; }
 
 If set to true, all messages from virtual agent are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#drop_virtual_agent_messages DialogflowConversationProfile#drop_virtual_agent_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#drop_virtual_agent_messages DialogflowConversationProfile#drop_virtual_agent_messages}
 
 ---
 
@@ -2449,7 +2449,7 @@ The name of a Dialogflow virtual agent used for end user side intent detection a
 
 Format: projects/<Project ID>/locations/<Location ID>/agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
 
 ---
 
@@ -2463,7 +2463,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionCo
 
 human_agent_side_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#human_agent_side_config DialogflowConversationProfile#human_agent_side_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#human_agent_side_config DialogflowConversationProfile#human_agent_side_config}
 
 ---
 
@@ -2499,7 +2499,7 @@ The name of a dialogflow virtual agent used for intent detection and suggestion 
 
 Format: projects/<Project ID>/locations/<Location ID>/agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
 
 ---
 
@@ -2533,7 +2533,7 @@ public string[] Documents { get; set; }
 
 Knowledge documents to query from. Format: projects/<Project ID>/locations/<Location ID>/knowledgeBases/<KnowledgeBase ID>/documents/<Document ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#documents DialogflowConversationProfile#documents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#documents DialogflowConversationProfile#documents}
 
 ---
 
@@ -2567,7 +2567,7 @@ public string[] KnowledgeBases { get; set; }
 
 Knowledge bases to query. Format: projects/<Project ID>/locations/<Location ID>/knowledgeBases/<Knowledge Base ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#knowledge_bases DialogflowConversationProfile#knowledge_bases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#knowledge_bases DialogflowConversationProfile#knowledge_bases}
 
 ---
 
@@ -2603,7 +2603,7 @@ The selected sections chosen to return when requesting a summary of a conversati
 
 Possible values: ["SECTION_TYPE_UNSPECIFIED", "SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#section_types DialogflowConversationProfile#section_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#section_types DialogflowConversationProfile#section_types}
 
 ---
 
@@ -2637,7 +2637,7 @@ public string Type { get; set; }
 
 Type of Human Agent Assistant API feature to request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#type DialogflowConversationProfile#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#type DialogflowConversationProfile#type}
 
 ---
 
@@ -2673,7 +2673,7 @@ public bool|IResolvable NoSmallTalk { get; set; }
 
 Do not trigger if last utterance is small talk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#no_small_talk DialogflowConversationProfile#no_small_talk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#no_small_talk DialogflowConversationProfile#no_small_talk}
 
 ---
 
@@ -2687,7 +2687,7 @@ public bool|IResolvable OnlyEndUser { get; set; }
 
 Only trigger suggestion if participant role of last utterance is END_USER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#only_end_user DialogflowConversationProfile#only_end_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#only_end_user DialogflowConversationProfile#only_end_user}
 
 ---
 
@@ -2729,7 +2729,7 @@ When disableHighLatencyFeaturesSyncDelivery is true and using the AnalyzeContent
 
 The humanAgentAssistantConfig.notification_config must be configured and enableEventBasedSuggestion must be set to true to receive the responses from high latency features in Pub/Sub. High latency feature(s): KNOWLEDGE_ASSIST
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#disable_high_latency_features_sync_delivery DialogflowConversationProfile#disable_high_latency_features_sync_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#disable_high_latency_features_sync_delivery DialogflowConversationProfile#disable_high_latency_features_sync_delivery}
 
 ---
 
@@ -2743,7 +2743,7 @@ public IResolvable|DialogflowConversationProfileHumanAgentAssistantConfigHumanAg
 
 feature_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#feature_configs DialogflowConversationProfile#feature_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#feature_configs DialogflowConversationProfile#feature_configs}
 
 ---
 
@@ -2757,7 +2757,7 @@ public string[] Generators { get; set; }
 
 List of various generator resource names used in the conversation profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#generators DialogflowConversationProfile#generators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#generators DialogflowConversationProfile#generators}
 
 ---
 
@@ -2775,7 +2775,7 @@ Different type of suggestions based on the same context will be in separate Pub/
 
 If groupSuggestionResponses set to true. All the suggestions to the same participant based on the same context will be grouped into a single Pub/Sub event or StreamingAnalyzeContentResponse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#group_suggestion_responses DialogflowConversationProfile#group_suggestion_responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#group_suggestion_responses DialogflowConversationProfile#group_suggestion_responses}
 
 ---
 
@@ -2827,7 +2827,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 conversation_model_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#conversation_model_config DialogflowConversationProfile#conversation_model_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#conversation_model_config DialogflowConversationProfile#conversation_model_config}
 
 ---
 
@@ -2841,7 +2841,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 conversation_process_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#conversation_process_config DialogflowConversationProfile#conversation_process_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#conversation_process_config DialogflowConversationProfile#conversation_process_config}
 
 ---
 
@@ -2858,7 +2858,7 @@ Disable the logging of search queries sent by human agents.
 It can prevent those queries from being stored at answer records.
 This feature is only supported for types: KNOWLEDGE_SEARCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#disable_agent_query_logging DialogflowConversationProfile#disable_agent_query_logging}
 
 ---
 
@@ -2872,7 +2872,7 @@ public bool|IResolvable EnableConversationAugmentedQuery { get; set; }
 
 Enable including conversation context during query answer generation. This feature is only supported for types: KNOWLEDGE_SEARCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_conversation_augmented_query DialogflowConversationProfile#enable_conversation_augmented_query}
 
 ---
 
@@ -2886,7 +2886,7 @@ public bool|IResolvable EnableEventBasedSuggestion { get; set; }
 
 Automatically iterates all participants and tries to compile suggestions. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, DIALOGFLOW_ASSIST, KNOWLEDGE_ASSIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_event_based_suggestion DialogflowConversationProfile#enable_event_based_suggestion}
 
 ---
 
@@ -2900,7 +2900,7 @@ public bool|IResolvable EnableQuerySuggestionOnly { get; set; }
 
 Enable query suggestion only. This feature is only supported for types: KNOWLEDGE_ASSIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_only DialogflowConversationProfile#enable_query_suggestion_only}
 
 ---
 
@@ -2917,7 +2917,7 @@ Enable query suggestion even if we can't find its answer.
 By default, queries are suggested only if we find its answer.
 This feature is only supported for types: KNOWLEDGE_ASSIST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_query_suggestion_when_no_answer DialogflowConversationProfile#enable_query_suggestion_when_no_answer}
 
 ---
 
@@ -2931,7 +2931,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 query_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#query_config DialogflowConversationProfile#query_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#query_config DialogflowConversationProfile#query_config}
 
 ---
 
@@ -2945,7 +2945,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 suggestion_feature block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#suggestion_feature DialogflowConversationProfile#suggestion_feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#suggestion_feature DialogflowConversationProfile#suggestion_feature}
 
 ---
 
@@ -2959,7 +2959,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 suggestion_trigger_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#suggestion_trigger_settings DialogflowConversationProfile#suggestion_trigger_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#suggestion_trigger_settings DialogflowConversationProfile#suggestion_trigger_settings}
 
 ---
 
@@ -2997,7 +2997,7 @@ Version of current baseline model.
 
 It will be ignored if model is set. Valid versions are: Article Suggestion baseline model: - 0.9 - 1.0 (default) Summarization baseline model: - 1.0
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#baseline_model_version DialogflowConversationProfile#baseline_model_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#baseline_model_version DialogflowConversationProfile#baseline_model_version}
 
 ---
 
@@ -3011,7 +3011,7 @@ public string Model { get; set; }
 
 Conversation model resource name. Format: projects/<Project ID>/conversationModels/<Model ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#model DialogflowConversationProfile#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#model DialogflowConversationProfile#model}
 
 ---
 
@@ -3045,7 +3045,7 @@ public double RecentSentencesCount { get; set; }
 
 Number of recent non-small-talk sentences to use as context for article and FAQ suggestion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#recent_sentences_count DialogflowConversationProfile#recent_sentences_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#recent_sentences_count DialogflowConversationProfile#recent_sentences_count}
 
 ---
 
@@ -3087,7 +3087,7 @@ public double ConfidenceThreshold { get; set; }
 
 Confidence threshold of query result. This feature is only supported for types: ARTICLE_SUGGESTION, FAQ, SMART_REPLY, SMART_COMPOSE, KNOWLEDGE_SEARCH, KNOWLEDGE_ASSIST, ENTITY_EXTRACTION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#confidence_threshold DialogflowConversationProfile#confidence_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#confidence_threshold DialogflowConversationProfile#confidence_threshold}
 
 ---
 
@@ -3101,7 +3101,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 context_filter_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#context_filter_settings DialogflowConversationProfile#context_filter_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#context_filter_settings DialogflowConversationProfile#context_filter_settings}
 
 ---
 
@@ -3115,7 +3115,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 dialogflow_query_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#dialogflow_query_source DialogflowConversationProfile#dialogflow_query_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#dialogflow_query_source DialogflowConversationProfile#dialogflow_query_source}
 
 ---
 
@@ -3129,7 +3129,7 @@ public double MaxResults { get; set; }
 
 Maximum number of results to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#max_results DialogflowConversationProfile#max_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#max_results DialogflowConversationProfile#max_results}
 
 ---
 
@@ -3143,7 +3143,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 sections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#sections DialogflowConversationProfile#sections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#sections DialogflowConversationProfile#sections}
 
 ---
 
@@ -3181,7 +3181,7 @@ public bool|IResolvable DropHandoffMessages { get; set; }
 
 If set to true, the last message from virtual agent (hand off message) and the message before it (trigger message of hand off) are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#drop_handoff_messages DialogflowConversationProfile#drop_handoff_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#drop_handoff_messages DialogflowConversationProfile#drop_handoff_messages}
 
 ---
 
@@ -3195,7 +3195,7 @@ public bool|IResolvable DropIvrMessages { get; set; }
 
 If set to true, all messages from ivr stage are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#drop_ivr_messages DialogflowConversationProfile#drop_ivr_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#drop_ivr_messages DialogflowConversationProfile#drop_ivr_messages}
 
 ---
 
@@ -3209,7 +3209,7 @@ public bool|IResolvable DropVirtualAgentMessages { get; set; }
 
 If set to true, all messages from virtual agent are dropped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#drop_virtual_agent_messages DialogflowConversationProfile#drop_virtual_agent_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#drop_virtual_agent_messages DialogflowConversationProfile#drop_virtual_agent_messages}
 
 ---
 
@@ -3247,7 +3247,7 @@ The name of a Dialogflow virtual agent used for end user side intent detection a
 
 Format: projects/<Project ID>/locations/<Location ID>/agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
 
 ---
 
@@ -3261,7 +3261,7 @@ public DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestio
 
 human_agent_side_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#human_agent_side_config DialogflowConversationProfile#human_agent_side_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#human_agent_side_config DialogflowConversationProfile#human_agent_side_config}
 
 ---
 
@@ -3297,7 +3297,7 @@ The name of a dialogflow virtual agent used for intent detection and suggestion 
 
 Format: projects/<Project ID>/locations/<Location ID>/agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
 
 ---
 
@@ -3333,7 +3333,7 @@ The selected sections chosen to return when requesting a summary of a conversati
 
 Possible values: ["SECTION_TYPE_UNSPECIFIED", "SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#section_types DialogflowConversationProfile#section_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#section_types DialogflowConversationProfile#section_types}
 
 ---
 
@@ -3367,7 +3367,7 @@ public string Type { get; set; }
 
 Type of Human Agent Assistant API feature to request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#type DialogflowConversationProfile#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#type DialogflowConversationProfile#type}
 
 ---
 
@@ -3403,7 +3403,7 @@ public bool|IResolvable NoSmallTalk { get; set; }
 
 Do not trigger if last utterance is small talk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#no_small_talk DialogflowConversationProfile#no_small_talk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#no_small_talk DialogflowConversationProfile#no_small_talk}
 
 ---
 
@@ -3417,7 +3417,7 @@ public bool|IResolvable OnlyEndUser { get; set; }
 
 Only trigger suggestion if participant role of last utterance is END_USER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#only_end_user DialogflowConversationProfile#only_end_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#only_end_user DialogflowConversationProfile#only_end_user}
 
 ---
 
@@ -3453,7 +3453,7 @@ public bool|IResolvable EnableEntityExtraction { get; set; }
 
 Enable entity extraction in conversation messages on agent assist stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_entity_extraction DialogflowConversationProfile#enable_entity_extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_entity_extraction DialogflowConversationProfile#enable_entity_extraction}
 
 ---
 
@@ -3469,7 +3469,7 @@ Enable sentiment analysis in conversation messages on agent assist stage.
 
 Sentiment analysis inspects user input and identifies the prevailing subjective opinion, especially to determine a user's attitude as positive, negative, or neutral.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_sentiment_analysis DialogflowConversationProfile#enable_sentiment_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_sentiment_analysis DialogflowConversationProfile#enable_sentiment_analysis}
 
 ---
 
@@ -3505,7 +3505,7 @@ public string MessageFormat { get; set; }
 
 Format of the message Possible values: ["MESSAGE_FORMAT_UNSPECIFIED", "PROTO", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
 
 ---
 
@@ -3519,7 +3519,7 @@ public string Topic { get; set; }
 
 Name of the Pub/Sub topic to publish conversation events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
 
 ---
 
@@ -3553,7 +3553,7 @@ public DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfig Live
 
 live_person_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#live_person_config DialogflowConversationProfile#live_person_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#live_person_config DialogflowConversationProfile#live_person_config}
 
 ---
 
@@ -3587,7 +3587,7 @@ public string AccountNumber { get; set; }
 
 Account number of the LivePerson account to connect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#account_number DialogflowConversationProfile#account_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#account_number DialogflowConversationProfile#account_number}
 
 ---
 
@@ -3621,7 +3621,7 @@ public bool|IResolvable EnableStackdriverLogging { get; set; }
 
 Whether to log conversation events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_stackdriver_logging DialogflowConversationProfile#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_stackdriver_logging DialogflowConversationProfile#enable_stackdriver_logging}
 
 ---
 
@@ -3657,7 +3657,7 @@ public string MessageFormat { get; set; }
 
 Format of the message Possible values: ["MESSAGE_FORMAT_UNSPECIFIED", "PROTO", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
 
 ---
 
@@ -3671,7 +3671,7 @@ public string Topic { get; set; }
 
 Name of the Pub/Sub topic to publish conversation events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
 
 ---
 
@@ -3707,7 +3707,7 @@ public string MessageFormat { get; set; }
 
 Format of message. Possible values: ["MESSAGE_FORMAT_UNSPECIFIED", "PROTO", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
 
 ---
 
@@ -3725,7 +3725,7 @@ For telephony integration to receive notification, make sure either this topic i
 For chat integration to receive notification, make sure API caller has been granted the Dialogflow Service Agent role for the topic.
 Format: projects/<Project ID>/locations/<Location ID>/topics/<Topic ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
 
 ---
 
@@ -3761,7 +3761,7 @@ public string MessageFormat { get; set; }
 
 Format of the message Possible values: ["MESSAGE_FORMAT_UNSPECIFIED", "PROTO", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#message_format DialogflowConversationProfile#message_format}
 
 ---
 
@@ -3775,7 +3775,7 @@ public string Topic { get; set; }
 
 Name of the Pub/Sub topic to publish conversation events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#topic DialogflowConversationProfile#topic}
 
 ---
 
@@ -3789,10 +3789,12 @@ using Io.Cdktn.Providers.Google;
 new DialogflowConversationProfileSttConfig {
     string AudioEncoding = null,
     bool|IResolvable EnableWordInfo = null,
+    DialogflowConversationProfileSttConfigGeminiAsrConfig GeminiAsrConfig = null,
     string LanguageCode = null,
     string Model = null,
     double SampleRateHertz = null,
     string SpeechModelVariant = null,
+    bool|IResolvable UseGeminiAsr = null,
     bool|IResolvable UseTimeoutBasedEndpointing = null
 };
 ```
@@ -3803,10 +3805,12 @@ new DialogflowConversationProfileSttConfig {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.audioEncoding">AudioEncoding</a></code> | <code>string</code> | Audio encoding of the audio content to process. Possible values: ["AUDIO_ENCODING_UNSPECIFIED", "AUDIO_ENCODING_LINEAR_16", "AUDIO_ENCODING_FLAC", "AUDIO_ENCODING_MULAW", "AUDIO_ENCODING_AMR", "AUDIO_ENCODING_AMR_WB", "AUDIO_ENCODING_OGG_OPUS", "AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE"]. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.enableWordInfo">EnableWordInfo</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If true, Dialogflow returns SpeechWordInfo in StreamingRecognitionResult with information about the recognized speech words. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.geminiAsrConfig">GeminiAsrConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a></code> | gemini_asr_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.languageCode">LanguageCode</a></code> | <code>string</code> | The language of the supplied audio. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.model">Model</a></code> | <code>string</code> | Which Speech model to select. Leave this field unspecified to use Agent Speech settings for model selection. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.sampleRateHertz">SampleRateHertz</a></code> | <code>double</code> | Sample rate (in Hertz) of the audio content sent in the query. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.speechModelVariant">SpeechModelVariant</a></code> | <code>string</code> | The speech model used in speech to text. Possible values: ["SPEECH_MODEL_VARIANT_UNSPECIFIED", "USE_BEST_AVAILABLE", "USE_STANDARD", "USE_ENHANCED"]. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.useGeminiAsr">UseGeminiAsr</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If true, Gemini ASR will be used for transcription instead of Cloud Speech-to-Text. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.useTimeoutBasedEndpointing">UseTimeoutBasedEndpointing</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value. |
 
 ---
@@ -3821,7 +3825,7 @@ public string AudioEncoding { get; set; }
 
 Audio encoding of the audio content to process. Possible values: ["AUDIO_ENCODING_UNSPECIFIED", "AUDIO_ENCODING_LINEAR_16", "AUDIO_ENCODING_FLAC", "AUDIO_ENCODING_MULAW", "AUDIO_ENCODING_AMR", "AUDIO_ENCODING_AMR_WB", "AUDIO_ENCODING_OGG_OPUS", "AUDIO_ENCODING_SPEEX_WITH_HEADER_BYTE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#audio_encoding DialogflowConversationProfile#audio_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#audio_encoding DialogflowConversationProfile#audio_encoding}
 
 ---
 
@@ -3835,7 +3839,21 @@ public bool|IResolvable EnableWordInfo { get; set; }
 
 If true, Dialogflow returns SpeechWordInfo in StreamingRecognitionResult with information about the recognized speech words.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#enable_word_info DialogflowConversationProfile#enable_word_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#enable_word_info DialogflowConversationProfile#enable_word_info}
+
+---
+
+##### `GeminiAsrConfig`<sup>Optional</sup> <a name="GeminiAsrConfig" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.geminiAsrConfig"></a>
+
+```csharp
+public DialogflowConversationProfileSttConfigGeminiAsrConfig GeminiAsrConfig { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a>
+
+gemini_asr_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#gemini_asr_config DialogflowConversationProfile#gemini_asr_config}
 
 ---
 
@@ -3849,7 +3867,7 @@ public string LanguageCode { get; set; }
 
 The language of the supplied audio.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#language_code DialogflowConversationProfile#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#language_code DialogflowConversationProfile#language_code}
 
 ---
 
@@ -3863,7 +3881,7 @@ public string Model { get; set; }
 
 Which Speech model to select. Leave this field unspecified to use Agent Speech settings for model selection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#model DialogflowConversationProfile#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#model DialogflowConversationProfile#model}
 
 ---
 
@@ -3877,7 +3895,7 @@ public double SampleRateHertz { get; set; }
 
 Sample rate (in Hertz) of the audio content sent in the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#sample_rate_hertz DialogflowConversationProfile#sample_rate_hertz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#sample_rate_hertz DialogflowConversationProfile#sample_rate_hertz}
 
 ---
 
@@ -3891,7 +3909,21 @@ public string SpeechModelVariant { get; set; }
 
 The speech model used in speech to text. Possible values: ["SPEECH_MODEL_VARIANT_UNSPECIFIED", "USE_BEST_AVAILABLE", "USE_STANDARD", "USE_ENHANCED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#speech_model_variant DialogflowConversationProfile#speech_model_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#speech_model_variant DialogflowConversationProfile#speech_model_variant}
+
+---
+
+##### `UseGeminiAsr`<sup>Optional</sup> <a name="UseGeminiAsr" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig.property.useGeminiAsr"></a>
+
+```csharp
+public bool|IResolvable UseGeminiAsr { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+If true, Gemini ASR will be used for transcription instead of Cloud Speech-to-Text.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#use_gemini_asr DialogflowConversationProfile#use_gemini_asr}
 
 ---
 
@@ -3905,7 +3937,105 @@ public bool|IResolvable UseTimeoutBasedEndpointing { get; set; }
 
 Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#use_timeout_based_endpointing DialogflowConversationProfile#use_timeout_based_endpointing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#use_timeout_based_endpointing DialogflowConversationProfile#use_timeout_based_endpointing}
+
+---
+
+### DialogflowConversationProfileSttConfigGeminiAsrConfig <a name="DialogflowConversationProfileSttConfigGeminiAsrConfig" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DialogflowConversationProfileSttConfigGeminiAsrConfig {
+    string EndOfSpeechSensitivity = null,
+    string ModelId = null,
+    double PrefixPaddingMs = null,
+    double SilenceDurationMs = null,
+    string StartOfSpeechSensitivity = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.endOfSpeechSensitivity">EndOfSpeechSensitivity</a></code> | <code>string</code> | End of speech sensitivity. Possible values: ["END_SENSITIVITY_HIGH", "END_SENSITIVITY_LOW"]. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.modelId">ModelId</a></code> | <code>string</code> | The Gemini ASR model ID used for transcription. This value overrides the default model ID configured on the server. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.prefixPaddingMs">PrefixPaddingMs</a></code> | <code>double</code> | The required duration of detected speech before start-of-speech is committed. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.silenceDurationMs">SilenceDurationMs</a></code> | <code>double</code> | The required duration of detected silence (or non-speech) before end-of-speech is committed. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.startOfSpeechSensitivity">StartOfSpeechSensitivity</a></code> | <code>string</code> | Start of speech sensitivity. Possible values: ["START_SENSITIVITY_HIGH", "START_SENSITIVITY_LOW"]. |
+
+---
+
+##### `EndOfSpeechSensitivity`<sup>Optional</sup> <a name="EndOfSpeechSensitivity" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.endOfSpeechSensitivity"></a>
+
+```csharp
+public string EndOfSpeechSensitivity { get; set; }
+```
+
+- *Type:* string
+
+End of speech sensitivity. Possible values: ["END_SENSITIVITY_HIGH", "END_SENSITIVITY_LOW"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#end_of_speech_sensitivity DialogflowConversationProfile#end_of_speech_sensitivity}
+
+---
+
+##### `ModelId`<sup>Optional</sup> <a name="ModelId" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.modelId"></a>
+
+```csharp
+public string ModelId { get; set; }
+```
+
+- *Type:* string
+
+The Gemini ASR model ID used for transcription. This value overrides the default model ID configured on the server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#model_id DialogflowConversationProfile#model_id}
+
+---
+
+##### `PrefixPaddingMs`<sup>Optional</sup> <a name="PrefixPaddingMs" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.prefixPaddingMs"></a>
+
+```csharp
+public double PrefixPaddingMs { get; set; }
+```
+
+- *Type:* double
+
+The required duration of detected speech before start-of-speech is committed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#prefix_padding_ms DialogflowConversationProfile#prefix_padding_ms}
+
+---
+
+##### `SilenceDurationMs`<sup>Optional</sup> <a name="SilenceDurationMs" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.silenceDurationMs"></a>
+
+```csharp
+public double SilenceDurationMs { get; set; }
+```
+
+- *Type:* double
+
+The required duration of detected silence (or non-speech) before end-of-speech is committed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#silence_duration_ms DialogflowConversationProfile#silence_duration_ms}
+
+---
+
+##### `StartOfSpeechSensitivity`<sup>Optional</sup> <a name="StartOfSpeechSensitivity" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig.property.startOfSpeechSensitivity"></a>
+
+```csharp
+public string StartOfSpeechSensitivity { get; set; }
+```
+
+- *Type:* string
+
+Start of speech sensitivity. Possible values: ["START_SENSITIVITY_HIGH", "START_SENSITIVITY_LOW"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#start_of_speech_sensitivity DialogflowConversationProfile#start_of_speech_sensitivity}
 
 ---
 
@@ -3927,9 +4057,9 @@ new DialogflowConversationProfileTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#create DialogflowConversationProfile#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#delete DialogflowConversationProfile#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#update DialogflowConversationProfile#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#create DialogflowConversationProfile#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#delete DialogflowConversationProfile#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#update DialogflowConversationProfile#update}. |
 
 ---
 
@@ -3941,7 +4071,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#create DialogflowConversationProfile#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#create DialogflowConversationProfile#create}.
 
 ---
 
@@ -3953,7 +4083,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#delete DialogflowConversationProfile#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#delete DialogflowConversationProfile#delete}.
 
 ---
 
@@ -3965,7 +4095,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#update DialogflowConversationProfile#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#update DialogflowConversationProfile#update}.
 
 ---
 
@@ -4009,7 +4139,7 @@ An identifier which selects 'audio effects' profiles that are applied on (post s
 
 Effects are applied on top of each other in the order they are given.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#effects_profile_id DialogflowConversationProfile#effects_profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#effects_profile_id DialogflowConversationProfile#effects_profile_id}
 
 ---
 
@@ -4023,7 +4153,7 @@ public double Pitch { get; set; }
 
 Speaking pitch, in the range [-20.0, 20.0]. 20 means increase 20 semitones from the original pitch. -20 means decrease 20 semitones from the original pitch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#pitch DialogflowConversationProfile#pitch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#pitch DialogflowConversationProfile#pitch}
 
 ---
 
@@ -4037,7 +4167,7 @@ public double SpeakingRate { get; set; }
 
 Speaking rate/speed, in the range [0.25, 4.0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#speaking_rate DialogflowConversationProfile#speaking_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#speaking_rate DialogflowConversationProfile#speaking_rate}
 
 ---
 
@@ -4051,7 +4181,7 @@ public DialogflowConversationProfileTtsConfigVoice Voice { get; set; }
 
 voice block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#voice DialogflowConversationProfile#voice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#voice DialogflowConversationProfile#voice}
 
 ---
 
@@ -4065,7 +4195,7 @@ public double VolumeGainDb { get; set; }
 
 Volume gain (in dB) of the normal native volume supported by the specific voice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#volume_gain_db DialogflowConversationProfile#volume_gain_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#volume_gain_db DialogflowConversationProfile#volume_gain_db}
 
 ---
 
@@ -4101,7 +4231,7 @@ public string Name { get; set; }
 
 The name of the voice.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#name DialogflowConversationProfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#name DialogflowConversationProfile#name}
 
 ---
 
@@ -4115,7 +4245,7 @@ public string SsmlGender { get; set; }
 
 The preferred gender of the voice. Possible values: ["SSML_VOICE_GENDER_UNSPECIFIED", "SSML_VOICE_GENDER_MALE", "SSML_VOICE_GENDER_FEMALE", "SSML_VOICE_GENDER_NEUTRAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_conversation_profile#ssml_gender DialogflowConversationProfile#ssml_gender}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_conversation_profile#ssml_gender DialogflowConversationProfile#ssml_gender}
 
 ---
 
@@ -15775,6 +15905,400 @@ public DialogflowConversationProfileNotificationConfig InternalValue { get; }
 ---
 
 
+### DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference <a name="DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetEndOfSpeechSensitivity">ResetEndOfSpeechSensitivity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetModelId">ResetModelId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetPrefixPaddingMs">ResetPrefixPaddingMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetSilenceDurationMs">ResetSilenceDurationMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetStartOfSpeechSensitivity">ResetStartOfSpeechSensitivity</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetEndOfSpeechSensitivity` <a name="ResetEndOfSpeechSensitivity" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetEndOfSpeechSensitivity"></a>
+
+```csharp
+private void ResetEndOfSpeechSensitivity()
+```
+
+##### `ResetModelId` <a name="ResetModelId" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetModelId"></a>
+
+```csharp
+private void ResetModelId()
+```
+
+##### `ResetPrefixPaddingMs` <a name="ResetPrefixPaddingMs" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetPrefixPaddingMs"></a>
+
+```csharp
+private void ResetPrefixPaddingMs()
+```
+
+##### `ResetSilenceDurationMs` <a name="ResetSilenceDurationMs" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetSilenceDurationMs"></a>
+
+```csharp
+private void ResetSilenceDurationMs()
+```
+
+##### `ResetStartOfSpeechSensitivity` <a name="ResetStartOfSpeechSensitivity" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.resetStartOfSpeechSensitivity"></a>
+
+```csharp
+private void ResetStartOfSpeechSensitivity()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.endOfSpeechSensitivityInput">EndOfSpeechSensitivityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.modelIdInput">ModelIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.prefixPaddingMsInput">PrefixPaddingMsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.silenceDurationMsInput">SilenceDurationMsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.startOfSpeechSensitivityInput">StartOfSpeechSensitivityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.endOfSpeechSensitivity">EndOfSpeechSensitivity</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.modelId">ModelId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.prefixPaddingMs">PrefixPaddingMs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.silenceDurationMs">SilenceDurationMs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.startOfSpeechSensitivity">StartOfSpeechSensitivity</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EndOfSpeechSensitivityInput`<sup>Optional</sup> <a name="EndOfSpeechSensitivityInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.endOfSpeechSensitivityInput"></a>
+
+```csharp
+public string EndOfSpeechSensitivityInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ModelIdInput`<sup>Optional</sup> <a name="ModelIdInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.modelIdInput"></a>
+
+```csharp
+public string ModelIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrefixPaddingMsInput`<sup>Optional</sup> <a name="PrefixPaddingMsInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.prefixPaddingMsInput"></a>
+
+```csharp
+public double PrefixPaddingMsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `SilenceDurationMsInput`<sup>Optional</sup> <a name="SilenceDurationMsInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.silenceDurationMsInput"></a>
+
+```csharp
+public double SilenceDurationMsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `StartOfSpeechSensitivityInput`<sup>Optional</sup> <a name="StartOfSpeechSensitivityInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.startOfSpeechSensitivityInput"></a>
+
+```csharp
+public string StartOfSpeechSensitivityInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EndOfSpeechSensitivity`<sup>Required</sup> <a name="EndOfSpeechSensitivity" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.endOfSpeechSensitivity"></a>
+
+```csharp
+public string EndOfSpeechSensitivity { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ModelId`<sup>Required</sup> <a name="ModelId" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.modelId"></a>
+
+```csharp
+public string ModelId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrefixPaddingMs`<sup>Required</sup> <a name="PrefixPaddingMs" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.prefixPaddingMs"></a>
+
+```csharp
+public double PrefixPaddingMs { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `SilenceDurationMs`<sup>Required</sup> <a name="SilenceDurationMs" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.silenceDurationMs"></a>
+
+```csharp
+public double SilenceDurationMs { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `StartOfSpeechSensitivity`<sup>Required</sup> <a name="StartOfSpeechSensitivity" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.startOfSpeechSensitivity"></a>
+
+```csharp
+public string StartOfSpeechSensitivity { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference.property.internalValue"></a>
+
+```csharp
+public DialogflowConversationProfileSttConfigGeminiAsrConfig InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a>
+
+---
+
+
 ### DialogflowConversationProfileSttConfigOutputReference <a name="DialogflowConversationProfileSttConfigOutputReference" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.Initializer"></a>
@@ -15825,12 +16349,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.putGeminiAsrConfig">PutGeminiAsrConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetAudioEncoding">ResetAudioEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetEnableWordInfo">ResetEnableWordInfo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetGeminiAsrConfig">ResetGeminiAsrConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetLanguageCode">ResetLanguageCode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetModel">ResetModel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetSampleRateHertz">ResetSampleRateHertz</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetSpeechModelVariant">ResetSpeechModelVariant</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetUseGeminiAsr">ResetUseGeminiAsr</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetUseTimeoutBasedEndpointing">ResetUseTimeoutBasedEndpointing</a></code> | *No description.* |
 
 ---
@@ -15985,6 +16512,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutGeminiAsrConfig` <a name="PutGeminiAsrConfig" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.putGeminiAsrConfig"></a>
+
+```csharp
+private void PutGeminiAsrConfig(DialogflowConversationProfileSttConfigGeminiAsrConfig Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.putGeminiAsrConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a>
+
+---
+
 ##### `ResetAudioEncoding` <a name="ResetAudioEncoding" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetAudioEncoding"></a>
 
 ```csharp
@@ -15995,6 +16534,12 @@ private void ResetAudioEncoding()
 
 ```csharp
 private void ResetEnableWordInfo()
+```
+
+##### `ResetGeminiAsrConfig` <a name="ResetGeminiAsrConfig" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetGeminiAsrConfig"></a>
+
+```csharp
+private void ResetGeminiAsrConfig()
 ```
 
 ##### `ResetLanguageCode` <a name="ResetLanguageCode" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetLanguageCode"></a>
@@ -16021,6 +16566,12 @@ private void ResetSampleRateHertz()
 private void ResetSpeechModelVariant()
 ```
 
+##### `ResetUseGeminiAsr` <a name="ResetUseGeminiAsr" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetUseGeminiAsr"></a>
+
+```csharp
+private void ResetUseGeminiAsr()
+```
+
 ##### `ResetUseTimeoutBasedEndpointing` <a name="ResetUseTimeoutBasedEndpointing" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.resetUseTimeoutBasedEndpointing"></a>
 
 ```csharp
@@ -16034,12 +16585,15 @@ private void ResetUseTimeoutBasedEndpointing()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.geminiAsrConfig">GeminiAsrConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference">DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.audioEncodingInput">AudioEncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.enableWordInfoInput">EnableWordInfoInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.geminiAsrConfigInput">GeminiAsrConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.languageCodeInput">LanguageCodeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.modelInput">ModelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.sampleRateHertzInput">SampleRateHertzInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.speechModelVariantInput">SpeechModelVariantInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.useGeminiAsrInput">UseGeminiAsrInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointingInput">UseTimeoutBasedEndpointingInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.audioEncoding">AudioEncoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.enableWordInfo">EnableWordInfo</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -16047,6 +16601,7 @@ private void ResetUseTimeoutBasedEndpointing()
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.model">Model</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.sampleRateHertz">SampleRateHertz</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.speechModelVariant">SpeechModelVariant</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.useGeminiAsr">UseGeminiAsr</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.useTimeoutBasedEndpointing">UseTimeoutBasedEndpointing</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfig">DialogflowConversationProfileSttConfig</a></code> | *No description.* |
 
@@ -16076,6 +16631,16 @@ public string Fqn { get; }
 
 ---
 
+##### `GeminiAsrConfig`<sup>Required</sup> <a name="GeminiAsrConfig" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.geminiAsrConfig"></a>
+
+```csharp
+public DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference GeminiAsrConfig { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference">DialogflowConversationProfileSttConfigGeminiAsrConfigOutputReference</a>
+
+---
+
 ##### `AudioEncodingInput`<sup>Optional</sup> <a name="AudioEncodingInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.audioEncodingInput"></a>
 
 ```csharp
@@ -16093,6 +16658,16 @@ public bool|IResolvable EnableWordInfoInput { get; }
 ```
 
 - *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `GeminiAsrConfigInput`<sup>Optional</sup> <a name="GeminiAsrConfigInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.geminiAsrConfigInput"></a>
+
+```csharp
+public DialogflowConversationProfileSttConfigGeminiAsrConfig GeminiAsrConfigInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigGeminiAsrConfig">DialogflowConversationProfileSttConfigGeminiAsrConfig</a>
 
 ---
 
@@ -16133,6 +16708,16 @@ public string SpeechModelVariantInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `UseGeminiAsrInput`<sup>Optional</sup> <a name="UseGeminiAsrInput" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.useGeminiAsrInput"></a>
+
+```csharp
+public bool|IResolvable UseGeminiAsrInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -16203,6 +16788,16 @@ public string SpeechModelVariant { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `UseGeminiAsr`<sup>Required</sup> <a name="UseGeminiAsr" id="@cdktn/provider-google.dialogflowConversationProfile.DialogflowConversationProfileSttConfigOutputReference.property.useGeminiAsr"></a>
+
+```csharp
+public bool|IResolvable UseGeminiAsr { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 

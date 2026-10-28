@@ -1,3 +1,3 @@
 # `data_google_bigquery_tables`
 
-Refer to the Terraform Registry for docs: [`data_google_bigquery_tables`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/bigquery_tables).
+Refer to the Terraform Registry for docs: [`data_google_bigquery_tables`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/bigquery_tables).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * For project-scoped endpoints, it is optional but must match the
   * endpoint's project if specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#billing_project_id NetworkSecurityFirewallEndpoint#billing_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#billing_project_id NetworkSecurityFirewallEndpoint#billing_project_id}
   */
   readonly billingProjectId?: string;
   /**
@@ -30,11 +30,11 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#deletion_policy NetworkSecurityFirewallEndpoint#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#deletion_policy NetworkSecurityFirewallEndpoint#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#id NetworkSecurityFirewallEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#id NetworkSecurityFirewallEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,46 +47,70 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#labels NetworkSecurityFirewallEndpoint#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#labels NetworkSecurityFirewallEndpoint#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location (zone) of the firewall endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#location NetworkSecurityFirewallEndpoint#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#location NetworkSecurityFirewallEndpoint#location}
   */
   readonly location: string;
   /**
   * The name of the firewall endpoint resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#name NetworkSecurityFirewallEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#name NetworkSecurityFirewallEndpoint#name}
   */
   readonly name: string;
   /**
   * The name of the parent this firewall endpoint belongs to.
   * Format: 'organizations/{organization_id}' or 'projects/{project_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#parent NetworkSecurityFirewallEndpoint#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#parent NetworkSecurityFirewallEndpoint#parent}
   */
   readonly parent: string;
   /**
   * endpoint_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#endpoint_settings NetworkSecurityFirewallEndpoint#endpoint_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#endpoint_settings NetworkSecurityFirewallEndpoint#endpoint_settings}
   */
   readonly endpointSettings?: NetworkSecurityFirewallEndpointEndpointSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#timeouts NetworkSecurityFirewallEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#timeouts NetworkSecurityFirewallEndpoint#timeouts}
   */
   readonly timeouts?: NetworkSecurityFirewallEndpointTimeouts;
+  /**
+  * wildfire_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_settings NetworkSecurityFirewallEndpoint#wildfire_settings}
+  */
+  readonly wildfireSettings?: NetworkSecurityFirewallEndpointWildfireSettings;
 }
 export interface NetworkSecurityFirewallEndpointEndpointSettings {
   /**
+  * The Palo Alto Networks content cloud region of the firewall endpoint,
+  * for example 'US_CENTRAL' or 'CANADA'. See
+  * [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.firewallEndpoints#contentcloudregion)
+  * for the list of supported regions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#content_cloud_region NetworkSecurityFirewallEndpoint#content_cloud_region}
+  */
+  readonly contentCloudRegion?: string;
+  /**
+  * Whether to block HTTP partial responses for the firewall endpoint.
+  * When 'true', resumption of blocked malicious HTTP file downloads is
+  * blocked by the firewall. 'false' provides maximum availability, 'true'
+  * provides maximum security.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#http_partial_response_blocked NetworkSecurityFirewallEndpoint#http_partial_response_blocked}
+  */
+  readonly httpPartialResponseBlocked?: boolean | cdktn.IResolvable;
+  /**
   * Indicates whether Jumbo Frames are enabled for the firewall endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#jumbo_frames_enabled NetworkSecurityFirewallEndpoint#jumbo_frames_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#jumbo_frames_enabled NetworkSecurityFirewallEndpoint#jumbo_frames_enabled}
   */
   readonly jumboFramesEnabled?: boolean | cdktn.IResolvable;
 }
@@ -97,6 +121,8 @@ export function networkSecurityFirewallEndpointEndpointSettingsToTerraform(struc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    content_cloud_region: cdktn.stringToTerraform(struct!.contentCloudRegion),
+    http_partial_response_blocked: cdktn.booleanToTerraform(struct!.httpPartialResponseBlocked),
     jumbo_frames_enabled: cdktn.booleanToTerraform(struct!.jumboFramesEnabled),
   }
 }
@@ -108,6 +134,18 @@ export function networkSecurityFirewallEndpointEndpointSettingsToHclTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    content_cloud_region: {
+      value: cdktn.stringToHclTerraform(struct!.contentCloudRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    http_partial_response_blocked: {
+      value: cdktn.booleanToHclTerraform(struct!.httpPartialResponseBlocked),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     jumbo_frames_enabled: {
       value: cdktn.booleanToHclTerraform(struct!.jumboFramesEnabled),
       isBlock: false,
@@ -134,6 +172,14 @@ export class NetworkSecurityFirewallEndpointEndpointSettingsOutputReference exte
   public get internalValue(): NetworkSecurityFirewallEndpointEndpointSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._contentCloudRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentCloudRegion = this._contentCloudRegion;
+    }
+    if (this._httpPartialResponseBlocked !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpPartialResponseBlocked = this._httpPartialResponseBlocked;
+    }
     if (this._jumboFramesEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.jumboFramesEnabled = this._jumboFramesEnabled;
@@ -144,12 +190,48 @@ export class NetworkSecurityFirewallEndpointEndpointSettingsOutputReference exte
   public set internalValue(value: NetworkSecurityFirewallEndpointEndpointSettings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._contentCloudRegion = undefined;
+      this._httpPartialResponseBlocked = undefined;
       this._jumboFramesEnabled = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._contentCloudRegion = value.contentCloudRegion;
+      this._httpPartialResponseBlocked = value.httpPartialResponseBlocked;
       this._jumboFramesEnabled = value.jumboFramesEnabled;
     }
+  }
+
+  // content_cloud_region - computed: true, optional: true, required: false
+  private _contentCloudRegion?: string; 
+  public get contentCloudRegion() {
+    return this.getStringAttribute('content_cloud_region');
+  }
+  public set contentCloudRegion(value: string) {
+    this._contentCloudRegion = value;
+  }
+  public resetContentCloudRegion() {
+    this._contentCloudRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentCloudRegionInput() {
+    return this._contentCloudRegion;
+  }
+
+  // http_partial_response_blocked - computed: false, optional: true, required: false
+  private _httpPartialResponseBlocked?: boolean | cdktn.IResolvable; 
+  public get httpPartialResponseBlocked() {
+    return this.getBooleanAttribute('http_partial_response_blocked');
+  }
+  public set httpPartialResponseBlocked(value: boolean | cdktn.IResolvable) {
+    this._httpPartialResponseBlocked = value;
+  }
+  public resetHttpPartialResponseBlocked() {
+    this._httpPartialResponseBlocked = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpPartialResponseBlockedInput() {
+    return this._httpPartialResponseBlocked;
   }
 
   // jumbo_frames_enabled - computed: false, optional: true, required: false
@@ -170,15 +252,15 @@ export class NetworkSecurityFirewallEndpointEndpointSettingsOutputReference exte
 }
 export interface NetworkSecurityFirewallEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#create NetworkSecurityFirewallEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#create NetworkSecurityFirewallEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#delete NetworkSecurityFirewallEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#delete NetworkSecurityFirewallEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#update NetworkSecurityFirewallEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#update NetworkSecurityFirewallEndpoint#update}
   */
   readonly update?: string;
 }
@@ -328,9 +410,406 @@ export class NetworkSecurityFirewallEndpointTimeoutsOutputReference extends cdkt
     return this._update;
   }
 }
+export interface NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings {
+  /**
+  * The maximum duration for which the firewall endpoint holds a file
+  * while waiting for an inline cloud analysis verdict before taking
+  * the configured timeout action (1ms to 240000ms, default 30000ms).
+  * A duration in seconds with up to nine fractional digits, ending with 's'.
+  * Example: "30s".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#max_analysis_duration NetworkSecurityFirewallEndpoint#max_analysis_duration}
+  */
+  readonly maxAnalysisDuration?: string;
+  /**
+  * Indicates whether logging is disabled when a WildFire inline cloud
+  * analysis submission times out.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#submission_timeout_logging_disabled NetworkSecurityFirewallEndpoint#submission_timeout_logging_disabled}
+  */
+  readonly submissionTimeoutLoggingDisabled?: boolean | cdktn.IResolvable;
+  /**
+  * The action to take when WildFire inline cloud analysis times out. Possible values: ["ALLOW", "DENY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#timeout_action NetworkSecurityFirewallEndpoint#timeout_action}
+  */
+  readonly timeoutAction?: string;
+}
+
+export function networkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsToTerraform(struct?: NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsOutputReference | NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    max_analysis_duration: cdktn.stringToTerraform(struct!.maxAnalysisDuration),
+    submission_timeout_logging_disabled: cdktn.booleanToTerraform(struct!.submissionTimeoutLoggingDisabled),
+    timeout_action: cdktn.stringToTerraform(struct!.timeoutAction),
+  }
+}
+
+
+export function networkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsToHclTerraform(struct?: NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsOutputReference | NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    max_analysis_duration: {
+      value: cdktn.stringToHclTerraform(struct!.maxAnalysisDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    submission_timeout_logging_disabled: {
+      value: cdktn.booleanToHclTerraform(struct!.submissionTimeoutLoggingDisabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    timeout_action: {
+      value: cdktn.stringToHclTerraform(struct!.timeoutAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxAnalysisDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxAnalysisDuration = this._maxAnalysisDuration;
+    }
+    if (this._submissionTimeoutLoggingDisabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.submissionTimeoutLoggingDisabled = this._submissionTimeoutLoggingDisabled;
+    }
+    if (this._timeoutAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutAction = this._timeoutAction;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxAnalysisDuration = undefined;
+      this._submissionTimeoutLoggingDisabled = undefined;
+      this._timeoutAction = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxAnalysisDuration = value.maxAnalysisDuration;
+      this._submissionTimeoutLoggingDisabled = value.submissionTimeoutLoggingDisabled;
+      this._timeoutAction = value.timeoutAction;
+    }
+  }
+
+  // max_analysis_duration - computed: true, optional: true, required: false
+  private _maxAnalysisDuration?: string; 
+  public get maxAnalysisDuration() {
+    return this.getStringAttribute('max_analysis_duration');
+  }
+  public set maxAnalysisDuration(value: string) {
+    this._maxAnalysisDuration = value;
+  }
+  public resetMaxAnalysisDuration() {
+    this._maxAnalysisDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAnalysisDurationInput() {
+    return this._maxAnalysisDuration;
+  }
+
+  // submission_timeout_logging_disabled - computed: false, optional: true, required: false
+  private _submissionTimeoutLoggingDisabled?: boolean | cdktn.IResolvable; 
+  public get submissionTimeoutLoggingDisabled() {
+    return this.getBooleanAttribute('submission_timeout_logging_disabled');
+  }
+  public set submissionTimeoutLoggingDisabled(value: boolean | cdktn.IResolvable) {
+    this._submissionTimeoutLoggingDisabled = value;
+  }
+  public resetSubmissionTimeoutLoggingDisabled() {
+    this._submissionTimeoutLoggingDisabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get submissionTimeoutLoggingDisabledInput() {
+    return this._submissionTimeoutLoggingDisabled;
+  }
+
+  // timeout_action - computed: true, optional: true, required: false
+  private _timeoutAction?: string; 
+  public get timeoutAction() {
+    return this.getStringAttribute('timeout_action');
+  }
+  public set timeoutAction(value: string) {
+    this._timeoutAction = value;
+  }
+  public resetTimeoutAction() {
+    this._timeoutAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutActionInput() {
+    return this._timeoutAction;
+  }
+}
+export interface NetworkSecurityFirewallEndpointWildfireSettings {
+  /**
+  * Indicates whether WildFire is enabled for the firewall endpoint.
+  * Enabling WildFire requires accepting the WildFire end-user license
+  * agreement (EULA) for the endpoint's billing project; see
+  * [Configure WildFire](https://docs.cloud.google.com/firewall/docs/configure-wildfire).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#enabled NetworkSecurityFirewallEndpoint#enabled}
+  */
+  readonly enabled?: boolean | cdktn.IResolvable;
+  /**
+  * The duration for which the firewall endpoint waits for a real-time
+  * signature lookup response from the WildFire cloud before taking the
+  * configured timeout action (1ms to 5000ms, default 1000ms).
+  * A duration in seconds with up to nine fractional digits, ending with 's'.
+  * Example: "1s".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_realtime_lookup_duration NetworkSecurityFirewallEndpoint#wildfire_realtime_lookup_duration}
+  */
+  readonly wildfireRealtimeLookupDuration?: string;
+  /**
+  * The action to take when a WildFire real-time signature lookup times out. Possible values: ["ALLOW", "DENY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_realtime_lookup_timeout_action NetworkSecurityFirewallEndpoint#wildfire_realtime_lookup_timeout_action}
+  */
+  readonly wildfireRealtimeLookupTimeoutAction?: string;
+  /**
+  * The WildFire region for the firewall endpoint, for example
+  * 'UNITED_STATES' or 'CANADA'. See
+  * [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.firewallEndpoints#wildfireregion)
+  * for the list of supported regions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_region NetworkSecurityFirewallEndpoint#wildfire_region}
+  */
+  readonly wildfireRegion?: string;
+  /**
+  * wildfire_inline_cloud_analysis_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_inline_cloud_analysis_settings NetworkSecurityFirewallEndpoint#wildfire_inline_cloud_analysis_settings}
+  */
+  readonly wildfireInlineCloudAnalysisSettings?: NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings;
+}
+
+export function networkSecurityFirewallEndpointWildfireSettingsToTerraform(struct?: NetworkSecurityFirewallEndpointWildfireSettingsOutputReference | NetworkSecurityFirewallEndpointWildfireSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    wildfire_realtime_lookup_duration: cdktn.stringToTerraform(struct!.wildfireRealtimeLookupDuration),
+    wildfire_realtime_lookup_timeout_action: cdktn.stringToTerraform(struct!.wildfireRealtimeLookupTimeoutAction),
+    wildfire_region: cdktn.stringToTerraform(struct!.wildfireRegion),
+    wildfire_inline_cloud_analysis_settings: networkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsToTerraform(struct!.wildfireInlineCloudAnalysisSettings),
+  }
+}
+
+
+export function networkSecurityFirewallEndpointWildfireSettingsToHclTerraform(struct?: NetworkSecurityFirewallEndpointWildfireSettingsOutputReference | NetworkSecurityFirewallEndpointWildfireSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    wildfire_realtime_lookup_duration: {
+      value: cdktn.stringToHclTerraform(struct!.wildfireRealtimeLookupDuration),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildfire_realtime_lookup_timeout_action: {
+      value: cdktn.stringToHclTerraform(struct!.wildfireRealtimeLookupTimeoutAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildfire_region: {
+      value: cdktn.stringToHclTerraform(struct!.wildfireRegion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildfire_inline_cloud_analysis_settings: {
+      value: networkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsToHclTerraform(struct!.wildfireInlineCloudAnalysisSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityFirewallEndpointWildfireSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityFirewallEndpointWildfireSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._wildfireRealtimeLookupDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireRealtimeLookupDuration = this._wildfireRealtimeLookupDuration;
+    }
+    if (this._wildfireRealtimeLookupTimeoutAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireRealtimeLookupTimeoutAction = this._wildfireRealtimeLookupTimeoutAction;
+    }
+    if (this._wildfireRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireRegion = this._wildfireRegion;
+    }
+    if (this._wildfireInlineCloudAnalysisSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireInlineCloudAnalysisSettings = this._wildfireInlineCloudAnalysisSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityFirewallEndpointWildfireSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._wildfireRealtimeLookupDuration = undefined;
+      this._wildfireRealtimeLookupTimeoutAction = undefined;
+      this._wildfireRegion = undefined;
+      this._wildfireInlineCloudAnalysisSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._wildfireRealtimeLookupDuration = value.wildfireRealtimeLookupDuration;
+      this._wildfireRealtimeLookupTimeoutAction = value.wildfireRealtimeLookupTimeoutAction;
+      this._wildfireRegion = value.wildfireRegion;
+      this._wildfireInlineCloudAnalysisSettings.internalValue = value.wildfireInlineCloudAnalysisSettings;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // wildfire_realtime_lookup_duration - computed: true, optional: true, required: false
+  private _wildfireRealtimeLookupDuration?: string; 
+  public get wildfireRealtimeLookupDuration() {
+    return this.getStringAttribute('wildfire_realtime_lookup_duration');
+  }
+  public set wildfireRealtimeLookupDuration(value: string) {
+    this._wildfireRealtimeLookupDuration = value;
+  }
+  public resetWildfireRealtimeLookupDuration() {
+    this._wildfireRealtimeLookupDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireRealtimeLookupDurationInput() {
+    return this._wildfireRealtimeLookupDuration;
+  }
+
+  // wildfire_realtime_lookup_timeout_action - computed: true, optional: true, required: false
+  private _wildfireRealtimeLookupTimeoutAction?: string; 
+  public get wildfireRealtimeLookupTimeoutAction() {
+    return this.getStringAttribute('wildfire_realtime_lookup_timeout_action');
+  }
+  public set wildfireRealtimeLookupTimeoutAction(value: string) {
+    this._wildfireRealtimeLookupTimeoutAction = value;
+  }
+  public resetWildfireRealtimeLookupTimeoutAction() {
+    this._wildfireRealtimeLookupTimeoutAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireRealtimeLookupTimeoutActionInput() {
+    return this._wildfireRealtimeLookupTimeoutAction;
+  }
+
+  // wildfire_region - computed: true, optional: true, required: false
+  private _wildfireRegion?: string; 
+  public get wildfireRegion() {
+    return this.getStringAttribute('wildfire_region');
+  }
+  public set wildfireRegion(value: string) {
+    this._wildfireRegion = value;
+  }
+  public resetWildfireRegion() {
+    this._wildfireRegion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireRegionInput() {
+    return this._wildfireRegion;
+  }
+
+  // wildfire_inline_cloud_analysis_settings - computed: false, optional: true, required: false
+  private _wildfireInlineCloudAnalysisSettings = new NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettingsOutputReference(this, "wildfire_inline_cloud_analysis_settings");
+  public get wildfireInlineCloudAnalysisSettings() {
+    return this._wildfireInlineCloudAnalysisSettings;
+  }
+  public putWildfireInlineCloudAnalysisSettings(value: NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings) {
+    this._wildfireInlineCloudAnalysisSettings.internalValue = value;
+  }
+  public resetWildfireInlineCloudAnalysisSettings() {
+    this._wildfireInlineCloudAnalysisSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireInlineCloudAnalysisSettingsInput() {
+    return this._wildfireInlineCloudAnalysisSettings.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}
 */
 export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
 
@@ -346,7 +825,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityFirewallEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityFirewallEndpoint to import
-  * @param importFromId The id of the existing NetworkSecurityFirewallEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityFirewallEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityFirewallEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -358,7 +837,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -369,7 +848,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_firewall_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -389,6 +868,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
     this._parent = config.parent;
     this._endpointSettings.internalValue = config.endpointSettings;
     this._timeouts.internalValue = config.timeouts;
+    this._wildfireSettings.internalValue = config.wildfireSettings;
   }
 
   // ==========
@@ -572,6 +1052,22 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // wildfire_settings - computed: false, optional: true, required: false
+  private _wildfireSettings = new NetworkSecurityFirewallEndpointWildfireSettingsOutputReference(this, "wildfire_settings");
+  public get wildfireSettings() {
+    return this._wildfireSettings;
+  }
+  public putWildfireSettings(value: NetworkSecurityFirewallEndpointWildfireSettings) {
+    this._wildfireSettings.internalValue = value;
+  }
+  public resetWildfireSettings() {
+    this._wildfireSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireSettingsInput() {
+    return this._wildfireSettings.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -587,6 +1083,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
       parent: cdktn.stringToTerraform(this._parent),
       endpoint_settings: networkSecurityFirewallEndpointEndpointSettingsToTerraform(this._endpointSettings.internalValue),
       timeouts: networkSecurityFirewallEndpointTimeoutsToTerraform(this._timeouts.internalValue),
+      wildfire_settings: networkSecurityFirewallEndpointWildfireSettingsToTerraform(this._wildfireSettings.internalValue),
     };
   }
 
@@ -645,6 +1142,12 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "NetworkSecurityFirewallEndpointTimeouts",
+      },
+      wildfire_settings: {
+        value: networkSecurityFirewallEndpointWildfireSettingsToHclTerraform(this._wildfireSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkSecurityFirewallEndpointWildfireSettingsList",
       },
     };
 

@@ -4,7 +4,7 @@
 
 ### BiglakeHiveDatabaseIamBinding <a name="BiglakeHiveDatabaseIamBinding" id="@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding google_biglake_hive_database_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding google_biglake_hive_database_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer"></a>
 
@@ -40,13 +40,13 @@ BiglakeHiveDatabaseIamBinding.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition">BiglakeHiveDatabaseIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBinding.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#condition BiglakeHiveDatabaseIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#condition BiglakeHiveDatabaseIamBinding#condition}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}.
 
 ---
 
@@ -650,7 +650,7 @@ The construct id used in the generated config for the BiglakeHiveDatabaseIamBind
 
 The id of the existing BiglakeHiveDatabaseIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1028,9 +1028,9 @@ BiglakeHiveDatabaseIamBindingCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#expression BiglakeHiveDatabaseIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#title BiglakeHiveDatabaseIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#description BiglakeHiveDatabaseIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#expression BiglakeHiveDatabaseIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#title BiglakeHiveDatabaseIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#description BiglakeHiveDatabaseIamBinding#description}. |
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#expression BiglakeHiveDatabaseIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#expression BiglakeHiveDatabaseIamBinding#expression}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#title BiglakeHiveDatabaseIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#title BiglakeHiveDatabaseIamBinding#title}.
 
 ---
 
@@ -1066,7 +1066,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#description BiglakeHiveDatabaseIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#description BiglakeHiveDatabaseIamBinding#description}.
 
 ---
 
@@ -1106,13 +1106,13 @@ BiglakeHiveDatabaseIamBindingConfig.builder()
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.members">members</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingCondition">BiglakeHiveDatabaseIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamBinding.BiglakeHiveDatabaseIamBindingConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}. |
 
 ---
 
@@ -1194,7 +1194,7 @@ public java.lang.String getCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#catalog BiglakeHiveDatabaseIamBinding#catalog}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public java.util.List<java.lang.String> getMembers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#members BiglakeHiveDatabaseIamBinding#members}.
 
 ---
 
@@ -1218,7 +1218,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#name BiglakeHiveDatabaseIamBinding#name}.
 
 ---
 
@@ -1230,7 +1230,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#role BiglakeHiveDatabaseIamBinding#role}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public BiglakeHiveDatabaseIamBindingCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#condition BiglakeHiveDatabaseIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#condition BiglakeHiveDatabaseIamBinding#condition}
 
 ---
 
@@ -1256,7 +1256,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#id BiglakeHiveDatabaseIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1271,7 +1271,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database_iam_binding#project BiglakeHiveDatabaseIamBinding#project}.
 
 ---
 

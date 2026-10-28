@@ -4,12 +4,12 @@
 
 ### DataGoogleIamWorkloadIdentityPoolJwks <a name="DataGoogleIamWorkloadIdentityPoolJwks" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks google_iam_workload_identity_pool_jwks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks google_iam_workload_identity_pool_jwks}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.NewDataGoogleIamWorkloadIdentityPoolJwks(scope Construct, id *string, config DataGoogleIamWorkloadIdentityPoolJwksConfig) DataGoogleIamWorkloadIdentityPoolJwks
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwks.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwks_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwks_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwks_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwks_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataGoogleIamWorkloadIdent
 
 The id of the existing DataGoogleIamWorkloadIdentityPoolJwks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,7 +680,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 &datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwksConfig {
 	Connection: interface{},
@@ -692,7 +692,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamwor
 	Provisioners: *[]interface{},
 	ResourceName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts,
 }
 ```
 
@@ -708,7 +708,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamwor
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.property.resourceName">ResourceName</a></code> | <code>*string</code> | The JWKS URI to retrieve the public keys from (e.g. from google_iam_workload_identity_pool_openid_config.jwks_uri). |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#id DataGoogleIamWorkloadIdentityPoolJwks#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#id DataGoogleIamWorkloadIdentityPoolJwks#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts">DataGoogleIamWorkloadIdentityPoolJwksTimeouts</a></code> | timeouts block. |
 
 ---
@@ -793,7 +793,7 @@ ResourceName *string
 
 The JWKS URI to retrieve the public keys from (e.g. from google_iam_workload_identity_pool_openid_config.jwks_uri).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#resource_name DataGoogleIamWorkloadIdentityPoolJwks#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#resource_name DataGoogleIamWorkloadIdentityPoolJwks#resource_name}
 
 ---
 
@@ -805,7 +805,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#id DataGoogleIamWorkloadIdentityPoolJwks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#id DataGoogleIamWorkloadIdentityPoolJwks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ Timeouts DataGoogleIamWorkloadIdentityPoolJwksTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#timeouts DataGoogleIamWorkloadIdentityPoolJwks#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#timeouts DataGoogleIamWorkloadIdentityPoolJwks#timeouts}
 
 ---
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 &datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwksKeys {
 
@@ -844,7 +844,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamwor
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 &datagoogleiamworkloadidentitypooljwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts {
 	Read: *string,
@@ -855,7 +855,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamwor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#read DataGoogleIamWorkloadIdentityPoolJwks#read}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#read DataGoogleIamWorkloadIdentityPoolJwks#read}. |
 
 ---
 
@@ -867,7 +867,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#read DataGoogleIamWorkloadIdentityPoolJwks#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/iam_workload_identity_pool_jwks#read DataGoogleIamWorkloadIdentityPoolJwks#read}.
 
 ---
 
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.NewDataGoogleIamWorkloadIdentityPoolJwksKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleIamWorkloadIdentityPoolJwksKeysList
 ```
@@ -1027,7 +1027,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.NewDataGoogleIamWorkloadIdentityPoolJwksKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleIamWorkloadIdentityPoolJwksKeysOutputReference
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() DataGoogleIamWorkloadIdentityPoolJwksKeys
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolJwks.DataGoogleIamWorkloadIdentityPoolJwksTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypooljwks"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleiamworkloadidentitypooljwks"
 
 datagoogleiamworkloadidentitypooljwks.NewDataGoogleIamWorkloadIdentityPoolJwksTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGoogleIamWorkloadIdentityPoolJwksTimeoutsOutputReference
 ```

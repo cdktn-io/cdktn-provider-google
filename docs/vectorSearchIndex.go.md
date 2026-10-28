@@ -4,12 +4,12 @@
 
 ### VectorSearchIndex <a name="VectorSearchIndex" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index google_vector_search_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index google_vector_search_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndex(scope Construct, id *string, config VectorSearchIndexConfig) VectorSearchIndex
 ```
@@ -87,6 +87,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetSkipWait">ResetSkipWait</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetStoreFields">ResetStoreFields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -497,6 +498,12 @@ func ResetLabels()
 func ResetProject()
 ```
 
+##### `ResetSkipWait` <a name="ResetSkipWait" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetSkipWait"></a>
+
+```go
+func ResetSkipWait()
+```
+
 ##### `ResetStoreFields` <a name="ResetStoreFields" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.resetStoreFields"></a>
 
 ```go
@@ -523,7 +530,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsConstruct(x interface{}) *bool
 ```
@@ -555,7 +562,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -569,7 +576,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -583,7 +590,7 @@ vectorsearchindex.VectorSearchIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.VectorSearchIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +619,7 @@ The construct id used in the generated config for the VectorSearchIndex to impor
 
 The id of the existing VectorSearchIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -664,6 +671,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.skipWaitInput">SkipWaitInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.storeFieldsInput">StoreFieldsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.collectionId">CollectionId</a></code> | <code>*string</code> | *No description.* |
@@ -678,6 +686,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.skipWait">SkipWait</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.storeFields">StoreFields</a></code> | <code>*[]*string</code> | *No description.* |
 
 ---
@@ -1044,6 +1053,16 @@ func ProjectInput() *string
 
 ---
 
+##### `SkipWaitInput`<sup>Optional</sup> <a name="SkipWaitInput" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.skipWaitInput"></a>
+
+```go
+func SkipWaitInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `StoreFieldsInput`<sup>Optional</sup> <a name="StoreFieldsInput" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.storeFieldsInput"></a>
 
 ```go
@@ -1184,6 +1203,16 @@ func Project() *string
 
 ---
 
+##### `SkipWait`<sup>Required</sup> <a name="SkipWait" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.skipWait"></a>
+
+```go
+func SkipWait() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `StoreFields`<sup>Required</sup> <a name="StoreFields" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.property.storeFields"></a>
 
 ```go
@@ -1219,7 +1248,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexConfig {
 	Connection: interface{},
@@ -1233,9 +1262,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchinde
 	IndexField: *string,
 	IndexId: *string,
 	Location: *string,
-	DedicatedInfrastructure: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructure,
+	DedicatedInfrastructure: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructure,
 	DeletionPolicy: *string,
-	DenseScann: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vectorSearchIndex.VectorSearchIndexDenseScann,
+	DenseScann: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vectorSearchIndex.VectorSearchIndexDenseScann,
 	Description: *string,
 	DisplayName: *string,
 	DistanceMetric: *string,
@@ -1243,8 +1272,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchinde
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
+	SkipWait: interface{},
 	StoreFields: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vectorSearchIndex.VectorSearchIndexTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vectorSearchIndex.VectorSearchIndexTimeouts,
 }
 ```
 
@@ -1270,9 +1300,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchinde
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-specified display name of the index. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.distanceMetric">DistanceMetric</a></code> | <code>*string</code> | Distance metric used for indexing. If not specified, will default to 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"]. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.filterFields">FilterFields</a></code> | <code>*[]*string</code> | The fields to push into the index to enable fast ANN inline filtering. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#project VectorSearchIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#project VectorSearchIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.skipWait">SkipWait</a></code> | <code>interface{}</code> | Whether to skip waiting for the index to be created. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.storeFields">StoreFields</a></code> | <code>*[]*string</code> | The fields to push into the index to enable inline data retrieval. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts">VectorSearchIndexTimeouts</a></code> | timeouts block. |
 
@@ -1358,7 +1389,7 @@ CollectionId *string
 
 The ID of the parent Collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
 
 ---
 
@@ -1372,7 +1403,7 @@ IndexField *string
 
 The collection schema field to index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
 
 ---
 
@@ -1391,7 +1422,7 @@ The id must be 1-63 characters long, and comply with
 Specifically, it must be 1-63 characters long and match the regular
 expression '[a-z](?:%5B-a-z0-9%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
 
 ---
 
@@ -1405,7 +1436,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
 
 ---
 
@@ -1419,7 +1450,7 @@ DedicatedInfrastructure VectorSearchIndexDedicatedInfrastructure
 
 dedicated_infrastructure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
 
 ---
 
@@ -1440,7 +1471,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
 
 ---
 
@@ -1454,7 +1485,7 @@ DenseScann VectorSearchIndexDenseScann
 
 dense_scann block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
 
 ---
 
@@ -1468,7 +1499,7 @@ Description *string
 
 User-specified description of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
 
 ---
 
@@ -1482,7 +1513,7 @@ DisplayName *string
 
 User-specified display name of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
 
 ---
 
@@ -1496,7 +1527,7 @@ DistanceMetric *string
 
 Distance metric used for indexing. If not specified, will default to 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
 
 ---
 
@@ -1510,7 +1541,7 @@ FilterFields *[]*string
 
 The fields to push into the index to enable fast ANN inline filtering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
 
 ---
 
@@ -1522,7 +1553,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1542,7 +1573,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
 
 ---
 
@@ -1554,7 +1585,31 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#project VectorSearchIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#project VectorSearchIndex#project}.
+
+---
+
+##### `SkipWait`<sup>Optional</sup> <a name="SkipWait" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.skipWait"></a>
+
+```go
+SkipWait interface{}
+```
+
+- *Type:* interface{}
+
+Whether to skip waiting for the index to be created.
+
+Building an ANN
+index over a large collection can take several hours; setting 'skip_wait'
+to 'true' causes Terraform to return as soon as the creation request is
+accepted rather than blocking until the long-running build completes
+(which can exceed CI/CD timeouts or short-lived Terraform runner
+credentials). Leave this set to 'false' (the default) if downstream
+resources or workloads depend on the index being ready to serve queries
+immediately after 'terraform apply', or if you want Terraform to fail
+synchronously when an asynchronous index build fails.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#skip_wait VectorSearchIndex#skip_wait}
 
 ---
 
@@ -1568,7 +1623,7 @@ StoreFields *[]*string
 
 The fields to push into the index to enable inline data retrieval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
 
 ---
 
@@ -1582,7 +1637,7 @@ Timeouts VectorSearchIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
 
 ---
 
@@ -1591,10 +1646,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDedicatedInfrastructure {
-	AutoscalingSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec,
+	AutoscalingSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec,
 	Mode: *string,
 }
 ```
@@ -1618,7 +1673,7 @@ AutoscalingSpec VectorSearchIndexDedicatedInfrastructureAutoscalingSpec
 
 autoscaling_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
 
 ---
 
@@ -1632,7 +1687,7 @@ Mode *string
 
 Mode of the dedicated infrastructure. Defaults to 'PERFORMANCE_OPTIMIZED'. Possible values: ["MODE_UNSPECIFIED", "STORAGE_OPTIMIZED", "PERFORMANCE_OPTIMIZED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
 
 ---
 
@@ -1641,7 +1696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpec {
 	MaxReplicaCount: *f64,
@@ -1672,7 +1727,7 @@ Must be >= 'min_replica_count'
 and <= '1000'. If not set or set to '0', defaults to the greater
 of 'min_replica_count' and '2' (or '5' for the v1beta version).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
 
 ---
 
@@ -1689,7 +1744,7 @@ The minimum number of replicas.
 If not set or set to '0', defaults
 to '2'. Must be >= '1' and <= '1000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
 
 ---
 
@@ -1698,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDenseScann.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexDenseScann {
 	FeatureNormType: *string,
@@ -1723,7 +1778,7 @@ FeatureNormType *string
 
 Feature norm type for the ScaNN index. Possible values: ["FEATURE_NORM_TYPE_UNSPECIFIED", "NONE", "UNIT_L2_NORM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
 
 ---
 
@@ -1732,7 +1787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 &vectorsearchindex.VectorSearchIndexTimeouts {
 	Create: *string,
@@ -1745,9 +1800,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchinde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#update VectorSearchIndex#update}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#update VectorSearchIndex#update}. |
 
 ---
 
@@ -1759,7 +1814,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
 
 ---
 
@@ -1771,7 +1826,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}.
 
 ---
 
@@ -1783,7 +1838,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vector_search_index#update VectorSearchIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#update VectorSearchIndex#update}.
 
 ---
 
@@ -1794,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureAutoscalingSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDedicatedInfrastructureAutoscalingSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDedicatedInfrastructureAutoscalingSpecOutputReference
 ```
@@ -2101,7 +2156,7 @@ func InternalValue() VectorSearchIndexDedicatedInfrastructureAutoscalingSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDedicatedInfrastructureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDedicatedInfrastructureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDedicatedInfrastructureOutputReference
 ```
@@ -2421,7 +2476,7 @@ func InternalValue() VectorSearchIndexDedicatedInfrastructure
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexDenseScannOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexDenseScannOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexDenseScannOutputReference
 ```
@@ -2699,7 +2754,7 @@ func InternalValue() VectorSearchIndexDenseScann
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vectorsearchindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vectorsearchindex"
 
 vectorsearchindex.NewVectorSearchIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VectorSearchIndexTimeoutsOutputReference
 ```

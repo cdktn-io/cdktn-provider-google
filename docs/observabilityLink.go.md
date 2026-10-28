@@ -4,12 +4,12 @@
 
 ### ObservabilityLink <a name="ObservabilityLink" id="@cdktn/provider-google.observabilityLink.ObservabilityLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link google_observability_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link google_observability_link}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityLink.ObservabilityLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 observabilitylink.NewObservabilityLink(scope Construct, id *string, config ObservabilityLinkConfig) ObservabilityLink
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.observabilityLink.ObservabilityLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 observabilitylink.ObservabilityLink_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.observabilityLink.ObservabilityLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 observabilitylink.ObservabilityLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ observabilitylink.ObservabilityLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.observabilityLink.ObservabilityLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 observabilitylink.ObservabilityLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ observabilitylink.ObservabilityLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.observabilityLink.ObservabilityLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 observabilitylink.ObservabilityLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the ObservabilityLink to impor
 
 The id of the existing ObservabilityLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 &observabilitylink.ObservabilityLinkConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylin
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.observabilityLink.ObservabilityLinkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.observabilityLink.ObservabilityLinkTimeouts,
 }
 ```
 
@@ -1027,8 +1027,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylin
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.description">Description</a></code> | <code>*string</code> | Description of the link. |
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User friendly display name. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#id ObservabilityLink#id}. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#project ObservabilityLink#project}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#id ObservabilityLink#id}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#project ObservabilityLink#project}. |
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts">ObservabilityLinkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1113,7 +1113,7 @@ Bucket *string
 
 The bucket of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#bucket ObservabilityLink#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#bucket ObservabilityLink#bucket}
 
 ---
 
@@ -1127,7 +1127,7 @@ Dataset *string
 
 The dataset of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#dataset ObservabilityLink#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#dataset ObservabilityLink#dataset}
 
 ---
 
@@ -1141,7 +1141,7 @@ LinkId *string
 
 The client-assigned identifier for the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#link_id ObservabilityLink#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#link_id ObservabilityLink#link_id}
 
 ---
 
@@ -1155,7 +1155,7 @@ Location *string
 
 The location of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#location ObservabilityLink#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#location ObservabilityLink#location}
 
 ---
 
@@ -1176,7 +1176,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#deletion_policy ObservabilityLink#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#deletion_policy ObservabilityLink#deletion_policy}
 
 ---
 
@@ -1190,7 +1190,7 @@ Description *string
 
 Description of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#description ObservabilityLink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#description ObservabilityLink#description}
 
 ---
 
@@ -1204,7 +1204,7 @@ DisplayName *string
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#display_name ObservabilityLink#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#display_name ObservabilityLink#display_name}
 
 ---
 
@@ -1216,7 +1216,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#id ObservabilityLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#id ObservabilityLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1231,7 +1231,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#project ObservabilityLink#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#project ObservabilityLink#project}.
 
 ---
 
@@ -1245,7 +1245,7 @@ Timeouts ObservabilityLinkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#timeouts ObservabilityLink#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#timeouts ObservabilityLink#timeouts}
 
 ---
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 &observabilitylink.ObservabilityLinkTimeouts {
 	Create: *string,
@@ -1267,9 +1267,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#create ObservabilityLink#create}. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#delete ObservabilityLink#delete}. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#update ObservabilityLink#update}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#create ObservabilityLink#create}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#delete ObservabilityLink#delete}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#update ObservabilityLink#update}. |
 
 ---
 
@@ -1281,7 +1281,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#create ObservabilityLink#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#create ObservabilityLink#create}.
 
 ---
 
@@ -1293,7 +1293,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#delete ObservabilityLink#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#delete ObservabilityLink#delete}.
 
 ---
 
@@ -1305,7 +1305,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#update ObservabilityLink#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_link#update ObservabilityLink#update}.
 
 ---
 
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitylink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/observabilitylink"
 
 observabilitylink.NewObservabilityLinkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityLinkTimeoutsOutputReference
 ```

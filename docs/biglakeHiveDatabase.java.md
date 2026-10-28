@@ -4,7 +4,7 @@
 
 ### BiglakeHiveDatabase <a name="BiglakeHiveDatabase" id="@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database google_biglake_hive_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database google_biglake_hive_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer"></a>
 
@@ -46,10 +46,10 @@ BiglakeHiveDatabase.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Database to create. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the database. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.locationUri">locationUri</a></code> | <code>java.lang.String</code> | Cloud Storage location path where the database exists. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Additional parameters associated with the database. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabase.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts">BiglakeHiveDatabaseTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Hive catalog where the database to create is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#catalog BiglakeHiveDatabase#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#catalog BiglakeHiveDatabase#catalog}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Database to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#name BiglakeHiveDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#name BiglakeHiveDatabase#name}
 
 ---
 
@@ -147,7 +147,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#deletion_policy BiglakeHiveDatabase#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#deletion_policy BiglakeHiveDatabase#deletion_policy}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#description BiglakeHiveDatabase#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#description BiglakeHiveDatabase#description}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ Cloud Storage location path where the database exists.
 If unspecified, the database will be stored in the catalog location.
 Format: gs://bucket/path/to/database
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#location_uri BiglakeHiveDatabase#location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#location_uri BiglakeHiveDatabase#location_uri}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Additional parameters associated with the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#parameters BiglakeHiveDatabase#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#parameters BiglakeHiveDatabase#parameters}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#timeouts BiglakeHiveDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#timeouts BiglakeHiveDatabase#timeouts}
 
 ---
 
@@ -720,7 +720,7 @@ The construct id used in the generated config for the BiglakeHiveDatabase to imp
 
 The id of the existing BiglakeHiveDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1177,10 +1177,10 @@ BiglakeHiveDatabaseConfig.builder()
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | Database to create. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the database. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.locationUri">locationUri</a></code> | <code>java.lang.String</code> | Cloud Storage location path where the database exists. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Additional parameters associated with the database. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts">BiglakeHiveDatabaseTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1265,7 +1265,7 @@ public java.lang.String getCatalog();
 
 Hive catalog where the database to create is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#catalog BiglakeHiveDatabase#catalog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#catalog BiglakeHiveDatabase#catalog}
 
 ---
 
@@ -1279,7 +1279,7 @@ public java.lang.String getName();
 
 Database to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#name BiglakeHiveDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#name BiglakeHiveDatabase#name}
 
 ---
 
@@ -1300,7 +1300,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#deletion_policy BiglakeHiveDatabase#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#deletion_policy BiglakeHiveDatabase#deletion_policy}
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.String getDescription();
 
 Description of the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#description BiglakeHiveDatabase#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#description BiglakeHiveDatabase#description}
 
 ---
 
@@ -1326,7 +1326,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#id BiglakeHiveDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1346,7 +1346,7 @@ Cloud Storage location path where the database exists.
 If unspecified, the database will be stored in the catalog location.
 Format: gs://bucket/path/to/database
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#location_uri BiglakeHiveDatabase#location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#location_uri BiglakeHiveDatabase#location_uri}
 
 ---
 
@@ -1360,7 +1360,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 Additional parameters associated with the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#parameters BiglakeHiveDatabase#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#parameters BiglakeHiveDatabase#parameters}
 
 ---
 
@@ -1372,7 +1372,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#project BiglakeHiveDatabase#project}.
 
 ---
 
@@ -1386,7 +1386,7 @@ public BiglakeHiveDatabaseTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#timeouts BiglakeHiveDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#timeouts BiglakeHiveDatabase#timeouts}
 
 ---
 
@@ -1408,9 +1408,9 @@ BiglakeHiveDatabaseTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#create BiglakeHiveDatabase#create}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#delete BiglakeHiveDatabase#delete}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#update BiglakeHiveDatabase#update}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#create BiglakeHiveDatabase#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#delete BiglakeHiveDatabase#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabase.BiglakeHiveDatabaseTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#update BiglakeHiveDatabase#update}. |
 
 ---
 
@@ -1422,7 +1422,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#create BiglakeHiveDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#create BiglakeHiveDatabase#create}.
 
 ---
 
@@ -1434,7 +1434,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#delete BiglakeHiveDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#delete BiglakeHiveDatabase#delete}.
 
 ---
 
@@ -1446,7 +1446,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database#update BiglakeHiveDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_database#update BiglakeHiveDatabase#update}.
 
 ---
 

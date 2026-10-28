@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineSchema <a name="DiscoveryEngineSchema" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema google_discovery_engine_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema google_discovery_engine_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer"></a>
 
@@ -45,9 +45,9 @@ DiscoveryEngineSchema.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu". |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.schemaId">schemaId</a></code> | <code>java.lang.String</code> | The unique id of the schema. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.jsonSchema">jsonSchema</a></code> | <code>java.lang.String</code> | The JSON representation of the schema. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchema.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts">DiscoveryEngineSchemaTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The unique id of the data store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#data_store_id DiscoveryEngineSchema#data_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#data_store_id DiscoveryEngineSchema#data_store_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#location DiscoveryEngineSchema#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#location DiscoveryEngineSchema#location}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique id of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#schema_id DiscoveryEngineSchema#schema_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#schema_id DiscoveryEngineSchema#schema_id}
 
 ---
 
@@ -155,7 +155,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#deletion_policy DiscoveryEngineSchema#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#deletion_policy DiscoveryEngineSchema#deletion_policy}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -176,7 +176,14 @@ If you experience problems setting this value it might not be settable. Please t
 
 The JSON representation of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#json_schema DiscoveryEngineSchema#json_schema}
+Changes are applied in place and must be backward compatible: existing fields
+can't be removed or have their type changed. Updating the schema triggers
+reindexing of all documents in the data store, which can take hours for large
+data stores and may incur costs. See
+[Update a schema for structured data](https://cloud.google.com/generative-ai-app-builder/docs/update-schemas)
+for details.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#json_schema DiscoveryEngineSchema#json_schema}
 
 ---
 
@@ -184,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}.
 
 ---
 
@@ -194,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#timeouts DiscoveryEngineSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#timeouts DiscoveryEngineSchema#timeouts}
 
 ---
 
@@ -691,7 +698,7 @@ The construct id used in the generated config for the DiscoveryEngineSchema to i
 
 The id of the existing DiscoveryEngineSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1114,9 +1121,9 @@ DiscoveryEngineSchemaConfig.builder()
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu". |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.schemaId">schemaId</a></code> | <code>java.lang.String</code> | The unique id of the schema. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.jsonSchema">jsonSchema</a></code> | <code>java.lang.String</code> | The JSON representation of the schema. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts">DiscoveryEngineSchemaTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1201,7 +1208,7 @@ public java.lang.String getDataStoreId();
 
 The unique id of the data store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#data_store_id DiscoveryEngineSchema#data_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#data_store_id DiscoveryEngineSchema#data_store_id}
 
 ---
 
@@ -1215,7 +1222,7 @@ public java.lang.String getLocation();
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#location DiscoveryEngineSchema#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#location DiscoveryEngineSchema#location}
 
 ---
 
@@ -1229,7 +1236,7 @@ public java.lang.String getSchemaId();
 
 The unique id of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#schema_id DiscoveryEngineSchema#schema_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#schema_id DiscoveryEngineSchema#schema_id}
 
 ---
 
@@ -1250,7 +1257,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#deletion_policy DiscoveryEngineSchema#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#deletion_policy DiscoveryEngineSchema#deletion_policy}
 
 ---
 
@@ -1262,7 +1269,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#id DiscoveryEngineSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1279,7 +1286,14 @@ public java.lang.String getJsonSchema();
 
 The JSON representation of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#json_schema DiscoveryEngineSchema#json_schema}
+Changes are applied in place and must be backward compatible: existing fields
+can't be removed or have their type changed. Updating the schema triggers
+reindexing of all documents in the data store, which can take hours for large
+data stores and may incur costs. See
+[Update a schema for structured data](https://cloud.google.com/generative-ai-app-builder/docs/update-schemas)
+for details.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#json_schema DiscoveryEngineSchema#json_schema}
 
 ---
 
@@ -1291,7 +1305,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#project DiscoveryEngineSchema#project}.
 
 ---
 
@@ -1305,7 +1319,7 @@ public DiscoveryEngineSchemaTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#timeouts DiscoveryEngineSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#timeouts DiscoveryEngineSchema#timeouts}
 
 ---
 
@@ -1319,6 +1333,7 @@ import io.cdktn.providers.google.discovery_engine_schema.DiscoveryEngineSchemaTi
 DiscoveryEngineSchemaTimeouts.builder()
 //  .create(java.lang.String)
 //  .delete(java.lang.String)
+//  .update(java.lang.String)
     .build();
 ```
 
@@ -1326,8 +1341,9 @@ DiscoveryEngineSchemaTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#create DiscoveryEngineSchema#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#delete DiscoveryEngineSchema#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#create DiscoveryEngineSchema#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#delete DiscoveryEngineSchema#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#update DiscoveryEngineSchema#update}. |
 
 ---
 
@@ -1339,7 +1355,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#create DiscoveryEngineSchema#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#create DiscoveryEngineSchema#create}.
 
 ---
 
@@ -1351,7 +1367,19 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_schema#delete DiscoveryEngineSchema#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#delete DiscoveryEngineSchema#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_schema#update DiscoveryEngineSchema#update}.
 
 ---
 
@@ -1409,6 +1437,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
@@ -1574,6 +1603,12 @@ public void resetCreate()
 public void resetDelete()
 ```
 
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.resetUpdate"></a>
+
+```java
+public void resetUpdate()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1583,8 +1618,10 @@ public void resetDelete()
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeouts">DiscoveryEngineSchemaTimeouts</a></code> | *No description.* |
 
 ---
@@ -1633,6 +1670,16 @@ public java.lang.String getDeleteInput();
 
 ---
 
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.updateInput"></a>
+
+```java
+public java.lang.String getUpdateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.create"></a>
 
 ```java
@@ -1647,6 +1694,16 @@ public java.lang.String getCreate();
 
 ```java
 public java.lang.String getDelete();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.discoveryEngineSchema.DiscoveryEngineSchemaTimeoutsOutputReference.property.update"></a>
+
+```java
+public java.lang.String getUpdate();
 ```
 
 - *Type:* java.lang.String

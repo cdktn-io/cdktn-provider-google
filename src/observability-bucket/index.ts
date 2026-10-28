@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface ObservabilityBucketConfig extends cdktn.TerraformMetaArguments 
   /**
   * A client-assigned identifier for the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#bucket_id ObservabilityBucket#bucket_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#bucket_id ObservabilityBucket#bucket_id}
   */
   readonly bucketId: string;
   /**
   * Description of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#description ObservabilityBucket#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#description ObservabilityBucket#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#display_name ObservabilityBucket#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#display_name ObservabilityBucket#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#id ObservabilityBucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#id ObservabilityBucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,23 +40,23 @@ export interface ObservabilityBucketConfig extends cdktn.TerraformMetaArguments 
   /**
   * The location of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#location ObservabilityBucket#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#location ObservabilityBucket#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#project ObservabilityBucket#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#project ObservabilityBucket#project}
   */
   readonly project?: string;
   /**
   * cmek_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#cmek_settings ObservabilityBucket#cmek_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#cmek_settings ObservabilityBucket#cmek_settings}
   */
   readonly cmekSettings?: ObservabilityBucketCmekSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#timeouts ObservabilityBucket#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#timeouts ObservabilityBucket#timeouts}
   */
   readonly timeouts?: ObservabilityBucketTimeouts;
 }
@@ -64,7 +64,7 @@ export interface ObservabilityBucketCmekSettings {
   /**
   * The resource name for the configured Cloud KMS key. The format is: projects/[PROJECT_ID]/locations/[LOCATION]/keyRings/[KEYRING]/cryptoKeys/[KEY]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#kms_key ObservabilityBucket#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#kms_key ObservabilityBucket#kms_key}
   */
   readonly kmsKey?: string;
 }
@@ -158,15 +158,15 @@ export class ObservabilityBucketCmekSettingsOutputReference extends cdktn.Comple
 }
 export interface ObservabilityBucketTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#create ObservabilityBucket#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#create ObservabilityBucket#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#delete ObservabilityBucket#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#delete ObservabilityBucket#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#update ObservabilityBucket#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#update ObservabilityBucket#update}
   */
   readonly update?: string;
 }
@@ -318,7 +318,7 @@ export class ObservabilityBucketTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket google_observability_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket google_observability_bucket}
 */
 export class ObservabilityBucket extends cdktn.TerraformResource {
 
@@ -334,7 +334,7 @@ export class ObservabilityBucket extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ObservabilityBucket resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityBucket to import
-  * @param importFromId The id of the existing ObservabilityBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -346,7 +346,7 @@ export class ObservabilityBucket extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_bucket google_observability_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/observability_bucket google_observability_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +357,7 @@ export class ObservabilityBucket extends cdktn.TerraformResource {
       terraformResourceType: 'google_observability_bucket',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

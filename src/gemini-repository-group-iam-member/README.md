@@ -1,3 +1,3 @@
 # `google_gemini_repository_group_iam_member`
 
-Refer to the Terraform Registry for docs: [`google_gemini_repository_group_iam_member`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_repository_group_iam_member).
+Refer to the Terraform Registry for docs: [`google_gemini_repository_group_iam_member`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_repository_group_iam_member).

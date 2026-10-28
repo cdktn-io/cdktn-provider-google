@@ -1,3 +1,3 @@
 # `google_colab_runtime_template`
 
-Refer to the Terraform Registry for docs: [`google_colab_runtime_template`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/colab_runtime_template).
+Refer to the Terraform Registry for docs: [`google_colab_runtime_template`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/colab_runtime_template).

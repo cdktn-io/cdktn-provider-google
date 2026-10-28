@@ -1,3 +1,3 @@
 # `google_biglake_hive_table`
 
-Refer to the Terraform Registry for docs: [`google_biglake_hive_table`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table).
+Refer to the Terraform Registry for docs: [`google_biglake_hive_table`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table).

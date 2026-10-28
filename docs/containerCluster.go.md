@@ -4,12 +4,12 @@
 
 ### ContainerCluster <a name="ContainerCluster" id="@cdktn/provider-google.containerCluster.ContainerCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster google_container_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster google_container_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerCluster(scope Construct, id *string, config ContainerClusterConfig) ContainerCluster
 ```
@@ -95,6 +95,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putIpAllocationPolicy">PutIpAllocationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putLoggingConfig">PutLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putMaintenancePolicy">PutMaintenancePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putManagedOpentelemetryConfig">PutManagedOpentelemetryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putMasterAuth">PutMasterAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putMasterAuthorizedNetworksConfig">PutMasterAuthorizedNetworksConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putMeshCertificates">PutMeshCertificates</a></code> | *No description.* |
@@ -113,6 +114,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putReleaseChannel">PutReleaseChannel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putResourceUsageExportConfig">PutResourceUsageExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putRollbackSafeUpgrade">PutRollbackSafeUpgrade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putScheduleUpgradeConfig">PutScheduleUpgradeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putSecretManagerConfig">PutSecretManagerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putSecretSyncConfig">PutSecretSyncConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.putSecurityPostureConfig">PutSecurityPostureConfig</a></code> | *No description.* |
@@ -169,6 +171,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetLoggingConfig">ResetLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetLoggingService">ResetLoggingService</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetMaintenancePolicy">ResetMaintenancePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetManagedOpentelemetryConfig">ResetManagedOpentelemetryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetMasterAuth">ResetMasterAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetMasterAuthorizedNetworksConfig">ResetMasterAuthorizedNetworksConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetMeshCertificates">ResetMeshCertificates</a></code> | *No description.* |
@@ -197,6 +200,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetResourceLabels">ResetResourceLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetResourceUsageExportConfig">ResetResourceUsageExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetRollbackSafeUpgrade">ResetRollbackSafeUpgrade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetScheduleUpgradeConfig">ResetScheduleUpgradeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetSecretManagerConfig">ResetSecretManagerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetSecretSyncConfig">ResetSecretSyncConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.resetSecurityPostureConfig">ResetSecurityPostureConfig</a></code> | *No description.* |
@@ -771,6 +775,18 @@ func PutMaintenancePolicy(value ContainerClusterMaintenancePolicy)
 
 ---
 
+##### `PutManagedOpentelemetryConfig` <a name="PutManagedOpentelemetryConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.putManagedOpentelemetryConfig"></a>
+
+```go
+func PutManagedOpentelemetryConfig(value ContainerClusterManagedOpentelemetryConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerCluster.putManagedOpentelemetryConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a>
+
+---
+
 ##### `PutMasterAuth` <a name="PutMasterAuth" id="@cdktn/provider-google.containerCluster.ContainerCluster.putMasterAuth"></a>
 
 ```go
@@ -984,6 +1000,18 @@ func PutRollbackSafeUpgrade(value ContainerClusterRollbackSafeUpgrade)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerCluster.putRollbackSafeUpgrade.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgrade">ContainerClusterRollbackSafeUpgrade</a>
+
+---
+
+##### `PutScheduleUpgradeConfig` <a name="PutScheduleUpgradeConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.putScheduleUpgradeConfig"></a>
+
+```go
+func PutScheduleUpgradeConfig(value ContainerClusterScheduleUpgradeConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerCluster.putScheduleUpgradeConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a>
 
 ---
 
@@ -1371,6 +1399,12 @@ func ResetLoggingService()
 func ResetMaintenancePolicy()
 ```
 
+##### `ResetManagedOpentelemetryConfig` <a name="ResetManagedOpentelemetryConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.resetManagedOpentelemetryConfig"></a>
+
+```go
+func ResetManagedOpentelemetryConfig()
+```
+
 ##### `ResetMasterAuth` <a name="ResetMasterAuth" id="@cdktn/provider-google.containerCluster.ContainerCluster.resetMasterAuth"></a>
 
 ```go
@@ -1539,6 +1573,12 @@ func ResetResourceUsageExportConfig()
 func ResetRollbackSafeUpgrade()
 ```
 
+##### `ResetScheduleUpgradeConfig` <a name="ResetScheduleUpgradeConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.resetScheduleUpgradeConfig"></a>
+
+```go
+func ResetScheduleUpgradeConfig()
+```
+
 ##### `ResetSecretManagerConfig` <a name="ResetSecretManagerConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.resetSecretManagerConfig"></a>
 
 ```go
@@ -1613,7 +1653,7 @@ func ResetWorkloadIdentityConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerCluster.ContainerCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.ContainerCluster_IsConstruct(x interface{}) *bool
 ```
@@ -1645,7 +1685,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerCluster.ContainerCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.ContainerCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -1659,7 +1699,7 @@ containercluster.ContainerCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerCluster.ContainerCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.ContainerCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -1673,7 +1713,7 @@ containercluster.ContainerCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerCluster.ContainerCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.ContainerCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1702,7 +1742,7 @@ The construct id used in the generated config for the ContainerCluster to import
 
 The id of the existing ContainerCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1757,6 +1797,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.labelFingerprint">LabelFingerprint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference">ContainerClusterLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.maintenancePolicy">MaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference">ContainerClusterMaintenancePolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.managedOpentelemetryConfig">ManagedOpentelemetryConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference">ContainerClusterManagedOpentelemetryConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.masterAuth">MasterAuth</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference">ContainerClusterMasterAuthOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.masterAuthorizedNetworksConfig">MasterAuthorizedNetworksConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference">ContainerClusterMasterAuthorizedNetworksConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.masterVersion">MasterVersion</a></code> | <code>*string</code> | *No description.* |
@@ -1777,6 +1818,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.releaseChannel">ReleaseChannel</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference">ContainerClusterReleaseChannelOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.resourceUsageExportConfig">ResourceUsageExportConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference">ContainerClusterResourceUsageExportConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.rollbackSafeUpgrade">RollbackSafeUpgrade</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgradeOutputReference">ContainerClusterRollbackSafeUpgradeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.scheduleUpgradeConfig">ScheduleUpgradeConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference">ContainerClusterScheduleUpgradeConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.secretManagerConfig">SecretManagerConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference">ContainerClusterSecretManagerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.secretSyncConfig">SecretSyncConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfigOutputReference">ContainerClusterSecretSyncConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.securityPostureConfig">SecurityPostureConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference">ContainerClusterSecurityPostureConfigOutputReference</a></code> | *No description.* |
@@ -1837,6 +1879,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.loggingConfigInput">LoggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfig">ContainerClusterLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.loggingServiceInput">LoggingServiceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.maintenancePolicyInput">MaintenancePolicyInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy">ContainerClusterMaintenancePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.managedOpentelemetryConfigInput">ManagedOpentelemetryConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.masterAuthInput">MasterAuthInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuth">ContainerClusterMasterAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.masterAuthorizedNetworksConfigInput">MasterAuthorizedNetworksConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig">ContainerClusterMasterAuthorizedNetworksConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.meshCertificatesInput">MeshCertificatesInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificates">ContainerClusterMeshCertificates</a></code> | *No description.* |
@@ -1866,6 +1909,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.resourceLabelsInput">ResourceLabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.resourceUsageExportConfigInput">ResourceUsageExportConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig">ContainerClusterResourceUsageExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.rollbackSafeUpgradeInput">RollbackSafeUpgradeInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgrade">ContainerClusterRollbackSafeUpgrade</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.scheduleUpgradeConfigInput">ScheduleUpgradeConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.secretManagerConfigInput">SecretManagerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig">ContainerClusterSecretManagerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.secretSyncConfigInput">SecretSyncConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfig">ContainerClusterSecretSyncConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.securityPostureConfigInput">SecurityPostureConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfig">ContainerClusterSecurityPostureConfig</a></code> | *No description.* |
@@ -2311,6 +2355,16 @@ func MaintenancePolicy() ContainerClusterMaintenancePolicyOutputReference
 
 ---
 
+##### `ManagedOpentelemetryConfig`<sup>Required</sup> <a name="ManagedOpentelemetryConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.property.managedOpentelemetryConfig"></a>
+
+```go
+func ManagedOpentelemetryConfig() ContainerClusterManagedOpentelemetryConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference">ContainerClusterManagedOpentelemetryConfigOutputReference</a>
+
+---
+
 ##### `MasterAuth`<sup>Required</sup> <a name="MasterAuth" id="@cdktn/provider-google.containerCluster.ContainerCluster.property.masterAuth"></a>
 
 ```go
@@ -2508,6 +2562,16 @@ func RollbackSafeUpgrade() ContainerClusterRollbackSafeUpgradeOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgradeOutputReference">ContainerClusterRollbackSafeUpgradeOutputReference</a>
+
+---
+
+##### `ScheduleUpgradeConfig`<sup>Required</sup> <a name="ScheduleUpgradeConfig" id="@cdktn/provider-google.containerCluster.ContainerCluster.property.scheduleUpgradeConfig"></a>
+
+```go
+func ScheduleUpgradeConfig() ContainerClusterScheduleUpgradeConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference">ContainerClusterScheduleUpgradeConfigOutputReference</a>
 
 ---
 
@@ -3111,6 +3175,16 @@ func MaintenancePolicyInput() ContainerClusterMaintenancePolicy
 
 ---
 
+##### `ManagedOpentelemetryConfigInput`<sup>Optional</sup> <a name="ManagedOpentelemetryConfigInput" id="@cdktn/provider-google.containerCluster.ContainerCluster.property.managedOpentelemetryConfigInput"></a>
+
+```go
+func ManagedOpentelemetryConfigInput() ContainerClusterManagedOpentelemetryConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a>
+
+---
+
 ##### `MasterAuthInput`<sup>Optional</sup> <a name="MasterAuthInput" id="@cdktn/provider-google.containerCluster.ContainerCluster.property.masterAuthInput"></a>
 
 ```go
@@ -3398,6 +3472,16 @@ func RollbackSafeUpgradeInput() ContainerClusterRollbackSafeUpgrade
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgrade">ContainerClusterRollbackSafeUpgrade</a>
+
+---
+
+##### `ScheduleUpgradeConfigInput`<sup>Optional</sup> <a name="ScheduleUpgradeConfigInput" id="@cdktn/provider-google.containerCluster.ContainerCluster.property.scheduleUpgradeConfigInput"></a>
+
+```go
+func ScheduleUpgradeConfigInput() ContainerClusterScheduleUpgradeConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a>
 
 ---
 
@@ -3926,29 +4010,29 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfig {
-	AgentSandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigAgentSandboxConfig,
-	CloudrunConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigCloudrunConfig,
-	ConfigConnectorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig,
-	DnsCacheConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig,
-	GcePersistentDiskCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig,
-	GcpFilestoreCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig,
-	GcsFuseCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig,
-	GkeBackupAgentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig,
-	HighScaleCheckpointingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfig,
-	HorizontalPodAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling,
-	HttpLoadBalancing: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing,
-	LustreCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig,
-	NetworkPolicyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig,
-	NodeReadinessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigNodeReadinessConfig,
-	ParallelstoreCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig,
-	PodSnapshotConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigPodSnapshotConfig,
+	AgentSandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigAgentSandboxConfig,
+	CloudrunConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigCloudrunConfig,
+	ConfigConnectorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig,
+	DnsCacheConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig,
+	GcePersistentDiskCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig,
+	GcpFilestoreCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig,
+	GcsFuseCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig,
+	GkeBackupAgentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig,
+	HighScaleCheckpointingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfig,
+	HorizontalPodAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling,
+	HttpLoadBalancing: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing,
+	LustreCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig,
+	NetworkPolicyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig,
+	NodeReadinessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigNodeReadinessConfig,
+	ParallelstoreCsiDriverConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig,
+	PodSnapshotConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigPodSnapshotConfig,
 	RayOperatorConfig: interface{},
-	SliceControllerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigSliceControllerConfig,
-	SlurmOperatorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigSlurmOperatorConfig,
-	StatefulHaConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig,
+	SliceControllerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigSliceControllerConfig,
+	SlurmOperatorConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigSlurmOperatorConfig,
+	StatefulHaConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig,
 }
 ```
 
@@ -3989,7 +4073,7 @@ AgentSandboxConfig ContainerClusterAddonsConfigAgentSandboxConfig
 
 agent_sandbox_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#agent_sandbox_config ContainerCluster#agent_sandbox_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#agent_sandbox_config ContainerCluster#agent_sandbox_config}
 
 ---
 
@@ -4003,7 +4087,7 @@ CloudrunConfig ContainerClusterAddonsConfigCloudrunConfig
 
 cloudrun_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cloudrun_config ContainerCluster#cloudrun_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cloudrun_config ContainerCluster#cloudrun_config}
 
 ---
 
@@ -4017,7 +4101,7 @@ ConfigConnectorConfig ContainerClusterAddonsConfigConfigConnectorConfig
 
 config_connector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#config_connector_config ContainerCluster#config_connector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#config_connector_config ContainerCluster#config_connector_config}
 
 ---
 
@@ -4031,7 +4115,7 @@ DnsCacheConfig ContainerClusterAddonsConfigDnsCacheConfig
 
 dns_cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dns_cache_config ContainerCluster#dns_cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dns_cache_config ContainerCluster#dns_cache_config}
 
 ---
 
@@ -4045,7 +4129,7 @@ GcePersistentDiskCsiDriverConfig ContainerClusterAddonsConfigGcePersistentDiskCs
 
 gce_persistent_disk_csi_driver_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gce_persistent_disk_csi_driver_config ContainerCluster#gce_persistent_disk_csi_driver_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gce_persistent_disk_csi_driver_config ContainerCluster#gce_persistent_disk_csi_driver_config}
 
 ---
 
@@ -4059,7 +4143,7 @@ GcpFilestoreCsiDriverConfig ContainerClusterAddonsConfigGcpFilestoreCsiDriverCon
 
 gcp_filestore_csi_driver_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_filestore_csi_driver_config ContainerCluster#gcp_filestore_csi_driver_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_filestore_csi_driver_config ContainerCluster#gcp_filestore_csi_driver_config}
 
 ---
 
@@ -4073,7 +4157,7 @@ GcsFuseCsiDriverConfig ContainerClusterAddonsConfigGcsFuseCsiDriverConfig
 
 gcs_fuse_csi_driver_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcs_fuse_csi_driver_config ContainerCluster#gcs_fuse_csi_driver_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcs_fuse_csi_driver_config ContainerCluster#gcs_fuse_csi_driver_config}
 
 ---
 
@@ -4087,7 +4171,7 @@ GkeBackupAgentConfig ContainerClusterAddonsConfigGkeBackupAgentConfig
 
 gke_backup_agent_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gke_backup_agent_config ContainerCluster#gke_backup_agent_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gke_backup_agent_config ContainerCluster#gke_backup_agent_config}
 
 ---
 
@@ -4101,7 +4185,7 @@ HighScaleCheckpointingConfig ContainerClusterAddonsConfigHighScaleCheckpointingC
 
 high_scale_checkpointing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#high_scale_checkpointing_config ContainerCluster#high_scale_checkpointing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#high_scale_checkpointing_config ContainerCluster#high_scale_checkpointing_config}
 
 ---
 
@@ -4115,7 +4199,7 @@ HorizontalPodAutoscaling ContainerClusterAddonsConfigHorizontalPodAutoscaling
 
 horizontal_pod_autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#horizontal_pod_autoscaling ContainerCluster#horizontal_pod_autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#horizontal_pod_autoscaling ContainerCluster#horizontal_pod_autoscaling}
 
 ---
 
@@ -4129,7 +4213,7 @@ HttpLoadBalancing ContainerClusterAddonsConfigHttpLoadBalancing
 
 http_load_balancing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#http_load_balancing ContainerCluster#http_load_balancing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#http_load_balancing ContainerCluster#http_load_balancing}
 
 ---
 
@@ -4143,7 +4227,7 @@ LustreCsiDriverConfig ContainerClusterAddonsConfigLustreCsiDriverConfig
 
 lustre_csi_driver_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#lustre_csi_driver_config ContainerCluster#lustre_csi_driver_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#lustre_csi_driver_config ContainerCluster#lustre_csi_driver_config}
 
 ---
 
@@ -4157,7 +4241,7 @@ NetworkPolicyConfig ContainerClusterAddonsConfigNetworkPolicyConfig
 
 network_policy_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_policy_config ContainerCluster#network_policy_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_policy_config ContainerCluster#network_policy_config}
 
 ---
 
@@ -4171,7 +4255,7 @@ NodeReadinessConfig ContainerClusterAddonsConfigNodeReadinessConfig
 
 node_readiness_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_readiness_config ContainerCluster#node_readiness_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_readiness_config ContainerCluster#node_readiness_config}
 
 ---
 
@@ -4185,7 +4269,7 @@ ParallelstoreCsiDriverConfig ContainerClusterAddonsConfigParallelstoreCsiDriverC
 
 parallelstore_csi_driver_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#parallelstore_csi_driver_config ContainerCluster#parallelstore_csi_driver_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#parallelstore_csi_driver_config ContainerCluster#parallelstore_csi_driver_config}
 
 ---
 
@@ -4199,7 +4283,7 @@ PodSnapshotConfig ContainerClusterAddonsConfigPodSnapshotConfig
 
 pod_snapshot_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_snapshot_config ContainerCluster#pod_snapshot_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_snapshot_config ContainerCluster#pod_snapshot_config}
 
 ---
 
@@ -4213,7 +4297,7 @@ RayOperatorConfig interface{}
 
 ray_operator_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ray_operator_config ContainerCluster#ray_operator_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ray_operator_config ContainerCluster#ray_operator_config}
 
 ---
 
@@ -4227,7 +4311,7 @@ SliceControllerConfig ContainerClusterAddonsConfigSliceControllerConfig
 
 slice_controller_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#slice_controller_config ContainerCluster#slice_controller_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#slice_controller_config ContainerCluster#slice_controller_config}
 
 ---
 
@@ -4241,7 +4325,7 @@ SlurmOperatorConfig ContainerClusterAddonsConfigSlurmOperatorConfig
 
 slurm_operator_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#slurm_operator_config ContainerCluster#slurm_operator_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#slurm_operator_config ContainerCluster#slurm_operator_config}
 
 ---
 
@@ -4255,7 +4339,7 @@ StatefulHaConfig ContainerClusterAddonsConfigStatefulHaConfig
 
 stateful_ha_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#stateful_ha_config ContainerCluster#stateful_ha_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#stateful_ha_config ContainerCluster#stateful_ha_config}
 
 ---
 
@@ -4264,7 +4348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigAgentSandboxConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigAgentSandboxConfig {
 	Enabled: interface{},
@@ -4289,7 +4373,7 @@ Enabled interface{}
 
 Whether the Agent Sandbox feature is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -4298,7 +4382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigCloudrunConfig {
 	Disabled: interface{},
@@ -4310,8 +4394,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.loadBalancerType">LoadBalancerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.loadBalancerType">LoadBalancerType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}. |
 
 ---
 
@@ -4323,7 +4407,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
 ---
 
@@ -4335,7 +4419,7 @@ LoadBalancerType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}.
 
 ---
 
@@ -4344,7 +4428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigConfigConnectorConfig {
 	Enabled: interface{},
@@ -4355,7 +4439,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4367,7 +4451,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4376,7 +4460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigDnsCacheConfig {
 	Enabled: interface{},
@@ -4387,7 +4471,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4399,7 +4483,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4408,7 +4492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig {
 	Enabled: interface{},
@@ -4419,7 +4503,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4431,7 +4515,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4440,7 +4524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig {
 	Enabled: interface{},
@@ -4451,7 +4535,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4463,7 +4547,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4472,7 +4556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig {
 	Enabled: interface{},
@@ -4483,7 +4567,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4495,7 +4579,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4504,7 +4588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigGkeBackupAgentConfig {
 	Enabled: interface{},
@@ -4515,7 +4599,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4527,7 +4611,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4536,7 +4620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfig {
 	Enabled: interface{},
@@ -4547,7 +4631,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4559,7 +4643,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4568,7 +4652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling {
 	Disabled: interface{},
@@ -4579,7 +4663,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -4591,7 +4675,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
 ---
 
@@ -4600,7 +4684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigHttpLoadBalancing {
 	Disabled: interface{},
@@ -4611,7 +4695,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -4623,7 +4707,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
 ---
 
@@ -4632,7 +4716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigLustreCsiDriverConfig {
 	Enabled: interface{},
@@ -4661,7 +4745,7 @@ Enabled interface{}
 
 Whether the Lustre CSI driver is enabled for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -4678,7 +4762,7 @@ When set to true, this disables multi-NIC support for the Lustre CSI driver.
 By default, GKE enables multi-NIC support, which
 allows the Lustre CSI driver to automatically detect and configure all suitable network interfaces on a node to maximize I/O performance for demanding workloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disable_multi_nic ContainerCluster#disable_multi_nic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disable_multi_nic ContainerCluster#disable_multi_nic}
 
 ---
 
@@ -4694,7 +4778,7 @@ If set to true, the Lustre CSI driver will initialize LNet (the virtual network 
 
 This flag is required to workaround a port conflict with the gke-metadata-server on GKE nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_legacy_lustre_port ContainerCluster#enable_legacy_lustre_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_legacy_lustre_port ContainerCluster#enable_legacy_lustre_port}
 
 ---
 
@@ -4703,7 +4787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigNetworkPolicyConfig {
 	Disabled: interface{},
@@ -4714,7 +4798,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -4726,7 +4810,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
 ---
 
@@ -4735,7 +4819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNodeReadinessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigNodeReadinessConfig {
 	Enabled: interface{},
@@ -4746,7 +4830,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNodeReadinessConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNodeReadinessConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4758,7 +4842,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4767,7 +4851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig {
 	Enabled: interface{},
@@ -4778,7 +4862,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4790,7 +4874,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4799,7 +4883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigPodSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigPodSnapshotConfig {
 	Enabled: interface{},
@@ -4824,7 +4908,7 @@ Enabled interface{}
 
 Whether the Pod Snapshot feature is enabled for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -4833,12 +4917,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigRayOperatorConfig {
 	Enabled: interface{},
-	RayClusterLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig,
-	RayClusterMonitoringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig,
+	RayClusterLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig,
+	RayClusterMonitoringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig,
 }
 ```
 
@@ -4846,7 +4930,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.rayClusterLoggingConfig">RayClusterLoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig</a></code> | ray_cluster_logging_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.rayClusterMonitoringConfig">RayClusterMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig</a></code> | ray_cluster_monitoring_config block. |
 
@@ -4860,7 +4944,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4874,7 +4958,7 @@ RayClusterLoggingConfig ContainerClusterAddonsConfigRayOperatorConfigRayClusterL
 
 ray_cluster_logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ray_cluster_logging_config ContainerCluster#ray_cluster_logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ray_cluster_logging_config ContainerCluster#ray_cluster_logging_config}
 
 ---
 
@@ -4888,7 +4972,7 @@ RayClusterMonitoringConfig ContainerClusterAddonsConfigRayOperatorConfigRayClust
 
 ray_cluster_monitoring_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ray_cluster_monitoring_config ContainerCluster#ray_cluster_monitoring_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ray_cluster_monitoring_config ContainerCluster#ray_cluster_monitoring_config}
 
 ---
 
@@ -4897,7 +4981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig {
 	Enabled: interface{},
@@ -4908,7 +4992,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4920,7 +5004,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4929,7 +5013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig {
 	Enabled: interface{},
@@ -4940,7 +5024,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4952,7 +5036,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4961,7 +5045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSliceControllerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigSliceControllerConfig {
 	Enabled: interface{},
@@ -4972,7 +5056,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSliceControllerConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSliceControllerConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4984,7 +5068,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -4993,7 +5077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSlurmOperatorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigSlurmOperatorConfig {
 	Enabled: interface{},
@@ -5004,7 +5088,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSlurmOperatorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSlurmOperatorConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -5016,7 +5100,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -5025,7 +5109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAddonsConfigStatefulHaConfig {
 	Enabled: interface{},
@@ -5036,7 +5120,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -5048,7 +5132,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
 ---
 
@@ -5057,7 +5141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAnonymousAuthenticationConfig {
 	Mode: *string,
@@ -5087,7 +5171,7 @@ Accepted values are:
 * ENABLED: Authentication of anonymous users is enabled for all endpoints.
 * LIMITED: Anonymous access is only allowed for health check endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 
 ---
 
@@ -5096,7 +5180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAuthenticatorGroupsConfig {
 	SecurityGroup: *string,
@@ -5123,7 +5207,7 @@ The name of the RBAC security group for use with Google security groups in Kuber
 
 Group name must be in format gke-security-groups@yourdomain.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#security_group ContainerCluster#security_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#security_group ContainerCluster#security_group}
 
 ---
 
@@ -5132,7 +5216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterAutopilotClusterPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterAutopilotClusterPolicyConfig {
 	NoStandardNodePools: interface{},
@@ -5163,7 +5247,7 @@ NoStandardNodePools interface{}
 
 If true, prevents standard node pools and requires only autopilot node pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#no_standard_node_pools ContainerCluster#no_standard_node_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#no_standard_node_pools ContainerCluster#no_standard_node_pools}
 
 ---
 
@@ -5177,7 +5261,7 @@ NoSystemImpersonation interface{}
 
 If true, prevents impersonation and CSRs for GKE System users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#no_system_impersonation ContainerCluster#no_system_impersonation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#no_system_impersonation ContainerCluster#no_system_impersonation}
 
 ---
 
@@ -5191,7 +5275,7 @@ NoSystemMutation interface{}
 
 If true, prevents creation and mutation of resources in GKE managed namespaces and cluster-scoped GKE managed resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#no_system_mutation ContainerCluster#no_system_mutation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#no_system_mutation ContainerCluster#no_system_mutation}
 
 ---
 
@@ -5205,7 +5289,7 @@ NoUnsafeWebhooks interface{}
 
 If true, unsafe webhooks are not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#no_unsafe_webhooks ContainerCluster#no_unsafe_webhooks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#no_unsafe_webhooks ContainerCluster#no_unsafe_webhooks}
 
 ---
 
@@ -5214,7 +5298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterBinaryAuthorization {
 	Enabled: interface{},
@@ -5241,7 +5325,7 @@ Enabled interface{}
 
 Enable Binary Authorization for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -5255,7 +5339,7 @@ EvaluationMode *string
 
 Mode of operation for Binary Authorization policy evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#evaluation_mode ContainerCluster#evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#evaluation_mode ContainerCluster#evaluation_mode}
 
 ---
 
@@ -5264,10 +5348,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscaling {
-	AutoProvisioningDefaults: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults,
+	AutoProvisioningDefaults: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults,
 	AutoProvisioningLocations: *[]*string,
 	AutoscalingProfile: *string,
 	DefaultComputeClassEnabled: interface{},
@@ -5299,7 +5383,7 @@ AutoProvisioningDefaults ContainerClusterClusterAutoscalingAutoProvisioningDefau
 
 auto_provisioning_defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_provisioning_defaults ContainerCluster#auto_provisioning_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_provisioning_defaults ContainerCluster#auto_provisioning_defaults}
 
 ---
 
@@ -5313,7 +5397,7 @@ AutoProvisioningLocations *[]*string
 
 The list of Google Compute Engine zones in which the NodePool's nodes can be created by NAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_provisioning_locations ContainerCluster#auto_provisioning_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_provisioning_locations ContainerCluster#auto_provisioning_locations}
 
 ---
 
@@ -5329,7 +5413,7 @@ Configuration options for the Autoscaling profile feature, which lets you choose
 
 Can be BALANCED or OPTIMIZE_UTILIZATION. Defaults to BALANCED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#autoscaling_profile ContainerCluster#autoscaling_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#autoscaling_profile ContainerCluster#autoscaling_profile}
 
 ---
 
@@ -5345,7 +5429,7 @@ Specifies whether default compute class behaviour is enabled.
 
 If enabled, cluster autoscaler will use Compute Class with name default for all the workloads, if not overriden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#default_compute_class_enabled ContainerCluster#default_compute_class_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#default_compute_class_enabled ContainerCluster#default_compute_class_enabled}
 
 ---
 
@@ -5359,7 +5443,7 @@ Enabled interface{}
 
 Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -5373,7 +5457,7 @@ ResourceLimits interface{}
 
 resource_limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_limits ContainerCluster#resource_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_limits ContainerCluster#resource_limits}
 
 ---
 
@@ -5382,19 +5466,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults {
 	BootDiskKmsKey: *string,
 	DiskSize: *f64,
 	DiskType: *string,
 	ImageType: *string,
-	Management: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement,
+	Management: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement,
 	MinCpuPlatform: *string,
 	OauthScopes: *[]*string,
 	ServiceAccount: *string,
-	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig,
-	UpgradeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings,
+	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig,
+	UpgradeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings,
 }
 ```
 
@@ -5425,7 +5509,7 @@ BootDiskKmsKey *string
 
 The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
 
 ---
 
@@ -5439,7 +5523,7 @@ DiskSize *f64
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_size ContainerCluster#disk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_size ContainerCluster#disk_size}
 
 ---
 
@@ -5453,7 +5537,7 @@ DiskType *string
 
 Type of the disk attached to each node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
 
 ---
 
@@ -5467,7 +5551,7 @@ ImageType *string
 
 The default image type used by NAP once a new node pool is being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
 
 ---
 
@@ -5481,7 +5565,7 @@ Management ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement
 
 management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#management ContainerCluster#management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#management ContainerCluster#management}
 
 ---
 
@@ -5497,7 +5581,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU platforms, such as Intel Haswell.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
 
 ---
 
@@ -5511,7 +5595,7 @@ OauthScopes *[]*string
 
 Scopes that are used by NAP when creating node pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
 
 ---
 
@@ -5525,7 +5609,7 @@ ServiceAccount *string
 
 The Google Cloud Platform Service Account to be used by the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
 
 ---
 
@@ -5539,7 +5623,7 @@ ShieldedInstanceConfig ContainerClusterClusterAutoscalingAutoProvisioningDefault
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
 
 ---
 
@@ -5553,7 +5637,7 @@ UpgradeSettings ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgrad
 
 upgrade_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
 
 ---
 
@@ -5562,7 +5646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement {
 	AutoRepair: interface{},
@@ -5591,7 +5675,7 @@ Specifies whether the node auto-repair is enabled for the node pool.
 
 If enabled, the nodes in this node pool will be monitored and, if they fail health checks too many times, an automatic repair action will be triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
 
 ---
 
@@ -5607,7 +5691,7 @@ Specifies whether node auto-upgrade is enabled for the node pool.
 
 If enabled, node auto-upgrade helps keep the nodes in your node pool up to date with the latest release version of Kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
 
 ---
 
@@ -5616,7 +5700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptions {
 
@@ -5629,7 +5713,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -5656,7 +5740,7 @@ EnableIntegrityMonitoring interface{}
 
 Defines whether the instance has integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
 
 ---
 
@@ -5670,7 +5754,7 @@ EnableSecureBoot interface{}
 
 Defines whether the instance has Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
 
 ---
 
@@ -5679,10 +5763,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings {
-	BlueGreenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings,
+	BlueGreenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings,
 	MaxSurge: *f64,
 	MaxUnavailable: *f64,
 	Strategy: *string,
@@ -5710,7 +5794,7 @@ BlueGreenSettings ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgr
 
 blue_green_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#blue_green_settings ContainerCluster#blue_green_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#blue_green_settings ContainerCluster#blue_green_settings}
 
 ---
 
@@ -5724,7 +5808,7 @@ MaxSurge *f64
 
 The maximum number of nodes that can be created beyond the current size of the node pool during the upgrade process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_surge ContainerCluster#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_surge ContainerCluster#max_surge}
 
 ---
 
@@ -5738,7 +5822,7 @@ MaxUnavailable *f64
 
 The maximum number of nodes that can be simultaneously unavailable during the upgrade process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_unavailable ContainerCluster#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_unavailable ContainerCluster#max_unavailable}
 
 ---
 
@@ -5752,7 +5836,7 @@ Strategy *string
 
 Update strategy of the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#strategy ContainerCluster#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#strategy ContainerCluster#strategy}
 
 ---
 
@@ -5761,11 +5845,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings {
 	NodePoolSoakDuration: *string,
-	StandardRolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy,
+	StandardRolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy,
 }
 ```
 
@@ -5790,7 +5874,7 @@ Time needed after draining entire blue pool. After this period, blue pool will b
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_pool_soak_duration ContainerCluster#node_pool_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_pool_soak_duration ContainerCluster#node_pool_soak_duration}
 
 ---
 
@@ -5804,7 +5888,7 @@ StandardRolloutPolicy ContainerClusterClusterAutoscalingAutoProvisioningDefaults
 
 standard_rollout_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#standard_rollout_policy ContainerCluster#standard_rollout_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#standard_rollout_policy ContainerCluster#standard_rollout_policy}
 
 ---
 
@@ -5813,7 +5897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy {
 	BatchNodeCount: *f64,
@@ -5842,7 +5926,7 @@ BatchNodeCount *f64
 
 Number of blue nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#batch_node_count ContainerCluster#batch_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#batch_node_count ContainerCluster#batch_node_count}
 
 ---
 
@@ -5858,7 +5942,7 @@ Percentage of the bool pool nodes to drain in a batch.
 
 The range of this field should be (0.0, 1.0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#batch_percentage ContainerCluster#batch_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#batch_percentage ContainerCluster#batch_percentage}
 
 ---
 
@@ -5874,7 +5958,7 @@ Soak time after each batch gets drained.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#batch_soak_duration ContainerCluster#batch_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#batch_soak_duration ContainerCluster#batch_soak_duration}
 
 ---
 
@@ -5883,7 +5967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterClusterAutoscalingResourceLimits {
 	Maximum: *f64,
@@ -5912,7 +5996,7 @@ Maximum *f64
 
 Maximum amount of the resource in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#maximum ContainerCluster#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#maximum ContainerCluster#maximum}
 
 ---
 
@@ -5928,7 +6012,7 @@ The type of the resource.
 
 For example, cpu and memory. See the guide to using Node Auto-Provisioning for a list of types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_type ContainerCluster#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_type ContainerCluster#resource_type}
 
 ---
 
@@ -5942,7 +6026,7 @@ Minimum *f64
 
 Minimum amount of the resource in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#minimum ContainerCluster#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#minimum ContainerCluster#minimum}
 
 ---
 
@@ -5951,7 +6035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterConfidentialNodes {
 	Enabled: interface{},
@@ -5978,7 +6062,7 @@ Enabled interface{}
 
 Whether Confidential Nodes feature is enabled for all nodes in this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -5992,7 +6076,7 @@ ConfidentialInstanceType *string
 
 Defines the type of technology used by the confidential node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
 
 ---
 
@@ -6001,7 +6085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterConfig {
 	Connection: interface{},
@@ -6012,92 +6096,94 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AddonsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAddonsConfig,
+	AddonsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAddonsConfig,
 	AllowNetAdmin: interface{},
-	AnonymousAuthenticationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAnonymousAuthenticationConfig,
-	AuthenticatorGroupsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAuthenticatorGroupsConfig,
-	AutopilotClusterPolicyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterAutopilotClusterPolicyConfig,
+	AnonymousAuthenticationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAnonymousAuthenticationConfig,
+	AuthenticatorGroupsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAuthenticatorGroupsConfig,
+	AutopilotClusterPolicyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterAutopilotClusterPolicyConfig,
 	AutopilotPrivilegedAdmission: *[]*string,
-	BinaryAuthorization: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterBinaryAuthorization,
-	ClusterAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterClusterAutoscaling,
+	BinaryAuthorization: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterBinaryAuthorization,
+	ClusterAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterClusterAutoscaling,
 	ClusterIpv4Cidr: *string,
-	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterConfidentialNodes,
-	ControlPlaneEndpointsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterControlPlaneEndpointsConfig,
-	CostManagementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterCostManagementConfig,
-	DatabaseEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterDatabaseEncryption,
+	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterConfidentialNodes,
+	ControlPlaneEndpointsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterControlPlaneEndpointsConfig,
+	CostManagementConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterCostManagementConfig,
+	DatabaseEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterDatabaseEncryption,
 	DatapathProvider: *string,
 	DataplaneOptimizationMode: *string,
 	DefaultMaxPodsPerNode: *f64,
-	DefaultSnatStatus: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterDefaultSnatStatus,
+	DefaultSnatStatus: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterDefaultSnatStatus,
 	DeletionPolicy: *string,
 	DeletionProtection: interface{},
 	Description: *string,
 	DesiredEmulatedVersion: *string,
 	DisableL4LbFirewallReconciliation: interface{},
-	DnsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterDnsConfig,
+	DnsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterDnsConfig,
 	EnableAutopilot: interface{},
 	EnableCiliumClusterwideNetworkPolicy: interface{},
 	EnableFqdnNetworkPolicy: interface{},
 	EnableIntranodeVisibility: interface{},
-	EnableK8SBetaApis: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterEnableK8SBetaApis,
+	EnableK8SBetaApis: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterEnableK8SBetaApis,
 	EnableKubernetesAlpha: interface{},
 	EnableL4IlbSubsetting: interface{},
 	EnableLegacyAbac: interface{},
 	EnableMultiNetworking: interface{},
 	EnableShieldedNodes: interface{},
 	EnableTpu: interface{},
-	EnterpriseConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterEnterpriseConfig,
-	Fleet: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterFleet,
-	GatewayApiConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterGatewayApiConfig,
-	GkeAutoUpgradeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterGkeAutoUpgradeConfig,
+	EnterpriseConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterEnterpriseConfig,
+	Fleet: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterFleet,
+	GatewayApiConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterGatewayApiConfig,
+	GkeAutoUpgradeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterGkeAutoUpgradeConfig,
 	Id: *string,
-	IdentityServiceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterIdentityServiceConfig,
+	IdentityServiceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterIdentityServiceConfig,
 	IgnoreNodeCountChanges: interface{},
 	InitialNodeCount: *f64,
 	InTransitEncryptionConfig: *string,
-	IpAllocationPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterIpAllocationPolicy,
+	IpAllocationPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterIpAllocationPolicy,
 	Location: *string,
-	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterLoggingConfig,
+	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterLoggingConfig,
 	LoggingService: *string,
-	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicy,
-	MasterAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMasterAuth,
-	MasterAuthorizedNetworksConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig,
-	MeshCertificates: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMeshCertificates,
+	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicy,
+	ManagedOpentelemetryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterManagedOpentelemetryConfig,
+	MasterAuth: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMasterAuth,
+	MasterAuthorizedNetworksConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig,
+	MeshCertificates: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMeshCertificates,
 	MinMasterVersion: *string,
-	MonitoringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMonitoringConfig,
+	MonitoringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMonitoringConfig,
 	MonitoringService: *string,
 	Network: *string,
 	NetworkingMode: *string,
-	NetworkPerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNetworkPerformanceConfig,
-	NetworkPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNetworkPolicy,
-	NodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfig,
-	NodeCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeCreationConfig,
+	NetworkPerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNetworkPerformanceConfig,
+	NetworkPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNetworkPolicy,
+	NodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfig,
+	NodeCreationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeCreationConfig,
 	NodeLocations: *[]*string,
 	NodePool: interface{},
-	NodePoolAutoConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolAutoConfig,
-	NodePoolDefaults: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaults,
+	NodePoolAutoConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolAutoConfig,
+	NodePoolDefaults: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaults,
 	NodeVersion: *string,
-	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNotificationConfig,
-	PodAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterPodAutoscaling,
-	PrivateClusterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterPrivateClusterConfig,
+	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNotificationConfig,
+	PodAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterPodAutoscaling,
+	PrivateClusterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterPrivateClusterConfig,
 	PrivateIpv6GoogleAccess: *string,
 	Project: *string,
-	RbacBindingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterRbacBindingConfig,
-	ReleaseChannel: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterReleaseChannel,
+	RbacBindingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterRbacBindingConfig,
+	ReleaseChannel: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterReleaseChannel,
 	RemoveDefaultNodePool: interface{},
 	ResourceLabels: *map[string]*string,
-	ResourceUsageExportConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterResourceUsageExportConfig,
-	RollbackSafeUpgrade: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterRollbackSafeUpgrade,
-	SecretManagerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterSecretManagerConfig,
-	SecretSyncConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterSecretSyncConfig,
-	SecurityPostureConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterSecurityPostureConfig,
-	ServiceExternalIpsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterServiceExternalIpsConfig,
+	ResourceUsageExportConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterResourceUsageExportConfig,
+	RollbackSafeUpgrade: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterRollbackSafeUpgrade,
+	ScheduleUpgradeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterScheduleUpgradeConfig,
+	SecretManagerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterSecretManagerConfig,
+	SecretSyncConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterSecretSyncConfig,
+	SecurityPostureConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterSecurityPostureConfig,
+	ServiceExternalIpsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterServiceExternalIpsConfig,
 	SkipNodePoolRefresh: interface{},
 	Subnetwork: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterTimeouts,
-	UserManagedKeysConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterUserManagedKeysConfig,
-	VerticalPodAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterVerticalPodAutoscaling,
-	WorkloadIdentityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterWorkloadIdentityConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterTimeouts,
+	UserManagedKeysConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterUserManagedKeysConfig,
+	VerticalPodAutoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterVerticalPodAutoscaling,
+	WorkloadIdentityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterWorkloadIdentityConfig,
 }
 ```
 
@@ -6151,7 +6237,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.fleet">Fleet</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleet">ContainerClusterFleet</a></code> | fleet block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.gatewayApiConfig">GatewayApiConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfig">ContainerClusterGatewayApiConfig</a></code> | gateway_api_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.gkeAutoUpgradeConfig">GkeAutoUpgradeConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfig">ContainerClusterGkeAutoUpgradeConfig</a></code> | gke_auto_upgrade_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#id ContainerCluster#id}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#id ContainerCluster#id}. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.identityServiceConfig">IdentityServiceConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfig">ContainerClusterIdentityServiceConfig</a></code> | identity_service_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.ignoreNodeCountChanges">IgnoreNodeCountChanges</a></code> | <code>interface{}</code> | When true, the provider ignores external changes (drift) to the node count by skipping GCE API queries to the Instance Group Managers. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.initialNodeCount">InitialNodeCount</a></code> | <code>*f64</code> | The number of nodes to create in this cluster's default node pool. |
@@ -6161,6 +6247,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfig">ContainerClusterLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.loggingService">LoggingService</a></code> | <code>*string</code> | The logging service that the cluster should write logs to. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.maintenancePolicy">MaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy">ContainerClusterMaintenancePolicy</a></code> | maintenance_policy block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.managedOpentelemetryConfig">ManagedOpentelemetryConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a></code> | managed_opentelemetry_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.masterAuth">MasterAuth</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuth">ContainerClusterMasterAuth</a></code> | master_auth block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.masterAuthorizedNetworksConfig">MasterAuthorizedNetworksConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig">ContainerClusterMasterAuthorizedNetworksConfig</a></code> | master_authorized_networks_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.meshCertificates">MeshCertificates</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificates">ContainerClusterMeshCertificates</a></code> | mesh_certificates block. |
@@ -6189,6 +6276,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.resourceLabels">ResourceLabels</a></code> | <code>*map[string]*string</code> | The GCE resource labels (a map of key/value pairs) to be applied to the cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.resourceUsageExportConfig">ResourceUsageExportConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig">ContainerClusterResourceUsageExportConfig</a></code> | resource_usage_export_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.rollbackSafeUpgrade">RollbackSafeUpgrade</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgrade">ContainerClusterRollbackSafeUpgrade</a></code> | rollback_safe_upgrade block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.scheduleUpgradeConfig">ScheduleUpgradeConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a></code> | schedule_upgrade_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.secretManagerConfig">SecretManagerConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig">ContainerClusterSecretManagerConfig</a></code> | secret_manager_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.secretSyncConfig">SecretSyncConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfig">ContainerClusterSecretSyncConfig</a></code> | secret_sync_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.securityPostureConfig">SecurityPostureConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfig">ContainerClusterSecurityPostureConfig</a></code> | security_posture_config block. |
@@ -6282,7 +6370,7 @@ Name *string
 
 The name of the cluster, unique within the project and location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#name ContainerCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#name ContainerCluster#name}
 
 ---
 
@@ -6296,7 +6384,7 @@ AddonsConfig ContainerClusterAddonsConfig
 
 addons_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#addons_config ContainerCluster#addons_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#addons_config ContainerCluster#addons_config}
 
 ---
 
@@ -6310,7 +6398,7 @@ AllowNetAdmin interface{}
 
 Enable NET_ADMIN for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#allow_net_admin ContainerCluster#allow_net_admin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#allow_net_admin ContainerCluster#allow_net_admin}
 
 ---
 
@@ -6324,7 +6412,7 @@ AnonymousAuthenticationConfig ContainerClusterAnonymousAuthenticationConfig
 
 anonymous_authentication_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#anonymous_authentication_config ContainerCluster#anonymous_authentication_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#anonymous_authentication_config ContainerCluster#anonymous_authentication_config}
 
 ---
 
@@ -6338,7 +6426,7 @@ AuthenticatorGroupsConfig ContainerClusterAuthenticatorGroupsConfig
 
 authenticator_groups_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#authenticator_groups_config ContainerCluster#authenticator_groups_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#authenticator_groups_config ContainerCluster#authenticator_groups_config}
 
 ---
 
@@ -6352,7 +6440,7 @@ AutopilotClusterPolicyConfig ContainerClusterAutopilotClusterPolicyConfig
 
 autopilot_cluster_policy_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#autopilot_cluster_policy_config ContainerCluster#autopilot_cluster_policy_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#autopilot_cluster_policy_config ContainerCluster#autopilot_cluster_policy_config}
 
 ---
 
@@ -6368,7 +6456,7 @@ The customer allowlist Cloud Storage paths for the cluster.
 
 These paths are used with the `--autopilot-privileged-admission` flag to authorize privileged workloads in Autopilot clusters. To allow default partner allowlists, set to []. To allow no allowlists, set to [""].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#autopilot_privileged_admission ContainerCluster#autopilot_privileged_admission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#autopilot_privileged_admission ContainerCluster#autopilot_privileged_admission}
 
 ---
 
@@ -6382,7 +6470,7 @@ BinaryAuthorization ContainerClusterBinaryAuthorization
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#binary_authorization ContainerCluster#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#binary_authorization ContainerCluster#binary_authorization}
 
 ---
 
@@ -6396,7 +6484,7 @@ ClusterAutoscaling ContainerClusterClusterAutoscaling
 
 cluster_autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_autoscaling ContainerCluster#cluster_autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_autoscaling ContainerCluster#cluster_autoscaling}
 
 ---
 
@@ -6410,7 +6498,7 @@ ClusterIpv4Cidr *string
 
 The IP address range of the Kubernetes pods in this cluster in CIDR notation (e.g. 10.96.0.0/14). Leave blank to have one automatically chosen or specify a /14 block in 10.0.0.0/8. This field will only work for routes-based clusters, where ip_allocation_policy is not defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_ipv4_cidr ContainerCluster#cluster_ipv4_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_ipv4_cidr ContainerCluster#cluster_ipv4_cidr}
 
 ---
 
@@ -6424,7 +6512,7 @@ ConfidentialNodes ContainerClusterConfidentialNodes
 
 confidential_nodes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
 
 ---
 
@@ -6438,7 +6526,7 @@ ControlPlaneEndpointsConfig ContainerClusterControlPlaneEndpointsConfig
 
 control_plane_endpoints_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#control_plane_endpoints_config ContainerCluster#control_plane_endpoints_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#control_plane_endpoints_config ContainerCluster#control_plane_endpoints_config}
 
 ---
 
@@ -6452,7 +6540,7 @@ CostManagementConfig ContainerClusterCostManagementConfig
 
 cost_management_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cost_management_config ContainerCluster#cost_management_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cost_management_config ContainerCluster#cost_management_config}
 
 ---
 
@@ -6466,7 +6554,7 @@ DatabaseEncryption ContainerClusterDatabaseEncryption
 
 database_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#database_encryption ContainerCluster#database_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#database_encryption ContainerCluster#database_encryption}
 
 ---
 
@@ -6480,7 +6568,7 @@ DatapathProvider *string
 
 The desired datapath provider for this cluster. By default, uses the IPTables-based kube-proxy implementation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#datapath_provider ContainerCluster#datapath_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#datapath_provider ContainerCluster#datapath_provider}
 
 ---
 
@@ -6494,7 +6582,7 @@ DataplaneOptimizationMode *string
 
 The desired dataplane optimization mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dataplane_optimization_mode ContainerCluster#dataplane_optimization_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dataplane_optimization_mode ContainerCluster#dataplane_optimization_mode}
 
 ---
 
@@ -6510,7 +6598,7 @@ The default maximum number of pods per node in this cluster.
 
 This doesn't work on "routes-based" clusters, clusters that don't have IP Aliasing enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#default_max_pods_per_node ContainerCluster#default_max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#default_max_pods_per_node ContainerCluster#default_max_pods_per_node}
 
 ---
 
@@ -6524,7 +6612,7 @@ DefaultSnatStatus ContainerClusterDefaultSnatStatus
 
 default_snat_status block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#default_snat_status ContainerCluster#default_snat_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#default_snat_status ContainerCluster#default_snat_status}
 
 ---
 
@@ -6545,7 +6633,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#deletion_policy ContainerCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#deletion_policy ContainerCluster#deletion_policy}
 
 ---
 
@@ -6561,7 +6649,7 @@ When the field is set to true or unset in Terraform state, a terraform apply or 
 
 When the field is set to false, deleting the cluster is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#deletion_protection ContainerCluster#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#deletion_protection ContainerCluster#deletion_protection}
 
 ---
 
@@ -6575,7 +6663,7 @@ Description *string
 
 Description of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#description ContainerCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#description ContainerCluster#description}
 
 ---
 
@@ -6591,7 +6679,7 @@ The desired emulated version for the cluster.
 
 Used to complete a rollback-safe upgrade after a soak period. Must be in major.minor format (e.g., "1.31"). To complete the upgrade declaratively, set this field to the target minor version. Removing this field from your configuration will not trigger completion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#desired_emulated_version ContainerCluster#desired_emulated_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#desired_emulated_version ContainerCluster#desired_emulated_version}
 
 ---
 
@@ -6605,7 +6693,7 @@ DisableL4LbFirewallReconciliation interface{}
 
 Disable L4 load balancer VPC firewalls to enable firewall policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disable_l4_lb_firewall_reconciliation ContainerCluster#disable_l4_lb_firewall_reconciliation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disable_l4_lb_firewall_reconciliation ContainerCluster#disable_l4_lb_firewall_reconciliation}
 
 ---
 
@@ -6619,7 +6707,7 @@ DnsConfig ContainerClusterDnsConfig
 
 dns_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dns_config ContainerCluster#dns_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dns_config ContainerCluster#dns_config}
 
 ---
 
@@ -6633,7 +6721,7 @@ EnableAutopilot interface{}
 
 Enable Autopilot for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_autopilot ContainerCluster#enable_autopilot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_autopilot ContainerCluster#enable_autopilot}
 
 ---
 
@@ -6647,7 +6735,7 @@ EnableCiliumClusterwideNetworkPolicy interface{}
 
 Whether Cilium cluster-wide network policy is enabled on this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_cilium_clusterwide_network_policy ContainerCluster#enable_cilium_clusterwide_network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_cilium_clusterwide_network_policy ContainerCluster#enable_cilium_clusterwide_network_policy}
 
 ---
 
@@ -6661,7 +6749,7 @@ EnableFqdnNetworkPolicy interface{}
 
 Whether FQDN Network Policy is enabled on this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_fqdn_network_policy ContainerCluster#enable_fqdn_network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_fqdn_network_policy ContainerCluster#enable_fqdn_network_policy}
 
 ---
 
@@ -6677,7 +6765,7 @@ Whether Intra-node visibility is enabled for this cluster.
 
 This makes same node pod to pod traffic visible for VPC network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_intranode_visibility ContainerCluster#enable_intranode_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_intranode_visibility ContainerCluster#enable_intranode_visibility}
 
 ---
 
@@ -6691,7 +6779,7 @@ EnableK8SBetaApis ContainerClusterEnableK8SBetaApis
 
 enable_k8s_beta_apis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_k8s_beta_apis ContainerCluster#enable_k8s_beta_apis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_k8s_beta_apis ContainerCluster#enable_k8s_beta_apis}
 
 ---
 
@@ -6707,7 +6795,7 @@ Whether to enable Kubernetes Alpha features for this cluster.
 
 Note that when this option is enabled, the cluster cannot be upgraded and will be automatically deleted after 30 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_kubernetes_alpha ContainerCluster#enable_kubernetes_alpha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_kubernetes_alpha ContainerCluster#enable_kubernetes_alpha}
 
 ---
 
@@ -6721,7 +6809,7 @@ EnableL4IlbSubsetting interface{}
 
 Whether L4ILB Subsetting is enabled for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_l4_ilb_subsetting ContainerCluster#enable_l4_ilb_subsetting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_l4_ilb_subsetting ContainerCluster#enable_l4_ilb_subsetting}
 
 ---
 
@@ -6737,7 +6825,7 @@ Whether the ABAC authorizer is enabled for this cluster.
 
 When enabled, identities in the system, including service accounts, nodes, and controllers, will have statically granted permissions beyond those provided by the RBAC configuration or IAM. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_legacy_abac ContainerCluster#enable_legacy_abac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_legacy_abac ContainerCluster#enable_legacy_abac}
 
 ---
 
@@ -6751,7 +6839,7 @@ EnableMultiNetworking interface{}
 
 Whether multi-networking is enabled for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_multi_networking ContainerCluster#enable_multi_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_multi_networking ContainerCluster#enable_multi_networking}
 
 ---
 
@@ -6765,7 +6853,7 @@ EnableShieldedNodes interface{}
 
 Enable Shielded Nodes features on all nodes in this cluster. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_shielded_nodes ContainerCluster#enable_shielded_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_shielded_nodes ContainerCluster#enable_shielded_nodes}
 
 ---
 
@@ -6779,7 +6867,7 @@ EnableTpu interface{}
 
 Whether to enable Cloud TPU resources in this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_tpu ContainerCluster#enable_tpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_tpu ContainerCluster#enable_tpu}
 
 ---
 
@@ -6793,7 +6881,7 @@ EnterpriseConfig ContainerClusterEnterpriseConfig
 
 enterprise_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enterprise_config ContainerCluster#enterprise_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enterprise_config ContainerCluster#enterprise_config}
 
 ---
 
@@ -6807,7 +6895,7 @@ Fleet ContainerClusterFleet
 
 fleet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#fleet ContainerCluster#fleet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#fleet ContainerCluster#fleet}
 
 ---
 
@@ -6821,7 +6909,7 @@ GatewayApiConfig ContainerClusterGatewayApiConfig
 
 gateway_api_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gateway_api_config ContainerCluster#gateway_api_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gateway_api_config ContainerCluster#gateway_api_config}
 
 ---
 
@@ -6835,7 +6923,7 @@ GkeAutoUpgradeConfig ContainerClusterGkeAutoUpgradeConfig
 
 gke_auto_upgrade_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gke_auto_upgrade_config ContainerCluster#gke_auto_upgrade_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gke_auto_upgrade_config ContainerCluster#gke_auto_upgrade_config}
 
 ---
 
@@ -6847,7 +6935,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#id ContainerCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#id ContainerCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6864,7 +6952,7 @@ IdentityServiceConfig ContainerClusterIdentityServiceConfig
 
 identity_service_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#identity_service_config ContainerCluster#identity_service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#identity_service_config ContainerCluster#identity_service_config}
 
 ---
 
@@ -6880,7 +6968,7 @@ When true, the provider ignores external changes (drift) to the node count by sk
 
 This is a performance optimization for large clusters that saves API quota. Setting this to true will result in missing managed_instance_group_urls in the state for all node pools in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ignore_node_count_changes ContainerCluster#ignore_node_count_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ignore_node_count_changes ContainerCluster#ignore_node_count_changes}
 
 ---
 
@@ -6894,9 +6982,9 @@ InitialNodeCount *f64
 
 The number of nodes to create in this cluster's default node pool.
 
-In regional or multi-zonal clusters, this is the number of nodes per zone. Must be set if node_pool is not set. If you're using google_container_node_pool objects with no default node pool, you'll need to set this to a value of at least 1, alongside setting remove_default_node_pool to true.
+In regional or multi-zonal clusters, this is the number of nodes per zone. When omitted (or set to 0) with no node_config or node_pool blocks defined, the cluster is created without a default node pool. This requires a GKE version that supports clusters without a default node pool (1.36.4-gke.1469000+). For older GKE versions, if you're using google_container_node_pool objects with no default node pool, you'll need to set this to a value of at least 1, alongside setting remove_default_node_pool to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#initial_node_count ContainerCluster#initial_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#initial_node_count ContainerCluster#initial_node_count}
 
 ---
 
@@ -6910,7 +6998,7 @@ InTransitEncryptionConfig *string
 
 Defines the config of in-transit encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#in_transit_encryption_config ContainerCluster#in_transit_encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#in_transit_encryption_config ContainerCluster#in_transit_encryption_config}
 
 ---
 
@@ -6924,7 +7012,7 @@ IpAllocationPolicy ContainerClusterIpAllocationPolicy
 
 ip_allocation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ip_allocation_policy ContainerCluster#ip_allocation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ip_allocation_policy ContainerCluster#ip_allocation_policy}
 
 ---
 
@@ -6940,7 +7028,7 @@ The location (region or zone) in which the cluster master will be created, as we
 
 If you specify a zone (such as us-central1-a), the cluster will be a zonal cluster with a single cluster master. If you specify a region (such as us-west1), the cluster will be a regional cluster with multiple masters spread across zones in the region, and with default node locations in those zones as well.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#location ContainerCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#location ContainerCluster#location}
 
 ---
 
@@ -6954,7 +7042,7 @@ LoggingConfig ContainerClusterLoggingConfig
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#logging_config ContainerCluster#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#logging_config ContainerCluster#logging_config}
 
 ---
 
@@ -6970,7 +7058,7 @@ The logging service that the cluster should write logs to.
 
 Available options include logging.googleapis.com(Legacy Stackdriver), logging.googleapis.com/kubernetes(Stackdriver Kubernetes Engine Logging), and none. Defaults to logging.googleapis.com/kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#logging_service ContainerCluster#logging_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#logging_service ContainerCluster#logging_service}
 
 ---
 
@@ -6984,7 +7072,21 @@ MaintenancePolicy ContainerClusterMaintenancePolicy
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#maintenance_policy ContainerCluster#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#maintenance_policy ContainerCluster#maintenance_policy}
+
+---
+
+##### `ManagedOpentelemetryConfig`<sup>Optional</sup> <a name="ManagedOpentelemetryConfig" id="@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.managedOpentelemetryConfig"></a>
+
+```go
+ManagedOpentelemetryConfig ContainerClusterManagedOpentelemetryConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a>
+
+managed_opentelemetry_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#managed_opentelemetry_config ContainerCluster#managed_opentelemetry_config}
 
 ---
 
@@ -6998,7 +7100,7 @@ MasterAuth ContainerClusterMasterAuth
 
 master_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#master_auth ContainerCluster#master_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#master_auth ContainerCluster#master_auth}
 
 ---
 
@@ -7012,7 +7114,7 @@ MasterAuthorizedNetworksConfig ContainerClusterMasterAuthorizedNetworksConfig
 
 master_authorized_networks_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#master_authorized_networks_config ContainerCluster#master_authorized_networks_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#master_authorized_networks_config ContainerCluster#master_authorized_networks_config}
 
 ---
 
@@ -7026,7 +7128,7 @@ MeshCertificates ContainerClusterMeshCertificates
 
 mesh_certificates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mesh_certificates ContainerCluster#mesh_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mesh_certificates ContainerCluster#mesh_certificates}
 
 ---
 
@@ -7042,7 +7144,7 @@ The minimum version of the master.
 
 GKE will auto-update the master to new versions, so this does not guarantee the current master version--use the read-only master_version field to obtain that. If unset, the cluster's version will be set by GKE to the version of the most recent official release (which is not necessarily the latest version).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_master_version ContainerCluster#min_master_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_master_version ContainerCluster#min_master_version}
 
 ---
 
@@ -7056,7 +7158,7 @@ MonitoringConfig ContainerClusterMonitoringConfig
 
 monitoring_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#monitoring_config ContainerCluster#monitoring_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#monitoring_config ContainerCluster#monitoring_config}
 
 ---
 
@@ -7072,7 +7174,7 @@ The monitoring service that the cluster should write metrics to.
 
 Automatically send metrics from pods in the cluster to the Google Cloud Monitoring API. VM metrics will be collected by Google Compute Engine regardless of this setting Available options include monitoring.googleapis.com(Legacy Stackdriver), monitoring.googleapis.com/kubernetes(Stackdriver Kubernetes Engine Monitoring), and none. Defaults to monitoring.googleapis.com/kubernetes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#monitoring_service ContainerCluster#monitoring_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#monitoring_service ContainerCluster#monitoring_service}
 
 ---
 
@@ -7088,7 +7190,7 @@ The name or self_link of the Google Compute Engine network to which the cluster 
 
 For Shared VPC, set this to the self link of the shared network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network ContainerCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network ContainerCluster#network}
 
 ---
 
@@ -7104,7 +7206,7 @@ Determines whether alias IPs or routes will be used for pod IPs in the cluster.
 
 Defaults to VPC_NATIVE for new clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#networking_mode ContainerCluster#networking_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#networking_mode ContainerCluster#networking_mode}
 
 ---
 
@@ -7118,7 +7220,7 @@ NetworkPerformanceConfig ContainerClusterNetworkPerformanceConfig
 
 network_performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_performance_config ContainerCluster#network_performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_performance_config ContainerCluster#network_performance_config}
 
 ---
 
@@ -7132,7 +7234,7 @@ NetworkPolicy ContainerClusterNetworkPolicy
 
 network_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_policy ContainerCluster#network_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_policy ContainerCluster#network_policy}
 
 ---
 
@@ -7146,7 +7248,7 @@ NodeConfig ContainerClusterNodeConfig
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_config ContainerCluster#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_config ContainerCluster#node_config}
 
 ---
 
@@ -7160,7 +7262,7 @@ NodeCreationConfig ContainerClusterNodeCreationConfig
 
 node_creation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_creation_config ContainerCluster#node_creation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_creation_config ContainerCluster#node_creation_config}
 
 ---
 
@@ -7176,7 +7278,7 @@ The list of zones in which the cluster's nodes are located.
 
 Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If this is specified for a zonal cluster, omit the cluster's zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_locations ContainerCluster#node_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_locations ContainerCluster#node_locations}
 
 ---
 
@@ -7190,7 +7292,7 @@ NodePool interface{}
 
 node_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_pool ContainerCluster#node_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_pool ContainerCluster#node_pool}
 
 ---
 
@@ -7204,7 +7306,7 @@ NodePoolAutoConfig ContainerClusterNodePoolAutoConfig
 
 node_pool_auto_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_pool_auto_config ContainerCluster#node_pool_auto_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_pool_auto_config ContainerCluster#node_pool_auto_config}
 
 ---
 
@@ -7218,7 +7320,7 @@ NodePoolDefaults ContainerClusterNodePoolDefaults
 
 node_pool_defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_pool_defaults ContainerCluster#node_pool_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_pool_defaults ContainerCluster#node_pool_defaults}
 
 ---
 
@@ -7234,7 +7336,7 @@ The Kubernetes version on the nodes.
 
 Must either be unset or set to the same value as min_master_version on create. Defaults to the default version set by GKE which is not necessarily the latest version. This only affects nodes in the default node pool. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way. To update nodes in other node pools, use the version attribute on the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_version ContainerCluster#node_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_version ContainerCluster#node_version}
 
 ---
 
@@ -7248,7 +7350,7 @@ NotificationConfig ContainerClusterNotificationConfig
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#notification_config ContainerCluster#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#notification_config ContainerCluster#notification_config}
 
 ---
 
@@ -7262,7 +7364,7 @@ PodAutoscaling ContainerClusterPodAutoscaling
 
 pod_autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_autoscaling ContainerCluster#pod_autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_autoscaling ContainerCluster#pod_autoscaling}
 
 ---
 
@@ -7276,7 +7378,7 @@ PrivateClusterConfig ContainerClusterPrivateClusterConfig
 
 private_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_cluster_config ContainerCluster#private_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_cluster_config ContainerCluster#private_cluster_config}
 
 ---
 
@@ -7292,7 +7394,7 @@ The desired state of IPv6 connectivity to Google Services.
 
 By default, no private IPv6 access to or from Google Services (all access will be via IPv4).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_ipv6_google_access ContainerCluster#private_ipv6_google_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_ipv6_google_access ContainerCluster#private_ipv6_google_access}
 
 ---
 
@@ -7308,7 +7410,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#project ContainerCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#project ContainerCluster#project}
 
 ---
 
@@ -7322,7 +7424,7 @@ RbacBindingConfig ContainerClusterRbacBindingConfig
 
 rbac_binding_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#rbac_binding_config ContainerCluster#rbac_binding_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#rbac_binding_config ContainerCluster#rbac_binding_config}
 
 ---
 
@@ -7336,7 +7438,7 @@ ReleaseChannel ContainerClusterReleaseChannel
 
 release_channel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#release_channel ContainerCluster#release_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#release_channel ContainerCluster#release_channel}
 
 ---
 
@@ -7350,9 +7452,9 @@ RemoveDefaultNodePool interface{}
 
 If true, deletes the default node pool upon cluster creation.
 
-If you're using google_container_node_pool resources with no default node pool, this should be set to true, alongside setting initial_node_count to at least 1.
+On GKE versions that support clusters without a default node pool, you can instead omit initial_node_count and node_config (or set initial_node_count to 0) to skip creating the default node pool without setting this field. For older GKE versions, if you're using google_container_node_pool resources with no default node pool, this should be set to true, alongside setting initial_node_count to at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#remove_default_node_pool ContainerCluster#remove_default_node_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#remove_default_node_pool ContainerCluster#remove_default_node_pool}
 
 ---
 
@@ -7369,7 +7471,7 @@ The GCE resource labels (a map of key/value pairs) to be applied to the cluster.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
 
 ---
 
@@ -7383,7 +7485,7 @@ ResourceUsageExportConfig ContainerClusterResourceUsageExportConfig
 
 resource_usage_export_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_usage_export_config ContainerCluster#resource_usage_export_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_usage_export_config ContainerCluster#resource_usage_export_config}
 
 ---
 
@@ -7397,7 +7499,21 @@ RollbackSafeUpgrade ContainerClusterRollbackSafeUpgrade
 
 rollback_safe_upgrade block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#rollback_safe_upgrade ContainerCluster#rollback_safe_upgrade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#rollback_safe_upgrade ContainerCluster#rollback_safe_upgrade}
+
+---
+
+##### `ScheduleUpgradeConfig`<sup>Optional</sup> <a name="ScheduleUpgradeConfig" id="@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.scheduleUpgradeConfig"></a>
+
+```go
+ScheduleUpgradeConfig ContainerClusterScheduleUpgradeConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a>
+
+schedule_upgrade_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#schedule_upgrade_config ContainerCluster#schedule_upgrade_config}
 
 ---
 
@@ -7411,7 +7527,7 @@ SecretManagerConfig ContainerClusterSecretManagerConfig
 
 secret_manager_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secret_manager_config ContainerCluster#secret_manager_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secret_manager_config ContainerCluster#secret_manager_config}
 
 ---
 
@@ -7425,7 +7541,7 @@ SecretSyncConfig ContainerClusterSecretSyncConfig
 
 secret_sync_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secret_sync_config ContainerCluster#secret_sync_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secret_sync_config ContainerCluster#secret_sync_config}
 
 ---
 
@@ -7439,7 +7555,7 @@ SecurityPostureConfig ContainerClusterSecurityPostureConfig
 
 security_posture_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#security_posture_config ContainerCluster#security_posture_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#security_posture_config ContainerCluster#security_posture_config}
 
 ---
 
@@ -7453,7 +7569,7 @@ ServiceExternalIpsConfig ContainerClusterServiceExternalIpsConfig
 
 service_external_ips_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#service_external_ips_config ContainerCluster#service_external_ips_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#service_external_ips_config ContainerCluster#service_external_ips_config}
 
 ---
 
@@ -7469,7 +7585,7 @@ If true, the provider will not refresh the inline node_pool state from the API d
 
 Set this to true only when all node pools are managed via separate google_container_node_pool resources; it substantially improves plan/apply performance on clusters with a high node pool count. Must not be set to true when inline node_pool blocks are defined on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#skip_node_pool_refresh ContainerCluster#skip_node_pool_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#skip_node_pool_refresh ContainerCluster#skip_node_pool_refresh}
 
 ---
 
@@ -7483,7 +7599,7 @@ Subnetwork *string
 
 The name or self_link of the Google Compute Engine subnetwork in which the cluster's instances are launched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
 
 ---
 
@@ -7497,7 +7613,7 @@ Timeouts ContainerClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#timeouts ContainerCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#timeouts ContainerCluster#timeouts}
 
 ---
 
@@ -7511,7 +7627,7 @@ UserManagedKeysConfig ContainerClusterUserManagedKeysConfig
 
 user_managed_keys_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#user_managed_keys_config ContainerCluster#user_managed_keys_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#user_managed_keys_config ContainerCluster#user_managed_keys_config}
 
 ---
 
@@ -7525,7 +7641,7 @@ VerticalPodAutoscaling ContainerClusterVerticalPodAutoscaling
 
 vertical_pod_autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#vertical_pod_autoscaling ContainerCluster#vertical_pod_autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#vertical_pod_autoscaling ContainerCluster#vertical_pod_autoscaling}
 
 ---
 
@@ -7539,7 +7655,7 @@ WorkloadIdentityConfig ContainerClusterWorkloadIdentityConfig
 
 workload_identity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#workload_identity_config ContainerCluster#workload_identity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#workload_identity_config ContainerCluster#workload_identity_config}
 
 ---
 
@@ -7548,11 +7664,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterControlPlaneEndpointsConfig {
-	DnsEndpointConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig,
-	IpEndpointsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig,
+	DnsEndpointConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig,
+	IpEndpointsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig,
 }
 ```
 
@@ -7575,7 +7691,7 @@ DnsEndpointConfig ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig
 
 dns_endpoint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dns_endpoint_config ContainerCluster#dns_endpoint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dns_endpoint_config ContainerCluster#dns_endpoint_config}
 
 ---
 
@@ -7589,7 +7705,7 @@ IpEndpointsConfig ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig
 
 ip_endpoints_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ip_endpoints_config ContainerCluster#ip_endpoints_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ip_endpoints_config ContainerCluster#ip_endpoints_config}
 
 ---
 
@@ -7598,7 +7714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig {
 	AllowExternalTraffic: interface{},
@@ -7631,7 +7747,7 @@ Controls whether user traffic is allowed over this endpoint.
 
 Note that GCP-managed services may still use the endpoint even if this is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#allow_external_traffic ContainerCluster#allow_external_traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#allow_external_traffic ContainerCluster#allow_external_traffic}
 
 ---
 
@@ -7645,7 +7761,7 @@ EnableK8SCertsViaDns interface{}
 
 Controls whether the k8s certs auth is allowed via dns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_k8s_certs_via_dns ContainerCluster#enable_k8s_certs_via_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_k8s_certs_via_dns ContainerCluster#enable_k8s_certs_via_dns}
 
 ---
 
@@ -7659,7 +7775,7 @@ EnableK8STokensViaDns interface{}
 
 Controls whether the k8s token auth is allowed via dns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_k8s_tokens_via_dns ContainerCluster#enable_k8s_tokens_via_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_k8s_tokens_via_dns ContainerCluster#enable_k8s_tokens_via_dns}
 
 ---
 
@@ -7673,7 +7789,7 @@ Endpoint *string
 
 The cluster's DNS endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#endpoint ContainerCluster#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#endpoint ContainerCluster#endpoint}
 
 ---
 
@@ -7682,7 +7798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig {
 	Enabled: interface{},
@@ -7707,7 +7823,7 @@ Enabled interface{}
 
 Controls whether to allow direct IP access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -7716,7 +7832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterCostManagementConfig {
 	Enabled: interface{},
@@ -7743,7 +7859,7 @@ Whether to enable GKE cost allocation.
 
 When you enable GKE cost allocation, the cluster name and namespace of your GKE workloads appear in the labels field of the billing export to BigQuery. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -7752,7 +7868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterDatabaseEncryption {
 	State: *string,
@@ -7779,7 +7895,7 @@ State *string
 
 ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#state ContainerCluster#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#state ContainerCluster#state}
 
 ---
 
@@ -7793,7 +7909,7 @@ KeyName *string
 
 The key to use to encrypt/decrypt secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key_name ContainerCluster#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key_name ContainerCluster#key_name}
 
 ---
 
@@ -7802,7 +7918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterDefaultSnatStatus {
 	Disabled: interface{},
@@ -7827,7 +7943,7 @@ Disabled interface{}
 
 When disabled is set to false, default IP masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
 
 ---
 
@@ -7836,7 +7952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterDnsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterDnsConfig {
 	AdditiveVpcScopeDnsDomain: *string,
@@ -7867,7 +7983,7 @@ AdditiveVpcScopeDnsDomain *string
 
 Enable additive VPC scope DNS in a GKE cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#additive_vpc_scope_dns_domain ContainerCluster#additive_vpc_scope_dns_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#additive_vpc_scope_dns_domain ContainerCluster#additive_vpc_scope_dns_domain}
 
 ---
 
@@ -7881,7 +7997,7 @@ ClusterDns *string
 
 Which in-cluster DNS provider should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_dns ContainerCluster#cluster_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_dns ContainerCluster#cluster_dns}
 
 ---
 
@@ -7895,7 +8011,7 @@ ClusterDnsDomain *string
 
 The suffix used for all cluster service records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_dns_domain ContainerCluster#cluster_dns_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_dns_domain ContainerCluster#cluster_dns_domain}
 
 ---
 
@@ -7909,7 +8025,7 @@ ClusterDnsScope *string
 
 The scope of access to cluster DNS records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_dns_scope ContainerCluster#cluster_dns_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_dns_scope ContainerCluster#cluster_dns_scope}
 
 ---
 
@@ -7918,7 +8034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterEnableK8SBetaApis {
 	EnabledApis: *[]*string,
@@ -7943,7 +8059,7 @@ EnabledApis *[]*string
 
 Enabled Kubernetes Beta APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled_apis ContainerCluster#enabled_apis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled_apis ContainerCluster#enabled_apis}
 
 ---
 
@@ -7952,7 +8068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterEnterpriseConfig {
 	DesiredTier: *string,
@@ -7977,7 +8093,7 @@ DesiredTier *string
 
 Indicates the desired cluster tier. Available options include STANDARD and ENTERPRISE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#desired_tier ContainerCluster#desired_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#desired_tier ContainerCluster#desired_tier}
 
 ---
 
@@ -7986,7 +8102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterFleet {
 	MembershipType: *string,
@@ -8013,7 +8129,7 @@ MembershipType *string
 
 The type of the cluster's fleet membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#membership_type ContainerCluster#membership_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#membership_type ContainerCluster#membership_type}
 
 ---
 
@@ -8027,7 +8143,7 @@ Project *string
 
 The Fleet host project of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#project ContainerCluster#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#project ContainerCluster#project}
 
 ---
 
@@ -8036,7 +8152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterGatewayApiConfig {
 	Channel: *string,
@@ -8061,7 +8177,7 @@ Channel *string
 
 The Gateway API release channel to use for Gateway API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#channel ContainerCluster#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#channel ContainerCluster#channel}
 
 ---
 
@@ -8070,7 +8186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterGkeAutoUpgradeConfig {
 	PatchMode: *string,
@@ -8099,7 +8215,7 @@ Accepted values are:
 
 * ACCELERATED: Upgrades to the latest available patch version in a given minor and release channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#patch_mode ContainerCluster#patch_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#patch_mode ContainerCluster#patch_mode}
 
 ---
 
@@ -8108,7 +8224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIdentityServiceConfig {
 	Enabled: interface{},
@@ -8133,7 +8249,7 @@ Enabled interface{}
 
 Whether to enable the Identity Service component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -8142,16 +8258,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIpAllocationPolicy {
 	AdditionalIpRangesConfig: interface{},
-	AdditionalPodRangesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig,
-	AutoIpamConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterIpAllocationPolicyAutoIpamConfig,
+	AdditionalPodRangesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig,
+	AutoIpamConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterIpAllocationPolicyAutoIpamConfig,
 	ClusterIpv4CidrBlock: *string,
 	ClusterSecondaryRangeName: *string,
-	NetworkTierConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterIpAllocationPolicyNetworkTierConfig,
-	PodCidrOverprovisionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig,
+	NetworkTierConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterIpAllocationPolicyNetworkTierConfig,
+	PodCidrOverprovisionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig,
 	ServicesIpv4CidrBlock: *string,
 	ServicesSecondaryRangeName: *string,
 	StackType: *string,
@@ -8185,7 +8301,7 @@ AdditionalIpRangesConfig interface{}
 
 additional_ip_ranges_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#additional_ip_ranges_config ContainerCluster#additional_ip_ranges_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#additional_ip_ranges_config ContainerCluster#additional_ip_ranges_config}
 
 ---
 
@@ -8199,7 +8315,7 @@ AdditionalPodRangesConfig ContainerClusterIpAllocationPolicyAdditionalPodRangesC
 
 additional_pod_ranges_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#additional_pod_ranges_config ContainerCluster#additional_pod_ranges_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#additional_pod_ranges_config ContainerCluster#additional_pod_ranges_config}
 
 ---
 
@@ -8213,7 +8329,7 @@ AutoIpamConfig ContainerClusterIpAllocationPolicyAutoIpamConfig
 
 auto_ipam_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_ipam_config ContainerCluster#auto_ipam_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_ipam_config ContainerCluster#auto_ipam_config}
 
 ---
 
@@ -8229,7 +8345,7 @@ The IP address range for the cluster pod IPs.
 
 Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_ipv4_cidr_block ContainerCluster#cluster_ipv4_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_ipv4_cidr_block ContainerCluster#cluster_ipv4_cidr_block}
 
 ---
 
@@ -8245,7 +8361,7 @@ The name of the existing secondary range in the cluster's subnetwork to use for 
 
 Alternatively, cluster_ipv4_cidr_block can be used to automatically create a GKE-managed one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_secondary_range_name ContainerCluster#cluster_secondary_range_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_secondary_range_name ContainerCluster#cluster_secondary_range_name}
 
 ---
 
@@ -8259,7 +8375,7 @@ NetworkTierConfig ContainerClusterIpAllocationPolicyNetworkTierConfig
 
 network_tier_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_tier_config ContainerCluster#network_tier_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_tier_config ContainerCluster#network_tier_config}
 
 ---
 
@@ -8273,7 +8389,7 @@ PodCidrOverprovisionConfig ContainerClusterIpAllocationPolicyPodCidrOverprovisio
 
 pod_cidr_overprovision_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
 
 ---
 
@@ -8289,7 +8405,7 @@ The IP address range of the services IPs in this cluster.
 
 Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#services_ipv4_cidr_block ContainerCluster#services_ipv4_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#services_ipv4_cidr_block ContainerCluster#services_ipv4_cidr_block}
 
 ---
 
@@ -8305,7 +8421,7 @@ The name of the existing secondary range in the cluster's subnetwork to use for 
 
 Alternatively, services_ipv4_cidr_block can be used to automatically create a GKE-managed one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#services_secondary_range_name ContainerCluster#services_secondary_range_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#services_secondary_range_name ContainerCluster#services_secondary_range_name}
 
 ---
 
@@ -8321,7 +8437,7 @@ The IP Stack type of the cluster.
 
 Choose between IPV4 and IPV4_IPV6. Default type is IPV4 Only if not set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#stack_type ContainerCluster#stack_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#stack_type ContainerCluster#stack_type}
 
 ---
 
@@ -8330,7 +8446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig {
 	Subnetwork: *string,
@@ -8359,7 +8475,7 @@ Subnetwork *string
 
 Name of the subnetwork. This can be the full path of the subnetwork or just the name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
 
 ---
 
@@ -8373,7 +8489,7 @@ PodIpv4RangeNames *[]*string
 
 List of secondary ranges names within this subnetwork that can be used for pod IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_ipv4_range_names ContainerCluster#pod_ipv4_range_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_ipv4_range_names ContainerCluster#pod_ipv4_range_names}
 
 ---
 
@@ -8387,7 +8503,7 @@ Status *string
 
 Status of the subnetwork, If in draining status, subnet will not be selected for new node pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#status ContainerCluster#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#status ContainerCluster#status}
 
 ---
 
@@ -8396,7 +8512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig {
 	PodRangeNames: *[]*string,
@@ -8421,7 +8537,7 @@ PodRangeNames *[]*string
 
 Name for pod secondary ipv4 range which has the actual range defined ahead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_range_names ContainerCluster#pod_range_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_range_names ContainerCluster#pod_range_names}
 
 ---
 
@@ -8430,7 +8546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAutoIpamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIpAllocationPolicyAutoIpamConfig {
 	Enabled: interface{},
@@ -8455,7 +8571,7 @@ Enabled interface{}
 
 The flag that enables Auto IPAM on this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -8464,7 +8580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyNetworkTierConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIpAllocationPolicyNetworkTierConfig {
 	NetworkTier: *string,
@@ -8489,7 +8605,7 @@ NetworkTier *string
 
 Network tier configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_tier ContainerCluster#network_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_tier ContainerCluster#network_tier}
 
 ---
 
@@ -8498,7 +8614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig {
 	Disabled: interface{},
@@ -8509,7 +8625,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -8521,7 +8637,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
 ---
 
@@ -8530,7 +8646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterLoggingConfig {
 	EnableComponents: *[]*string,
@@ -8555,7 +8671,7 @@ EnableComponents *[]*string
 
 GKE components exposing logs. Valid values include SYSTEM_COMPONENTS, APISERVER, CONTROLLER_MANAGER, KCP_CONNECTION, KCP_SSHD, KCP_HPA, KCP_VPA, SCHEDULER, and WORKLOADS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
 
 ---
 
@@ -8564,14 +8680,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicy {
-	DailyMaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow,
-	DisruptionBudget: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget,
+	DailyMaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow,
+	DisruptionBudget: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget,
 	MaintenanceExclusion: interface{},
-	RecurringMaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow,
-	RecurringWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow,
+	RecurringMaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow,
+	RecurringWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow,
 }
 ```
 
@@ -8597,7 +8713,7 @@ DailyMaintenanceWindow ContainerClusterMaintenancePolicyDailyMaintenanceWindow
 
 daily_maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#daily_maintenance_window ContainerCluster#daily_maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#daily_maintenance_window ContainerCluster#daily_maintenance_window}
 
 ---
 
@@ -8611,7 +8727,7 @@ DisruptionBudget ContainerClusterMaintenancePolicyDisruptionBudget
 
 disruption_budget block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disruption_budget ContainerCluster#disruption_budget}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disruption_budget ContainerCluster#disruption_budget}
 
 ---
 
@@ -8625,7 +8741,7 @@ MaintenanceExclusion interface{}
 
 maintenance_exclusion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#maintenance_exclusion ContainerCluster#maintenance_exclusion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#maintenance_exclusion ContainerCluster#maintenance_exclusion}
 
 ---
 
@@ -8639,7 +8755,7 @@ RecurringMaintenanceWindow ContainerClusterMaintenancePolicyRecurringMaintenance
 
 recurring_maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#recurring_maintenance_window ContainerCluster#recurring_maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#recurring_maintenance_window ContainerCluster#recurring_maintenance_window}
 
 ---
 
@@ -8653,7 +8769,7 @@ RecurringWindow ContainerClusterMaintenancePolicyRecurringWindow
 
 recurring_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#recurring_window ContainerCluster#recurring_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#recurring_window ContainerCluster#recurring_window}
 
 ---
 
@@ -8662,7 +8778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow {
 	StartTime: *string,
@@ -8673,7 +8789,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}. |
 
 ---
 
@@ -8685,7 +8801,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}.
 
 ---
 
@@ -8694,7 +8810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyDisruptionBudget {
 	MinorVersionDisruptionInterval: *string,
@@ -8706,8 +8822,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget.property.minorVersionDisruptionInterval">MinorVersionDisruptionInterval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#minor_version_disruption_interval ContainerCluster#minor_version_disruption_interval}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget.property.patchVersionDisruptionInterval">PatchVersionDisruptionInterval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#patch_version_disruption_interval ContainerCluster#patch_version_disruption_interval}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget.property.minorVersionDisruptionInterval">MinorVersionDisruptionInterval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#minor_version_disruption_interval ContainerCluster#minor_version_disruption_interval}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudget.property.patchVersionDisruptionInterval">PatchVersionDisruptionInterval</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#patch_version_disruption_interval ContainerCluster#patch_version_disruption_interval}. |
 
 ---
 
@@ -8719,7 +8835,7 @@ MinorVersionDisruptionInterval *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#minor_version_disruption_interval ContainerCluster#minor_version_disruption_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#minor_version_disruption_interval ContainerCluster#minor_version_disruption_interval}.
 
 ---
 
@@ -8731,7 +8847,7 @@ PatchVersionDisruptionInterval *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#patch_version_disruption_interval ContainerCluster#patch_version_disruption_interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#patch_version_disruption_interval ContainerCluster#patch_version_disruption_interval}.
 
 ---
 
@@ -8740,13 +8856,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyMaintenanceExclusion {
 	ExclusionName: *string,
 	StartTime: *string,
 	EndTime: *string,
-	ExclusionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions,
+	ExclusionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions,
 }
 ```
 
@@ -8754,9 +8870,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.exclusionName">ExclusionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#exclusion_name ContainerCluster#exclusion_name}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.exclusionName">ExclusionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#exclusion_name ContainerCluster#exclusion_name}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion.property.exclusionOptions">ExclusionOptions</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions">ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions</a></code> | exclusion_options block. |
 
 ---
@@ -8769,7 +8885,7 @@ ExclusionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#exclusion_name ContainerCluster#exclusion_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#exclusion_name ContainerCluster#exclusion_name}.
 
 ---
 
@@ -8781,7 +8897,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}.
 
 ---
 
@@ -8793,7 +8909,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}.
 
 ---
 
@@ -8807,7 +8923,7 @@ ExclusionOptions ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionO
 
 exclusion_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#exclusion_options ContainerCluster#exclusion_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#exclusion_options ContainerCluster#exclusion_options}
 
 ---
 
@@ -8816,7 +8932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions {
 	Scope: *string,
@@ -8843,7 +8959,7 @@ Scope *string
 
 The scope of automatic upgrades to restrict in the exclusion window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#scope ContainerCluster#scope}
 
 ---
 
@@ -8857,7 +8973,7 @@ EndTimeBehavior *string
 
 The behavior of the exclusion end time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#end_time_behavior ContainerCluster#end_time_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#end_time_behavior ContainerCluster#end_time_behavior}
 
 ---
 
@@ -8866,13 +8982,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow {
 	Recurrence: *string,
 	WindowDuration: *string,
-	WindowStartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime,
-	DelayUntil: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil,
+	WindowStartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime,
+	DelayUntil: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil,
 }
 ```
 
@@ -8880,8 +8996,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.property.recurrence">Recurrence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.property.windowDuration">WindowDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#window_duration ContainerCluster#window_duration}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.property.recurrence">Recurrence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.property.windowDuration">WindowDuration</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#window_duration ContainerCluster#window_duration}. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.property.windowStartTime">WindowStartTime</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime">ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime</a></code> | window_start_time block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindow.property.delayUntil">DelayUntil</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil">ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil</a></code> | delay_until block. |
 
@@ -8895,7 +9011,7 @@ Recurrence *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}.
 
 ---
 
@@ -8907,7 +9023,7 @@ WindowDuration *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#window_duration ContainerCluster#window_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#window_duration ContainerCluster#window_duration}.
 
 ---
 
@@ -8921,7 +9037,7 @@ WindowStartTime ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindo
 
 window_start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#window_start_time ContainerCluster#window_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#window_start_time ContainerCluster#window_start_time}
 
 ---
 
@@ -8935,7 +9051,7 @@ DelayUntil ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil
 
 delay_until block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#delay_until ContainerCluster#delay_until}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#delay_until ContainerCluster#delay_until}
 
 ---
 
@@ -8944,7 +9060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil {
 	Day: *f64,
@@ -8957,9 +9073,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.property.day">Day</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#day ContainerCluster#day}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.property.month">Month</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#month ContainerCluster#month}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.property.year">Year</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#year ContainerCluster#year}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.property.day">Day</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#day ContainerCluster#day}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.property.month">Month</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#month ContainerCluster#month}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntil.property.year">Year</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#year ContainerCluster#year}. |
 
 ---
 
@@ -8971,7 +9087,7 @@ Day *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#day ContainerCluster#day}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#day ContainerCluster#day}.
 
 ---
 
@@ -8983,7 +9099,7 @@ Month *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#month ContainerCluster#month}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#month ContainerCluster#month}.
 
 ---
 
@@ -8995,7 +9111,7 @@ Year *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#year ContainerCluster#year}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#year ContainerCluster#year}.
 
 ---
 
@@ -9004,7 +9120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime {
 	Hours: *f64,
@@ -9017,9 +9133,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hours ContainerCluster#hours}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#minutes ContainerCluster#minutes}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.property.seconds">Seconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#seconds ContainerCluster#seconds}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hours ContainerCluster#hours}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#minutes ContainerCluster#minutes}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTime.property.seconds">Seconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#seconds ContainerCluster#seconds}. |
 
 ---
 
@@ -9031,7 +9147,7 @@ Hours *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hours ContainerCluster#hours}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hours ContainerCluster#hours}.
 
 ---
 
@@ -9043,7 +9159,7 @@ Minutes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#minutes ContainerCluster#minutes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#minutes ContainerCluster#minutes}.
 
 ---
 
@@ -9055,7 +9171,7 @@ Seconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#seconds ContainerCluster#seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#seconds ContainerCluster#seconds}.
 
 ---
 
@@ -9064,7 +9180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMaintenancePolicyRecurringWindow {
 	EndTime: *string,
@@ -9077,9 +9193,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.property.recurrence">Recurrence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.property.recurrence">Recurrence</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}. |
 
 ---
 
@@ -9091,7 +9207,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}.
 
 ---
 
@@ -9103,7 +9219,7 @@ Recurrence *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}.
 
 ---
 
@@ -9115,7 +9231,43 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}.
+
+---
+
+### ContainerClusterManagedOpentelemetryConfig <a name="ContainerClusterManagedOpentelemetryConfig" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
+
+&containercluster.ContainerClusterManagedOpentelemetryConfig {
+	Scope: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig.property.scope">Scope</a></code> | <code>*string</code> | The scope of the Managed OpenTelemetry pipeline. |
+
+---
+
+##### `Scope`<sup>Optional</sup> <a name="Scope" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig.property.scope"></a>
+
+```go
+Scope *string
+```
+
+- *Type:* *string
+
+The scope of the Managed OpenTelemetry pipeline.
+
+Available options include NONE and COLLECTION_AND_INSTRUMENTATION_COMPONENTS. See https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters#managedopentelemetryconfig for more information. To disable the feature, explicitly set this to NONE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#scope ContainerCluster#scope}
 
 ---
 
@@ -9124,10 +9276,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMasterAuth {
-	ClientCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMasterAuthClientCertificateConfig,
+	ClientCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMasterAuthClientCertificateConfig,
 }
 ```
 
@@ -9149,7 +9301,7 @@ ClientCertificateConfig ContainerClusterMasterAuthClientCertificateConfig
 
 client_certificate_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#client_certificate_config ContainerCluster#client_certificate_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#client_certificate_config ContainerCluster#client_certificate_config}
 
 ---
 
@@ -9158,7 +9310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMasterAuthClientCertificateConfig {
 	IssueClientCertificate: interface{},
@@ -9183,7 +9335,7 @@ IssueClientCertificate interface{}
 
 Whether client certificate authorization is enabled for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#issue_client_certificate ContainerCluster#issue_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#issue_client_certificate ContainerCluster#issue_client_certificate}
 
 ---
 
@@ -9192,7 +9344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMasterAuthorizedNetworksConfig {
 	CidrBlocks: interface{},
@@ -9221,7 +9373,7 @@ CidrBlocks interface{}
 
 cidr_blocks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cidr_blocks ContainerCluster#cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cidr_blocks ContainerCluster#cidr_blocks}
 
 ---
 
@@ -9235,7 +9387,7 @@ GcpPublicCidrsAccessEnabled interface{}
 
 Whether Kubernetes master is accessible via Google Compute Engine Public IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_public_cidrs_access_enabled ContainerCluster#gcp_public_cidrs_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_public_cidrs_access_enabled ContainerCluster#gcp_public_cidrs_access_enabled}
 
 ---
 
@@ -9249,7 +9401,7 @@ PrivateEndpointEnforcementEnabled interface{}
 
 Whether authorized networks is enforced on the private endpoint or not. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_endpoint_enforcement_enabled ContainerCluster#private_endpoint_enforcement_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_endpoint_enforcement_enabled ContainerCluster#private_endpoint_enforcement_enabled}
 
 ---
 
@@ -9258,7 +9410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks {
 	CidrBlock: *string,
@@ -9285,7 +9437,7 @@ CidrBlock *string
 
 External network that can access Kubernetes master through HTTPS. Must be specified in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cidr_block ContainerCluster#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cidr_block ContainerCluster#cidr_block}
 
 ---
 
@@ -9299,7 +9451,7 @@ DisplayName *string
 
 Field for users to identify CIDR blocks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#display_name ContainerCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#display_name ContainerCluster#display_name}
 
 ---
 
@@ -9308,7 +9460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMeshCertificates {
 	EnableCertificates: interface{},
@@ -9333,7 +9485,7 @@ EnableCertificates interface{}
 
 When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_certificates ContainerCluster#enable_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_certificates ContainerCluster#enable_certificates}
 
 ---
 
@@ -9342,12 +9494,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMonitoringConfig {
-	AdvancedDatapathObservabilityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig,
+	AdvancedDatapathObservabilityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig,
 	EnableComponents: *[]*string,
-	ManagedPrometheus: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus,
+	ManagedPrometheus: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus,
 }
 ```
 
@@ -9371,7 +9523,7 @@ AdvancedDatapathObservabilityConfig ContainerClusterMonitoringConfigAdvancedData
 
 advanced_datapath_observability_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#advanced_datapath_observability_config ContainerCluster#advanced_datapath_observability_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#advanced_datapath_observability_config ContainerCluster#advanced_datapath_observability_config}
 
 ---
 
@@ -9387,7 +9539,7 @@ GKE components exposing metrics.
 
 Valid values include SYSTEM_COMPONENTS, APISERVER, SCHEDULER, CONTROLLER_MANAGER, STORAGE, HPA, POD, DAEMONSET, DEPLOYMENT, STATEFULSET, KUBELET, CADVISOR, DCGM and JOBSET.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
 
 ---
 
@@ -9401,7 +9553,7 @@ ManagedPrometheus ContainerClusterMonitoringConfigManagedPrometheus
 
 managed_prometheus block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#managed_prometheus ContainerCluster#managed_prometheus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#managed_prometheus ContainerCluster#managed_prometheus}
 
 ---
 
@@ -9410,7 +9562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig {
 	EnableMetrics: interface{},
@@ -9437,7 +9589,7 @@ EnableMetrics interface{}
 
 Whether or not the advanced datapath metrics are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_metrics ContainerCluster#enable_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_metrics ContainerCluster#enable_metrics}
 
 ---
 
@@ -9451,7 +9603,7 @@ EnableRelay interface{}
 
 Whether or not Relay is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_relay ContainerCluster#enable_relay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_relay ContainerCluster#enable_relay}
 
 ---
 
@@ -9460,11 +9612,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMonitoringConfigManagedPrometheus {
 	Enabled: interface{},
-	AutoMonitoringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig,
+	AutoMonitoringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig,
 }
 ```
 
@@ -9487,7 +9639,7 @@ Enabled interface{}
 
 Whether or not the managed collection is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -9501,7 +9653,7 @@ AutoMonitoringConfig ContainerClusterMonitoringConfigManagedPrometheusAutoMonito
 
 auto_monitoring_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_monitoring_config ContainerCluster#auto_monitoring_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_monitoring_config ContainerCluster#auto_monitoring_config}
 
 ---
 
@@ -9510,7 +9662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig {
 	Scope: *string,
@@ -9535,7 +9687,7 @@ Scope *string
 
 The scope of auto-monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#scope ContainerCluster#scope}
 
 ---
 
@@ -9544,7 +9696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNetworkPerformanceConfig {
 	TotalEgressBandwidthTier: *string,
@@ -9569,7 +9721,7 @@ TotalEgressBandwidthTier *string
 
 Specifies the total network bandwidth tier for NodePools in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
 
 ---
 
@@ -9578,7 +9730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNetworkPolicy {
 	Enabled: interface{},
@@ -9605,7 +9757,7 @@ Enabled interface{}
 
 Whether network policy is enabled on the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -9619,7 +9771,7 @@ Provider *string
 
 The selected network policy provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#provider ContainerCluster#provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#provider ContainerCluster#provider}
 
 ---
 
@@ -9628,29 +9780,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfig {
-	AdvancedMachineFeatures: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures,
-	BootDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigBootDisk,
+	AdvancedMachineFeatures: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures,
+	BootDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigBootDisk,
 	BootDiskKmsKey: *string,
-	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigConfidentialNodes,
-	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigContainerdConfig,
+	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigConfidentialNodes,
+	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigContainerdConfig,
 	DiskSizeGb: *f64,
 	DiskType: *string,
 	EnableConfidentialStorage: interface{},
-	EphemeralStorageLocalSsdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig,
-	FastSocket: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigFastSocket,
+	EphemeralStorageLocalSsdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig,
+	FastSocket: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigFastSocket,
 	FlexStart: interface{},
-	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigGcfsConfig,
+	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigGcfsConfig,
 	GpudirectStrategy: *string,
 	GuestAccelerator: interface{},
-	Gvnic: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigGvnic,
+	Gvnic: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigGvnic,
 	ImageType: *string,
-	KubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfig,
+	KubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfig,
 	Labels: *map[string]*string,
-	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfig,
-	LocalNvmeSsdBlockConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfig,
+	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfig,
+	LocalNvmeSsdBlockConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfig,
 	LocalSsdCount: *f64,
 	LocalSsdEncryptionMode: *string,
 	LoggingVariant: *string,
@@ -9662,21 +9814,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 	NodeImageConfig: interface{},
 	OauthScopes: *[]*string,
 	Preemptible: interface{},
-	ReservationAffinity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigReservationAffinity,
+	ReservationAffinity: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigReservationAffinity,
 	ResourceLabels: *map[string]*string,
 	ResourceManagerTags: *map[string]*string,
-	SandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigSandboxConfig,
+	SandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigSandboxConfig,
 	SecondaryBootDisks: interface{},
 	ServiceAccount: *string,
-	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig,
-	SoleTenantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigSoleTenantConfig,
+	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig,
+	SoleTenantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigSoleTenantConfig,
 	Spot: interface{},
 	StoragePools: *[]*string,
 	Tags: *[]*string,
 	Taint: interface{},
-	TaintConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigTaintConfig,
-	WindowsNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigWindowsNodeConfig,
-	WorkloadMetadataConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig,
+	TaintConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigTaintConfig,
+	WindowsNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigWindowsNodeConfig,
+	WorkloadMetadataConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig,
 }
 ```
 
@@ -9743,7 +9895,7 @@ AdvancedMachineFeatures ContainerClusterNodeConfigAdvancedMachineFeatures
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
 
 ---
 
@@ -9757,7 +9909,7 @@ BootDisk ContainerClusterNodeConfigBootDisk
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk ContainerCluster#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk ContainerCluster#boot_disk}
 
 ---
 
@@ -9771,7 +9923,7 @@ BootDiskKmsKey *string
 
 The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
 
 ---
 
@@ -9785,7 +9937,7 @@ ConfidentialNodes ContainerClusterNodeConfigConfidentialNodes
 
 confidential_nodes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
 
 ---
 
@@ -9799,7 +9951,7 @@ ContainerdConfig ContainerClusterNodeConfigContainerdConfig
 
 containerd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
 
 ---
 
@@ -9813,7 +9965,7 @@ DiskSizeGb *f64
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_size_gb ContainerCluster#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_size_gb ContainerCluster#disk_size_gb}
 
 ---
 
@@ -9827,7 +9979,7 @@ DiskType *string
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
 
 ---
 
@@ -9841,7 +9993,7 @@ EnableConfidentialStorage interface{}
 
 If enabled boot disks are configured with confidential mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
 
 ---
 
@@ -9855,7 +10007,7 @@ EphemeralStorageLocalSsdConfig ContainerClusterNodeConfigEphemeralStorageLocalSs
 
 ephemeral_storage_local_ssd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
 
 ---
 
@@ -9869,7 +10021,7 @@ FastSocket ContainerClusterNodeConfigFastSocket
 
 fast_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#fast_socket ContainerCluster#fast_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#fast_socket ContainerCluster#fast_socket}
 
 ---
 
@@ -9883,7 +10035,7 @@ FlexStart interface{}
 
 Enables Flex Start provisioning model for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
 
 ---
 
@@ -9897,7 +10049,7 @@ GcfsConfig ContainerClusterNodeConfigGcfsConfig
 
 gcfs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
 
 ---
 
@@ -9911,7 +10063,7 @@ GpudirectStrategy *string
 
 The type of GPUDirect strategy to enable on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpudirect_strategy ContainerCluster#gpudirect_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpudirect_strategy ContainerCluster#gpudirect_strategy}
 
 ---
 
@@ -9925,7 +10077,7 @@ GuestAccelerator interface{}
 
 guest_accelerator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
 
 ---
 
@@ -9939,7 +10091,7 @@ Gvnic ContainerClusterNodeConfigGvnic
 
 gvnic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
 
 ---
 
@@ -9955,7 +10107,7 @@ The image type to use for this node.
 
 Note that for a given image type, the latest version of it will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
 
 ---
 
@@ -9969,7 +10121,7 @@ KubeletConfig ContainerClusterNodeConfigKubeletConfig
 
 kubelet_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#kubelet_config ContainerCluster#kubelet_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#kubelet_config ContainerCluster#kubelet_config}
 
 ---
 
@@ -9985,7 +10137,7 @@ The map of Kubernetes labels (key/value pairs) to be applied to each node.
 
 These will added in addition to any default label(s) that Kubernetes may apply to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#labels ContainerCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#labels ContainerCluster#labels}
 
 ---
 
@@ -9999,7 +10151,7 @@ LinuxNodeConfig ContainerClusterNodeConfigLinuxNodeConfig
 
 linux_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
 
 ---
 
@@ -10013,7 +10165,7 @@ LocalNvmeSsdBlockConfig ContainerClusterNodeConfigLocalNvmeSsdBlockConfig
 
 local_nvme_ssd_block_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
 
 ---
 
@@ -10027,7 +10179,7 @@ LocalSsdCount *f64
 
 The number of local SSD disks to be attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 
 ---
 
@@ -10041,7 +10193,7 @@ LocalSsdEncryptionMode *string
 
 LocalSsdEncryptionMode specified the method used for encrypting the local SSDs attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_encryption_mode ContainerCluster#local_ssd_encryption_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_encryption_mode ContainerCluster#local_ssd_encryption_mode}
 
 ---
 
@@ -10057,7 +10209,7 @@ Type of logging agent that is used as the default value for node pools in the cl
 
 Valid values include DEFAULT and MAX_THROUGHPUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
 
 ---
 
@@ -10071,7 +10223,7 @@ MachineType *string
 
 The name of a Google Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#machine_type ContainerCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#machine_type ContainerCluster#machine_type}
 
 ---
 
@@ -10085,7 +10237,7 @@ MaxRunDuration *string
 
 The runtime of each node in the node pool in seconds, terminated by 's'. Example: "3600s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_run_duration ContainerCluster#max_run_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_run_duration ContainerCluster#max_run_duration}
 
 ---
 
@@ -10099,7 +10251,7 @@ Metadata *map[string]*string
 
 The metadata key/value pairs assigned to instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#metadata ContainerCluster#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#metadata ContainerCluster#metadata}
 
 ---
 
@@ -10115,7 +10267,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or newer CPU platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
 
 ---
 
@@ -10131,7 +10283,7 @@ Setting this field will assign instances of this pool to run on the specified no
 
 This is useful for running workloads on sole tenant nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_group ContainerCluster#node_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_group ContainerCluster#node_group}
 
 ---
 
@@ -10145,7 +10297,7 @@ NodeImageConfig interface{}
 
 node_image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_image_config ContainerCluster#node_image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_image_config ContainerCluster#node_image_config}
 
 ---
 
@@ -10159,7 +10311,7 @@ OauthScopes *[]*string
 
 The set of Google API scopes to be made available on all of the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
 
 ---
 
@@ -10173,7 +10325,7 @@ Preemptible interface{}
 
 Whether the nodes are created as preemptible VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
 
 ---
 
@@ -10187,7 +10339,7 @@ ReservationAffinity ContainerClusterNodeConfigReservationAffinity
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
 
 ---
 
@@ -10201,7 +10353,7 @@ ResourceLabels *map[string]*string
 
 The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
 
 ---
 
@@ -10217,7 +10369,7 @@ A map of resource manager tags.
 
 Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
 
 ---
 
@@ -10231,7 +10383,7 @@ SandboxConfig ContainerClusterNodeConfigSandboxConfig
 
 sandbox_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#sandbox_config ContainerCluster#sandbox_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#sandbox_config ContainerCluster#sandbox_config}
 
 ---
 
@@ -10245,7 +10397,7 @@ SecondaryBootDisks interface{}
 
 secondary_boot_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
 
 ---
 
@@ -10259,7 +10411,7 @@ ServiceAccount *string
 
 The Google Cloud Platform Service Account to be used by the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
 
 ---
 
@@ -10273,7 +10425,7 @@ ShieldedInstanceConfig ContainerClusterNodeConfigShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
 
 ---
 
@@ -10287,7 +10439,7 @@ SoleTenantConfig ContainerClusterNodeConfigSoleTenantConfig
 
 sole_tenant_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#sole_tenant_config ContainerCluster#sole_tenant_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#sole_tenant_config ContainerCluster#sole_tenant_config}
 
 ---
 
@@ -10301,7 +10453,7 @@ Spot interface{}
 
 Whether the nodes are created as spot VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#spot ContainerCluster#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#spot ContainerCluster#spot}
 
 ---
 
@@ -10315,7 +10467,7 @@ StoragePools *[]*string
 
 The list of Storage Pools where boot disks are provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
 
 ---
 
@@ -10329,7 +10481,7 @@ Tags *[]*string
 
 The list of instance tags applied to all nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#tags ContainerCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#tags ContainerCluster#tags}
 
 ---
 
@@ -10343,7 +10495,7 @@ Taint interface{}
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#taint ContainerCluster#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#taint ContainerCluster#taint}
 
 ---
 
@@ -10357,7 +10509,7 @@ TaintConfig ContainerClusterNodeConfigTaintConfig
 
 taint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#taint_config ContainerCluster#taint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#taint_config ContainerCluster#taint_config}
 
 ---
 
@@ -10371,7 +10523,7 @@ WindowsNodeConfig ContainerClusterNodeConfigWindowsNodeConfig
 
 windows_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
 
 ---
 
@@ -10385,7 +10537,7 @@ WorkloadMetadataConfig ContainerClusterNodeConfigWorkloadMetadataConfig
 
 workload_metadata_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
 
 ---
 
@@ -10394,7 +10546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigAdvancedMachineFeatures {
 	ThreadsPerCore: *f64,
@@ -10425,7 +10577,7 @@ The number of threads per physical core.
 
 To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#threads_per_core ContainerCluster#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#threads_per_core ContainerCluster#threads_per_core}
 
 ---
 
@@ -10439,7 +10591,7 @@ EnableNestedVirtualization interface{}
 
 Whether the node should have nested virtualization enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_nested_virtualization ContainerCluster#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_nested_virtualization ContainerCluster#enable_nested_virtualization}
 
 ---
 
@@ -10455,7 +10607,7 @@ Level of Performance Monitoring Unit (PMU) requested.
 
 If unset, no access to the PMU is assumed. For existing node pools with no PMU, setting STANDARD may not produce a diff; recreate the node pool to apply it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#performance_monitoring_unit ContainerCluster#performance_monitoring_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#performance_monitoring_unit ContainerCluster#performance_monitoring_unit}
 
 ---
 
@@ -10464,7 +10616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigBootDisk {
 	DiskType: *string,
@@ -10495,7 +10647,7 @@ DiskType *string
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
 
 ---
 
@@ -10509,7 +10661,7 @@ ProvisionedIops *f64
 
 Configured IOPs provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#provisioned_iops ContainerCluster#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#provisioned_iops ContainerCluster#provisioned_iops}
 
 ---
 
@@ -10523,7 +10675,7 @@ ProvisionedThroughput *f64
 
 Configured throughput provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#provisioned_throughput ContainerCluster#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#provisioned_throughput ContainerCluster#provisioned_throughput}
 
 ---
 
@@ -10537,7 +10689,7 @@ SizeGb *f64
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#size_gb ContainerCluster#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#size_gb ContainerCluster#size_gb}
 
 ---
 
@@ -10546,7 +10698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigConfidentialNodes {
 	Enabled: interface{},
@@ -10573,7 +10725,7 @@ Enabled interface{}
 
 Whether Confidential Nodes feature is enabled for all nodes in this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -10587,7 +10739,7 @@ ConfidentialInstanceType *string
 
 Defines the type of technology used by the confidential node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
 
 ---
 
@@ -10596,12 +10748,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfig {
-	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig,
+	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig,
 	RegistryHosts: interface{},
-	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigContainerdConfigWritableCgroups,
+	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigContainerdConfigWritableCgroups,
 }
 ```
 
@@ -10625,7 +10777,7 @@ PrivateRegistryAccessConfig ContainerClusterNodeConfigContainerdConfigPrivateReg
 
 private_registry_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
 
 ---
 
@@ -10639,7 +10791,7 @@ RegistryHosts interface{}
 
 registry_hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
 
 ---
 
@@ -10653,7 +10805,7 @@ WritableCgroups ContainerClusterNodeConfigContainerdConfigWritableCgroups
 
 writable_cgroups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
 
 ---
 
@@ -10662,7 +10814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig {
 	Enabled: interface{},
@@ -10689,7 +10841,7 @@ Enabled interface{}
 
 Whether or not private registries are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -10703,7 +10855,7 @@ CertificateAuthorityDomainConfig interface{}
 
 certificate_authority_domain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
 
 ---
 
@@ -10712,11 +10864,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig {
 	Fqdns: *[]*string,
-	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
+	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
 }
 ```
 
@@ -10739,7 +10891,7 @@ Fqdns *[]*string
 
 List of fully-qualified-domain-names. IPv4s and port specification are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
 
 ---
 
@@ -10753,7 +10905,7 @@ GcpSecretManagerCertificateConfig ContainerClusterNodeConfigContainerdConfigPriv
 
 gcp_secret_manager_certificate_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
 
 ---
 
@@ -10762,7 +10914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig {
 	SecretUri: *string,
@@ -10787,7 +10939,7 @@ SecretUri *string
 
 URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
 
 ---
 
@@ -10796,7 +10948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHosts {
 	Server: *string,
@@ -10823,7 +10975,7 @@ Server *string
 
 Defines the host name of the registry server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#server ContainerCluster#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#server ContainerCluster#server}
 
 ---
 
@@ -10837,7 +10989,7 @@ Hosts interface{}
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
 
 ---
 
@@ -10846,7 +10998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts {
 	Host: *string,
@@ -10883,7 +11035,7 @@ Host *string
 
 Configures the registry host/mirror.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#host ContainerCluster#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#host ContainerCluster#host}
 
 ---
 
@@ -10897,7 +11049,7 @@ Ca interface{}
 
 ca block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ca ContainerCluster#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ca ContainerCluster#ca}
 
 ---
 
@@ -10911,7 +11063,7 @@ Capabilities *[]*string
 
 Represent the capabilities of the registry host, specifying what operations a host is capable of performing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
 
 ---
 
@@ -10925,7 +11077,7 @@ Client interface{}
 
 client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#client ContainerCluster#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#client ContainerCluster#client}
 
 ---
 
@@ -10939,7 +11091,7 @@ DialTimeout *string
 
 Specifies the maximum duration allowed for a connection attempt to complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
 
 ---
 
@@ -10953,7 +11105,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#header ContainerCluster#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#header ContainerCluster#header}
 
 ---
 
@@ -10967,7 +11119,7 @@ OverridePath interface{}
 
 Indicate the host's API root endpoint is defined in the URL path rather than by the API specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
 
 ---
 
@@ -10976,7 +11128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCa {
 	GcpSecretManagerSecretUri: *string,
@@ -11001,7 +11153,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -11010,11 +11162,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClient {
-	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCert,
-	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKey,
+	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCert,
+	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKey,
 }
 ```
 
@@ -11037,7 +11189,7 @@ Cert ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCert
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cert ContainerCluster#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cert ContainerCluster#cert}
 
 ---
 
@@ -11051,7 +11203,7 @@ Key ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKey
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -11060,7 +11212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCert {
 	GcpSecretManagerSecretUri: *string,
@@ -11085,7 +11237,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -11094,7 +11246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKey {
 	GcpSecretManagerSecretUri: *string,
@@ -11119,7 +11271,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -11128,7 +11280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeader {
 	Key: *string,
@@ -11155,7 +11307,7 @@ Key *string
 
 Configures the header key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -11169,7 +11321,7 @@ Value *[]*string
 
 Configures the header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#value ContainerCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#value ContainerCluster#value}
 
 ---
 
@@ -11178,7 +11330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigWritableCgroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigContainerdConfigWritableCgroups {
 	Enabled: interface{},
@@ -11203,7 +11355,7 @@ Enabled interface{}
 
 Whether writable cgroups are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -11212,7 +11364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigEffectiveTaints {
 
@@ -11225,7 +11377,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig {
 	LocalSsdCount: *f64,
@@ -11254,7 +11406,7 @@ Number of local SSDs to use to back ephemeral storage.
 
 Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 
 ---
 
@@ -11268,7 +11420,7 @@ DataCacheCount *f64
 
 Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#data_cache_count ContainerCluster#data_cache_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#data_cache_count ContainerCluster#data_cache_count}
 
 ---
 
@@ -11277,7 +11429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigFastSocket {
 	Enabled: interface{},
@@ -11302,7 +11454,7 @@ Enabled interface{}
 
 Whether or not NCCL Fast Socket is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -11311,7 +11463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigGcfsConfig {
 	Enabled: interface{},
@@ -11336,7 +11488,7 @@ Enabled interface{}
 
 Whether or not GCFS is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -11345,14 +11497,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigGuestAccelerator {
 	Count: *f64,
 	Type: *string,
-	GpuDriverInstallationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig,
+	GpuDriverInstallationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig,
 	GpuPartitionSize: *string,
-	GpuSharingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig,
+	GpuSharingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig,
 }
 ```
 
@@ -11378,7 +11530,7 @@ Count *f64
 
 The number of the accelerator cards exposed to an instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#count ContainerCluster#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#count ContainerCluster#count}
 
 ---
 
@@ -11392,7 +11544,7 @@ Type *string
 
 The accelerator type resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#type ContainerCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#type ContainerCluster#type}
 
 ---
 
@@ -11406,7 +11558,7 @@ GpuDriverInstallationConfig ContainerClusterNodeConfigGuestAcceleratorGpuDriverI
 
 gpu_driver_installation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_driver_installation_config ContainerCluster#gpu_driver_installation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_driver_installation_config ContainerCluster#gpu_driver_installation_config}
 
 ---
 
@@ -11420,7 +11572,7 @@ GpuPartitionSize *string
 
 Size of partitions to create on the GPU. Valid values are described in the NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-guide/#partitioning).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_partition_size ContainerCluster#gpu_partition_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_partition_size ContainerCluster#gpu_partition_size}
 
 ---
 
@@ -11434,7 +11586,7 @@ GpuSharingConfig ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
 
 gpu_sharing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_sharing_config ContainerCluster#gpu_sharing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_sharing_config ContainerCluster#gpu_sharing_config}
 
 ---
 
@@ -11443,7 +11595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig {
 	GpuDriverVersion: *string,
@@ -11468,7 +11620,7 @@ GpuDriverVersion *string
 
 Mode for how the GPU driver is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
 
 ---
 
@@ -11477,7 +11629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig {
 	GpuSharingStrategy: *string,
@@ -11506,7 +11658,7 @@ The type of GPU sharing strategy to enable on the GPU node.
 
 Possible values are described in the API package (https://pkg.go.dev/google.golang.org/api/container/v1#GPUSharingConfig)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_sharing_strategy ContainerCluster#gpu_sharing_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_sharing_strategy ContainerCluster#gpu_sharing_strategy}
 
 ---
 
@@ -11520,7 +11672,7 @@ MaxSharedClientsPerGpu *f64
 
 The maximum number of containers that can share a GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_shared_clients_per_gpu ContainerCluster#max_shared_clients_per_gpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_shared_clients_per_gpu ContainerCluster#max_shared_clients_per_gpu}
 
 ---
 
@@ -11529,7 +11681,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigGvnic {
 	Enabled: interface{},
@@ -11554,7 +11706,7 @@ Enabled interface{}
 
 Whether or not gvnic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -11563,7 +11715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfig {
 	AllowedUnsafeSysctls: *[]*string,
@@ -11572,23 +11724,23 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 	CpuCfsQuota: interface{},
 	CpuCfsQuotaPeriod: *string,
 	CpuManagerPolicy: *string,
-	CrashLoopBackOff: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfigCrashLoopBackOff,
+	CrashLoopBackOff: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfigCrashLoopBackOff,
 	EvictionMaxPodGracePeriodSeconds: *f64,
-	EvictionMinimumReclaim: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim,
-	EvictionSoft: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoft,
-	EvictionSoftGracePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod,
+	EvictionMinimumReclaim: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim,
+	EvictionSoft: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoft,
+	EvictionSoftGracePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod,
 	ImageGcHighThresholdPercent: *f64,
 	ImageGcLowThresholdPercent: *f64,
 	ImageMaximumGcAge: *string,
 	ImageMinimumGcAge: *string,
 	InsecureKubeletReadonlyPortEnabled: *string,
 	MaxParallelImagePulls: *f64,
-	MemoryManager: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfigMemoryManager,
+	MemoryManager: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfigMemoryManager,
 	PodPidsLimit: *f64,
 	ShutdownGracePeriodCriticalPodsSeconds: *f64,
 	ShutdownGracePeriodSeconds: *f64,
 	SingleProcessOomKill: interface{},
-	TopologyManager: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManager,
+	TopologyManager: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManager,
 }
 ```
 
@@ -11632,7 +11784,7 @@ AllowedUnsafeSysctls *[]*string
 
 Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#allowed_unsafe_sysctls ContainerCluster#allowed_unsafe_sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#allowed_unsafe_sysctls ContainerCluster#allowed_unsafe_sysctls}
 
 ---
 
@@ -11646,7 +11798,7 @@ ContainerLogMaxFiles *f64
 
 Defines the maximum number of container log files that can be present for a container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#container_log_max_files ContainerCluster#container_log_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#container_log_max_files ContainerCluster#container_log_max_files}
 
 ---
 
@@ -11660,7 +11812,7 @@ ContainerLogMaxSize *string
 
 Defines the maximum size of the container log file before it is rotated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#container_log_max_size ContainerCluster#container_log_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#container_log_max_size ContainerCluster#container_log_max_size}
 
 ---
 
@@ -11674,7 +11826,7 @@ CpuCfsQuota interface{}
 
 Enable CPU CFS quota enforcement for containers that specify CPU limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
 
 ---
 
@@ -11688,7 +11840,7 @@ CpuCfsQuotaPeriod *string
 
 Set the CPU CFS quota period value 'cpu.cfs_period_us'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
 
 ---
 
@@ -11702,7 +11854,7 @@ CpuManagerPolicy *string
 
 Control the CPU management policy on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cpu_manager_policy ContainerCluster#cpu_manager_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cpu_manager_policy ContainerCluster#cpu_manager_policy}
 
 ---
 
@@ -11716,7 +11868,7 @@ CrashLoopBackOff ContainerClusterNodeConfigKubeletConfigCrashLoopBackOff
 
 crash_loop_back_off block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#crash_loop_back_off ContainerCluster#crash_loop_back_off}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#crash_loop_back_off ContainerCluster#crash_loop_back_off}
 
 ---
 
@@ -11730,7 +11882,7 @@ EvictionMaxPodGracePeriodSeconds *f64
 
 Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_max_pod_grace_period_seconds ContainerCluster#eviction_max_pod_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_max_pod_grace_period_seconds ContainerCluster#eviction_max_pod_grace_period_seconds}
 
 ---
 
@@ -11744,7 +11896,7 @@ EvictionMinimumReclaim ContainerClusterNodeConfigKubeletConfigEvictionMinimumRec
 
 eviction_minimum_reclaim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_minimum_reclaim ContainerCluster#eviction_minimum_reclaim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_minimum_reclaim ContainerCluster#eviction_minimum_reclaim}
 
 ---
 
@@ -11758,7 +11910,7 @@ EvictionSoft ContainerClusterNodeConfigKubeletConfigEvictionSoft
 
 eviction_soft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_soft ContainerCluster#eviction_soft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_soft ContainerCluster#eviction_soft}
 
 ---
 
@@ -11772,7 +11924,7 @@ EvictionSoftGracePeriod ContainerClusterNodeConfigKubeletConfigEvictionSoftGrace
 
 eviction_soft_grace_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_soft_grace_period ContainerCluster#eviction_soft_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_soft_grace_period ContainerCluster#eviction_soft_grace_period}
 
 ---
 
@@ -11786,7 +11938,7 @@ ImageGcHighThresholdPercent *f64
 
 Defines the percent of disk usage after which image garbage collection is always run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_gc_high_threshold_percent ContainerCluster#image_gc_high_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_gc_high_threshold_percent ContainerCluster#image_gc_high_threshold_percent}
 
 ---
 
@@ -11802,7 +11954,7 @@ Defines the percent of disk usage before which image garbage collection is never
 
 Lowest disk usage to garbage collect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_gc_low_threshold_percent ContainerCluster#image_gc_low_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_gc_low_threshold_percent ContainerCluster#image_gc_low_threshold_percent}
 
 ---
 
@@ -11816,7 +11968,7 @@ ImageMaximumGcAge *string
 
 Defines the maximum age an image can be unused before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_maximum_gc_age ContainerCluster#image_maximum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_maximum_gc_age ContainerCluster#image_maximum_gc_age}
 
 ---
 
@@ -11830,7 +11982,7 @@ ImageMinimumGcAge *string
 
 Defines the minimum age for an unused image before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_minimum_gc_age ContainerCluster#image_minimum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_minimum_gc_age ContainerCluster#image_minimum_gc_age}
 
 ---
 
@@ -11846,7 +11998,7 @@ Controls whether the kubelet read-only port is enabled.
 
 It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
 
 ---
 
@@ -11860,7 +12012,7 @@ MaxParallelImagePulls *f64
 
 Set the maximum number of image pulls in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_parallel_image_pulls ContainerCluster#max_parallel_image_pulls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_parallel_image_pulls ContainerCluster#max_parallel_image_pulls}
 
 ---
 
@@ -11874,7 +12026,7 @@ MemoryManager ContainerClusterNodeConfigKubeletConfigMemoryManager
 
 memory_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_manager ContainerCluster#memory_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_manager ContainerCluster#memory_manager}
 
 ---
 
@@ -11888,7 +12040,7 @@ PodPidsLimit *f64
 
 Controls the maximum number of processes allowed to run in a pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
 
 ---
 
@@ -11902,7 +12054,7 @@ ShutdownGracePeriodCriticalPodsSeconds *f64
 
 Controls the portion of total grace period (in seconds) that is specifically reserved for terminating critical pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shutdown_grace_period_critical_pods_seconds ContainerCluster#shutdown_grace_period_critical_pods_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shutdown_grace_period_critical_pods_seconds ContainerCluster#shutdown_grace_period_critical_pods_seconds}
 
 ---
 
@@ -11916,7 +12068,7 @@ ShutdownGracePeriodSeconds *f64
 
 Controls the total duration of time (in seconds) the node delays shutdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shutdown_grace_period_seconds ContainerCluster#shutdown_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shutdown_grace_period_seconds ContainerCluster#shutdown_grace_period_seconds}
 
 ---
 
@@ -11930,7 +12082,7 @@ SingleProcessOomKill interface{}
 
 Defines whether to enable single process OOM killer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#single_process_oom_kill ContainerCluster#single_process_oom_kill}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#single_process_oom_kill ContainerCluster#single_process_oom_kill}
 
 ---
 
@@ -11944,7 +12096,7 @@ TopologyManager ContainerClusterNodeConfigKubeletConfigTopologyManager
 
 topology_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#topology_manager ContainerCluster#topology_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#topology_manager ContainerCluster#topology_manager}
 
 ---
 
@@ -11953,7 +12105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigCrashLoopBackOff.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfigCrashLoopBackOff {
 	MaxContainerRestartPeriod: *string,
@@ -11978,7 +12130,7 @@ MaxContainerRestartPeriod *string
 
 The maximum duration the backoff delay can accrue to for container restarts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_container_restart_period ContainerCluster#max_container_restart_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_container_restart_period ContainerCluster#max_container_restart_period}
 
 ---
 
@@ -11987,7 +12139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim {
 	ImagefsAvailable: *string,
@@ -12022,7 +12174,7 @@ ImagefsAvailable *string
 
 Defines percentage of minimum reclaim for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 
 ---
 
@@ -12036,7 +12188,7 @@ ImagefsInodesFree *string
 
 Defines percentage of minimum reclaim for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 
 ---
 
@@ -12050,7 +12202,7 @@ MemoryAvailable *string
 
 Defines percentage of minimum reclaim for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 
 ---
 
@@ -12064,7 +12216,7 @@ NodefsAvailable *string
 
 Defines percentage of minimum reclaim for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 
 ---
 
@@ -12078,7 +12230,7 @@ NodefsInodesFree *string
 
 Defines percentage of minimum reclaim for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 
 ---
 
@@ -12092,7 +12244,7 @@ PidAvailable *string
 
 Defines percentage of minimum reclaim for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 
 ---
 
@@ -12101,7 +12253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfigEvictionSoft {
 	ImagefsAvailable: *string,
@@ -12136,7 +12288,7 @@ ImagefsAvailable *string
 
 Defines percentage of soft eviction threshold for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 
 ---
 
@@ -12150,7 +12302,7 @@ ImagefsInodesFree *string
 
 Defines percentage of soft eviction threshold for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 
 ---
 
@@ -12164,7 +12316,7 @@ MemoryAvailable *string
 
 Defines quantity of soft eviction threshold for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 
 ---
 
@@ -12178,7 +12330,7 @@ NodefsAvailable *string
 
 Defines percentage of soft eviction threshold for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 
 ---
 
@@ -12192,7 +12344,7 @@ NodefsInodesFree *string
 
 Defines percentage of soft eviction threshold for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 
 ---
 
@@ -12206,7 +12358,7 @@ PidAvailable *string
 
 Defines percentage of soft eviction threshold for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 
 ---
 
@@ -12215,7 +12367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod {
 	ImagefsAvailable: *string,
@@ -12250,7 +12402,7 @@ ImagefsAvailable *string
 
 Defines grace period for the imagefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 
 ---
 
@@ -12264,7 +12416,7 @@ ImagefsInodesFree *string
 
 Defines grace period for the imagefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 
 ---
 
@@ -12278,7 +12430,7 @@ MemoryAvailable *string
 
 Defines grace period for the memory.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 
 ---
 
@@ -12292,7 +12444,7 @@ NodefsAvailable *string
 
 Defines grace period for the nodefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 
 ---
 
@@ -12306,7 +12458,7 @@ NodefsInodesFree *string
 
 Defines grace period for the nodefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 
 ---
 
@@ -12320,7 +12472,7 @@ PidAvailable *string
 
 Defines grace period for the pid.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 
 ---
 
@@ -12329,7 +12481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigMemoryManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfigMemoryManager {
 	Policy: *string,
@@ -12356,7 +12508,7 @@ The Memory Manager policy to use.
 
 This policy guides how memory and hugepages are allocated and managed for pods on the node, influencing NUMA affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -12365,7 +12517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigKubeletConfigTopologyManager {
 	Policy: *string,
@@ -12392,7 +12544,7 @@ Policy *string
 
 The Topology Manager policy to use. This policy dictates how resource alignment is handled on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -12408,7 +12560,7 @@ The Topology Manager scope, defining the granularity at which policy decisions a
 
 Valid values are "container" (resources are aligned per container within a pod) or "pod" (resources are aligned for the entire pod).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#scope ContainerCluster#scope}
 
 ---
 
@@ -12417,15 +12569,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfig {
-	AccurateTimeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig,
+	AccurateTimeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig,
 	CgroupMode: *string,
-	CustomNodeInit: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInit,
-	HugepagesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig,
-	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading,
-	SwapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfig,
+	CustomNodeInit: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInit,
+	HugepagesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig,
+	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading,
+	SwapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfig,
 	Sysctls: *map[string]*string,
 	TransparentHugepageDefrag: *string,
 	TransparentHugepageEnabled: *string,
@@ -12458,7 +12610,7 @@ AccurateTimeConfig ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig
 
 accurate_time_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#accurate_time_config ContainerCluster#accurate_time_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#accurate_time_config ContainerCluster#accurate_time_config}
 
 ---
 
@@ -12472,7 +12624,7 @@ CgroupMode *string
 
 cgroupMode specifies the cgroup mode to be used on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
 
 ---
 
@@ -12486,7 +12638,7 @@ CustomNodeInit ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInit
 
 custom_node_init block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#custom_node_init ContainerCluster#custom_node_init}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#custom_node_init ContainerCluster#custom_node_init}
 
 ---
 
@@ -12500,7 +12652,7 @@ HugepagesConfig ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig
 
 hugepages_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hugepages_config ContainerCluster#hugepages_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hugepages_config ContainerCluster#hugepages_config}
 
 ---
 
@@ -12514,7 +12666,7 @@ NodeKernelModuleLoading ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModul
 
 node_kernel_module_loading block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
 
 ---
 
@@ -12528,7 +12680,7 @@ SwapConfig ContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 
 swap_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_config ContainerCluster#swap_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_config ContainerCluster#swap_config}
 
 ---
 
@@ -12542,7 +12694,7 @@ Sysctls *map[string]*string
 
 The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#sysctls ContainerCluster#sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#sysctls ContainerCluster#sysctls}
 
 ---
 
@@ -12556,7 +12708,7 @@ TransparentHugepageDefrag *string
 
 The Linux kernel transparent hugepage defrag setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#transparent_hugepage_defrag ContainerCluster#transparent_hugepage_defrag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#transparent_hugepage_defrag ContainerCluster#transparent_hugepage_defrag}
 
 ---
 
@@ -12570,7 +12722,7 @@ TransparentHugepageEnabled *string
 
 The Linux kernel transparent hugepage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#transparent_hugepage_enabled ContainerCluster#transparent_hugepage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#transparent_hugepage_enabled ContainerCluster#transparent_hugepage_enabled}
 
 ---
 
@@ -12579,7 +12731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig {
 	EnablePtpKvmTimeSync: interface{},
@@ -12604,7 +12756,7 @@ EnablePtpKvmTimeSync interface{}
 
 Whether to enable accurate time synchronization with PTP-KVM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_ptp_kvm_time_sync ContainerCluster#enable_ptp_kvm_time_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_ptp_kvm_time_sync ContainerCluster#enable_ptp_kvm_time_sync}
 
 ---
 
@@ -12613,10 +12765,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInit {
-	InitScript: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScript,
+	InitScript: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScript,
 }
 ```
 
@@ -12638,7 +12790,7 @@ InitScript ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScript
 
 init_script block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#init_script ContainerCluster#init_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#init_script ContainerCluster#init_script}
 
 ---
 
@@ -12647,7 +12799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScript {
 	GcpSecretManagerSecretUri: *string,
@@ -12676,7 +12828,7 @@ GcpSecretManagerSecretUri *string
 
 The Secret Manager secret URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -12690,7 +12842,7 @@ GcsGeneration *f64
 
 The GCS generation of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcs_generation ContainerCluster#gcs_generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcs_generation ContainerCluster#gcs_generation}
 
 ---
 
@@ -12704,7 +12856,7 @@ GcsUri *string
 
 The GCS URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcs_uri ContainerCluster#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcs_uri ContainerCluster#gcs_uri}
 
 ---
 
@@ -12713,7 +12865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig {
 	HugepageSize1G: *f64,
@@ -12740,7 +12892,7 @@ HugepageSize1G *f64
 
 Amount of 1G hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hugepage_size_1g ContainerCluster#hugepage_size_1g}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hugepage_size_1g ContainerCluster#hugepage_size_1g}
 
 ---
 
@@ -12754,7 +12906,7 @@ HugepageSize2M *f64
 
 Amount of 2M hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hugepage_size_2m ContainerCluster#hugepage_size_2m}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hugepage_size_2m ContainerCluster#hugepage_size_2m}
 
 ---
 
@@ -12763,7 +12915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading {
 	Policy: *string,
@@ -12788,7 +12940,7 @@ Policy *string
 
 The policy for kernel module loading.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -12797,14 +12949,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfig {
-	BootDiskProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile,
-	DedicatedLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile,
+	BootDiskProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile,
+	DedicatedLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile,
 	Enabled: interface{},
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig,
-	EphemeralLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig,
+	EphemeralLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile,
 }
 ```
 
@@ -12830,7 +12982,7 @@ BootDiskProfile ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfi
 
 boot_disk_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk_profile ContainerCluster#boot_disk_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk_profile ContainerCluster#boot_disk_profile}
 
 ---
 
@@ -12844,7 +12996,7 @@ DedicatedLocalSsdProfile ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedi
 
 dedicated_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dedicated_local_ssd_profile ContainerCluster#dedicated_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dedicated_local_ssd_profile ContainerCluster#dedicated_local_ssd_profile}
 
 ---
 
@@ -12858,7 +13010,7 @@ Enabled interface{}
 
 Enables or disables swap for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -12872,7 +13024,7 @@ EncryptionConfig ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionCo
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
 
 ---
 
@@ -12886,7 +13038,7 @@ EphemeralLocalSsdProfile ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphe
 
 ephemeral_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
 
 ---
 
@@ -12895,7 +13047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile {
 	SwapSizeGib: *f64,
@@ -12922,7 +13074,7 @@ SwapSizeGib *f64
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
 
 ---
 
@@ -12936,7 +13088,7 @@ SwapSizePercent *f64
 
 Specifies the size of the swap space as a percentage of the boot disk size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
 
 ---
 
@@ -12945,7 +13097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile {
 	DiskCount: *f64,
@@ -12970,7 +13122,7 @@ DiskCount *f64
 
 The number of physical local NVMe SSD disks to attach.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_count ContainerCluster#disk_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_count ContainerCluster#disk_count}
 
 ---
 
@@ -12979,7 +13131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig {
 	Disabled: interface{},
@@ -13004,7 +13156,7 @@ Disabled interface{}
 
 If true, swap space will not be encrypted. Defaults to false (encrypted).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
 
 ---
 
@@ -13013,7 +13165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile {
 	SwapSizeGib: *f64,
@@ -13040,7 +13192,7 @@ SwapSizeGib *f64
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
 
 ---
 
@@ -13054,7 +13206,7 @@ SwapSizePercent *f64
 
 Specifies the size of the swap space as a percentage of the ephemeral local SSD capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
 
 ---
 
@@ -13063,7 +13215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfig {
 	LocalSsdCount: *f64,
@@ -13090,7 +13242,7 @@ Number of raw-block local NVMe SSD disks to be attached to the node.
 
 Each local SSD is 375 GB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 
 ---
 
@@ -13099,7 +13251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigNodeImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigNodeImageConfig {
 	Image: *string,
@@ -13128,7 +13280,7 @@ The Operating System image for the node pool.
 
 This is a private feature, please contact your Google account team for allowlisting this feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image ContainerCluster#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image ContainerCluster#image}
 
 ---
 
@@ -13144,7 +13296,7 @@ The GCP project storing the Operating System image for the node pool.
 
 This is a private feature, please contact your Google account team for allowlisting this feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_project ContainerCluster#image_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_project ContainerCluster#image_project}
 
 ---
 
@@ -13153,7 +13305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigReservationAffinity {
 	ConsumeReservationType: *string,
@@ -13182,7 +13334,7 @@ ConsumeReservationType *string
 
 Corresponds to the type of reservation consumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#consume_reservation_type ContainerCluster#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#consume_reservation_type ContainerCluster#consume_reservation_type}
 
 ---
 
@@ -13196,7 +13348,7 @@ Key *string
 
 The label key of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -13210,7 +13362,7 @@ Values *[]*string
 
 The label values of the reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#values ContainerCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#values ContainerCluster#values}
 
 ---
 
@@ -13219,7 +13371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSandboxConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigSandboxConfig {
 	Type: *string,
@@ -13244,7 +13396,7 @@ Type *string
 
 Type of the sandbox to use for the node (e.g. 'GVISOR').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#type ContainerCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#type ContainerCluster#type}
 
 ---
 
@@ -13253,7 +13405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigSecondaryBootDisks {
 	DiskImage: *string,
@@ -13280,7 +13432,7 @@ DiskImage *string
 
 Disk image to create the secondary boot disk from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_image ContainerCluster#disk_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_image ContainerCluster#disk_image}
 
 ---
 
@@ -13294,7 +13446,7 @@ Mode *string
 
 Mode for how the secondary boot disk is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 
 ---
 
@@ -13303,7 +13455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -13330,7 +13482,7 @@ EnableIntegrityMonitoring interface{}
 
 Defines whether the instance has integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
 
 ---
 
@@ -13344,7 +13496,7 @@ EnableSecureBoot interface{}
 
 Defines whether the instance has Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
 
 ---
 
@@ -13353,7 +13505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigSoleTenantConfig {
 	NodeAffinity: interface{},
@@ -13380,7 +13532,7 @@ NodeAffinity interface{}
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_affinity ContainerCluster#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_affinity ContainerCluster#node_affinity}
 
 ---
 
@@ -13396,7 +13548,7 @@ Specifies the minimum number of vCPUs that each sole tenant node must have to us
 
 If not specified, the CPU overcommit feature is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_node_cpus ContainerCluster#min_node_cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_node_cpus ContainerCluster#min_node_cpus}
 
 ---
 
@@ -13405,7 +13557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity {
 	Key: *string,
@@ -13434,7 +13586,7 @@ Key *string
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -13448,7 +13600,7 @@ Operator *string
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#operator ContainerCluster#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#operator ContainerCluster#operator}
 
 ---
 
@@ -13462,7 +13614,7 @@ Values *[]*string
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#values ContainerCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#values ContainerCluster#values}
 
 ---
 
@@ -13471,7 +13623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigTaint {
 	Effect: *string,
@@ -13500,7 +13652,7 @@ Effect *string
 
 Effect for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#effect ContainerCluster#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#effect ContainerCluster#effect}
 
 ---
 
@@ -13514,7 +13666,7 @@ Key *string
 
 Key for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -13528,7 +13680,7 @@ Value *string
 
 Value for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#value ContainerCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#value ContainerCluster#value}
 
 ---
 
@@ -13537,7 +13689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigTaintConfig {
 	ArchitectureTaintBehavior: *string,
@@ -13562,7 +13714,7 @@ ArchitectureTaintBehavior *string
 
 Architecture taint behavior. Controls, how we apply taints based on the node architecture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#architecture_taint_behavior ContainerCluster#architecture_taint_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#architecture_taint_behavior ContainerCluster#architecture_taint_behavior}
 
 ---
 
@@ -13571,7 +13723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigWindowsNodeConfig {
 	Osversion: *string,
@@ -13596,7 +13748,7 @@ Osversion *string
 
 The OS Version of the windows nodepool.Values are OS_VERSION_UNSPECIFIED,OS_VERSION_LTSC2019 and OS_VERSION_LTSC2022.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#osversion ContainerCluster#osversion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#osversion ContainerCluster#osversion}
 
 ---
 
@@ -13605,7 +13757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeConfigWorkloadMetadataConfig {
 	Mode: *string,
@@ -13630,7 +13782,7 @@ Mode *string
 
 Mode is the configuration for how to expose metadata to workloads running on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 
 ---
 
@@ -13639,7 +13791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeCreationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodeCreationConfig {
 	NodeCreationMode: *string,
@@ -13669,7 +13821,7 @@ Accepted values are:
 * VIA_KUBELET: Kubelet registers itself.
 * VIA_CONTROL_PLANE: gcp-controller-manager automatically creates the node object after CSR approval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_creation_mode ContainerCluster#node_creation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_creation_mode ContainerCluster#node_creation_mode}
 
 ---
 
@@ -13678,26 +13830,26 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePool {
-	Autoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolAutoscaling,
-	BestEffortProvisioning: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolBestEffortProvisioning,
+	Autoscaling: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolAutoscaling,
+	BestEffortProvisioning: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolBestEffortProvisioning,
 	IgnoreNodeCountChanges: interface{},
 	InitialNodeCount: *f64,
 	MaintenancePolicy: interface{},
-	Management: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolManagement,
+	Management: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolManagement,
 	MaxPodsPerNode: *f64,
 	Name: *string,
 	NamePrefix: *string,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNetworkConfig,
-	NodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfig,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNetworkConfig,
+	NodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfig,
 	NodeCount: *f64,
 	NodeDrainConfig: interface{},
 	NodeLocations: *[]*string,
-	PlacementPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolPlacementPolicy,
-	QueuedProvisioning: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolQueuedProvisioning,
-	UpgradeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolUpgradeSettings,
+	PlacementPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolPlacementPolicy,
+	QueuedProvisioning: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolQueuedProvisioning,
+	UpgradeSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolUpgradeSettings,
 	Version: *string,
 }
 ```
@@ -13737,7 +13889,7 @@ Autoscaling ContainerClusterNodePoolAutoscaling
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#autoscaling ContainerCluster#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#autoscaling ContainerCluster#autoscaling}
 
 ---
 
@@ -13751,7 +13903,7 @@ BestEffortProvisioning ContainerClusterNodePoolBestEffortProvisioning
 
 best_effort_provisioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#best_effort_provisioning ContainerCluster#best_effort_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#best_effort_provisioning ContainerCluster#best_effort_provisioning}
 
 ---
 
@@ -13767,7 +13919,7 @@ When true, the provider ignores external changes (drift) to the node count by sk
 
 This is a performance optimization for large clusters that saves API quota. Setting this to true will result in missing managed_instance_group_urls in the state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ignore_node_count_changes ContainerCluster#ignore_node_count_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ignore_node_count_changes ContainerCluster#ignore_node_count_changes}
 
 ---
 
@@ -13783,7 +13935,7 @@ The initial number of nodes for the pool.
 
 In regional or multi-zonal clusters, this is the number of nodes per zone. Changing this will force recreation of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#initial_node_count ContainerCluster#initial_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#initial_node_count ContainerCluster#initial_node_count}
 
 ---
 
@@ -13797,7 +13949,7 @@ MaintenancePolicy interface{}
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#maintenance_policy ContainerCluster#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#maintenance_policy ContainerCluster#maintenance_policy}
 
 ---
 
@@ -13811,7 +13963,7 @@ Management ContainerClusterNodePoolManagement
 
 management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#management ContainerCluster#management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#management ContainerCluster#management}
 
 ---
 
@@ -13827,7 +13979,7 @@ The maximum number of pods per node in this node pool.
 
 Note that this does not work on node pools which are "route-based" - that is, node pools belonging to clusters that do not have IP Aliasing enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_pods_per_node ContainerCluster#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_pods_per_node ContainerCluster#max_pods_per_node}
 
 ---
 
@@ -13841,7 +13993,7 @@ Name *string
 
 The name of the node pool. If left blank, Terraform will auto-generate a unique name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#name ContainerCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#name ContainerCluster#name}
 
 ---
 
@@ -13857,7 +14009,7 @@ Creates a unique name for the node pool beginning with the specified prefix.
 
 Conflicts with name. Max length is 31 characters. Prefixes with lengths longer than 14 characters will use a shortened UUID that will be more prone to collisions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#name_prefix ContainerCluster#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#name_prefix ContainerCluster#name_prefix}
 
 ---
 
@@ -13871,7 +14023,7 @@ NetworkConfig ContainerClusterNodePoolNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_config ContainerCluster#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_config ContainerCluster#network_config}
 
 ---
 
@@ -13885,7 +14037,7 @@ NodeConfig ContainerClusterNodePoolNodeConfig
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_config ContainerCluster#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_config ContainerCluster#node_config}
 
 ---
 
@@ -13901,7 +14053,7 @@ The number of nodes per instance group.
 
 This field can be used to update the number of nodes per instance group but should not be used alongside autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_count ContainerCluster#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_count ContainerCluster#node_count}
 
 ---
 
@@ -13915,7 +14067,7 @@ NodeDrainConfig interface{}
 
 node_drain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_drain_config ContainerCluster#node_drain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_drain_config ContainerCluster#node_drain_config}
 
 ---
 
@@ -13931,7 +14083,7 @@ The list of zones in which the node pool's nodes should be located.
 
 Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If unspecified, the cluster-level node_locations will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_locations ContainerCluster#node_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_locations ContainerCluster#node_locations}
 
 ---
 
@@ -13945,7 +14097,7 @@ PlacementPolicy ContainerClusterNodePoolPlacementPolicy
 
 placement_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#placement_policy ContainerCluster#placement_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#placement_policy ContainerCluster#placement_policy}
 
 ---
 
@@ -13959,7 +14111,7 @@ QueuedProvisioning ContainerClusterNodePoolQueuedProvisioning
 
 queued_provisioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#queued_provisioning ContainerCluster#queued_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#queued_provisioning ContainerCluster#queued_provisioning}
 
 ---
 
@@ -13973,7 +14125,7 @@ UpgradeSettings ContainerClusterNodePoolUpgradeSettings
 
 upgrade_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
 
 ---
 
@@ -13989,7 +14141,7 @@ The Kubernetes version for the nodes in this pool.
 
 Note that if this field and auto_upgrade are both specified, they will fight each other for what the node version should be, so setting both is highly discouraged. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#version ContainerCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#version ContainerCluster#version}
 
 ---
 
@@ -13998,12 +14150,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolAutoConfig {
-	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfig,
-	NetworkTags: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTags,
-	NodeKubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfig,
+	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfig,
+	NetworkTags: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTags,
+	NodeKubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfig,
 	ResourceManagerTags: *map[string]*string,
 }
 ```
@@ -14029,7 +14181,7 @@ LinuxNodeConfig ContainerClusterNodePoolAutoConfigLinuxNodeConfig
 
 linux_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
 
 ---
 
@@ -14043,7 +14195,7 @@ NetworkTags ContainerClusterNodePoolAutoConfigNetworkTags
 
 network_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_tags ContainerCluster#network_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_tags ContainerCluster#network_tags}
 
 ---
 
@@ -14057,7 +14209,7 @@ NodeKubeletConfig ContainerClusterNodePoolAutoConfigNodeKubeletConfig
 
 node_kubelet_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_kubelet_config ContainerCluster#node_kubelet_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_kubelet_config ContainerCluster#node_kubelet_config}
 
 ---
 
@@ -14073,7 +14225,7 @@ A map of resource manager tags.
 
 Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
 
 ---
 
@@ -14082,11 +14234,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfig {
 	CgroupMode: *string,
-	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading,
+	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading,
 }
 ```
 
@@ -14109,7 +14261,7 @@ CgroupMode *string
 
 cgroupMode specifies the cgroup mode to be used on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
 
 ---
 
@@ -14123,7 +14275,7 @@ NodeKernelModuleLoading ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKer
 
 node_kernel_module_loading block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
 
 ---
 
@@ -14132,7 +14284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoading {
 	Policy: *string,
@@ -14157,7 +14309,7 @@ Policy *string
 
 The policy for kernel module loading.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -14166,7 +14318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolAutoConfigNetworkTags {
 	Tags: *[]*string,
@@ -14191,7 +14343,7 @@ Tags *[]*string
 
 List of network tags applied to auto-provisioned node pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#tags ContainerCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#tags ContainerCluster#tags}
 
 ---
 
@@ -14200,7 +14352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfig {
 	InsecureKubeletReadonlyPortEnabled: *string,
@@ -14227,7 +14379,7 @@ Controls whether the kubelet read-only port is enabled.
 
 It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
 
 ---
 
@@ -14236,7 +14388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolAutoscaling {
 	LocationPolicy: *string,
@@ -14271,7 +14423,7 @@ Location policy specifies the algorithm used when scaling-up the node pool.
 
 "BALANCED" - Is a best effort policy that aims to balance the sizes of available zones. "ANY" - Instructs the cluster autoscaler to prioritize utilization of unused reservations, and reduces preemption risk for Spot VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#location_policy ContainerCluster#location_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#location_policy ContainerCluster#location_policy}
 
 ---
 
@@ -14287,7 +14439,7 @@ Maximum number of nodes per zone in the node pool.
 
 Must be >= min_node_count. Cannot be used with total limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_node_count ContainerCluster#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_node_count ContainerCluster#max_node_count}
 
 ---
 
@@ -14303,7 +14455,7 @@ Minimum number of nodes per zone in the node pool.
 
 Must be >=0 and <= max_node_count. Cannot be used with total limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_node_count ContainerCluster#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_node_count ContainerCluster#min_node_count}
 
 ---
 
@@ -14319,7 +14471,7 @@ Maximum number of all nodes in the node pool.
 
 Must be >= total_min_node_count. Cannot be used with per zone limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#total_max_node_count ContainerCluster#total_max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#total_max_node_count ContainerCluster#total_max_node_count}
 
 ---
 
@@ -14335,7 +14487,7 @@ Minimum number of all nodes in the node pool.
 
 Must be >=0 and <= total_max_node_count. Cannot be used with per zone limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#total_min_node_count ContainerCluster#total_min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#total_min_node_count ContainerCluster#total_min_node_count}
 
 ---
 
@@ -14344,7 +14496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolBestEffortProvisioning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolBestEffortProvisioning {
 	Enabled: interface{},
@@ -14371,7 +14523,7 @@ Enabled interface{}
 
 Whether node pool creation ignores non-fatal errors like stockout to provision as many nodes as possible, eventually bringing up the target number of nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -14387,7 +14539,7 @@ Minimum number of nodes that must be provisioned for the creation to be consider
 
 Can only be set when enabled is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_provision_nodes ContainerCluster#min_provision_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_provision_nodes ContainerCluster#min_provision_nodes}
 
 ---
 
@@ -14396,10 +14548,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaults {
-	NodeConfigDefaults: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaults,
+	NodeConfigDefaults: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaults,
 }
 ```
 
@@ -14421,7 +14573,7 @@ NodeConfigDefaults ContainerClusterNodePoolDefaultsNodeConfigDefaults
 
 node_config_defaults block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_config_defaults ContainerCluster#node_config_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_config_defaults ContainerCluster#node_config_defaults}
 
 ---
 
@@ -14430,11 +14582,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaults {
-	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig,
-	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig,
+	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig,
+	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig,
 	InsecureKubeletReadonlyPortEnabled: *string,
 	LoggingVariant: *string,
 }
@@ -14461,7 +14613,7 @@ ContainerdConfig ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdCon
 
 containerd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
 
 ---
 
@@ -14475,7 +14627,7 @@ GcfsConfig ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
 
 gcfs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
 
 ---
 
@@ -14491,7 +14643,7 @@ Controls whether the kubelet read-only port is enabled.
 
 It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
 
 ---
 
@@ -14507,7 +14659,7 @@ Type of logging agent that is used as the default value for node pools in the cl
 
 Valid values include DEFAULT and MAX_THROUGHPUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
 
 ---
 
@@ -14516,12 +14668,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig {
-	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig,
+	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig,
 	RegistryHosts: interface{},
-	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroups,
+	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroups,
 }
 ```
 
@@ -14545,7 +14697,7 @@ PrivateRegistryAccessConfig ContainerClusterNodePoolDefaultsNodeConfigDefaultsCo
 
 private_registry_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
 
 ---
 
@@ -14559,7 +14711,7 @@ RegistryHosts interface{}
 
 registry_hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
 
 ---
 
@@ -14573,7 +14725,7 @@ WritableCgroups ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConf
 
 writable_cgroups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
 
 ---
 
@@ -14582,7 +14734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig {
 	Enabled: interface{},
@@ -14609,7 +14761,7 @@ Enabled interface{}
 
 Whether or not private registries are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -14623,7 +14775,7 @@ CertificateAuthorityDomainConfig interface{}
 
 certificate_authority_domain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
 
 ---
 
@@ -14632,11 +14784,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig {
 	Fqdns: *[]*string,
-	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
+	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
 }
 ```
 
@@ -14659,7 +14811,7 @@ Fqdns *[]*string
 
 List of fully-qualified-domain-names. IPv4s and port specification are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
 
 ---
 
@@ -14673,7 +14825,7 @@ GcpSecretManagerCertificateConfig ContainerClusterNodePoolDefaultsNodeConfigDefa
 
 gcp_secret_manager_certificate_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
 
 ---
 
@@ -14682,7 +14834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig {
 	SecretUri: *string,
@@ -14707,7 +14859,7 @@ SecretUri *string
 
 URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
 
 ---
 
@@ -14716,7 +14868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHosts {
 	Server: *string,
@@ -14743,7 +14895,7 @@ Server *string
 
 Defines the host name of the registry server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#server ContainerCluster#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#server ContainerCluster#server}
 
 ---
 
@@ -14757,7 +14909,7 @@ Hosts interface{}
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
 
 ---
 
@@ -14766,7 +14918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHosts {
 	Host: *string,
@@ -14803,7 +14955,7 @@ Host *string
 
 Configures the registry host/mirror.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#host ContainerCluster#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#host ContainerCluster#host}
 
 ---
 
@@ -14817,7 +14969,7 @@ Ca interface{}
 
 ca block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ca ContainerCluster#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ca ContainerCluster#ca}
 
 ---
 
@@ -14831,7 +14983,7 @@ Capabilities *[]*string
 
 Represent the capabilities of the registry host, specifying what operations a host is capable of performing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
 
 ---
 
@@ -14845,7 +14997,7 @@ Client interface{}
 
 client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#client ContainerCluster#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#client ContainerCluster#client}
 
 ---
 
@@ -14859,7 +15011,7 @@ DialTimeout *string
 
 Specifies the maximum duration allowed for a connection attempt to complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
 
 ---
 
@@ -14873,7 +15025,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#header ContainerCluster#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#header ContainerCluster#header}
 
 ---
 
@@ -14887,7 +15039,7 @@ OverridePath interface{}
 
 Indicate the host's API root endpoint is defined in the URL path rather than by the API specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
 
 ---
 
@@ -14896,7 +15048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCa {
 	GcpSecretManagerSecretUri: *string,
@@ -14921,7 +15073,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -14930,11 +15082,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClient {
-	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert,
-	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey,
+	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert,
+	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey,
 }
 ```
 
@@ -14957,7 +15109,7 @@ Cert ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryH
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cert ContainerCluster#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cert ContainerCluster#cert}
 
 ---
 
@@ -14971,7 +15123,7 @@ Key ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHo
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -14980,7 +15132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCert {
 	GcpSecretManagerSecretUri: *string,
@@ -15005,7 +15157,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -15014,7 +15166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKey {
 	GcpSecretManagerSecretUri: *string,
@@ -15039,7 +15191,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -15048,7 +15200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeader {
 	Key: *string,
@@ -15075,7 +15227,7 @@ Key *string
 
 Configures the header key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -15089,7 +15241,7 @@ Value *[]*string
 
 Configures the header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#value ContainerCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#value ContainerCluster#value}
 
 ---
 
@@ -15098,7 +15250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroups {
 	Enabled: interface{},
@@ -15123,7 +15275,7 @@ Enabled interface{}
 
 Whether writable cgroups are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -15132,7 +15284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig {
 	Enabled: interface{},
@@ -15157,7 +15309,7 @@ Enabled interface{}
 
 Whether or not GCFS is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -15166,7 +15318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolMaintenancePolicy {
 	ExclusionUntilEndOfSupport: interface{},
@@ -15191,7 +15343,7 @@ ExclusionUntilEndOfSupport interface{}
 
 exclusion_until_end_of_support block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#exclusion_until_end_of_support ContainerCluster#exclusion_until_end_of_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#exclusion_until_end_of_support ContainerCluster#exclusion_until_end_of_support}
 
 ---
 
@@ -15200,7 +15352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupport {
 	Enabled: interface{},
@@ -15225,7 +15377,7 @@ Enabled interface{}
 
 Whether to enable the maintenance exclusion until the end of support for this NodePool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -15234,7 +15386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolManagement {
 	AutoRepair: interface{},
@@ -15261,7 +15413,7 @@ AutoRepair interface{}
 
 Whether the nodes will be automatically repaired. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
 
 ---
 
@@ -15275,7 +15427,7 @@ AutoUpgrade interface{}
 
 Whether the nodes will be automatically upgraded. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
 
 ---
 
@@ -15284,7 +15436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNetworkConfig {
 	AcceleratorNetworkProfile: *string,
@@ -15292,8 +15444,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 	AdditionalPodNetworkConfigs: interface{},
 	CreatePodRange: interface{},
 	EnablePrivateNodes: interface{},
-	NetworkPerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig,
-	PodCidrOverprovisionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig,
+	NetworkPerformanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig,
+	PodCidrOverprovisionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig,
 	PodIpv4CidrBlock: *string,
 	PodRange: *string,
 	Subnetwork: *string,
@@ -15327,7 +15479,7 @@ AcceleratorNetworkProfile *string
 
 The accelerator network profile to use for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#accelerator_network_profile ContainerCluster#accelerator_network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#accelerator_network_profile ContainerCluster#accelerator_network_profile}
 
 ---
 
@@ -15341,7 +15493,7 @@ AdditionalNodeNetworkConfigs interface{}
 
 additional_node_network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#additional_node_network_configs ContainerCluster#additional_node_network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#additional_node_network_configs ContainerCluster#additional_node_network_configs}
 
 ---
 
@@ -15355,7 +15507,7 @@ AdditionalPodNetworkConfigs interface{}
 
 additional_pod_network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#additional_pod_network_configs ContainerCluster#additional_pod_network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#additional_pod_network_configs ContainerCluster#additional_pod_network_configs}
 
 ---
 
@@ -15371,7 +15523,7 @@ Whether to create a new range for pod IPs in this node pool.
 
 Defaults are provided for pod_range and pod_ipv4_cidr_block if they are not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#create_pod_range ContainerCluster#create_pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#create_pod_range ContainerCluster#create_pod_range}
 
 ---
 
@@ -15385,7 +15537,7 @@ EnablePrivateNodes interface{}
 
 Whether nodes have internal IP addresses only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_private_nodes ContainerCluster#enable_private_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_private_nodes ContainerCluster#enable_private_nodes}
 
 ---
 
@@ -15399,7 +15551,7 @@ NetworkPerformanceConfig ContainerClusterNodePoolNetworkConfigNetworkPerformance
 
 network_performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network_performance_config ContainerCluster#network_performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network_performance_config ContainerCluster#network_performance_config}
 
 ---
 
@@ -15413,7 +15565,7 @@ PodCidrOverprovisionConfig ContainerClusterNodePoolNetworkConfigPodCidrOverprovi
 
 pod_cidr_overprovision_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
 
 ---
 
@@ -15429,7 +15581,7 @@ The IP address range for pod IPs in this node pool.
 
 Only applicable if create_pod_range is true. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) to pick a specific range to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_ipv4_cidr_block ContainerCluster#pod_ipv4_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_ipv4_cidr_block ContainerCluster#pod_ipv4_cidr_block}
 
 ---
 
@@ -15445,7 +15597,7 @@ The ID of the secondary range for pod IPs.
 
 If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_range ContainerCluster#pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_range ContainerCluster#pod_range}
 
 ---
 
@@ -15461,7 +15613,7 @@ The subnetwork name/path for the node pool.
 
 Format: subnetwork or projects/{project}/regions/{region}/subnetworks/{subnetwork}. This value may be specified via the nested network_config block (setting this attribute directly is supported for backward compatibility). Once created the node pool's subnetwork is immutable. If not set, the provider/API will choose the subnetwork (e.g. based on IP utilization) and report it here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
 
 ---
 
@@ -15470,7 +15622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs {
 	Network: *string,
@@ -15497,7 +15649,7 @@ Network *string
 
 Name of the VPC where the additional interface belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#network ContainerCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#network ContainerCluster#network}
 
 ---
 
@@ -15511,7 +15663,7 @@ Subnetwork *string
 
 Name of the subnetwork where the additional interface belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
 
 ---
 
@@ -15520,7 +15672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs {
 	MaxPodsPerNode: *f64,
@@ -15549,7 +15701,7 @@ MaxPodsPerNode *f64
 
 The maximum number of pods per node which use this pod network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_pods_per_node ContainerCluster#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_pods_per_node ContainerCluster#max_pods_per_node}
 
 ---
 
@@ -15563,7 +15715,7 @@ SecondaryPodRange *string
 
 The name of the secondary range on the subnet which provides IP address for this pod range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secondary_pod_range ContainerCluster#secondary_pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secondary_pod_range ContainerCluster#secondary_pod_range}
 
 ---
 
@@ -15577,7 +15729,7 @@ Subnetwork *string
 
 Name of the subnetwork where the additional pod network belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
 
 ---
 
@@ -15586,7 +15738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig {
 	TotalEgressBandwidthTier: *string,
@@ -15611,7 +15763,7 @@ TotalEgressBandwidthTier *string
 
 Specifies the total network bandwidth tier for the NodePool. [Valid values](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.Tier) include: "TIER_1" and "TIER_UNSPECIFIED".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
 
 ---
 
@@ -15620,7 +15772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig {
 	Disabled: interface{},
@@ -15631,7 +15783,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -15643,7 +15795,7 @@ Disabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
 ---
 
@@ -15652,29 +15804,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfig {
-	AdvancedMachineFeatures: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures,
-	BootDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigBootDisk,
+	AdvancedMachineFeatures: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures,
+	BootDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigBootDisk,
 	BootDiskKmsKey: *string,
-	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes,
-	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfig,
+	ConfidentialNodes: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes,
+	ContainerdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfig,
 	DiskSizeGb: *f64,
 	DiskType: *string,
 	EnableConfidentialStorage: interface{},
-	EphemeralStorageLocalSsdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig,
-	FastSocket: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket,
+	EphemeralStorageLocalSsdConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig,
+	FastSocket: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket,
 	FlexStart: interface{},
-	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig,
+	GcfsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig,
 	GpudirectStrategy: *string,
 	GuestAccelerator: interface{},
-	Gvnic: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigGvnic,
+	Gvnic: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigGvnic,
 	ImageType: *string,
-	KubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig,
+	KubeletConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig,
 	Labels: *map[string]*string,
-	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfig,
-	LocalNvmeSsdBlockConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig,
+	LinuxNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfig,
+	LocalNvmeSsdBlockConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig,
 	LocalSsdCount: *f64,
 	LocalSsdEncryptionMode: *string,
 	LoggingVariant: *string,
@@ -15686,21 +15838,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 	NodeImageConfig: interface{},
 	OauthScopes: *[]*string,
 	Preemptible: interface{},
-	ReservationAffinity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity,
+	ReservationAffinity: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity,
 	ResourceLabels: *map[string]*string,
 	ResourceManagerTags: *map[string]*string,
-	SandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigSandboxConfig,
+	SandboxConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigSandboxConfig,
 	SecondaryBootDisks: interface{},
 	ServiceAccount: *string,
-	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig,
-	SoleTenantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig,
+	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig,
+	SoleTenantConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig,
 	Spot: interface{},
 	StoragePools: *[]*string,
 	Tags: *[]*string,
 	Taint: interface{},
-	TaintConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigTaintConfig,
-	WindowsNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfig,
-	WorkloadMetadataConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig,
+	TaintConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigTaintConfig,
+	WindowsNodeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfig,
+	WorkloadMetadataConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig,
 }
 ```
 
@@ -15767,7 +15919,7 @@ AdvancedMachineFeatures ContainerClusterNodePoolNodeConfigAdvancedMachineFeature
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
 
 ---
 
@@ -15781,7 +15933,7 @@ BootDisk ContainerClusterNodePoolNodeConfigBootDisk
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk ContainerCluster#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk ContainerCluster#boot_disk}
 
 ---
 
@@ -15795,7 +15947,7 @@ BootDiskKmsKey *string
 
 The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
 
 ---
 
@@ -15809,7 +15961,7 @@ ConfidentialNodes ContainerClusterNodePoolNodeConfigConfidentialNodes
 
 confidential_nodes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
 
 ---
 
@@ -15823,7 +15975,7 @@ ContainerdConfig ContainerClusterNodePoolNodeConfigContainerdConfig
 
 containerd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
 
 ---
 
@@ -15837,7 +15989,7 @@ DiskSizeGb *f64
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_size_gb ContainerCluster#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_size_gb ContainerCluster#disk_size_gb}
 
 ---
 
@@ -15851,7 +16003,7 @@ DiskType *string
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
 
 ---
 
@@ -15865,7 +16017,7 @@ EnableConfidentialStorage interface{}
 
 If enabled boot disks are configured with confidential mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
 
 ---
 
@@ -15879,7 +16031,7 @@ EphemeralStorageLocalSsdConfig ContainerClusterNodePoolNodeConfigEphemeralStorag
 
 ephemeral_storage_local_ssd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
 
 ---
 
@@ -15893,7 +16045,7 @@ FastSocket ContainerClusterNodePoolNodeConfigFastSocket
 
 fast_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#fast_socket ContainerCluster#fast_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#fast_socket ContainerCluster#fast_socket}
 
 ---
 
@@ -15907,7 +16059,7 @@ FlexStart interface{}
 
 Enables Flex Start provisioning model for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
 
 ---
 
@@ -15921,7 +16073,7 @@ GcfsConfig ContainerClusterNodePoolNodeConfigGcfsConfig
 
 gcfs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
 
 ---
 
@@ -15935,7 +16087,7 @@ GpudirectStrategy *string
 
 The type of GPUDirect strategy to enable on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpudirect_strategy ContainerCluster#gpudirect_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpudirect_strategy ContainerCluster#gpudirect_strategy}
 
 ---
 
@@ -15949,7 +16101,7 @@ GuestAccelerator interface{}
 
 guest_accelerator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
 
 ---
 
@@ -15963,7 +16115,7 @@ Gvnic ContainerClusterNodePoolNodeConfigGvnic
 
 gvnic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
 
 ---
 
@@ -15979,7 +16131,7 @@ The image type to use for this node.
 
 Note that for a given image type, the latest version of it will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
 
 ---
 
@@ -15993,7 +16145,7 @@ KubeletConfig ContainerClusterNodePoolNodeConfigKubeletConfig
 
 kubelet_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#kubelet_config ContainerCluster#kubelet_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#kubelet_config ContainerCluster#kubelet_config}
 
 ---
 
@@ -16009,7 +16161,7 @@ The map of Kubernetes labels (key/value pairs) to be applied to each node.
 
 These will added in addition to any default label(s) that Kubernetes may apply to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#labels ContainerCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#labels ContainerCluster#labels}
 
 ---
 
@@ -16023,7 +16175,7 @@ LinuxNodeConfig ContainerClusterNodePoolNodeConfigLinuxNodeConfig
 
 linux_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
 
 ---
 
@@ -16037,7 +16189,7 @@ LocalNvmeSsdBlockConfig ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfi
 
 local_nvme_ssd_block_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
 
 ---
 
@@ -16051,7 +16203,7 @@ LocalSsdCount *f64
 
 The number of local SSD disks to be attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 
 ---
 
@@ -16065,7 +16217,7 @@ LocalSsdEncryptionMode *string
 
 LocalSsdEncryptionMode specified the method used for encrypting the local SSDs attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_encryption_mode ContainerCluster#local_ssd_encryption_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_encryption_mode ContainerCluster#local_ssd_encryption_mode}
 
 ---
 
@@ -16081,7 +16233,7 @@ Type of logging agent that is used as the default value for node pools in the cl
 
 Valid values include DEFAULT and MAX_THROUGHPUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
 
 ---
 
@@ -16095,7 +16247,7 @@ MachineType *string
 
 The name of a Google Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#machine_type ContainerCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#machine_type ContainerCluster#machine_type}
 
 ---
 
@@ -16109,7 +16261,7 @@ MaxRunDuration *string
 
 The runtime of each node in the node pool in seconds, terminated by 's'. Example: "3600s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_run_duration ContainerCluster#max_run_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_run_duration ContainerCluster#max_run_duration}
 
 ---
 
@@ -16123,7 +16275,7 @@ Metadata *map[string]*string
 
 The metadata key/value pairs assigned to instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#metadata ContainerCluster#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#metadata ContainerCluster#metadata}
 
 ---
 
@@ -16139,7 +16291,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or newer CPU platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
 
 ---
 
@@ -16155,7 +16307,7 @@ Setting this field will assign instances of this pool to run on the specified no
 
 This is useful for running workloads on sole tenant nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_group ContainerCluster#node_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_group ContainerCluster#node_group}
 
 ---
 
@@ -16169,7 +16321,7 @@ NodeImageConfig interface{}
 
 node_image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_image_config ContainerCluster#node_image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_image_config ContainerCluster#node_image_config}
 
 ---
 
@@ -16183,7 +16335,7 @@ OauthScopes *[]*string
 
 The set of Google API scopes to be made available on all of the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
 
 ---
 
@@ -16197,7 +16349,7 @@ Preemptible interface{}
 
 Whether the nodes are created as preemptible VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
 
 ---
 
@@ -16211,7 +16363,7 @@ ReservationAffinity ContainerClusterNodePoolNodeConfigReservationAffinity
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
 
 ---
 
@@ -16225,7 +16377,7 @@ ResourceLabels *map[string]*string
 
 The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
 
 ---
 
@@ -16241,7 +16393,7 @@ A map of resource manager tags.
 
 Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
 
 ---
 
@@ -16255,7 +16407,7 @@ SandboxConfig ContainerClusterNodePoolNodeConfigSandboxConfig
 
 sandbox_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#sandbox_config ContainerCluster#sandbox_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#sandbox_config ContainerCluster#sandbox_config}
 
 ---
 
@@ -16269,7 +16421,7 @@ SecondaryBootDisks interface{}
 
 secondary_boot_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
 
 ---
 
@@ -16283,7 +16435,7 @@ ServiceAccount *string
 
 The Google Cloud Platform Service Account to be used by the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
 
 ---
 
@@ -16297,7 +16449,7 @@ ShieldedInstanceConfig ContainerClusterNodePoolNodeConfigShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
 
 ---
 
@@ -16311,7 +16463,7 @@ SoleTenantConfig ContainerClusterNodePoolNodeConfigSoleTenantConfig
 
 sole_tenant_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#sole_tenant_config ContainerCluster#sole_tenant_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#sole_tenant_config ContainerCluster#sole_tenant_config}
 
 ---
 
@@ -16325,7 +16477,7 @@ Spot interface{}
 
 Whether the nodes are created as spot VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#spot ContainerCluster#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#spot ContainerCluster#spot}
 
 ---
 
@@ -16339,7 +16491,7 @@ StoragePools *[]*string
 
 The list of Storage Pools where boot disks are provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
 
 ---
 
@@ -16353,7 +16505,7 @@ Tags *[]*string
 
 The list of instance tags applied to all nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#tags ContainerCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#tags ContainerCluster#tags}
 
 ---
 
@@ -16367,7 +16519,7 @@ Taint interface{}
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#taint ContainerCluster#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#taint ContainerCluster#taint}
 
 ---
 
@@ -16381,7 +16533,7 @@ TaintConfig ContainerClusterNodePoolNodeConfigTaintConfig
 
 taint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#taint_config ContainerCluster#taint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#taint_config ContainerCluster#taint_config}
 
 ---
 
@@ -16395,7 +16547,7 @@ WindowsNodeConfig ContainerClusterNodePoolNodeConfigWindowsNodeConfig
 
 windows_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
 
 ---
 
@@ -16409,7 +16561,7 @@ WorkloadMetadataConfig ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig
 
 workload_metadata_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
 
 ---
 
@@ -16418,7 +16570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures {
 	ThreadsPerCore: *f64,
@@ -16449,7 +16601,7 @@ The number of threads per physical core.
 
 To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#threads_per_core ContainerCluster#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#threads_per_core ContainerCluster#threads_per_core}
 
 ---
 
@@ -16463,7 +16615,7 @@ EnableNestedVirtualization interface{}
 
 Whether the node should have nested virtualization enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_nested_virtualization ContainerCluster#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_nested_virtualization ContainerCluster#enable_nested_virtualization}
 
 ---
 
@@ -16479,7 +16631,7 @@ Level of Performance Monitoring Unit (PMU) requested.
 
 If unset, no access to the PMU is assumed. For existing node pools with no PMU, setting STANDARD may not produce a diff; recreate the node pool to apply it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#performance_monitoring_unit ContainerCluster#performance_monitoring_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#performance_monitoring_unit ContainerCluster#performance_monitoring_unit}
 
 ---
 
@@ -16488,7 +16640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigBootDisk {
 	DiskType: *string,
@@ -16519,7 +16671,7 @@ DiskType *string
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
 
 ---
 
@@ -16533,7 +16685,7 @@ ProvisionedIops *f64
 
 Configured IOPs provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#provisioned_iops ContainerCluster#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#provisioned_iops ContainerCluster#provisioned_iops}
 
 ---
 
@@ -16547,7 +16699,7 @@ ProvisionedThroughput *f64
 
 Configured throughput provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#provisioned_throughput ContainerCluster#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#provisioned_throughput ContainerCluster#provisioned_throughput}
 
 ---
 
@@ -16561,7 +16713,7 @@ SizeGb *f64
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#size_gb ContainerCluster#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#size_gb ContainerCluster#size_gb}
 
 ---
 
@@ -16570,7 +16722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigConfidentialNodes {
 	Enabled: interface{},
@@ -16597,7 +16749,7 @@ Enabled interface{}
 
 Whether Confidential Nodes feature is enabled for all nodes in this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -16611,7 +16763,7 @@ ConfidentialInstanceType *string
 
 Defines the type of technology used by the confidential node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
 
 ---
 
@@ -16620,12 +16772,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfig {
-	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig,
+	PrivateRegistryAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig,
 	RegistryHosts: interface{},
-	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups,
+	WritableCgroups: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups,
 }
 ```
 
@@ -16649,7 +16801,7 @@ PrivateRegistryAccessConfig ContainerClusterNodePoolNodeConfigContainerdConfigPr
 
 private_registry_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
 
 ---
 
@@ -16663,7 +16815,7 @@ RegistryHosts interface{}
 
 registry_hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
 
 ---
 
@@ -16677,7 +16829,7 @@ WritableCgroups ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroup
 
 writable_cgroups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
 
 ---
 
@@ -16686,7 +16838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig {
 	Enabled: interface{},
@@ -16713,7 +16865,7 @@ Enabled interface{}
 
 Whether or not private registries are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -16727,7 +16879,7 @@ CertificateAuthorityDomainConfig interface{}
 
 certificate_authority_domain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
 
 ---
 
@@ -16736,11 +16888,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig {
 	Fqdns: *[]*string,
-	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
+	GcpSecretManagerCertificateConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig,
 }
 ```
 
@@ -16763,7 +16915,7 @@ Fqdns *[]*string
 
 List of fully-qualified-domain-names. IPv4s and port specification are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
 
 ---
 
@@ -16777,7 +16929,7 @@ GcpSecretManagerCertificateConfig ContainerClusterNodePoolNodeConfigContainerdCo
 
 gcp_secret_manager_certificate_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
 
 ---
 
@@ -16786,7 +16938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig {
 	SecretUri: *string,
@@ -16811,7 +16963,7 @@ SecretUri *string
 
 URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
 
 ---
 
@@ -16820,7 +16972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHosts {
 	Server: *string,
@@ -16847,7 +16999,7 @@ Server *string
 
 Defines the host name of the registry server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#server ContainerCluster#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#server ContainerCluster#server}
 
 ---
 
@@ -16861,7 +17013,7 @@ Hosts interface{}
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
 
 ---
 
@@ -16870,7 +17022,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHosts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHosts {
 	Host: *string,
@@ -16907,7 +17059,7 @@ Host *string
 
 Configures the registry host/mirror.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#host ContainerCluster#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#host ContainerCluster#host}
 
 ---
 
@@ -16921,7 +17073,7 @@ Ca interface{}
 
 ca block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ca ContainerCluster#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ca ContainerCluster#ca}
 
 ---
 
@@ -16935,7 +17087,7 @@ Capabilities *[]*string
 
 Represent the capabilities of the registry host, specifying what operations a host is capable of performing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
 
 ---
 
@@ -16949,7 +17101,7 @@ Client interface{}
 
 client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#client ContainerCluster#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#client ContainerCluster#client}
 
 ---
 
@@ -16963,7 +17115,7 @@ DialTimeout *string
 
 Specifies the maximum duration allowed for a connection attempt to complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
 
 ---
 
@@ -16977,7 +17129,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#header ContainerCluster#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#header ContainerCluster#header}
 
 ---
 
@@ -16991,7 +17143,7 @@ OverridePath interface{}
 
 Indicate the host's API root endpoint is defined in the URL path rather than by the API specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
 
 ---
 
@@ -17000,7 +17152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCa {
 	GcpSecretManagerSecretUri: *string,
@@ -17025,7 +17177,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -17034,11 +17186,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClient {
-	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert,
-	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey,
+	Cert: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert,
+	Key: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey,
 }
 ```
 
@@ -17061,7 +17213,7 @@ Cert ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientC
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cert ContainerCluster#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cert ContainerCluster#cert}
 
 ---
 
@@ -17075,7 +17227,7 @@ Key ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKe
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -17084,7 +17236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert {
 	GcpSecretManagerSecretUri: *string,
@@ -17109,7 +17261,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -17118,7 +17270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey {
 	GcpSecretManagerSecretUri: *string,
@@ -17143,7 +17295,7 @@ GcpSecretManagerSecretUri *string
 
 URI for the Secret Manager secret that hosts the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -17152,7 +17304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeader {
 	Key: *string,
@@ -17179,7 +17331,7 @@ Key *string
 
 Configures the header key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -17193,7 +17345,7 @@ Value *[]*string
 
 Configures the header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#value ContainerCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#value ContainerCluster#value}
 
 ---
 
@@ -17202,7 +17354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups {
 	Enabled: interface{},
@@ -17227,7 +17379,7 @@ Enabled interface{}
 
 Whether writable cgroups are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -17236,7 +17388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigEffectiveTaints {
 
@@ -17249,7 +17401,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig {
 	LocalSsdCount: *f64,
@@ -17278,7 +17430,7 @@ Number of local SSDs to use to back ephemeral storage.
 
 Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 
 ---
 
@@ -17292,7 +17444,7 @@ DataCacheCount *f64
 
 Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#data_cache_count ContainerCluster#data_cache_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#data_cache_count ContainerCluster#data_cache_count}
 
 ---
 
@@ -17301,7 +17453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigFastSocket {
 	Enabled: interface{},
@@ -17326,7 +17478,7 @@ Enabled interface{}
 
 Whether or not NCCL Fast Socket is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -17335,7 +17487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigGcfsConfig {
 	Enabled: interface{},
@@ -17360,7 +17512,7 @@ Enabled interface{}
 
 Whether or not GCFS is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -17369,14 +17521,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigGuestAccelerator {
 	Count: *f64,
 	Type: *string,
-	GpuDriverInstallationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig,
+	GpuDriverInstallationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig,
 	GpuPartitionSize: *string,
-	GpuSharingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig,
+	GpuSharingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig,
 }
 ```
 
@@ -17402,7 +17554,7 @@ Count *f64
 
 The number of the accelerator cards exposed to an instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#count ContainerCluster#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#count ContainerCluster#count}
 
 ---
 
@@ -17416,7 +17568,7 @@ Type *string
 
 The accelerator type resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#type ContainerCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#type ContainerCluster#type}
 
 ---
 
@@ -17430,7 +17582,7 @@ GpuDriverInstallationConfig ContainerClusterNodePoolNodeConfigGuestAcceleratorGp
 
 gpu_driver_installation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_driver_installation_config ContainerCluster#gpu_driver_installation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_driver_installation_config ContainerCluster#gpu_driver_installation_config}
 
 ---
 
@@ -17444,7 +17596,7 @@ GpuPartitionSize *string
 
 Size of partitions to create on the GPU. Valid values are described in the NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-guide/#partitioning).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_partition_size ContainerCluster#gpu_partition_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_partition_size ContainerCluster#gpu_partition_size}
 
 ---
 
@@ -17458,7 +17610,7 @@ GpuSharingConfig ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingCon
 
 gpu_sharing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_sharing_config ContainerCluster#gpu_sharing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_sharing_config ContainerCluster#gpu_sharing_config}
 
 ---
 
@@ -17467,7 +17619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig {
 	GpuDriverVersion: *string,
@@ -17492,7 +17644,7 @@ GpuDriverVersion *string
 
 Mode for how the GPU driver is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
 
 ---
 
@@ -17501,7 +17653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig {
 	GpuSharingStrategy: *string,
@@ -17530,7 +17682,7 @@ The type of GPU sharing strategy to enable on the GPU node.
 
 Possible values are described in the API package (https://pkg.go.dev/google.golang.org/api/container/v1#GPUSharingConfig)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gpu_sharing_strategy ContainerCluster#gpu_sharing_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gpu_sharing_strategy ContainerCluster#gpu_sharing_strategy}
 
 ---
 
@@ -17544,7 +17696,7 @@ MaxSharedClientsPerGpu *f64
 
 The maximum number of containers that can share a GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_shared_clients_per_gpu ContainerCluster#max_shared_clients_per_gpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_shared_clients_per_gpu ContainerCluster#max_shared_clients_per_gpu}
 
 ---
 
@@ -17553,7 +17705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigGvnic {
 	Enabled: interface{},
@@ -17578,7 +17730,7 @@ Enabled interface{}
 
 Whether or not gvnic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -17587,7 +17739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfig {
 	AllowedUnsafeSysctls: *[]*string,
@@ -17596,23 +17748,23 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 	CpuCfsQuota: interface{},
 	CpuCfsQuotaPeriod: *string,
 	CpuManagerPolicy: *string,
-	CrashLoopBackOff: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOff,
+	CrashLoopBackOff: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOff,
 	EvictionMaxPodGracePeriodSeconds: *f64,
-	EvictionMinimumReclaim: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim,
-	EvictionSoft: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft,
-	EvictionSoftGracePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod,
+	EvictionMinimumReclaim: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim,
+	EvictionSoft: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft,
+	EvictionSoftGracePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod,
 	ImageGcHighThresholdPercent: *f64,
 	ImageGcLowThresholdPercent: *f64,
 	ImageMaximumGcAge: *string,
 	ImageMinimumGcAge: *string,
 	InsecureKubeletReadonlyPortEnabled: *string,
 	MaxParallelImagePulls: *f64,
-	MemoryManager: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManager,
+	MemoryManager: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManager,
 	PodPidsLimit: *f64,
 	ShutdownGracePeriodCriticalPodsSeconds: *f64,
 	ShutdownGracePeriodSeconds: *f64,
 	SingleProcessOomKill: interface{},
-	TopologyManager: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManager,
+	TopologyManager: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManager,
 }
 ```
 
@@ -17656,7 +17808,7 @@ AllowedUnsafeSysctls *[]*string
 
 Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#allowed_unsafe_sysctls ContainerCluster#allowed_unsafe_sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#allowed_unsafe_sysctls ContainerCluster#allowed_unsafe_sysctls}
 
 ---
 
@@ -17670,7 +17822,7 @@ ContainerLogMaxFiles *f64
 
 Defines the maximum number of container log files that can be present for a container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#container_log_max_files ContainerCluster#container_log_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#container_log_max_files ContainerCluster#container_log_max_files}
 
 ---
 
@@ -17684,7 +17836,7 @@ ContainerLogMaxSize *string
 
 Defines the maximum size of the container log file before it is rotated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#container_log_max_size ContainerCluster#container_log_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#container_log_max_size ContainerCluster#container_log_max_size}
 
 ---
 
@@ -17698,7 +17850,7 @@ CpuCfsQuota interface{}
 
 Enable CPU CFS quota enforcement for containers that specify CPU limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
 
 ---
 
@@ -17712,7 +17864,7 @@ CpuCfsQuotaPeriod *string
 
 Set the CPU CFS quota period value 'cpu.cfs_period_us'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
 
 ---
 
@@ -17726,7 +17878,7 @@ CpuManagerPolicy *string
 
 Control the CPU management policy on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cpu_manager_policy ContainerCluster#cpu_manager_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cpu_manager_policy ContainerCluster#cpu_manager_policy}
 
 ---
 
@@ -17740,7 +17892,7 @@ CrashLoopBackOff ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOff
 
 crash_loop_back_off block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#crash_loop_back_off ContainerCluster#crash_loop_back_off}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#crash_loop_back_off ContainerCluster#crash_loop_back_off}
 
 ---
 
@@ -17754,7 +17906,7 @@ EvictionMaxPodGracePeriodSeconds *f64
 
 Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_max_pod_grace_period_seconds ContainerCluster#eviction_max_pod_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_max_pod_grace_period_seconds ContainerCluster#eviction_max_pod_grace_period_seconds}
 
 ---
 
@@ -17768,7 +17920,7 @@ EvictionMinimumReclaim ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMi
 
 eviction_minimum_reclaim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_minimum_reclaim ContainerCluster#eviction_minimum_reclaim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_minimum_reclaim ContainerCluster#eviction_minimum_reclaim}
 
 ---
 
@@ -17782,7 +17934,7 @@ EvictionSoft ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
 
 eviction_soft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_soft ContainerCluster#eviction_soft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_soft ContainerCluster#eviction_soft}
 
 ---
 
@@ -17796,7 +17948,7 @@ EvictionSoftGracePeriod ContainerClusterNodePoolNodeConfigKubeletConfigEvictionS
 
 eviction_soft_grace_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#eviction_soft_grace_period ContainerCluster#eviction_soft_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#eviction_soft_grace_period ContainerCluster#eviction_soft_grace_period}
 
 ---
 
@@ -17810,7 +17962,7 @@ ImageGcHighThresholdPercent *f64
 
 Defines the percent of disk usage after which image garbage collection is always run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_gc_high_threshold_percent ContainerCluster#image_gc_high_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_gc_high_threshold_percent ContainerCluster#image_gc_high_threshold_percent}
 
 ---
 
@@ -17826,7 +17978,7 @@ Defines the percent of disk usage before which image garbage collection is never
 
 Lowest disk usage to garbage collect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_gc_low_threshold_percent ContainerCluster#image_gc_low_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_gc_low_threshold_percent ContainerCluster#image_gc_low_threshold_percent}
 
 ---
 
@@ -17840,7 +17992,7 @@ ImageMaximumGcAge *string
 
 Defines the maximum age an image can be unused before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_maximum_gc_age ContainerCluster#image_maximum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_maximum_gc_age ContainerCluster#image_maximum_gc_age}
 
 ---
 
@@ -17854,7 +18006,7 @@ ImageMinimumGcAge *string
 
 Defines the minimum age for an unused image before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_minimum_gc_age ContainerCluster#image_minimum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_minimum_gc_age ContainerCluster#image_minimum_gc_age}
 
 ---
 
@@ -17870,7 +18022,7 @@ Controls whether the kubelet read-only port is enabled.
 
 It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
 
 ---
 
@@ -17884,7 +18036,7 @@ MaxParallelImagePulls *f64
 
 Set the maximum number of image pulls in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_parallel_image_pulls ContainerCluster#max_parallel_image_pulls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_parallel_image_pulls ContainerCluster#max_parallel_image_pulls}
 
 ---
 
@@ -17898,7 +18050,7 @@ MemoryManager ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManager
 
 memory_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_manager ContainerCluster#memory_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_manager ContainerCluster#memory_manager}
 
 ---
 
@@ -17912,7 +18064,7 @@ PodPidsLimit *f64
 
 Controls the maximum number of processes allowed to run in a pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
 
 ---
 
@@ -17926,7 +18078,7 @@ ShutdownGracePeriodCriticalPodsSeconds *f64
 
 Controls the portion of total grace period (in seconds) that is specifically reserved for terminating critical pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shutdown_grace_period_critical_pods_seconds ContainerCluster#shutdown_grace_period_critical_pods_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shutdown_grace_period_critical_pods_seconds ContainerCluster#shutdown_grace_period_critical_pods_seconds}
 
 ---
 
@@ -17940,7 +18092,7 @@ ShutdownGracePeriodSeconds *f64
 
 Controls the total duration of time (in seconds) the node delays shutdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#shutdown_grace_period_seconds ContainerCluster#shutdown_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#shutdown_grace_period_seconds ContainerCluster#shutdown_grace_period_seconds}
 
 ---
 
@@ -17954,7 +18106,7 @@ SingleProcessOomKill interface{}
 
 Defines whether to enable single process OOM killer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#single_process_oom_kill ContainerCluster#single_process_oom_kill}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#single_process_oom_kill ContainerCluster#single_process_oom_kill}
 
 ---
 
@@ -17968,7 +18120,7 @@ TopologyManager ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManager
 
 topology_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#topology_manager ContainerCluster#topology_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#topology_manager ContainerCluster#topology_manager}
 
 ---
 
@@ -17977,7 +18129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOff.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOff {
 	MaxContainerRestartPeriod: *string,
@@ -18002,7 +18154,7 @@ MaxContainerRestartPeriod *string
 
 The maximum duration the backoff delay can accrue to for container restarts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_container_restart_period ContainerCluster#max_container_restart_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_container_restart_period ContainerCluster#max_container_restart_period}
 
 ---
 
@@ -18011,7 +18163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaim {
 	ImagefsAvailable: *string,
@@ -18046,7 +18198,7 @@ ImagefsAvailable *string
 
 Defines percentage of minimum reclaim for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 
 ---
 
@@ -18060,7 +18212,7 @@ ImagefsInodesFree *string
 
 Defines percentage of minimum reclaim for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 
 ---
 
@@ -18074,7 +18226,7 @@ MemoryAvailable *string
 
 Defines percentage of minimum reclaim for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 
 ---
 
@@ -18088,7 +18240,7 @@ NodefsAvailable *string
 
 Defines percentage of minimum reclaim for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 
 ---
 
@@ -18102,7 +18254,7 @@ NodefsInodesFree *string
 
 Defines percentage of minimum reclaim for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 
 ---
 
@@ -18116,7 +18268,7 @@ PidAvailable *string
 
 Defines percentage of minimum reclaim for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 
 ---
 
@@ -18125,7 +18277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft {
 	ImagefsAvailable: *string,
@@ -18160,7 +18312,7 @@ ImagefsAvailable *string
 
 Defines percentage of soft eviction threshold for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 
 ---
 
@@ -18174,7 +18326,7 @@ ImagefsInodesFree *string
 
 Defines percentage of soft eviction threshold for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 
 ---
 
@@ -18188,7 +18340,7 @@ MemoryAvailable *string
 
 Defines quantity of soft eviction threshold for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 
 ---
 
@@ -18202,7 +18354,7 @@ NodefsAvailable *string
 
 Defines percentage of soft eviction threshold for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 
 ---
 
@@ -18216,7 +18368,7 @@ NodefsInodesFree *string
 
 Defines percentage of soft eviction threshold for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 
 ---
 
@@ -18230,7 +18382,7 @@ PidAvailable *string
 
 Defines percentage of soft eviction threshold for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 
 ---
 
@@ -18239,7 +18391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriod {
 	ImagefsAvailable: *string,
@@ -18274,7 +18426,7 @@ ImagefsAvailable *string
 
 Defines grace period for the imagefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 
 ---
 
@@ -18288,7 +18440,7 @@ ImagefsInodesFree *string
 
 Defines grace period for the imagefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 
 ---
 
@@ -18302,7 +18454,7 @@ MemoryAvailable *string
 
 Defines grace period for the memory.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 
 ---
 
@@ -18316,7 +18468,7 @@ NodefsAvailable *string
 
 Defines grace period for the nodefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 
 ---
 
@@ -18330,7 +18482,7 @@ NodefsInodesFree *string
 
 Defines grace period for the nodefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 
 ---
 
@@ -18344,7 +18496,7 @@ PidAvailable *string
 
 Defines grace period for the pid.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 
 ---
 
@@ -18353,7 +18505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManager {
 	Policy: *string,
@@ -18380,7 +18532,7 @@ The Memory Manager policy to use.
 
 This policy guides how memory and hugepages are allocated and managed for pods on the node, influencing NUMA affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -18389,7 +18541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManager {
 	Policy: *string,
@@ -18416,7 +18568,7 @@ Policy *string
 
 The Topology Manager policy to use. This policy dictates how resource alignment is handled on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -18432,7 +18584,7 @@ The Topology Manager scope, defining the granularity at which policy decisions a
 
 Valid values are "container" (resources are aligned per container within a pod) or "pod" (resources are aligned for the entire pod).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#scope ContainerCluster#scope}
 
 ---
 
@@ -18441,15 +18593,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfig {
-	AccurateTimeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig,
+	AccurateTimeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig,
 	CgroupMode: *string,
-	CustomNodeInit: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInit,
-	HugepagesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig,
-	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading,
-	SwapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig,
+	CustomNodeInit: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInit,
+	HugepagesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig,
+	NodeKernelModuleLoading: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading,
+	SwapConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig,
 	Sysctls: *map[string]*string,
 	TransparentHugepageDefrag: *string,
 	TransparentHugepageEnabled: *string,
@@ -18482,7 +18634,7 @@ AccurateTimeConfig ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTime
 
 accurate_time_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#accurate_time_config ContainerCluster#accurate_time_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#accurate_time_config ContainerCluster#accurate_time_config}
 
 ---
 
@@ -18496,7 +18648,7 @@ CgroupMode *string
 
 cgroupMode specifies the cgroup mode to be used on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
 
 ---
 
@@ -18510,7 +18662,7 @@ CustomNodeInit ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInit
 
 custom_node_init block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#custom_node_init ContainerCluster#custom_node_init}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#custom_node_init ContainerCluster#custom_node_init}
 
 ---
 
@@ -18524,7 +18676,7 @@ HugepagesConfig ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig
 
 hugepages_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hugepages_config ContainerCluster#hugepages_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hugepages_config ContainerCluster#hugepages_config}
 
 ---
 
@@ -18538,7 +18690,7 @@ NodeKernelModuleLoading ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKer
 
 node_kernel_module_loading block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
 
 ---
 
@@ -18552,7 +18704,7 @@ SwapConfig ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig
 
 swap_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_config ContainerCluster#swap_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_config ContainerCluster#swap_config}
 
 ---
 
@@ -18566,7 +18718,7 @@ Sysctls *map[string]*string
 
 The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#sysctls ContainerCluster#sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#sysctls ContainerCluster#sysctls}
 
 ---
 
@@ -18580,7 +18732,7 @@ TransparentHugepageDefrag *string
 
 The Linux kernel transparent hugepage defrag setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#transparent_hugepage_defrag ContainerCluster#transparent_hugepage_defrag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#transparent_hugepage_defrag ContainerCluster#transparent_hugepage_defrag}
 
 ---
 
@@ -18594,7 +18746,7 @@ TransparentHugepageEnabled *string
 
 The Linux kernel transparent hugepage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#transparent_hugepage_enabled ContainerCluster#transparent_hugepage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#transparent_hugepage_enabled ContainerCluster#transparent_hugepage_enabled}
 
 ---
 
@@ -18603,7 +18755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfig {
 	EnablePtpKvmTimeSync: interface{},
@@ -18628,7 +18780,7 @@ EnablePtpKvmTimeSync interface{}
 
 Whether to enable accurate time synchronization with PTP-KVM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_ptp_kvm_time_sync ContainerCluster#enable_ptp_kvm_time_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_ptp_kvm_time_sync ContainerCluster#enable_ptp_kvm_time_sync}
 
 ---
 
@@ -18637,10 +18789,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInit {
-	InitScript: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript,
+	InitScript: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript,
 }
 ```
 
@@ -18662,7 +18814,7 @@ InitScript ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitSc
 
 init_script block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#init_script ContainerCluster#init_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#init_script ContainerCluster#init_script}
 
 ---
 
@@ -18671,7 +18823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript {
 	GcpSecretManagerSecretUri: *string,
@@ -18700,7 +18852,7 @@ GcpSecretManagerSecretUri *string
 
 The Secret Manager secret URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -18714,7 +18866,7 @@ GcsGeneration *f64
 
 The GCS generation of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcs_generation ContainerCluster#gcs_generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcs_generation ContainerCluster#gcs_generation}
 
 ---
 
@@ -18728,7 +18880,7 @@ GcsUri *string
 
 The GCS URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gcs_uri ContainerCluster#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gcs_uri ContainerCluster#gcs_uri}
 
 ---
 
@@ -18737,7 +18889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfig {
 	HugepageSize1G: *f64,
@@ -18764,7 +18916,7 @@ HugepageSize1G *f64
 
 Amount of 1G hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hugepage_size_1g ContainerCluster#hugepage_size_1g}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hugepage_size_1g ContainerCluster#hugepage_size_1g}
 
 ---
 
@@ -18778,7 +18930,7 @@ HugepageSize2M *f64
 
 Amount of 2M hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hugepage_size_2m ContainerCluster#hugepage_size_2m}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hugepage_size_2m ContainerCluster#hugepage_size_2m}
 
 ---
 
@@ -18787,7 +18939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoading {
 	Policy: *string,
@@ -18812,7 +18964,7 @@ Policy *string
 
 The policy for kernel module loading.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy ContainerCluster#policy}
 
 ---
 
@@ -18821,14 +18973,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig {
-	BootDiskProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile,
-	DedicatedLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile,
+	BootDiskProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile,
+	DedicatedLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile,
 	Enabled: interface{},
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig,
-	EphemeralLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig,
+	EphemeralLocalSsdProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile,
 }
 ```
 
@@ -18854,7 +19006,7 @@ BootDiskProfile ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootD
 
 boot_disk_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#boot_disk_profile ContainerCluster#boot_disk_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#boot_disk_profile ContainerCluster#boot_disk_profile}
 
 ---
 
@@ -18868,7 +19020,7 @@ DedicatedLocalSsdProfile ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapCo
 
 dedicated_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dedicated_local_ssd_profile ContainerCluster#dedicated_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dedicated_local_ssd_profile ContainerCluster#dedicated_local_ssd_profile}
 
 ---
 
@@ -18882,7 +19034,7 @@ Enabled interface{}
 
 Enables or disables swap for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -18896,7 +19048,7 @@ EncryptionConfig ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncr
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
 
 ---
 
@@ -18910,7 +19062,7 @@ EphemeralLocalSsdProfile ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapCo
 
 ephemeral_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
 
 ---
 
@@ -18919,7 +19071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile {
 	SwapSizeGib: *f64,
@@ -18946,7 +19098,7 @@ SwapSizeGib *f64
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
 
 ---
 
@@ -18960,7 +19112,7 @@ SwapSizePercent *f64
 
 Specifies the size of the swap space as a percentage of the boot disk size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
 
 ---
 
@@ -18969,7 +19121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile {
 	DiskCount: *f64,
@@ -18994,7 +19146,7 @@ DiskCount *f64
 
 The number of physical local NVMe SSD disks to attach.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_count ContainerCluster#disk_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_count ContainerCluster#disk_count}
 
 ---
 
@@ -19003,7 +19155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig {
 	Disabled: interface{},
@@ -19028,7 +19180,7 @@ Disabled interface{}
 
 If true, swap space will not be encrypted. Defaults to false (encrypted).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
 
 ---
 
@@ -19037,7 +19189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile {
 	SwapSizeGib: *f64,
@@ -19064,7 +19216,7 @@ SwapSizeGib *f64
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
 
 ---
 
@@ -19078,7 +19230,7 @@ SwapSizePercent *f64
 
 Specifies the size of the swap space as a percentage of the ephemeral local SSD capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
 
 ---
 
@@ -19087,7 +19239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig {
 	LocalSsdCount: *f64,
@@ -19114,7 +19266,7 @@ Number of raw-block local NVMe SSD disks to be attached to the node.
 
 Each local SSD is 375 GB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 
 ---
 
@@ -19123,7 +19275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigNodeImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigNodeImageConfig {
 	Image: *string,
@@ -19152,7 +19304,7 @@ The Operating System image for the node pool.
 
 This is a private feature, please contact your Google account team for allowlisting this feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image ContainerCluster#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image ContainerCluster#image}
 
 ---
 
@@ -19168,7 +19320,7 @@ The GCP project storing the Operating System image for the node pool.
 
 This is a private feature, please contact your Google account team for allowlisting this feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#image_project ContainerCluster#image_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#image_project ContainerCluster#image_project}
 
 ---
 
@@ -19177,7 +19329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigReservationAffinity {
 	ConsumeReservationType: *string,
@@ -19206,7 +19358,7 @@ ConsumeReservationType *string
 
 Corresponds to the type of reservation consumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#consume_reservation_type ContainerCluster#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#consume_reservation_type ContainerCluster#consume_reservation_type}
 
 ---
 
@@ -19220,7 +19372,7 @@ Key *string
 
 The label key of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -19234,7 +19386,7 @@ Values *[]*string
 
 The label values of the reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#values ContainerCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#values ContainerCluster#values}
 
 ---
 
@@ -19243,7 +19395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSandboxConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigSandboxConfig {
 	Type: *string,
@@ -19268,7 +19420,7 @@ Type *string
 
 Type of the sandbox to use for the node (e.g. 'GVISOR').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#type ContainerCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#type ContainerCluster#type}
 
 ---
 
@@ -19277,7 +19429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks {
 	DiskImage: *string,
@@ -19304,7 +19456,7 @@ DiskImage *string
 
 Disk image to create the secondary boot disk from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#disk_image ContainerCluster#disk_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#disk_image ContainerCluster#disk_image}
 
 ---
 
@@ -19318,7 +19470,7 @@ Mode *string
 
 Mode for how the secondary boot disk is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 
 ---
 
@@ -19327,7 +19479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -19354,7 +19506,7 @@ EnableIntegrityMonitoring interface{}
 
 Defines whether the instance has integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
 
 ---
 
@@ -19368,7 +19520,7 @@ EnableSecureBoot interface{}
 
 Defines whether the instance has Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
 
 ---
 
@@ -19377,7 +19529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig {
 	NodeAffinity: interface{},
@@ -19404,7 +19556,7 @@ NodeAffinity interface{}
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_affinity ContainerCluster#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_affinity ContainerCluster#node_affinity}
 
 ---
 
@@ -19420,7 +19572,7 @@ Specifies the minimum number of vCPUs that each sole tenant node must have to us
 
 If not specified, the CPU overcommit feature is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#min_node_cpus ContainerCluster#min_node_cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#min_node_cpus ContainerCluster#min_node_cpus}
 
 ---
 
@@ -19429,7 +19581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity {
 	Key: *string,
@@ -19458,7 +19610,7 @@ Key *string
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -19472,7 +19624,7 @@ Operator *string
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#operator ContainerCluster#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#operator ContainerCluster#operator}
 
 ---
 
@@ -19486,7 +19638,7 @@ Values *[]*string
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#values ContainerCluster#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#values ContainerCluster#values}
 
 ---
 
@@ -19495,7 +19647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigTaint {
 	Effect: *string,
@@ -19524,7 +19676,7 @@ Effect *string
 
 Effect for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#effect ContainerCluster#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#effect ContainerCluster#effect}
 
 ---
 
@@ -19538,7 +19690,7 @@ Key *string
 
 Key for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#key ContainerCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#key ContainerCluster#key}
 
 ---
 
@@ -19552,7 +19704,7 @@ Value *string
 
 Value for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#value ContainerCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#value ContainerCluster#value}
 
 ---
 
@@ -19561,7 +19713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigTaintConfig {
 	ArchitectureTaintBehavior: *string,
@@ -19586,7 +19738,7 @@ ArchitectureTaintBehavior *string
 
 Architecture taint behavior. Controls, how we apply taints based on the node architecture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#architecture_taint_behavior ContainerCluster#architecture_taint_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#architecture_taint_behavior ContainerCluster#architecture_taint_behavior}
 
 ---
 
@@ -19595,7 +19747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfig {
 	Osversion: *string,
@@ -19620,7 +19772,7 @@ Osversion *string
 
 The OS Version of the windows nodepool.Values are OS_VERSION_UNSPECIFIED,OS_VERSION_LTSC2019 and OS_VERSION_LTSC2022.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#osversion ContainerCluster#osversion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#osversion ContainerCluster#osversion}
 
 ---
 
@@ -19629,7 +19781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig {
 	Mode: *string,
@@ -19654,7 +19806,7 @@ Mode *string
 
 Mode is the configuration for how to expose metadata to workloads running on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 
 ---
 
@@ -19663,7 +19815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeDrainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolNodeDrainConfig {
 	GraceTerminationDuration: *string,
@@ -19692,7 +19844,7 @@ GraceTerminationDuration *string
 
 The duration of the grace termination period for node drain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#grace_termination_duration ContainerCluster#grace_termination_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#grace_termination_duration ContainerCluster#grace_termination_duration}
 
 ---
 
@@ -19706,7 +19858,7 @@ PdbTimeoutDuration *string
 
 The duration of the PDB timeout period for node drain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pdb_timeout_duration ContainerCluster#pdb_timeout_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pdb_timeout_duration ContainerCluster#pdb_timeout_duration}
 
 ---
 
@@ -19720,7 +19872,7 @@ RespectPdbDuringNodePoolDeletion interface{}
 
 Whether to respect PodDisruptionBudget policy during node pool deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#respect_pdb_during_node_pool_deletion ContainerCluster#respect_pdb_during_node_pool_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#respect_pdb_during_node_pool_deletion ContainerCluster#respect_pdb_during_node_pool_deletion}
 
 ---
 
@@ -19729,7 +19881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolPlacementPolicy {
 	Type: *string,
@@ -19758,7 +19910,7 @@ Type *string
 
 Type defines the type of placement policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#type ContainerCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#type ContainerCluster#type}
 
 ---
 
@@ -19774,7 +19926,7 @@ If set, refers to the name of a custom resource policy supplied by the user.
 
 The resource policy must be in the same project and region as the node pool. If not found, InvalidArgument error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#policy_name ContainerCluster#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#policy_name ContainerCluster#policy_name}
 
 ---
 
@@ -19788,7 +19940,7 @@ TpuTopology *string
 
 The TPU topology like "2x4" or "2x2x2". https://cloud.google.com/kubernetes-engine/docs/concepts/plan-tpus#topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#tpu_topology ContainerCluster#tpu_topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#tpu_topology ContainerCluster#tpu_topology}
 
 ---
 
@@ -19797,7 +19949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolQueuedProvisioning {
 	Enabled: interface{},
@@ -19822,7 +19974,7 @@ Enabled interface{}
 
 Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -19831,10 +19983,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolUpgradeSettings {
-	BlueGreenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings,
+	BlueGreenSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings,
 	MaxSurge: *f64,
 	MaxUnavailable: *f64,
 	Strategy: *string,
@@ -19862,7 +20014,7 @@ BlueGreenSettings ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings
 
 blue_green_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#blue_green_settings ContainerCluster#blue_green_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#blue_green_settings ContainerCluster#blue_green_settings}
 
 ---
 
@@ -19878,7 +20030,7 @@ The number of additional nodes that can be added to the node pool during an upgr
 
 Increasing max_surge raises the number of nodes that can be upgraded simultaneously. Can be set to 0 or greater.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_surge ContainerCluster#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_surge ContainerCluster#max_surge}
 
 ---
 
@@ -19894,7 +20046,7 @@ The number of nodes that can be simultaneously unavailable during an upgrade.
 
 Increasing max_unavailable raises the number of nodes that can be upgraded in parallel. Can be set to 0 or greater.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#max_unavailable ContainerCluster#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#max_unavailable ContainerCluster#max_unavailable}
 
 ---
 
@@ -19908,7 +20060,7 @@ Strategy *string
 
 Update strategy for the given nodepool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#strategy ContainerCluster#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#strategy ContainerCluster#strategy}
 
 ---
 
@@ -19917,10 +20069,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings {
-	StandardRolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy,
+	StandardRolloutPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy,
 	NodePoolSoakDuration: *string,
 }
 ```
@@ -19944,7 +20096,7 @@ StandardRolloutPolicy ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsSt
 
 standard_rollout_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#standard_rollout_policy ContainerCluster#standard_rollout_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#standard_rollout_policy ContainerCluster#standard_rollout_policy}
 
 ---
 
@@ -19958,7 +20110,7 @@ NodePoolSoakDuration *string
 
 Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#node_pool_soak_duration ContainerCluster#node_pool_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#node_pool_soak_duration ContainerCluster#node_pool_soak_duration}
 
 ---
 
@@ -19967,7 +20119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy {
 	BatchNodeCount: *f64,
@@ -19996,7 +20148,7 @@ BatchNodeCount *f64
 
 Number of blue nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#batch_node_count ContainerCluster#batch_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#batch_node_count ContainerCluster#batch_node_count}
 
 ---
 
@@ -20010,7 +20162,7 @@ BatchPercentage *f64
 
 Percentage of the blue pool nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#batch_percentage ContainerCluster#batch_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#batch_percentage ContainerCluster#batch_percentage}
 
 ---
 
@@ -20024,7 +20176,7 @@ BatchSoakDuration *string
 
 Soak time after each batch gets drained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#batch_soak_duration ContainerCluster#batch_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#batch_soak_duration ContainerCluster#batch_soak_duration}
 
 ---
 
@@ -20033,10 +20185,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNotificationConfig {
-	Pubsub: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNotificationConfigPubsub,
+	Pubsub: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNotificationConfigPubsub,
 }
 ```
 
@@ -20058,7 +20210,7 @@ Pubsub ContainerClusterNotificationConfigPubsub
 
 pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#pubsub ContainerCluster#pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#pubsub ContainerCluster#pubsub}
 
 ---
 
@@ -20067,11 +20219,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNotificationConfigPubsub {
 	Enabled: interface{},
-	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterNotificationConfigPubsubFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterNotificationConfigPubsubFilter,
 	Topic: *string,
 }
 ```
@@ -20096,7 +20248,7 @@ Enabled interface{}
 
 Whether or not the notification config is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20110,7 +20262,7 @@ Filter ContainerClusterNotificationConfigPubsubFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#filter ContainerCluster#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#filter ContainerCluster#filter}
 
 ---
 
@@ -20126,7 +20278,7 @@ The pubsub topic to push upgrade notifications to.
 
 Must be in the same project as the cluster. Must be in the format: projects/{project}/topics/{topic}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#topic ContainerCluster#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#topic ContainerCluster#topic}
 
 ---
 
@@ -20135,7 +20287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterNotificationConfigPubsubFilter {
 	EventType: *[]*string,
@@ -20160,7 +20312,7 @@ EventType *[]*string
 
 Can be used to filter what notifications are sent. Valid values include include UPGRADE_AVAILABLE_EVENT, UPGRADE_EVENT, SECURITY_BULLETIN_EVENT, and UPGRADE_INFO_EVENT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#event_type ContainerCluster#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#event_type ContainerCluster#event_type}
 
 ---
 
@@ -20169,7 +20321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterPodAutoscaling {
 	HpaProfile: *string,
@@ -20199,7 +20351,7 @@ Available options include:
 * NONE: Customers explicitly opt-out of HPA profiles.
 * PERFORMANCE: PERFORMANCE is used when customers opt-in to the performance HPA profile. In this profile we support a higher number of HPAs per cluster and faster metrics collection for workload autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#hpa_profile ContainerCluster#hpa_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#hpa_profile ContainerCluster#hpa_profile}
 
 ---
 
@@ -20208,12 +20360,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterPrivateClusterConfig {
 	EnablePrivateEndpoint: interface{},
 	EnablePrivateNodes: interface{},
-	MasterGlobalAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig,
+	MasterGlobalAccessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig,
 	MasterIpv4CidrBlock: *string,
 	PrivateEndpointSubnetwork: *string,
 }
@@ -20243,7 +20395,7 @@ When true, the cluster's private endpoint is used as the cluster endpoint and ac
 
 When false, either endpoint can be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_private_endpoint ContainerCluster#enable_private_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_private_endpoint ContainerCluster#enable_private_endpoint}
 
 ---
 
@@ -20259,7 +20411,7 @@ Enables the private cluster feature, creating a private endpoint on the cluster.
 
 In a private cluster, nodes only have RFC 1918 private addresses and communicate with the master's private endpoint via private networking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_private_nodes ContainerCluster#enable_private_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_private_nodes ContainerCluster#enable_private_nodes}
 
 ---
 
@@ -20273,7 +20425,7 @@ MasterGlobalAccessConfig ContainerClusterPrivateClusterConfigMasterGlobalAccessC
 
 master_global_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#master_global_access_config ContainerCluster#master_global_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#master_global_access_config ContainerCluster#master_global_access_config}
 
 ---
 
@@ -20287,9 +20439,9 @@ MasterIpv4CidrBlock *string
 
 The IP range in CIDR notation to use for the hosted master network.
 
-This range will be used for assigning private IP addresses to the cluster master(s) and the ILB VIP. This range must not overlap with any other ranges in use within the cluster's network, and it must be a /28 subnet. See Private Cluster Limitations for more details. This field only applies to private clusters, when enable_private_nodes is true.
+This range will be used for assigning private IP addresses to the cluster master(s) and the ILB VIP. This range must not overlap with any other ranges in use within the cluster's network, and it must be a /28 subnet. See Private Cluster Limitations for more details. This field only applies to private clusters, when enable_private_nodes is true. On GKE versions 1.29 and later, this field is optional when private_endpoint_subnetwork is specified. It is also optional for Autopilot clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#master_ipv4_cidr_block ContainerCluster#master_ipv4_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#master_ipv4_cidr_block ContainerCluster#master_ipv4_cidr_block}
 
 ---
 
@@ -20303,7 +20455,7 @@ PrivateEndpointSubnetwork *string
 
 Subnetwork in cluster's network where master's endpoint will be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#private_endpoint_subnetwork ContainerCluster#private_endpoint_subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#private_endpoint_subnetwork ContainerCluster#private_endpoint_subnetwork}
 
 ---
 
@@ -20312,7 +20464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig {
 	Enabled: interface{},
@@ -20337,7 +20489,7 @@ Enabled interface{}
 
 Whether the cluster master is accessible globally or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20346,7 +20498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterRbacBindingConfig {
 	EnableInsecureBindingSystemAuthenticated: interface{},
@@ -20373,7 +20525,7 @@ EnableInsecureBindingSystemAuthenticated interface{}
 
 Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:authenticated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_insecure_binding_system_authenticated ContainerCluster#enable_insecure_binding_system_authenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_insecure_binding_system_authenticated ContainerCluster#enable_insecure_binding_system_authenticated}
 
 ---
 
@@ -20387,7 +20539,7 @@ EnableInsecureBindingSystemUnauthenticated interface{}
 
 Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:anonymous or system:unauthenticated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_insecure_binding_system_unauthenticated ContainerCluster#enable_insecure_binding_system_unauthenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_insecure_binding_system_unauthenticated ContainerCluster#enable_insecure_binding_system_unauthenticated}
 
 ---
 
@@ -20396,7 +20548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterReleaseChannel {
 	Channel: *string,
@@ -20429,7 +20581,7 @@ Accepted values are:
 * STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
 * EXTENDED: GKE provides extended support for Kubernetes minor versions through the Extended channel. With this channel, you can stay on a minor version for up to 24 months.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#channel ContainerCluster#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#channel ContainerCluster#channel}
 
 ---
 
@@ -20438,10 +20590,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterResourceUsageExportConfig {
-	BigqueryDestination: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination,
+	BigqueryDestination: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination,
 	EnableNetworkEgressMetering: interface{},
 	EnableResourceConsumptionMetering: interface{},
 }
@@ -20467,7 +20619,7 @@ BigqueryDestination ContainerClusterResourceUsageExportConfigBigqueryDestination
 
 bigquery_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#bigquery_destination ContainerCluster#bigquery_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#bigquery_destination ContainerCluster#bigquery_destination}
 
 ---
 
@@ -20483,7 +20635,7 @@ Whether to enable network egress metering for this cluster.
 
 If enabled, a daemonset will be created in the cluster to meter network egress traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_network_egress_metering ContainerCluster#enable_network_egress_metering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_network_egress_metering ContainerCluster#enable_network_egress_metering}
 
 ---
 
@@ -20499,7 +20651,7 @@ Whether to enable resource consumption metering on this cluster.
 
 When enabled, a table will be created in the resource export BigQuery dataset to store resource consumption data. The resulting table can be joined with the resource usage table or with BigQuery billing export. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enable_resource_consumption_metering ContainerCluster#enable_resource_consumption_metering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enable_resource_consumption_metering ContainerCluster#enable_resource_consumption_metering}
 
 ---
 
@@ -20508,7 +20660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterResourceUsageExportConfigBigqueryDestination {
 	DatasetId: *string,
@@ -20533,7 +20685,7 @@ DatasetId *string
 
 The ID of a BigQuery Dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#dataset_id ContainerCluster#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#dataset_id ContainerCluster#dataset_id}
 
 ---
 
@@ -20542,7 +20694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgrade.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterRollbackSafeUpgrade {
 	ControlPlaneSoakDuration: *string,
@@ -20569,7 +20721,41 @@ A user-defined period that the cluster remains in the rollbackable state.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "604800s" for 7 days. Minimum is 6 hours, maximum is 7 days. If omitted, the two-step upgrade is skipped and a standard one-step upgrade is performed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#control_plane_soak_duration ContainerCluster#control_plane_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#control_plane_soak_duration ContainerCluster#control_plane_soak_duration}
+
+---
+
+### ContainerClusterScheduleUpgradeConfig <a name="ContainerClusterScheduleUpgradeConfig" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
+
+&containercluster.ContainerClusterScheduleUpgradeConfig {
+	Enabled: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether scheduled upgrades are enabled. |
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig.property.enabled"></a>
+
+```go
+Enabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether scheduled upgrades are enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20578,11 +20764,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterSecretManagerConfig {
 	Enabled: interface{},
-	RotationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterSecretManagerConfigRotationConfig,
+	RotationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterSecretManagerConfigRotationConfig,
 }
 ```
 
@@ -20605,7 +20791,7 @@ Enabled interface{}
 
 Enable the Secret manager csi component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20619,7 +20805,7 @@ RotationConfig ContainerClusterSecretManagerConfigRotationConfig
 
 rotation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#rotation_config ContainerCluster#rotation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#rotation_config ContainerCluster#rotation_config}
 
 ---
 
@@ -20628,7 +20814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterSecretManagerConfigRotationConfig {
 	Enabled: interface{},
@@ -20655,7 +20841,7 @@ Enabled interface{}
 
 Enable the Secret manager auto rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20669,7 +20855,7 @@ RotationInterval *string
 
 The interval between two consecutive rotations. Default rotation interval is 2 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#rotation_interval ContainerCluster#rotation_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#rotation_interval ContainerCluster#rotation_interval}
 
 ---
 
@@ -20678,11 +20864,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterSecretSyncConfig {
 	Enabled: interface{},
-	RotationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.containerCluster.ContainerClusterSecretSyncConfigRotationConfig,
+	RotationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.containerCluster.ContainerClusterSecretSyncConfigRotationConfig,
 }
 ```
 
@@ -20705,7 +20891,7 @@ Enabled interface{}
 
 Enable the Sync as k8s secret add-on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20719,7 +20905,7 @@ RotationConfig ContainerClusterSecretSyncConfigRotationConfig
 
 rotation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#rotation_config ContainerCluster#rotation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#rotation_config ContainerCluster#rotation_config}
 
 ---
 
@@ -20728,7 +20914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfigRotationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterSecretSyncConfigRotationConfig {
 	Enabled: interface{},
@@ -20755,7 +20941,7 @@ Enabled interface{}
 
 Enable the Secret sync auto rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20769,7 +20955,7 @@ RotationInterval *string
 
 The interval between two consecutive rotations. Default rotation interval is 2 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#rotation_interval ContainerCluster#rotation_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#rotation_interval ContainerCluster#rotation_interval}
 
 ---
 
@@ -20778,7 +20964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterSecurityPostureConfig {
 	Mode: *string,
@@ -20805,7 +20991,7 @@ Mode *string
 
 Sets the mode of the Kubernetes security posture API's off-cluster features. Available options include DISABLED, BASIC, and ENTERPRISE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#mode ContainerCluster#mode}
 
 ---
 
@@ -20819,7 +21005,7 @@ VulnerabilityMode *string
 
 Sets the mode of the Kubernetes security posture API's workload vulnerability scanning. Available options include VULNERABILITY_DISABLED, VULNERABILITY_BASIC and VULNERABILITY_ENTERPRISE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#vulnerability_mode ContainerCluster#vulnerability_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#vulnerability_mode ContainerCluster#vulnerability_mode}
 
 ---
 
@@ -20828,7 +21014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterServiceExternalIpsConfig {
 	Enabled: interface{},
@@ -20853,7 +21039,7 @@ Enabled interface{}
 
 When enabled, services with external ips specified will be allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -20862,7 +21048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterTimeouts {
 	Create: *string,
@@ -20876,10 +21062,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#create ContainerCluster#create}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#delete ContainerCluster#delete}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#read ContainerCluster#read}. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#update ContainerCluster#update}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#create ContainerCluster#create}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#delete ContainerCluster#delete}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#read ContainerCluster#read}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#update ContainerCluster#update}. |
 
 ---
 
@@ -20891,7 +21077,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#create ContainerCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#create ContainerCluster#create}.
 
 ---
 
@@ -20903,7 +21089,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#delete ContainerCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#delete ContainerCluster#delete}.
 
 ---
 
@@ -20915,7 +21101,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#read ContainerCluster#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#read ContainerCluster#read}.
 
 ---
 
@@ -20927,7 +21113,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#update ContainerCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#update ContainerCluster#update}.
 
 ---
 
@@ -20936,7 +21122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterUserManagedKeysConfig {
 	AggregationCa: *string,
@@ -20975,7 +21161,7 @@ AggregationCa *string
 
 The Certificate Authority Service caPool to use for the aggreation CA in this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#aggregation_ca ContainerCluster#aggregation_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#aggregation_ca ContainerCluster#aggregation_ca}
 
 ---
 
@@ -20989,7 +21175,7 @@ ClusterCa *string
 
 The Certificate Authority Service caPool to use for the cluster CA in this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#cluster_ca ContainerCluster#cluster_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#cluster_ca ContainerCluster#cluster_ca}
 
 ---
 
@@ -21003,7 +21189,7 @@ ControlPlaneDiskEncryptionKey *string
 
 The Cloud KMS cryptoKey to use for Confidential Hyperdisk on the control plane nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#control_plane_disk_encryption_key ContainerCluster#control_plane_disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#control_plane_disk_encryption_key ContainerCluster#control_plane_disk_encryption_key}
 
 ---
 
@@ -21017,7 +21203,7 @@ EtcdApiCa *string
 
 The Certificate Authority Service caPool to use for the etcd API CA in this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#etcd_api_ca ContainerCluster#etcd_api_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#etcd_api_ca ContainerCluster#etcd_api_ca}
 
 ---
 
@@ -21031,7 +21217,7 @@ EtcdPeerCa *string
 
 The Certificate Authority Service caPool to use for the etcd peer CA in this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#etcd_peer_ca ContainerCluster#etcd_peer_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#etcd_peer_ca ContainerCluster#etcd_peer_ca}
 
 ---
 
@@ -21045,7 +21231,7 @@ GkeopsEtcdBackupEncryptionKey *string
 
 Resource path of the Cloud KMS cryptoKey to use for encryption of internal etcd backups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#gkeops_etcd_backup_encryption_key ContainerCluster#gkeops_etcd_backup_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#gkeops_etcd_backup_encryption_key ContainerCluster#gkeops_etcd_backup_encryption_key}
 
 ---
 
@@ -21059,7 +21245,7 @@ ServiceAccountSigningKeys *[]*string
 
 The Cloud KMS cryptoKeyVersions to use for signing service account JWTs issued by this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#service_account_signing_keys ContainerCluster#service_account_signing_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#service_account_signing_keys ContainerCluster#service_account_signing_keys}
 
 ---
 
@@ -21073,7 +21259,7 @@ ServiceAccountVerificationKeys *[]*string
 
 The Cloud KMS cryptoKeyVersions to use for verifying service account JWTs issued by this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#service_account_verification_keys ContainerCluster#service_account_verification_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#service_account_verification_keys ContainerCluster#service_account_verification_keys}
 
 ---
 
@@ -21082,7 +21268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscaling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterVerticalPodAutoscaling {
 	Enabled: interface{},
@@ -21107,7 +21293,7 @@ Enabled interface{}
 
 Enables vertical pod autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 
 ---
 
@@ -21116,7 +21302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 &containercluster.ContainerClusterWorkloadIdentityConfig {
 	WorkloadPool: *string,
@@ -21141,7 +21327,7 @@ WorkloadPool *string
 
 The workload pool to attach all Kubernetes service accounts to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_cluster#workload_pool ContainerCluster#workload_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/container_cluster#workload_pool ContainerCluster#workload_pool}
 
 ---
 
@@ -21152,7 +21338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigAgentSandboxConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigAgentSandboxConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigAgentSandboxConfigOutputReference
 ```
@@ -21423,7 +21609,7 @@ func InternalValue() ContainerClusterAddonsConfigAgentSandboxConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigCloudrunConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigCloudrunConfigOutputReference
 ```
@@ -21723,7 +21909,7 @@ func InternalValue() ContainerClusterAddonsConfigCloudrunConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigConfigConnectorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigConfigConnectorConfigOutputReference
 ```
@@ -21994,7 +22180,7 @@ func InternalValue() ContainerClusterAddonsConfigConfigConnectorConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigDnsCacheConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigDnsCacheConfigOutputReference
 ```
@@ -22265,7 +22451,7 @@ func InternalValue() ContainerClusterAddonsConfigDnsCacheConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference
 ```
@@ -22536,7 +22722,7 @@ func InternalValue() ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference
 ```
@@ -22807,7 +22993,7 @@ func InternalValue() ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference
 ```
@@ -23078,7 +23264,7 @@ func InternalValue() ContainerClusterAddonsConfigGcsFuseCsiDriverConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference
 ```
@@ -23349,7 +23535,7 @@ func InternalValue() ContainerClusterAddonsConfigGkeBackupAgentConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHighScaleCheckpointingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigHighScaleCheckpointingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigHighScaleCheckpointingConfigOutputReference
 ```
@@ -23620,7 +23806,7 @@ func InternalValue() ContainerClusterAddonsConfigHighScaleCheckpointingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference
 ```
@@ -23891,7 +24077,7 @@ func InternalValue() ContainerClusterAddonsConfigHorizontalPodAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigHttpLoadBalancingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigHttpLoadBalancingOutputReference
 ```
@@ -24162,7 +24348,7 @@ func InternalValue() ContainerClusterAddonsConfigHttpLoadBalancing
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
 ```
@@ -24491,7 +24677,7 @@ func InternalValue() ContainerClusterAddonsConfigLustreCsiDriverConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigNetworkPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 ```
@@ -24762,7 +24948,7 @@ func InternalValue() ContainerClusterAddonsConfigNetworkPolicyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNodeReadinessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigNodeReadinessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigNodeReadinessConfigOutputReference
 ```
@@ -25033,7 +25219,7 @@ func InternalValue() ContainerClusterAddonsConfigNodeReadinessConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigOutputReference
 ```
@@ -26122,7 +26308,7 @@ func InternalValue() ContainerClusterAddonsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
 ```
@@ -26393,7 +26579,7 @@ func InternalValue() ContainerClusterAddonsConfigParallelstoreCsiDriverConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigPodSnapshotConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigPodSnapshotConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigPodSnapshotConfigOutputReference
 ```
@@ -26664,7 +26850,7 @@ func InternalValue() ContainerClusterAddonsConfigPodSnapshotConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigRayOperatorConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterAddonsConfigRayOperatorConfigList
 ```
@@ -26824,7 +27010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigRayOperatorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterAddonsConfigRayOperatorConfigOutputReference
 ```
@@ -27197,7 +27383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference
 ```
@@ -27468,7 +27654,7 @@ func InternalValue() ContainerClusterAddonsConfigRayOperatorConfigRayClusterLogg
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference
 ```
@@ -27739,7 +27925,7 @@ func InternalValue() ContainerClusterAddonsConfigRayOperatorConfigRayClusterMoni
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSliceControllerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigSliceControllerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigSliceControllerConfigOutputReference
 ```
@@ -28010,7 +28196,7 @@ func InternalValue() ContainerClusterAddonsConfigSliceControllerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigSlurmOperatorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigSlurmOperatorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigSlurmOperatorConfigOutputReference
 ```
@@ -28281,7 +28467,7 @@ func InternalValue() ContainerClusterAddonsConfigSlurmOperatorConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAddonsConfigStatefulHaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigStatefulHaConfigOutputReference
 ```
@@ -28552,7 +28738,7 @@ func InternalValue() ContainerClusterAddonsConfigStatefulHaConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAnonymousAuthenticationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAnonymousAuthenticationConfigOutputReference
 ```
@@ -28823,7 +29009,7 @@ func InternalValue() ContainerClusterAnonymousAuthenticationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAuthenticatorGroupsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAuthenticatorGroupsConfigOutputReference
 ```
@@ -29094,7 +29280,7 @@ func InternalValue() ContainerClusterAuthenticatorGroupsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterAutopilotClusterPolicyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterAutopilotClusterPolicyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterAutopilotClusterPolicyConfigOutputReference
 ```
@@ -29459,7 +29645,7 @@ func InternalValue() ContainerClusterAutopilotClusterPolicyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterBinaryAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterBinaryAuthorizationOutputReference
 ```
@@ -29766,7 +29952,7 @@ func InternalValue() ContainerClusterBinaryAuthorization
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference
 ```
@@ -30084,7 +30270,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList
 ```
@@ -30233,7 +30419,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference
 ```
@@ -30522,7 +30708,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference
 ```
@@ -31100,7 +31286,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaults
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference
 ```
@@ -31407,7 +31593,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsS
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference
 ```
@@ -31727,7 +31913,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsU
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference
 ```
@@ -32063,7 +32249,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsU
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference
 ```
@@ -32441,7 +32627,7 @@ func InternalValue() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsU
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterClusterAutoscalingOutputReference
 ```
@@ -32890,7 +33076,7 @@ func InternalValue() ContainerClusterClusterAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingResourceLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterClusterAutoscalingResourceLimitsList
 ```
@@ -33050,7 +33236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterClusterAutoscalingResourceLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterClusterAutoscalingResourceLimitsOutputReference
 ```
@@ -33390,7 +33576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterConfidentialNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterConfidentialNodesOutputReference
 ```
@@ -33690,7 +33876,7 @@ func InternalValue() ContainerClusterConfidentialNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference
 ```
@@ -34055,7 +34241,7 @@ func InternalValue() ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference
 ```
@@ -34333,7 +34519,7 @@ func InternalValue() ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterControlPlaneEndpointsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterControlPlaneEndpointsConfigOutputReference
 ```
@@ -34666,7 +34852,7 @@ func InternalValue() ContainerClusterControlPlaneEndpointsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterCostManagementConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterCostManagementConfigOutputReference
 ```
@@ -34937,7 +35123,7 @@ func InternalValue() ContainerClusterCostManagementConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterDatabaseEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterDatabaseEncryptionOutputReference
 ```
@@ -35237,7 +35423,7 @@ func InternalValue() ContainerClusterDatabaseEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterDefaultSnatStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterDefaultSnatStatusOutputReference
 ```
@@ -35508,7 +35694,7 @@ func InternalValue() ContainerClusterDefaultSnatStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterDnsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterDnsConfigOutputReference
 ```
@@ -35873,7 +36059,7 @@ func InternalValue() ContainerClusterDnsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterEnableK8SBetaApisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterEnableK8SBetaApisOutputReference
 ```
@@ -36144,7 +36330,7 @@ func InternalValue() ContainerClusterEnableK8SBetaApis
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterEnterpriseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterEnterpriseConfigOutputReference
 ```
@@ -36433,7 +36619,7 @@ func InternalValue() ContainerClusterEnterpriseConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterFleetOutputReference
 ```
@@ -36784,7 +36970,7 @@ func InternalValue() ContainerClusterFleet
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterGatewayApiConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterGatewayApiConfigOutputReference
 ```
@@ -37055,7 +37241,7 @@ func InternalValue() ContainerClusterGatewayApiConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterGkeAutoUpgradeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterGkeAutoUpgradeConfigOutputReference
 ```
@@ -37326,7 +37512,7 @@ func InternalValue() ContainerClusterGkeAutoUpgradeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIdentityServiceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterIdentityServiceConfigOutputReference
 ```
@@ -37604,7 +37790,7 @@ func InternalValue() ContainerClusterIdentityServiceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList
 ```
@@ -37764,7 +37950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference
 ```
@@ -38111,7 +38297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference
 ```
@@ -38382,7 +38568,7 @@ func InternalValue() ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAutoIpamConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyAutoIpamConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterIpAllocationPolicyAutoIpamConfigOutputReference
 ```
@@ -38653,7 +38839,7 @@ func InternalValue() ContainerClusterIpAllocationPolicyAutoIpamConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference
 ```
@@ -38924,7 +39110,7 @@ func InternalValue() ContainerClusterIpAllocationPolicyNetworkTierConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterIpAllocationPolicyOutputReference
 ```
@@ -39528,7 +39714,7 @@ func InternalValue() ContainerClusterIpAllocationPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference
 ```
@@ -39799,7 +39985,7 @@ func InternalValue() ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterLoggingConfigOutputReference
 ```
@@ -40070,7 +40256,7 @@ func InternalValue() ContainerClusterLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference
 ```
@@ -40352,7 +40538,7 @@ func InternalValue() ContainerClusterMaintenancePolicyDailyMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyDisruptionBudgetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyDisruptionBudgetOutputReference
 ```
@@ -40681,7 +40867,7 @@ func InternalValue() ContainerClusterMaintenancePolicyDisruptionBudget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference
 ```
@@ -40981,7 +41167,7 @@ func InternalValue() ContainerClusterMaintenancePolicyMaintenanceExclusionExclus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyMaintenanceExclusionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterMaintenancePolicyMaintenanceExclusionList
 ```
@@ -41141,7 +41327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference
 ```
@@ -41523,7 +41709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyOutputReference
 ```
@@ -41982,7 +42168,7 @@ func InternalValue() ContainerClusterMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntilOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntilOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyRecurringMaintenanceWindowDelayUntilOutputReference
 ```
@@ -42297,7 +42483,7 @@ func InternalValue() ContainerClusterMaintenancePolicyRecurringMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyRecurringMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyRecurringMaintenanceWindowOutputReference
 ```
@@ -42667,7 +42853,7 @@ func InternalValue() ContainerClusterMaintenancePolicyRecurringMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyRecurringMaintenanceWindowWindowStartTimeOutputReference
 ```
@@ -42982,7 +43168,7 @@ func InternalValue() ContainerClusterMaintenancePolicyRecurringMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMaintenancePolicyRecurringWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMaintenancePolicyRecurringWindowOutputReference
 ```
@@ -43292,12 +43478,290 @@ func InternalValue() ContainerClusterMaintenancePolicyRecurringWindow
 ---
 
 
+### ContainerClusterManagedOpentelemetryConfigOutputReference <a name="ContainerClusterManagedOpentelemetryConfigOutputReference" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
+
+containercluster.NewContainerClusterManagedOpentelemetryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterManagedOpentelemetryConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.resetScope">ResetScope</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetScope` <a name="ResetScope" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.resetScope"></a>
+
+```go
+func ResetScope()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.scopeInput">ScopeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.scope">Scope</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScopeInput`<sup>Optional</sup> <a name="ScopeInput" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.scopeInput"></a>
+
+```go
+func ScopeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.scope"></a>
+
+```go
+func Scope() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ContainerClusterManagedOpentelemetryConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterManagedOpentelemetryConfig">ContainerClusterManagedOpentelemetryConfig</a>
+
+---
+
+
 ### ContainerClusterMasterAuthClientCertificateConfigOutputReference <a name="ContainerClusterMasterAuthClientCertificateConfigOutputReference" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMasterAuthClientCertificateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMasterAuthClientCertificateConfigOutputReference
 ```
@@ -43568,7 +44032,7 @@ func InternalValue() ContainerClusterMasterAuthClientCertificateConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList
 ```
@@ -43728,7 +44192,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference
 ```
@@ -44046,7 +44510,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMasterAuthorizedNetworksConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 ```
@@ -44395,7 +44859,7 @@ func InternalValue() ContainerClusterMasterAuthorizedNetworksConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMasterAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMasterAuthOutputReference
 ```
@@ -44712,7 +45176,7 @@ func InternalValue() ContainerClusterMasterAuth
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMeshCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMeshCertificatesOutputReference
 ```
@@ -44983,7 +45447,7 @@ func InternalValue() ContainerClusterMeshCertificates
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference
 ```
@@ -45276,7 +45740,7 @@ func InternalValue() ContainerClusterMonitoringConfigAdvancedDatapathObservabili
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference
 ```
@@ -45547,7 +46011,7 @@ func InternalValue() ContainerClusterMonitoringConfigManagedPrometheusAutoMonito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMonitoringConfigManagedPrometheusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMonitoringConfigManagedPrometheusOutputReference
 ```
@@ -45860,7 +46324,7 @@ func InternalValue() ContainerClusterMonitoringConfigManagedPrometheus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterMonitoringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterMonitoringConfigOutputReference
 ```
@@ -46222,7 +46686,7 @@ func InternalValue() ContainerClusterMonitoringConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNetworkPerformanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNetworkPerformanceConfigOutputReference
 ```
@@ -46493,7 +46957,7 @@ func InternalValue() ContainerClusterNetworkPerformanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNetworkPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNetworkPolicyOutputReference
 ```
@@ -46793,7 +47257,7 @@ func InternalValue() ContainerClusterNetworkPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference
 ```
@@ -47122,7 +47586,7 @@ func InternalValue() ContainerClusterNodeConfigAdvancedMachineFeatures
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigBootDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigBootDiskOutputReference
 ```
@@ -47487,7 +47951,7 @@ func InternalValue() ContainerClusterNodeConfigBootDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigConfidentialNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigConfidentialNodesOutputReference
 ```
@@ -47787,7 +48251,7 @@ func InternalValue() ContainerClusterNodeConfigConfidentialNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigContainerdConfigOutputReference
 ```
@@ -48162,7 +48626,7 @@ func InternalValue() ContainerClusterNodeConfigContainerdConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference
 ```
@@ -48433,7 +48897,7 @@ func InternalValue() ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList
 ```
@@ -48593,7 +49057,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference
 ```
@@ -48917,7 +49381,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference
 ```
@@ -49230,7 +49694,7 @@ func InternalValue() ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCaList
 ```
@@ -49390,7 +49854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference
 ```
@@ -49686,7 +50150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference
 ```
@@ -49964,7 +50428,7 @@ func InternalValue() ContainerClusterNodeConfigContainerdConfigRegistryHostsHost
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference
 ```
@@ -50242,7 +50706,7 @@ func InternalValue() ContainerClusterNodeConfigContainerdConfigRegistryHostsHost
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientList
 ```
@@ -50402,7 +50866,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference
 ```
@@ -50746,7 +51210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderList
 ```
@@ -50906,7 +51370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference
 ```
@@ -51217,7 +51681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsList
 ```
@@ -51377,7 +51841,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsOutputReference
 ```
@@ -51879,7 +52343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsList
 ```
@@ -52039,7 +52503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigRegistryHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigRegistryHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigContainerdConfigRegistryHostsOutputReference
 ```
@@ -52370,7 +52834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigWritableCgroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigContainerdConfigWritableCgroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigContainerdConfigWritableCgroupsOutputReference
 ```
@@ -52641,7 +53105,7 @@ func InternalValue() ContainerClusterNodeConfigContainerdConfigWritableCgroups
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigEffectiveTaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigEffectiveTaintsList
 ```
@@ -52790,7 +53254,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigEffectiveTaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigEffectiveTaintsOutputReference
 ```
@@ -53090,7 +53554,7 @@ func InternalValue() ContainerClusterNodeConfigEffectiveTaints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 ```
@@ -53390,7 +53854,7 @@ func InternalValue() ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigFastSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigFastSocketOutputReference
 ```
@@ -53661,7 +54125,7 @@ func InternalValue() ContainerClusterNodeConfigFastSocket
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigGcfsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigGcfsConfigOutputReference
 ```
@@ -53932,7 +54396,7 @@ func InternalValue() ContainerClusterNodeConfigGcfsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference
 ```
@@ -54203,7 +54667,7 @@ func InternalValue() ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstalla
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference
 ```
@@ -54496,7 +54960,7 @@ func InternalValue() ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigGuestAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigGuestAcceleratorList
 ```
@@ -54656,7 +55120,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigGuestAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigGuestAcceleratorOutputReference
 ```
@@ -55080,7 +55544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigGvnicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigGvnicOutputReference
 ```
@@ -55351,7 +55815,7 @@ func InternalValue() ContainerClusterNodeConfigGvnic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigCrashLoopBackOffOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigCrashLoopBackOffOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigCrashLoopBackOffOutputReference
 ```
@@ -55629,7 +56093,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfigCrashLoopBackOff
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
 ```
@@ -56052,7 +56516,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfigEvictionMinimumRecla
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
 ```
@@ -56475,7 +56939,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference
 ```
@@ -56898,7 +57362,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfigEvictionSoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigMemoryManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigMemoryManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigMemoryManagerOutputReference
 ```
@@ -57176,7 +57640,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfigMemoryManager
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigOutputReference
 ```
@@ -58170,7 +58634,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference
 ```
@@ -58477,7 +58941,7 @@ func InternalValue() ContainerClusterNodeConfigKubeletConfigTopologyManager
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 ```
@@ -58755,7 +59219,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference
 ```
@@ -59091,7 +59555,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitInit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInitOutputReference
 ```
@@ -59382,7 +59846,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigCustomNodeInit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
 ```
@@ -59689,7 +60153,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
 ```
@@ -59967,7 +60431,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigOutputReference
 ```
@@ -60542,7 +61006,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference
 ```
@@ -60849,7 +61313,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference
 ```
@@ -61127,7 +61591,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference
 ```
@@ -61405,7 +61869,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncrypti
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference
 ```
@@ -61712,7 +62176,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemera
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference
 ```
@@ -62158,7 +62622,7 @@ func InternalValue() ContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference
 ```
@@ -62429,7 +62893,7 @@ func InternalValue() ContainerClusterNodeConfigLocalNvmeSsdBlockConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigNodeImageConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigNodeImageConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigNodeImageConfigList
 ```
@@ -62589,7 +63053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigNodeImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigNodeImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigNodeImageConfigOutputReference
 ```
@@ -62914,7 +63378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigOutputReference
 ```
@@ -64794,7 +65258,7 @@ func InternalValue() ContainerClusterNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigReservationAffinityOutputReference
 ```
@@ -65123,7 +65587,7 @@ func InternalValue() ContainerClusterNodeConfigReservationAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSandboxConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigSandboxConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigSandboxConfigOutputReference
 ```
@@ -65394,7 +65858,7 @@ func InternalValue() ContainerClusterNodeConfigSandboxConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigSecondaryBootDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigSecondaryBootDisksList
 ```
@@ -65554,7 +66018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigSecondaryBootDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigSecondaryBootDisksOutputReference
 ```
@@ -65872,7 +66336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigShieldedInstanceConfigOutputReference
 ```
@@ -66179,7 +66643,7 @@ func InternalValue() ContainerClusterNodeConfigShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigSoleTenantConfigNodeAffinityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList
 ```
@@ -66339,7 +66803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference
 ```
@@ -66672,7 +67136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigSoleTenantConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigSoleTenantConfigOutputReference
 ```
@@ -66985,7 +67449,7 @@ func InternalValue() ContainerClusterNodeConfigSoleTenantConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigTaintConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigTaintConfigOutputReference
 ```
@@ -67256,7 +67720,7 @@ func InternalValue() ContainerClusterNodeConfigTaintConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodeConfigTaintList
 ```
@@ -67416,7 +67880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodeConfigTaintOutputReference
 ```
@@ -67749,7 +68213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigWindowsNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigWindowsNodeConfigOutputReference
 ```
@@ -68027,7 +68491,7 @@ func InternalValue() ContainerClusterNodeConfigWindowsNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeConfigWorkloadMetadataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference
 ```
@@ -68298,7 +68762,7 @@ func InternalValue() ContainerClusterNodeConfigWorkloadMetadataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeCreationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodeCreationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeCreationConfigOutputReference
 ```
@@ -68569,7 +69033,7 @@ func InternalValue() ContainerClusterNodeCreationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
 ```
@@ -68847,7 +69311,7 @@ func InternalValue() ContainerClusterNodePoolAutoConfigLinuxNodeConfigNodeKernel
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference
 ```
@@ -69167,7 +69631,7 @@ func InternalValue() ContainerClusterNodePoolAutoConfigLinuxNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolAutoConfigNetworkTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference
 ```
@@ -69445,7 +69909,7 @@ func InternalValue() ContainerClusterNodePoolAutoConfigNetworkTags
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference
 ```
@@ -69723,7 +70187,7 @@ func InternalValue() ContainerClusterNodePoolAutoConfigNodeKubeletConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolAutoConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolAutoConfigOutputReference
 ```
@@ -70127,7 +70591,7 @@ func InternalValue() ContainerClusterNodePoolAutoConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolAutoscalingOutputReference
 ```
@@ -70521,7 +70985,7 @@ func InternalValue() ContainerClusterNodePoolAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolBestEffortProvisioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolBestEffortProvisioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolBestEffortProvisioningOutputReference
 ```
@@ -70821,7 +71285,7 @@ func InternalValue() ContainerClusterNodePoolBestEffortProvisioning
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
 ```
@@ -71196,7 +71660,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference
 ```
@@ -71467,7 +71931,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList
 ```
@@ -71627,7 +72091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference
 ```
@@ -71951,7 +72415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference
 ```
@@ -72264,7 +72728,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCaList
 ```
@@ -72424,7 +72888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsCaOutputReference
 ```
@@ -72720,7 +73184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientCertOutputReference
 ```
@@ -72998,7 +73462,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientKeyOutputReference
 ```
@@ -73276,7 +73740,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientList
 ```
@@ -73436,7 +73900,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsClientOutputReference
 ```
@@ -73780,7 +74244,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeaderList
 ```
@@ -73940,7 +74404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsHeaderOutputReference
 ```
@@ -74251,7 +74715,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsList
 ```
@@ -74411,7 +74875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsHostsOutputReference
 ```
@@ -74913,7 +75377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsList
 ```
@@ -75073,7 +75537,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigRegistryHostsOutputReference
 ```
@@ -75404,7 +75868,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigWritableCgroupsOutputReference
 ```
@@ -75675,7 +76139,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
 ```
@@ -75946,7 +76410,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference
 ```
@@ -76337,7 +76801,7 @@ func InternalValue() ContainerClusterNodePoolDefaultsNodeConfigDefaults
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolDefaultsOutputReference
 ```
@@ -76628,7 +77092,7 @@ func InternalValue() ContainerClusterNodePoolDefaults
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolList
 ```
@@ -76788,7 +77252,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupportList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupportList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupportList
 ```
@@ -76948,7 +77412,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupportOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupportOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolMaintenancePolicyExclusionUntilEndOfSupportOutputReference
 ```
@@ -77266,7 +77730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolMaintenancePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolMaintenancePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolMaintenancePolicyList
 ```
@@ -77426,7 +77890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolMaintenancePolicyOutputReference
 ```
@@ -77735,7 +78199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolManagementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolManagementOutputReference
 ```
@@ -78042,7 +78506,7 @@ func InternalValue() ContainerClusterNodePoolManagement
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
 ```
@@ -78202,7 +78666,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference
 ```
@@ -78527,7 +78991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
 ```
@@ -78687,7 +79151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference
 ```
@@ -79041,7 +79505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference
 ```
@@ -79312,7 +79776,7 @@ func InternalValue() ContainerClusterNodePoolNetworkConfigNetworkPerformanceConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNetworkConfigOutputReference
 ```
@@ -79903,7 +80367,7 @@ func InternalValue() ContainerClusterNodePoolNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference
 ```
@@ -80174,7 +80638,7 @@ func InternalValue() ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference
 ```
@@ -80503,7 +80967,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigBootDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigBootDiskOutputReference
 ```
@@ -80868,7 +81332,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigBootDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference
 ```
@@ -81168,7 +81632,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigConfidentialNodes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference
 ```
@@ -81543,7 +82007,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigContainerdConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference
 ```
@@ -81814,7 +82278,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList
 ```
@@ -81974,7 +82438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference
 ```
@@ -82298,7 +82762,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference
 ```
@@ -82611,7 +83075,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaList
 ```
@@ -82771,7 +83235,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsCaOutputReference
 ```
@@ -83067,7 +83531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCertOutputReference
 ```
@@ -83345,7 +83809,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigContainerdConfigRegistryH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKeyOutputReference
 ```
@@ -83623,7 +84087,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigContainerdConfigRegistryH
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientList
 ```
@@ -83783,7 +84247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientOutputReference
 ```
@@ -84127,7 +84591,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderList
 ```
@@ -84287,7 +84751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference
 ```
@@ -84598,7 +85062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList
 ```
@@ -84758,7 +85222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsOutputReference
 ```
@@ -85260,7 +85724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsList
 ```
@@ -85420,7 +85884,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsOutputReference
 ```
@@ -85751,7 +86215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference
 ```
@@ -86022,7 +86486,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigContainerdConfigWritableC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigEffectiveTaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigEffectiveTaintsList
 ```
@@ -86171,7 +86635,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference
 ```
@@ -86471,7 +86935,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigEffectiveTaints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 ```
@@ -86771,7 +87235,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigFastSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigFastSocketOutputReference
 ```
@@ -87042,7 +87506,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigFastSocket
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigGcfsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference
 ```
@@ -87313,7 +87777,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigGcfsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference
 ```
@@ -87584,7 +88048,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriver
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference
 ```
@@ -87877,7 +88341,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigGuestAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigGuestAcceleratorList
 ```
@@ -88037,7 +88501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference
 ```
@@ -88461,7 +88925,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigGvnicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigGvnicOutputReference
 ```
@@ -88732,7 +89196,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigGvnic
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOffOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOffOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBackOffOutputReference
 ```
@@ -89010,7 +89474,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfigCrashLoopBac
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference
 ```
@@ -89433,7 +89897,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMini
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference
 ```
@@ -89856,7 +90320,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference
 ```
@@ -90279,7 +90743,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManagerOutputReference
 ```
@@ -90557,7 +91021,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfigMemoryManage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference
 ```
@@ -91551,7 +92015,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigKubeletConfigTopologyManagerOutputReference
 ```
@@ -91858,7 +92322,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigKubeletConfigTopologyMana
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference
 ```
@@ -92136,7 +92600,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigAccurateTi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScriptOutputReference
 ```
@@ -92472,7 +92936,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNode
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNodeInitOutputReference
 ```
@@ -92763,7 +93227,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigCustomNode
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
 ```
@@ -93070,7 +93534,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernelModuleLoadingOutputReference
 ```
@@ -93348,7 +93812,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigNodeKernel
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference
 ```
@@ -93923,7 +94387,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference
 ```
@@ -94230,7 +94694,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfileOutputReference
 ```
@@ -94508,7 +94972,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptionConfigOutputReference
 ```
@@ -94786,7 +95250,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfileOutputReference
 ```
@@ -95093,7 +95557,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference
 ```
@@ -95539,7 +96003,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLinuxNodeConfigSwapConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
 ```
@@ -95810,7 +96274,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigNodeImageConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigNodeImageConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigNodeImageConfigList
 ```
@@ -95970,7 +96434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigNodeImageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigNodeImageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigNodeImageConfigOutputReference
 ```
@@ -96295,7 +96759,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigOutputReference
 ```
@@ -98175,7 +98639,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference
 ```
@@ -98504,7 +98968,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigReservationAffinity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSandboxConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigSandboxConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigSandboxConfigOutputReference
 ```
@@ -98775,7 +99239,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigSandboxConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigSecondaryBootDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigSecondaryBootDisksList
 ```
@@ -98935,7 +99399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference
 ```
@@ -99253,7 +99717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference
 ```
@@ -99560,7 +100024,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList
 ```
@@ -99720,7 +100184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference
 ```
@@ -100053,7 +100517,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
 ```
@@ -100366,7 +100830,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigSoleTenantConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigTaintConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigTaintConfigOutputReference
 ```
@@ -100637,7 +101101,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigTaintConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigTaintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeConfigTaintList
 ```
@@ -100797,7 +101261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigTaintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigTaintOutputReference
 ```
@@ -101130,7 +101594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference
 ```
@@ -101408,7 +101872,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigWindowsNodeConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference
 ```
@@ -101679,7 +102143,7 @@ func InternalValue() ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeDrainConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeDrainConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerClusterNodePoolNodeDrainConfigList
 ```
@@ -101839,7 +102303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeDrainConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolNodeDrainConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeDrainConfigOutputReference
 ```
@@ -102193,7 +102657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerClusterNodePoolOutputReference
 ```
@@ -103134,7 +103598,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolPlacementPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolPlacementPolicyOutputReference
 ```
@@ -103463,7 +103927,7 @@ func InternalValue() ContainerClusterNodePoolPlacementPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolQueuedProvisioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolQueuedProvisioningOutputReference
 ```
@@ -103734,7 +104198,7 @@ func InternalValue() ContainerClusterNodePoolQueuedProvisioning
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
 ```
@@ -104047,7 +104511,7 @@ func InternalValue() ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference
 ```
@@ -104383,7 +104847,7 @@ func InternalValue() ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsSta
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNodePoolUpgradeSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolUpgradeSettingsOutputReference
 ```
@@ -104761,7 +105225,7 @@ func InternalValue() ContainerClusterNodePoolUpgradeSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNotificationConfigOutputReference
 ```
@@ -105045,7 +105509,7 @@ func InternalValue() ContainerClusterNotificationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNotificationConfigPubsubFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNotificationConfigPubsubFilterOutputReference
 ```
@@ -105316,7 +105780,7 @@ func InternalValue() ContainerClusterNotificationConfigPubsubFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterNotificationConfigPubsubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterNotificationConfigPubsubOutputReference
 ```
@@ -105658,7 +106122,7 @@ func InternalValue() ContainerClusterNotificationConfigPubsub
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterPodAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterPodAutoscalingOutputReference
 ```
@@ -105929,7 +106393,7 @@ func InternalValue() ContainerClusterPodAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference
 ```
@@ -106200,7 +106664,7 @@ func InternalValue() ContainerClusterPrivateClusterConfigMasterGlobalAccessConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterPrivateClusterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterPrivateClusterConfigOutputReference
 ```
@@ -106640,7 +107104,7 @@ func InternalValue() ContainerClusterPrivateClusterConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterRbacBindingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterRbacBindingConfigOutputReference
 ```
@@ -106947,7 +107411,7 @@ func InternalValue() ContainerClusterRbacBindingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterReleaseChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterReleaseChannelOutputReference
 ```
@@ -107218,7 +107682,7 @@ func InternalValue() ContainerClusterReleaseChannel
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference
 ```
@@ -107489,7 +107953,7 @@ func InternalValue() ContainerClusterResourceUsageExportConfigBigqueryDestinatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterResourceUsageExportConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterResourceUsageExportConfigOutputReference
 ```
@@ -107831,7 +108295,7 @@ func InternalValue() ContainerClusterResourceUsageExportConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterRollbackSafeUpgradeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterRollbackSafeUpgradeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterRollbackSafeUpgradeOutputReference
 ```
@@ -108104,12 +108568,283 @@ func InternalValue() ContainerClusterRollbackSafeUpgrade
 ---
 
 
+### ContainerClusterScheduleUpgradeConfigOutputReference <a name="ContainerClusterScheduleUpgradeConfigOutputReference" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
+
+containercluster.NewContainerClusterScheduleUpgradeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterScheduleUpgradeConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.enabledInput"></a>
+
+```go
+func EnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.enabled"></a>
+
+```go
+func Enabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ContainerClusterScheduleUpgradeConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerCluster.ContainerClusterScheduleUpgradeConfig">ContainerClusterScheduleUpgradeConfig</a>
+
+---
+
+
 ### ContainerClusterSecretManagerConfigOutputReference <a name="ContainerClusterSecretManagerConfigOutputReference" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterSecretManagerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterSecretManagerConfigOutputReference
 ```
@@ -108422,7 +109157,7 @@ func InternalValue() ContainerClusterSecretManagerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigRotationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterSecretManagerConfigRotationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterSecretManagerConfigRotationConfigOutputReference
 ```
@@ -108722,7 +109457,7 @@ func InternalValue() ContainerClusterSecretManagerConfigRotationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterSecretSyncConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterSecretSyncConfigOutputReference
 ```
@@ -109035,7 +109770,7 @@ func InternalValue() ContainerClusterSecretSyncConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretSyncConfigRotationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterSecretSyncConfigRotationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterSecretSyncConfigRotationConfigOutputReference
 ```
@@ -109335,7 +110070,7 @@ func InternalValue() ContainerClusterSecretSyncConfigRotationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterSecurityPostureConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterSecurityPostureConfigOutputReference
 ```
@@ -109642,7 +110377,7 @@ func InternalValue() ContainerClusterSecurityPostureConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterServiceExternalIpsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterServiceExternalIpsConfigOutputReference
 ```
@@ -109913,7 +110648,7 @@ func InternalValue() ContainerClusterServiceExternalIpsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterTimeoutsOutputReference
 ```
@@ -110278,7 +111013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterUserManagedKeysConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterUserManagedKeysConfigOutputReference
 ```
@@ -110770,7 +111505,7 @@ func InternalValue() ContainerClusterUserManagedKeysConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterVerticalPodAutoscalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterVerticalPodAutoscalingOutputReference
 ```
@@ -111041,7 +111776,7 @@ func InternalValue() ContainerClusterVerticalPodAutoscaling
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/containercluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/containercluster"
 
 containercluster.NewContainerClusterWorkloadIdentityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerClusterWorkloadIdentityConfigOutputReference
 ```

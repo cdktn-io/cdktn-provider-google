@@ -26,6 +26,9 @@ Object.defineProperty(exports, 'accessContextManagerServicePerimeters', { get: f
 Object.defineProperty(exports, 'activeDirectoryDomain', { get: function () { return require('./active-directory-domain'); } });
 Object.defineProperty(exports, 'activeDirectoryDomainTrust', { get: function () { return require('./active-directory-domain-trust'); } });
 Object.defineProperty(exports, 'agentIdentityAuthProvider', { get: function () { return require('./agent-identity-auth-provider'); } });
+Object.defineProperty(exports, 'agentIdentityAuthProviderIamBinding', { get: function () { return require('./agent-identity-auth-provider-iam-binding'); } });
+Object.defineProperty(exports, 'agentIdentityAuthProviderIamMember', { get: function () { return require('./agent-identity-auth-provider-iam-member'); } });
+Object.defineProperty(exports, 'agentIdentityAuthProviderIamPolicy', { get: function () { return require('./agent-identity-auth-provider-iam-policy'); } });
 Object.defineProperty(exports, 'agentRegistryBinding', { get: function () { return require('./agent-registry-binding'); } });
 Object.defineProperty(exports, 'agentRegistryService', { get: function () { return require('./agent-registry-service'); } });
 Object.defineProperty(exports, 'agenticApplicationsAnalystAgentPersona', { get: function () { return require('./agentic-applications-analyst-agent-persona'); } });
@@ -196,6 +199,7 @@ Object.defineProperty(exports, 'bigtableInstanceIamMember', { get: function () {
 Object.defineProperty(exports, 'bigtableInstanceIamPolicy', { get: function () { return require('./bigtable-instance-iam-policy'); } });
 Object.defineProperty(exports, 'bigtableLogicalView', { get: function () { return require('./bigtable-logical-view'); } });
 Object.defineProperty(exports, 'bigtableMaterializedView', { get: function () { return require('./bigtable-materialized-view'); } });
+Object.defineProperty(exports, 'bigtableMemoryLayer', { get: function () { return require('./bigtable-memory-layer'); } });
 Object.defineProperty(exports, 'bigtableSchemaBundle', { get: function () { return require('./bigtable-schema-bundle'); } });
 Object.defineProperty(exports, 'bigtableTable', { get: function () { return require('./bigtable-table'); } });
 Object.defineProperty(exports, 'bigtableTableIamBinding', { get: function () { return require('./bigtable-table-iam-binding'); } });
@@ -266,6 +270,10 @@ Object.defineProperty(exports, 'cloudRunService', { get: function () { return re
 Object.defineProperty(exports, 'cloudRunServiceIamBinding', { get: function () { return require('./cloud-run-service-iam-binding'); } });
 Object.defineProperty(exports, 'cloudRunServiceIamMember', { get: function () { return require('./cloud-run-service-iam-member'); } });
 Object.defineProperty(exports, 'cloudRunServiceIamPolicy', { get: function () { return require('./cloud-run-service-iam-policy'); } });
+Object.defineProperty(exports, 'cloudRunV2Instance', { get: function () { return require('./cloud-run-v2-instance'); } });
+Object.defineProperty(exports, 'cloudRunV2InstanceIamBinding', { get: function () { return require('./cloud-run-v2-instance-iam-binding'); } });
+Object.defineProperty(exports, 'cloudRunV2InstanceIamMember', { get: function () { return require('./cloud-run-v2-instance-iam-member'); } });
+Object.defineProperty(exports, 'cloudRunV2InstanceIamPolicy', { get: function () { return require('./cloud-run-v2-instance-iam-policy'); } });
 Object.defineProperty(exports, 'cloudRunV2Job', { get: function () { return require('./cloud-run-v2-job'); } });
 Object.defineProperty(exports, 'cloudRunV2JobIamBinding', { get: function () { return require('./cloud-run-v2-job-iam-binding'); } });
 Object.defineProperty(exports, 'cloudRunV2JobIamMember', { get: function () { return require('./cloud-run-v2-job-iam-member'); } });
@@ -556,6 +564,7 @@ Object.defineProperty(exports, 'dataPipelinePipeline', { get: function () { retu
 Object.defineProperty(exports, 'databaseMigrationServiceConnectionProfile', { get: function () { return require('./database-migration-service-connection-profile'); } });
 Object.defineProperty(exports, 'databaseMigrationServiceMigrationJob', { get: function () { return require('./database-migration-service-migration-job'); } });
 Object.defineProperty(exports, 'databaseMigrationServicePrivateConnection', { get: function () { return require('./database-migration-service-private-connection'); } });
+Object.defineProperty(exports, 'dataflowFlexTemplateJob', { get: function () { return require('./dataflow-flex-template-job'); } });
 Object.defineProperty(exports, 'dataflowJob', { get: function () { return require('./dataflow-job'); } });
 Object.defineProperty(exports, 'dataformFolder', { get: function () { return require('./dataform-folder'); } });
 Object.defineProperty(exports, 'dataformRepository', { get: function () { return require('./dataform-repository'); } });
@@ -698,6 +707,7 @@ Object.defineProperty(exports, 'dnsManagedZone', { get: function () { return req
 Object.defineProperty(exports, 'dnsManagedZoneIamBinding', { get: function () { return require('./dns-managed-zone-iam-binding'); } });
 Object.defineProperty(exports, 'dnsManagedZoneIamMember', { get: function () { return require('./dns-managed-zone-iam-member'); } });
 Object.defineProperty(exports, 'dnsManagedZoneIamPolicy', { get: function () { return require('./dns-managed-zone-iam-policy'); } });
+Object.defineProperty(exports, 'dnsOutboundEndpoint', { get: function () { return require('./dns-outbound-endpoint'); } });
 Object.defineProperty(exports, 'dnsPolicy', { get: function () { return require('./dns-policy'); } });
 Object.defineProperty(exports, 'dnsRecordSet', { get: function () { return require('./dns-record-set'); } });
 Object.defineProperty(exports, 'dnsResponsePolicy', { get: function () { return require('./dns-response-policy'); } });
@@ -705,6 +715,7 @@ Object.defineProperty(exports, 'dnsResponsePolicyRule', { get: function () { ret
 Object.defineProperty(exports, 'documentAiProcessor', { get: function () { return require('./document-ai-processor'); } });
 Object.defineProperty(exports, 'documentAiProcessorDefaultVersion', { get: function () { return require('./document-ai-processor-default-version'); } });
 Object.defineProperty(exports, 'documentAiSchema', { get: function () { return require('./document-ai-schema'); } });
+Object.defineProperty(exports, 'documentAiSchemaVersion', { get: function () { return require('./document-ai-schema-version'); } });
 Object.defineProperty(exports, 'documentAiWarehouseDocumentSchema', { get: function () { return require('./document-ai-warehouse-document-schema'); } });
 Object.defineProperty(exports, 'documentAiWarehouseLocation', { get: function () { return require('./document-ai-warehouse-location'); } });
 Object.defineProperty(exports, 'edgecontainerCluster', { get: function () { return require('./edgecontainer-cluster'); } });
@@ -1097,6 +1108,7 @@ Object.defineProperty(exports, 'networkServicesMulticastGroupRange', { get: func
 Object.defineProperty(exports, 'networkServicesMulticastGroupRangeActivation', { get: function () { return require('./network-services-multicast-group-range-activation'); } });
 Object.defineProperty(exports, 'networkServicesMulticastProducerAssociation', { get: function () { return require('./network-services-multicast-producer-association'); } });
 Object.defineProperty(exports, 'networkServicesServiceBinding', { get: function () { return require('./network-services-service-binding'); } });
+Object.defineProperty(exports, 'networkServicesServiceLbPolicies', { get: function () { return require('./network-services-service-lb-policies'); } });
 Object.defineProperty(exports, 'networkServicesTcpRoute', { get: function () { return require('./network-services-tcp-route'); } });
 Object.defineProperty(exports, 'networkServicesTlsRoute', { get: function () { return require('./network-services-tls-route'); } });
 Object.defineProperty(exports, 'networkServicesWasmPlugin', { get: function () { return require('./network-services-wasm-plugin'); } });
@@ -1182,6 +1194,8 @@ Object.defineProperty(exports, 'redisCluster', { get: function () { return requi
 Object.defineProperty(exports, 'redisClusterAclPolicy', { get: function () { return require('./redis-cluster-acl-policy'); } });
 Object.defineProperty(exports, 'redisClusterUserCreatedConnections', { get: function () { return require('./redis-cluster-user-created-connections'); } });
 Object.defineProperty(exports, 'redisInstance', { get: function () { return require('./redis-instance'); } });
+Object.defineProperty(exports, 'resourceManagerBoundary', { get: function () { return require('./resource-manager-boundary'); } });
+Object.defineProperty(exports, 'resourceManagerBoundaryConfig', { get: function () { return require('./resource-manager-boundary-config'); } });
 Object.defineProperty(exports, 'resourceManagerCapability', { get: function () { return require('./resource-manager-capability'); } });
 Object.defineProperty(exports, 'resourceManagerCapabilityConfig', { get: function () { return require('./resource-manager-capability-config'); } });
 Object.defineProperty(exports, 'resourceManagerLien', { get: function () { return require('./resource-manager-lien'); } });
@@ -1326,6 +1340,7 @@ Object.defineProperty(exports, 'vectorSearchCollection', { get: function () { re
 Object.defineProperty(exports, 'vectorSearchDataObject', { get: function () { return require('./vector-search-data-object'); } });
 Object.defineProperty(exports, 'vectorSearchIndex', { get: function () { return require('./vector-search-index'); } });
 Object.defineProperty(exports, 'vertexAiCacheConfig', { get: function () { return require('./vertex-ai-cache-config'); } });
+Object.defineProperty(exports, 'vertexAiCustomJob', { get: function () { return require('./vertex-ai-custom-job'); } });
 Object.defineProperty(exports, 'vertexAiDataset', { get: function () { return require('./vertex-ai-dataset'); } });
 Object.defineProperty(exports, 'vertexAiDeploymentResourcePool', { get: function () { return require('./vertex-ai-deployment-resource-pool'); } });
 Object.defineProperty(exports, 'vertexAiEndpoint', { get: function () { return require('./vertex-ai-endpoint'); } });
@@ -1343,8 +1358,10 @@ Object.defineProperty(exports, 'vertexAiIndexEndpoint', { get: function () { ret
 Object.defineProperty(exports, 'vertexAiIndexEndpointDeployedIndex', { get: function () { return require('./vertex-ai-index-endpoint-deployed-index'); } });
 Object.defineProperty(exports, 'vertexAiOnlineEvaluator', { get: function () { return require('./vertex-ai-online-evaluator'); } });
 Object.defineProperty(exports, 'vertexAiPersistentResource', { get: function () { return require('./vertex-ai-persistent-resource'); } });
+Object.defineProperty(exports, 'vertexAiPipelineJob', { get: function () { return require('./vertex-ai-pipeline-job'); } });
 Object.defineProperty(exports, 'vertexAiRagCorpus', { get: function () { return require('./vertex-ai-rag-corpus'); } });
 Object.defineProperty(exports, 'vertexAiRagEngineConfig', { get: function () { return require('./vertex-ai-rag-engine-config'); } });
+Object.defineProperty(exports, 'vertexAiRagFile', { get: function () { return require('./vertex-ai-rag-file'); } });
 Object.defineProperty(exports, 'vertexAiReasoningEngine', { get: function () { return require('./vertex-ai-reasoning-engine'); } });
 Object.defineProperty(exports, 'vertexAiReasoningEngineIamBinding', { get: function () { return require('./vertex-ai-reasoning-engine-iam-binding'); } });
 Object.defineProperty(exports, 'vertexAiReasoningEngineIamMember', { get: function () { return require('./vertex-ai-reasoning-engine-iam-member'); } });
@@ -1387,6 +1404,7 @@ Object.defineProperty(exports, 'dataGoogleAccessContextManagerAccessPolicyIamPol
 Object.defineProperty(exports, 'dataGoogleAccessContextManagerSupportedService', { get: function () { return require('./data-google-access-context-manager-supported-service'); } });
 Object.defineProperty(exports, 'dataGoogleAccessContextManagerSupportedServices', { get: function () { return require('./data-google-access-context-manager-supported-services'); } });
 Object.defineProperty(exports, 'dataGoogleActiveFolder', { get: function () { return require('./data-google-active-folder'); } });
+Object.defineProperty(exports, 'dataGoogleAgentIdentityAuthProviderIamPolicy', { get: function () { return require('./data-google-agent-identity-auth-provider-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleAgentRegistryAgent', { get: function () { return require('./data-google-agent-registry-agent'); } });
 Object.defineProperty(exports, 'dataGoogleAgentRegistryEndpoint', { get: function () { return require('./data-google-agent-registry-endpoint'); } });
 Object.defineProperty(exports, 'dataGoogleAgentRegistryMcpServer', { get: function () { return require('./data-google-agent-registry-mcp-server'); } });
@@ -1473,6 +1491,7 @@ Object.defineProperty(exports, 'dataGoogleCloudQuotasQuotaInfos', { get: functio
 Object.defineProperty(exports, 'dataGoogleCloudRunLocations', { get: function () { return require('./data-google-cloud-run-locations'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunService', { get: function () { return require('./data-google-cloud-run-service'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunServiceIamPolicy', { get: function () { return require('./data-google-cloud-run-service-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleCloudRunV2InstanceIamPolicy', { get: function () { return require('./data-google-cloud-run-v2-instance-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2Job', { get: function () { return require('./data-google-cloud-run-v2-job'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2JobIamPolicy', { get: function () { return require('./data-google-cloud-run-v2-job-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2Service', { get: function () { return require('./data-google-cloud-run-v2-service'); } });

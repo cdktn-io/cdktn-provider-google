@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,13 +21,13 @@ export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#deletion_policy DnsPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#deletion_policy DnsPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A textual description field. Defaults to 'Managed by Terraform'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#description DnsPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#description DnsPolicy#description}
   */
   readonly description?: string;
   /**
@@ -36,18 +36,18 @@ export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   * virtual IP address will be allocated from each of the sub-networks
   * that are bound to this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
   */
   readonly enableInboundForwarding?: boolean | cdktn.IResolvable;
   /**
   * Controls whether logging is enabled for the networks bound to this policy.
   * Defaults to no logging if not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
   */
   readonly enableLogging?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#id DnsPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#id DnsPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,37 +56,154 @@ export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * User assigned name for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#name DnsPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#name DnsPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#project DnsPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#project DnsPolicy#project}
   */
   readonly project?: string;
   /**
   * alternative_name_server_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#alternative_name_server_config DnsPolicy#alternative_name_server_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#alternative_name_server_config DnsPolicy#alternative_name_server_config}
   */
   readonly alternativeNameServerConfig?: DnsPolicyAlternativeNameServerConfig;
   /**
   * dns64_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#dns64_config DnsPolicy#dns64_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#dns64_config DnsPolicy#dns64_config}
   */
   readonly dns64Config?: DnsPolicyDns64Config;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#networks DnsPolicy#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#networks DnsPolicy#networks}
   */
   readonly networks?: DnsPolicyNetworks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#timeouts DnsPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#timeouts DnsPolicy#timeouts}
   */
   readonly timeouts?: DnsPolicyTimeouts;
+}
+export interface DnsPolicyAlternativeNameServerConfigOutboundEndpoints {
+  /**
+  * Specified as a resource path including project and region.
+  * This should be formatted like
+  * 'projects/{project}/locations/{location}/outboundEndpoints/{endpoint}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#name DnsPolicy#name}
+  */
+  readonly name: string;
+}
+
+export function dnsPolicyAlternativeNameServerConfigOutboundEndpointsToTerraform(struct?: DnsPolicyAlternativeNameServerConfigOutboundEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function dnsPolicyAlternativeNameServerConfigOutboundEndpointsToHclTerraform(struct?: DnsPolicyAlternativeNameServerConfigOutboundEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DnsPolicyAlternativeNameServerConfigOutboundEndpoints | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DnsPolicyAlternativeNameServerConfigOutboundEndpoints | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class DnsPolicyAlternativeNameServerConfigOutboundEndpointsList extends cdktn.ComplexList {
+  public internalValue? : DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference {
+    return new DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DnsPolicyAlternativeNameServerConfigTargetNameServers {
   /**
@@ -94,13 +211,13 @@ export interface DnsPolicyAlternativeNameServerConfigTargetNameServers {
   * decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
   * to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#forwarding_path DnsPolicy#forwarding_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#forwarding_path DnsPolicy#forwarding_path}
   */
   readonly forwardingPath?: string;
   /**
   * IPv4 address to forward to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#ipv4_address DnsPolicy#ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#ipv4_address DnsPolicy#ipv4_address}
   */
   readonly ipv4Address: string;
 }
@@ -242,9 +359,15 @@ export class DnsPolicyAlternativeNameServerConfigTargetNameServersList extends c
 }
 export interface DnsPolicyAlternativeNameServerConfig {
   /**
+  * outbound_endpoints block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#outbound_endpoints DnsPolicy#outbound_endpoints}
+  */
+  readonly outboundEndpoints?: DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] | cdktn.IResolvable;
+  /**
   * target_name_servers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
   */
   readonly targetNameServers: DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktn.IResolvable;
 }
@@ -255,6 +378,7 @@ export function dnsPolicyAlternativeNameServerConfigToTerraform(struct?: DnsPoli
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    outbound_endpoints: cdktn.listMapper(dnsPolicyAlternativeNameServerConfigOutboundEndpointsToTerraform, true)(struct!.outboundEndpoints),
     target_name_servers: cdktn.listMapper(dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform, true)(struct!.targetNameServers),
   }
 }
@@ -266,6 +390,12 @@ export function dnsPolicyAlternativeNameServerConfigToHclTerraform(struct?: DnsP
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    outbound_endpoints: {
+      value: cdktn.listMapperHcl(dnsPolicyAlternativeNameServerConfigOutboundEndpointsToHclTerraform, true)(struct!.outboundEndpoints),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DnsPolicyAlternativeNameServerConfigOutboundEndpointsList",
+    },
     target_name_servers: {
       value: cdktn.listMapperHcl(dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform, true)(struct!.targetNameServers),
       isBlock: true,
@@ -292,6 +422,10 @@ export class DnsPolicyAlternativeNameServerConfigOutputReference extends cdktn.C
   public get internalValue(): DnsPolicyAlternativeNameServerConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._outboundEndpoints?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outboundEndpoints = this._outboundEndpoints?.internalValue;
+    }
     if (this._targetNameServers?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.targetNameServers = this._targetNameServers?.internalValue;
@@ -302,12 +436,30 @@ export class DnsPolicyAlternativeNameServerConfigOutputReference extends cdktn.C
   public set internalValue(value: DnsPolicyAlternativeNameServerConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._outboundEndpoints.internalValue = undefined;
       this._targetNameServers.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._outboundEndpoints.internalValue = value.outboundEndpoints;
       this._targetNameServers.internalValue = value.targetNameServers;
     }
+  }
+
+  // outbound_endpoints - computed: false, optional: true, required: false
+  private _outboundEndpoints = new DnsPolicyAlternativeNameServerConfigOutboundEndpointsList(this, "outbound_endpoints", false);
+  public get outboundEndpoints() {
+    return this._outboundEndpoints;
+  }
+  public putOutboundEndpoints(value: DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] | cdktn.IResolvable) {
+    this._outboundEndpoints.internalValue = value;
+  }
+  public resetOutboundEndpoints() {
+    this._outboundEndpoints.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outboundEndpointsInput() {
+    return this._outboundEndpoints.internalValue;
   }
 
   // target_name_servers - computed: false, optional: false, required: true
@@ -327,7 +479,7 @@ export interface DnsPolicyDns64ConfigScope {
   /**
   * Controls whether DNS64 is enabled globally at the network level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
   */
   readonly allQueries?: boolean | cdktn.IResolvable;
 }
@@ -413,7 +565,7 @@ export interface DnsPolicyDns64Config {
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#scope DnsPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#scope DnsPolicy#scope}
   */
   readonly scope: DnsPolicyDns64ConfigScope;
 }
@@ -498,7 +650,7 @@ export interface DnsPolicyNetworks {
   * This should be formatted like 'projects/{project}/global/networks/{network}' or
   * 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#network_url DnsPolicy#network_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#network_url DnsPolicy#network_url}
   */
   readonly networkUrl: string;
 }
@@ -611,15 +763,15 @@ export class DnsPolicyNetworksList extends cdktn.ComplexList {
 }
 export interface DnsPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#create DnsPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#create DnsPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#delete DnsPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#delete DnsPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#update DnsPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#update DnsPolicy#update}
   */
   readonly update?: string;
 }
@@ -771,7 +923,7 @@ export class DnsPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy google_dns_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy google_dns_policy}
 */
 export class DnsPolicy extends cdktn.TerraformResource {
 
@@ -787,7 +939,7 @@ export class DnsPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DnsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsPolicy to import
-  * @param importFromId The id of the existing DnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -799,7 +951,7 @@ export class DnsPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy google_dns_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy google_dns_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -810,7 +962,7 @@ export class DnsPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_dns_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

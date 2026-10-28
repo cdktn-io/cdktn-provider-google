@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,19 +16,19 @@ export interface DiscoveryEngineSearchEngineConfig extends cdktn.TerraformMetaAr
   * This is the application type this engine resource represents.
   * The supported values: 'APP_TYPE_UNSPECIFIED', 'APP_TYPE_INTRANET'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#app_type DiscoveryEngineSearchEngine#app_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#app_type DiscoveryEngineSearchEngine#app_type}
   */
   readonly appType?: string;
   /**
   * The collection ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#collection_id DiscoveryEngineSearchEngine#collection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#collection_id DiscoveryEngineSearchEngine#collection_id}
   */
   readonly collectionId: string;
   /**
   * The data stores associated with this engine. For SOLUTION_TYPE_SEARCH type of engines, they can only associate with at most one data store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#data_store_ids DiscoveryEngineSearchEngine#data_store_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#data_store_ids DiscoveryEngineSearchEngine#data_store_ids}
   */
   readonly dataStoreIds: string[];
   /**
@@ -40,35 +40,35 @@ export interface DiscoveryEngineSearchEngineConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#deletion_policy DiscoveryEngineSearchEngine#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#deletion_policy DiscoveryEngineSearchEngine#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Whether to disable analytics for searches performed on this engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#disable_analytics DiscoveryEngineSearchEngine#disable_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#disable_analytics DiscoveryEngineSearchEngine#disable_analytics}
   */
   readonly disableAnalytics?: boolean | cdktn.IResolvable;
   /**
   * Required. The display name of the engine. Should be human readable. UTF-8 encoded string with limit of 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#display_name DiscoveryEngineSearchEngine#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#display_name DiscoveryEngineSearchEngine#display_name}
   */
   readonly displayName: string;
   /**
   * Unique ID to use for Search Engine App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#engine_id DiscoveryEngineSearchEngine#engine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#engine_id DiscoveryEngineSearchEngine#engine_id}
   */
   readonly engineId: string;
   /**
   * A map of the feature config for the engine to opt in or opt out of features.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#features DiscoveryEngineSearchEngine#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#features DiscoveryEngineSearchEngine#features}
   */
   readonly features?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#id DiscoveryEngineSearchEngine#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#id DiscoveryEngineSearchEngine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -77,7 +77,7 @@ export interface DiscoveryEngineSearchEngineConfig extends cdktn.TerraformMetaAr
   /**
   * The industry vertical that the engine registers. The restriction of the Engine industry vertical is based on DataStore: If unspecified, default to GENERIC. Vertical on Engine has to match vertical of the DataStore liniked to the engine. Default value: "GENERIC" Possible values: ["GENERIC", "MEDIA", "HEALTHCARE_FHIR"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#industry_vertical DiscoveryEngineSearchEngine#industry_vertical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#industry_vertical DiscoveryEngineSearchEngine#industry_vertical}
   */
   readonly industryVertical?: string;
   /**
@@ -89,47 +89,61 @@ export interface DiscoveryEngineSearchEngineConfig extends cdktn.TerraformMetaAr
   * If this field is set and processed successfully, the Engine will be
   * protected by the KMS key, as indicated in the cmek_config field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#kms_key_name DiscoveryEngineSearchEngine#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#kms_key_name DiscoveryEngineSearchEngine#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * Location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#location DiscoveryEngineSearchEngine#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#location DiscoveryEngineSearchEngine#location}
   */
   readonly location: string;
   /**
+  * Maps a model name to its specific configuration for this engine. This
+  * allows admin users to turn on/off individual models. This only stores
+  * models whose states are overridden by the admin. When the state is
+  * unspecified, or 'model_configs' is empty for this model, the system
+  * decides if this model is available based on the default configuration.
+  * For example, a preview model is disabled by default if the admin has not
+  * chosen to enable it. Each value is one of 'MODEL_STATE_UNSPECIFIED',
+  * 'MODEL_ENABLED', or 'MODEL_DISABLED'; see the [ModelState API reference](https://cloud.google.com/generative-ai-app-builder/docs/reference/rest/v1/projects.locations.collections.engines#modelstate)
+  * for details.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#model_configs DiscoveryEngineSearchEngine#model_configs}
+  */
+  readonly modelConfigs?: { [key: string]: string };
+  /**
   * The emails of the procurement contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#procurement_contact_emails DiscoveryEngineSearchEngine#procurement_contact_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#procurement_contact_emails DiscoveryEngineSearchEngine#procurement_contact_emails}
   */
   readonly procurementContactEmails?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#project DiscoveryEngineSearchEngine#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#project DiscoveryEngineSearchEngine#project}
   */
   readonly project?: string;
   /**
   * common_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#common_config DiscoveryEngineSearchEngine#common_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#common_config DiscoveryEngineSearchEngine#common_config}
   */
   readonly commonConfig?: DiscoveryEngineSearchEngineCommonConfig;
   /**
   * knowledge_graph_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#knowledge_graph_config DiscoveryEngineSearchEngine#knowledge_graph_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#knowledge_graph_config DiscoveryEngineSearchEngine#knowledge_graph_config}
   */
   readonly knowledgeGraphConfig?: DiscoveryEngineSearchEngineKnowledgeGraphConfig;
   /**
   * search_engine_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#search_engine_config DiscoveryEngineSearchEngine#search_engine_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#search_engine_config DiscoveryEngineSearchEngine#search_engine_config}
   */
   readonly searchEngineConfig: DiscoveryEngineSearchEngineSearchEngineConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#timeouts DiscoveryEngineSearchEngine#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#timeouts DiscoveryEngineSearchEngine#timeouts}
   */
   readonly timeouts?: DiscoveryEngineSearchEngineTimeouts;
 }
@@ -137,7 +151,7 @@ export interface DiscoveryEngineSearchEngineCommonConfig {
   /**
   * The name of the company, business or entity that is associated with the engine. Setting this may help improve LLM related features.cd
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#company_name DiscoveryEngineSearchEngine#company_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#company_name DiscoveryEngineSearchEngine#company_name}
   */
   readonly companyName?: string;
 }
@@ -223,25 +237,25 @@ export interface DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig {
   /**
   * Whether to disable the private KG auto complete for the engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#disable_private_kg_auto_complete DiscoveryEngineSearchEngine#disable_private_kg_auto_complete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#disable_private_kg_auto_complete DiscoveryEngineSearchEngine#disable_private_kg_auto_complete}
   */
   readonly disablePrivateKgAutoComplete?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable the private KG enrichment for the engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#disable_private_kg_enrichment DiscoveryEngineSearchEngine#disable_private_kg_enrichment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#disable_private_kg_enrichment DiscoveryEngineSearchEngine#disable_private_kg_enrichment}
   */
   readonly disablePrivateKgEnrichment?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable the private KG for query UI chips.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#disable_private_kg_query_ui_chips DiscoveryEngineSearchEngine#disable_private_kg_query_ui_chips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#disable_private_kg_query_ui_chips DiscoveryEngineSearchEngine#disable_private_kg_query_ui_chips}
   */
   readonly disablePrivateKgQueryUiChips?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable the private KG query understanding for the engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#disable_private_kg_query_understanding DiscoveryEngineSearchEngine#disable_private_kg_query_understanding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#disable_private_kg_query_understanding DiscoveryEngineSearchEngine#disable_private_kg_query_understanding}
   */
   readonly disablePrivateKgQueryUnderstanding?: boolean | cdktn.IResolvable;
 }
@@ -414,25 +428,25 @@ export interface DiscoveryEngineSearchEngineKnowledgeGraphConfig {
   /**
   * Specify entity types to support.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#cloud_knowledge_graph_types DiscoveryEngineSearchEngine#cloud_knowledge_graph_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#cloud_knowledge_graph_types DiscoveryEngineSearchEngine#cloud_knowledge_graph_types}
   */
   readonly cloudKnowledgeGraphTypes?: string[];
   /**
   * Whether to enable the Cloud Knowledge Graph for the engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#enable_cloud_knowledge_graph DiscoveryEngineSearchEngine#enable_cloud_knowledge_graph}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#enable_cloud_knowledge_graph DiscoveryEngineSearchEngine#enable_cloud_knowledge_graph}
   */
   readonly enableCloudKnowledgeGraph?: boolean | cdktn.IResolvable;
   /**
   * Whether to enable the Private Knowledge Graph for the engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#enable_private_knowledge_graph DiscoveryEngineSearchEngine#enable_private_knowledge_graph}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#enable_private_knowledge_graph DiscoveryEngineSearchEngine#enable_private_knowledge_graph}
   */
   readonly enablePrivateKnowledgeGraph?: boolean | cdktn.IResolvable;
   /**
   * feature_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#feature_config DiscoveryEngineSearchEngine#feature_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#feature_config DiscoveryEngineSearchEngine#feature_config}
   */
   readonly featureConfig?: DiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfig;
 }
@@ -607,19 +621,19 @@ export interface DiscoveryEngineSearchEngineSearchEngineConfig {
   * 
   * If the required subscription tier is search, user with higher license tier like assist can still access the standalone app associated with this engine. Possible values: ["SUBSCRIPTION_TIER_UNSPECIFIED", "SUBSCRIPTION_TIER_SEARCH", "SUBSCRIPTION_TIER_SEARCH_AND_ASSISTANT", "SUBSCRIPTION_TIER_FRONTLINE_WORKER", "SUBSCRIPTION_TIER_AGENTSPACE_STARTER", "SUBSCRIPTION_TIER_AGENTSPACE_BUSINESS", "SUBSCRIPTION_TIER_ENTERPRISE", "SUBSCRIPTION_TIER_ENTERPRISE_EMERGING", "SUBSCRIPTION_TIER_EDU", "SUBSCRIPTION_TIER_EDU_PRO", "SUBSCRIPTION_TIER_EDU_EMERGING", "SUBSCRIPTION_TIER_EDU_PRO_EMERGING", "SUBSCRIPTION_TIER_FRONTLINE_STARTER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#required_subscription_tier DiscoveryEngineSearchEngine#required_subscription_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#required_subscription_tier DiscoveryEngineSearchEngine#required_subscription_tier}
   */
   readonly requiredSubscriptionTier?: string;
   /**
   * The add-on that this search engine enables. Possible values: ["SEARCH_ADD_ON_LLM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#search_add_ons DiscoveryEngineSearchEngine#search_add_ons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#search_add_ons DiscoveryEngineSearchEngine#search_add_ons}
   */
   readonly searchAddOns?: string[];
   /**
   * The search feature tier of this engine. Defaults to SearchTier.SEARCH_TIER_STANDARD if not specified. Default value: "SEARCH_TIER_STANDARD" Possible values: ["SEARCH_TIER_STANDARD", "SEARCH_TIER_ENTERPRISE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#search_tier DiscoveryEngineSearchEngine#search_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#search_tier DiscoveryEngineSearchEngine#search_tier}
   */
   readonly searchTier?: string;
 }
@@ -761,15 +775,15 @@ export class DiscoveryEngineSearchEngineSearchEngineConfigOutputReference extend
 }
 export interface DiscoveryEngineSearchEngineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#create DiscoveryEngineSearchEngine#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#create DiscoveryEngineSearchEngine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#delete DiscoveryEngineSearchEngine#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#delete DiscoveryEngineSearchEngine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#update DiscoveryEngineSearchEngine#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#update DiscoveryEngineSearchEngine#update}
   */
   readonly update?: string;
 }
@@ -921,7 +935,7 @@ export class DiscoveryEngineSearchEngineTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine google_discovery_engine_search_engine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine google_discovery_engine_search_engine}
 */
 export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
 
@@ -937,7 +951,7 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DiscoveryEngineSearchEngine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineSearchEngine to import
-  * @param importFromId The id of the existing DiscoveryEngineSearchEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DiscoveryEngineSearchEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineSearchEngine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -949,7 +963,7 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/discovery_engine_search_engine google_discovery_engine_search_engine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_search_engine google_discovery_engine_search_engine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -960,7 +974,7 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
       terraformResourceType: 'google_discovery_engine_search_engine',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -983,6 +997,7 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
     this._industryVertical = config.industryVertical;
     this._kmsKeyName = config.kmsKeyName;
     this._location = config.location;
+    this._modelConfigs = config.modelConfigs;
     this._procurementContactEmails = config.procurementContactEmails;
     this._project = config.project;
     this._commonConfig.internalValue = config.commonConfig;
@@ -1177,6 +1192,22 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
     return this._location;
   }
 
+  // model_configs - computed: true, optional: true, required: false
+  private _modelConfigs?: { [key: string]: string }; 
+  public get modelConfigs() {
+    return this.getStringMapAttribute('model_configs');
+  }
+  public set modelConfigs(value: { [key: string]: string }) {
+    this._modelConfigs = value;
+  }
+  public resetModelConfigs() {
+    this._modelConfigs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelConfigsInput() {
+    return this._modelConfigs;
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -1298,6 +1329,7 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
       industry_vertical: cdktn.stringToTerraform(this._industryVertical),
       kms_key_name: cdktn.stringToTerraform(this._kmsKeyName),
       location: cdktn.stringToTerraform(this._location),
+      model_configs: cdktn.hashMapper(cdktn.stringToTerraform)(this._modelConfigs),
       procurement_contact_emails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._procurementContactEmails),
       project: cdktn.stringToTerraform(this._project),
       common_config: discoveryEngineSearchEngineCommonConfigToTerraform(this._commonConfig.internalValue),
@@ -1380,6 +1412,12 @@ export class DiscoveryEngineSearchEngine extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      model_configs: {
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._modelConfigs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
       procurement_contact_emails: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._procurementContactEmails),

@@ -1,3 +1,3 @@
 # `google_compute_interconnect_group`
 
-Refer to the Terraform Registry for docs: [`google_compute_interconnect_group`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_interconnect_group).
+Refer to the Terraform Registry for docs: [`google_compute_interconnect_group`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect_group).

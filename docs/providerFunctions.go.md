@@ -11,7 +11,7 @@ Provider-defined functions of the google provider.
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.providerFunctions.GoogleProviderFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/providerfunctions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/providerfunctions"
 
 providerfunctions.NewGoogleProviderFunctions(providerLocalName *string) GoogleProviderFunctions
 ```

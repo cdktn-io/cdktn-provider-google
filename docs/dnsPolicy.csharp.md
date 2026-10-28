@@ -4,7 +4,7 @@
 
 ### DnsPolicy <a name="DnsPolicy" id="@cdktn/provider-google.dnsPolicy.DnsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy google_dns_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy google_dns_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.Initializer"></a>
 
@@ -611,7 +611,7 @@ The construct id used in the generated config for the DnsPolicy to import.
 
 The id of the existing DnsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1056,7 +1056,8 @@ public string TfResourceType { get; }
 using Io.Cdktn.Providers.Google;
 
 new DnsPolicyAlternativeNameServerConfig {
-    IResolvable|DnsPolicyAlternativeNameServerConfigTargetNameServers[] TargetNameServers
+    IResolvable|DnsPolicyAlternativeNameServerConfigTargetNameServers[] TargetNameServers,
+    IResolvable|DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] OutboundEndpoints = null
 };
 ```
 
@@ -1065,6 +1066,7 @@ new DnsPolicyAlternativeNameServerConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig.property.targetNameServers">TargetNameServers</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | target_name_servers block. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig.property.outboundEndpoints">OutboundEndpoints</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]</code> | outbound_endpoints block. |
 
 ---
 
@@ -1078,7 +1080,55 @@ public IResolvable|DnsPolicyAlternativeNameServerConfigTargetNameServers[] Targe
 
 target_name_servers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
+
+---
+
+##### `OutboundEndpoints`<sup>Optional</sup> <a name="OutboundEndpoints" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig.property.outboundEndpoints"></a>
+
+```csharp
+public IResolvable|DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] OutboundEndpoints { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]
+
+outbound_endpoints block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#outbound_endpoints DnsPolicy#outbound_endpoints}
+
+---
+
+### DnsPolicyAlternativeNameServerConfigOutboundEndpoints <a name="DnsPolicyAlternativeNameServerConfigOutboundEndpoints" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DnsPolicyAlternativeNameServerConfigOutboundEndpoints {
+    string Name
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints.property.name">Name</a></code> | <code>string</code> | Specified as a resource path including project and region. This should be formatted like 'projects/{project}/locations/{location}/outboundEndpoints/{endpoint}'. |
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+Specified as a resource path including project and region. This should be formatted like 'projects/{project}/locations/{location}/outboundEndpoints/{endpoint}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#name DnsPolicy#name}
 
 ---
 
@@ -1114,7 +1164,7 @@ public string Ipv4Address { get; set; }
 
 IPv4 address to forward to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#ipv4_address DnsPolicy#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#ipv4_address DnsPolicy#ipv4_address}
 
 ---
 
@@ -1132,7 +1182,7 @@ If unset or 'default' Cloud DNS will make forwarding
 decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
 to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#forwarding_path DnsPolicy#forwarding_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#forwarding_path DnsPolicy#forwarding_path}
 
 ---
 
@@ -1183,9 +1233,9 @@ new DnsPolicyConfig {
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.dns64Config">Dns64Config</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64Config">DnsPolicyDns64Config</a></code> | dns64_config block. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.enableInboundForwarding">EnableInboundForwarding</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.enableLogging">EnableLogging</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#id DnsPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#id DnsPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.networks">Networks</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | networks block. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#project DnsPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#project DnsPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1270,7 +1320,7 @@ public string Name { get; set; }
 
 User assigned name for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#name DnsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#name DnsPolicy#name}
 
 ---
 
@@ -1284,7 +1334,7 @@ public DnsPolicyAlternativeNameServerConfig AlternativeNameServerConfig { get; s
 
 alternative_name_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#alternative_name_server_config DnsPolicy#alternative_name_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#alternative_name_server_config DnsPolicy#alternative_name_server_config}
 
 ---
 
@@ -1305,7 +1355,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#deletion_policy DnsPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#deletion_policy DnsPolicy#deletion_policy}
 
 ---
 
@@ -1319,7 +1369,7 @@ public string Description { get; set; }
 
 A textual description field. Defaults to 'Managed by Terraform'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#description DnsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#description DnsPolicy#description}
 
 ---
 
@@ -1333,7 +1383,7 @@ public DnsPolicyDns64Config Dns64Config { get; set; }
 
 dns64_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#dns64_config DnsPolicy#dns64_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#dns64_config DnsPolicy#dns64_config}
 
 ---
 
@@ -1351,7 +1401,7 @@ When enabled, a
 virtual IP address will be allocated from each of the sub-networks
 that are bound to this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
 
 ---
 
@@ -1365,7 +1415,7 @@ public bool|IResolvable EnableLogging { get; set; }
 
 Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
 
 ---
 
@@ -1377,7 +1427,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#id DnsPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#id DnsPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,7 +1444,7 @@ public IResolvable|DnsPolicyNetworks[] Networks { get; set; }
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#networks DnsPolicy#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#networks DnsPolicy#networks}
 
 ---
 
@@ -1406,7 +1456,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#project DnsPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#project DnsPolicy#project}.
 
 ---
 
@@ -1420,7 +1470,7 @@ public DnsPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#timeouts DnsPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#timeouts DnsPolicy#timeouts}
 
 ---
 
@@ -1454,7 +1504,7 @@ public DnsPolicyDns64ConfigScope Scope { get; set; }
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#scope DnsPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#scope DnsPolicy#scope}
 
 ---
 
@@ -1488,7 +1538,7 @@ public bool|IResolvable AllQueries { get; set; }
 
 Controls whether DNS64 is enabled globally at the network level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
 
 ---
 
@@ -1525,7 +1575,7 @@ The id or fully qualified URL of the VPC network to forward queries to.
 This should be formatted like 'projects/{project}/global/networks/{network}' or
 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#network_url DnsPolicy#network_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#network_url DnsPolicy#network_url}
 
 ---
 
@@ -1547,9 +1597,9 @@ new DnsPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#create DnsPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#delete DnsPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#update DnsPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#create DnsPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#delete DnsPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#update DnsPolicy#update}. |
 
 ---
 
@@ -1561,7 +1611,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#create DnsPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#create DnsPolicy#create}.
 
 ---
 
@@ -1573,7 +1623,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#delete DnsPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#delete DnsPolicy#delete}.
 
 ---
 
@@ -1585,11 +1635,460 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dns_policy#update DnsPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dns_policy#update DnsPolicy#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DnsPolicyAlternativeNameServerConfigOutboundEndpointsList <a name="DnsPolicyAlternativeNameServerConfigOutboundEndpointsList" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DnsPolicyAlternativeNameServerConfigOutboundEndpointsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.get"></a>
+
+```csharp
+private DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]
+
+---
+
+
+### DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference <a name="DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|DnsPolicyAlternativeNameServerConfigOutboundEndpoints InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>
+
+---
+
 
 ### DnsPolicyAlternativeNameServerConfigOutputReference <a name="DnsPolicyAlternativeNameServerConfigOutputReference" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference"></a>
 
@@ -1641,7 +2140,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.putOutboundEndpoints">PutOutboundEndpoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.putTargetNameServers">PutTargetNameServers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.resetOutboundEndpoints">ResetOutboundEndpoints</a></code> | *No description.* |
 
 ---
 
@@ -1795,6 +2296,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutOutboundEndpoints` <a name="PutOutboundEndpoints" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.putOutboundEndpoints"></a>
+
+```csharp
+private void PutOutboundEndpoints(IResolvable|DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.putOutboundEndpoints.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]
+
+---
+
 ##### `PutTargetNameServers` <a name="PutTargetNameServers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.putTargetNameServers"></a>
 
 ```csharp
@@ -1807,6 +2320,12 @@ private void PutTargetNameServers(IResolvable|DnsPolicyAlternativeNameServerConf
 
 ---
 
+##### `ResetOutboundEndpoints` <a name="ResetOutboundEndpoints" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.resetOutboundEndpoints"></a>
+
+```csharp
+private void ResetOutboundEndpoints()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1814,7 +2333,9 @@ private void PutTargetNameServers(IResolvable|DnsPolicyAlternativeNameServerConf
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.outboundEndpoints">OutboundEndpoints</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList">DnsPolicyAlternativeNameServerConfigOutboundEndpointsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.targetNameServers">TargetNameServers</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList">DnsPolicyAlternativeNameServerConfigTargetNameServersList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.outboundEndpointsInput">OutboundEndpointsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.targetNameServersInput">TargetNameServersInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig">DnsPolicyAlternativeNameServerConfig</a></code> | *No description.* |
 
@@ -1844,6 +2365,16 @@ public string Fqn { get; }
 
 ---
 
+##### `OutboundEndpoints`<sup>Required</sup> <a name="OutboundEndpoints" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.outboundEndpoints"></a>
+
+```csharp
+public DnsPolicyAlternativeNameServerConfigOutboundEndpointsList OutboundEndpoints { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpointsList">DnsPolicyAlternativeNameServerConfigOutboundEndpointsList</a>
+
+---
+
 ##### `TargetNameServers`<sup>Required</sup> <a name="TargetNameServers" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.targetNameServers"></a>
 
 ```csharp
@@ -1851,6 +2382,16 @@ public DnsPolicyAlternativeNameServerConfigTargetNameServersList TargetNameServe
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList">DnsPolicyAlternativeNameServerConfigTargetNameServersList</a>
+
+---
+
+##### `OutboundEndpointsInput`<sup>Optional</sup> <a name="OutboundEndpointsInput" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.outboundEndpointsInput"></a>
+
+```csharp
+public IResolvable|DnsPolicyAlternativeNameServerConfigOutboundEndpoints[] OutboundEndpointsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutboundEndpoints">DnsPolicyAlternativeNameServerConfigOutboundEndpoints</a>[]
 
 ---
 

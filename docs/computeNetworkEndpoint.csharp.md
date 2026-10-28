@@ -4,7 +4,7 @@
 
 ### ComputeNetworkEndpoint <a name="ComputeNetworkEndpoint" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint google_compute_network_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint google_compute_network_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.Initializer"></a>
 
@@ -78,6 +78,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetInstance">ResetInstance</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetIpAddress">ResetIpAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetIpv6Address">ResetIpv6Address</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetPort">ResetPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -424,6 +426,18 @@ private void ResetId()
 private void ResetInstance()
 ```
 
+##### `ResetIpAddress` <a name="ResetIpAddress" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetIpAddress"></a>
+
+```csharp
+private void ResetIpAddress()
+```
+
+##### `ResetIpv6Address` <a name="ResetIpv6Address" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetIpv6Address"></a>
+
+```csharp
+private void ResetIpv6Address()
+```
+
 ##### `ResetPort` <a name="ResetPort" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.resetPort"></a>
 
 ```csharp
@@ -551,7 +565,7 @@ The construct id used in the generated config for the ComputeNetworkEndpoint to 
 
 The id of the existing ComputeNetworkEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -586,6 +600,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.instanceInput">InstanceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipAddressInput">IpAddressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipv6AddressInput">Ipv6AddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.networkEndpointGroupInput">NetworkEndpointGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.portInput">PortInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
@@ -595,6 +610,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.instance">Instance</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipAddress">IpAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipv6Address">Ipv6Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.networkEndpointGroup">NetworkEndpointGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.port">Port</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -794,6 +810,16 @@ public string IpAddressInput { get; }
 
 ---
 
+##### `Ipv6AddressInput`<sup>Optional</sup> <a name="Ipv6AddressInput" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipv6AddressInput"></a>
+
+```csharp
+public string Ipv6AddressInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NetworkEndpointGroupInput`<sup>Optional</sup> <a name="NetworkEndpointGroupInput" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.networkEndpointGroupInput"></a>
 
 ```csharp
@@ -884,6 +910,16 @@ public string IpAddress { get; }
 
 ---
 
+##### `Ipv6Address`<sup>Required</sup> <a name="Ipv6Address" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.ipv6Address"></a>
+
+```csharp
+public string Ipv6Address { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `NetworkEndpointGroup`<sup>Required</sup> <a name="NetworkEndpointGroup" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpoint.property.networkEndpointGroup"></a>
 
 ```csharp
@@ -959,11 +995,12 @@ new ComputeNetworkEndpointConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    string IpAddress,
     string NetworkEndpointGroup,
     string DeletionPolicy = null,
     string Id = null,
     string Instance = null,
+    string IpAddress = null,
+    string Ipv6Address = null,
     double Port = null,
     string Project = null,
     ComputeNetworkEndpointTimeouts Timeouts = null,
@@ -982,13 +1019,14 @@ new ComputeNetworkEndpointConfig {
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipAddress">IpAddress</a></code> | <code>string</code> | IPv4 address of network endpoint. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.networkEndpointGroup">NetworkEndpointGroup</a></code> | <code>string</code> | The network endpoint group this endpoint is part of. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.instance">Instance</a></code> | <code>string</code> | The name for a specific VM instance that the IP address belongs to. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipAddress">IpAddress</a></code> | <code>string</code> | IPv4 address of network endpoint. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipv6Address">Ipv6Address</a></code> | <code>string</code> | IPv6 address of network endpoint. The result of parsing the endpoint config, or empty if IPv6 is not used. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.port">Port</a></code> | <code>double</code> | Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts">ComputeNetworkEndpointTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.zone">Zone</a></code> | <code>string</code> | Zone where the containing network endpoint group is located. |
 
@@ -1064,24 +1102,6 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `IpAddress`<sup>Required</sup> <a name="IpAddress" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipAddress"></a>
-
-```csharp
-public string IpAddress { get; set; }
-```
-
-- *Type:* string
-
-IPv4 address of network endpoint.
-
-The IP address must belong
-to a VM in GCE (either the primary IP or as part of an aliased IP
-range).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#ip_address ComputeNetworkEndpoint#ip_address}
-
----
-
 ##### `NetworkEndpointGroup`<sup>Required</sup> <a name="NetworkEndpointGroup" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.networkEndpointGroup"></a>
 
 ```csharp
@@ -1092,7 +1112,7 @@ public string NetworkEndpointGroup { get; set; }
 
 The network endpoint group this endpoint is part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#network_endpoint_group ComputeNetworkEndpoint#network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#network_endpoint_group ComputeNetworkEndpoint#network_endpoint_group}
 
 ---
 
@@ -1113,7 +1133,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#deletion_policy ComputeNetworkEndpoint#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#deletion_policy ComputeNetworkEndpoint#deletion_policy}
 
 ---
 
@@ -1125,7 +1145,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#id ComputeNetworkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1165,39 @@ The name for a specific VM instance that the IP address belongs to.
 This is required for network endpoints of type GCE_VM_IP_PORT.
 The instance must be in the same zone of network endpoint group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#instance ComputeNetworkEndpoint#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#instance ComputeNetworkEndpoint#instance}
+
+---
+
+##### `IpAddress`<sup>Optional</sup> <a name="IpAddress" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipAddress"></a>
+
+```csharp
+public string IpAddress { get; set; }
+```
+
+- *Type:* string
+
+IPv4 address of network endpoint.
+
+The IP address must belong
+to a VM in GCE (either the primary IP or as part of an aliased IP
+range).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#ip_address ComputeNetworkEndpoint#ip_address}
+
+---
+
+##### `Ipv6Address`<sup>Optional</sup> <a name="Ipv6Address" id="@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointConfig.property.ipv6Address"></a>
+
+```csharp
+public string Ipv6Address { get; set; }
+```
+
+- *Type:* string
+
+IPv6 address of network endpoint. The result of parsing the endpoint config, or empty if IPv6 is not used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#ipv6_address ComputeNetworkEndpoint#ipv6_address}
 
 ---
 
@@ -1159,7 +1211,7 @@ public double Port { get; set; }
 
 Port number of network endpoint. **Note** 'port' is required unless the Network Endpoint Group is created with the type of 'GCE_VM_IP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#port ComputeNetworkEndpoint#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#port ComputeNetworkEndpoint#port}
 
 ---
 
@@ -1171,7 +1223,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#project ComputeNetworkEndpoint#project}.
 
 ---
 
@@ -1185,7 +1237,7 @@ public ComputeNetworkEndpointTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#timeouts ComputeNetworkEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#timeouts ComputeNetworkEndpoint#timeouts}
 
 ---
 
@@ -1199,7 +1251,7 @@ public string Zone { get; set; }
 
 Zone where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#zone ComputeNetworkEndpoint#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#zone ComputeNetworkEndpoint#zone}
 
 ---
 
@@ -1220,8 +1272,8 @@ new ComputeNetworkEndpointTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}. |
 
 ---
 
@@ -1233,7 +1285,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#create ComputeNetworkEndpoint#create}.
 
 ---
 
@@ -1245,7 +1297,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_endpoint#delete ComputeNetworkEndpoint#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleGeminiDataAnalyticsDataAgentIamPolicy <a name="DataGoogleGeminiDataAnalyticsDataAgentIamPolicy" id="@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy google_gemini_data_analytics_data_agent_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy google_gemini_data_analytics_data_agent_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer"></a>
 
@@ -37,10 +37,10 @@ DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Builder.create(Construct scope, 
 | <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.dataAgentId">dataAgentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.dataAgentId">dataAgentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}.
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}.
 
 ---
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataGoogleGeminiDataAnalyt
 
 The id of the existing DataGoogleGeminiDataAnalyticsDataAgentIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,10 +817,10 @@ DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.dataAgentId">dataAgentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.dataAgentId">dataAgentId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGeminiDataAnalyticsDataAgentIamPolicy.DataGoogleGeminiDataAnalyticsDataAgentIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}. |
 
 ---
 
@@ -902,7 +902,7 @@ public java.lang.String getDataAgentId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#data_agent_id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}.
 
 ---
 
@@ -914,7 +914,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#id DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#location DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#location}.
 
 ---
 
@@ -941,7 +941,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/gemini_data_analytics_data_agent_iam_policy#project DataGoogleGeminiDataAnalyticsDataAgentIamPolicy#project}.
 
 ---
 

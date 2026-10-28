@@ -1,3 +1,3 @@
 # `data_google_composer_user_workloads_config_map`
 
-Refer to the Terraform Registry for docs: [`data_google_composer_user_workloads_config_map`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/composer_user_workloads_config_map).
+Refer to the Terraform Registry for docs: [`data_google_composer_user_workloads_config_map`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/composer_user_workloads_config_map).

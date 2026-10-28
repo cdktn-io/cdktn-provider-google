@@ -4,12 +4,12 @@
 
 ### DataGoogleObservabilityFolderSettings <a name="DataGoogleObservabilityFolderSettings" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings google_observability_folder_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/observability_folder_settings google_observability_folder_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobservabilityfoldersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleobservabilityfoldersettings"
 
 datagoogleobservabilityfoldersettings.NewDataGoogleObservabilityFolderSettings(scope Construct, id *string, config DataGoogleObservabilityFolderSettingsConfig) DataGoogleObservabilityFolderSettings
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobservabilityfoldersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleobservabilityfoldersettings"
 
 datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettings_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobservabilityfoldersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleobservabilityfoldersettings"
 
 datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettings_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobservabilityfoldersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleobservabilityfoldersettings"
 
 datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettings_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobservabilityfoldersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleobservabilityfoldersettings"
 
 datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleObservabilityFol
 
 The id of the existing DataGoogleObservabilityFolderSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/observability_folder_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobservabilityfoldersettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleobservabilityfoldersettings"
 
 &datagoogleobservabilityfoldersettings.DataGoogleObservabilityFolderSettingsConfig {
 	Connection: interface{},
@@ -711,7 +711,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobserv
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.folder">Folder</a></code> | <code>*string</code> | The folder ID. |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.location">Location</a></code> | <code>*string</code> | The location of the settings. |
-| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}. |
 
 ---
 
@@ -795,7 +795,7 @@ Folder *string
 
 The folder ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#folder DataGoogleObservabilityFolderSettings#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/observability_folder_settings#folder DataGoogleObservabilityFolderSettings#folder}
 
 ---
 
@@ -809,7 +809,7 @@ Location *string
 
 The location of the settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#location DataGoogleObservabilityFolderSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/observability_folder_settings#location DataGoogleObservabilityFolderSettings#location}
 
 ---
 
@@ -821,7 +821,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

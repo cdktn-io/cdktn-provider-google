@@ -4,12 +4,12 @@
 
 ### DialogflowTool <a name="DialogflowTool" id="@cdktn/provider-google.dialogflowTool.DialogflowTool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool google_dialogflow_tool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool google_dialogflow_tool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowTool(scope Construct, id *string, config DialogflowToolConfig) DialogflowTool
 ```
@@ -529,7 +529,7 @@ func ResetToolId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowTool.DialogflowTool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.DialogflowTool_IsConstruct(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowTool.DialogflowTool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.DialogflowTool_IsTerraformElement(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ dialogflowtool.DialogflowTool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowTool.DialogflowTool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.DialogflowTool_IsTerraformResource(x interface{}) *bool
 ```
@@ -589,7 +589,7 @@ dialogflowtool.DialogflowTool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowTool.DialogflowTool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.DialogflowTool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -618,7 +618,7 @@ The construct id used in the generated config for the DialogflowTool to import.
 
 The id of the existing DialogflowTool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1159,7 +1159,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolConfig {
 	Connection: interface{},
@@ -1172,15 +1172,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
 	Location: *string,
 	ToolKey: *string,
 	ActionConfirmationRequirement: *map[string]*string,
-	ConnectorSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolConnectorSpec,
+	ConnectorSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolConnectorSpec,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
-	FunctionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolFunctionSpec,
+	FunctionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolFunctionSpec,
 	Id: *string,
-	OpenApiSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpec,
+	OpenApiSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpec,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolTimeouts,
 	ToolId: *string,
 }
 ```
@@ -1204,9 +1204,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
 | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Human readable description of the tool. |
 | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. The human-readable name of the tool, unique within the project and location. |
 | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.functionSpec">FunctionSpec</a></code> | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolFunctionSpec">DialogflowToolFunctionSpec</a></code> | function_spec block. |
-| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#id DialogflowTool#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#id DialogflowTool#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.openApiSpec">OpenApiSpec</a></code> | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpec">DialogflowToolOpenApiSpec</a></code> | open_api_spec block. |
-| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#project DialogflowTool#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#project DialogflowTool#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts">DialogflowToolTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolConfig.property.toolId">ToolId</a></code> | <code>*string</code> | Optional. |
 
@@ -1292,7 +1292,7 @@ Location *string
 
 The location of the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#location DialogflowTool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#location DialogflowTool#location}
 
 ---
 
@@ -1308,7 +1308,7 @@ Required.
 
 A human readable short name of the tool, which should be unique within the project. It should only contain letters, numbers, and underscores, and it will be used by LLM to identify the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#tool_key DialogflowTool#tool_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#tool_key DialogflowTool#tool_key}
 
 ---
 
@@ -1326,7 +1326,7 @@ Confirmation requirement for the actions. Each key is an action name in the 'act
 If an action's confirmation requirement is not specified (either the key is not present, or its value is 'CONFIRMATION_REQUIREMENT_UNSPECIFIED'), a default value will be populated depending on the action's method type: GET actions default to 'NOT_REQUIRED', and other actions default to 'REQUIRED'.
 Valid values are 'REQUIRED' and 'NOT_REQUIRED'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#action_confirmation_requirement DialogflowTool#action_confirmation_requirement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#action_confirmation_requirement DialogflowTool#action_confirmation_requirement}
 
 ---
 
@@ -1340,7 +1340,7 @@ ConnectorSpec DialogflowToolConnectorSpec
 
 connector_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#connector_spec DialogflowTool#connector_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#connector_spec DialogflowTool#connector_spec}
 
 ---
 
@@ -1361,7 +1361,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#deletion_policy DialogflowTool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#deletion_policy DialogflowTool#deletion_policy}
 
 ---
 
@@ -1375,7 +1375,7 @@ Description *string
 
 Optional. Human readable description of the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#description DialogflowTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#description DialogflowTool#description}
 
 ---
 
@@ -1389,7 +1389,7 @@ DisplayName *string
 
 Optional. The human-readable name of the tool, unique within the project and location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#display_name DialogflowTool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#display_name DialogflowTool#display_name}
 
 ---
 
@@ -1403,7 +1403,7 @@ FunctionSpec DialogflowToolFunctionSpec
 
 function_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#function_spec DialogflowTool#function_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#function_spec DialogflowTool#function_spec}
 
 ---
 
@@ -1415,7 +1415,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#id DialogflowTool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#id DialogflowTool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1432,7 +1432,7 @@ OpenApiSpec DialogflowToolOpenApiSpec
 
 open_api_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#open_api_spec DialogflowTool#open_api_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#open_api_spec DialogflowTool#open_api_spec}
 
 ---
 
@@ -1444,7 +1444,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#project DialogflowTool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#project DialogflowTool#project}.
 
 ---
 
@@ -1458,7 +1458,7 @@ Timeouts DialogflowToolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#timeouts DialogflowTool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#timeouts DialogflowTool#timeouts}
 
 ---
 
@@ -1476,7 +1476,7 @@ The ID to use for the tool, which will become the final component of the tool's 
 The tool ID must be compliant with the regression formula '[a-zA-Z][a-zA-Z0-9_-]*' with the characters length in range of [3,64].
 If the field is not provided, an Id will be auto-generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#tool_id DialogflowTool#tool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#tool_id DialogflowTool#tool_id}
 
 ---
 
@@ -1485,7 +1485,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolConnectorSpec {
 	Actions: interface{},
@@ -1512,7 +1512,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#actions DialogflowTool#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#actions DialogflowTool#actions}
 
 ---
 
@@ -1526,7 +1526,7 @@ Name *string
 
 The full resource name of the referenced Integration Connectors Connection. Format: 'projects/* /locations/* /connections/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#name DialogflowTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#name DialogflowTool#name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1537,11 +1537,11 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpecActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolConnectorSpecActions {
 	ConnectionActionId: *string,
-	EntityOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolConnectorSpecActionsEntityOperation,
+	EntityOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolConnectorSpecActionsEntityOperation,
 	InputFields: *[]*string,
 	OutputFields: *[]*string,
 }
@@ -1570,7 +1570,7 @@ ID of a Connection action for the tool to use.
 
 This field is part of a required union field 'action_spec'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#connection_action_id DialogflowTool#connection_action_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#connection_action_id DialogflowTool#connection_action_id}
 
 ---
 
@@ -1584,7 +1584,7 @@ EntityOperation DialogflowToolConnectorSpecActionsEntityOperation
 
 entity_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#entity_operation DialogflowTool#entity_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#entity_operation DialogflowTool#entity_operation}
 
 ---
 
@@ -1600,7 +1600,7 @@ Entity fields to use as inputs for the operation.
 
 If no fields are specified, all fields of the Entity will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#input_fields DialogflowTool#input_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#input_fields DialogflowTool#input_fields}
 
 ---
 
@@ -1614,7 +1614,7 @@ OutputFields *[]*string
 
 Entity fields to return from the operation. If no fields are specified, all fields of the Entity will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#output_fields DialogflowTool#output_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#output_fields DialogflowTool#output_fields}
 
 ---
 
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpecActionsEntityOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolConnectorSpecActionsEntityOperation {
 	EntityId: *string,
@@ -1650,7 +1650,7 @@ EntityId *string
 
 ID of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#entity_id DialogflowTool#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#entity_id DialogflowTool#entity_id}
 
 ---
 
@@ -1664,7 +1664,7 @@ Operation *string
 
 The operation to perform on the entity. Possible values: ["LIST", "GET", "CREATE", "UPDATE", "DELETE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#operation DialogflowTool#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#operation DialogflowTool#operation}
 
 ---
 
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolFunctionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolFunctionSpec {
 	InputSchema: *string,
@@ -1705,7 +1705,7 @@ Optional.
 The JSON schema is encapsulated in a [google.protobuf.Struct](https://protobuf.dev/reference/protobuf/google.protobuf/#struct) to describe the input of the function.
 This input is a JSON object that contains the function's parameters as properties of the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#input_schema DialogflowTool#input_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#input_schema DialogflowTool#input_schema}
 
 ---
 
@@ -1721,7 +1721,7 @@ Optional.
 
 The method type of the function. If not specified, the default value is GET. Possible values: ["GET", "POST", "PUT", "DELETE", "PATCH"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#method_type DialogflowTool#method_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#method_type DialogflowTool#method_type}
 
 ---
 
@@ -1738,7 +1738,7 @@ Optional.
 The JSON schema is encapsulated in a [google.protobuf.Struct](https://protobuf.dev/reference/protobuf/google.protobuf/#struct) to describe the output of the function.
 This output is a JSON object that contains the function's parameters as properties of the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#output_schema DialogflowTool#output_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#output_schema DialogflowTool#output_schema}
 
 ---
 
@@ -1747,13 +1747,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpec {
 	TextSchema: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecAuthentication,
-	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecServiceDirectoryConfig,
-	TlsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecTlsConfig,
+	Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecAuthentication,
+	ServiceDirectoryConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecServiceDirectoryConfig,
+	TlsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecTlsConfig,
 }
 ```
 
@@ -1781,7 +1781,7 @@ Required.
 The OpenAPI schema specified as a text.
 Note: Plays a role in linking the OpenAPI spec with the tool. The 'info.title' field in the OpenAPI schema must match the 'toolKey' of the tool, otherwise the API will overwrite 'info.title' with 'toolKey'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#text_schema DialogflowTool#text_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#text_schema DialogflowTool#text_schema}
 
 ---
 
@@ -1795,7 +1795,7 @@ Authentication DialogflowToolOpenApiSpecAuthentication
 
 authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#authentication DialogflowTool#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#authentication DialogflowTool#authentication}
 
 ---
 
@@ -1809,7 +1809,7 @@ ServiceDirectoryConfig DialogflowToolOpenApiSpecServiceDirectoryConfig
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#service_directory_config DialogflowTool#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#service_directory_config DialogflowTool#service_directory_config}
 
 ---
 
@@ -1823,7 +1823,7 @@ TlsConfig DialogflowToolOpenApiSpecTlsConfig
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#tls_config DialogflowTool#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#tls_config DialogflowTool#tls_config}
 
 ---
 
@@ -1832,13 +1832,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecAuthentication {
-	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationApiKeyConfig,
-	BearerTokenConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationBearerTokenConfig,
-	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationOauthConfig,
-	ServiceAgentAuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfig,
+	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationApiKeyConfig,
+	BearerTokenConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationBearerTokenConfig,
+	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationOauthConfig,
+	ServiceAgentAuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfig,
 }
 ```
 
@@ -1863,7 +1863,7 @@ ApiKeyConfig DialogflowToolOpenApiSpecAuthenticationApiKeyConfig
 
 api_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#api_key_config DialogflowTool#api_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#api_key_config DialogflowTool#api_key_config}
 
 ---
 
@@ -1877,7 +1877,7 @@ BearerTokenConfig DialogflowToolOpenApiSpecAuthenticationBearerTokenConfig
 
 bearer_token_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#bearer_token_config DialogflowTool#bearer_token_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#bearer_token_config DialogflowTool#bearer_token_config}
 
 ---
 
@@ -1891,7 +1891,7 @@ OauthConfig DialogflowToolOpenApiSpecAuthenticationOauthConfig
 
 oauth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#oauth_config DialogflowTool#oauth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#oauth_config DialogflowTool#oauth_config}
 
 ---
 
@@ -1905,7 +1905,7 @@ ServiceAgentAuthConfig DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthCo
 
 service_agent_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#service_agent_auth_config DialogflowTool#service_agent_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#service_agent_auth_config DialogflowTool#service_agent_auth_config}
 
 ---
 
@@ -1914,7 +1914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecAuthenticationApiKeyConfig {
 	KeyName: *string,
@@ -1947,7 +1947,7 @@ The parameter name or the header name of the API key.
 
 E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#key_name DialogflowTool#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#key_name DialogflowTool#key_name}
 
 ---
 
@@ -1961,7 +1961,7 @@ RequestLocation *string
 
 Key location in the request. Possible values: ["HEADER", "QUERY_STRING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#request_location DialogflowTool#request_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#request_location DialogflowTool#request_location}
 
 ---
 
@@ -1975,7 +1975,7 @@ ApiKey *string
 
 Optional. The API key. If the 'secretVersionForApiKey' field is set, this field will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#api_key DialogflowTool#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#api_key DialogflowTool#api_key}
 
 ---
 
@@ -1993,7 +1993,7 @@ The name of the SecretManager secret version resource storing the API key.
 If this field is set, the 'apiKey' field will be ignored.
 Format: 'projects/{project}/secrets/{secret}/versions/{version}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#secret_version_for_api_key DialogflowTool#secret_version_for_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#secret_version_for_api_key DialogflowTool#secret_version_for_api_key}
 
 ---
 
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationBearerTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecAuthenticationBearerTokenConfig {
 	SecretVersionForToken: *string,
@@ -2033,7 +2033,7 @@ The name of the SecretManager secret version resource storing the Bearer token.
 If this field is set, the 'token' field will be ignored.
 Format: 'projects/{project}/secrets/{secret}/versions/{version}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#secret_version_for_token DialogflowTool#secret_version_for_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#secret_version_for_token DialogflowTool#secret_version_for_token}
 
 ---
 
@@ -2047,7 +2047,7 @@ Token *string
 
 Optional. The text token appended to the text 'Bearer' to the request Authorization header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#token DialogflowTool#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#token DialogflowTool#token}
 
 ---
 
@@ -2056,7 +2056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecAuthenticationOauthConfig {
 	ClientId: *string,
@@ -2091,7 +2091,7 @@ ClientId *string
 
 The client ID from the OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#client_id DialogflowTool#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#client_id DialogflowTool#client_id}
 
 ---
 
@@ -2105,7 +2105,7 @@ OauthGrantType *string
 
 OAuth grant types. Possible values: ["CLIENT_CREDENTIAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#oauth_grant_type DialogflowTool#oauth_grant_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#oauth_grant_type DialogflowTool#oauth_grant_type}
 
 ---
 
@@ -2119,7 +2119,7 @@ TokenEndpoint *string
 
 The token endpoint in the OAuth provider to exchange for an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#token_endpoint DialogflowTool#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#token_endpoint DialogflowTool#token_endpoint}
 
 ---
 
@@ -2133,7 +2133,7 @@ ClientSecret *string
 
 Optional. The client secret from the OAuth provider. If the 'secretVersionForClientSecret' field is set, this field will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#client_secret DialogflowTool#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#client_secret DialogflowTool#client_secret}
 
 ---
 
@@ -2147,7 +2147,7 @@ Scopes *[]*string
 
 Optional. The OAuth scopes to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#scopes DialogflowTool#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#scopes DialogflowTool#scopes}
 
 ---
 
@@ -2165,7 +2165,7 @@ The name of the SecretManager secret version resource storing the client secret.
 If this field is set, the 'clientSecret' field will be ignored.
 Format: 'projects/{project}/secrets/{secret}/versions/{version}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#secret_version_for_client_secret DialogflowTool#secret_version_for_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#secret_version_for_client_secret DialogflowTool#secret_version_for_client_secret}
 
 ---
 
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfig {
 	ServiceAgentAuth: *string,
@@ -2202,7 +2202,7 @@ Optional.
 Indicate the auth token type generated from the Dialogflow service agent.
 The generated token is sent in the Authorization header. Possible values: ["ID_TOKEN", "ACCESS_TOKEN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#service_agent_auth DialogflowTool#service_agent_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#service_agent_auth DialogflowTool#service_agent_auth}
 
 ---
 
@@ -2211,7 +2211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecServiceDirectoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecServiceDirectoryConfig {
 	Service: *string,
@@ -2236,7 +2236,7 @@ Service *string
 
 The name of [Service Directory](https://cloud.google.com/service-directory/docs) service. Format: 'projects/<ProjectID>/locations/<LocationID>/namespaces/<NamespaceID>/services/<ServiceID>'. 'LocationID' of the service directory must be the same as the location of the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#service DialogflowTool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#service DialogflowTool#service}
 
 ---
 
@@ -2245,7 +2245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecTlsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecTlsConfig {
 	CaCerts: interface{},
@@ -2270,7 +2270,7 @@ CaCerts interface{}
 
 ca_certs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#ca_certs DialogflowTool#ca_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#ca_certs DialogflowTool#ca_certs}
 
 ---
 
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecTlsConfigCaCerts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolOpenApiSpecTlsConfigCaCerts {
 	Cert: *string,
@@ -2311,7 +2311,7 @@ If this is empty or unspecified, Dialogflow will use Google's default trust stor
 N.B. Make sure the HTTPS server certificates are signed with "subject alt name".
 A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#cert DialogflowTool#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#cert DialogflowTool#cert}
 
 ---
 
@@ -2325,7 +2325,7 @@ DisplayName *string
 
 The name of the allowed custom CA certificates. This can be used to disambiguate the custom CA certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#display_name DialogflowTool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#display_name DialogflowTool#display_name}
 
 ---
 
@@ -2334,7 +2334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 &dialogflowtool.DialogflowToolTimeouts {
 	Create: *string,
@@ -2347,9 +2347,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#create DialogflowTool#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#delete DialogflowTool#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#update DialogflowTool#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#create DialogflowTool#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#delete DialogflowTool#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowTool.DialogflowToolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#update DialogflowTool#update}. |
 
 ---
 
@@ -2361,7 +2361,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#create DialogflowTool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#create DialogflowTool#create}.
 
 ---
 
@@ -2373,7 +2373,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#delete DialogflowTool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#delete DialogflowTool#delete}.
 
 ---
 
@@ -2385,7 +2385,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_tool#update DialogflowTool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dialogflow_tool#update DialogflowTool#update}.
 
 ---
 
@@ -2396,7 +2396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpecActionsEntityOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolConnectorSpecActionsEntityOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolConnectorSpecActionsEntityOperationOutputReference
 ```
@@ -2689,7 +2689,7 @@ func InternalValue() DialogflowToolConnectorSpecActionsEntityOperation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpecActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolConnectorSpecActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowToolConnectorSpecActionsList
 ```
@@ -2849,7 +2849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpecActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolConnectorSpecActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowToolConnectorSpecActionsOutputReference
 ```
@@ -3245,7 +3245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolConnectorSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolConnectorSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolConnectorSpecOutputReference
 ```
@@ -3551,7 +3551,7 @@ func InternalValue() DialogflowToolConnectorSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolFunctionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolFunctionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolFunctionSpecOutputReference
 ```
@@ -3887,7 +3887,7 @@ func InternalValue() DialogflowToolFunctionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationApiKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecAuthenticationApiKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecAuthenticationApiKeyConfigOutputReference
 ```
@@ -4238,7 +4238,7 @@ func InternalValue() DialogflowToolOpenApiSpecAuthenticationApiKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference
 ```
@@ -4545,7 +4545,7 @@ func InternalValue() DialogflowToolOpenApiSpecAuthenticationBearerTokenConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecAuthenticationOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecAuthenticationOauthConfigOutputReference
 ```
@@ -4947,7 +4947,7 @@ func InternalValue() DialogflowToolOpenApiSpecAuthenticationOauthConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecAuthenticationOutputReference
 ```
@@ -5364,7 +5364,7 @@ func InternalValue() DialogflowToolOpenApiSpecAuthentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference
 ```
@@ -5642,7 +5642,7 @@ func InternalValue() DialogflowToolOpenApiSpecAuthenticationServiceAgentAuthConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecOutputReference
 ```
@@ -6039,7 +6039,7 @@ func InternalValue() DialogflowToolOpenApiSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecServiceDirectoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecServiceDirectoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecServiceDirectoryConfigOutputReference
 ```
@@ -6310,7 +6310,7 @@ func InternalValue() DialogflowToolOpenApiSpecServiceDirectoryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecTlsConfigCaCertsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecTlsConfigCaCertsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowToolOpenApiSpecTlsConfigCaCertsList
 ```
@@ -6470,7 +6470,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecTlsConfigCaCertsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecTlsConfigCaCertsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowToolOpenApiSpecTlsConfigCaCertsOutputReference
 ```
@@ -6781,7 +6781,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolOpenApiSpecTlsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolOpenApiSpecTlsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolOpenApiSpecTlsConfigOutputReference
 ```
@@ -7065,7 +7065,7 @@ func InternalValue() DialogflowToolOpenApiSpecTlsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowTool.DialogflowToolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowtool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dialogflowtool"
 
 dialogflowtool.NewDialogflowToolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowToolTimeoutsOutputReference
 ```
