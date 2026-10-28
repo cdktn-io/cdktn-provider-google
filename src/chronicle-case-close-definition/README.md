@@ -1,3 +1,3 @@
 # `google_chronicle_case_close_definition`
 
-Refer to the Terraform Registry for docs: [`google_chronicle_case_close_definition`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition).
+Refer to the Terraform Registry for docs: [`google_chronicle_case_close_definition`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_close_definition).

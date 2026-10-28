@@ -1,3 +1,3 @@
 # `google_compute_region_network_firewall_policy_iam_binding`
 
-Refer to the Terraform Registry for docs: [`google_compute_region_network_firewall_policy_iam_binding`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/compute_region_network_firewall_policy_iam_binding).
+Refer to the Terraform Registry for docs: [`google_compute_region_network_firewall_policy_iam_binding`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_region_network_firewall_policy_iam_binding).

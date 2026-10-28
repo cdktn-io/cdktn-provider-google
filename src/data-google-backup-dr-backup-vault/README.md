@@ -1,3 +1,3 @@
 # `data_google_backup_dr_backup_vault`
 
-Refer to the Terraform Registry for docs: [`data_google_backup_dr_backup_vault`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/backup_dr_backup_vault).
+Refer to the Terraform Registry for docs: [`data_google_backup_dr_backup_vault`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_vault).

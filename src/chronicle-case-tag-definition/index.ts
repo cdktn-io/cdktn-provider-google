@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface ChronicleCaseTagDefinitionConfig extends cdktn.TerraformMetaArg
   /**
   * When checked, the tag will be assigned as the title of the case if it meets the conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#can_be_case_title ChronicleCaseTagDefinition#can_be_case_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#can_be_case_title ChronicleCaseTagDefinition#can_be_case_title}
   */
   readonly canBeCaseTitle: boolean | cdktn.IResolvable;
   /**
   * The type of comparison to be used when comparing the value to the case. Possible values: ["EXACT", "START_WITH", "CONTAIN", "ENDS_WITH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#comparison_type ChronicleCaseTagDefinition#comparison_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#comparison_type ChronicleCaseTagDefinition#comparison_type}
   */
   readonly comparisonType: string;
   /**
@@ -33,17 +33,17 @@ export interface ChronicleCaseTagDefinitionConfig extends cdktn.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#deletion_policy ChronicleCaseTagDefinition#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#deletion_policy ChronicleCaseTagDefinition#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * This is the name of the tag that will be applied to the case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#display_name ChronicleCaseTagDefinition#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#display_name ChronicleCaseTagDefinition#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#id ChronicleCaseTagDefinition#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#id ChronicleCaseTagDefinition#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,63 +52,63 @@ export interface ChronicleCaseTagDefinitionConfig extends cdktn.TerraformMetaArg
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#instance ChronicleCaseTagDefinition#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#instance ChronicleCaseTagDefinition#instance}
   */
   readonly instance: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#location ChronicleCaseTagDefinition#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#location ChronicleCaseTagDefinition#location}
   */
   readonly location: string;
   /**
   * The criteria to match the case against. Possible values: ["BY_VENDOR", "BY_PRODUCT", "BY_RULE_GENERATOR", "BY_ENTITY_PROPERTY_NAME", "DATA_DRIVEN", "SYSTEM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#match_criteria ChronicleCaseTagDefinition#match_criteria}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#match_criteria ChronicleCaseTagDefinition#match_criteria}
   */
   readonly matchCriteria: string;
   /**
   * Note that Google Security Operations merges priority with other alerts and
   * entities and events so that the priority here is not absolute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#priority ChronicleCaseTagDefinition#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#priority ChronicleCaseTagDefinition#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#project ChronicleCaseTagDefinition#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#project ChronicleCaseTagDefinition#project}
   */
   readonly project?: string;
   /**
   * Specific Entity property name to search in case.
   * This is relevant only when a SearchIn of type BY_ENTITY_PROPERTY_NAME was chosen.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#property_name ChronicleCaseTagDefinition#property_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#property_name ChronicleCaseTagDefinition#property_name}
   */
   readonly propertyName?: string;
   /**
   * Specific value to search in case - in addition to SearchIn property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#value ChronicleCaseTagDefinition#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#value ChronicleCaseTagDefinition#value}
   */
   readonly value: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#timeouts ChronicleCaseTagDefinition#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#timeouts ChronicleCaseTagDefinition#timeouts}
   */
   readonly timeouts?: ChronicleCaseTagDefinitionTimeouts;
 }
 export interface ChronicleCaseTagDefinitionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#create ChronicleCaseTagDefinition#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#create ChronicleCaseTagDefinition#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#delete ChronicleCaseTagDefinition#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#delete ChronicleCaseTagDefinition#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#update ChronicleCaseTagDefinition#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#update ChronicleCaseTagDefinition#update}
   */
   readonly update?: string;
 }
@@ -260,7 +260,7 @@ export class ChronicleCaseTagDefinitionTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition google_chronicle_case_tag_definition}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition google_chronicle_case_tag_definition}
 */
 export class ChronicleCaseTagDefinition extends cdktn.TerraformResource {
 
@@ -276,7 +276,7 @@ export class ChronicleCaseTagDefinition extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleCaseTagDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleCaseTagDefinition to import
-  * @param importFromId The id of the existing ChronicleCaseTagDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleCaseTagDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleCaseTagDefinition to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -288,7 +288,7 @@ export class ChronicleCaseTagDefinition extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition google_chronicle_case_tag_definition} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition google_chronicle_case_tag_definition} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +299,7 @@ export class ChronicleCaseTagDefinition extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_case_tag_definition',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

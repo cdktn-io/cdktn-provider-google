@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface NetworkSecuritySecurityProfileConfig extends cdktn.TerraformMet
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#deletion_policy NetworkSecuritySecurityProfile#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#deletion_policy NetworkSecuritySecurityProfile#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of the security profile. The Max length is 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#description NetworkSecuritySecurityProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#description NetworkSecuritySecurityProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#id NetworkSecuritySecurityProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#id NetworkSecuritySecurityProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,72 +44,78 @@ export interface NetworkSecuritySecurityProfileConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#labels NetworkSecuritySecurityProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#labels NetworkSecuritySecurityProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the security profile.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#location NetworkSecuritySecurityProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#location NetworkSecuritySecurityProfile#location}
   */
   readonly location?: string;
   /**
   * The name of the security profile resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#name NetworkSecuritySecurityProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#name NetworkSecuritySecurityProfile#name}
   */
   readonly name: string;
   /**
   * The name of the parent this security profile belongs to.
   * Format: 'organizations/{organization_id}' or 'projects/{project_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#parent NetworkSecuritySecurityProfile#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#parent NetworkSecuritySecurityProfile#parent}
   */
   readonly parent?: string;
   /**
-  * The type of security profile. 'WILDFIRE_ANALYSIS' is beta-only. Possible values: ["THREAT_PREVENTION", "URL_FILTERING", "CUSTOM_MIRRORING", "CUSTOM_INTERCEPT", "WILDFIRE_ANALYSIS"]
+  * The type of security profile. Possible values: ["THREAT_PREVENTION", "URL_FILTERING", "CUSTOM_MIRRORING", "CUSTOM_INTERCEPT", "WILDFIRE_ANALYSIS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#type NetworkSecuritySecurityProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#type NetworkSecuritySecurityProfile#type}
   */
   readonly type: string;
   /**
   * custom_intercept_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#custom_intercept_profile NetworkSecuritySecurityProfile#custom_intercept_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#custom_intercept_profile NetworkSecuritySecurityProfile#custom_intercept_profile}
   */
   readonly customInterceptProfile?: NetworkSecuritySecurityProfileCustomInterceptProfile;
   /**
   * custom_mirroring_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#custom_mirroring_profile NetworkSecuritySecurityProfile#custom_mirroring_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#custom_mirroring_profile NetworkSecuritySecurityProfile#custom_mirroring_profile}
   */
   readonly customMirroringProfile?: NetworkSecuritySecurityProfileCustomMirroringProfile;
   /**
   * threat_prevention_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#threat_prevention_profile NetworkSecuritySecurityProfile#threat_prevention_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#threat_prevention_profile NetworkSecuritySecurityProfile#threat_prevention_profile}
   */
   readonly threatPreventionProfile?: NetworkSecuritySecurityProfileThreatPreventionProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#timeouts NetworkSecuritySecurityProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#timeouts NetworkSecuritySecurityProfile#timeouts}
   */
   readonly timeouts?: NetworkSecuritySecurityProfileTimeouts;
   /**
   * url_filtering_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#url_filtering_profile NetworkSecuritySecurityProfile#url_filtering_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#url_filtering_profile NetworkSecuritySecurityProfile#url_filtering_profile}
   */
   readonly urlFilteringProfile?: NetworkSecuritySecurityProfileUrlFilteringProfile;
+  /**
+  * wildfire_analysis_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_analysis_profile NetworkSecuritySecurityProfile#wildfire_analysis_profile}
+  */
+  readonly wildfireAnalysisProfile?: NetworkSecuritySecurityProfileWildfireAnalysisProfile;
 }
 export interface NetworkSecuritySecurityProfileCustomInterceptProfile {
   /**
   * The Intercept Endpoint Group to which matching traffic should be intercepted.
   * Format: projects/{project_id}/locations/global/interceptEndpointGroups/{endpoint_group_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#intercept_endpoint_group NetworkSecuritySecurityProfile#intercept_endpoint_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#intercept_endpoint_group NetworkSecuritySecurityProfile#intercept_endpoint_group}
   */
   readonly interceptEndpointGroup: string;
 }
@@ -195,7 +201,7 @@ export interface NetworkSecuritySecurityProfileCustomMirroringProfile {
   * the deployment groups that the packet should be mirrored to by the broker.
   * Format: projects/{project_id}/locations/global/mirroringDeploymentGroups/{deployment_group_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#mirroring_deployment_groups NetworkSecuritySecurityProfile#mirroring_deployment_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#mirroring_deployment_groups NetworkSecuritySecurityProfile#mirroring_deployment_groups}
   */
   readonly mirroringDeploymentGroups?: string[];
   /**
@@ -204,7 +210,7 @@ export interface NetworkSecuritySecurityProfileCustomMirroringProfile {
   * a replica will be mirrored to the location-local target in this group.
   * Format: projects/{project_id}/locations/global/mirroringEndpointGroups/{endpoint_group_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#mirroring_endpoint_group NetworkSecuritySecurityProfile#mirroring_endpoint_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#mirroring_endpoint_group NetworkSecuritySecurityProfile#mirroring_endpoint_group}
   */
   readonly mirroringEndpointGroup: string;
 }
@@ -321,13 +327,13 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusO
   /**
   * Threat action override. For some threat types, only a subset of actions applies. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Required protocol to match. Possible values: ["SMTP", "SMB", "POP3", "IMAP", "HTTP2", "HTTP", "FTP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#protocol NetworkSecuritySecurityProfile#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#protocol NetworkSecuritySecurityProfile#protocol}
   */
   readonly protocol: string;
 }
@@ -468,13 +474,13 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOv
   /**
   * Threat action override. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Severity level to match. Possible values: ["CRITICAL", "HIGH", "INFORMATIONAL", "LOW", "MEDIUM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#severity NetworkSecuritySecurityProfile#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#severity NetworkSecuritySecurityProfile#severity}
   */
   readonly severity: string;
 }
@@ -615,13 +621,13 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileThreatOver
   /**
   * Threat action. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Vendor-specific ID of a threat to override.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#threat_id NetworkSecuritySecurityProfile#threat_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#threat_id NetworkSecuritySecurityProfile#threat_id}
   */
   readonly threatId: string;
 }
@@ -767,19 +773,19 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfile {
   /**
   * antivirus_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#antivirus_overrides NetworkSecuritySecurityProfile#antivirus_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#antivirus_overrides NetworkSecuritySecurityProfile#antivirus_overrides}
   */
   readonly antivirusOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktn.IResolvable;
   /**
   * severity_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#severity_overrides NetworkSecuritySecurityProfile#severity_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#severity_overrides NetworkSecuritySecurityProfile#severity_overrides}
   */
   readonly severityOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktn.IResolvable;
   /**
   * threat_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#threat_overrides NetworkSecuritySecurityProfile#threat_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#threat_overrides NetworkSecuritySecurityProfile#threat_overrides}
   */
   readonly threatOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktn.IResolvable;
 }
@@ -921,15 +927,15 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReferenc
 }
 export interface NetworkSecuritySecurityProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#create NetworkSecuritySecurityProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#create NetworkSecuritySecurityProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#delete NetworkSecuritySecurityProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#delete NetworkSecuritySecurityProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#update NetworkSecuritySecurityProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#update NetworkSecuritySecurityProfile#update}
   */
   readonly update?: string;
 }
@@ -1083,7 +1089,7 @@ export interface NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters {
   /**
   * The action to take when the filter is applied. Possible values: ["ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#filtering_action NetworkSecuritySecurityProfile#filtering_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#filtering_action NetworkSecuritySecurityProfile#filtering_action}
   */
   readonly filteringAction: string;
   /**
@@ -1091,14 +1097,14 @@ export interface NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters {
   * Must be an integer from 0 and 2147483647, inclusive. Lower integers indicate higher priorities.
   * The priority of a filter must be unique within a URL filtering profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#priority NetworkSecuritySecurityProfile#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#priority NetworkSecuritySecurityProfile#priority}
   */
   readonly priority: number;
   /**
   * A list of domain matcher strings that a domain name gets compared with to determine if the filter is applicable.
   * A domain name must match with at least one of the strings in the list for a filter to be applicable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#urls NetworkSecuritySecurityProfile#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#urls NetworkSecuritySecurityProfile#urls}
   */
   readonly urls?: string[];
 }
@@ -1268,7 +1274,7 @@ export interface NetworkSecuritySecurityProfileUrlFilteringProfile {
   /**
   * url_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#url_filters NetworkSecuritySecurityProfile#url_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#url_filters NetworkSecuritySecurityProfile#url_filters}
   */
   readonly urlFilters?: NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters[] | cdktn.IResolvable;
 }
@@ -1350,9 +1356,1726 @@ export class NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference ex
     return this._urlFilters.internalValue;
   }
 }
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes {
+  /**
+  * The file types to match for a rule. For allowed values, see [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.securityProfiles#wildfireinlinecloudanalysisrule).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#file_types NetworkSecuritySecurityProfile#file_types}
+  */
+  readonly fileTypes: string[];
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    file_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileTypes),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    file_types: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileTypes = this._fileTypes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fileTypes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fileTypes = value.fileTypes;
+    }
+  }
+
+  // file_types - computed: false, optional: false, required: true
+  private _fileTypes?: string[]; 
+  public get fileTypes() {
+    return cdktn.Fn.tolist(this.getListAttribute('file_types'));
+  }
+  public set fileTypes(value: string[]) {
+    this._fileTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileTypesInput() {
+    return this._fileTypes;
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules {
+  /**
+  * The action to take when a rule is matched. Possible values: ["ALLOW", "DENY", "ALERT"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  */
+  readonly action: string;
+  /**
+  * Direction of traffic to match for a rule. Possible values: ["UPLOAD", "DOWNLOAD", "BOTH"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#direction NetworkSecuritySecurityProfile#direction}
+  */
+  readonly direction: string;
+  /**
+  * Defines the file selection mode for a rule. Possible values: ["ALL_FILE_TYPES", "CUSTOM_FILE_TYPES"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#file_selection_mode NetworkSecuritySecurityProfile#file_selection_mode}
+  */
+  readonly fileSelectionMode: string;
+  /**
+  * custom_file_types block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#custom_file_types NetworkSecuritySecurityProfile#custom_file_types}
+  */
+  readonly customFileTypes?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    file_selection_mode: cdktn.stringToTerraform(struct!.fileSelectionMode),
+    custom_file_types: networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesToTerraform(struct!.customFileTypes),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    direction: {
+      value: cdktn.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_selection_mode: {
+      value: cdktn.stringToHclTerraform(struct!.fileSelectionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_file_types: {
+      value: networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesToHclTerraform(struct!.customFileTypes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
+    if (this._fileSelectionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSelectionMode = this._fileSelectionMode;
+    }
+    if (this._customFileTypes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customFileTypes = this._customFileTypes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._direction = undefined;
+      this._fileSelectionMode = undefined;
+      this._customFileTypes.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._direction = value.direction;
+      this._fileSelectionMode = value.fileSelectionMode;
+      this._customFileTypes.internalValue = value.customFileTypes;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // direction - computed: false, optional: false, required: true
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // file_selection_mode - computed: false, optional: false, required: true
+  private _fileSelectionMode?: string; 
+  public get fileSelectionMode() {
+    return this.getStringAttribute('file_selection_mode');
+  }
+  public set fileSelectionMode(value: string) {
+    this._fileSelectionMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSelectionModeInput() {
+    return this._fileSelectionMode;
+  }
+
+  // custom_file_types - computed: false, optional: true, required: false
+  private _customFileTypes = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypesOutputReference(this, "custom_file_types");
+  public get customFileTypes() {
+    return this._customFileTypes;
+  }
+  public putCustomFileTypes(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesCustomFileTypes) {
+    this._customFileTypes.internalValue = value;
+  }
+  public resetCustomFileTypes() {
+    this._customFileTypes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customFileTypesInput() {
+    return this._customFileTypes.internalValue;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides {
+  /**
+  * Threat action override. Possible values: ["WILDFIRE_DEFAULT_ACTION", "WILDFIRE_ALLOW", "WILDFIRE_ALERT", "WILDFIRE_DENY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  */
+  readonly action: string;
+  /**
+  * Required protocol to match. Possible values: ["WILDFIRE_SMTP", "WILDFIRE_SMB", "WILDFIRE_POP3", "WILDFIRE_IMAP", "WILDFIRE_HTTP2", "WILDFIRE_HTTP", "WILDFIRE_FTP"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#protocol NetworkSecuritySecurityProfile#protocol}
+  */
+  readonly protocol: string;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktn.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._protocol = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._protocol = value.protocol;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // protocol - computed: false, optional: false, required: true
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions {
+  /**
+  * The file name associated with the partial hash.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#filename NetworkSecuritySecurityProfile#filename}
+  */
+  readonly filename?: string;
+  /**
+  * Machine learning partial hash of the file to exclude from WildFire Inline ML analysis.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#partial_hash NetworkSecuritySecurityProfile#partial_hash}
+  */
+  readonly partialHash: string;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    filename: cdktn.stringToTerraform(struct!.filename),
+    partial_hash: cdktn.stringToTerraform(struct!.partialHash),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    filename: {
+      value: cdktn.stringToHclTerraform(struct!.filename),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partial_hash: {
+      value: cdktn.stringToHclTerraform(struct!.partialHash),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filename !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filename = this._filename;
+    }
+    if (this._partialHash !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partialHash = this._partialHash;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filename = undefined;
+      this._partialHash = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filename = value.filename;
+      this._partialHash = value.partialHash;
+    }
+  }
+
+  // filename - computed: false, optional: true, required: false
+  private _filename?: string; 
+  public get filename() {
+    return this.getStringAttribute('filename');
+  }
+  public set filename(value: string) {
+    this._filename = value;
+  }
+  public resetFilename() {
+    this._filename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filenameInput() {
+    return this._filename;
+  }
+
+  // partial_hash - computed: false, optional: false, required: true
+  private _partialHash?: string; 
+  public get partialHash() {
+    return this.getStringAttribute('partial_hash');
+  }
+  public set partialHash(value: string) {
+    this._partialHash = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partialHashInput() {
+    return this._partialHash;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs {
+  /**
+  * The action to take for a file type. Possible values: ["DISABLE", "ALERT", "ENABLE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  */
+  readonly action: string;
+  /**
+  * The file type to match. For allowed values, see [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.securityProfiles#inlinemlfiletype)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#file_type NetworkSecuritySecurityProfile#file_type}
+  */
+  readonly fileType: string;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    file_type: cdktn.stringToTerraform(struct!.fileType),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_type: {
+      value: cdktn.stringToHclTerraform(struct!.fileType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._fileType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileType = this._fileType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._fileType = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._fileType = value.fileType;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // file_type - computed: false, optional: false, required: true
+  private _fileType?: string; 
+  public get fileType() {
+    return this.getStringAttribute('file_type');
+  }
+  public set fileType(value: string) {
+    this._fileType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileTypeInput() {
+    return this._fileType;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting {
+  /**
+  * file_exceptions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#file_exceptions NetworkSecuritySecurityProfile#file_exceptions}
+  */
+  readonly fileExceptions?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions[] | cdktn.IResolvable;
+  /**
+  * inline_ml_configs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#inline_ml_configs NetworkSecuritySecurityProfile#inline_ml_configs}
+  */
+  readonly inlineMlConfigs?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs[] | cdktn.IResolvable;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    file_exceptions: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsToTerraform, true)(struct!.fileExceptions),
+    inline_ml_configs: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsToTerraform, true)(struct!.inlineMlConfigs),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    file_exceptions: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsToHclTerraform, true)(struct!.fileExceptions),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsList",
+    },
+    inline_ml_configs: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsToHclTerraform, true)(struct!.inlineMlConfigs),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileExceptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileExceptions = this._fileExceptions?.internalValue;
+    }
+    if (this._inlineMlConfigs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inlineMlConfigs = this._inlineMlConfigs?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fileExceptions.internalValue = undefined;
+      this._inlineMlConfigs.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fileExceptions.internalValue = value.fileExceptions;
+      this._inlineMlConfigs.internalValue = value.inlineMlConfigs;
+    }
+  }
+
+  // file_exceptions - computed: false, optional: true, required: false
+  private _fileExceptions = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptionsList(this, "file_exceptions", true);
+  public get fileExceptions() {
+    return this._fileExceptions;
+  }
+  public putFileExceptions(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingFileExceptions[] | cdktn.IResolvable) {
+    this._fileExceptions.internalValue = value;
+  }
+  public resetFileExceptions() {
+    this._fileExceptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileExceptionsInput() {
+    return this._fileExceptions.internalValue;
+  }
+
+  // inline_ml_configs - computed: false, optional: true, required: false
+  private _inlineMlConfigs = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigsList(this, "inline_ml_configs", true);
+  public get inlineMlConfigs() {
+    return this._inlineMlConfigs;
+  }
+  public putInlineMlConfigs(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingInlineMlConfigs[] | cdktn.IResolvable) {
+    this._inlineMlConfigs.internalValue = value;
+  }
+  public resetInlineMlConfigs() {
+    this._inlineMlConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inlineMlConfigsInput() {
+    return this._inlineMlConfigs.internalValue;
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides {
+  /**
+  * Threat action override. Possible values: ["WILDFIRE_DEFAULT_ACTION", "WILDFIRE_ALLOW", "WILDFIRE_ALERT", "WILDFIRE_DENY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  */
+  readonly action: string;
+  /**
+  * Required protocol to match. Possible values: ["WILDFIRE_SMTP", "WILDFIRE_SMB", "WILDFIRE_POP3", "WILDFIRE_IMAP", "WILDFIRE_HTTP2", "WILDFIRE_HTTP", "WILDFIRE_FTP"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#protocol NetworkSecuritySecurityProfile#protocol}
+  */
+  readonly protocol: string;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktn.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._protocol = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._protocol = value.protocol;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // protocol - computed: false, optional: false, required: true
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes {
+  /**
+  * The file types to match for a rule. For allowed values, see [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.securityProfiles#wildfiresubmissionrule)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#file_types NetworkSecuritySecurityProfile#file_types}
+  */
+  readonly fileTypes: string[];
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    file_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileTypes),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    file_types: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileTypes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileTypes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileTypes = this._fileTypes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._fileTypes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._fileTypes = value.fileTypes;
+    }
+  }
+
+  // file_types - computed: false, optional: false, required: true
+  private _fileTypes?: string[]; 
+  public get fileTypes() {
+    return cdktn.Fn.tolist(this.getListAttribute('file_types'));
+  }
+  public set fileTypes(value: string[]) {
+    this._fileTypes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileTypesInput() {
+    return this._fileTypes;
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules {
+  /**
+  * Direction of traffic to match for a rule. Possible values: ["UPLOAD", "DOWNLOAD", "BOTH"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#direction NetworkSecuritySecurityProfile#direction}
+  */
+  readonly direction: string;
+  /**
+  * Defines the file selection mode for a rule. Possible values: ["ALL_FILE_TYPES", "CUSTOM_FILE_TYPES"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#file_selection_mode NetworkSecuritySecurityProfile#file_selection_mode}
+  */
+  readonly fileSelectionMode: string;
+  /**
+  * custom_file_types block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#custom_file_types NetworkSecuritySecurityProfile#custom_file_types}
+  */
+  readonly customFileTypes?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    direction: cdktn.stringToTerraform(struct!.direction),
+    file_selection_mode: cdktn.stringToTerraform(struct!.fileSelectionMode),
+    custom_file_types: networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesToTerraform(struct!.customFileTypes),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    direction: {
+      value: cdktn.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_selection_mode: {
+      value: cdktn.stringToHclTerraform(struct!.fileSelectionMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_file_types: {
+      value: networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesToHclTerraform(struct!.customFileTypes),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._direction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.direction = this._direction;
+    }
+    if (this._fileSelectionMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileSelectionMode = this._fileSelectionMode;
+    }
+    if (this._customFileTypes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customFileTypes = this._customFileTypes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._direction = undefined;
+      this._fileSelectionMode = undefined;
+      this._customFileTypes.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._direction = value.direction;
+      this._fileSelectionMode = value.fileSelectionMode;
+      this._customFileTypes.internalValue = value.customFileTypes;
+    }
+  }
+
+  // direction - computed: false, optional: false, required: true
+  private _direction?: string; 
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+  public set direction(value: string) {
+    this._direction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directionInput() {
+    return this._direction;
+  }
+
+  // file_selection_mode - computed: false, optional: false, required: true
+  private _fileSelectionMode?: string; 
+  public get fileSelectionMode() {
+    return this.getStringAttribute('file_selection_mode');
+  }
+  public set fileSelectionMode(value: string) {
+    this._fileSelectionMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileSelectionModeInput() {
+    return this._fileSelectionMode;
+  }
+
+  // custom_file_types - computed: false, optional: true, required: false
+  private _customFileTypes = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypesOutputReference(this, "custom_file_types");
+  public get customFileTypes() {
+    return this._customFileTypes;
+  }
+  public putCustomFileTypes(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesCustomFileTypes) {
+    this._customFileTypes.internalValue = value;
+  }
+  public resetCustomFileTypes() {
+    this._customFileTypes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customFileTypesInput() {
+    return this._customFileTypes.internalValue;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides {
+  /**
+  * Threat action override. Possible values: ["WILDFIRE_DEFAULT_ACTION", "WILDFIRE_ALLOW"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  */
+  readonly action: string;
+  /**
+  * Vendor-specific ID of a threat to override.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#threat_id NetworkSecuritySecurityProfile#threat_id}
+  */
+  readonly threatId: string;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    action: cdktn.stringToTerraform(struct!.action),
+    threat_id: cdktn.stringToTerraform(struct!.threatId),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    action: {
+      value: cdktn.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    threat_id: {
+      value: cdktn.stringToHclTerraform(struct!.threatId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._threatId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threatId = this._threatId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._threatId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._threatId = value.threatId;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // threat_id - computed: false, optional: false, required: true
+  private _threatId?: string; 
+  public get threatId() {
+    return this.getStringAttribute('threat_id');
+  }
+  public set threatId(value: string) {
+    this._threatId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get threatIdInput() {
+    return this._threatId;
+  }
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesOutputReference {
+    return new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileWildfireAnalysisProfile {
+  /**
+  * Whether to hold the transfer of a file while the WildFire real-time signature cloud performs a signature lookup. Default value is false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_realtime_lookup NetworkSecuritySecurityProfile#wildfire_realtime_lookup}
+  */
+  readonly wildfireRealtimeLookup?: boolean | cdktn.IResolvable;
+  /**
+  * wildfire_inline_cloud_analysis_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_inline_cloud_analysis_rules NetworkSecuritySecurityProfile#wildfire_inline_cloud_analysis_rules}
+  */
+  readonly wildfireInlineCloudAnalysisRules?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules[] | cdktn.IResolvable;
+  /**
+  * wildfire_inline_ml_overrides block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_inline_ml_overrides NetworkSecuritySecurityProfile#wildfire_inline_ml_overrides}
+  */
+  readonly wildfireInlineMlOverrides?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides[] | cdktn.IResolvable;
+  /**
+  * wildfire_inline_ml_setting block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_inline_ml_setting NetworkSecuritySecurityProfile#wildfire_inline_ml_setting}
+  */
+  readonly wildfireInlineMlSetting?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting;
+  /**
+  * wildfire_overrides block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_overrides NetworkSecuritySecurityProfile#wildfire_overrides}
+  */
+  readonly wildfireOverrides?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides[] | cdktn.IResolvable;
+  /**
+  * wildfire_submission_rules block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_submission_rules NetworkSecuritySecurityProfile#wildfire_submission_rules}
+  */
+  readonly wildfireSubmissionRules?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules[] | cdktn.IResolvable;
+  /**
+  * wildfire_threat_overrides block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#wildfire_threat_overrides NetworkSecuritySecurityProfile#wildfire_threat_overrides}
+  */
+  readonly wildfireThreatOverrides?: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides[] | cdktn.IResolvable;
+}
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileToTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    wildfire_realtime_lookup: cdktn.booleanToTerraform(struct!.wildfireRealtimeLookup),
+    wildfire_inline_cloud_analysis_rules: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesToTerraform, true)(struct!.wildfireInlineCloudAnalysisRules),
+    wildfire_inline_ml_overrides: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesToTerraform, true)(struct!.wildfireInlineMlOverrides),
+    wildfire_inline_ml_setting: networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingToTerraform(struct!.wildfireInlineMlSetting),
+    wildfire_overrides: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesToTerraform, true)(struct!.wildfireOverrides),
+    wildfire_submission_rules: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesToTerraform, true)(struct!.wildfireSubmissionRules),
+    wildfire_threat_overrides: cdktn.listMapper(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesToTerraform, true)(struct!.wildfireThreatOverrides),
+  }
+}
+
+
+export function networkSecuritySecurityProfileWildfireAnalysisProfileToHclTerraform(struct?: NetworkSecuritySecurityProfileWildfireAnalysisProfileOutputReference | NetworkSecuritySecurityProfileWildfireAnalysisProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    wildfire_realtime_lookup: {
+      value: cdktn.booleanToHclTerraform(struct!.wildfireRealtimeLookup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    wildfire_inline_cloud_analysis_rules: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesToHclTerraform, true)(struct!.wildfireInlineCloudAnalysisRules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesList",
+    },
+    wildfire_inline_ml_overrides: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesToHclTerraform, true)(struct!.wildfireInlineMlOverrides),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesList",
+    },
+    wildfire_inline_ml_setting: {
+      value: networkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingToHclTerraform(struct!.wildfireInlineMlSetting),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingList",
+    },
+    wildfire_overrides: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesToHclTerraform, true)(struct!.wildfireOverrides),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesList",
+    },
+    wildfire_submission_rules: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesToHclTerraform, true)(struct!.wildfireSubmissionRules),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesList",
+    },
+    wildfire_threat_overrides: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesToHclTerraform, true)(struct!.wildfireThreatOverrides),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileWildfireAnalysisProfileOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileWildfireAnalysisProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._wildfireRealtimeLookup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireRealtimeLookup = this._wildfireRealtimeLookup;
+    }
+    if (this._wildfireInlineCloudAnalysisRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireInlineCloudAnalysisRules = this._wildfireInlineCloudAnalysisRules?.internalValue;
+    }
+    if (this._wildfireInlineMlOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireInlineMlOverrides = this._wildfireInlineMlOverrides?.internalValue;
+    }
+    if (this._wildfireInlineMlSetting?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireInlineMlSetting = this._wildfireInlineMlSetting?.internalValue;
+    }
+    if (this._wildfireOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireOverrides = this._wildfireOverrides?.internalValue;
+    }
+    if (this._wildfireSubmissionRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireSubmissionRules = this._wildfireSubmissionRules?.internalValue;
+    }
+    if (this._wildfireThreatOverrides?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildfireThreatOverrides = this._wildfireThreatOverrides?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileWildfireAnalysisProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._wildfireRealtimeLookup = undefined;
+      this._wildfireInlineCloudAnalysisRules.internalValue = undefined;
+      this._wildfireInlineMlOverrides.internalValue = undefined;
+      this._wildfireInlineMlSetting.internalValue = undefined;
+      this._wildfireOverrides.internalValue = undefined;
+      this._wildfireSubmissionRules.internalValue = undefined;
+      this._wildfireThreatOverrides.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._wildfireRealtimeLookup = value.wildfireRealtimeLookup;
+      this._wildfireInlineCloudAnalysisRules.internalValue = value.wildfireInlineCloudAnalysisRules;
+      this._wildfireInlineMlOverrides.internalValue = value.wildfireInlineMlOverrides;
+      this._wildfireInlineMlSetting.internalValue = value.wildfireInlineMlSetting;
+      this._wildfireOverrides.internalValue = value.wildfireOverrides;
+      this._wildfireSubmissionRules.internalValue = value.wildfireSubmissionRules;
+      this._wildfireThreatOverrides.internalValue = value.wildfireThreatOverrides;
+    }
+  }
+
+  // wildfire_realtime_lookup - computed: false, optional: true, required: false
+  private _wildfireRealtimeLookup?: boolean | cdktn.IResolvable; 
+  public get wildfireRealtimeLookup() {
+    return this.getBooleanAttribute('wildfire_realtime_lookup');
+  }
+  public set wildfireRealtimeLookup(value: boolean | cdktn.IResolvable) {
+    this._wildfireRealtimeLookup = value;
+  }
+  public resetWildfireRealtimeLookup() {
+    this._wildfireRealtimeLookup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireRealtimeLookupInput() {
+    return this._wildfireRealtimeLookup;
+  }
+
+  // wildfire_inline_cloud_analysis_rules - computed: false, optional: true, required: false
+  private _wildfireInlineCloudAnalysisRules = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRulesList(this, "wildfire_inline_cloud_analysis_rules", false);
+  public get wildfireInlineCloudAnalysisRules() {
+    return this._wildfireInlineCloudAnalysisRules;
+  }
+  public putWildfireInlineCloudAnalysisRules(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineCloudAnalysisRules[] | cdktn.IResolvable) {
+    this._wildfireInlineCloudAnalysisRules.internalValue = value;
+  }
+  public resetWildfireInlineCloudAnalysisRules() {
+    this._wildfireInlineCloudAnalysisRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireInlineCloudAnalysisRulesInput() {
+    return this._wildfireInlineCloudAnalysisRules.internalValue;
+  }
+
+  // wildfire_inline_ml_overrides - computed: false, optional: true, required: false
+  private _wildfireInlineMlOverrides = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverridesList(this, "wildfire_inline_ml_overrides", true);
+  public get wildfireInlineMlOverrides() {
+    return this._wildfireInlineMlOverrides;
+  }
+  public putWildfireInlineMlOverrides(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlOverrides[] | cdktn.IResolvable) {
+    this._wildfireInlineMlOverrides.internalValue = value;
+  }
+  public resetWildfireInlineMlOverrides() {
+    this._wildfireInlineMlOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireInlineMlOverridesInput() {
+    return this._wildfireInlineMlOverrides.internalValue;
+  }
+
+  // wildfire_inline_ml_setting - computed: false, optional: true, required: false
+  private _wildfireInlineMlSetting = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSettingOutputReference(this, "wildfire_inline_ml_setting");
+  public get wildfireInlineMlSetting() {
+    return this._wildfireInlineMlSetting;
+  }
+  public putWildfireInlineMlSetting(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireInlineMlSetting) {
+    this._wildfireInlineMlSetting.internalValue = value;
+  }
+  public resetWildfireInlineMlSetting() {
+    this._wildfireInlineMlSetting.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireInlineMlSettingInput() {
+    return this._wildfireInlineMlSetting.internalValue;
+  }
+
+  // wildfire_overrides - computed: false, optional: true, required: false
+  private _wildfireOverrides = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverridesList(this, "wildfire_overrides", true);
+  public get wildfireOverrides() {
+    return this._wildfireOverrides;
+  }
+  public putWildfireOverrides(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireOverrides[] | cdktn.IResolvable) {
+    this._wildfireOverrides.internalValue = value;
+  }
+  public resetWildfireOverrides() {
+    this._wildfireOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireOverridesInput() {
+    return this._wildfireOverrides.internalValue;
+  }
+
+  // wildfire_submission_rules - computed: false, optional: true, required: false
+  private _wildfireSubmissionRules = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRulesList(this, "wildfire_submission_rules", false);
+  public get wildfireSubmissionRules() {
+    return this._wildfireSubmissionRules;
+  }
+  public putWildfireSubmissionRules(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireSubmissionRules[] | cdktn.IResolvable) {
+    this._wildfireSubmissionRules.internalValue = value;
+  }
+  public resetWildfireSubmissionRules() {
+    this._wildfireSubmissionRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireSubmissionRulesInput() {
+    return this._wildfireSubmissionRules.internalValue;
+  }
+
+  // wildfire_threat_overrides - computed: false, optional: true, required: false
+  private _wildfireThreatOverrides = new NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverridesList(this, "wildfire_threat_overrides", true);
+  public get wildfireThreatOverrides() {
+    return this._wildfireThreatOverrides;
+  }
+  public putWildfireThreatOverrides(value: NetworkSecuritySecurityProfileWildfireAnalysisProfileWildfireThreatOverrides[] | cdktn.IResolvable) {
+    this._wildfireThreatOverrides.internalValue = value;
+  }
+  public resetWildfireThreatOverrides() {
+    this._wildfireThreatOverrides.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireThreatOverridesInput() {
+    return this._wildfireThreatOverrides.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile google_network_security_security_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile google_network_security_security_profile}
 */
 export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
 
@@ -1368,7 +3091,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecuritySecurityProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecuritySecurityProfile to import
-  * @param importFromId The id of the existing NetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecuritySecurityProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1380,7 +3103,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1391,7 +3114,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_security_profile',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -1415,6 +3138,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
     this._threatPreventionProfile.internalValue = config.threatPreventionProfile;
     this._timeouts.internalValue = config.timeouts;
     this._urlFilteringProfile.internalValue = config.urlFilteringProfile;
+    this._wildfireAnalysisProfile.internalValue = config.wildfireAnalysisProfile;
   }
 
   // ==========
@@ -1655,6 +3379,22 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
     return this._urlFilteringProfile.internalValue;
   }
 
+  // wildfire_analysis_profile - computed: false, optional: true, required: false
+  private _wildfireAnalysisProfile = new NetworkSecuritySecurityProfileWildfireAnalysisProfileOutputReference(this, "wildfire_analysis_profile");
+  public get wildfireAnalysisProfile() {
+    return this._wildfireAnalysisProfile;
+  }
+  public putWildfireAnalysisProfile(value: NetworkSecuritySecurityProfileWildfireAnalysisProfile) {
+    this._wildfireAnalysisProfile.internalValue = value;
+  }
+  public resetWildfireAnalysisProfile() {
+    this._wildfireAnalysisProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireAnalysisProfileInput() {
+    return this._wildfireAnalysisProfile.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1674,6 +3414,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
       threat_prevention_profile: networkSecuritySecurityProfileThreatPreventionProfileToTerraform(this._threatPreventionProfile.internalValue),
       timeouts: networkSecuritySecurityProfileTimeoutsToTerraform(this._timeouts.internalValue),
       url_filtering_profile: networkSecuritySecurityProfileUrlFilteringProfileToTerraform(this._urlFilteringProfile.internalValue),
+      wildfire_analysis_profile: networkSecuritySecurityProfileWildfireAnalysisProfileToTerraform(this._wildfireAnalysisProfile.internalValue),
     };
   }
 
@@ -1756,6 +3497,12 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "NetworkSecuritySecurityProfileUrlFilteringProfileList",
+      },
+      wildfire_analysis_profile: {
+        value: networkSecuritySecurityProfileWildfireAnalysisProfileToHclTerraform(this._wildfireAnalysisProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkSecuritySecurityProfileWildfireAnalysisProfileList",
       },
     };
 

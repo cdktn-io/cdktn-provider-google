@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface VertexAiOnlineEvaluatorConfig extends cdktn.TerraformMetaArgume
   * and link the evaluation results with relevant dashboards/UIs. This field
   * is immutable; once set, it cannot be changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#agent_resource VertexAiOnlineEvaluator#agent_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#agent_resource VertexAiOnlineEvaluator#agent_resource}
   */
   readonly agentResource: string;
   /**
@@ -30,7 +30,7 @@ export interface VertexAiOnlineEvaluatorConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#deletion_policy VertexAiOnlineEvaluator#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#deletion_policy VertexAiOnlineEvaluator#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -38,48 +38,48 @@ export interface VertexAiOnlineEvaluatorConfig extends cdktn.TerraformMetaArgume
   * unique. The name can consist of any UTF-8 characters. The maximum length
   * is 63 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#display_name VertexAiOnlineEvaluator#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#display_name VertexAiOnlineEvaluator#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#id VertexAiOnlineEvaluator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#id VertexAiOnlineEvaluator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#project VertexAiOnlineEvaluator#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#project VertexAiOnlineEvaluator#project}
   */
   readonly project?: string;
   /**
   * The region of the OnlineEvaluator (e.g. us-central1). If unset, the provider's region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#region VertexAiOnlineEvaluator#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#region VertexAiOnlineEvaluator#region}
   */
   readonly region?: string;
   /**
   * cloud_observability block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#cloud_observability VertexAiOnlineEvaluator#cloud_observability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#cloud_observability VertexAiOnlineEvaluator#cloud_observability}
   */
   readonly cloudObservability: VertexAiOnlineEvaluatorCloudObservability;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#config VertexAiOnlineEvaluator#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#config VertexAiOnlineEvaluator#config}
   */
   readonly config: VertexAiOnlineEvaluatorConfigA;
   /**
   * metric_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#metric_sources VertexAiOnlineEvaluator#metric_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#metric_sources VertexAiOnlineEvaluator#metric_sources}
   */
   readonly metricSources: VertexAiOnlineEvaluatorMetricSources[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#timeouts VertexAiOnlineEvaluator#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#timeouts VertexAiOnlineEvaluator#timeouts}
   */
   readonly timeouts?: VertexAiOnlineEvaluatorTimeouts;
 }
@@ -163,7 +163,7 @@ export interface VertexAiOnlineEvaluatorCloudObservabilityOpenTelemetry {
   * Defines which version of the OTel Semantic Convention the data
   * follows. Can be "1.39.0" or newer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#semconv_version VertexAiOnlineEvaluator#semconv_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#semconv_version VertexAiOnlineEvaluator#semconv_version}
   */
   readonly semconvVersion: string;
 }
@@ -248,13 +248,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterDura
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -365,13 +365,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterMode
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -482,13 +482,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterMode
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -599,13 +599,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterTool
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -716,13 +716,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterTool
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -833,13 +833,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterTota
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -950,13 +950,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterUser
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -1065,43 +1065,43 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilter {
   /**
   * duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#duration VertexAiOnlineEvaluator#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#duration VertexAiOnlineEvaluator#duration}
   */
   readonly duration?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterDuration;
   /**
   * model_call_errors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#model_call_errors VertexAiOnlineEvaluator#model_call_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#model_call_errors VertexAiOnlineEvaluator#model_call_errors}
   */
   readonly modelCallErrors?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterModelCallErrors;
   /**
   * model_calls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#model_calls VertexAiOnlineEvaluator#model_calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#model_calls VertexAiOnlineEvaluator#model_calls}
   */
   readonly modelCalls?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterModelCalls;
   /**
   * tool_call_errors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#tool_call_errors VertexAiOnlineEvaluator#tool_call_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#tool_call_errors VertexAiOnlineEvaluator#tool_call_errors}
   */
   readonly toolCallErrors?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterToolCallErrors;
   /**
   * tool_calls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#tool_calls VertexAiOnlineEvaluator#tool_calls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#tool_calls VertexAiOnlineEvaluator#tool_calls}
   */
   readonly toolCalls?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterToolCalls;
   /**
   * total_token_usage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#total_token_usage VertexAiOnlineEvaluator#total_token_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#total_token_usage VertexAiOnlineEvaluator#total_token_usage}
   */
   readonly totalTokenUsage?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterTotalTokenUsage;
   /**
   * user_turns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#user_turns VertexAiOnlineEvaluator#user_turns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#user_turns VertexAiOnlineEvaluator#user_turns}
   */
   readonly userTurns?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilterUserTurns;
 }
@@ -1395,7 +1395,7 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScopeInactivity
   * session is considered ready for evaluation. Must be a positive
   * duration no greater than 7 days (604800 seconds), e.g. "3600s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#threshold VertexAiOnlineEvaluator#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#threshold VertexAiOnlineEvaluator#threshold}
   */
   readonly threshold: string;
 }
@@ -1478,13 +1478,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilitySessionScope {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#filter VertexAiOnlineEvaluator#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#filter VertexAiOnlineEvaluator#filter}
   */
   readonly filter?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeFilter[] | cdktn.IResolvable;
   /**
   * inactivity_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#inactivity_trigger VertexAiOnlineEvaluator#inactivity_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#inactivity_trigger VertexAiOnlineEvaluator#inactivity_trigger}
   */
   readonly inactivityTrigger?: VertexAiOnlineEvaluatorCloudObservabilitySessionScopeInactivityTrigger;
 }
@@ -1601,13 +1601,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilityTraceScopeFilterDurati
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -1718,13 +1718,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilityTraceScopeFilterTotalT
   * LESS, LESS_OR_EQUAL, EQUAL, NOT_EQUAL, GREATER_OR_EQUAL,
   * GREATER.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#comparison_operator VertexAiOnlineEvaluator#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
   * The value to compare against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#value VertexAiOnlineEvaluator#value}
   */
   readonly value: number;
 }
@@ -1833,13 +1833,13 @@ export interface VertexAiOnlineEvaluatorCloudObservabilityTraceScopeFilter {
   /**
   * duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#duration VertexAiOnlineEvaluator#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#duration VertexAiOnlineEvaluator#duration}
   */
   readonly duration?: VertexAiOnlineEvaluatorCloudObservabilityTraceScopeFilterDuration;
   /**
   * total_token_usage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#total_token_usage VertexAiOnlineEvaluator#total_token_usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#total_token_usage VertexAiOnlineEvaluator#total_token_usage}
   */
   readonly totalTokenUsage?: VertexAiOnlineEvaluatorCloudObservabilityTraceScopeFilterTotalTokenUsage;
 }
@@ -1986,7 +1986,7 @@ export interface VertexAiOnlineEvaluatorCloudObservabilityTraceScope {
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#filter VertexAiOnlineEvaluator#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#filter VertexAiOnlineEvaluator#filter}
   */
   readonly filter?: VertexAiOnlineEvaluatorCloudObservabilityTraceScopeFilter[] | cdktn.IResolvable;
 }
@@ -2073,32 +2073,32 @@ export interface VertexAiOnlineEvaluatorCloudObservability {
   * Optional log view that will be used to query logs. If empty, the
   * project's default view ('projects/{{project_id}}') will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#log_view VertexAiOnlineEvaluator#log_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#log_view VertexAiOnlineEvaluator#log_view}
   */
   readonly logView?: string;
   /**
   * Optional trace view that will be used to query traces. If empty, the
   * '_AllSpans' view from the '_Trace' US bucket will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#trace_view VertexAiOnlineEvaluator#trace_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#trace_view VertexAiOnlineEvaluator#trace_view}
   */
   readonly traceView?: string;
   /**
   * open_telemetry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#open_telemetry VertexAiOnlineEvaluator#open_telemetry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#open_telemetry VertexAiOnlineEvaluator#open_telemetry}
   */
   readonly openTelemetry: VertexAiOnlineEvaluatorCloudObservabilityOpenTelemetry;
   /**
   * session_scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#session_scope VertexAiOnlineEvaluator#session_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#session_scope VertexAiOnlineEvaluator#session_scope}
   */
   readonly sessionScope?: VertexAiOnlineEvaluatorCloudObservabilitySessionScope;
   /**
   * trace_scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#trace_scope VertexAiOnlineEvaluator#trace_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#trace_scope VertexAiOnlineEvaluator#trace_scope}
   */
   readonly traceScope?: VertexAiOnlineEvaluatorCloudObservabilityTraceScope;
 }
@@ -2298,7 +2298,7 @@ export interface VertexAiOnlineEvaluatorConfigRandomSampling {
   * The percentage of traces to sample for evaluation. Must be an
   * integer between 1 and 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#percentage VertexAiOnlineEvaluator#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#percentage VertexAiOnlineEvaluator#percentage}
   */
   readonly percentage: number;
 }
@@ -2382,13 +2382,13 @@ export interface VertexAiOnlineEvaluatorConfigA {
   * The maximum number of evaluations to perform per run. If set to 0, the
   * number is unbounded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#max_evaluated_samples_per_run VertexAiOnlineEvaluator#max_evaluated_samples_per_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#max_evaluated_samples_per_run VertexAiOnlineEvaluator#max_evaluated_samples_per_run}
   */
   readonly maxEvaluatedSamplesPerRun?: string;
   /**
   * random_sampling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#random_sampling VertexAiOnlineEvaluator#random_sampling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#random_sampling VertexAiOnlineEvaluator#random_sampling}
   */
   readonly randomSampling?: VertexAiOnlineEvaluatorConfigRandomSampling;
 }
@@ -2513,7 +2513,7 @@ export interface VertexAiOnlineEvaluatorMetricSources {
   *     'multi_turn_task_success_v1', 'multi_turn_tool_use_quality_v1',
   *     'multi_turn_trajectory_quality_v1'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#metric VertexAiOnlineEvaluator#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#metric VertexAiOnlineEvaluator#metric}
   */
   readonly metric?: string;
   /**
@@ -2521,7 +2521,7 @@ export interface VertexAiOnlineEvaluatorMetricSources {
   * 'google_vertex_ai_evaluation_metric'), e.g.
   * projects/{{project}}/locations/{{region}}/evaluationMetrics/{{id}}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#metric_resource_name VertexAiOnlineEvaluator#metric_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#metric_resource_name VertexAiOnlineEvaluator#metric_resource_name}
   */
   readonly metricResourceName?: string;
 }
@@ -2666,15 +2666,15 @@ export class VertexAiOnlineEvaluatorMetricSourcesList extends cdktn.ComplexList 
 }
 export interface VertexAiOnlineEvaluatorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#create VertexAiOnlineEvaluator#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#create VertexAiOnlineEvaluator#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#delete VertexAiOnlineEvaluator#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#delete VertexAiOnlineEvaluator#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#update VertexAiOnlineEvaluator#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#update VertexAiOnlineEvaluator#update}
   */
   readonly update?: string;
 }
@@ -2826,7 +2826,7 @@ export class VertexAiOnlineEvaluatorTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator google_vertex_ai_online_evaluator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator google_vertex_ai_online_evaluator}
 */
 export class VertexAiOnlineEvaluator extends cdktn.TerraformResource {
 
@@ -2842,7 +2842,7 @@ export class VertexAiOnlineEvaluator extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiOnlineEvaluator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiOnlineEvaluator to import
-  * @param importFromId The id of the existing VertexAiOnlineEvaluator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiOnlineEvaluator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiOnlineEvaluator to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2854,7 +2854,7 @@ export class VertexAiOnlineEvaluator extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_online_evaluator google_vertex_ai_online_evaluator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_online_evaluator google_vertex_ai_online_evaluator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2865,7 +2865,7 @@ export class VertexAiOnlineEvaluator extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_online_evaluator',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

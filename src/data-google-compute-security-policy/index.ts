@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeSecurityPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy#id DataGoogleComputeSecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy#id DataGoogleComputeSecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataGoogleComputeSecurityPolicyConfig extends cdktn.TerraformMe
   /**
   * The name of the security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy#name DataGoogleComputeSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy#name DataGoogleComputeSecurityPolicy#name}
   */
   readonly name?: string;
   /**
   * The project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy#project DataGoogleComputeSecurityPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy#project DataGoogleComputeSecurityPolicy#project}
   */
   readonly project?: string;
   /**
   * The URI of the created resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy#self_link DataGoogleComputeSecurityPolicy#self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy#self_link DataGoogleComputeSecurityPolicy#self_link}
   */
   readonly selfLink?: string;
 }
@@ -1202,6 +1202,86 @@ export class DataGoogleComputeSecurityPolicyRuleMatchList extends cdktn.ComplexL
     return new DataGoogleComputeSecurityPolicyRuleMatchOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBody {
+}
+
+export function dataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyToTerraform(struct?: DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBody): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyToHclTerraform(struct?: DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBody): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBody | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBody | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // operator - computed: true, optional: false, required: false
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyOutputReference {
+    return new DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie {
 }
 
@@ -1571,6 +1651,12 @@ export class DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionO
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // request_body - computed: true, optional: false, required: false
+  private _requestBody = new DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestBodyList(this, "request_body", false);
+  public get requestBody() {
+    return this._requestBody;
   }
 
   // request_cookie - computed: true, optional: false, required: false
@@ -2343,7 +2429,7 @@ export class DataGoogleComputeSecurityPolicyRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy google_compute_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy google_compute_security_policy}
 */
 export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
 
@@ -2359,7 +2445,7 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeSecurityPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeSecurityPolicy to import
-  * @param importFromId The id of the existing DataGoogleComputeSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeSecurityPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2371,7 +2457,7 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_security_policy google_compute_security_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_security_policy google_compute_security_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2382,7 +2468,7 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

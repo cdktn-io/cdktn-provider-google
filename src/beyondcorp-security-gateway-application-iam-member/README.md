@@ -1,3 +1,3 @@
 # `google_beyondcorp_security_gateway_application_iam_member`
 
-Refer to the Terraform Registry for docs: [`google_beyondcorp_security_gateway_application_iam_member`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/beyondcorp_security_gateway_application_iam_member).
+Refer to the Terraform Registry for docs: [`google_beyondcorp_security_gateway_application_iam_member`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/beyondcorp_security_gateway_application_iam_member).

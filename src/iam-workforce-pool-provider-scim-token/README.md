@@ -1,3 +1,3 @@
 # `google_iam_workforce_pool_provider_scim_token`
 
-Refer to the Terraform Registry for docs: [`google_iam_workforce_pool_provider_scim_token`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/iam_workforce_pool_provider_scim_token).
+Refer to the Terraform Registry for docs: [`google_iam_workforce_pool_provider_scim_token`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/iam_workforce_pool_provider_scim_token).

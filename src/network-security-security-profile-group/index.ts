@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface NetworkSecuritySecurityProfileGroupConfig extends cdktn.Terrafo
   /**
   * Reference to a SecurityProfile with the CustomIntercept configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#custom_intercept_profile NetworkSecuritySecurityProfileGroup#custom_intercept_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#custom_intercept_profile NetworkSecuritySecurityProfileGroup#custom_intercept_profile}
   */
   readonly customInterceptProfile?: string;
   /**
   * Reference to a SecurityProfile with the custom mirroring configuration for the SecurityProfileGroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#custom_mirroring_profile NetworkSecuritySecurityProfileGroup#custom_mirroring_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#custom_mirroring_profile NetworkSecuritySecurityProfileGroup#custom_mirroring_profile}
   */
   readonly customMirroringProfile?: string;
   /**
@@ -33,17 +33,17 @@ export interface NetworkSecuritySecurityProfileGroupConfig extends cdktn.Terrafo
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#deletion_policy NetworkSecuritySecurityProfileGroup#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#deletion_policy NetworkSecuritySecurityProfileGroup#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of the profile. The Max length is 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#description NetworkSecuritySecurityProfileGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#description NetworkSecuritySecurityProfileGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#id NetworkSecuritySecurityProfileGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#id NetworkSecuritySecurityProfileGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,59 +56,65 @@ export interface NetworkSecuritySecurityProfileGroupConfig extends cdktn.Terrafo
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#labels NetworkSecuritySecurityProfileGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#labels NetworkSecuritySecurityProfileGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the security profile group.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#location NetworkSecuritySecurityProfileGroup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#location NetworkSecuritySecurityProfileGroup#location}
   */
   readonly location?: string;
   /**
   * The name of the security profile group resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#name NetworkSecuritySecurityProfileGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#name NetworkSecuritySecurityProfileGroup#name}
   */
   readonly name: string;
   /**
   * The name of the parent this security profile group belongs to.
   * Format: 'organizations/{organization_id}' or 'projects/{project_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#parent NetworkSecuritySecurityProfileGroup#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#parent NetworkSecuritySecurityProfileGroup#parent}
   */
   readonly parent?: string;
   /**
   * Reference to a SecurityProfile with the threat prevention configuration for the SecurityProfileGroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#threat_prevention_profile NetworkSecuritySecurityProfileGroup#threat_prevention_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#threat_prevention_profile NetworkSecuritySecurityProfileGroup#threat_prevention_profile}
   */
   readonly threatPreventionProfile?: string;
   /**
   * Reference to a SecurityProfile with the URL filtering configuration for the SecurityProfileGroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#url_filtering_profile NetworkSecuritySecurityProfileGroup#url_filtering_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#url_filtering_profile NetworkSecuritySecurityProfileGroup#url_filtering_profile}
   */
   readonly urlFilteringProfile?: string;
   /**
+  * Reference to a SecurityProfile with the WildFire configuration for the SecurityProfileGroup.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#wildfire_analysis_profile NetworkSecuritySecurityProfileGroup#wildfire_analysis_profile}
+  */
+  readonly wildfireAnalysisProfile?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#timeouts NetworkSecuritySecurityProfileGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#timeouts NetworkSecuritySecurityProfileGroup#timeouts}
   */
   readonly timeouts?: NetworkSecuritySecurityProfileGroupTimeouts;
 }
 export interface NetworkSecuritySecurityProfileGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#create NetworkSecuritySecurityProfileGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#create NetworkSecuritySecurityProfileGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#delete NetworkSecuritySecurityProfileGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#delete NetworkSecuritySecurityProfileGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#update NetworkSecuritySecurityProfileGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#update NetworkSecuritySecurityProfileGroup#update}
   */
   readonly update?: string;
 }
@@ -260,7 +266,7 @@ export class NetworkSecuritySecurityProfileGroupTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group google_network_security_security_profile_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group google_network_security_security_profile_group}
 */
 export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource {
 
@@ -276,7 +282,7 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
   * Generates CDKTN code for importing a NetworkSecuritySecurityProfileGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecuritySecurityProfileGroup to import
-  * @param importFromId The id of the existing NetworkSecuritySecurityProfileGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecuritySecurityProfileGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecuritySecurityProfileGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -288,7 +294,7 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_security_security_profile_group google_network_security_security_profile_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_security_profile_group google_network_security_security_profile_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +305,7 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
       terraformResourceType: 'google_network_security_security_profile_group',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -321,6 +327,7 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
     this._parent = config.parent;
     this._threatPreventionProfile = config.threatPreventionProfile;
     this._urlFilteringProfile = config.urlFilteringProfile;
+    this._wildfireAnalysisProfile = config.wildfireAnalysisProfile;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -528,6 +535,22 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
     return this._urlFilteringProfile;
   }
 
+  // wildfire_analysis_profile - computed: false, optional: true, required: false
+  private _wildfireAnalysisProfile?: string; 
+  public get wildfireAnalysisProfile() {
+    return this.getStringAttribute('wildfire_analysis_profile');
+  }
+  public set wildfireAnalysisProfile(value: string) {
+    this._wildfireAnalysisProfile = value;
+  }
+  public resetWildfireAnalysisProfile() {
+    this._wildfireAnalysisProfile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildfireAnalysisProfileInput() {
+    return this._wildfireAnalysisProfile;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new NetworkSecuritySecurityProfileGroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -561,6 +584,7 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
       parent: cdktn.stringToTerraform(this._parent),
       threat_prevention_profile: cdktn.stringToTerraform(this._threatPreventionProfile),
       url_filtering_profile: cdktn.stringToTerraform(this._urlFilteringProfile),
+      wildfire_analysis_profile: cdktn.stringToTerraform(this._wildfireAnalysisProfile),
       timeouts: networkSecuritySecurityProfileGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -629,6 +653,12 @@ export class NetworkSecuritySecurityProfileGroup extends cdktn.TerraformResource
       },
       url_filtering_profile: {
         value: cdktn.stringToHclTerraform(this._urlFilteringProfile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wildfire_analysis_profile: {
+        value: cdktn.stringToHclTerraform(this._wildfireAnalysisProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface BiglakeHiveTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Hive catalog where the table is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#catalog BiglakeHiveTable#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#catalog BiglakeHiveTable#catalog}
   */
   readonly catalog: string;
   /**
   * The Hive database where the table is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#database BiglakeHiveTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#database BiglakeHiveTable#database}
   */
   readonly database: string;
   /**
@@ -33,17 +33,17 @@ export interface BiglakeHiveTableConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#deletion_policy BiglakeHiveTable#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#deletion_policy BiglakeHiveTable#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#description BiglakeHiveTable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#description BiglakeHiveTable#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#id BiglakeHiveTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#id BiglakeHiveTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,47 +52,47 @@ export interface BiglakeHiveTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
   */
   readonly name: string;
   /**
   * Additional parameters associated with the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#parameters BiglakeHiveTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#parameters BiglakeHiveTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#project BiglakeHiveTable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#project BiglakeHiveTable#project}
   */
   readonly project?: string;
   /**
   * Expanded view text for Hive views. Empty for non-view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#view_expanded_text BiglakeHiveTable#view_expanded_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#view_expanded_text BiglakeHiveTable#view_expanded_text}
   */
   readonly viewExpandedText?: string;
   /**
   * Original view text for Hive views. Empty for non-view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#view_original_text BiglakeHiveTable#view_original_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#view_original_text BiglakeHiveTable#view_original_text}
   */
   readonly viewOriginalText?: string;
   /**
   * partition_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#partition_keys BiglakeHiveTable#partition_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#partition_keys BiglakeHiveTable#partition_keys}
   */
   readonly partitionKeys?: BiglakeHiveTablePartitionKeys[] | cdktn.IResolvable;
   /**
   * storage_descriptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#storage_descriptor BiglakeHiveTable#storage_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#storage_descriptor BiglakeHiveTable#storage_descriptor}
   */
   readonly storageDescriptor: BiglakeHiveTableStorageDescriptor;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#timeouts BiglakeHiveTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#timeouts BiglakeHiveTable#timeouts}
   */
   readonly timeouts?: BiglakeHiveTableTimeouts;
 }
@@ -100,19 +100,19 @@ export interface BiglakeHiveTablePartitionKeys {
   /**
   * Comment of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#comment BiglakeHiveTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#comment BiglakeHiveTable#comment}
   */
   readonly comment?: string;
   /**
   * Name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
   */
   readonly name: string;
   /**
   * Type of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#type BiglakeHiveTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#type BiglakeHiveTable#type}
   */
   readonly type: string;
 }
@@ -282,19 +282,19 @@ export interface BiglakeHiveTableStorageDescriptorColumns {
   /**
   * Comment of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#comment BiglakeHiveTable#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#comment BiglakeHiveTable#comment}
   */
   readonly comment?: string;
   /**
   * Name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
   */
   readonly name: string;
   /**
   * Type of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#type BiglakeHiveTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#type BiglakeHiveTable#type}
   */
   readonly type: string;
 }
@@ -464,43 +464,43 @@ export interface BiglakeHiveTableStorageDescriptorSerdeInfo {
   /**
   * Description of the SerDe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#description BiglakeHiveTable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#description BiglakeHiveTable#description}
   */
   readonly description?: string;
   /**
   * The fully qualified Java class name of the deserializer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#deserializer_class BiglakeHiveTable#deserializer_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#deserializer_class BiglakeHiveTable#deserializer_class}
   */
   readonly deserializerClass?: string;
   /**
   * Name of the SerDe, table name by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#name BiglakeHiveTable#name}
   */
   readonly name: string;
   /**
   * Parameters of the SerDe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#parameters BiglakeHiveTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#parameters BiglakeHiveTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * The SerDe type. Possible values: ["SERDE_TYPE_UNSPECIFIED", "HIVE", "SCHEMA_REGISTRY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#serde_type BiglakeHiveTable#serde_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#serde_type BiglakeHiveTable#serde_type}
   */
   readonly serdeType?: string;
   /**
   * The fully qualified Java class name of the serialization library.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#serialization_lib BiglakeHiveTable#serialization_lib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#serialization_lib BiglakeHiveTable#serialization_lib}
   */
   readonly serializationLib: string;
   /**
   * The fully qualified Java class name of the serializer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#serializer_class BiglakeHiveTable#serializer_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#serializer_class BiglakeHiveTable#serializer_class}
   */
   readonly serializerClass?: string;
 }
@@ -752,7 +752,7 @@ export class BiglakeHiveTableStorageDescriptorSerdeInfoOutputReference extends c
 }
 export interface BiglakeHiveTableStorageDescriptorSkewedInfoSkewedColValues {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#values BiglakeHiveTable#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#values BiglakeHiveTable#values}
   */
   readonly values: string[];
 }
@@ -865,11 +865,11 @@ export class BiglakeHiveTableStorageDescriptorSkewedInfoSkewedColValuesList exte
 }
 export interface BiglakeHiveTableStorageDescriptorSkewedInfoSkewedKeyValuesLocations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#location BiglakeHiveTable#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#location BiglakeHiveTable#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#values BiglakeHiveTable#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#values BiglakeHiveTable#values}
   */
   readonly values: string[];
 }
@@ -1010,19 +1010,19 @@ export interface BiglakeHiveTableStorageDescriptorSkewedInfo {
   /**
   * The column names that are skewed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#skewed_col_names BiglakeHiveTable#skewed_col_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#skewed_col_names BiglakeHiveTable#skewed_col_names}
   */
   readonly skewedColNames: string[];
   /**
   * skewed_col_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#skewed_col_values BiglakeHiveTable#skewed_col_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#skewed_col_values BiglakeHiveTable#skewed_col_values}
   */
   readonly skewedColValues: BiglakeHiveTableStorageDescriptorSkewedInfoSkewedColValues[] | cdktn.IResolvable;
   /**
   * skewed_key_values_locations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#skewed_key_values_locations BiglakeHiveTable#skewed_key_values_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#skewed_key_values_locations BiglakeHiveTable#skewed_key_values_locations}
   */
   readonly skewedKeyValuesLocations: BiglakeHiveTableStorageDescriptorSkewedInfoSkewedKeyValuesLocations[] | cdktn.IResolvable;
 }
@@ -1157,13 +1157,13 @@ export interface BiglakeHiveTableStorageDescriptorSortCols {
   /**
   * The column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#col BiglakeHiveTable#col}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#col BiglakeHiveTable#col}
   */
   readonly col: string;
   /**
   * Sort order: 1 for Ascending, 0 for Descending.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#order BiglakeHiveTable#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#order BiglakeHiveTable#order}
   */
   readonly order: number;
 }
@@ -1304,73 +1304,73 @@ export interface BiglakeHiveTableStorageDescriptor {
   /**
   * Reducer grouping columns, clustering columns, and bucketing columns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#bucket_cols BiglakeHiveTable#bucket_cols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#bucket_cols BiglakeHiveTable#bucket_cols}
   */
   readonly bucketCols?: string[];
   /**
   * Whether the table data is compressed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#compressed BiglakeHiveTable#compressed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#compressed BiglakeHiveTable#compressed}
   */
   readonly compressed?: boolean | cdktn.IResolvable;
   /**
   * The fully qualified Java class name of the input format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#input_format BiglakeHiveTable#input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#input_format BiglakeHiveTable#input_format}
   */
   readonly inputFormat?: string;
   /**
   * The Cloud Storage URI where the table data is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#location_uri BiglakeHiveTable#location_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#location_uri BiglakeHiveTable#location_uri}
   */
   readonly locationUri?: string;
   /**
   * The number of buckets in the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#num_buckets BiglakeHiveTable#num_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#num_buckets BiglakeHiveTable#num_buckets}
   */
   readonly numBuckets?: number;
   /**
   * The fully qualified Java class name of the output format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#output_format BiglakeHiveTable#output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#output_format BiglakeHiveTable#output_format}
   */
   readonly outputFormat?: string;
   /**
   * Key-value pairs for the storage descriptor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#parameters BiglakeHiveTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#parameters BiglakeHiveTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * Whether the table is stored as sub directories.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#stored_as_sub_dirs BiglakeHiveTable#stored_as_sub_dirs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#stored_as_sub_dirs BiglakeHiveTable#stored_as_sub_dirs}
   */
   readonly storedAsSubDirs?: boolean | cdktn.IResolvable;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#columns BiglakeHiveTable#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#columns BiglakeHiveTable#columns}
   */
   readonly columns: BiglakeHiveTableStorageDescriptorColumns[] | cdktn.IResolvable;
   /**
   * serde_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#serde_info BiglakeHiveTable#serde_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#serde_info BiglakeHiveTable#serde_info}
   */
   readonly serdeInfo?: BiglakeHiveTableStorageDescriptorSerdeInfo;
   /**
   * skewed_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#skewed_info BiglakeHiveTable#skewed_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#skewed_info BiglakeHiveTable#skewed_info}
   */
   readonly skewedInfo?: BiglakeHiveTableStorageDescriptorSkewedInfo;
   /**
   * sort_cols block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#sort_cols BiglakeHiveTable#sort_cols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#sort_cols BiglakeHiveTable#sort_cols}
   */
   readonly sortCols?: BiglakeHiveTableStorageDescriptorSortCols[] | cdktn.IResolvable;
 }
@@ -1770,15 +1770,15 @@ export class BiglakeHiveTableStorageDescriptorOutputReference extends cdktn.Comp
 }
 export interface BiglakeHiveTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#create BiglakeHiveTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#create BiglakeHiveTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#delete BiglakeHiveTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#delete BiglakeHiveTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#update BiglakeHiveTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#update BiglakeHiveTable#update}
   */
   readonly update?: string;
 }
@@ -1930,7 +1930,7 @@ export class BiglakeHiveTableTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table google_biglake_hive_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table google_biglake_hive_table}
 */
 export class BiglakeHiveTable extends cdktn.TerraformResource {
 
@@ -1946,7 +1946,7 @@ export class BiglakeHiveTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeHiveTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeHiveTable to import
-  * @param importFromId The id of the existing BiglakeHiveTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeHiveTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeHiveTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1958,7 +1958,7 @@ export class BiglakeHiveTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table google_biglake_hive_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table google_biglake_hive_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1969,7 +1969,7 @@ export class BiglakeHiveTable extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_hive_table',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

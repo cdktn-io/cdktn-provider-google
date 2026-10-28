@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,19 @@ export interface NetworkConnectivityTransportConfig extends cdktn.TerraformMetaA
   /**
   * List of IP Prefixes that will be advertised to the remote provider. Both IPv4 and IPv6 addresses are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#advertised_routes NetworkConnectivityTransport#advertised_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#advertised_routes NetworkConnectivityTransport#advertised_routes}
   */
   readonly advertisedRoutes?: string[];
   /**
+  * Controls whether resources proposed by the Transport are automatically accepted on behalf of the user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#auto_accept NetworkConnectivityTransport#auto_accept}
+  */
+  readonly autoAccept?: boolean | cdktn.IResolvable;
+  /**
   * Bandwidth of the Transport. This must be one of the supported bandwidths for the remote profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#bandwidth NetworkConnectivityTransport#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#bandwidth NetworkConnectivityTransport#bandwidth}
   */
   readonly bandwidth?: string;
   /**
@@ -33,17 +39,23 @@ export interface NetworkConnectivityTransportConfig extends cdktn.TerraformMetaA
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#deletion_policy NetworkConnectivityTransport#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#deletion_policy NetworkConnectivityTransport#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#description NetworkConnectivityTransport#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#description NetworkConnectivityTransport#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}
+  * The NCC Hub that the Transport should attach to. The hub must be in the same project as the Transport.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#hub NetworkConnectivityTransport#hub}
+  */
+  readonly hub?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#id NetworkConnectivityTransport#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,80 +67,86 @@ export interface NetworkConnectivityTransportConfig extends cdktn.TerraformMetaA
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#labels NetworkConnectivityTransport#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#labels NetworkConnectivityTransport#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * [Output only] The maximum transmission unit (MTU) of a packet that can be sent over this transport.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#mtu_limit NetworkConnectivityTransport#mtu_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#mtu_limit NetworkConnectivityTransport#mtu_limit}
   */
   readonly mtuLimit?: number;
   /**
   * Name of the resource, see google.aip.dev/122 for resource naming.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#name NetworkConnectivityTransport#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#name NetworkConnectivityTransport#name}
   */
   readonly name: string;
   /**
   * Resource URL of the Network that will be peered with this Transport. This field must be provided during resource creation and cannot be changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#network NetworkConnectivityTransport#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#network NetworkConnectivityTransport#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#project NetworkConnectivityTransport#project}
   */
   readonly project?: string;
   /**
   * Key used for establishing a connection with the remote transport. This key can only be provided if the profile supports an INPUT key flow and the resource is in the PENDING_KEY state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#provided_activation_key NetworkConnectivityTransport#provided_activation_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#provided_activation_key NetworkConnectivityTransport#provided_activation_key}
   */
   readonly providedActivationKey?: string;
   /**
+  * Controls whether a Routing VPC Spoke should be created and attached to the NCC Hub.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#psc_routing_enabled NetworkConnectivityTransport#psc_routing_enabled}
+  */
+  readonly pscRoutingEnabled?: boolean | cdktn.IResolvable;
+  /**
   * The region of this resource. This is required to construct the resource name, but is not sent to the API since the region is already contained in the parent field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#region NetworkConnectivityTransport#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#region NetworkConnectivityTransport#region}
   */
   readonly region: string;
   /**
   * The user supplied account id for the CSP associated with the remote profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#remote_account_id NetworkConnectivityTransport#remote_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#remote_account_id NetworkConnectivityTransport#remote_account_id}
   */
   readonly remoteAccountId?: string;
   /**
   * Resource URL of the remoteTransportProfile that this Transport is
   * connecting to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#remote_profile NetworkConnectivityTransport#remote_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#remote_profile NetworkConnectivityTransport#remote_profile}
   */
   readonly remoteProfile: string;
   /**
   * IP version stack for the established connectivity. Possible values: ["IPV4_IPV6", "IPV4_ONLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#stack_type NetworkConnectivityTransport#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#stack_type NetworkConnectivityTransport#stack_type}
   */
   readonly stackType?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#timeouts NetworkConnectivityTransport#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#timeouts NetworkConnectivityTransport#timeouts}
   */
   readonly timeouts?: NetworkConnectivityTransportTimeouts;
 }
 export interface NetworkConnectivityTransportTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#create NetworkConnectivityTransport#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#delete NetworkConnectivityTransport#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#update NetworkConnectivityTransport#update}
   */
   readonly update?: string;
 }
@@ -280,7 +298,7 @@ export class NetworkConnectivityTransportTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport google_network_connectivity_transport}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport google_network_connectivity_transport}
 */
 export class NetworkConnectivityTransport extends cdktn.TerraformResource {
 
@@ -296,7 +314,7 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkConnectivityTransport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkConnectivityTransport to import
-  * @param importFromId The id of the existing NetworkConnectivityTransport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkConnectivityTransport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkConnectivityTransport to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -308,7 +326,7 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_connectivity_transport google_network_connectivity_transport} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_connectivity_transport google_network_connectivity_transport} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -319,7 +337,7 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_connectivity_transport',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -331,9 +349,11 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._advertisedRoutes = config.advertisedRoutes;
+    this._autoAccept = config.autoAccept;
     this._bandwidth = config.bandwidth;
     this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
+    this._hub = config.hub;
     this._id = config.id;
     this._labels = config.labels;
     this._mtuLimit = config.mtuLimit;
@@ -341,6 +361,7 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
     this._network = config.network;
     this._project = config.project;
     this._providedActivationKey = config.providedActivationKey;
+    this._pscRoutingEnabled = config.pscRoutingEnabled;
     this._region = config.region;
     this._remoteAccountId = config.remoteAccountId;
     this._remoteProfile = config.remoteProfile;
@@ -366,6 +387,22 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get advertisedRoutesInput() {
     return this._advertisedRoutes;
+  }
+
+  // auto_accept - computed: false, optional: true, required: false
+  private _autoAccept?: boolean | cdktn.IResolvable; 
+  public get autoAccept() {
+    return this.getBooleanAttribute('auto_accept');
+  }
+  public set autoAccept(value: boolean | cdktn.IResolvable) {
+    this._autoAccept = value;
+  }
+  public resetAutoAccept() {
+    this._autoAccept = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoAcceptInput() {
+    return this._autoAccept;
   }
 
   // bandwidth - computed: true, optional: true, required: false
@@ -425,6 +462,22 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
   // generated_activation_key - computed: true, optional: false, required: false
   public get generatedActivationKey() {
     return this.getStringAttribute('generated_activation_key');
+  }
+
+  // hub - computed: false, optional: true, required: false
+  private _hub?: string; 
+  public get hub() {
+    return this.getStringAttribute('hub');
+  }
+  public set hub(value: string) {
+    this._hub = value;
+  }
+  public resetHub() {
+    this._hub = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hubInput() {
+    return this._hub;
   }
 
   // id - computed: true, optional: true, required: false
@@ -541,6 +594,22 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
     return this._providedActivationKey;
   }
 
+  // psc_routing_enabled - computed: false, optional: true, required: false
+  private _pscRoutingEnabled?: boolean | cdktn.IResolvable; 
+  public get pscRoutingEnabled() {
+    return this.getBooleanAttribute('psc_routing_enabled');
+  }
+  public set pscRoutingEnabled(value: boolean | cdktn.IResolvable) {
+    this._pscRoutingEnabled = value;
+  }
+  public resetPscRoutingEnabled() {
+    this._pscRoutingEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscRoutingEnabledInput() {
+    return this._pscRoutingEnabled;
+  }
+
   // region - computed: false, optional: false, required: true
   private _region?: string; 
   public get region() {
@@ -633,9 +702,11 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       advertised_routes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._advertisedRoutes),
+      auto_accept: cdktn.booleanToTerraform(this._autoAccept),
       bandwidth: cdktn.stringToTerraform(this._bandwidth),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
+      hub: cdktn.stringToTerraform(this._hub),
       id: cdktn.stringToTerraform(this._id),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       mtu_limit: cdktn.numberToTerraform(this._mtuLimit),
@@ -643,6 +714,7 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
       network: cdktn.stringToTerraform(this._network),
       project: cdktn.stringToTerraform(this._project),
       provided_activation_key: cdktn.stringToTerraform(this._providedActivationKey),
+      psc_routing_enabled: cdktn.booleanToTerraform(this._pscRoutingEnabled),
       region: cdktn.stringToTerraform(this._region),
       remote_account_id: cdktn.stringToTerraform(this._remoteAccountId),
       remote_profile: cdktn.stringToTerraform(this._remoteProfile),
@@ -659,6 +731,12 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "stringList",
       },
+      auto_accept: {
+        value: cdktn.booleanToHclTerraform(this._autoAccept),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       bandwidth: {
         value: cdktn.stringToHclTerraform(this._bandwidth),
         isBlock: false,
@@ -673,6 +751,12 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hub: {
+        value: cdktn.stringToHclTerraform(this._hub),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -718,6 +802,12 @@ export class NetworkConnectivityTransport extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      psc_routing_enabled: {
+        value: cdktn.booleanToHclTerraform(this._pscRoutingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       region: {
         value: cdktn.stringToHclTerraform(this._region),

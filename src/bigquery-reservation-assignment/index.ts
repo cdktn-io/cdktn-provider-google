@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface BigqueryReservationAssignmentConfig extends cdktn.TerraformMeta
   /**
   * The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#assignee BigqueryReservationAssignment#assignee}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#assignee BigqueryReservationAssignment#assignee}
   */
   readonly assignee: string;
   /**
@@ -27,11 +27,11 @@ export interface BigqueryReservationAssignmentConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#deletion_policy BigqueryReservationAssignment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#deletion_policy BigqueryReservationAssignment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +40,13 @@ export interface BigqueryReservationAssignmentConfig extends cdktn.TerraformMeta
   /**
   * Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#job_type BigqueryReservationAssignment#job_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#job_type BigqueryReservationAssignment#job_type}
   */
-  readonly jobType: string;
+  readonly jobType?: string;
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#location BigqueryReservationAssignment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#location BigqueryReservationAssignment#location}
   */
   readonly location?: string;
   /**
@@ -56,33 +56,163 @@ export interface BigqueryReservationAssignmentConfig extends cdktn.TerraformMeta
   * * 'principal://iam.googleapis.com/projects/PROJECT_NUMBER/locations/global/workloadIdentityPools/POOL_ID/subject/SUBJECT_ID' for workload identity pool identities.
   * * The special value 'unknown_or_deleted_user' represents principals which cannot be read from the user info service, for example deleted users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#principal BigqueryReservationAssignment#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#principal BigqueryReservationAssignment#principal}
   */
   readonly principal?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}
   */
   readonly project?: string;
   /**
   * The reservation for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#reservation BigqueryReservationAssignment#reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#reservation BigqueryReservationAssignment#reservation}
   */
   readonly reservation: string;
   /**
+  * scheduling_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#scheduling_policy BigqueryReservationAssignment#scheduling_policy}
+  */
+  readonly schedulingPolicy?: BigqueryReservationAssignmentSchedulingPolicy;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#timeouts BigqueryReservationAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#timeouts BigqueryReservationAssignment#timeouts}
   */
   readonly timeouts?: BigqueryReservationAssignmentTimeouts;
 }
+export interface BigqueryReservationAssignmentSchedulingPolicy {
+  /**
+  * If present and > 0, the reservation will attempt to limit the concurrency
+  * of jobs running for any particular project within it to the given value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#concurrency BigqueryReservationAssignment#concurrency}
+  */
+  readonly concurrency?: number;
+  /**
+  * If present and > 0, the reservation will attempt to limit the slot
+  * consumption of queries running for any particular project within it to
+  * the given value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#max_slots BigqueryReservationAssignment#max_slots}
+  */
+  readonly maxSlots?: number;
+}
+
+export function bigqueryReservationAssignmentSchedulingPolicyToTerraform(struct?: BigqueryReservationAssignmentSchedulingPolicyOutputReference | BigqueryReservationAssignmentSchedulingPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    concurrency: cdktn.numberToTerraform(struct!.concurrency),
+    max_slots: cdktn.numberToTerraform(struct!.maxSlots),
+  }
+}
+
+
+export function bigqueryReservationAssignmentSchedulingPolicyToHclTerraform(struct?: BigqueryReservationAssignmentSchedulingPolicyOutputReference | BigqueryReservationAssignmentSchedulingPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    concurrency: {
+      value: cdktn.numberToHclTerraform(struct!.concurrency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    max_slots: {
+      value: cdktn.numberToHclTerraform(struct!.maxSlots),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BigqueryReservationAssignmentSchedulingPolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BigqueryReservationAssignmentSchedulingPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._concurrency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.concurrency = this._concurrency;
+    }
+    if (this._maxSlots !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxSlots = this._maxSlots;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BigqueryReservationAssignmentSchedulingPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._concurrency = undefined;
+      this._maxSlots = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._concurrency = value.concurrency;
+      this._maxSlots = value.maxSlots;
+    }
+  }
+
+  // concurrency - computed: false, optional: true, required: false
+  private _concurrency?: number; 
+  public get concurrency() {
+    return this.getNumberAttribute('concurrency');
+  }
+  public set concurrency(value: number) {
+    this._concurrency = value;
+  }
+  public resetConcurrency() {
+    this._concurrency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get concurrencyInput() {
+    return this._concurrency;
+  }
+
+  // max_slots - computed: false, optional: true, required: false
+  private _maxSlots?: number; 
+  public get maxSlots() {
+    return this.getNumberAttribute('max_slots');
+  }
+  public set maxSlots(value: number) {
+    this._maxSlots = value;
+  }
+  public resetMaxSlots() {
+    this._maxSlots = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSlotsInput() {
+    return this._maxSlots;
+  }
+}
 export interface BigqueryReservationAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}
   */
   readonly delete?: string;
 }
@@ -205,7 +335,7 @@ export class BigqueryReservationAssignmentTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}
 */
 export class BigqueryReservationAssignment extends cdktn.TerraformResource {
 
@@ -221,7 +351,7 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BigqueryReservationAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryReservationAssignment to import
-  * @param importFromId The id of the existing BigqueryReservationAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BigqueryReservationAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryReservationAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -233,7 +363,7 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -244,7 +374,7 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
       terraformResourceType: 'google_bigquery_reservation_assignment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -263,6 +393,7 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
     this._principal = config.principal;
     this._project = config.project;
     this._reservation = config.reservation;
+    this._schedulingPolicy.internalValue = config.schedulingPolicy;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -315,13 +446,16 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
     return this._id;
   }
 
-  // job_type - computed: false, optional: false, required: true
+  // job_type - computed: false, optional: true, required: false
   private _jobType?: string; 
   public get jobType() {
     return this.getStringAttribute('job_type');
   }
   public set jobType(value: string) {
     this._jobType = value;
+  }
+  public resetJobType() {
+    this._jobType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get jobTypeInput() {
@@ -399,6 +533,22 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
     return this.getStringAttribute('state');
   }
 
+  // scheduling_policy - computed: false, optional: true, required: false
+  private _schedulingPolicy = new BigqueryReservationAssignmentSchedulingPolicyOutputReference(this, "scheduling_policy");
+  public get schedulingPolicy() {
+    return this._schedulingPolicy;
+  }
+  public putSchedulingPolicy(value: BigqueryReservationAssignmentSchedulingPolicy) {
+    this._schedulingPolicy.internalValue = value;
+  }
+  public resetSchedulingPolicy() {
+    this._schedulingPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingPolicyInput() {
+    return this._schedulingPolicy.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new BigqueryReservationAssignmentTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -429,6 +579,7 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
       principal: cdktn.stringToTerraform(this._principal),
       project: cdktn.stringToTerraform(this._project),
       reservation: cdktn.stringToTerraform(this._reservation),
+      scheduling_policy: bigqueryReservationAssignmentSchedulingPolicyToTerraform(this._schedulingPolicy.internalValue),
       timeouts: bigqueryReservationAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -482,6 +633,12 @@ export class BigqueryReservationAssignment extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      scheduling_policy: {
+        value: bigqueryReservationAssignmentSchedulingPolicyToHclTerraform(this._schedulingPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BigqueryReservationAssignmentSchedulingPolicyList",
       },
       timeouts: {
         value: bigqueryReservationAssignmentTimeoutsToHclTerraform(this._timeouts.internalValue),

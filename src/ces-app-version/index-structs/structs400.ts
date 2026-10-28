@@ -2049,11 +2049,11 @@ export class CesAppVersionSnapshotList extends cdktn.ComplexList {
 }
 export interface CesAppVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/ces_app_version#create CesAppVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/ces_app_version#create CesAppVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/ces_app_version#delete CesAppVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/ces_app_version#delete CesAppVersion#delete}
   */
   readonly delete?: string;
 }

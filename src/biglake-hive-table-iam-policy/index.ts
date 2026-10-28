@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface BiglakeHiveTableIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#catalog BiglakeHiveTableIamPolicy#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#catalog BiglakeHiveTableIamPolicy#catalog}
   */
   readonly catalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#database BiglakeHiveTableIamPolicy#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#database BiglakeHiveTableIamPolicy#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#id BiglakeHiveTableIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#id BiglakeHiveTableIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#name BiglakeHiveTableIamPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#name BiglakeHiveTableIamPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#policy_data BiglakeHiveTableIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#policy_data BiglakeHiveTableIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#project BiglakeHiveTableIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#project BiglakeHiveTableIamPolicy#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy google_biglake_hive_table_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy google_biglake_hive_table_iam_policy}
 */
 export class BiglakeHiveTableIamPolicy extends cdktn.TerraformResource {
 
@@ -58,7 +58,7 @@ export class BiglakeHiveTableIamPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeHiveTableIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeHiveTableIamPolicy to import
-  * @param importFromId The id of the existing BiglakeHiveTableIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeHiveTableIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeHiveTableIamPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -70,7 +70,7 @@ export class BiglakeHiveTableIamPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_policy google_biglake_hive_table_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_table_iam_policy google_biglake_hive_table_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,7 @@ export class BiglakeHiveTableIamPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_hive_table_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

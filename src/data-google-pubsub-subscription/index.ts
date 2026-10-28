@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription
+// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGooglePubsubSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription#id DataGooglePubsubSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription#id DataGooglePubsubSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,11 +22,11 @@ export interface DataGooglePubsubSubscriptionConfig extends cdktn.TerraformMetaA
   /**
   * Name of the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription#name DataGooglePubsubSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription#name DataGooglePubsubSubscription#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription#project DataGooglePubsubSubscription#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription#project DataGooglePubsubSubscription#project}
   */
   readonly project?: string;
 }
@@ -128,6 +128,339 @@ export class DataGooglePubsubSubscriptionBigqueryConfigList extends cdktn.Comple
   */
   public get(index: number): DataGooglePubsubSubscriptionBigqueryConfigOutputReference {
     return new DataGooglePubsubSubscriptionBigqueryConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKey {
+}
+
+export function dataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyToTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKey): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyToHclTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKey): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // delimiter - computed: true, optional: false, required: false
+  public get delimiter() {
+    return this.getStringAttribute('delimiter');
+  }
+
+  // key_fields - computed: true, optional: false, required: false
+  public get keyFields() {
+    return this.getListAttribute('key_fields');
+  }
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyOutputReference {
+    return new DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchema {
+}
+
+export function dataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaToTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchema): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaToHclTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchema): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchema | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchema | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaOutputReference {
+    return new DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMapping {
+}
+
+export function dataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingToTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMapping): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingToHclTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMapping): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMapping | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMapping | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // delimited_key - computed: true, optional: false, required: false
+  private _delimitedKey = new DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKeyList(this, "delimited_key", false);
+  public get delimitedKey() {
+    return this._delimitedKey;
+  }
+
+  // row_key_schema - computed: true, optional: false, required: false
+  private _rowKeySchema = new DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchemaList(this, "row_key_schema", false);
+  public get rowKeySchema() {
+    return this._rowKeySchema;
+  }
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingOutputReference {
+    return new DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGooglePubsubSubscriptionBigtableConfig {
+}
+
+export function dataGooglePubsubSubscriptionBigtableConfigToTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGooglePubsubSubscriptionBigtableConfigToHclTerraform(struct?: DataGooglePubsubSubscriptionBigtableConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGooglePubsubSubscriptionBigtableConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGooglePubsubSubscriptionBigtableConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // app_profile_id - computed: true, optional: false, required: false
+  public get appProfileId() {
+    return this.getStringAttribute('app_profile_id');
+  }
+
+  // column_family_mapping - computed: true, optional: false, required: false
+  private _columnFamilyMapping = new DataGooglePubsubSubscriptionBigtableConfigColumnFamilyMappingList(this, "column_family_mapping", false);
+  public get columnFamilyMapping() {
+    return this._columnFamilyMapping;
+  }
+
+  // service_account_email - computed: true, optional: false, required: false
+  public get serviceAccountEmail() {
+    return this.getStringAttribute('service_account_email');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // table - computed: true, optional: false, required: false
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+
+  // write_metadata - computed: true, optional: false, required: false
+  public get writeMetadata() {
+    return this.getBooleanAttribute('write_metadata');
+  }
+}
+
+export class DataGooglePubsubSubscriptionBigtableConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGooglePubsubSubscriptionBigtableConfigOutputReference {
+    return new DataGooglePubsubSubscriptionBigtableConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataGooglePubsubSubscriptionCloudStorageConfigAvroConfig {
@@ -1226,7 +1559,7 @@ export class DataGooglePubsubSubscriptionRetryPolicyList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription google_pubsub_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription google_pubsub_subscription}
 */
 export class DataGooglePubsubSubscription extends cdktn.TerraformDataSource {
 
@@ -1242,7 +1575,7 @@ export class DataGooglePubsubSubscription extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGooglePubsubSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePubsubSubscription to import
-  * @param importFromId The id of the existing DataGooglePubsubSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGooglePubsubSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePubsubSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1254,7 +1587,7 @@ export class DataGooglePubsubSubscription extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/pubsub_subscription google_pubsub_subscription} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_subscription google_pubsub_subscription} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1265,7 +1598,7 @@ export class DataGooglePubsubSubscription extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_pubsub_subscription',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.9.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -1294,6 +1627,12 @@ export class DataGooglePubsubSubscription extends cdktn.TerraformDataSource {
   private _bigqueryConfig = new DataGooglePubsubSubscriptionBigqueryConfigList(this, "bigquery_config", false);
   public get bigqueryConfig() {
     return this._bigqueryConfig;
+  }
+
+  // bigtable_config - computed: true, optional: false, required: false
+  private _bigtableConfig = new DataGooglePubsubSubscriptionBigtableConfigList(this, "bigtable_config", false);
+  public get bigtableConfig() {
+    return this._bigtableConfig;
   }
 
   // cloud_storage_config - computed: true, optional: false, required: false

@@ -1,3 +1,3 @@
 # `data_google_vmwareengine_datastore`
 
-Refer to the Terraform Registry for docs: [`data_google_vmwareengine_datastore`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/vmwareengine_datastore).
+Refer to the Terraform Registry for docs: [`data_google_vmwareengine_datastore`](https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/vmwareengine_datastore).
