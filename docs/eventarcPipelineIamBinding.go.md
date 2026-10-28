@@ -4,12 +4,12 @@
 
 ### EventarcPipelineIamBinding <a name="EventarcPipelineIamBinding" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding google_eventarc_pipeline_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding google_eventarc_pipeline_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 eventarcpipelineiambinding.NewEventarcPipelineIamBinding(scope Construct, id *string, config EventarcPipelineIamBindingConfig) EventarcPipelineIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 eventarcpipelineiambinding.EventarcPipelineIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 eventarcpipelineiambinding.EventarcPipelineIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ eventarcpipelineiambinding.EventarcPipelineIamBinding_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 eventarcpipelineiambinding.EventarcPipelineIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ eventarcpipelineiambinding.EventarcPipelineIamBinding_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 eventarcpipelineiambinding.EventarcPipelineIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the EventarcPipelineIamBinding
 
 The id of the existing EventarcPipelineIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 &eventarcpipelineiambinding.EventarcPipelineIamBindingCondition {
 	Expression: *string,
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipeline
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#expression EventarcPipelineIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#title EventarcPipelineIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#description EventarcPipelineIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#expression EventarcPipelineIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#title EventarcPipelineIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#description EventarcPipelineIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#expression EventarcPipelineIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#expression EventarcPipelineIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#title EventarcPipelineIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#title EventarcPipelineIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#description EventarcPipelineIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#description EventarcPipelineIamBinding#description}.
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 &eventarcpipelineiambinding.EventarcPipelineIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipeline
 	Members: *[]*string,
 	PipelineId: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v22.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipeline
 | <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#members EventarcPipelineIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#pipeline_id EventarcPipelineIamBinding#pipeline_id}. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#role EventarcPipelineIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#members EventarcPipelineIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#pipeline_id EventarcPipelineIamBinding#pipeline_id}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#role EventarcPipelineIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingCondition">EventarcPipelineIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#id EventarcPipelineIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#location EventarcPipelineIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#project EventarcPipelineIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#id EventarcPipelineIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#location EventarcPipelineIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#project EventarcPipelineIamBinding#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#members EventarcPipelineIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#members EventarcPipelineIamBinding#members}.
 
 ---
 
@@ -1086,7 +1086,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#pipeline_id EventarcPipelineIamBinding#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#pipeline_id EventarcPipelineIamBinding#pipeline_id}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#role EventarcPipelineIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#role EventarcPipelineIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition EventarcPipelineIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#condition EventarcPipelineIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#condition EventarcPipelineIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#id EventarcPipelineIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#id EventarcPipelineIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#location EventarcPipelineIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#location EventarcPipelineIamBinding#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/eventarc_pipeline_iam_binding#project EventarcPipelineIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_pipeline_iam_binding#project EventarcPipelineIamBinding#project}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcPipelineIamBinding.EventarcPipelineIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/eventarcpipelineiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcpipelineiambinding"
 
 eventarcpipelineiambinding.NewEventarcPipelineIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventarcPipelineIamBindingConditionOutputReference
 ```

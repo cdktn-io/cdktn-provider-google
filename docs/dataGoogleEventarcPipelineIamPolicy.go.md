@@ -4,12 +4,12 @@
 
 ### DataGoogleEventarcPipelineIamPolicy <a name="DataGoogleEventarcPipelineIamPolicy" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy google_eventarc_pipeline_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy google_eventarc_pipeline_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventarcpipelineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleeventarcpipelineiampolicy"
 
 datagoogleeventarcpipelineiampolicy.NewDataGoogleEventarcPipelineIamPolicy(scope Construct, id *string, config DataGoogleEventarcPipelineIamPolicyConfig) DataGoogleEventarcPipelineIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventarcpipelineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleeventarcpipelineiampolicy"
 
 datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventarcpipelineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleeventarcpipelineiampolicy"
 
 datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicy_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventarcpipelineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleeventarcpipelineiampolicy"
 
 datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicy_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventarcpipelineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleeventarcpipelineiampolicy"
 
 datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleEventarcPipeline
 
 The id of the existing DataGoogleEventarcPipelineIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventarcpipelineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagoogleeventarcpipelineiampolicy"
 
 &datagoogleeventarcpipelineiampolicy.DataGoogleEventarcPipelineIamPolicyConfig {
 	Connection: interface{},
@@ -724,10 +724,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleeventa
 | <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#pipeline_id DataGoogleEventarcPipelineIamPolicy#pipeline_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#id DataGoogleEventarcPipelineIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#location DataGoogleEventarcPipelineIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#project DataGoogleEventarcPipelineIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.pipelineId">PipelineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#pipeline_id DataGoogleEventarcPipelineIamPolicy#pipeline_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#id DataGoogleEventarcPipelineIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#location DataGoogleEventarcPipelineIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleEventarcPipelineIamPolicy.DataGoogleEventarcPipelineIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#project DataGoogleEventarcPipelineIamPolicy#project}. |
 
 ---
 
@@ -809,7 +809,7 @@ PipelineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#pipeline_id DataGoogleEventarcPipelineIamPolicy#pipeline_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#pipeline_id DataGoogleEventarcPipelineIamPolicy#pipeline_id}.
 
 ---
 
@@ -821,7 +821,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#id DataGoogleEventarcPipelineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#id DataGoogleEventarcPipelineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#location DataGoogleEventarcPipelineIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#location DataGoogleEventarcPipelineIamPolicy#location}.
 
 ---
 
@@ -848,7 +848,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/eventarc_pipeline_iam_policy#project DataGoogleEventarcPipelineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/eventarc_pipeline_iam_policy#project DataGoogleEventarcPipelineIamPolicy#project}.
 
 ---
 

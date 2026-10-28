@@ -4,7 +4,7 @@
 
 ### BiglakeHiveCatalogIamMember <a name="BiglakeHiveCatalogIamMember" id="@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member google_biglake_hive_catalog_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member google_biglake_hive_catalog_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BiglakeHiveCatalogIamMembe
 
 The id of the existing BiglakeHiveCatalogIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ new BiglakeHiveCatalogIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#expression BiglakeHiveCatalogIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#title BiglakeHiveCatalogIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#description BiglakeHiveCatalogIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#expression BiglakeHiveCatalogIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#title BiglakeHiveCatalogIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#description BiglakeHiveCatalogIamMember#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#expression BiglakeHiveCatalogIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#expression BiglakeHiveCatalogIamMember#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#title BiglakeHiveCatalogIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#title BiglakeHiveCatalogIamMember#title}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#description BiglakeHiveCatalogIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#description BiglakeHiveCatalogIamMember#description}.
 
 ---
 
@@ -956,12 +956,12 @@ new BiglakeHiveCatalogIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#member BiglakeHiveCatalogIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#name BiglakeHiveCatalogIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#role BiglakeHiveCatalogIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#member BiglakeHiveCatalogIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#name BiglakeHiveCatalogIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#role BiglakeHiveCatalogIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberCondition">BiglakeHiveCatalogIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#id BiglakeHiveCatalogIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#project BiglakeHiveCatalogIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#id BiglakeHiveCatalogIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamMember.BiglakeHiveCatalogIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#project BiglakeHiveCatalogIamMember#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#member BiglakeHiveCatalogIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#member BiglakeHiveCatalogIamMember#member}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#name BiglakeHiveCatalogIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#name BiglakeHiveCatalogIamMember#name}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#role BiglakeHiveCatalogIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#role BiglakeHiveCatalogIamMember#role}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public BiglakeHiveCatalogIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#condition BiglakeHiveCatalogIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#condition BiglakeHiveCatalogIamMember#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#id BiglakeHiveCatalogIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#id BiglakeHiveCatalogIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_member#project BiglakeHiveCatalogIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/biglake_hive_catalog_iam_member#project BiglakeHiveCatalogIamMember#project}.
 
 ---
 

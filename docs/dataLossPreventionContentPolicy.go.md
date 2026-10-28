@@ -4,12 +4,12 @@
 
 ### DataLossPreventionContentPolicy <a name="DataLossPreventionContentPolicy" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy google_data_loss_prevention_content_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy google_data_loss_prevention_content_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicy(scope Construct, id *string, config DataLossPreventionContentPolicyConfig) DataLossPreventionContentPolicy
 ```
@@ -574,7 +574,7 @@ func ResetUnsupportedFileType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.DataLossPreventionContentPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.DataLossPreventionContentPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ datalosspreventioncontentpolicy.DataLossPreventionContentPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.DataLossPreventionContentPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ datalosspreventioncontentpolicy.DataLossPreventionContentPolicy_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.DataLossPreventionContentPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ The construct id used in the generated config for the DataLossPreventionContentP
 
 The id of the existing DataLossPreventionContentPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1171,7 +1171,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyConfig {
 	Connection: interface{},
@@ -1183,16 +1183,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 	Provisioners: *[]interface{},
 	Parent: *string,
 	Rules: interface{},
-	DefaultAction: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyDefaultAction,
+	DefaultAction: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyDefaultAction,
 	DeletionPolicy: *string,
 	DisplayName: *string,
-	FailedToScanSupportedFileType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyFailedToScanSupportedFileType,
+	FailedToScanSupportedFileType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyFailedToScanSupportedFileType,
 	Id: *string,
-	InputTooLarge: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInputTooLarge,
-	InspectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfig,
+	InputTooLarge: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInputTooLarge,
+	InspectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfig,
 	LoggingConfigs: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts,
-	UnsupportedFileType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyUnsupportedFileType,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts,
+	UnsupportedFileType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyUnsupportedFileType,
 }
 ```
 
@@ -1213,7 +1213,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Display name (max 63 chars). |
 | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.failedToScanSupportedFileType">FailedToScanSupportedFileType</a></code> | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyFailedToScanSupportedFileType">DataLossPreventionContentPolicyFailedToScanSupportedFileType</a></code> | failed_to_scan_supported_file_type block. |
-| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#id DataLossPreventionContentPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#id DataLossPreventionContentPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.inputTooLarge">InputTooLarge</a></code> | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInputTooLarge">DataLossPreventionContentPolicyInputTooLarge</a></code> | input_too_large block. |
 | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.inspectConfig">InspectConfig</a></code> | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfig">DataLossPreventionContentPolicyInspectConfig</a></code> | inspect_config block. |
 | <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyConfig.property.loggingConfigs">LoggingConfigs</a></code> | <code>interface{}</code> | logging_configs block. |
@@ -1304,7 +1304,7 @@ The parent of the content policy in any of the following formats:.
 
 * 'projects/{{project}}/locations/{{location}}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#parent DataLossPreventionContentPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#parent DataLossPreventionContentPolicy#parent}
 
 ---
 
@@ -1318,7 +1318,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#rules DataLossPreventionContentPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#rules DataLossPreventionContentPolicy#rules}
 
 ---
 
@@ -1332,7 +1332,7 @@ DefaultAction DataLossPreventionContentPolicyDefaultAction
 
 default_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#default_action DataLossPreventionContentPolicy#default_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#default_action DataLossPreventionContentPolicy#default_action}
 
 ---
 
@@ -1353,7 +1353,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#deletion_policy DataLossPreventionContentPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#deletion_policy DataLossPreventionContentPolicy#deletion_policy}
 
 ---
 
@@ -1367,7 +1367,7 @@ DisplayName *string
 
 Display name (max 63 chars).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#display_name DataLossPreventionContentPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#display_name DataLossPreventionContentPolicy#display_name}
 
 ---
 
@@ -1381,7 +1381,7 @@ FailedToScanSupportedFileType DataLossPreventionContentPolicyFailedToScanSupport
 
 failed_to_scan_supported_file_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#failed_to_scan_supported_file_type DataLossPreventionContentPolicy#failed_to_scan_supported_file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#failed_to_scan_supported_file_type DataLossPreventionContentPolicy#failed_to_scan_supported_file_type}
 
 ---
 
@@ -1393,7 +1393,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#id DataLossPreventionContentPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#id DataLossPreventionContentPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1410,7 +1410,7 @@ InputTooLarge DataLossPreventionContentPolicyInputTooLarge
 
 input_too_large block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#input_too_large DataLossPreventionContentPolicy#input_too_large}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#input_too_large DataLossPreventionContentPolicy#input_too_large}
 
 ---
 
@@ -1424,7 +1424,7 @@ InspectConfig DataLossPreventionContentPolicyInspectConfig
 
 inspect_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#inspect_config DataLossPreventionContentPolicy#inspect_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#inspect_config DataLossPreventionContentPolicy#inspect_config}
 
 ---
 
@@ -1438,7 +1438,7 @@ LoggingConfigs interface{}
 
 logging_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#logging_configs DataLossPreventionContentPolicy#logging_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#logging_configs DataLossPreventionContentPolicy#logging_configs}
 
 ---
 
@@ -1452,7 +1452,7 @@ Timeouts DataLossPreventionContentPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#timeouts DataLossPreventionContentPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#timeouts DataLossPreventionContentPolicy#timeouts}
 
 ---
 
@@ -1466,7 +1466,7 @@ UnsupportedFileType DataLossPreventionContentPolicyUnsupportedFileType
 
 unsupported_file_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#unsupported_file_type DataLossPreventionContentPolicy#unsupported_file_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#unsupported_file_type DataLossPreventionContentPolicy#unsupported_file_type}
 
 ---
 
@@ -1475,7 +1475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyDefaultAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyDefaultAction {
 	ReturnVerdict: *string,
@@ -1500,7 +1500,7 @@ ReturnVerdict *string
 
 If set, the verdict will be returned to the user. Possible values: ["ALLOW", "BLOCK"] Possible values: ["ALLOW", "BLOCK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
 
 ---
 
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyErrors {
 
@@ -1522,7 +1522,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyErrorsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyErrorsDetails {
 
@@ -1535,7 +1535,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyFailedToScanSupportedFileType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyFailedToScanSupportedFileType {
 	ReturnVerdict: *string,
@@ -1560,7 +1560,7 @@ ReturnVerdict *string
 
 If set, the verdict will be returned to the user. Possible values: ["ALLOW", "BLOCK"] Possible values: ["ALLOW", "BLOCK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
 
 ---
 
@@ -1569,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInputTooLarge.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInputTooLarge {
 	ReturnVerdict: *string,
@@ -1594,7 +1594,7 @@ ReturnVerdict *string
 
 If set, the verdict will be returned to the user. Possible values: ["ALLOW", "BLOCK"] Possible values: ["ALLOW", "BLOCK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
 
 ---
 
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfig {
 	ContentOptions: *[]*string,
@@ -1611,7 +1611,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 	ExcludeInfoTypes: interface{},
 	IncludeQuote: interface{},
 	InfoTypes: interface{},
-	Limits: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimits,
+	Limits: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimits,
 	MinLikelihood: *string,
 	MinLikelihoodPerInfoType: interface{},
 	RuleSet: interface{},
@@ -1646,7 +1646,7 @@ List of options defining data content to scan.
 
 If empty, text, images, and other content will be included. Possible values: ["CONTENT_TEXT", "CONTENT_IMAGE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#content_options DataLossPreventionContentPolicy#content_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#content_options DataLossPreventionContentPolicy#content_options}
 
 ---
 
@@ -1660,7 +1660,7 @@ CustomInfoTypes interface{}
 
 custom_info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#custom_info_types DataLossPreventionContentPolicy#custom_info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#custom_info_types DataLossPreventionContentPolicy#custom_info_types}
 
 ---
 
@@ -1674,7 +1674,7 @@ ExcludeInfoTypes interface{}
 
 When true, excludes type information of the findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#exclude_info_types DataLossPreventionContentPolicy#exclude_info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#exclude_info_types DataLossPreventionContentPolicy#exclude_info_types}
 
 ---
 
@@ -1688,7 +1688,7 @@ IncludeQuote interface{}
 
 When true, a contextual quote from the data that triggered a finding is included in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#include_quote DataLossPreventionContentPolicy#include_quote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#include_quote DataLossPreventionContentPolicy#include_quote}
 
 ---
 
@@ -1702,7 +1702,7 @@ InfoTypes interface{}
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -1716,7 +1716,7 @@ Limits DataLossPreventionContentPolicyInspectConfigLimits
 
 limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#limits DataLossPreventionContentPolicy#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#limits DataLossPreventionContentPolicy#limits}
 
 ---
 
@@ -1732,7 +1732,7 @@ Only returns findings equal or above this threshold.
 
 See https://cloud.google.com/dlp/docs/likelihood for more info Default value: "POSSIBLE" Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
 
 ---
 
@@ -1746,7 +1746,7 @@ MinLikelihoodPerInfoType interface{}
 
 min_likelihood_per_info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#min_likelihood_per_info_type DataLossPreventionContentPolicy#min_likelihood_per_info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#min_likelihood_per_info_type DataLossPreventionContentPolicy#min_likelihood_per_info_type}
 
 ---
 
@@ -1760,7 +1760,7 @@ RuleSet interface{}
 
 rule_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#rule_set DataLossPreventionContentPolicy#rule_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#rule_set DataLossPreventionContentPolicy#rule_set}
 
 ---
 
@@ -1769,20 +1769,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypes {
-	InfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoType,
+	InfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoType,
 	DetectionRules: interface{},
-	Dictionary: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionary,
+	Dictionary: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionary,
 	ExclusionType: *string,
-	FileLabelInfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoType,
+	FileLabelInfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoType,
 	Likelihood: *string,
-	MetadataKeyValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpression,
-	Regex: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegex,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScore,
-	StoredType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredType,
-	SurrogateType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateType,
+	MetadataKeyValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpression,
+	Regex: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegex,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScore,
+	StoredType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredType,
+	SurrogateType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateType,
 }
 ```
 
@@ -1814,7 +1814,7 @@ InfoType DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoType
 
 info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_type DataLossPreventionContentPolicy#info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_type DataLossPreventionContentPolicy#info_type}
 
 ---
 
@@ -1828,7 +1828,7 @@ DetectionRules interface{}
 
 detection_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#detection_rules DataLossPreventionContentPolicy#detection_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#detection_rules DataLossPreventionContentPolicy#detection_rules}
 
 ---
 
@@ -1842,7 +1842,7 @@ Dictionary DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionary
 
 dictionary block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#dictionary DataLossPreventionContentPolicy#dictionary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#dictionary DataLossPreventionContentPolicy#dictionary}
 
 ---
 
@@ -1858,7 +1858,7 @@ If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to be re
 
 It still can be used for rules matching. Possible values: ["EXCLUSION_TYPE_EXCLUDE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#exclusion_type DataLossPreventionContentPolicy#exclusion_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#exclusion_type DataLossPreventionContentPolicy#exclusion_type}
 
 ---
 
@@ -1872,7 +1872,7 @@ FileLabelInfoType DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFil
 
 file_label_info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#file_label_info_type DataLossPreventionContentPolicy#file_label_info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#file_label_info_type DataLossPreventionContentPolicy#file_label_info_type}
 
 ---
 
@@ -1889,7 +1889,7 @@ Likelihood to return for this CustomInfoType.
 This base value can be altered by a detection rule if the finding meets the criteria
 specified by the rule. Default value: "VERY_LIKELY" Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#likelihood DataLossPreventionContentPolicy#likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#likelihood DataLossPreventionContentPolicy#likelihood}
 
 ---
 
@@ -1903,7 +1903,7 @@ MetadataKeyValueExpression DataLossPreventionContentPolicyInspectConfigCustomInf
 
 metadata_key_value_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#metadata_key_value_expression DataLossPreventionContentPolicy#metadata_key_value_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#metadata_key_value_expression DataLossPreventionContentPolicy#metadata_key_value_expression}
 
 ---
 
@@ -1917,7 +1917,7 @@ Regex DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegex
 
 regex block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#regex DataLossPreventionContentPolicy#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#regex DataLossPreventionContentPolicy#regex}
 
 ---
 
@@ -1931,7 +1931,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSens
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -1945,7 +1945,7 @@ StoredType DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredType
 
 stored_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#stored_type DataLossPreventionContentPolicy#stored_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#stored_type DataLossPreventionContentPolicy#stored_type}
 
 ---
 
@@ -1959,7 +1959,7 @@ SurrogateType DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurroga
 
 surrogate_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#surrogate_type DataLossPreventionContentPolicy#surrogate_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#surrogate_type DataLossPreventionContentPolicy#surrogate_type}
 
 ---
 
@@ -1968,10 +1968,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRules {
-	HotwordRule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRule,
+	HotwordRule: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRule,
 }
 ```
 
@@ -1993,7 +1993,7 @@ HotwordRule DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetection
 
 hotword_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#hotword_rule DataLossPreventionContentPolicy#hotword_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#hotword_rule DataLossPreventionContentPolicy#hotword_rule}
 
 ---
 
@@ -2002,12 +2002,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRule {
-	HotwordRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegex,
-	LikelihoodAdjustment: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustment,
-	Proximity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximity,
+	HotwordRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegex,
+	LikelihoodAdjustment: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustment,
+	Proximity: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximity,
 }
 ```
 
@@ -2031,7 +2031,7 @@ HotwordRegex DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectio
 
 hotword_regex block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#hotword_regex DataLossPreventionContentPolicy#hotword_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#hotword_regex DataLossPreventionContentPolicy#hotword_regex}
 
 ---
 
@@ -2045,7 +2045,7 @@ LikelihoodAdjustment DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 
 likelihood_adjustment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#likelihood_adjustment DataLossPreventionContentPolicy#likelihood_adjustment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#likelihood_adjustment DataLossPreventionContentPolicy#likelihood_adjustment}
 
 ---
 
@@ -2059,7 +2059,7 @@ Proximity DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRu
 
 proximity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#proximity DataLossPreventionContentPolicy#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#proximity DataLossPreventionContentPolicy#proximity}
 
 ---
 
@@ -2068,7 +2068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegex {
 	Pattern: *string,
@@ -2095,7 +2095,7 @@ Pattern *string
 
 Pattern defining the regular expression. Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
 
 ---
 
@@ -2112,7 +2112,7 @@ The index of the submatch to extract as findings.
 When not specified,
 the entire match is returned. No more than 3 may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
 
 ---
 
@@ -2121,7 +2121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustment {
 	FixedLikelihood: *string,
@@ -2150,7 +2150,7 @@ Set the likelihood of a finding to a fixed value.
 
 Either this or relative_likelihood can be set. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#fixed_likelihood DataLossPreventionContentPolicy#fixed_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#fixed_likelihood DataLossPreventionContentPolicy#fixed_likelihood}
 
 ---
 
@@ -2164,7 +2164,7 @@ RelativeLikelihood *f64
 
 Increase or decrease the likelihood by the specified number of levels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#relative_likelihood DataLossPreventionContentPolicy#relative_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#relative_likelihood DataLossPreventionContentPolicy#relative_likelihood}
 
 ---
 
@@ -2173,7 +2173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximity {
 	WindowAfter: *f64,
@@ -2200,7 +2200,7 @@ WindowAfter *f64
 
 Number of characters after the finding to consider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#window_after DataLossPreventionContentPolicy#window_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#window_after DataLossPreventionContentPolicy#window_after}
 
 ---
 
@@ -2214,7 +2214,7 @@ WindowBefore *f64
 
 Number of characters before the finding to consider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#window_before DataLossPreventionContentPolicy#window_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#window_before DataLossPreventionContentPolicy#window_before}
 
 ---
 
@@ -2223,11 +2223,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionary {
-	CloudStoragePath: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePath,
-	WordList: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStruct,
+	CloudStoragePath: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePath,
+	WordList: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStruct,
 }
 ```
 
@@ -2250,7 +2250,7 @@ CloudStoragePath DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDict
 
 cloud_storage_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#cloud_storage_path DataLossPreventionContentPolicy#cloud_storage_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#cloud_storage_path DataLossPreventionContentPolicy#cloud_storage_path}
 
 ---
 
@@ -2264,7 +2264,7 @@ WordList DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWo
 
 word_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#word_list DataLossPreventionContentPolicy#word_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#word_list DataLossPreventionContentPolicy#word_list}
 
 ---
 
@@ -2273,7 +2273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePath {
 	Path: *string,
@@ -2298,7 +2298,7 @@ Path *string
 
 A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#path DataLossPreventionContentPolicy#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#path DataLossPreventionContentPolicy#path}
 
 ---
 
@@ -2307,7 +2307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStruct {
 	Words: *[]*string,
@@ -2335,7 +2335,7 @@ Words or phrases defining the dictionary.
 The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#words DataLossPreventionContentPolicy#words}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#words DataLossPreventionContentPolicy#words}
 
 ---
 
@@ -2344,11 +2344,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoType {
-	GoogleDriveLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabel,
-	SensitivityLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabel,
+	GoogleDriveLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabel,
+	SensitivityLabel: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabel,
 }
 ```
 
@@ -2371,7 +2371,7 @@ GoogleDriveLabel DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFile
 
 google_drive_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#google_drive_label DataLossPreventionContentPolicy#google_drive_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#google_drive_label DataLossPreventionContentPolicy#google_drive_label}
 
 ---
 
@@ -2385,7 +2385,7 @@ SensitivityLabel DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFile
 
 sensitivity_label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_label DataLossPreventionContentPolicy#sensitivity_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_label DataLossPreventionContentPolicy#sensitivity_label}
 
 ---
 
@@ -2394,7 +2394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabel {
 	LabelId: *string,
@@ -2421,7 +2421,7 @@ LabelId *string
 
 The label ID of the Google Drive label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#label_id DataLossPreventionContentPolicy#label_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#label_id DataLossPreventionContentPolicy#label_id}
 
 ---
 
@@ -2435,7 +2435,7 @@ LabelFieldsToMatch interface{}
 
 label_fields_to_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#label_fields_to_match DataLossPreventionContentPolicy#label_fields_to_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#label_fields_to_match DataLossPreventionContentPolicy#label_fields_to_match}
 
 ---
 
@@ -2444,7 +2444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatch {
 	Id: *string,
@@ -2471,7 +2471,7 @@ Id *string
 
 The identifier of the Label Field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#id DataLossPreventionContentPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#id DataLossPreventionContentPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2488,7 +2488,7 @@ Value *string
 
 The value of the Label Field to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#value DataLossPreventionContentPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#value DataLossPreventionContentPolicy#value}
 
 ---
 
@@ -2497,7 +2497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabel {
 	Guid: *string,
@@ -2522,7 +2522,7 @@ Guid *string
 
 The GUID of the sensitivity label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#guid DataLossPreventionContentPolicy#guid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#guid DataLossPreventionContentPolicy#guid}
 
 ---
 
@@ -2531,11 +2531,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoType {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScore,
 	Version: *string,
 }
 ```
@@ -2563,7 +2563,7 @@ Name of the information type.
 Either a name of your choosing when creating a CustomInfoType, or one of the names
 listed at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -2577,7 +2577,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfo
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -2591,7 +2591,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -2600,7 +2600,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScore {
 	Score: *string,
@@ -2625,7 +2625,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -2634,7 +2634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpression {
 	KeyRegex: *string,
@@ -2661,7 +2661,7 @@ KeyRegex *string
 
 The regular expression for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#key_regex DataLossPreventionContentPolicy#key_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#key_regex DataLossPreventionContentPolicy#key_regex}
 
 ---
 
@@ -2675,7 +2675,7 @@ ValueRegex *string
 
 The regular expression for the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#value_regex DataLossPreventionContentPolicy#value_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#value_regex DataLossPreventionContentPolicy#value_regex}
 
 ---
 
@@ -2684,7 +2684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegex {
 	Pattern: *string,
@@ -2711,7 +2711,7 @@ Pattern *string
 
 Pattern defining the regular expression. Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
 
 ---
 
@@ -2727,7 +2727,7 @@ The index of the submatch to extract as findings.
 
 When not specified, the entire match is returned. No more than 3 may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
 
 ---
 
@@ -2736,7 +2736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScore {
 	Score: *string,
@@ -2761,7 +2761,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -2770,7 +2770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredType {
 	Name: *string,
@@ -2795,7 +2795,7 @@ Name *string
 
 Resource name of the requested StoredInfoType, for example 'organizations/433245324/storedInfoTypes/432452342' or 'projects/project-id/storedInfoTypes/432452342'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateType {
 
@@ -2817,11 +2817,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigInfoTypes {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScore,
 	Version: *string,
 }
 ```
@@ -2849,7 +2849,7 @@ Name of the information type.
 Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -2863,7 +2863,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivit
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -2877,7 +2877,7 @@ Version *string
 
 Version of the information type to use. By default, the version is set to stable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -2886,7 +2886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScore {
 	Score: *string,
@@ -2911,7 +2911,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -2920,7 +2920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigLimits {
 	MaxFindingsPerItem: *f64,
@@ -2949,7 +2949,7 @@ MaxFindingsPerItem *f64
 
 Max number of findings that will be returned for each item scanned. The maximum returned is 2000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#max_findings_per_item DataLossPreventionContentPolicy#max_findings_per_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#max_findings_per_item DataLossPreventionContentPolicy#max_findings_per_item}
 
 ---
 
@@ -2963,7 +2963,7 @@ MaxFindingsPerRequest *f64
 
 Max number of findings that will be returned per request/job. The maximum returned is 2000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#max_findings_per_request DataLossPreventionContentPolicy#max_findings_per_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#max_findings_per_request DataLossPreventionContentPolicy#max_findings_per_request}
 
 ---
 
@@ -2977,7 +2977,7 @@ MaxFindingsPerInfoType interface{}
 
 max_findings_per_info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#max_findings_per_info_type DataLossPreventionContentPolicy#max_findings_per_info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#max_findings_per_info_type DataLossPreventionContentPolicy#max_findings_per_info_type}
 
 ---
 
@@ -2986,11 +2986,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoType {
 	MaxFindings: *f64,
-	InfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoType,
+	InfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoType,
 }
 ```
 
@@ -3013,7 +3013,7 @@ MaxFindings *f64
 
 Max findings limit for the given infoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#max_findings DataLossPreventionContentPolicy#max_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#max_findings DataLossPreventionContentPolicy#max_findings}
 
 ---
 
@@ -3027,7 +3027,7 @@ InfoType DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTyp
 
 info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_type DataLossPreventionContentPolicy#info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_type DataLossPreventionContentPolicy#info_type}
 
 ---
 
@@ -3036,11 +3036,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoType {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore,
 	Version: *string,
 }
 ```
@@ -3068,7 +3068,7 @@ Name of the information type.
 Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -3082,7 +3082,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPe
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -3096,7 +3096,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -3105,7 +3105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore {
 	Score: *string,
@@ -3130,7 +3130,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -3139,11 +3139,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoType {
 	MinLikelihood: *string,
-	InfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoType,
+	InfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoType,
 }
 ```
 
@@ -3168,7 +3168,7 @@ Only returns findings equal or above this threshold.
 
 See https://cloud.google.com/dlp/docs/likelihood for more info. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
 
 ---
 
@@ -3182,7 +3182,7 @@ InfoType DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInf
 
 info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_type DataLossPreventionContentPolicy#info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_type DataLossPreventionContentPolicy#info_type}
 
 ---
 
@@ -3191,11 +3191,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoType {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScore,
 	Version: *string,
 }
 ```
@@ -3223,7 +3223,7 @@ Name of the information type.
 Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -3237,7 +3237,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInf
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -3251,7 +3251,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -3260,7 +3260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScore {
 	Score: *string,
@@ -3285,7 +3285,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -3294,7 +3294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSet {
 	InfoTypes: interface{},
@@ -3321,7 +3321,7 @@ InfoTypes interface{}
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -3335,7 +3335,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#rules DataLossPreventionContentPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#rules DataLossPreventionContentPolicy#rules}
 
 ---
 
@@ -3344,11 +3344,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypes {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScore,
 	Version: *string,
 }
 ```
@@ -3376,7 +3376,7 @@ Name of the information type.
 Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -3390,7 +3390,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSen
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -3404,7 +3404,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -3413,7 +3413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScore {
 	Score: *string,
@@ -3438,7 +3438,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -3447,12 +3447,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRules {
-	AdjustmentRule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRule,
-	ExclusionRule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRule,
-	HotwordRule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRule,
+	AdjustmentRule: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRule,
+	ExclusionRule: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRule,
+	HotwordRule: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRule,
 }
 ```
 
@@ -3476,7 +3476,7 @@ AdjustmentRule DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmen
 
 adjustment_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#adjustment_rule DataLossPreventionContentPolicy#adjustment_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#adjustment_rule DataLossPreventionContentPolicy#adjustment_rule}
 
 ---
 
@@ -3490,7 +3490,7 @@ ExclusionRule DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionR
 
 exclusion_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#exclusion_rule DataLossPreventionContentPolicy#exclusion_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#exclusion_rule DataLossPreventionContentPolicy#exclusion_rule}
 
 ---
 
@@ -3504,7 +3504,7 @@ HotwordRule DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRule
 
 hotword_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#hotword_rule DataLossPreventionContentPolicy#hotword_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#hotword_rule DataLossPreventionContentPolicy#hotword_rule}
 
 ---
 
@@ -3513,12 +3513,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRule {
-	LikelihoodAdjustment: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustment,
-	AdjustByImageFindings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindings,
-	AdjustByMatchingInfoTypes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypes,
+	LikelihoodAdjustment: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustment,
+	AdjustByImageFindings: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindings,
+	AdjustByMatchingInfoTypes: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypes,
 }
 ```
 
@@ -3542,7 +3542,7 @@ LikelihoodAdjustment DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 
 likelihood_adjustment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#likelihood_adjustment DataLossPreventionContentPolicy#likelihood_adjustment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#likelihood_adjustment DataLossPreventionContentPolicy#likelihood_adjustment}
 
 ---
 
@@ -3556,7 +3556,7 @@ AdjustByImageFindings DataLossPreventionContentPolicyInspectConfigRuleSetRulesAd
 
 adjust_by_image_findings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#adjust_by_image_findings DataLossPreventionContentPolicy#adjust_by_image_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#adjust_by_image_findings DataLossPreventionContentPolicy#adjust_by_image_findings}
 
 ---
 
@@ -3570,7 +3570,7 @@ AdjustByMatchingInfoTypes DataLossPreventionContentPolicyInspectConfigRuleSetRul
 
 adjust_by_matching_info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#adjust_by_matching_info_types DataLossPreventionContentPolicy#adjust_by_matching_info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#adjust_by_matching_info_types DataLossPreventionContentPolicy#adjust_by_matching_info_types}
 
 ---
 
@@ -3579,12 +3579,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindings {
 	InfoTypes: interface{},
 	MinLikelihood: *string,
-	ImageContainmentType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentType,
+	ImageContainmentType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentType,
 }
 ```
 
@@ -3608,7 +3608,7 @@ InfoTypes interface{}
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -3622,7 +3622,7 @@ MinLikelihood *string
 
 Minimum likelihood of the adjustByImageFindings infoTypes finding. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
 
 ---
 
@@ -3636,7 +3636,7 @@ ImageContainmentType DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 
 image_containment_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#image_containment_type DataLossPreventionContentPolicy#image_containment_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#image_containment_type DataLossPreventionContentPolicy#image_containment_type}
 
 ---
 
@@ -3645,12 +3645,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentType {
-	Encloses: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEncloses,
-	FullyInside: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInside,
-	Overlaps: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlaps,
+	Encloses: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEncloses,
+	FullyInside: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInside,
+	Overlaps: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlaps,
 }
 ```
 
@@ -3674,7 +3674,7 @@ Encloses DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleA
 
 encloses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#encloses DataLossPreventionContentPolicy#encloses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#encloses DataLossPreventionContentPolicy#encloses}
 
 ---
 
@@ -3688,7 +3688,7 @@ FullyInside DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRu
 
 fully_inside block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#fully_inside DataLossPreventionContentPolicy#fully_inside}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#fully_inside DataLossPreventionContentPolicy#fully_inside}
 
 ---
 
@@ -3702,7 +3702,7 @@ Overlaps DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleA
 
 overlaps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#overlaps DataLossPreventionContentPolicy#overlaps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#overlaps DataLossPreventionContentPolicy#overlaps}
 
 ---
 
@@ -3711,7 +3711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEncloses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEncloses {
 
@@ -3724,7 +3724,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInside.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInside {
 
@@ -3737,7 +3737,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlaps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlaps {
 
@@ -3750,11 +3750,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypes {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScore,
 	Version: *string,
 }
 ```
@@ -3779,7 +3779,7 @@ Name *string
 
 Name of the information type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -3793,7 +3793,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustm
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -3807,7 +3807,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -3816,7 +3816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScore {
 	Score: *string,
@@ -3841,7 +3841,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -3850,7 +3850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypes {
 	InfoTypes: interface{},
@@ -3879,7 +3879,7 @@ InfoTypes interface{}
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -3893,7 +3893,7 @@ MatchingType *string
 
 How the adjustment rule is applied. Possible values: ["MATCHING_TYPE_FULL_MATCH", "MATCHING_TYPE_PARTIAL_MATCH", "MATCHING_TYPE_INVERSE_MATCH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#matching_type DataLossPreventionContentPolicy#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#matching_type DataLossPreventionContentPolicy#matching_type}
 
 ---
 
@@ -3907,7 +3907,7 @@ MinLikelihood *string
 
 Minimum likelihood of the adjustByMatchingInfoTypes infoTypes finding. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#min_likelihood DataLossPreventionContentPolicy#min_likelihood}
 
 ---
 
@@ -3916,11 +3916,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypes {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScore,
 	Version: *string,
 }
 ```
@@ -3945,7 +3945,7 @@ Name *string
 
 Name of the information type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -3959,7 +3959,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustm
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -3973,7 +3973,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -3982,7 +3982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScore {
 	Score: *string,
@@ -4007,7 +4007,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -4016,7 +4016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustment {
 	FixedLikelihood: *string,
@@ -4041,7 +4041,7 @@ FixedLikelihood *string
 
 Set the likelihood of a finding to a fixed value. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#fixed_likelihood DataLossPreventionContentPolicy#fixed_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#fixed_likelihood DataLossPreventionContentPolicy#fixed_likelihood}
 
 ---
 
@@ -4050,15 +4050,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRule {
 	MatchingType: *string,
-	Dictionary: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionary,
-	ExcludeByHotword: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotword,
-	ExcludeByImageFindings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindings,
-	ExcludeInfoTypes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes,
-	Regex: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegex,
+	Dictionary: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionary,
+	ExcludeByHotword: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotword,
+	ExcludeByImageFindings: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindings,
+	ExcludeInfoTypes: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes,
+	Regex: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegex,
 }
 ```
 
@@ -4085,7 +4085,7 @@ MatchingType *string
 
 How the rule is applied. See the documentation for more information: https://cloud.google.com/dlp/docs/reference/rest/v2/InspectConfig#MatchingType Possible values: ["MATCHING_TYPE_FULL_MATCH", "MATCHING_TYPE_PARTIAL_MATCH", "MATCHING_TYPE_INVERSE_MATCH", "MATCHING_TYPE_RULE_SPECIFIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#matching_type DataLossPreventionContentPolicy#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#matching_type DataLossPreventionContentPolicy#matching_type}
 
 ---
 
@@ -4099,7 +4099,7 @@ Dictionary DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRule
 
 dictionary block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#dictionary DataLossPreventionContentPolicy#dictionary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#dictionary DataLossPreventionContentPolicy#dictionary}
 
 ---
 
@@ -4113,7 +4113,7 @@ ExcludeByHotword DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusi
 
 exclude_by_hotword block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#exclude_by_hotword DataLossPreventionContentPolicy#exclude_by_hotword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#exclude_by_hotword DataLossPreventionContentPolicy#exclude_by_hotword}
 
 ---
 
@@ -4127,7 +4127,7 @@ ExcludeByImageFindings DataLossPreventionContentPolicyInspectConfigRuleSetRulesE
 
 exclude_by_image_findings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#exclude_by_image_findings DataLossPreventionContentPolicy#exclude_by_image_findings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#exclude_by_image_findings DataLossPreventionContentPolicy#exclude_by_image_findings}
 
 ---
 
@@ -4141,7 +4141,7 @@ ExcludeInfoTypes DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusi
 
 exclude_info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#exclude_info_types DataLossPreventionContentPolicy#exclude_info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#exclude_info_types DataLossPreventionContentPolicy#exclude_info_types}
 
 ---
 
@@ -4155,7 +4155,7 @@ Regex DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegex
 
 regex block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#regex DataLossPreventionContentPolicy#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#regex DataLossPreventionContentPolicy#regex}
 
 ---
 
@@ -4164,11 +4164,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionary.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionary {
-	CloudStoragePath: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath,
-	WordList: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct,
+	CloudStoragePath: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath,
+	WordList: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct,
 }
 ```
 
@@ -4191,7 +4191,7 @@ CloudStoragePath DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusi
 
 cloud_storage_path block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#cloud_storage_path DataLossPreventionContentPolicy#cloud_storage_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#cloud_storage_path DataLossPreventionContentPolicy#cloud_storage_path}
 
 ---
 
@@ -4205,7 +4205,7 @@ WordList DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDi
 
 word_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#word_list DataLossPreventionContentPolicy#word_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#word_list DataLossPreventionContentPolicy#word_list}
 
 ---
 
@@ -4214,7 +4214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath {
 	Path: *string,
@@ -4239,7 +4239,7 @@ Path *string
 
 A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#path DataLossPreventionContentPolicy#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#path DataLossPreventionContentPolicy#path}
 
 ---
 
@@ -4248,7 +4248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct {
 	Words: *[]*string,
@@ -4276,7 +4276,7 @@ Words or phrases defining the dictionary.
 The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#words DataLossPreventionContentPolicy#words}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#words DataLossPreventionContentPolicy#words}
 
 ---
 
@@ -4285,11 +4285,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotword {
-	HotwordRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex,
-	Proximity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity,
+	HotwordRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex,
+	Proximity: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity,
 }
 ```
 
@@ -4312,7 +4312,7 @@ HotwordRegex DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRu
 
 hotword_regex block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#hotword_regex DataLossPreventionContentPolicy#hotword_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#hotword_regex DataLossPreventionContentPolicy#hotword_regex}
 
 ---
 
@@ -4326,7 +4326,7 @@ Proximity DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleE
 
 proximity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#proximity DataLossPreventionContentPolicy#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#proximity DataLossPreventionContentPolicy#proximity}
 
 ---
 
@@ -4335,7 +4335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex {
 	Pattern: *string,
@@ -4362,7 +4362,7 @@ Pattern *string
 
 Pattern defining the regular expression. Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
 
 ---
 
@@ -4379,7 +4379,7 @@ The index of the submatch to extract as findings.
 When not specified,
 the entire match is returned. No more than 3 may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
 
 ---
 
@@ -4388,7 +4388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity {
 	WindowAfter: *f64,
@@ -4415,7 +4415,7 @@ WindowAfter *f64
 
 Number of characters after the finding to consider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#window_after DataLossPreventionContentPolicy#window_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#window_after DataLossPreventionContentPolicy#window_after}
 
 ---
 
@@ -4429,7 +4429,7 @@ WindowBefore *f64
 
 Number of characters before the finding to consider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#window_before DataLossPreventionContentPolicy#window_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#window_before DataLossPreventionContentPolicy#window_before}
 
 ---
 
@@ -4438,11 +4438,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindings {
 	InfoTypes: interface{},
-	ImageContainmentType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentType,
+	ImageContainmentType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentType,
 }
 ```
 
@@ -4465,7 +4465,7 @@ InfoTypes interface{}
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -4479,7 +4479,7 @@ ImageContainmentType DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 
 image_containment_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#image_containment_type DataLossPreventionContentPolicy#image_containment_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#image_containment_type DataLossPreventionContentPolicy#image_containment_type}
 
 ---
 
@@ -4488,12 +4488,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentType {
-	Encloses: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEncloses,
-	FullyInside: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInside,
-	Overlaps: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlaps,
+	Encloses: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEncloses,
+	FullyInside: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInside,
+	Overlaps: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlaps,
 }
 ```
 
@@ -4517,7 +4517,7 @@ Encloses DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleEx
 
 encloses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#encloses DataLossPreventionContentPolicy#encloses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#encloses DataLossPreventionContentPolicy#encloses}
 
 ---
 
@@ -4531,7 +4531,7 @@ FullyInside DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRul
 
 fully_inside block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#fully_inside DataLossPreventionContentPolicy#fully_inside}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#fully_inside DataLossPreventionContentPolicy#fully_inside}
 
 ---
 
@@ -4545,7 +4545,7 @@ Overlaps DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleEx
 
 overlaps block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#overlaps DataLossPreventionContentPolicy#overlaps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#overlaps DataLossPreventionContentPolicy#overlaps}
 
 ---
 
@@ -4554,7 +4554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEncloses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEncloses {
 
@@ -4567,7 +4567,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInside.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInside {
 
@@ -4580,7 +4580,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlaps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlaps {
 
@@ -4593,11 +4593,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypes {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScore,
 	Version: *string,
 }
 ```
@@ -4622,7 +4622,7 @@ Name *string
 
 Name of the information type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -4636,7 +4636,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusi
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -4650,7 +4650,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -4659,7 +4659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScore {
 	Score: *string,
@@ -4684,7 +4684,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -4693,7 +4693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes {
 	InfoTypes: interface{},
@@ -4718,7 +4718,7 @@ InfoTypes interface{}
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -4727,11 +4727,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes {
 	Name: *string,
-	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore,
+	SensitivityScore: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore,
 	Version: *string,
 }
 ```
@@ -4759,7 +4759,7 @@ Name of the information type.
 Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#name DataLossPreventionContentPolicy#name}
 
 ---
 
@@ -4773,7 +4773,7 @@ SensitivityScore DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusi
 
 sensitivity_score block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#sensitivity_score DataLossPreventionContentPolicy#sensitivity_score}
 
 ---
 
@@ -4787,7 +4787,7 @@ Version *string
 
 Version name for this InfoType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#version DataLossPreventionContentPolicy#version}
 
 ---
 
@@ -4796,7 +4796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore {
 	Score: *string,
@@ -4821,7 +4821,7 @@ Score *string
 
 The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#score DataLossPreventionContentPolicy#score}
 
 ---
 
@@ -4830,7 +4830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegex {
 	Pattern: *string,
@@ -4857,7 +4857,7 @@ Pattern *string
 
 Pattern defining the regular expression. Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
 
 ---
 
@@ -4873,7 +4873,7 @@ The index of the submatch to extract as findings.
 
 When not specified, the entire match is returned. No more than 3 may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
 
 ---
 
@@ -4882,12 +4882,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRule {
-	HotwordRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegex,
-	LikelihoodAdjustment: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment,
-	Proximity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximity,
+	HotwordRegex: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegex,
+	LikelihoodAdjustment: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment,
+	Proximity: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximity,
 }
 ```
 
@@ -4911,7 +4911,7 @@ HotwordRegex DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRule
 
 hotword_regex block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#hotword_regex DataLossPreventionContentPolicy#hotword_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#hotword_regex DataLossPreventionContentPolicy#hotword_regex}
 
 ---
 
@@ -4925,7 +4925,7 @@ LikelihoodAdjustment DataLossPreventionContentPolicyInspectConfigRuleSetRulesHot
 
 likelihood_adjustment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#likelihood_adjustment DataLossPreventionContentPolicy#likelihood_adjustment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#likelihood_adjustment DataLossPreventionContentPolicy#likelihood_adjustment}
 
 ---
 
@@ -4939,7 +4939,7 @@ Proximity DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRulePro
 
 proximity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#proximity DataLossPreventionContentPolicy#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#proximity DataLossPreventionContentPolicy#proximity}
 
 ---
 
@@ -4948,7 +4948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegex {
 	Pattern: *string,
@@ -4975,7 +4975,7 @@ Pattern *string
 
 Pattern defining the regular expression. Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#pattern DataLossPreventionContentPolicy#pattern}
 
 ---
 
@@ -4992,7 +4992,7 @@ The index of the submatch to extract as findings.
 When not specified,
 the entire match is returned. No more than 3 may be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#group_indexes DataLossPreventionContentPolicy#group_indexes}
 
 ---
 
@@ -5001,7 +5001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment {
 	FixedLikelihood: *string,
@@ -5030,7 +5030,7 @@ Set the likelihood of a finding to a fixed value.
 
 Either this or relative_likelihood can be set. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#fixed_likelihood DataLossPreventionContentPolicy#fixed_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#fixed_likelihood DataLossPreventionContentPolicy#fixed_likelihood}
 
 ---
 
@@ -5051,7 +5051,7 @@ Likelihood may never drop below VERY_UNLIKELY or exceed VERY_LIKELY, so applying
 adjustment of 1 followed by an adjustment of -1 when base likelihood is VERY_LIKELY
 will result in a final likelihood of LIKELY. Either this or fixed_likelihood can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#relative_likelihood DataLossPreventionContentPolicy#relative_likelihood}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#relative_likelihood DataLossPreventionContentPolicy#relative_likelihood}
 
 ---
 
@@ -5060,7 +5060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximity {
 	WindowAfter: *f64,
@@ -5087,7 +5087,7 @@ WindowAfter *f64
 
 Number of characters after the finding to consider. Either this or window_before must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#window_after DataLossPreventionContentPolicy#window_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#window_after DataLossPreventionContentPolicy#window_after}
 
 ---
 
@@ -5101,7 +5101,7 @@ WindowBefore *f64
 
 Number of characters before the finding to consider. Either this or window_after must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#window_before DataLossPreventionContentPolicy#window_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#window_before DataLossPreventionContentPolicy#window_before}
 
 ---
 
@@ -5110,10 +5110,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyLoggingConfigs {
-	LogToBigQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigsLogToBigQuery,
+	LogToBigQuery: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigsLogToBigQuery,
 }
 ```
 
@@ -5135,7 +5135,7 @@ LogToBigQuery DataLossPreventionContentPolicyLoggingConfigsLogToBigQuery
 
 log_to_big_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#log_to_big_query DataLossPreventionContentPolicy#log_to_big_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#log_to_big_query DataLossPreventionContentPolicy#log_to_big_query}
 
 ---
 
@@ -5144,7 +5144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigsLogToBigQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyLoggingConfigsLogToBigQuery {
 	DatasetId: *string,
@@ -5173,7 +5173,7 @@ DatasetId *string
 
 The dataset ID of the BigQuery table to log to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#dataset_id DataLossPreventionContentPolicy#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#dataset_id DataLossPreventionContentPolicy#dataset_id}
 
 ---
 
@@ -5187,7 +5187,7 @@ ProjectId *string
 
 The project ID of the BigQuery table to log to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#project_id DataLossPreventionContentPolicy#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#project_id DataLossPreventionContentPolicy#project_id}
 
 ---
 
@@ -5201,7 +5201,7 @@ TableId *string
 
 The table ID of the BigQuery table to log to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#table_id DataLossPreventionContentPolicy#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#table_id DataLossPreventionContentPolicy#table_id}
 
 ---
 
@@ -5210,10 +5210,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyRules {
-	Action: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesAction,
+	Action: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesAction,
 	Conditions: interface{},
 }
 ```
@@ -5237,7 +5237,7 @@ Action DataLossPreventionContentPolicyRulesAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#action DataLossPreventionContentPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#action DataLossPreventionContentPolicy#action}
 
 ---
 
@@ -5251,7 +5251,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#conditions DataLossPreventionContentPolicy#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#conditions DataLossPreventionContentPolicy#conditions}
 
 ---
 
@@ -5260,7 +5260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyRulesAction {
 	ReturnVerdict: *string,
@@ -5285,7 +5285,7 @@ ReturnVerdict *string
 
 If set, the verdict will be returned to the user. Possible values: ["ALLOW", "BLOCK"] Possible values: ["ALLOW", "BLOCK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
 
 ---
 
@@ -5294,10 +5294,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyRulesConditions {
-	InfoTypeCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeCondition,
+	InfoTypeCondition: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeCondition,
 }
 ```
 
@@ -5319,7 +5319,7 @@ InfoTypeCondition DataLossPreventionContentPolicyRulesConditionsInfoTypeConditio
 
 info_type_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_type_condition DataLossPreventionContentPolicy#info_type_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_type_condition DataLossPreventionContentPolicy#info_type_condition}
 
 ---
 
@@ -5328,11 +5328,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeCondition {
-	AnyInfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoType,
-	InfoTypes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypes,
+	AnyInfoType: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoType,
+	InfoTypes: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypes,
 	MinCount: *f64,
 }
 ```
@@ -5357,7 +5357,7 @@ AnyInfoType DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyIn
 
 any_info_type block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#any_info_type DataLossPreventionContentPolicy#any_info_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#any_info_type DataLossPreventionContentPolicy#any_info_type}
 
 ---
 
@@ -5371,7 +5371,7 @@ InfoTypes DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTyp
 
 info_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_types DataLossPreventionContentPolicy#info_types}
 
 ---
 
@@ -5385,7 +5385,7 @@ MinCount *f64
 
 The minimum number of findings required for this condition to be met. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#min_count DataLossPreventionContentPolicy#min_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#min_count DataLossPreventionContentPolicy#min_count}
 
 ---
 
@@ -5394,7 +5394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoType {
 
@@ -5407,7 +5407,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypes {
 	InfoTypeNames: *[]*string,
@@ -5432,7 +5432,7 @@ InfoTypeNames *[]*string
 
 List of info type names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#info_type_names DataLossPreventionContentPolicy#info_type_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#info_type_names DataLossPreventionContentPolicy#info_type_names}
 
 ---
 
@@ -5441,7 +5441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyTimeouts {
 	Create: *string,
@@ -5454,9 +5454,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#create DataLossPreventionContentPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#delete DataLossPreventionContentPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#update DataLossPreventionContentPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#create DataLossPreventionContentPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#delete DataLossPreventionContentPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#update DataLossPreventionContentPolicy#update}. |
 
 ---
 
@@ -5468,7 +5468,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#create DataLossPreventionContentPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#create DataLossPreventionContentPolicy#create}.
 
 ---
 
@@ -5480,7 +5480,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#delete DataLossPreventionContentPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#delete DataLossPreventionContentPolicy#delete}.
 
 ---
 
@@ -5492,7 +5492,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#update DataLossPreventionContentPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#update DataLossPreventionContentPolicy#update}.
 
 ---
 
@@ -5501,7 +5501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyUnsupportedFileType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 &datalosspreventioncontentpolicy.DataLossPreventionContentPolicyUnsupportedFileType {
 	ReturnVerdict: *string,
@@ -5526,7 +5526,7 @@ ReturnVerdict *string
 
 If set, the verdict will be returned to the user. Possible values: ["ALLOW", "BLOCK"] Possible values: ["ALLOW", "BLOCK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/data_loss_prevention_content_policy#return_verdict DataLossPreventionContentPolicy#return_verdict}
 
 ---
 
@@ -5537,7 +5537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyDefaultActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyDefaultActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyDefaultActionOutputReference
 ```
@@ -5815,7 +5815,7 @@ func InternalValue() DataLossPreventionContentPolicyDefaultAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyErrorsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyErrorsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyErrorsDetailsList
 ```
@@ -5964,7 +5964,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyErrorsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyErrorsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyErrorsDetailsOutputReference
 ```
@@ -6264,7 +6264,7 @@ func InternalValue() DataLossPreventionContentPolicyErrorsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyErrorsList
 ```
@@ -6413,7 +6413,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyErrorsOutputReference
 ```
@@ -6713,7 +6713,7 @@ func InternalValue() DataLossPreventionContentPolicyErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyFailedToScanSupportedFileTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyFailedToScanSupportedFileTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyFailedToScanSupportedFileTypeOutputReference
 ```
@@ -6991,7 +6991,7 @@ func InternalValue() DataLossPreventionContentPolicyFailedToScanSupportedFileTyp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInputTooLargeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInputTooLargeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInputTooLargeOutputReference
 ```
@@ -7269,7 +7269,7 @@ func InternalValue() DataLossPreventionContentPolicyInputTooLarge
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleHotwordRegexOutputReference
 ```
@@ -7569,7 +7569,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleLikelihoodAdjustmentOutputReference
 ```
@@ -7876,7 +7876,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleOutputReference
 ```
@@ -8230,7 +8230,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesHotwordRuleProximityOutputReference
 ```
@@ -8537,7 +8537,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesList
 ```
@@ -8697,7 +8697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDetectionRulesOutputReference
 ```
@@ -9006,7 +9006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference
 ```
@@ -9277,7 +9277,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryOutputReference
 ```
@@ -9610,7 +9610,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference
 ```
@@ -9881,7 +9881,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatchList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatchList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatchList
 ```
@@ -10041,7 +10041,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelLabelFieldsToMatchOutputReference
 ```
@@ -10352,7 +10352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeGoogleDriveLabelOutputReference
 ```
@@ -10665,7 +10665,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeOutputReference
 ```
@@ -10998,7 +10998,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesFileLabelInfoTypeSensitivityLabelOutputReference
 ```
@@ -11269,7 +11269,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeOutputReference
 ```
@@ -11611,7 +11611,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference
 ```
@@ -11882,7 +11882,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesList
 ```
@@ -12042,7 +12042,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesMetadataKeyValueExpressionOutputReference
 ```
@@ -12335,7 +12335,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesOutputReference
 ```
@@ -13031,7 +13031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesRegexOutputReference
 ```
@@ -13331,7 +13331,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSensitivityScoreOutputReference
 ```
@@ -13602,7 +13602,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesStoredTypeOutputReference
 ```
@@ -13884,7 +13884,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigCustomInfoTypesSurrogateTypeOutputReference
 ```
@@ -14133,7 +14133,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigCustomInfoTypes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigInfoTypesList
 ```
@@ -14293,7 +14293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigInfoTypesOutputReference
 ```
@@ -14653,7 +14653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigInfoTypesSensitivityScoreOutputReference
 ```
@@ -14924,7 +14924,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigInfoTypesSensit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference
 ```
@@ -15266,7 +15266,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigLimitsMaxFindin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference
 ```
@@ -15537,7 +15537,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigLimitsMaxFindin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeList
 ```
@@ -15697,7 +15697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference
 ```
@@ -16028,7 +16028,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigLimitsOutputReference
 ```
@@ -16363,7 +16363,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigLimits
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeOutputReference
 ```
@@ -16705,7 +16705,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigMinLikelihoodPe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeInfoTypeSensitivityScoreOutputReference
 ```
@@ -16976,7 +16976,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigMinLikelihoodPe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeList
 ```
@@ -17136,7 +17136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigMinLikelihoodPerInfoTypeOutputReference
 ```
@@ -17467,7 +17467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigOutputReference
 ```
@@ -18042,7 +18042,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesList
 ```
@@ -18202,7 +18202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesOutputReference
 ```
@@ -18562,7 +18562,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference
 ```
@@ -18833,7 +18833,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetInfoType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetList
 ```
@@ -18993,7 +18993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetOutputReference
 ```
@@ -19330,7 +19330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEnclosesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEnclosesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeEnclosesOutputReference
 ```
@@ -19579,7 +19579,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInsideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInsideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeFullyInsideOutputReference
 ```
@@ -19828,7 +19828,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOutputReference
 ```
@@ -20203,7 +20203,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlapsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlapsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsImageContainmentTypeOverlapsOutputReference
 ```
@@ -20452,7 +20452,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesList
 ```
@@ -20612,7 +20612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesOutputReference
 ```
@@ -20972,7 +20972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsInfoTypesSensitivityScoreOutputReference
 ```
@@ -21243,7 +21243,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByImageFindingsOutputReference
 ```
@@ -21591,7 +21591,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesList
 ```
@@ -21751,7 +21751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesOutputReference
 ```
@@ -22111,7 +22111,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesInfoTypesSensitivityScoreOutputReference
 ```
@@ -22382,7 +22382,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleAdjustByMatchingInfoTypesOutputReference
 ```
@@ -22710,7 +22710,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleLikelihoodAdjustmentOutputReference
 ```
@@ -22981,7 +22981,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdjustmentRuleOutputReference
 ```
@@ -23349,7 +23349,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesAdj
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference
 ```
@@ -23620,7 +23620,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference
 ```
@@ -23953,7 +23953,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference
 ```
@@ -24224,7 +24224,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference
 ```
@@ -24524,7 +24524,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference
 ```
@@ -24843,7 +24843,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference
 ```
@@ -25150,7 +25150,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEnclosesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEnclosesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeEnclosesOutputReference
 ```
@@ -25399,7 +25399,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInsideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInsideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeFullyInsideOutputReference
 ```
@@ -25648,7 +25648,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOutputReference
 ```
@@ -26023,7 +26023,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlapsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlapsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsImageContainmentTypeOverlapsOutputReference
 ```
@@ -26272,7 +26272,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesList
 ```
@@ -26432,7 +26432,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesOutputReference
 ```
@@ -26792,7 +26792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsInfoTypesSensitivityScoreOutputReference
 ```
@@ -27063,7 +27063,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeByImageFindingsOutputReference
 ```
@@ -27389,7 +27389,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList
 ```
@@ -27549,7 +27549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference
 ```
@@ -27909,7 +27909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference
 ```
@@ -28180,7 +28180,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference
 ```
@@ -28464,7 +28464,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleOutputReference
 ```
@@ -28945,7 +28945,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesExclusionRuleRegexOutputReference
 ```
@@ -29245,7 +29245,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesExc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference
 ```
@@ -29545,7 +29545,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesHot
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference
 ```
@@ -29852,7 +29852,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesHot
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleOutputReference
 ```
@@ -30206,7 +30206,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesHot
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyInspectConfigRuleSetRulesHotwordRuleProximityOutputReference
 ```
@@ -30513,7 +30513,7 @@ func InternalValue() DataLossPreventionContentPolicyInspectConfigRuleSetRulesHot
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesList
 ```
@@ -30673,7 +30673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyInspectConfigRuleSetRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyInspectConfigRuleSetRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyInspectConfigRuleSetRulesOutputReference
 ```
@@ -31066,7 +31066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyLoggingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyLoggingConfigsList
 ```
@@ -31226,7 +31226,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigsLogToBigQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyLoggingConfigsLogToBigQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyLoggingConfigsLogToBigQueryOutputReference
 ```
@@ -31541,7 +31541,7 @@ func InternalValue() DataLossPreventionContentPolicyLoggingConfigsLogToBigQuery
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyLoggingConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyLoggingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyLoggingConfigsOutputReference
 ```
@@ -31850,7 +31850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyRulesActionOutputReference
 ```
@@ -32128,7 +32128,7 @@ func InternalValue() DataLossPreventionContentPolicyRulesAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionAnyInfoTypeOutputReference
 ```
@@ -32377,7 +32377,7 @@ func InternalValue() DataLossPreventionContentPolicyRulesConditionsInfoTypeCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionInfoTypesOutputReference
 ```
@@ -32648,7 +32648,7 @@ func InternalValue() DataLossPreventionContentPolicyRulesConditionsInfoTypeCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesConditionsInfoTypeConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyRulesConditionsInfoTypeConditionOutputReference
 ```
@@ -33010,7 +33010,7 @@ func InternalValue() DataLossPreventionContentPolicyRulesConditionsInfoTypeCondi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyRulesConditionsList
 ```
@@ -33170,7 +33170,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyRulesConditionsOutputReference
 ```
@@ -33479,7 +33479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLossPreventionContentPolicyRulesList
 ```
@@ -33639,7 +33639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLossPreventionContentPolicyRulesOutputReference
 ```
@@ -33983,7 +33983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyTimeoutsOutputReference
 ```
@@ -34319,7 +34319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLossPreventionContentPolicy.DataLossPreventionContentPolicyUnsupportedFileTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalosspreventioncontentpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datalosspreventioncontentpolicy"
 
 datalosspreventioncontentpolicy.NewDataLossPreventionContentPolicyUnsupportedFileTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLossPreventionContentPolicyUnsupportedFileTypeOutputReference
 ```

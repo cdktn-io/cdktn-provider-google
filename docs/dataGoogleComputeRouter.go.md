@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeRouter <a name="DataGoogleComputeRouter" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router google_compute_router}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router google_compute_router}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouter(scope Construct, id *string, config DataGoogleComputeRouterConfig) DataGoogleComputeRouter
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.DataGoogleComputeRouter_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.DataGoogleComputeRouter_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputerouter.DataGoogleComputeRouter_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.DataGoogleComputeRouter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputerouter.DataGoogleComputeRouter_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.DataGoogleComputeRouter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeRouter to
 
 The id of the existing DataGoogleComputeRouter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -444,6 +444,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.md5AuthenticationKeys">Md5AuthenticationKeys</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterMd5AuthenticationKeysList">DataGoogleComputeRouterMd5AuthenticationKeysList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.nccGateway">NccGateway</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterParamsList">DataGoogleComputeRouterParamsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.routerId">RouterId</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -660,6 +661,16 @@ func Params() DataGoogleComputeRouterParamsList
 
 ---
 
+##### `RouterId`<sup>Required</sup> <a name="RouterId" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.routerId"></a>
+
+```go
+func RouterId() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter.property.selfLink"></a>
 
 ```go
@@ -795,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 &datagooglecomputerouter.DataGoogleComputeRouterBgp {
 
@@ -808,7 +819,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 &datagooglecomputerouter.DataGoogleComputeRouterBgpAdvertisedIpRanges {
 
@@ -821,7 +832,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 &datagooglecomputerouter.DataGoogleComputeRouterConfig {
 	Connection: interface{},
@@ -852,8 +863,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.network">Network</a></code> | <code>*string</code> | A reference to the network to which this router belongs. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterConfig.property.region">Region</a></code> | <code>*string</code> | Region where the router resides. |
 
 ---
@@ -945,7 +956,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#name DataGoogleComputeRouter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#name DataGoogleComputeRouter#name}
 
 ---
 
@@ -959,7 +970,7 @@ Network *string
 
 A reference to the network to which this router belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#network DataGoogleComputeRouter#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#network DataGoogleComputeRouter#network}
 
 ---
 
@@ -971,7 +982,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#id DataGoogleComputeRouter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -986,7 +997,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#project DataGoogleComputeRouter#project}.
 
 ---
 
@@ -1000,7 +1011,7 @@ Region *string
 
 Region where the router resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/compute_router#region DataGoogleComputeRouter#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/compute_router#region DataGoogleComputeRouter#region}
 
 ---
 
@@ -1009,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterMd5AuthenticationKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 &datagooglecomputerouter.DataGoogleComputeRouterMd5AuthenticationKeys {
 
@@ -1022,7 +1033,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 &datagooglecomputerouter.DataGoogleComputeRouterParams {
 
@@ -1037,7 +1048,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterBgpAdvertisedIpRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRouterBgpAdvertisedIpRangesList
 ```
@@ -1186,7 +1197,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpAdvertisedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterBgpAdvertisedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRouterBgpAdvertisedIpRangesOutputReference
 ```
@@ -1475,7 +1486,7 @@ func InternalValue() DataGoogleComputeRouterBgpAdvertisedIpRanges
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterBgpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRouterBgpList
 ```
@@ -1624,7 +1635,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterBgpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRouterBgpOutputReference
 ```
@@ -1957,7 +1968,7 @@ func InternalValue() DataGoogleComputeRouterBgp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterMd5AuthenticationKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterMd5AuthenticationKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRouterMd5AuthenticationKeysList
 ```
@@ -2106,7 +2117,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterMd5AuthenticationKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterMd5AuthenticationKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRouterMd5AuthenticationKeysOutputReference
 ```
@@ -2395,7 +2406,7 @@ func InternalValue() DataGoogleComputeRouterMd5AuthenticationKeys
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterParamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterParamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRouterParamsList
 ```
@@ -2544,7 +2555,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputerouter"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/datagooglecomputerouter"
 
 datagooglecomputerouter.NewDataGoogleComputeRouterParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeRouterParamsOutputReference
 ```

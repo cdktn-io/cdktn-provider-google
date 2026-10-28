@@ -4,12 +4,12 @@
 
 ### GeminiDataAnalyticsDataAgentIamPolicy <a name="GeminiDataAnalyticsDataAgentIamPolicy" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy google_gemini_data_analytics_data_agent_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy google_gemini_data_analytics_data_agent_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyticsdataagentiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/geminidataanalyticsdataagentiampolicy"
 
 geminidataanalyticsdataagentiampolicy.NewGeminiDataAnalyticsDataAgentIamPolicy(scope Construct, id *string, config GeminiDataAnalyticsDataAgentIamPolicyConfig) GeminiDataAnalyticsDataAgentIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyticsdataagentiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/geminidataanalyticsdataagentiampolicy"
 
 geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyticsdataagentiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/geminidataanalyticsdataagentiampolicy"
 
 geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicy_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyticsdataagentiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/geminidataanalyticsdataagentiampolicy"
 
 geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyticsdataagentiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/geminidataanalyticsdataagentiampolicy"
 
 geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the GeminiDataAnalyticsDataAge
 
 The id of the existing GeminiDataAnalyticsDataAgentIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyticsdataagentiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/geminidataanalyticsdataagentiampolicy"
 
 &geminidataanalyticsdataagentiampolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig {
 	Connection: interface{},
@@ -860,11 +860,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminidataanalyt
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.dataAgentId">DataAgentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#data_agent_id GeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#policy_data GeminiDataAnalyticsDataAgentIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#id GeminiDataAnalyticsDataAgentIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#location GeminiDataAnalyticsDataAgentIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#project GeminiDataAnalyticsDataAgentIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.dataAgentId">DataAgentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#data_agent_id GeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#policy_data GeminiDataAnalyticsDataAgentIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#id GeminiDataAnalyticsDataAgentIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#location GeminiDataAnalyticsDataAgentIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgentIamPolicy.GeminiDataAnalyticsDataAgentIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#project GeminiDataAnalyticsDataAgentIamPolicy#project}. |
 
 ---
 
@@ -946,7 +946,7 @@ DataAgentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#data_agent_id GeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#data_agent_id GeminiDataAnalyticsDataAgentIamPolicy#data_agent_id}.
 
 ---
 
@@ -958,7 +958,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#policy_data GeminiDataAnalyticsDataAgentIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#policy_data GeminiDataAnalyticsDataAgentIamPolicy#policy_data}.
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#id GeminiDataAnalyticsDataAgentIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#id GeminiDataAnalyticsDataAgentIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +985,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#location GeminiDataAnalyticsDataAgentIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#location GeminiDataAnalyticsDataAgentIamPolicy#location}.
 
 ---
 
@@ -997,7 +997,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#project GeminiDataAnalyticsDataAgentIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent_iam_policy#project GeminiDataAnalyticsDataAgentIamPolicy#project}.
 
 ---
 

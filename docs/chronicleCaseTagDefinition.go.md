@@ -4,12 +4,12 @@
 
 ### ChronicleCaseTagDefinition <a name="ChronicleCaseTagDefinition" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition google_chronicle_case_tag_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition google_chronicle_case_tag_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 chroniclecasetagdefinition.NewChronicleCaseTagDefinition(scope Construct, id *string, config ChronicleCaseTagDefinitionConfig) ChronicleCaseTagDefinition
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 chroniclecasetagdefinition.ChronicleCaseTagDefinition_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 chroniclecasetagdefinition.ChronicleCaseTagDefinition_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ chroniclecasetagdefinition.ChronicleCaseTagDefinition_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 chroniclecasetagdefinition.ChronicleCaseTagDefinition_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ chroniclecasetagdefinition.ChronicleCaseTagDefinition_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 chroniclecasetagdefinition.ChronicleCaseTagDefinition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ChronicleCaseTagDefinition
 
 The id of the existing ChronicleCaseTagDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1045,7 +1045,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 &chroniclecasetagdefinition.ChronicleCaseTagDefinitionConfig {
 	Connection: interface{},
@@ -1067,7 +1067,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetag
 	Id: *string,
 	Project: *string,
 	PropertyName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts,
 }
 ```
 
@@ -1091,8 +1091,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetag
 | <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.priority">Priority</a></code> | <code>*f64</code> | Note that Google Security Operations merges priority with other alerts and entities and events so that the priority here is not absolute. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.value">Value</a></code> | <code>*string</code> | Specific value to search in case - in addition to SearchIn property. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#id ChronicleCaseTagDefinition#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#project ChronicleCaseTagDefinition#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#id ChronicleCaseTagDefinition#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#project ChronicleCaseTagDefinition#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.propertyName">PropertyName</a></code> | <code>*string</code> | Specific Entity property name to search in case. This is relevant only when a SearchIn of type BY_ENTITY_PROPERTY_NAME was chosen. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts">ChronicleCaseTagDefinitionTimeouts</a></code> | timeouts block. |
 
@@ -1178,7 +1178,7 @@ CanBeCaseTitle interface{}
 
 When checked, the tag will be assigned as the title of the case if it meets the conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#can_be_case_title ChronicleCaseTagDefinition#can_be_case_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#can_be_case_title ChronicleCaseTagDefinition#can_be_case_title}
 
 ---
 
@@ -1194,7 +1194,7 @@ The type of comparison to be used when comparing the value to the case.
 
 Possible values: ["EXACT", "START_WITH", "CONTAIN", "ENDS_WITH"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#comparison_type ChronicleCaseTagDefinition#comparison_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#comparison_type ChronicleCaseTagDefinition#comparison_type}
 
 ---
 
@@ -1208,7 +1208,7 @@ DisplayName *string
 
 This is the name of the tag that will be applied to the case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#display_name ChronicleCaseTagDefinition#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#display_name ChronicleCaseTagDefinition#display_name}
 
 ---
 
@@ -1222,7 +1222,7 @@ Instance *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#instance ChronicleCaseTagDefinition#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#instance ChronicleCaseTagDefinition#instance}
 
 ---
 
@@ -1236,7 +1236,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#location ChronicleCaseTagDefinition#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#location ChronicleCaseTagDefinition#location}
 
 ---
 
@@ -1250,7 +1250,7 @@ MatchCriteria *string
 
 The criteria to match the case against. Possible values: ["BY_VENDOR", "BY_PRODUCT", "BY_RULE_GENERATOR", "BY_ENTITY_PROPERTY_NAME", "DATA_DRIVEN", "SYSTEM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#match_criteria ChronicleCaseTagDefinition#match_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#match_criteria ChronicleCaseTagDefinition#match_criteria}
 
 ---
 
@@ -1264,7 +1264,7 @@ Priority *f64
 
 Note that Google Security Operations merges priority with other alerts and entities and events so that the priority here is not absolute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#priority ChronicleCaseTagDefinition#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#priority ChronicleCaseTagDefinition#priority}
 
 ---
 
@@ -1278,7 +1278,7 @@ Value *string
 
 Specific value to search in case - in addition to SearchIn property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#value ChronicleCaseTagDefinition#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#value ChronicleCaseTagDefinition#value}
 
 ---
 
@@ -1299,7 +1299,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#deletion_policy ChronicleCaseTagDefinition#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#deletion_policy ChronicleCaseTagDefinition#deletion_policy}
 
 ---
 
@@ -1311,7 +1311,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#id ChronicleCaseTagDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#id ChronicleCaseTagDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1326,7 +1326,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#project ChronicleCaseTagDefinition#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#project ChronicleCaseTagDefinition#project}.
 
 ---
 
@@ -1340,7 +1340,7 @@ PropertyName *string
 
 Specific Entity property name to search in case. This is relevant only when a SearchIn of type BY_ENTITY_PROPERTY_NAME was chosen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#property_name ChronicleCaseTagDefinition#property_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#property_name ChronicleCaseTagDefinition#property_name}
 
 ---
 
@@ -1354,7 +1354,7 @@ Timeouts ChronicleCaseTagDefinitionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#timeouts ChronicleCaseTagDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#timeouts ChronicleCaseTagDefinition#timeouts}
 
 ---
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 &chroniclecasetagdefinition.ChronicleCaseTagDefinitionTimeouts {
 	Create: *string,
@@ -1376,9 +1376,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#create ChronicleCaseTagDefinition#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#delete ChronicleCaseTagDefinition#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#update ChronicleCaseTagDefinition#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#create ChronicleCaseTagDefinition#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#delete ChronicleCaseTagDefinition#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#update ChronicleCaseTagDefinition#update}. |
 
 ---
 
@@ -1390,7 +1390,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#create ChronicleCaseTagDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#create ChronicleCaseTagDefinition#create}.
 
 ---
 
@@ -1402,7 +1402,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#delete ChronicleCaseTagDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#delete ChronicleCaseTagDefinition#delete}.
 
 ---
 
@@ -1414,7 +1414,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_tag_definition#update ChronicleCaseTagDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/chronicle_case_tag_definition#update ChronicleCaseTagDefinition#update}.
 
 ---
 
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleCaseTagDefinition.ChronicleCaseTagDefinitionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclecasetagdefinition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/chroniclecasetagdefinition"
 
 chroniclecasetagdefinition.NewChronicleCaseTagDefinitionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleCaseTagDefinitionTimeoutsOutputReference
 ```

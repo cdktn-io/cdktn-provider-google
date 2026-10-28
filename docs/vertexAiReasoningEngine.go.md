@@ -4,12 +4,12 @@
 
 ### VertexAiReasoningEngine <a name="VertexAiReasoningEngine" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine google_vertex_ai_reasoning_engine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine google_vertex_ai_reasoning_engine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngine(scope Construct, id *string, config VertexAiReasoningEngineConfig) VertexAiReasoningEngine
 ```
@@ -522,7 +522,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_IsConstruct(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformElement(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformResource(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ vertexaireasoningengine.VertexAiReasoningEngine_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngine.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.VertexAiReasoningEngine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -611,7 +611,7 @@ The construct id used in the generated config for the VertexAiReasoningEngine to
 
 The id of the existing VertexAiReasoningEngine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1108,7 +1108,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineConfig {
 	Connection: interface{},
@@ -1119,16 +1119,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasonin
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	ContextSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpec,
+	ContextSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpec,
 	DeletionPolicy: *string,
 	Description: *string,
-	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
 	Region: *string,
-	Spec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpec,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts,
+	Spec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpec,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts,
 }
 ```
 
@@ -1148,9 +1148,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasonin
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/vertex_ai_reasoning_engine.html.markdown for specifics. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.description">Description</a></code> | <code>*string</code> | The description of the ReasoningEngine. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec">VertexAiReasoningEngineEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels associated with this ReasoningEngine. You can use these to organize and group your ReasoningEngines. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#project VertexAiReasoningEngine#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#project VertexAiReasoningEngine#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.region">Region</a></code> | <code>*string</code> | The region of the reasoning engine. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.spec">Spec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpec">VertexAiReasoningEngineSpec</a></code> | spec block. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts">VertexAiReasoningEngineTimeouts</a></code> | timeouts block. |
@@ -1237,7 +1237,7 @@ DisplayName *string
 
 The display name of the ReasoningEngine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#display_name VertexAiReasoningEngine#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#display_name VertexAiReasoningEngine#display_name}
 
 ---
 
@@ -1251,7 +1251,7 @@ ContextSpec VertexAiReasoningEngineContextSpec
 
 context_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#context_spec VertexAiReasoningEngine#context_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#context_spec VertexAiReasoningEngine#context_spec}
 
 ---
 
@@ -1265,7 +1265,7 @@ DeletionPolicy *string
 
 This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/vertex_ai_reasoning_engine.html.markdown for specifics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#deletion_policy VertexAiReasoningEngine#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#deletion_policy VertexAiReasoningEngine#deletion_policy}
 
 ---
 
@@ -1279,7 +1279,7 @@ Description *string
 
 The description of the ReasoningEngine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#description VertexAiReasoningEngine#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#description VertexAiReasoningEngine#description}
 
 ---
 
@@ -1293,7 +1293,7 @@ EncryptionSpec VertexAiReasoningEngineEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#encryption_spec VertexAiReasoningEngine#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#encryption_spec VertexAiReasoningEngine#encryption_spec}
 
 ---
 
@@ -1305,7 +1305,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1325,7 +1325,7 @@ The labels associated with this ReasoningEngine. You can use these to organize a
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#labels VertexAiReasoningEngine#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#labels VertexAiReasoningEngine#labels}
 
 ---
 
@@ -1337,7 +1337,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#project VertexAiReasoningEngine#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#project VertexAiReasoningEngine#project}.
 
 ---
 
@@ -1351,7 +1351,7 @@ Region *string
 
 The region of the reasoning engine. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#region VertexAiReasoningEngine#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#region VertexAiReasoningEngine#region}
 
 ---
 
@@ -1365,7 +1365,7 @@ Spec VertexAiReasoningEngineSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#spec VertexAiReasoningEngine#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#spec VertexAiReasoningEngine#spec}
 
 ---
 
@@ -1379,7 +1379,7 @@ Timeouts VertexAiReasoningEngineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#timeouts VertexAiReasoningEngine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#timeouts VertexAiReasoningEngine#timeouts}
 
 ---
 
@@ -1388,10 +1388,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpec {
-	MemoryBankConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfig,
+	MemoryBankConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfig,
 }
 ```
 
@@ -1413,7 +1413,7 @@ MemoryBankConfig VertexAiReasoningEngineContextSpecMemoryBankConfig
 
 memory_bank_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#memory_bank_config VertexAiReasoningEngine#memory_bank_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#memory_bank_config VertexAiReasoningEngine#memory_bank_config}
 
 ---
 
@@ -1422,15 +1422,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfig {
 	CustomizationConfigs: interface{},
 	DisableMemoryRevisions: interface{},
-	GenerationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfig,
-	SimilaritySearchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig,
+	GenerationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfig,
+	SimilaritySearchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig,
 	StructuredMemoryConfigs: interface{},
-	TtlConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig,
+	TtlConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig,
 }
 ```
 
@@ -1457,7 +1457,7 @@ CustomizationConfigs interface{}
 
 customization_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#customization_configs VertexAiReasoningEngine#customization_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#customization_configs VertexAiReasoningEngine#customization_configs}
 
 ---
 
@@ -1471,7 +1471,7 @@ DisableMemoryRevisions interface{}
 
 If true, no memory revisions will be created for any requests to the Memory Bank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#disable_memory_revisions VertexAiReasoningEngine#disable_memory_revisions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#disable_memory_revisions VertexAiReasoningEngine#disable_memory_revisions}
 
 ---
 
@@ -1485,7 +1485,7 @@ GenerationConfig VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationCon
 
 generation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generation_config VertexAiReasoningEngine#generation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generation_config VertexAiReasoningEngine#generation_config}
 
 ---
 
@@ -1499,7 +1499,7 @@ SimilaritySearchConfig VertexAiReasoningEngineContextSpecMemoryBankConfigSimilar
 
 similarity_search_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#similarity_search_config VertexAiReasoningEngine#similarity_search_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#similarity_search_config VertexAiReasoningEngine#similarity_search_config}
 
 ---
 
@@ -1513,7 +1513,7 @@ StructuredMemoryConfigs interface{}
 
 structured_memory_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#structured_memory_configs VertexAiReasoningEngine#structured_memory_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#structured_memory_configs VertexAiReasoningEngine#structured_memory_configs}
 
 ---
 
@@ -1527,7 +1527,7 @@ TtlConfig VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig
 
 ttl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#ttl_config VertexAiReasoningEngine#ttl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#ttl_config VertexAiReasoningEngine#ttl_config}
 
 ---
 
@@ -1536,10 +1536,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigs {
-	ConsolidationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfig,
+	ConsolidationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfig,
 	DisableNaturalLanguageMemories: interface{},
 	EnableThirdPersonMemories: interface{},
 	GenerateMemoriesExamples: interface{},
@@ -1571,7 +1571,7 @@ ConsolidationConfig VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizat
 
 consolidation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#consolidation_config VertexAiReasoningEngine#consolidation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#consolidation_config VertexAiReasoningEngine#consolidation_config}
 
 ---
 
@@ -1585,7 +1585,7 @@ DisableNaturalLanguageMemories interface{}
 
 Indicates whether natural language memory generation should be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#disable_natural_language_memories VertexAiReasoningEngine#disable_natural_language_memories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#disable_natural_language_memories VertexAiReasoningEngine#disable_natural_language_memories}
 
 ---
 
@@ -1599,7 +1599,7 @@ EnableThirdPersonMemories interface{}
 
 Optional. Generate memories in the third person if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#enable_third_person_memories VertexAiReasoningEngine#enable_third_person_memories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#enable_third_person_memories VertexAiReasoningEngine#enable_third_person_memories}
 
 ---
 
@@ -1613,7 +1613,7 @@ GenerateMemoriesExamples interface{}
 
 generate_memories_examples block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generate_memories_examples VertexAiReasoningEngine#generate_memories_examples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generate_memories_examples VertexAiReasoningEngine#generate_memories_examples}
 
 ---
 
@@ -1627,7 +1627,7 @@ MemoryTopics interface{}
 
 memory_topics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#memory_topics VertexAiReasoningEngine#memory_topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#memory_topics VertexAiReasoningEngine#memory_topics}
 
 ---
 
@@ -1641,7 +1641,7 @@ ScopeKeys *[]*string
 
 Optional. List of scope keys that this customization config applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#scope_keys VertexAiReasoningEngine#scope_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#scope_keys VertexAiReasoningEngine#scope_keys}
 
 ---
 
@@ -1650,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfig {
 	RevisionsPerCandidateCount: *f64,
@@ -1675,7 +1675,7 @@ RevisionsPerCandidateCount *f64
 
 Number of revisions to consider per candidate count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#revisions_per_candidate_count VertexAiReasoningEngine#revisions_per_candidate_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#revisions_per_candidate_count VertexAiReasoningEngine#revisions_per_candidate_count}
 
 ---
 
@@ -1684,10 +1684,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamples.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamples {
-	ConversationSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSource,
+	ConversationSource: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSource,
 	GeneratedMemories: interface{},
 }
 ```
@@ -1711,7 +1711,7 @@ ConversationSource VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizati
 
 conversation_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#conversation_source VertexAiReasoningEngine#conversation_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#conversation_source VertexAiReasoningEngine#conversation_source}
 
 ---
 
@@ -1725,7 +1725,7 @@ GeneratedMemories interface{}
 
 generated_memories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generated_memories VertexAiReasoningEngine#generated_memories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generated_memories VertexAiReasoningEngine#generated_memories}
 
 ---
 
@@ -1734,7 +1734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSource {
 	Events: interface{},
@@ -1759,7 +1759,7 @@ Events interface{}
 
 events block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#events VertexAiReasoningEngine#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#events VertexAiReasoningEngine#events}
 
 ---
 
@@ -1768,10 +1768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEvents {
-	Content: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContent,
+	Content: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContent,
 }
 ```
 
@@ -1793,7 +1793,7 @@ Content VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGe
 
 content block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#content VertexAiReasoningEngine#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#content VertexAiReasoningEngine#content}
 
 ---
 
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContent {
 	Parts: interface{},
@@ -1829,7 +1829,7 @@ Parts interface{}
 
 parts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#parts VertexAiReasoningEngine#parts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#parts VertexAiReasoningEngine#parts}
 
 ---
 
@@ -1845,7 +1845,7 @@ The producer of the content.
 
 Must be either 'user' or 'model'. If not set, the service will default to 'user'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#role VertexAiReasoningEngine#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#role VertexAiReasoningEngine#role}
 
 ---
 
@@ -1854,19 +1854,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentParts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentParts {
-	AudioTranscription: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscription,
-	CodeExecutionResult: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResult,
-	ExecutableCode: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCode,
-	FileData: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileData,
-	FunctionCall: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCall,
-	FunctionResponse: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponse,
-	InlineData: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineData,
+	AudioTranscription: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscription,
+	CodeExecutionResult: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResult,
+	ExecutableCode: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCode,
+	FileData: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileData,
+	FunctionCall: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCall,
+	FunctionResponse: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponse,
+	InlineData: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineData,
 	Text: *string,
 	Thought: interface{},
-	VideoMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadata,
+	VideoMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadata,
 }
 ```
 
@@ -1897,7 +1897,7 @@ AudioTranscription VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizati
 
 audio_transcription block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#audio_transcription VertexAiReasoningEngine#audio_transcription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#audio_transcription VertexAiReasoningEngine#audio_transcription}
 
 ---
 
@@ -1911,7 +1911,7 @@ CodeExecutionResult VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizat
 
 code_execution_result block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#code_execution_result VertexAiReasoningEngine#code_execution_result}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#code_execution_result VertexAiReasoningEngine#code_execution_result}
 
 ---
 
@@ -1925,7 +1925,7 @@ ExecutableCode VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationCo
 
 executable_code block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#executable_code VertexAiReasoningEngine#executable_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#executable_code VertexAiReasoningEngine#executable_code}
 
 ---
 
@@ -1939,7 +1939,7 @@ FileData VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsG
 
 file_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#file_data VertexAiReasoningEngine#file_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#file_data VertexAiReasoningEngine#file_data}
 
 ---
 
@@ -1953,7 +1953,7 @@ FunctionCall VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConf
 
 function_call block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#function_call VertexAiReasoningEngine#function_call}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#function_call VertexAiReasoningEngine#function_call}
 
 ---
 
@@ -1967,7 +1967,7 @@ FunctionResponse VertexAiReasoningEngineContextSpecMemoryBankConfigCustomization
 
 function_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#function_response VertexAiReasoningEngine#function_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#function_response VertexAiReasoningEngine#function_response}
 
 ---
 
@@ -1981,7 +1981,7 @@ InlineData VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfig
 
 inline_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#inline_data VertexAiReasoningEngine#inline_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#inline_data VertexAiReasoningEngine#inline_data}
 
 ---
 
@@ -1995,7 +1995,7 @@ Text *string
 
 The text content of the part.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#text VertexAiReasoningEngine#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#text VertexAiReasoningEngine#text}
 
 ---
 
@@ -2009,7 +2009,7 @@ Thought interface{}
 
 Indicates whether the part represents the model's thought process or reasoning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#thought VertexAiReasoningEngine#thought}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#thought VertexAiReasoningEngine#thought}
 
 ---
 
@@ -2023,7 +2023,7 @@ VideoMetadata VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationCon
 
 video_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#video_metadata VertexAiReasoningEngine#video_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#video_metadata VertexAiReasoningEngine#video_metadata}
 
 ---
 
@@ -2032,7 +2032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscription {
 	Text: *string,
@@ -2061,7 +2061,7 @@ Text *string
 
 The transcription text of this audio segment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#text VertexAiReasoningEngine#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#text VertexAiReasoningEngine#text}
 
 ---
 
@@ -2075,7 +2075,7 @@ SpeakerLabel *string
 
 A label identifying the speaker of this audio segment (e.g. spk_1, spk_2). Present when diarization is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#speaker_label VertexAiReasoningEngine#speaker_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#speaker_label VertexAiReasoningEngine#speaker_label}
 
 ---
 
@@ -2089,7 +2089,7 @@ Words interface{}
 
 words block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#words VertexAiReasoningEngine#words}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#words VertexAiReasoningEngine#words}
 
 ---
 
@@ -2098,7 +2098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWords.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWords {
 	Word: *string,
@@ -2127,7 +2127,7 @@ Word *string
 
 Transcript of the word.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#word VertexAiReasoningEngine#word}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#word VertexAiReasoningEngine#word}
 
 ---
 
@@ -2141,7 +2141,7 @@ EndOffset *string
 
 End offset in time of the word relative to the start of the audio.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#end_offset VertexAiReasoningEngine#end_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#end_offset VertexAiReasoningEngine#end_offset}
 
 ---
 
@@ -2155,7 +2155,7 @@ StartOffset *string
 
 Start offset in time of the word relative to the start of the audio.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#start_offset VertexAiReasoningEngine#start_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#start_offset VertexAiReasoningEngine#start_offset}
 
 ---
 
@@ -2164,7 +2164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResult {
 	Outcome: *string,
@@ -2193,7 +2193,7 @@ Outcome *string
 
 Outcome of the code execution. Possible values: ["OUTCOME_UNSPECIFIED", "OUTCOME_OK", "OUTCOME_FAILED", "OUTCOME_DEADLINE_EXCEEDED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#outcome VertexAiReasoningEngine#outcome}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#outcome VertexAiReasoningEngine#outcome}
 
 ---
 
@@ -2207,7 +2207,7 @@ Id *string
 
 The identifier of the ExecutableCode part this result is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2224,7 +2224,7 @@ Output *string
 
 Contains stdout when code execution is successful, stderr or other description otherwise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#output VertexAiReasoningEngine#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#output VertexAiReasoningEngine#output}
 
 ---
 
@@ -2233,7 +2233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCode {
 	Code: *string,
@@ -2262,7 +2262,7 @@ Code *string
 
 The code to be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#code VertexAiReasoningEngine#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#code VertexAiReasoningEngine#code}
 
 ---
 
@@ -2276,7 +2276,7 @@ Language *string
 
 Supported programming languages for the generated code. Possible values: ["LANGUAGE_UNSPECIFIED", "PYTHON", "BASH"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#language VertexAiReasoningEngine#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#language VertexAiReasoningEngine#language}
 
 ---
 
@@ -2290,7 +2290,7 @@ Id *string
 
 Unique identifier of the ExecutableCode part.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2302,7 +2302,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileData {
 	FileUri: *string,
@@ -2329,7 +2329,7 @@ FileUri *string
 
 The URI of the file in Google Cloud Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#file_uri VertexAiReasoningEngine#file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#file_uri VertexAiReasoningEngine#file_uri}
 
 ---
 
@@ -2343,7 +2343,7 @@ MimeType *string
 
 The IANA standard MIME type of the source data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#mime_type VertexAiReasoningEngine#mime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#mime_type VertexAiReasoningEngine#mime_type}
 
 ---
 
@@ -2352,7 +2352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCall.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCall {
 	Args: *string,
@@ -2381,7 +2381,7 @@ Args *string
 
 The function parameters and values in JSON object format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#args VertexAiReasoningEngine#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#args VertexAiReasoningEngine#args}
 
 ---
 
@@ -2395,7 +2395,7 @@ Id *string
 
 The unique id of the function call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2412,7 +2412,7 @@ Name *string
 
 The name of the function to call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
 
 ---
 
@@ -2421,7 +2421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponse {
 	Name: *string,
@@ -2450,7 +2450,7 @@ Name *string
 
 The name of the function to call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
 
 ---
 
@@ -2464,7 +2464,7 @@ Id *string
 
 The id of the function call this response is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2481,7 +2481,7 @@ Response *string
 
 The function response in JSON object format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#response VertexAiReasoningEngine#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#response VertexAiReasoningEngine#response}
 
 ---
 
@@ -2490,7 +2490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineData {
 	Data: *string,
@@ -2517,7 +2517,7 @@ Data *string
 
 Raw bytes, which should be base64-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#data VertexAiReasoningEngine#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#data VertexAiReasoningEngine#data}
 
 ---
 
@@ -2531,7 +2531,7 @@ MimeType *string
 
 The IANA standard MIME type of the source data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#mime_type VertexAiReasoningEngine#mime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#mime_type VertexAiReasoningEngine#mime_type}
 
 ---
 
@@ -2540,7 +2540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadata {
 	EndOffset: *string,
@@ -2567,7 +2567,7 @@ EndOffset *string
 
 The end offset of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#end_offset VertexAiReasoningEngine#end_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#end_offset VertexAiReasoningEngine#end_offset}
 
 ---
 
@@ -2581,7 +2581,7 @@ StartOffset *string
 
 The start offset of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#start_offset VertexAiReasoningEngine#start_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#start_offset VertexAiReasoningEngine#start_offset}
 
 ---
 
@@ -2590,7 +2590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemories {
 	Fact: *string,
@@ -2617,7 +2617,7 @@ Fact *string
 
 Represents the fact to generate a memory from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#fact VertexAiReasoningEngine#fact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#fact VertexAiReasoningEngine#fact}
 
 ---
 
@@ -2631,7 +2631,7 @@ Topics interface{}
 
 topics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#topics VertexAiReasoningEngine#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#topics VertexAiReasoningEngine#topics}
 
 ---
 
@@ -2640,7 +2640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopics {
 	CustomMemoryTopicLabel: *string,
@@ -2667,7 +2667,7 @@ CustomMemoryTopicLabel *string
 
 Represents the custom memory topic label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#custom_memory_topic_label VertexAiReasoningEngine#custom_memory_topic_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#custom_memory_topic_label VertexAiReasoningEngine#custom_memory_topic_label}
 
 ---
 
@@ -2681,7 +2681,7 @@ ManagedMemoryTopic *string
 
 Represents the managed memory topic. Possible values: ["USER_PERSONAL_INFO", "USER_PREFERENCES", "KEY_CONVERSATION_DETAILS", "EXPLICIT_INSTRUCTIONS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#managed_memory_topic VertexAiReasoningEngine#managed_memory_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#managed_memory_topic VertexAiReasoningEngine#managed_memory_topic}
 
 ---
 
@@ -2690,11 +2690,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopics {
-	CustomMemoryTopic: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopic,
-	ManagedMemoryTopic: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopic,
+	CustomMemoryTopic: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopic,
+	ManagedMemoryTopic: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopic,
 }
 ```
 
@@ -2717,7 +2717,7 @@ CustomMemoryTopic VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizatio
 
 custom_memory_topic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#custom_memory_topic VertexAiReasoningEngine#custom_memory_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#custom_memory_topic VertexAiReasoningEngine#custom_memory_topic}
 
 ---
 
@@ -2731,7 +2731,7 @@ ManagedMemoryTopic VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizati
 
 managed_memory_topic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#managed_memory_topic VertexAiReasoningEngine#managed_memory_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#managed_memory_topic VertexAiReasoningEngine#managed_memory_topic}
 
 ---
 
@@ -2740,7 +2740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopic {
 	Description: *string,
@@ -2767,7 +2767,7 @@ Description *string
 
 Description of custom memory topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#description VertexAiReasoningEngine#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#description VertexAiReasoningEngine#description}
 
 ---
 
@@ -2781,7 +2781,7 @@ Label *string
 
 Label of custom memory topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#label VertexAiReasoningEngine#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#label VertexAiReasoningEngine#label}
 
 ---
 
@@ -2790,7 +2790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopic {
 	ManagedTopicEnum: *string,
@@ -2815,7 +2815,7 @@ ManagedTopicEnum *string
 
 Managed topic enum (e.g. USER_PREFERENCES, EXPLICIT_INSTRUCTIONS).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#managed_topic_enum VertexAiReasoningEngine#managed_topic_enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#managed_topic_enum VertexAiReasoningEngine#managed_topic_enum}
 
 ---
 
@@ -2824,11 +2824,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfig {
 	Model: *string,
-	GenerationTriggerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfig,
+	GenerationTriggerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfig,
 }
 ```
 
@@ -2851,7 +2851,7 @@ Model *string
 
 The model used to generate memories. Format: projects/{project}/locations/{location}/publishers/google/models/{model}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#model VertexAiReasoningEngine#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#model VertexAiReasoningEngine#model}
 
 ---
 
@@ -2865,7 +2865,7 @@ GenerationTriggerConfig VertexAiReasoningEngineContextSpecMemoryBankConfigGenera
 
 generation_trigger_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generation_trigger_config VertexAiReasoningEngine#generation_trigger_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generation_trigger_config VertexAiReasoningEngine#generation_trigger_config}
 
 ---
 
@@ -2874,10 +2874,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfig {
-	GenerationRule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRule,
+	GenerationRule: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRule,
 }
 ```
 
@@ -2899,7 +2899,7 @@ GenerationRule VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfi
 
 generation_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generation_rule VertexAiReasoningEngine#generation_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generation_rule VertexAiReasoningEngine#generation_rule}
 
 ---
 
@@ -2908,7 +2908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRule {
 	EventCount: *f64,
@@ -2939,7 +2939,7 @@ EventCount *f64
 
 Optional. Specifies to trigger generation when the event count reaches this limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#event_count VertexAiReasoningEngine#event_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#event_count VertexAiReasoningEngine#event_count}
 
 ---
 
@@ -2953,7 +2953,7 @@ FixedInterval *string
 
 Optional. Specifies to trigger generation at a fixed interval. The duration must have a minute-level granularity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#fixed_interval VertexAiReasoningEngine#fixed_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#fixed_interval VertexAiReasoningEngine#fixed_interval}
 
 ---
 
@@ -2971,7 +2971,7 @@ Specifies to trigger generation if the stream is inactive for the
 specified duration after the most recent event. The duration must have a
 minute-level granularity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#idle_duration VertexAiReasoningEngine#idle_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#idle_duration VertexAiReasoningEngine#idle_duration}
 
 ---
 
@@ -2985,7 +2985,7 @@ OverlapEventCount *f64
 
 Optional. Re-include the last N already-processed events in the next window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#overlap_event_count VertexAiReasoningEngine#overlap_event_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#overlap_event_count VertexAiReasoningEngine#overlap_event_count}
 
 ---
 
@@ -2994,7 +2994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfig {
 	EmbeddingModel: *string,
@@ -3019,7 +3019,7 @@ EmbeddingModel *string
 
 The model used to generate embeddings to lookup similar memories. Format: projects/{project}/locations/{location}/publishers/google/models/{model}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#embedding_model VertexAiReasoningEngine#embedding_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#embedding_model VertexAiReasoningEngine#embedding_model}
 
 ---
 
@@ -3028,7 +3028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigs {
 	SchemaConfigs: interface{},
@@ -3055,7 +3055,7 @@ SchemaConfigs interface{}
 
 schema_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#schema_configs VertexAiReasoningEngine#schema_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#schema_configs VertexAiReasoningEngine#schema_configs}
 
 ---
 
@@ -3069,7 +3069,7 @@ ScopeKeys *[]*string
 
 Optional. List of scope keys that this structured memory config applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#scope_keys VertexAiReasoningEngine#scope_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#scope_keys VertexAiReasoningEngine#scope_keys}
 
 ---
 
@@ -3078,7 +3078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigs {
 	Id: *string,
@@ -3105,7 +3105,7 @@ Id *string
 
 Required. Unique ID identifying the memory schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#id VertexAiReasoningEngine#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3122,7 +3122,7 @@ MemorySchema *string
 
 Optional. The memory schema defined as an OpenAPI Schema Object JSON string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#memory_schema VertexAiReasoningEngine#memory_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#memory_schema VertexAiReasoningEngine#memory_schema}
 
 ---
 
@@ -3131,11 +3131,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig {
 	DefaultTtl: *string,
-	GranularTtlConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig,
+	GranularTtlConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig,
 	MemoryRevisionDefaultTtl: *string,
 }
 ```
@@ -3160,7 +3160,7 @@ DefaultTtl *string
 
 The default TTL duration of the memories in the Memory Bank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#default_ttl VertexAiReasoningEngine#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#default_ttl VertexAiReasoningEngine#default_ttl}
 
 ---
 
@@ -3174,7 +3174,7 @@ GranularTtlConfig VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGra
 
 granular_ttl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#granular_ttl_config VertexAiReasoningEngine#granular_ttl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#granular_ttl_config VertexAiReasoningEngine#granular_ttl_config}
 
 ---
 
@@ -3188,7 +3188,7 @@ MemoryRevisionDefaultTtl *string
 
 The default TTL duration of the memory revisions in the Memory Bank.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#memory_revision_default_ttl VertexAiReasoningEngine#memory_revision_default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#memory_revision_default_ttl VertexAiReasoningEngine#memory_revision_default_ttl}
 
 ---
 
@@ -3197,7 +3197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfig {
 	CreateTtl: *string,
@@ -3226,7 +3226,7 @@ CreateTtl *string
 
 The TTL duration for memories uploaded via CreateMemory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#create_ttl VertexAiReasoningEngine#create_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#create_ttl VertexAiReasoningEngine#create_ttl}
 
 ---
 
@@ -3240,7 +3240,7 @@ GenerateCreatedTtl *string
 
 The TTL duration for memories newly generated via GenerateMemories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generate_created_ttl VertexAiReasoningEngine#generate_created_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generate_created_ttl VertexAiReasoningEngine#generate_created_ttl}
 
 ---
 
@@ -3254,7 +3254,7 @@ GenerateUpdatedTtl *string
 
 The TTL duration for memories updated via GenerateMemories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#generate_updated_ttl VertexAiReasoningEngine#generate_updated_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#generate_updated_ttl VertexAiReasoningEngine#generate_updated_ttl}
 
 ---
 
@@ -3263,7 +3263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineEncryptionSpec {
 	KmsKeyName: *string,
@@ -3294,7 +3294,7 @@ projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key.
 The key needs to be in the same region as where the compute resource
 is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#kms_key_name VertexAiReasoningEngine#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#kms_key_name VertexAiReasoningEngine#kms_key_name}
 
 ---
 
@@ -3303,18 +3303,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpec {
 	AgentFramework: *string,
-	BuildSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecBuildSpec,
+	BuildSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecBuildSpec,
 	ClassMethods: *string,
-	ContainerSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec,
-	DeploymentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec,
+	ContainerSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec,
+	DeploymentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec,
 	IdentityType: *string,
-	PackageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec,
+	PackageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec,
 	ServiceAccount: *string,
-	SourceCodeSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec,
+	SourceCodeSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec,
 }
 ```
 
@@ -3344,7 +3344,7 @@ AgentFramework *string
 
 Optional. The OSS agent framework used to develop the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#agent_framework VertexAiReasoningEngine#agent_framework}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#agent_framework VertexAiReasoningEngine#agent_framework}
 
 ---
 
@@ -3358,7 +3358,7 @@ BuildSpec VertexAiReasoningEngineSpecBuildSpec
 
 build_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#build_spec VertexAiReasoningEngine#build_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#build_spec VertexAiReasoningEngine#build_spec}
 
 ---
 
@@ -3625,7 +3625,7 @@ class_methods = jsonencode([
 ])
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#class_methods VertexAiReasoningEngine#class_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#class_methods VertexAiReasoningEngine#class_methods}
 
 ---
 
@@ -3639,7 +3639,7 @@ ContainerSpec VertexAiReasoningEngineSpecContainerSpec
 
 container_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#container_spec VertexAiReasoningEngine#container_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#container_spec VertexAiReasoningEngine#container_spec}
 
 ---
 
@@ -3653,7 +3653,7 @@ DeploymentSpec VertexAiReasoningEngineSpecDeploymentSpec
 
 deployment_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#deployment_spec VertexAiReasoningEngine#deployment_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#deployment_spec VertexAiReasoningEngine#deployment_spec}
 
 ---
 
@@ -3675,7 +3675,7 @@ Possible values:
 * 'SERVICE_ACCOUNT': Use a custom service account if the 'service_account' field is set, otherwise use the default Vertex AI Reasoning Engine Service Agent in the project.
 * 'AGENT_IDENTITY': Use Agent Identity. The 'service_account' field must not be set. Possible values: ["SERVICE_ACCOUNT", "AGENT_IDENTITY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#identity_type VertexAiReasoningEngine#identity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#identity_type VertexAiReasoningEngine#identity_type}
 
 ---
 
@@ -3689,7 +3689,7 @@ PackageSpec VertexAiReasoningEngineSpecPackageSpec
 
 package_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#package_spec VertexAiReasoningEngine#package_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#package_spec VertexAiReasoningEngine#package_spec}
 
 ---
 
@@ -3709,7 +3709,7 @@ project's Cloud Storage and "roles/aiplatform.user" for using Vertex
 extensions. If not specified, the Vertex AI Reasoning Engine service
 Agent in the project will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#service_account VertexAiReasoningEngine#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#service_account VertexAiReasoningEngine#service_account}
 
 ---
 
@@ -3723,7 +3723,7 @@ SourceCodeSpec VertexAiReasoningEngineSpecSourceCodeSpec
 
 source_code_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#source_code_spec VertexAiReasoningEngine#source_code_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#source_code_spec VertexAiReasoningEngine#source_code_spec}
 
 ---
 
@@ -3732,7 +3732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecBuildSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecBuildSpec {
 	ServiceAccount: *string,
@@ -3759,7 +3759,7 @@ ServiceAccount *string
 
 Optional. The service account that the Cloud Build builder runs as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#service_account VertexAiReasoningEngine#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#service_account VertexAiReasoningEngine#service_account}
 
 ---
 
@@ -3773,7 +3773,7 @@ WorkerPool *string
 
 Optional. The resource name of the Cloud Build WorkerPool to use for the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#worker_pool VertexAiReasoningEngine#worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#worker_pool VertexAiReasoningEngine#worker_pool}
 
 ---
 
@@ -3782,7 +3782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecContainerSpec {
 	ImageUri: *string,
@@ -3809,7 +3809,7 @@ ImageUri *string
 
 The Artifact Registry Docker image URI (e.g., 'us-central1-docker.pkg.dev/my-project/my-repo/my-image:tag') of the container image that is to be run on each worker replica.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#image_uri VertexAiReasoningEngine#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#image_uri VertexAiReasoningEngine#image_uri}
 
 ---
 
@@ -3823,7 +3823,7 @@ Port *f64
 
 Optional. The port that the container listens on for incoming requests. If not specified, defaults to 8080.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#port VertexAiReasoningEngine#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#port VertexAiReasoningEngine#port}
 
 ---
 
@@ -3832,15 +3832,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpec {
-	AgentGatewayConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig,
+	AgentGatewayConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig,
 	ContainerConcurrency: *f64,
 	Env: interface{},
 	MaxInstances: *f64,
 	MinInstances: *f64,
-	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig,
+	PscInterfaceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig,
 	ResourceLimits: *map[string]*string,
 	SecretEnv: interface{},
 }
@@ -3871,7 +3871,7 @@ AgentGatewayConfig VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig
 
 agent_gateway_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#agent_gateway_config VertexAiReasoningEngine#agent_gateway_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#agent_gateway_config VertexAiReasoningEngine#agent_gateway_config}
 
 ---
 
@@ -3885,7 +3885,7 @@ ContainerConcurrency *f64
 
 Optional. Concurrency for each container and agent server. Recommended value: 2 * cpu + 1. Defaults to 9.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#container_concurrency VertexAiReasoningEngine#container_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#container_concurrency VertexAiReasoningEngine#container_concurrency}
 
 ---
 
@@ -3899,7 +3899,7 @@ Env interface{}
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#env VertexAiReasoningEngine#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#env VertexAiReasoningEngine#env}
 
 ---
 
@@ -3918,7 +3918,7 @@ launched to handle increased traffic. Defaults to 100.
 Range: [1, 1000]. If VPC-SC or PSC-I is enabled, the acceptable
 range is [1, 100].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#max_instances VertexAiReasoningEngine#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#max_instances VertexAiReasoningEngine#max_instances}
 
 ---
 
@@ -3935,7 +3935,7 @@ Optional.
 The minimum number of application instances that will be
 kept running at all times. Defaults to 1. Range: [0, 10].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#min_instances VertexAiReasoningEngine#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#min_instances VertexAiReasoningEngine#min_instances}
 
 ---
 
@@ -3949,7 +3949,7 @@ PscInterfaceConfig VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig
 
 psc_interface_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#psc_interface_config VertexAiReasoningEngine#psc_interface_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#psc_interface_config VertexAiReasoningEngine#psc_interface_config}
 
 ---
 
@@ -3973,7 +3973,7 @@ The only supported values for memory are '1Gi', '2Gi', ... '32 Gi'.
 For more information, go to
 https://cloud.google.com/run/docs/configuring/memory-limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#resource_limits VertexAiReasoningEngine#resource_limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#resource_limits VertexAiReasoningEngine#resource_limits}
 
 ---
 
@@ -3987,7 +3987,7 @@ SecretEnv interface{}
 
 secret_env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#secret_env VertexAiReasoningEngine#secret_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#secret_env VertexAiReasoningEngine#secret_env}
 
 ---
 
@@ -3996,11 +3996,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig {
-	AgentToAnywhereConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfig,
-	ClientToAgentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfig,
+	AgentToAnywhereConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfig,
+	ClientToAgentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfig,
 }
 ```
 
@@ -4023,7 +4023,7 @@ AgentToAnywhereConfig VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfi
 
 agent_to_anywhere_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#agent_to_anywhere_config VertexAiReasoningEngine#agent_to_anywhere_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#agent_to_anywhere_config VertexAiReasoningEngine#agent_to_anywhere_config}
 
 ---
 
@@ -4037,7 +4037,7 @@ ClientToAgentConfig VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigC
 
 client_to_agent_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#client_to_agent_config VertexAiReasoningEngine#client_to_agent_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#client_to_agent_config VertexAiReasoningEngine#client_to_agent_config}
 
 ---
 
@@ -4046,7 +4046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfig {
 	AgentGateway: *string,
@@ -4071,7 +4071,7 @@ AgentGateway *string
 
 Required. The resource name of the Agent Gateway for outbound traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#agent_gateway VertexAiReasoningEngine#agent_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#agent_gateway VertexAiReasoningEngine#agent_gateway}
 
 ---
 
@@ -4080,7 +4080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfig {
 	AgentGateway: *string,
@@ -4105,7 +4105,7 @@ AgentGateway *string
 
 Required. The resource name of the Agent Gateway to use for inbound traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#agent_gateway VertexAiReasoningEngine#agent_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#agent_gateway VertexAiReasoningEngine#agent_gateway}
 
 ---
 
@@ -4114,7 +4114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecEnv {
 	Name: *string,
@@ -4141,7 +4141,7 @@ Name *string
 
 The name of the environment variable. Must be a valid C identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
 
 ---
 
@@ -4162,7 +4162,7 @@ double $$, ie: $$(VAR_NAME). Escaped references will never
 be expanded, regardless of whether the variable exists
 or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#value VertexAiReasoningEngine#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#value VertexAiReasoningEngine#value}
 
 ---
 
@@ -4171,7 +4171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig {
 	DnsPeeringConfigs: interface{},
@@ -4198,7 +4198,7 @@ DnsPeeringConfigs interface{}
 
 dns_peering_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#dns_peering_configs VertexAiReasoningEngine#dns_peering_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#dns_peering_configs VertexAiReasoningEngine#dns_peering_configs}
 
 ---
 
@@ -4217,7 +4217,7 @@ to attach to the resource within the region and user project.
 To specify this field, you must have already created a network attachment.
 This field is only used for resources using PSC-Interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#network_attachment VertexAiReasoningEngine#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#network_attachment VertexAiReasoningEngine#network_attachment}
 
 ---
 
@@ -4226,7 +4226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs {
 	Domain: *string,
@@ -4255,7 +4255,7 @@ Domain *string
 
 Required. The DNS name suffix of the zone being peered to, e.g., "my-internal-domain.corp.". Must end with a dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#domain VertexAiReasoningEngine#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#domain VertexAiReasoningEngine#domain}
 
 ---
 
@@ -4269,7 +4269,7 @@ TargetNetwork *string
 
 Required. The VPC network name in the targetProject where the DNS zone specified by 'domain' is visible.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#target_network VertexAiReasoningEngine#target_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#target_network VertexAiReasoningEngine#target_network}
 
 ---
 
@@ -4288,7 +4288,7 @@ zone that contains the 'domain'.
 The Vertex AI service Agent requires the dns.peer role
 on this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#target_project VertexAiReasoningEngine#target_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#target_project VertexAiReasoningEngine#target_project}
 
 ---
 
@@ -4297,11 +4297,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnv {
 	Name: *string,
-	SecretRef: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef,
+	SecretRef: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef,
 }
 ```
 
@@ -4324,7 +4324,7 @@ Name *string
 
 The name of the environment variable. Must be a valid C identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#name VertexAiReasoningEngine#name}
 
 ---
 
@@ -4338,7 +4338,7 @@ SecretRef VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef
 
 secret_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#secret_ref VertexAiReasoningEngine#secret_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#secret_ref VertexAiReasoningEngine#secret_ref}
 
 ---
 
@@ -4347,7 +4347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef {
 	Secret: *string,
@@ -4374,7 +4374,7 @@ Secret *string
 
 The name of the secret in Cloud Secret Manager. Format: {secret_name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#secret VertexAiReasoningEngine#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#secret VertexAiReasoningEngine#secret}
 
 ---
 
@@ -4392,7 +4392,7 @@ Can be 'latest'
 for the latest version, an integer for a specific
 version, or a version alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
 
 ---
 
@@ -4401,7 +4401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecPackageSpec {
 	DependencyFilesGcsUri: *string,
@@ -4432,7 +4432,7 @@ DependencyFilesGcsUri *string
 
 Optional. The Cloud Storage URI of the dependency files in tar.gz format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#dependency_files_gcs_uri VertexAiReasoningEngine#dependency_files_gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#dependency_files_gcs_uri VertexAiReasoningEngine#dependency_files_gcs_uri}
 
 ---
 
@@ -4446,7 +4446,7 @@ PickleObjectGcsUri *string
 
 Optional. The Cloud Storage URI of the pickled python object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#pickle_object_gcs_uri VertexAiReasoningEngine#pickle_object_gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#pickle_object_gcs_uri VertexAiReasoningEngine#pickle_object_gcs_uri}
 
 ---
 
@@ -4460,7 +4460,7 @@ PythonVersion *string
 
 Optional. The Python version. Currently support 3.8, 3.9, 3.10, 3.11, 3.12, 3.13. If not specified, default value is 3.10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#python_version VertexAiReasoningEngine#python_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#python_version VertexAiReasoningEngine#python_version}
 
 ---
 
@@ -4474,7 +4474,7 @@ RequirementsGcsUri *string
 
 Optional. The Cloud Storage URI of the requirements.txtfile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#requirements_gcs_uri VertexAiReasoningEngine#requirements_gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#requirements_gcs_uri VertexAiReasoningEngine#requirements_gcs_uri}
 
 ---
 
@@ -4483,14 +4483,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpec {
-	AgentConfigSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSource,
-	DeveloperConnectSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource,
-	ImageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec,
-	InlineSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource,
-	PythonSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec,
+	AgentConfigSource: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSource,
+	DeveloperConnectSource: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource,
+	ImageSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec,
+	InlineSource: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource,
+	PythonSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec,
 }
 ```
 
@@ -4516,7 +4516,7 @@ AgentConfigSource VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSource
 
 agent_config_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#agent_config_source VertexAiReasoningEngine#agent_config_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#agent_config_source VertexAiReasoningEngine#agent_config_source}
 
 ---
 
@@ -4530,7 +4530,7 @@ DeveloperConnectSource VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnect
 
 developer_connect_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#developer_connect_source VertexAiReasoningEngine#developer_connect_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#developer_connect_source VertexAiReasoningEngine#developer_connect_source}
 
 ---
 
@@ -4544,7 +4544,7 @@ ImageSpec VertexAiReasoningEngineSpecSourceCodeSpecImageSpec
 
 image_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#image_spec VertexAiReasoningEngine#image_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#image_spec VertexAiReasoningEngine#image_spec}
 
 ---
 
@@ -4558,7 +4558,7 @@ InlineSource VertexAiReasoningEngineSpecSourceCodeSpecInlineSource
 
 inline_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#inline_source VertexAiReasoningEngine#inline_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#inline_source VertexAiReasoningEngine#inline_source}
 
 ---
 
@@ -4572,7 +4572,7 @@ PythonSpec VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec
 
 python_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#python_spec VertexAiReasoningEngine#python_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#python_spec VertexAiReasoningEngine#python_spec}
 
 ---
 
@@ -4581,11 +4581,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSource {
-	AdkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfig,
-	InlineSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSource,
+	AdkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfig,
+	InlineSource: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSource,
 }
 ```
 
@@ -4608,7 +4608,7 @@ AdkConfig VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfig
 
 adk_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#adk_config VertexAiReasoningEngine#adk_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#adk_config VertexAiReasoningEngine#adk_config}
 
 ---
 
@@ -4622,7 +4622,7 @@ InlineSource VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSou
 
 inline_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#inline_source VertexAiReasoningEngine#inline_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#inline_source VertexAiReasoningEngine#inline_source}
 
 ---
 
@@ -4631,7 +4631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfig {
 	JsonConfig: *string,
@@ -4656,7 +4656,7 @@ JsonConfig *string
 
 Required. The value of the ADK config in JSON format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#json_config VertexAiReasoningEngine#json_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#json_config VertexAiReasoningEngine#json_config}
 
 ---
 
@@ -4665,7 +4665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSource {
 	SourceArchive: *string,
@@ -4690,7 +4690,7 @@ SourceArchive *string
 
 Required. Input only. The application source code archive, provided as a compressed tarball (.tar.gz) file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#source_archive VertexAiReasoningEngine#source_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#source_archive VertexAiReasoningEngine#source_archive}
 
 ---
 
@@ -4699,10 +4699,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSource {
-	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig,
+	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v22.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig,
 }
 ```
 
@@ -4724,7 +4724,7 @@ Config VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#config VertexAiReasoningEngine#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#config VertexAiReasoningEngine#config}
 
 ---
 
@@ -4733,7 +4733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfig {
 	Dir: *string,
@@ -4762,7 +4762,7 @@ Dir *string
 
 Directory, relative to the source root, in which to run the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#dir VertexAiReasoningEngine#dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#dir VertexAiReasoningEngine#dir}
 
 ---
 
@@ -4776,7 +4776,7 @@ GitRepositoryLink *string
 
 The Developer Connect Git repository link, formatted as projects/* /locations/* /connections/* /gitRepositoryLink/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#git_repository_link VertexAiReasoningEngine#git_repository_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#git_repository_link VertexAiReasoningEngine#git_repository_link}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -4792,7 +4792,7 @@ Revision *string
 
 The revision to fetch from the Git repository such as a branch, a tag, a commit SHA, or any Git ref.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#revision VertexAiReasoningEngine#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#revision VertexAiReasoningEngine#revision}
 
 ---
 
@@ -4801,7 +4801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpec {
 	BuildArgs: *map[string]*string,
@@ -4826,7 +4826,7 @@ BuildArgs *map[string]*string
 
 Build arguments to be used. They will be passed through --build-arg flags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#build_args VertexAiReasoningEngine#build_args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#build_args VertexAiReasoningEngine#build_args}
 
 ---
 
@@ -4835,7 +4835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSource {
 	SourceArchive: *string,
@@ -4860,7 +4860,7 @@ SourceArchive *string
 
 Required. Input only. The application source code archive, provided as a compressed tarball (.tar.gz) file. A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#source_archive VertexAiReasoningEngine#source_archive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#source_archive VertexAiReasoningEngine#source_archive}
 
 ---
 
@@ -4869,7 +4869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec {
 	EntrypointModule: *string,
@@ -4906,7 +4906,7 @@ path.to.agent. If not specified, defaults to "agent".
 The project root will be added to Python sys.path, allowing
 imports to be specified relative to the root.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_module VertexAiReasoningEngine#entrypoint_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_module VertexAiReasoningEngine#entrypoint_module}
 
 ---
 
@@ -4920,7 +4920,7 @@ EntrypointObject *string
 
 Optional. The name of the callable object within the entrypointModule to use as the application If not specified, defaults to "root_agent".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_object VertexAiReasoningEngine#entrypoint_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#entrypoint_object VertexAiReasoningEngine#entrypoint_object}
 
 ---
 
@@ -4934,7 +4934,7 @@ RequirementsFile *string
 
 Optional. The path to the requirements file, relative to the source root. If not specified, defaults to "requirements.txt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#requirements_file VertexAiReasoningEngine#requirements_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#requirements_file VertexAiReasoningEngine#requirements_file}
 
 ---
 
@@ -4952,7 +4952,7 @@ The version of Python to use. Support version
 includes 3.9, 3.10, 3.11, 3.12, 3.13. If not specified,
 default value is 3.10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#version VertexAiReasoningEngine#version}
 
 ---
 
@@ -4961,7 +4961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 &vertexaireasoningengine.VertexAiReasoningEngineTimeouts {
 	Create: *string,
@@ -4974,9 +4974,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasonin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#create VertexAiReasoningEngine#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#delete VertexAiReasoningEngine#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#update VertexAiReasoningEngine#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#create VertexAiReasoningEngine#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#delete VertexAiReasoningEngine#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#update VertexAiReasoningEngine#update}. |
 
 ---
 
@@ -4988,7 +4988,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#create VertexAiReasoningEngine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#create VertexAiReasoningEngine#create}.
 
 ---
 
@@ -5000,7 +5000,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#delete VertexAiReasoningEngine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#delete VertexAiReasoningEngine#delete}.
 
 ---
 
@@ -5012,7 +5012,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine#update VertexAiReasoningEngine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_reasoning_engine#update VertexAiReasoningEngine#update}.
 
 ---
 
@@ -5023,7 +5023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsConsolidationConfigOutputReference
 ```
@@ -5301,7 +5301,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentOutputReference
 ```
@@ -5614,7 +5614,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionOutputReference
 ```
@@ -5956,7 +5956,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWordsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWordsList
 ```
@@ -6116,7 +6116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWordsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsAudioTranscriptionWordsOutputReference
 ```
@@ -6463,7 +6463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsCodeExecutionResultOutputReference
 ```
@@ -6792,7 +6792,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsExecutableCodeOutputReference
 ```
@@ -7114,7 +7114,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFileDataOutputReference
 ```
@@ -7407,7 +7407,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionCallOutputReference
 ```
@@ -7743,7 +7743,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsFunctionResponseOutputReference
 ```
@@ -8072,7 +8072,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsInlineDataOutputReference
 ```
@@ -8365,7 +8365,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsList
 ```
@@ -8525,7 +8525,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsOutputReference
 ```
@@ -9186,7 +9186,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsContentPartsVideoMetadataOutputReference
 ```
@@ -9493,7 +9493,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsList
 ```
@@ -9653,7 +9653,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceEventsOutputReference
 ```
@@ -9955,7 +9955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesConversationSourceOutputReference
 ```
@@ -10246,7 +10246,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesList
 ```
@@ -10406,7 +10406,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesOutputReference
 ```
@@ -10737,7 +10737,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopicsList
 ```
@@ -10897,7 +10897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesGeneratedMemoriesTopicsOutputReference
 ```
@@ -11222,7 +11222,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesList
 ```
@@ -11382,7 +11382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsGenerateMemoriesExamplesOutputReference
 ```
@@ -11733,7 +11733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsList
 ```
@@ -11893,7 +11893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsCustomMemoryTopicOutputReference
 ```
@@ -12200,7 +12200,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsList
 ```
@@ -12360,7 +12360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsManagedMemoryTopicOutputReference
 ```
@@ -12638,7 +12638,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigCustomiza
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsMemoryTopicsOutputReference
 ```
@@ -12989,7 +12989,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigCustomizationConfigsOutputReference
 ```
@@ -13469,7 +13469,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigGenerationRuleOutputReference
 ```
@@ -13834,7 +13834,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigGeneratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigGenerationTriggerConfigOutputReference
 ```
@@ -14125,7 +14125,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigGeneratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigGenerationConfigOutputReference
 ```
@@ -14438,7 +14438,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigGeneratio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigOutputReference
 ```
@@ -14926,7 +14926,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigSimilaritySearchConfigOutputReference
 ```
@@ -15197,7 +15197,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigSimilarit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsList
 ```
@@ -15357,7 +15357,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsOutputReference
 ```
@@ -15695,7 +15695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigsList
 ```
@@ -15855,7 +15855,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineContextSpecMemoryBankConfigStructuredMemoryConfigsSchemaConfigsOutputReference
 ```
@@ -16173,7 +16173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigGranularTtlConfigOutputReference
 ```
@@ -16509,7 +16509,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfigOutputReference
 ```
@@ -16858,7 +16858,7 @@ func InternalValue() VertexAiReasoningEngineContextSpecMemoryBankConfigTtlConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineContextSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineContextSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineContextSpecOutputReference
 ```
@@ -17149,7 +17149,7 @@ func InternalValue() VertexAiReasoningEngineContextSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineEncryptionSpecOutputReference
 ```
@@ -17420,7 +17420,7 @@ func InternalValue() VertexAiReasoningEngineEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecBuildSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecBuildSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecBuildSpecOutputReference
 ```
@@ -17727,7 +17727,7 @@ func InternalValue() VertexAiReasoningEngineSpecBuildSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecContainerSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecContainerSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecContainerSpecOutputReference
 ```
@@ -18027,7 +18027,7 @@ func InternalValue() VertexAiReasoningEngineSpecContainerSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigAgentToAnywhereConfigOutputReference
 ```
@@ -18298,7 +18298,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigClientToAgentConfigOutputReference
 ```
@@ -18569,7 +18569,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfigOutputReference
 ```
@@ -18902,7 +18902,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecAgentGatewayConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineSpecDeploymentSpecEnvList
 ```
@@ -19062,7 +19062,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference
 ```
@@ -19373,7 +19373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecOutputReference
 ```
@@ -19906,7 +19906,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsList
 ```
@@ -20066,7 +20066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsOutputReference
 ```
@@ -20399,7 +20399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference
 ```
@@ -20719,7 +20719,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvList
 ```
@@ -20879,7 +20879,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvOutputReference
 ```
@@ -21203,7 +21203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference
 ```
@@ -21503,7 +21503,7 @@ func InternalValue() VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRef
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecOutputReference
 ```
@@ -22089,7 +22089,7 @@ func InternalValue() VertexAiReasoningEngineSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecPackageSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecPackageSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecPackageSpecOutputReference
 ```
@@ -22454,7 +22454,7 @@ func InternalValue() VertexAiReasoningEngineSpecPackageSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceAdkConfigOutputReference
 ```
@@ -22725,7 +22725,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceA
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceInlineSourceOutputReference
 ```
@@ -22996,7 +22996,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceI
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSourceOutputReference
 ```
@@ -23329,7 +23329,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecAgentConfigSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceConfigOutputReference
 ```
@@ -23644,7 +23644,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSourceOutputReference
 ```
@@ -23928,7 +23928,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecDeveloperConnectSo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecImageSpecOutputReference
 ```
@@ -24206,7 +24206,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecImageSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecInlineSourceOutputReference
 ```
@@ -24484,7 +24484,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecInlineSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecOutputReference
 ```
@@ -24943,7 +24943,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecSourceCodeSpecPythonSpecOutputReference
 ```
@@ -25308,7 +25308,7 @@ func InternalValue() VertexAiReasoningEngineSpecSourceCodeSpecPythonSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengine"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/vertexaireasoningengine"
 
 vertexaireasoningengine.NewVertexAiReasoningEngineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineTimeoutsOutputReference
 ```

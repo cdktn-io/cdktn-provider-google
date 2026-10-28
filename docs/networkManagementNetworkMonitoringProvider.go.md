@@ -4,12 +4,12 @@
 
 ### NetworkManagementNetworkMonitoringProvider <a name="NetworkManagementNetworkMonitoringProvider" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider google_network_management_network_monitoring_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider google_network_management_network_monitoring_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 networkmanagementnetworkmonitoringprovider.NewNetworkManagementNetworkMonitoringProvider(scope Construct, id *string, config NetworkManagementNetworkMonitoringProviderConfig) NetworkManagementNetworkMonitoringProvider
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringProvider_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringPro
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringPro
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the NetworkManagementNetworkMo
 
 The id of the existing NetworkManagementNetworkMonitoringProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 &networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringProviderConfig {
 	Connection: interface{},
@@ -966,7 +966,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagemen
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts,
 }
 ```
 
@@ -985,8 +985,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagemen
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.networkMonitoringProviderId">NetworkMonitoringProviderId</a></code> | <code>*string</code> | The ID to use for the Network Monitoring Provider. This will become the last component of the provider's resource name. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.providerType">ProviderType</a></code> | <code>*string</code> | The type of the Network Monitoring Provider. Currently only 'EXTERNAL' is supported. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | The deletion policy for the Network Monitoring Provider. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts">NetworkManagementNetworkMonitoringProviderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1071,7 +1071,7 @@ Location *string
 
 The location of the Network Monitoring Provider. Currently only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#location NetworkManagementNetworkMonitoringProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#location NetworkManagementNetworkMonitoringProvider#location}
 
 ---
 
@@ -1085,7 +1085,7 @@ NetworkMonitoringProviderId *string
 
 The ID to use for the Network Monitoring Provider. This will become the last component of the provider's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#network_monitoring_provider_id NetworkManagementNetworkMonitoringProvider#network_monitoring_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#network_monitoring_provider_id NetworkManagementNetworkMonitoringProvider#network_monitoring_provider_id}
 
 ---
 
@@ -1099,7 +1099,7 @@ ProviderType *string
 
 The type of the Network Monitoring Provider. Currently only 'EXTERNAL' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#provider_type NetworkManagementNetworkMonitoringProvider#provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#provider_type NetworkManagementNetworkMonitoringProvider#provider_type}
 
 ---
 
@@ -1116,7 +1116,7 @@ The deletion policy for the Network Monitoring Provider.
 Setting 'deletion_policy = "FORCE"' forces the deletion of all nested resources
 (MonitoringPoints, NetworkPaths, WebPaths) belonging to this provider on deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#deletion_policy NetworkManagementNetworkMonitoringProvider#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#deletion_policy NetworkManagementNetworkMonitoringProvider#deletion_policy}
 
 ---
 
@@ -1128,7 +1128,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1143,7 +1143,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Timeouts NetworkManagementNetworkMonitoringProviderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#timeouts NetworkManagementNetworkMonitoringProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#timeouts NetworkManagementNetworkMonitoringProvider#timeouts}
 
 ---
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 &networkmanagementnetworkmonitoringprovider.NetworkManagementNetworkMonitoringProviderTimeouts {
 	Create: *string,
@@ -1179,9 +1179,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagemen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}. |
 
 ---
 
@@ -1193,7 +1193,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}.
 
 ---
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkmanagementnetworkmonitoringprovider"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/networkmanagementnetworkmonitoringprovider"
 
 networkmanagementnetworkmonitoringprovider.NewNetworkManagementNetworkMonitoringProviderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkManagementNetworkMonitoringProviderTimeoutsOutputReference
 ```
