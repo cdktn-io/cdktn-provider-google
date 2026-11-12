@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface DocumentAiSchemaVersionConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#deletion_policy DocumentAiSchemaVersion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#deletion_policy DocumentAiSchemaVersion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-defined name of the SchemaVersion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#id DocumentAiSchemaVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#id DocumentAiSchemaVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,35 +44,35 @@ export interface DocumentAiSchemaVersionConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#labels DocumentAiSchemaVersion#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#labels DocumentAiSchemaVersion#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#location DocumentAiSchemaVersion#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#location DocumentAiSchemaVersion#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#project DocumentAiSchemaVersion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#project DocumentAiSchemaVersion#project}
   */
   readonly project?: string;
   /**
   * The schema id that this schema version belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#schema_id DocumentAiSchemaVersion#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#schema_id DocumentAiSchemaVersion#schema_id}
   */
   readonly schemaId: string;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#schema DocumentAiSchemaVersion#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#schema DocumentAiSchemaVersion#schema}
   */
   readonly schema: DocumentAiSchemaVersionSchema;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#timeouts DocumentAiSchemaVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#timeouts DocumentAiSchemaVersion#timeouts}
   */
   readonly timeouts?: DocumentAiSchemaVersionTimeouts;
 }
@@ -80,7 +80,7 @@ export interface DocumentAiSchemaVersionSchemaEntityTypesEnumValues {
   /**
   * The individual values that this enum values type can include.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#values DocumentAiSchemaVersion#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#values DocumentAiSchemaVersion#values}
   */
   readonly values?: string[];
 }
@@ -166,31 +166,31 @@ export interface DocumentAiSchemaVersionSchemaEntityTypesProperties {
   /**
   * User defined name for the property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
   */
   readonly displayName?: string;
   /**
   * Specifies how the entity's value is obtained. Possible values: ["EXTRACT", "DERIVE", "RELAXED_EXTRACT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#method DocumentAiSchemaVersion#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#method DocumentAiSchemaVersion#method}
   */
   readonly method?: string;
   /**
   * The name of the property. Follows the same guidelines as the EntityType name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#name DocumentAiSchemaVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#name DocumentAiSchemaVersion#name}
   */
   readonly name: string;
   /**
   * Occurrence type limits the number of instances an entity type appears in the document. Possible values: ["OPTIONAL_ONCE", "OPTIONAL_MULTIPLE", "REQUIRED_ONCE", "REQUIRED_MULTIPLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#occurrence_type DocumentAiSchemaVersion#occurrence_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#occurrence_type DocumentAiSchemaVersion#occurrence_type}
   */
   readonly occurrenceType?: string;
   /**
   * A reference to the value type of the property. This type is subject to the same conventions as the 'Entity.base_types' field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#value_type DocumentAiSchemaVersion#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#value_type DocumentAiSchemaVersion#value_type}
   */
   readonly valueType: string;
 }
@@ -418,31 +418,31 @@ export interface DocumentAiSchemaVersionSchemaEntityTypes {
   /**
   * The entity type that this type is derived from. For now, one and only one should be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#base_types DocumentAiSchemaVersion#base_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#base_types DocumentAiSchemaVersion#base_types}
   */
   readonly baseTypes?: string[];
   /**
   * User defined name for the type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
   */
   readonly displayName?: string;
   /**
   * Name of the type. It must be unique within the schema file and cannot be a "Common Type".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#name DocumentAiSchemaVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#name DocumentAiSchemaVersion#name}
   */
   readonly name: string;
   /**
   * enum_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#enum_values DocumentAiSchemaVersion#enum_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#enum_values DocumentAiSchemaVersion#enum_values}
   */
   readonly enumValues?: DocumentAiSchemaVersionSchemaEntityTypesEnumValues;
   /**
   * properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#properties DocumentAiSchemaVersion#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#properties DocumentAiSchemaVersion#properties}
   */
   readonly properties?: DocumentAiSchemaVersionSchemaEntityTypesProperties[] | cdktn.IResolvable;
 }
@@ -673,25 +673,25 @@ export interface DocumentAiSchemaVersionSchemaMetadata {
   /**
   * If true, on a given page, there can be multiple 'document' annotations covering it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#document_allow_multiple_labels DocumentAiSchemaVersion#document_allow_multiple_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#document_allow_multiple_labels DocumentAiSchemaVersion#document_allow_multiple_labels}
   */
   readonly documentAllowMultipleLabels?: boolean | cdktn.IResolvable;
   /**
   * If true, a 'document' entity type can be applied to subdocument (splitting). Otherwise, it can only be applied to the entire document (classification).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#document_splitter DocumentAiSchemaVersion#document_splitter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#document_splitter DocumentAiSchemaVersion#document_splitter}
   */
   readonly documentSplitter?: boolean | cdktn.IResolvable;
   /**
   * If set, all the nested entities must be prefixed with the parents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#prefixed_naming_on_properties DocumentAiSchemaVersion#prefixed_naming_on_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#prefixed_naming_on_properties DocumentAiSchemaVersion#prefixed_naming_on_properties}
   */
   readonly prefixedNamingOnProperties?: boolean | cdktn.IResolvable;
   /**
   * If set, this will skip the naming format validation in the schema. So the string values in 'DocumentSchema.EntityType.name' and 'DocumentSchema.EntityType.Property.name' will not be checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#skip_naming_validation DocumentAiSchemaVersion#skip_naming_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#skip_naming_validation DocumentAiSchemaVersion#skip_naming_validation}
   */
   readonly skipNamingValidation?: boolean | cdktn.IResolvable;
 }
@@ -864,31 +864,31 @@ export interface DocumentAiSchemaVersionSchema {
   /**
   * Description of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#description DocumentAiSchemaVersion#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#description DocumentAiSchemaVersion#description}
   */
   readonly description?: string;
   /**
   * Display name to show users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#display_name DocumentAiSchemaVersion#display_name}
   */
   readonly displayName?: string;
   /**
   * Document-level prompt provided by the user. This custom text is injected into the AI model's prompt to provide extra, document-wide guidance for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#document_prompt DocumentAiSchemaVersion#document_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#document_prompt DocumentAiSchemaVersion#document_prompt}
   */
   readonly documentPrompt?: string;
   /**
   * entity_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#entity_types DocumentAiSchemaVersion#entity_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#entity_types DocumentAiSchemaVersion#entity_types}
   */
   readonly entityTypes?: DocumentAiSchemaVersionSchemaEntityTypes[] | cdktn.IResolvable;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#metadata DocumentAiSchemaVersion#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#metadata DocumentAiSchemaVersion#metadata}
   */
   readonly metadata?: DocumentAiSchemaVersionSchemaMetadata;
 }
@@ -1088,15 +1088,15 @@ export class DocumentAiSchemaVersionSchemaOutputReference extends cdktn.ComplexO
 }
 export interface DocumentAiSchemaVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#create DocumentAiSchemaVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#create DocumentAiSchemaVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#delete DocumentAiSchemaVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#delete DocumentAiSchemaVersion#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#update DocumentAiSchemaVersion#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#update DocumentAiSchemaVersion#update}
   */
   readonly update?: string;
 }
@@ -1248,7 +1248,7 @@ export class DocumentAiSchemaVersionTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version google_document_ai_schema_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version google_document_ai_schema_version}
 */
 export class DocumentAiSchemaVersion extends cdktn.TerraformResource {
 
@@ -1264,7 +1264,7 @@ export class DocumentAiSchemaVersion extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DocumentAiSchemaVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DocumentAiSchemaVersion to import
-  * @param importFromId The id of the existing DocumentAiSchemaVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DocumentAiSchemaVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DocumentAiSchemaVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1276,7 +1276,7 @@ export class DocumentAiSchemaVersion extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/document_ai_schema_version google_document_ai_schema_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/document_ai_schema_version google_document_ai_schema_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1287,7 +1287,7 @@ export class DocumentAiSchemaVersion extends cdktn.TerraformResource {
       terraformResourceType: 'google_document_ai_schema_version',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

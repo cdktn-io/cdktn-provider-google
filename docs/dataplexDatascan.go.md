@@ -4,7 +4,7 @@
 
 ### DataplexDatascan <a name="DataplexDatascan" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan google_dataplex_datascan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan google_dataplex_datascan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascan.Initializer"></a>
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the DataplexDatascan to import
 
 The id of the existing DataplexDatascan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1380,9 +1380,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.description">Description</a></code> | <code>*string</code> | Description of the scan. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User friendly display name. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.executionIdentity">ExecutionIdentity</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentity">DataplexDatascanExecutionIdentity</a></code> | execution_identity block. |
-| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#id DataplexDatascan#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#id DataplexDatascan#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-defined labels for the scan. A list of key->value pairs. |
-| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts">DataplexDatascanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1467,7 +1467,7 @@ Data DataplexDatascanData
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#data DataplexDatascan#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#data DataplexDatascan#data}
 
 ---
 
@@ -1483,7 +1483,7 @@ DataScan identifier.
 
 Must contain only lowercase letters, numbers and hyphens. Must start with a letter. Must end with a number or a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#data_scan_id DataplexDatascan#data_scan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#data_scan_id DataplexDatascan#data_scan_id}
 
 ---
 
@@ -1497,7 +1497,7 @@ ExecutionSpec DataplexDatascanExecutionSpec
 
 execution_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#execution_spec DataplexDatascan#execution_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#execution_spec DataplexDatascan#execution_spec}
 
 ---
 
@@ -1511,7 +1511,7 @@ Location *string
 
 The location where the data scan should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
 
 ---
 
@@ -1525,7 +1525,7 @@ DataDiscoverySpec DataplexDatascanDataDiscoverySpec
 
 data_discovery_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#data_discovery_spec DataplexDatascan#data_discovery_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#data_discovery_spec DataplexDatascan#data_discovery_spec}
 
 ---
 
@@ -1539,7 +1539,7 @@ DataDocumentationSpec DataplexDatascanDataDocumentationSpec
 
 data_documentation_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#data_documentation_spec DataplexDatascan#data_documentation_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#data_documentation_spec DataplexDatascan#data_documentation_spec}
 
 ---
 
@@ -1553,7 +1553,7 @@ DataProfileSpec DataplexDatascanDataProfileSpec
 
 data_profile_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#data_profile_spec DataplexDatascan#data_profile_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#data_profile_spec DataplexDatascan#data_profile_spec}
 
 ---
 
@@ -1567,7 +1567,7 @@ DataQualitySpec DataplexDatascanDataQualitySpec
 
 data_quality_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#data_quality_spec DataplexDatascan#data_quality_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#data_quality_spec DataplexDatascan#data_quality_spec}
 
 ---
 
@@ -1588,7 +1588,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#deletion_policy DataplexDatascan#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#deletion_policy DataplexDatascan#deletion_policy}
 
 ---
 
@@ -1602,7 +1602,7 @@ Description *string
 
 Description of the scan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
 
 ---
 
@@ -1616,7 +1616,7 @@ DisplayName *string
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#display_name DataplexDatascan#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#display_name DataplexDatascan#display_name}
 
 ---
 
@@ -1630,7 +1630,7 @@ ExecutionIdentity DataplexDatascanExecutionIdentity
 
 execution_identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#execution_identity DataplexDatascan#execution_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#execution_identity DataplexDatascan#execution_identity}
 
 ---
 
@@ -1642,7 +1642,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#id DataplexDatascan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#id DataplexDatascan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1662,7 +1662,7 @@ User-defined labels for the scan. A list of key->value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#labels DataplexDatascan#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#labels DataplexDatascan#labels}
 
 ---
 
@@ -1674,7 +1674,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}.
 
 ---
 
@@ -1688,7 +1688,7 @@ Timeouts DataplexDatascanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#timeouts DataplexDatascan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#timeouts DataplexDatascan#timeouts}
 
 ---
 
@@ -1724,7 +1724,7 @@ Entity *string
 
 The Dataplex entity that represents the data source(e.g. BigQuery table) for Datascan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#entity DataplexDatascan#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#entity DataplexDatascan#entity}
 
 ---
 
@@ -1741,7 +1741,7 @@ The service-qualified full resource name of the cloud resource for a DataScan jo
 The field could be:
 Cloud Storage bucket (//storage.googleapis.com/projects/PROJECT_ID/buckets/BUCKET_ID) for DataDiscoveryScan OR BigQuery table of type "TABLE" (/bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID) for DataProfileScan/DataQualityScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#resource DataplexDatascan#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#resource DataplexDatascan#resource}
 
 ---
 
@@ -1777,7 +1777,7 @@ BigqueryPublishingConfig DataplexDatascanDataDiscoverySpecBigqueryPublishingConf
 
 bigquery_publishing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#bigquery_publishing_config DataplexDatascan#bigquery_publishing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#bigquery_publishing_config DataplexDatascan#bigquery_publishing_config}
 
 ---
 
@@ -1791,7 +1791,7 @@ StorageConfig DataplexDatascanDataDiscoverySpecStorageConfig
 
 storage_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#storage_config DataplexDatascan#storage_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#storage_config DataplexDatascan#storage_config}
 
 ---
 
@@ -1831,7 +1831,7 @@ Connection *string
 
 The BigQuery connection used to create BigLake tables. Must be in the form 'projects/{projectId}/locations/{locationId}/connections/{connection_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#connection DataplexDatascan#connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#connection DataplexDatascan#connection}
 
 ---
 
@@ -1845,7 +1845,7 @@ Location *string
 
 The location of the BigQuery dataset to publish BigLake external or non-BigLake external tables to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#location DataplexDatascan#location}
 
 ---
 
@@ -1861,7 +1861,7 @@ The project of the BigQuery dataset to publish BigLake external or non-BigLake e
 
 If not specified, the project of the Cloud Storage bucket will be used. The format is "projects/{project_id_or_number}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#project DataplexDatascan#project}
 
 ---
 
@@ -1875,7 +1875,7 @@ TableType *string
 
 Determines whether to publish discovered tables as BigLake external tables or non-BigLake external tables. Possible values: ["TABLE_TYPE_UNSPECIFIED", "EXTERNAL", "BIGLAKE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#table_type DataplexDatascan#table_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#table_type DataplexDatascan#table_type}
 
 ---
 
@@ -1915,7 +1915,7 @@ CsvOptions DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions
 
 csv_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#csv_options DataplexDatascan#csv_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#csv_options DataplexDatascan#csv_options}
 
 ---
 
@@ -1931,7 +1931,7 @@ Defines the data to exclude during discovery.
 
 Provide a list of patterns that identify the data to exclude. For Cloud Storage bucket assets, these patterns are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these patterns are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#exclude_patterns DataplexDatascan#exclude_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#exclude_patterns DataplexDatascan#exclude_patterns}
 
 ---
 
@@ -1947,7 +1947,7 @@ Defines the data to include during discovery when only a subset of the data shou
 
 Provide a list of patterns that identify the data to include. For Cloud Storage bucket assets, these patterns are interpreted as glob patterns used to match object names. For BigQuery dataset assets, these patterns are interpreted as patterns to match table names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#include_patterns DataplexDatascan#include_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#include_patterns DataplexDatascan#include_patterns}
 
 ---
 
@@ -1961,7 +1961,7 @@ JsonOptions DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions
 
 json_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#json_options DataplexDatascan#json_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#json_options DataplexDatascan#json_options}
 
 ---
 
@@ -2003,7 +2003,7 @@ Delimiter *string
 
 The delimiter that is used to separate values. The default is ',' (comma).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#delimiter DataplexDatascan#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#delimiter DataplexDatascan#delimiter}
 
 ---
 
@@ -2017,7 +2017,7 @@ Encoding *string
 
 The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
 
 ---
 
@@ -2031,7 +2031,7 @@ HeaderRows *f64
 
 The number of rows to interpret as header rows that should be skipped when reading data rows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#header_rows DataplexDatascan#header_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#header_rows DataplexDatascan#header_rows}
 
 ---
 
@@ -2047,7 +2047,7 @@ The character used to quote column values.
 
 Accepts '"' (double quotation mark) or ``` (single quotation mark). If unspecified, defaults to '"' (double quotation mark).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#quote DataplexDatascan#quote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#quote DataplexDatascan#quote}
 
 ---
 
@@ -2061,7 +2061,7 @@ TypeInferenceDisabled interface{}
 
 Whether to disable the inference of data types for CSV data. If true, all columns are registered as strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
 
 ---
 
@@ -2097,7 +2097,7 @@ Encoding *string
 
 The character encoding of the data. The default is UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#encoding DataplexDatascan#encoding}
 
 ---
 
@@ -2113,7 +2113,7 @@ Whether to disable the inference of data types for JSON data.
 
 If true, all columns are registered as their primitive types (strings, number, or boolean).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#type_inference_disabled DataplexDatascan#type_inference_disabled}
 
 ---
 
@@ -2126,6 +2126,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 
 &dataplexdatascan.DataplexDatascanDataDocumentationSpec {
 	CatalogPublishingEnabled: interface{},
+	GenerationScopes: *[]*string,
 	SqlDialect: *string,
 }
 ```
@@ -2135,6 +2136,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec.property.catalogPublishingEnabled">CatalogPublishingEnabled</a></code> | <code>interface{}</code> | If set, the latest DataScan job result will be published to Knowledge Catalog. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec.property.generationScopes">GenerationScopes</a></code> | <code>*[]*string</code> | Specifies which components of the data documentation to generate. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec.property.sqlDialect">SqlDialect</a></code> | <code>*string</code> | The SQL dialect to use in the generated SQL queries. |
 
 ---
@@ -2149,7 +2151,23 @@ CatalogPublishingEnabled interface{}
 
 If set, the latest DataScan job result will be published to Knowledge Catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
+
+---
+
+##### `GenerationScopes`<sup>Optional</sup> <a name="GenerationScopes" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec.property.generationScopes"></a>
+
+```go
+GenerationScopes *[]*string
+```
+
+- *Type:* *[]*string
+
+Specifies which components of the data documentation to generate.
+
+Any component that is required to generate the specified components will also be generated. If no generation scope is specified, all available documentation components will be generated. Possible values: ["ALL", "TABLE_AND_COLUMN_DESCRIPTIONS", "SQL_QUERIES", "BUSINESS_GLOSSARY_TERM_ASSOCIATIONS"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#generation_scopes DataplexDatascan#generation_scopes}
 
 ---
 
@@ -2165,7 +2183,7 @@ The SQL dialect to use in the generated SQL queries.
 
 If not specified, the default dialect is Google SQL. Possible values: ["GOOGLE_SQL", "SPARK_SQL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sql_dialect DataplexDatascan#sql_dialect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sql_dialect DataplexDatascan#sql_dialect}
 
 ---
 
@@ -2180,6 +2198,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 	CatalogPublishingEnabled: interface{},
 	ExcludeFields: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFields,
 	IncludeFields: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFields,
+	Mode: *string,
 	PostScanActions: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActions,
 	RowFilter: *string,
 	SamplingPercent: *f64,
@@ -2193,6 +2212,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.catalogPublishingEnabled">CatalogPublishingEnabled</a></code> | <code>interface{}</code> | If set, the latest DataScan job result will be published to Dataplex Catalog. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.excludeFields">ExcludeFields</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFields">DataplexDatascanDataProfileSpecExcludeFields</a></code> | exclude_fields block. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.includeFields">IncludeFields</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFields">DataplexDatascanDataProfileSpecIncludeFields</a></code> | include_fields block. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.mode">Mode</a></code> | <code>*string</code> | The execution mode for the profile scan. Possible values: ["STANDARD", "LIGHTWEIGHT"]. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.postScanActions">PostScanActions</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActions">DataplexDatascanDataProfileSpecPostScanActions</a></code> | post_scan_actions block. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.rowFilter">RowFilter</a></code> | <code>*string</code> | A filter applied to all rows in a single DataScan job. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.samplingPercent">SamplingPercent</a></code> | <code>*f64</code> | The percentage of the records to be selected from the dataset for DataScan. |
@@ -2209,7 +2229,7 @@ CatalogPublishingEnabled interface{}
 
 If set, the latest DataScan job result will be published to Dataplex Catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
 
 ---
 
@@ -2223,7 +2243,7 @@ ExcludeFields DataplexDatascanDataProfileSpecExcludeFields
 
 exclude_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#exclude_fields DataplexDatascan#exclude_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#exclude_fields DataplexDatascan#exclude_fields}
 
 ---
 
@@ -2237,7 +2257,21 @@ IncludeFields DataplexDatascanDataProfileSpecIncludeFields
 
 include_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#include_fields DataplexDatascan#include_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#include_fields DataplexDatascan#include_fields}
+
+---
+
+##### `Mode`<sup>Optional</sup> <a name="Mode" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec.property.mode"></a>
+
+```go
+Mode *string
+```
+
+- *Type:* *string
+
+The execution mode for the profile scan. Possible values: ["STANDARD", "LIGHTWEIGHT"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#mode DataplexDatascan#mode}
 
 ---
 
@@ -2251,7 +2285,7 @@ PostScanActions DataplexDatascanDataProfileSpecPostScanActions
 
 post_scan_actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
 
 ---
 
@@ -2267,7 +2301,7 @@ A filter applied to all rows in a single DataScan job.
 
 The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
 
 ---
 
@@ -2284,7 +2318,7 @@ The percentage of the records to be selected from the dataset for DataScan.
 Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
 Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
 
 ---
 
@@ -2321,7 +2355,7 @@ Expected input is a list of fully qualified names of fields as in the schema.
 Only top-level field names for nested fields are supported.
 For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
 
 ---
 
@@ -2358,7 +2392,7 @@ Expected input is a list of fully qualified names of fields as in the schema.
 Only top-level field names for nested fields are supported.
 For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
 
 ---
 
@@ -2392,7 +2426,7 @@ BigqueryExport DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport
 
 bigquery_export block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
 
 ---
 
@@ -2426,7 +2460,7 @@ ResultsTable *string
 
 The BigQuery table to export DataProfileScan results to. Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
 
 ---
 
@@ -2472,7 +2506,7 @@ CatalogPublishingEnabled interface{}
 
 If set, the latest DataScan job result will be published to Dataplex Catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#catalog_publishing_enabled DataplexDatascan#catalog_publishing_enabled}
 
 ---
 
@@ -2486,7 +2520,7 @@ EnableCatalogBasedRules interface{}
 
 If set to true, the scan will retrieve rules defined in Data Catalog for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#enable_catalog_based_rules DataplexDatascan#enable_catalog_based_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#enable_catalog_based_rules DataplexDatascan#enable_catalog_based_rules}
 
 ---
 
@@ -2500,7 +2534,7 @@ Filter *string
 
 A filter to selectively run a subset of rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#filter DataplexDatascan#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#filter DataplexDatascan#filter}
 
 ---
 
@@ -2514,7 +2548,7 @@ PostScanActions DataplexDatascanDataQualitySpecPostScanActions
 
 post_scan_actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#post_scan_actions DataplexDatascan#post_scan_actions}
 
 ---
 
@@ -2530,7 +2564,7 @@ A filter applied to all rows in a single DataScan job.
 
 The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#row_filter DataplexDatascan#row_filter}
 
 ---
 
@@ -2544,7 +2578,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#rules DataplexDatascan#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#rules DataplexDatascan#rules}
 
 ---
 
@@ -2561,7 +2595,7 @@ The percentage of the records to be selected from the dataset for DataScan.
 Value can range between 0.0 and 100.0 with up to 3 significant decimal digits.
 Sampling is not applied if 'sampling_percent' is not specified, 0 or 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sampling_percent DataplexDatascan#sampling_percent}
 
 ---
 
@@ -2597,7 +2631,7 @@ BigqueryExport DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport
 
 bigquery_export block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#bigquery_export DataplexDatascan#bigquery_export}
 
 ---
 
@@ -2611,7 +2645,7 @@ NotificationReport DataplexDatascanDataQualitySpecPostScanActionsNotificationRep
 
 notification_report block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#notification_report DataplexDatascan#notification_report}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#notification_report DataplexDatascan#notification_report}
 
 ---
 
@@ -2645,7 +2679,7 @@ ResultsTable *string
 
 The BigQuery table to export DataQualityScan results to. Format://bigquery.googleapis.com/projects/PROJECT_ID/datasets/DATASET_ID/tables/TABLE_ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#results_table DataplexDatascan#results_table}
 
 ---
 
@@ -2685,7 +2719,7 @@ Recipients DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecip
 
 recipients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#recipients DataplexDatascan#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#recipients DataplexDatascan#recipients}
 
 ---
 
@@ -2699,7 +2733,7 @@ JobEndTrigger DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJo
 
 job_end_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#job_end_trigger DataplexDatascan#job_end_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#job_end_trigger DataplexDatascan#job_end_trigger}
 
 ---
 
@@ -2713,7 +2747,7 @@ JobFailureTrigger DataplexDatascanDataQualitySpecPostScanActionsNotificationRepo
 
 job_failure_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#job_failure_trigger DataplexDatascan#job_failure_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#job_failure_trigger DataplexDatascan#job_failure_trigger}
 
 ---
 
@@ -2727,7 +2761,7 @@ ScoreThresholdTrigger DataplexDatascanDataQualitySpecPostScanActionsNotification
 
 score_threshold_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#score_threshold_trigger DataplexDatascan#score_threshold_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#score_threshold_trigger DataplexDatascan#score_threshold_trigger}
 
 ---
 
@@ -2787,7 +2821,7 @@ Emails *[]*string
 
 The email recipients who will receive the DataQualityScan results report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#emails DataplexDatascan#emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#emails DataplexDatascan#emails}
 
 ---
 
@@ -2821,7 +2855,7 @@ ScoreThreshold *f64
 
 The score range is in [0,100].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#score_threshold DataplexDatascan#score_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#score_threshold DataplexDatascan#score_threshold}
 
 ---
 
@@ -2836,6 +2870,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 	Dimension: *string,
 	Attributes: *map[string]*string,
 	Column: *string,
+	DebugQueries: interface{},
 	Description: *string,
 	IgnoreNull: interface{},
 	Name: *string,
@@ -2861,6 +2896,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.dimension">Dimension</a></code> | <code>*string</code> | The dimension name a rule belongs to. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.attributes">Attributes</a></code> | <code>*map[string]*string</code> | Map of attribute name and value linked to the rule. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.column">Column</a></code> | <code>*string</code> | The unnested column which this rule is evaluated against. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.debugQueries">DebugQueries</a></code> | <code>interface{}</code> | debug_queries block. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.description">Description</a></code> | <code>*string</code> | Description of the rule. The maximum length is 1,024 characters. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.ignoreNull">IgnoreNull</a></code> | <code>interface{}</code> | Rows with null values will automatically fail a rule, unless ignoreNull is true. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.name">Name</a></code> | <code>*string</code> | A mutable name for the rule. |
@@ -2891,7 +2927,7 @@ The dimension name a rule belongs to.
 
 Custom dimension name is supported with all uppercase letters and maximum length of 30 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#dimension DataplexDatascan#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#dimension DataplexDatascan#dimension}
 
 ---
 
@@ -2905,7 +2941,7 @@ Attributes *map[string]*string
 
 Map of attribute name and value linked to the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#attributes DataplexDatascan#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#attributes DataplexDatascan#attributes}
 
 ---
 
@@ -2919,7 +2955,21 @@ Column *string
 
 The unnested column which this rule is evaluated against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#column DataplexDatascan#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#column DataplexDatascan#column}
+
+---
+
+##### `DebugQueries`<sup>Optional</sup> <a name="DebugQueries" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules.property.debugQueries"></a>
+
+```go
+DebugQueries interface{}
+```
+
+- *Type:* interface{}
+
+debug_queries block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#debug_queries DataplexDatascan#debug_queries}
 
 ---
 
@@ -2933,7 +2983,7 @@ Description *string
 
 Description of the rule. The maximum length is 1,024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
 
 ---
 
@@ -2949,7 +2999,7 @@ Rows with null values will automatically fail a rule, unless ignoreNull is true.
 
 In that case, such null rows are trivially considered passing. Only applicable to ColumnMap rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#ignore_null DataplexDatascan#ignore_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#ignore_null DataplexDatascan#ignore_null}
 
 ---
 
@@ -2968,7 +3018,7 @@ The maximum length is 63 characters.
 Must start with a letter.
 Must end with a number or a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
 
 ---
 
@@ -2982,7 +3032,7 @@ NonNullExpectation DataplexDatascanDataQualitySpecRulesNonNullExpectation
 
 non_null_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#non_null_expectation DataplexDatascan#non_null_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#non_null_expectation DataplexDatascan#non_null_expectation}
 
 ---
 
@@ -2996,7 +3046,7 @@ RangeExpectation DataplexDatascanDataQualitySpecRulesRangeExpectation
 
 range_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#range_expectation DataplexDatascan#range_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#range_expectation DataplexDatascan#range_expectation}
 
 ---
 
@@ -3010,7 +3060,7 @@ RegexExpectation DataplexDatascanDataQualitySpecRulesRegexExpectation
 
 regex_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#regex_expectation DataplexDatascan#regex_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#regex_expectation DataplexDatascan#regex_expectation}
 
 ---
 
@@ -3024,7 +3074,7 @@ RowConditionExpectation DataplexDatascanDataQualitySpecRulesRowConditionExpectat
 
 row_condition_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#row_condition_expectation DataplexDatascan#row_condition_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#row_condition_expectation DataplexDatascan#row_condition_expectation}
 
 ---
 
@@ -3038,7 +3088,7 @@ SetExpectation DataplexDatascanDataQualitySpecRulesSetExpectation
 
 set_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#set_expectation DataplexDatascan#set_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#set_expectation DataplexDatascan#set_expectation}
 
 ---
 
@@ -3052,7 +3102,7 @@ SqlAssertion DataplexDatascanDataQualitySpecRulesSqlAssertion
 
 sql_assertion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sql_assertion DataplexDatascan#sql_assertion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sql_assertion DataplexDatascan#sql_assertion}
 
 ---
 
@@ -3066,7 +3116,7 @@ StatisticRangeExpectation DataplexDatascanDataQualitySpecRulesStatisticRangeExpe
 
 statistic_range_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#statistic_range_expectation DataplexDatascan#statistic_range_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#statistic_range_expectation DataplexDatascan#statistic_range_expectation}
 
 ---
 
@@ -3080,7 +3130,7 @@ Suspended interface{}
 
 Whether the Rule is active or suspended. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#suspended DataplexDatascan#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#suspended DataplexDatascan#suspended}
 
 ---
 
@@ -3094,7 +3144,7 @@ TableConditionExpectation DataplexDatascanDataQualitySpecRulesTableConditionExpe
 
 table_condition_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#table_condition_expectation DataplexDatascan#table_condition_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#table_condition_expectation DataplexDatascan#table_condition_expectation}
 
 ---
 
@@ -3108,7 +3158,7 @@ TemplateReference DataplexDatascanDataQualitySpecRulesTemplateReference
 
 template_reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#template_reference DataplexDatascan#template_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#template_reference DataplexDatascan#template_reference}
 
 ---
 
@@ -3122,7 +3172,7 @@ Threshold *f64
 
 The minimum ratio of passing_rows / total_rows required to pass this rule, with a range of [0.0, 1.0]. 0 indicates default value (i.e. 1.0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#threshold DataplexDatascan#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#threshold DataplexDatascan#threshold}
 
 ---
 
@@ -3136,7 +3186,57 @@ UniquenessExpectation DataplexDatascanDataQualitySpecRulesUniquenessExpectation
 
 uniqueness_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#uniqueness_expectation DataplexDatascan#uniqueness_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#uniqueness_expectation DataplexDatascan#uniqueness_expectation}
+
+---
+
+### DataplexDatascanDataQualitySpecRulesDebugQueries <a name="DataplexDatascanDataQualitySpecRulesDebugQueries" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueries"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueries.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan"
+
+&dataplexdatascan.DataplexDatascanDataQualitySpecRulesDebugQueries {
+	SqlStatement: *string,
+	Description: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueries.property.sqlStatement">SqlStatement</a></code> | <code>*string</code> | Specifies the SQL statement to be executed. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueries.property.description">Description</a></code> | <code>*string</code> | Specifies the description of the debug query. The maximum length is 1,024 characters. |
+
+---
+
+##### `SqlStatement`<sup>Required</sup> <a name="SqlStatement" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueries.property.sqlStatement"></a>
+
+```go
+SqlStatement *string
+```
+
+- *Type:* *string
+
+Specifies the SQL statement to be executed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sql_statement DataplexDatascan#sql_statement}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueries.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+Specifies the description of the debug query. The maximum length is 1,024 characters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#description DataplexDatascan#description}
 
 ---
 
@@ -3191,7 +3291,7 @@ The maximum column value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
 
 ---
 
@@ -3207,7 +3307,7 @@ The minimum column value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
 
 ---
 
@@ -3223,7 +3323,7 @@ Whether each value needs to be strictly lesser than ('<') the maximum, or if equ
 
 Only relevant if a maxValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
 
 ---
 
@@ -3239,7 +3339,7 @@ Whether each value needs to be strictly greater than ('>') the minimum, or if eq
 
 Only relevant if a minValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
 
 ---
 
@@ -3273,7 +3373,7 @@ Regex *string
 
 A regular expression the column value is expected to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#regex DataplexDatascan#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#regex DataplexDatascan#regex}
 
 ---
 
@@ -3307,7 +3407,7 @@ SqlExpression *string
 
 The SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
 
 ---
 
@@ -3341,7 +3441,7 @@ Values *[]*string
 
 Expected values for the column value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
 
 ---
 
@@ -3375,7 +3475,7 @@ SqlStatement *string
 
 The SQL statement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sql_statement DataplexDatascan#sql_statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sql_statement DataplexDatascan#sql_statement}
 
 ---
 
@@ -3417,7 +3517,7 @@ Statistic *string
 
 column statistics. Possible values: ["STATISTIC_UNDEFINED", "MEAN", "MIN", "MAX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#statistic DataplexDatascan#statistic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#statistic DataplexDatascan#statistic}
 
 ---
 
@@ -3433,7 +3533,7 @@ The maximum column statistic value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#max_value DataplexDatascan#max_value}
 
 ---
 
@@ -3449,7 +3549,7 @@ The minimum column statistic value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#min_value DataplexDatascan#min_value}
 
 ---
 
@@ -3465,7 +3565,7 @@ Whether column statistic needs to be strictly lesser than ('<') the maximum, or 
 
 Only relevant if a maxValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#strict_max_enabled DataplexDatascan#strict_max_enabled}
 
 ---
 
@@ -3481,7 +3581,7 @@ Whether column statistic needs to be strictly greater than ('>') the minimum, or
 
 Only relevant if a minValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#strict_min_enabled DataplexDatascan#strict_min_enabled}
 
 ---
 
@@ -3515,7 +3615,7 @@ SqlExpression *string
 
 The SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
 
 ---
 
@@ -3551,7 +3651,7 @@ Name *string
 
 The resource name of the template entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}
 
 ---
 
@@ -3565,7 +3665,7 @@ Values interface{}
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#values DataplexDatascan#values}
 
 ---
 
@@ -3586,7 +3686,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValues.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValues.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValues.property.value">Value</a></code> | <code>*string</code> | The string representation of the parameter value. |
 
 ---
@@ -3599,7 +3699,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#name DataplexDatascan#name}.
 
 ---
 
@@ -3613,7 +3713,7 @@ Value *string
 
 The string representation of the parameter value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#value DataplexDatascan#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#value DataplexDatascan#value}
 
 ---
 
@@ -3664,7 +3764,7 @@ DataplexServiceAgent DataplexDatascanExecutionIdentityDataplexServiceAgent
 
 dataplex_service_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#dataplex_service_agent DataplexDatascan#dataplex_service_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#dataplex_service_agent DataplexDatascan#dataplex_service_agent}
 
 ---
 
@@ -3678,7 +3778,7 @@ ServiceAccount DataplexDatascanExecutionIdentityServiceAccount
 
 service_account block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#service_account DataplexDatascan#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#service_account DataplexDatascan#service_account}
 
 ---
 
@@ -3692,7 +3792,7 @@ UserCredential DataplexDatascanExecutionIdentityUserCredential
 
 user_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#user_credential DataplexDatascan#user_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#user_credential DataplexDatascan#user_credential}
 
 ---
 
@@ -3739,7 +3839,7 @@ Email *string
 
 Service account email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#email DataplexDatascan#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#email DataplexDatascan#email}
 
 ---
 
@@ -3788,7 +3888,7 @@ Trigger DataplexDatascanExecutionSpecTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#trigger DataplexDatascan#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#trigger DataplexDatascan#trigger}
 
 ---
 
@@ -3804,7 +3904,7 @@ The unnested field (of type Date or Timestamp) that contains values which monoto
 
 If not specified, a data scan will run for all data in the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#field DataplexDatascan#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#field DataplexDatascan#field}
 
 ---
 
@@ -3842,7 +3942,7 @@ OnDemand DataplexDatascanExecutionSpecTriggerOnDemand
 
 on_demand block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#on_demand DataplexDatascan#on_demand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#on_demand DataplexDatascan#on_demand}
 
 ---
 
@@ -3856,7 +3956,7 @@ OneTime DataplexDatascanExecutionSpecTriggerOneTime
 
 one_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#one_time DataplexDatascan#one_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#one_time DataplexDatascan#one_time}
 
 ---
 
@@ -3870,7 +3970,7 @@ Schedule DataplexDatascanExecutionSpecTriggerSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#schedule DataplexDatascan#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#schedule DataplexDatascan#schedule}
 
 ---
 
@@ -3919,7 +4019,7 @@ Time to live for the DataScan and its results after the one-time run completes.
 
 Accepts a string with a unit suffix 's' (e.g., '7200s'). Default is 24 hours. Ranges between 0 and 31536000 seconds (1 year).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#ttl_after_scan_completion DataplexDatascan#ttl_after_scan_completion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#ttl_after_scan_completion DataplexDatascan#ttl_after_scan_completion}
 
 ---
 
@@ -3953,7 +4053,7 @@ Cron *string
 
 Cron schedule for running scans periodically. This field is required for Schedule scans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#cron DataplexDatascan#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#cron DataplexDatascan#cron}
 
 ---
 
@@ -3988,9 +4088,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#create DataplexDatascan#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#delete DataplexDatascan#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#update DataplexDatascan#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#create DataplexDatascan#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#delete DataplexDatascan#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#update DataplexDatascan#update}. |
 
 ---
 
@@ -4002,7 +4102,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#create DataplexDatascan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#create DataplexDatascan#create}.
 
 ---
 
@@ -4014,7 +4114,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#delete DataplexDatascan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#delete DataplexDatascan#delete}.
 
 ---
 
@@ -4026,7 +4126,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_datascan#update DataplexDatascan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_datascan#update DataplexDatascan#update}.
 
 ---
 
@@ -5873,6 +5973,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.resetCatalogPublishingEnabled">ResetCatalogPublishingEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.resetGenerationScopes">ResetGenerationScopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.resetSqlDialect">ResetSqlDialect</a></code> | *No description.* |
 
 ---
@@ -6033,6 +6134,12 @@ Returns a reversible string representation.
 func ResetCatalogPublishingEnabled()
 ```
 
+##### `ResetGenerationScopes` <a name="ResetGenerationScopes" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.resetGenerationScopes"></a>
+
+```go
+func ResetGenerationScopes()
+```
+
 ##### `ResetSqlDialect` <a name="ResetSqlDialect" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.resetSqlDialect"></a>
 
 ```go
@@ -6047,8 +6154,10 @@ func ResetSqlDialect()
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.catalogPublishingEnabledInput">CatalogPublishingEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.generationScopesInput">GenerationScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.sqlDialectInput">SqlDialectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.catalogPublishingEnabled">CatalogPublishingEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.generationScopes">GenerationScopes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.sqlDialect">SqlDialect</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec">DataplexDatascanDataDocumentationSpec</a></code> | *No description.* |
 
@@ -6088,6 +6197,16 @@ func CatalogPublishingEnabledInput() interface{}
 
 ---
 
+##### `GenerationScopesInput`<sup>Optional</sup> <a name="GenerationScopesInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.generationScopesInput"></a>
+
+```go
+func GenerationScopesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `SqlDialectInput`<sup>Optional</sup> <a name="SqlDialectInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.sqlDialectInput"></a>
 
 ```go
@@ -6105,6 +6224,16 @@ func CatalogPublishingEnabled() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `GenerationScopes`<sup>Required</sup> <a name="GenerationScopes" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference.property.generationScopes"></a>
+
+```go
+func GenerationScopes() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -7048,6 +7177,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetCatalogPublishingEnabled">ResetCatalogPublishingEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetExcludeFields">ResetExcludeFields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetIncludeFields">ResetIncludeFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetMode">ResetMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetPostScanActions">ResetPostScanActions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetRowFilter">ResetRowFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetSamplingPercent">ResetSamplingPercent</a></code> | *No description.* |
@@ -7258,6 +7388,12 @@ func ResetExcludeFields()
 func ResetIncludeFields()
 ```
 
+##### `ResetMode` <a name="ResetMode" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetMode"></a>
+
+```go
+func ResetMode()
+```
+
 ##### `ResetPostScanActions` <a name="ResetPostScanActions" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.resetPostScanActions"></a>
 
 ```go
@@ -7289,10 +7425,12 @@ func ResetSamplingPercent()
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.catalogPublishingEnabledInput">CatalogPublishingEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.excludeFieldsInput">ExcludeFieldsInput</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFields">DataplexDatascanDataProfileSpecExcludeFields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.includeFieldsInput">IncludeFieldsInput</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFields">DataplexDatascanDataProfileSpecIncludeFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.modeInput">ModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.postScanActionsInput">PostScanActionsInput</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActions">DataplexDatascanDataProfileSpecPostScanActions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.rowFilterInput">RowFilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.samplingPercentInput">SamplingPercentInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.catalogPublishingEnabled">CatalogPublishingEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.mode">Mode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.rowFilter">RowFilter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.samplingPercent">SamplingPercent</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec">DataplexDatascanDataProfileSpec</a></code> | *No description.* |
@@ -7383,6 +7521,16 @@ func IncludeFieldsInput() DataplexDatascanDataProfileSpecIncludeFields
 
 ---
 
+##### `ModeInput`<sup>Optional</sup> <a name="ModeInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.modeInput"></a>
+
+```go
+func ModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `PostScanActionsInput`<sup>Optional</sup> <a name="PostScanActionsInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.postScanActionsInput"></a>
 
 ```go
@@ -7420,6 +7568,16 @@ func CatalogPublishingEnabled() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference.property.mode"></a>
+
+```go
+func Mode() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -10576,6 +10734,484 @@ func InternalValue() DataplexDatascanDataQualitySpecPostScanActions
 ---
 
 
+### DataplexDatascanDataQualitySpecRulesDebugQueriesList <a name="DataplexDatascanDataQualitySpecRulesDebugQueriesList" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan"
+
+dataplexdatascan.NewDataplexDatascanDataQualitySpecRulesDebugQueriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplexDatascanDataQualitySpecRulesDebugQueriesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.get"></a>
+
+```go
+func Get(index *f64) DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference <a name="DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdatascan"
+
+dataplexdatascan.NewDataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.sqlStatementInput">SqlStatementInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.sqlStatement">SqlStatement</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SqlStatementInput`<sup>Optional</sup> <a name="SqlStatementInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.sqlStatementInput"></a>
+
+```go
+func SqlStatementInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.description"></a>
+
+```go
+func Description() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SqlStatement`<sup>Required</sup> <a name="SqlStatement" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.sqlStatement"></a>
+
+```go
+func SqlStatement() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### DataplexDatascanDataQualitySpecRulesList <a name="DataplexDatascanDataQualitySpecRulesList" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList.Initializer"></a>
@@ -11053,6 +11689,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putDebugQueries">PutDebugQueries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putNonNullExpectation">PutNonNullExpectation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putRangeExpectation">PutRangeExpectation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putRegexExpectation">PutRegexExpectation</a></code> | *No description.* |
@@ -11065,6 +11702,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putUniquenessExpectation">PutUniquenessExpectation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetAttributes">ResetAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetColumn">ResetColumn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetDebugQueries">ResetDebugQueries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetIgnoreNull">ResetIgnoreNull</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetName">ResetName</a></code> | *No description.* |
@@ -11233,6 +11871,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDebugQueries` <a name="PutDebugQueries" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putDebugQueries"></a>
+
+```go
+func PutDebugQueries(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putDebugQueries.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutNonNullExpectation` <a name="PutNonNullExpectation" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.putNonNullExpectation"></a>
 
 ```go
@@ -11365,6 +12015,12 @@ func ResetAttributes()
 func ResetColumn()
 ```
 
+##### `ResetDebugQueries` <a name="ResetDebugQueries" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetDebugQueries"></a>
+
+```go
+func ResetDebugQueries()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.resetDescription"></a>
 
 ```go
@@ -11462,6 +12118,7 @@ func ResetUniquenessExpectation()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.debugQueries">DebugQueries</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList">DataplexDatascanDataQualitySpecRulesDebugQueriesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.nonNullExpectation">NonNullExpectation</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference">DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.rangeExpectation">RangeExpectation</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference">DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.regexExpectation">RegexExpectation</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference">DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference</a></code> | *No description.* |
@@ -11474,6 +12131,7 @@ func ResetUniquenessExpectation()
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.uniquenessExpectation">UniquenessExpectation</a></code> | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference">DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.attributesInput">AttributesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.columnInput">ColumnInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.debugQueriesInput">DebugQueriesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.dimensionInput">DimensionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.ignoreNullInput">IgnoreNullInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -11523,6 +12181,16 @@ func Fqn() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DebugQueries`<sup>Required</sup> <a name="DebugQueries" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.debugQueries"></a>
+
+```go
+func DebugQueries() DataplexDatascanDataQualitySpecRulesDebugQueriesList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesDebugQueriesList">DataplexDatascanDataQualitySpecRulesDebugQueriesList</a>
 
 ---
 
@@ -11643,6 +12311,16 @@ func ColumnInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DebugQueriesInput`<sup>Optional</sup> <a name="DebugQueriesInput" id="@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference.property.debugQueriesInput"></a>
+
+```go
+func DebugQueriesInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 

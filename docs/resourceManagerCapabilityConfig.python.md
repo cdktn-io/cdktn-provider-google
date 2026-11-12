@@ -4,7 +4,7 @@
 
 ### ResourceManagerCapabilityConfigA <a name="ResourceManagerCapabilityConfigA" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config google_resource_manager_capability_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config google_resource_manager_capability_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer"></a>
 
@@ -24,6 +24,7 @@ resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA(
   capability_config_id: str,
   parent: str,
   types: typing.List[str],
+  boundaries: typing.List[str] = None,
   deletion_policy: str = None,
   display_name: str = None,
   id: str = None,
@@ -46,9 +47,10 @@ resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA(
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.capabilityConfigId">capability_config_id</a></code> | <code>str</code> | User-specified identifier of the capability config. Must be 6 to 30 characters, and contain only lowercase letters, numbers, and hyphens. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.parent">parent</a></code> | <code>str</code> | The parent resource in which to create the capability config. Format: 'folders/{folder_id}', 'organizations/{organization_id}', or 'projects/{project_number}'. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.types">types</a></code> | <code>typing.List[str]</code> | The capabilities enabled for the resource and its sub-tree. Possible values: "AGENT_MANAGEMENT". |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.boundaries">boundaries</a></code> | <code>typing.List[str]</code> | The list of Boundaries associated with this capability config. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User-defined name for the capability config. Must be between 4 and 30 characters. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.managementProject">management_project</a></code> | <code>str</code> | The management project for the capability config. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts">ResourceManagerCapabilityConfigTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 User-specified identifier of the capability config. Must be 6 to 30 characters, and contain only lowercase letters, numbers, and hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#capability_config_id ResourceManagerCapabilityConfigA#capability_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#capability_config_id ResourceManagerCapabilityConfigA#capability_config_id}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent resource in which to create the capability config. Format: 'folders/{folder_id}', 'organizations/{organization_id}', or 'projects/{project_number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#parent ResourceManagerCapabilityConfigA#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#parent ResourceManagerCapabilityConfigA#parent}
 
 ---
 
@@ -140,7 +142,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The capabilities enabled for the resource and its sub-tree. Possible values: "AGENT_MANAGEMENT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#types ResourceManagerCapabilityConfigA#types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#types ResourceManagerCapabilityConfigA#types}
+
+---
+
+##### `boundaries`<sup>Optional</sup> <a name="boundaries" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.Initializer.parameter.boundaries"></a>
+
+- *Type:* typing.List[str]
+
+The list of Boundaries associated with this capability config.
+
+Format: 'organizations/{organization}/boundaries/{boundary}' or 'folders/{folder}/boundaries/{boundary}'.
+Boundaries must share the capability config's parent, and cannot be specified for project-scoped capability configs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#boundaries ResourceManagerCapabilityConfigA#boundaries}
 
 ---
 
@@ -157,7 +172,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#deletion_policy ResourceManagerCapabilityConfigA#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#deletion_policy ResourceManagerCapabilityConfigA#deletion_policy}
 
 ---
 
@@ -167,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-defined name for the capability config. Must be between 4 and 30 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#display_name ResourceManagerCapabilityConfigA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#display_name ResourceManagerCapabilityConfigA#display_name}
 
 ---
 
@@ -175,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -192,7 +207,7 @@ If unspecified, a project will be created automatically.
 Must be specified for project-scoped capability config.
 Format: 'projects/{project_number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#management_project ResourceManagerCapabilityConfigA#management_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#management_project ResourceManagerCapabilityConfigA#management_project}
 
 ---
 
@@ -202,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#timeouts ResourceManagerCapabilityConfigA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#timeouts ResourceManagerCapabilityConfigA#timeouts}
 
 ---
 
@@ -235,6 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.resetBoundaries">reset_boundaries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.resetId">reset_id</a></code> | *No description.* |
@@ -605,7 +621,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#create ResourceManagerCapabilityConfigA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#create ResourceManagerCapabilityConfigA#create}.
 
 ---
 
@@ -613,7 +629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#delete ResourceManagerCapabilityConfigA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#delete ResourceManagerCapabilityConfigA#delete}.
 
 ---
 
@@ -621,9 +637,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#update ResourceManagerCapabilityConfigA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#update ResourceManagerCapabilityConfigA#update}.
 
 ---
+
+##### `reset_boundaries` <a name="reset_boundaries" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.resetBoundaries"></a>
+
+```python
+def reset_boundaries() -> None
+```
 
 ##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.resetDeletionPolicy"></a>
 
@@ -769,7 +791,7 @@ The construct id used in the generated config for the ResourceManagerCapabilityC
 
 The id of the existing ResourceManagerCapabilityConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -805,6 +827,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeoutsOutputReference">ResourceManagerCapabilityConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.boundariesInput">boundaries_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.capabilityConfigIdInput">capability_config_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
@@ -813,6 +836,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts">ResourceManagerCapabilityConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.typesInput">types_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.boundaries">boundaries</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.capabilityConfigId">capability_config_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
@@ -1025,6 +1049,16 @@ update_time: str
 
 ---
 
+##### `boundaries_input`<sup>Optional</sup> <a name="boundaries_input" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.boundariesInput"></a>
+
+```python
+boundaries_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `capability_config_id_input`<sup>Optional</sup> <a name="capability_config_id_input" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.capabilityConfigIdInput"></a>
 
 ```python
@@ -1099,6 +1133,16 @@ timeouts_input: IResolvable | ResourceManagerCapabilityConfigTimeouts
 
 ```python
 types_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `boundaries`<sup>Required</sup> <a name="boundaries" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigA.property.boundaries"></a>
+
+```python
+boundaries: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -1213,6 +1257,7 @@ resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig(
   capability_config_id: str,
   parent: str,
   types: typing.List[str],
+  boundaries: typing.List[str] = None,
   deletion_policy: str = None,
   display_name: str = None,
   id: str = None,
@@ -1235,9 +1280,10 @@ resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig(
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.capabilityConfigId">capability_config_id</a></code> | <code>str</code> | User-specified identifier of the capability config. Must be 6 to 30 characters, and contain only lowercase letters, numbers, and hyphens. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.parent">parent</a></code> | <code>str</code> | The parent resource in which to create the capability config. Format: 'folders/{folder_id}', 'organizations/{organization_id}', or 'projects/{project_number}'. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.types">types</a></code> | <code>typing.List[str]</code> | The capabilities enabled for the resource and its sub-tree. Possible values: "AGENT_MANAGEMENT". |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.boundaries">boundaries</a></code> | <code>typing.List[str]</code> | The list of Boundaries associated with this capability config. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.displayName">display_name</a></code> | <code>str</code> | User-defined name for the capability config. Must be between 4 and 30 characters. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.managementProject">management_project</a></code> | <code>str</code> | The management project for the capability config. |
 | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts">ResourceManagerCapabilityConfigTimeouts</a></code> | timeouts block. |
 
@@ -1323,7 +1369,7 @@ capability_config_id: str
 
 User-specified identifier of the capability config. Must be 6 to 30 characters, and contain only lowercase letters, numbers, and hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#capability_config_id ResourceManagerCapabilityConfigA#capability_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#capability_config_id ResourceManagerCapabilityConfigA#capability_config_id}
 
 ---
 
@@ -1337,7 +1383,7 @@ parent: str
 
 The parent resource in which to create the capability config. Format: 'folders/{folder_id}', 'organizations/{organization_id}', or 'projects/{project_number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#parent ResourceManagerCapabilityConfigA#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#parent ResourceManagerCapabilityConfigA#parent}
 
 ---
 
@@ -1351,7 +1397,24 @@ types: typing.List[str]
 
 The capabilities enabled for the resource and its sub-tree. Possible values: "AGENT_MANAGEMENT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#types ResourceManagerCapabilityConfigA#types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#types ResourceManagerCapabilityConfigA#types}
+
+---
+
+##### `boundaries`<sup>Optional</sup> <a name="boundaries" id="@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigAConfig.property.boundaries"></a>
+
+```python
+boundaries: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The list of Boundaries associated with this capability config.
+
+Format: 'organizations/{organization}/boundaries/{boundary}' or 'folders/{folder}/boundaries/{boundary}'.
+Boundaries must share the capability config's parent, and cannot be specified for project-scoped capability configs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#boundaries ResourceManagerCapabilityConfigA#boundaries}
 
 ---
 
@@ -1372,7 +1435,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#deletion_policy ResourceManagerCapabilityConfigA#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#deletion_policy ResourceManagerCapabilityConfigA#deletion_policy}
 
 ---
 
@@ -1386,7 +1449,7 @@ display_name: str
 
 User-defined name for the capability config. Must be between 4 and 30 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#display_name ResourceManagerCapabilityConfigA#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#display_name ResourceManagerCapabilityConfigA#display_name}
 
 ---
 
@@ -1398,7 +1461,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#id ResourceManagerCapabilityConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1419,7 +1482,7 @@ If unspecified, a project will be created automatically.
 Must be specified for project-scoped capability config.
 Format: 'projects/{project_number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#management_project ResourceManagerCapabilityConfigA#management_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#management_project ResourceManagerCapabilityConfigA#management_project}
 
 ---
 
@@ -1433,7 +1496,7 @@ timeouts: ResourceManagerCapabilityConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#timeouts ResourceManagerCapabilityConfigA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#timeouts ResourceManagerCapabilityConfigA#timeouts}
 
 ---
 
@@ -1455,9 +1518,9 @@ resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#create ResourceManagerCapabilityConfigA#create}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#delete ResourceManagerCapabilityConfigA#delete}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#update ResourceManagerCapabilityConfigA#update}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#create ResourceManagerCapabilityConfigA#create}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#delete ResourceManagerCapabilityConfigA#delete}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerCapabilityConfig.ResourceManagerCapabilityConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#update ResourceManagerCapabilityConfigA#update}. |
 
 ---
 
@@ -1469,7 +1532,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#create ResourceManagerCapabilityConfigA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#create ResourceManagerCapabilityConfigA#create}.
 
 ---
 
@@ -1481,7 +1544,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#delete ResourceManagerCapabilityConfigA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#delete ResourceManagerCapabilityConfigA#delete}.
 
 ---
 
@@ -1493,7 +1556,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_capability_config#update ResourceManagerCapabilityConfigA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_capability_config#update ResourceManagerCapabilityConfigA#update}.
 
 ---
 

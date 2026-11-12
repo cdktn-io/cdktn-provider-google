@@ -4,7 +4,7 @@
 
 ### BigqueryDataTransferConfig <a name="BigqueryDataTransferConfig" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer"></a>
 
@@ -36,6 +36,7 @@ bigqueryDataTransferConfig.BigqueryDataTransferConfig(
   project: str = None,
   schedule: str = None,
   schedule_options: BigqueryDataTransferConfigScheduleOptions = None,
+  schedule_options_v2: BigqueryDataTransferConfigScheduleOptionsV2 = None,
   sensitive_params: BigqueryDataTransferConfigSensitiveParams = None,
   service_account_name: str = None,
   timeouts: BigqueryDataTransferConfigTimeouts = None
@@ -62,12 +63,13 @@ bigqueryDataTransferConfig.BigqueryDataTransferConfig(
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, no runs are scheduled for a given transfer. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.emailPreferences">email_preferences</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences">BigqueryDataTransferConfigEmailPreferences</a></code> | email_preferences block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.encryptionConfiguration">encryption_configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfiguration">BigqueryDataTransferConfigEncryptionConfiguration</a></code> | encryption_configuration block. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.location">location</a></code> | <code>str</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.notificationPubsubTopic">notification_pubsub_topic</a></code> | <code>str</code> | Pub/Sub topic where notifications will be sent after transfer runs associated with this transfer config finish. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.schedule">schedule</a></code> | <code>str</code> | Data transfer schedule. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.scheduleOptions">schedule_options</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions">BigqueryDataTransferConfigScheduleOptions</a></code> | schedule_options block. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.scheduleOptionsV2">schedule_options_v2</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a></code> | schedule_options_v2 block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.sensitiveParams">sensitive_params</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams">BigqueryDataTransferConfigSensitiveParams</a></code> | sensitive_params block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.serviceAccountName">service_account_name</a></code> | <code>str</code> | Service account email. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts">BigqueryDataTransferConfigTimeouts</a></code> | timeouts block. |
@@ -140,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 The data source id. Cannot be changed once the transfer config is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#data_source_id BigqueryDataTransferConfig#data_source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#data_source_id BigqueryDataTransferConfig#data_source_id}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user specified display name for the transfer config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#display_name BigqueryDataTransferConfig#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#display_name BigqueryDataTransferConfig#display_name}
 
 ---
 
@@ -166,7 +168,7 @@ https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
 
 **NOTE** : If you are attempting to update a parameter that cannot be updated (due to api limitations) [please force recreation of the resource](https://www.terraform.io/cli/state/taint#forcing-re-creation-of-resources).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#params BigqueryDataTransferConfig#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#params BigqueryDataTransferConfig#params}
 
 ---
 
@@ -181,7 +183,7 @@ reingests data for [today-10, today-1], rather than ingesting data for
 just [today-1]. Only valid if the data source supports the feature.
 Set the value to 0 to use the default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#data_refresh_window_days BigqueryDataTransferConfig#data_refresh_window_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#data_refresh_window_days BigqueryDataTransferConfig#data_refresh_window_days}
 
 ---
 
@@ -198,7 +200,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#deletion_policy BigqueryDataTransferConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#deletion_policy BigqueryDataTransferConfig#deletion_policy}
 
 ---
 
@@ -208,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The BigQuery target dataset id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#destination_dataset_id BigqueryDataTransferConfig#destination_dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#destination_dataset_id BigqueryDataTransferConfig#destination_dataset_id}
 
 ---
 
@@ -218,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When set to true, no runs are scheduled for a given transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#disabled BigqueryDataTransferConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#disabled BigqueryDataTransferConfig#disabled}
 
 ---
 
@@ -228,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 email_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#email_preferences BigqueryDataTransferConfig#email_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#email_preferences BigqueryDataTransferConfig#email_preferences}
 
 ---
 
@@ -238,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#encryption_configuration BigqueryDataTransferConfig#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#encryption_configuration BigqueryDataTransferConfig#encryption_configuration}
 
 ---
 
@@ -246,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -259,7 +261,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#location BigqueryDataTransferConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#location BigqueryDataTransferConfig#location}
 
 ---
 
@@ -269,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Pub/Sub topic where notifications will be sent after transfer runs associated with this transfer config finish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#notification_pubsub_topic BigqueryDataTransferConfig#notification_pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#notification_pubsub_topic BigqueryDataTransferConfig#notification_pubsub_topic}
 
 ---
 
@@ -277,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}.
 
 ---
 
@@ -297,7 +299,7 @@ https://cloud.google.com/appengine/docs/flexible/python/scheduling-jobs-with-cro
 NOTE: The minimum interval time between recurring transfers depends
 on the data source; refer to the documentation for your data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#schedule BigqueryDataTransferConfig#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#schedule BigqueryDataTransferConfig#schedule}
 
 ---
 
@@ -307,7 +309,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schedule_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#schedule_options BigqueryDataTransferConfig#schedule_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#schedule_options BigqueryDataTransferConfig#schedule_options}
+
+---
+
+##### `schedule_options_v2`<sup>Optional</sup> <a name="schedule_options_v2" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.Initializer.parameter.scheduleOptionsV2"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a>
+
+schedule_options_v2 block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#schedule_options_v2 BigqueryDataTransferConfig#schedule_options_v2}
 
 ---
 
@@ -317,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sensitive_params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#sensitive_params BigqueryDataTransferConfig#sensitive_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#sensitive_params BigqueryDataTransferConfig#sensitive_params}
 
 ---
 
@@ -331,7 +343,7 @@ If this field is set, transfer config will
 be created with this service account credentials. It requires that
 requesting user calling this API has permissions to act as this service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#service_account_name BigqueryDataTransferConfig#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#service_account_name BigqueryDataTransferConfig#service_account_name}
 
 ---
 
@@ -341,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#timeouts BigqueryDataTransferConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#timeouts BigqueryDataTransferConfig#timeouts}
 
 ---
 
@@ -376,6 +388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putEmailPreferences">put_email_preferences</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putEncryptionConfiguration">put_encryption_configuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putScheduleOptions">put_schedule_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putScheduleOptionsV2">put_schedule_options_v2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putSensitiveParams">put_sensitive_params</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetDataRefreshWindowDays">reset_data_refresh_window_days</a></code> | *No description.* |
@@ -390,6 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetSchedule">reset_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetScheduleOptions">reset_schedule_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetScheduleOptionsV2">reset_schedule_options_v2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetSensitiveParams">reset_sensitive_params</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetServiceAccountName">reset_service_account_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -758,7 +772,7 @@ def put_email_preferences(
 
 If true, email notifications will be sent on transfer run failures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#enable_failure_email BigqueryDataTransferConfig#enable_failure_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#enable_failure_email BigqueryDataTransferConfig#enable_failure_email}
 
 ---
 
@@ -776,7 +790,7 @@ def put_encryption_configuration(
 
 The name of the KMS key used for encrypting BigQuery data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#kms_key_name BigqueryDataTransferConfig#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#kms_key_name BigqueryDataTransferConfig#kms_key_name}
 
 ---
 
@@ -801,7 +815,7 @@ basis using transferConfigs.startManualRuns API. When automatic
 scheduling is disabled, the TransferConfig.schedule field will
 be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
 
 ---
 
@@ -816,7 +830,7 @@ scheduled at or after the end time. The end time can be changed at any
 moment. The time when a data transfer can be triggered manually is not
 limited by this option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#end_time BigqueryDataTransferConfig#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#end_time BigqueryDataTransferConfig#end_time}
 
 ---
 
@@ -832,7 +846,25 @@ defined in the schedule string. The start time can be changed at any
 moment. The time when a data transfer can be triggered manually is not
 limited by this option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
+
+---
+
+##### `put_schedule_options_v2` <a name="put_schedule_options_v2" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putScheduleOptionsV2"></a>
+
+```python
+def put_schedule_options_v2(
+  event_driven_schedule: BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule
+) -> None
+```
+
+###### `event_driven_schedule`<sup>Required</sup> <a name="event_driven_schedule" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.putScheduleOptionsV2.parameter.eventDrivenSchedule"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a>
+
+event_driven_schedule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#event_driven_schedule BigqueryDataTransferConfig#event_driven_schedule}
 
 ---
 
@@ -852,7 +884,7 @@ def put_sensitive_params(
 
 The Secret Access Key of the AWS account transferring data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#secret_access_key BigqueryDataTransferConfig#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#secret_access_key BigqueryDataTransferConfig#secret_access_key}
 
 ---
 
@@ -862,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Secret Access Key of the AWS account transferring data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo BigqueryDataTransferConfig#secret_access_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo BigqueryDataTransferConfig#secret_access_key_wo}
 
 ---
 
@@ -874,7 +906,7 @@ Triggers update of 'secret_access_key_wo' write-only.
 
 Increment this value when an update to 'secret_access_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo_version BigqueryDataTransferConfig#secret_access_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo_version BigqueryDataTransferConfig#secret_access_key_wo_version}
 
 ---
 
@@ -892,7 +924,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#create BigqueryDataTransferConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#create BigqueryDataTransferConfig#create}.
 
 ---
 
@@ -900,7 +932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#delete BigqueryDataTransferConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#delete BigqueryDataTransferConfig#delete}.
 
 ---
 
@@ -908,7 +940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#update BigqueryDataTransferConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#update BigqueryDataTransferConfig#update}.
 
 ---
 
@@ -982,6 +1014,12 @@ def reset_schedule() -> None
 
 ```python
 def reset_schedule_options() -> None
+```
+
+##### `reset_schedule_options_v2` <a name="reset_schedule_options_v2" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetScheduleOptionsV2"></a>
+
+```python
+def reset_schedule_options_v2() -> None
 ```
 
 ##### `reset_sensitive_params` <a name="reset_sensitive_params" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.resetSensitiveParams"></a>
@@ -1116,7 +1154,7 @@ The construct id used in the generated config for the BigqueryDataTransferConfig
 
 The id of the existing BigqueryDataTransferConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1150,6 +1188,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.encryptionConfiguration">encryption_configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfigurationOutputReference">BigqueryDataTransferConfigEncryptionConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleOptions">schedule_options</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference">BigqueryDataTransferConfigScheduleOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleOptionsV2">schedule_options_v2</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference">BigqueryDataTransferConfigScheduleOptionsV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.sensitiveParams">sensitive_params</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference">BigqueryDataTransferConfigSensitiveParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference">BigqueryDataTransferConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.dataRefreshWindowDaysInput">data_refresh_window_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1167,6 +1206,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleInput">schedule_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleOptionsInput">schedule_options_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions">BigqueryDataTransferConfigScheduleOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleOptionsV2Input">schedule_options_v2_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.sensitiveParamsInput">sensitive_params_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams">BigqueryDataTransferConfigSensitiveParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.serviceAccountNameInput">service_account_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts">BigqueryDataTransferConfigTimeouts</a></code> | *No description.* |
@@ -1368,6 +1408,16 @@ schedule_options: BigqueryDataTransferConfigScheduleOptionsOutputReference
 
 ---
 
+##### `schedule_options_v2`<sup>Required</sup> <a name="schedule_options_v2" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleOptionsV2"></a>
+
+```python
+schedule_options_v2: BigqueryDataTransferConfigScheduleOptionsV2OutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference">BigqueryDataTransferConfigScheduleOptionsV2OutputReference</a>
+
+---
+
 ##### `sensitive_params`<sup>Required</sup> <a name="sensitive_params" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.sensitiveParams"></a>
 
 ```python
@@ -1535,6 +1585,16 @@ schedule_options_input: BigqueryDataTransferConfigScheduleOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions">BigqueryDataTransferConfigScheduleOptions</a>
+
+---
+
+##### `schedule_options_v2_input`<sup>Optional</sup> <a name="schedule_options_v2_input" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig.property.scheduleOptionsV2Input"></a>
+
+```python
+schedule_options_v2_input: BigqueryDataTransferConfigScheduleOptionsV2
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a>
 
 ---
 
@@ -1748,6 +1808,7 @@ bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig(
   project: str = None,
   schedule: str = None,
   schedule_options: BigqueryDataTransferConfigScheduleOptions = None,
+  schedule_options_v2: BigqueryDataTransferConfigScheduleOptionsV2 = None,
   sensitive_params: BigqueryDataTransferConfigSensitiveParams = None,
   service_account_name: str = None,
   timeouts: BigqueryDataTransferConfigTimeouts = None
@@ -1774,12 +1835,13 @@ bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig(
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, no runs are scheduled for a given transfer. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.emailPreferences">email_preferences</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences">BigqueryDataTransferConfigEmailPreferences</a></code> | email_preferences block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.encryptionConfiguration">encryption_configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEncryptionConfiguration">BigqueryDataTransferConfigEncryptionConfiguration</a></code> | encryption_configuration block. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.location">location</a></code> | <code>str</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.notificationPubsubTopic">notification_pubsub_topic</a></code> | <code>str</code> | Pub/Sub topic where notifications will be sent after transfer runs associated with this transfer config finish. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.schedule">schedule</a></code> | <code>str</code> | Data transfer schedule. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.scheduleOptions">schedule_options</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions">BigqueryDataTransferConfigScheduleOptions</a></code> | schedule_options block. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.scheduleOptionsV2">schedule_options_v2</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a></code> | schedule_options_v2 block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.sensitiveParams">sensitive_params</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams">BigqueryDataTransferConfigSensitiveParams</a></code> | sensitive_params block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.serviceAccountName">service_account_name</a></code> | <code>str</code> | Service account email. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts">BigqueryDataTransferConfigTimeouts</a></code> | timeouts block. |
@@ -1866,7 +1928,7 @@ data_source_id: str
 
 The data source id. Cannot be changed once the transfer config is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#data_source_id BigqueryDataTransferConfig#data_source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#data_source_id BigqueryDataTransferConfig#data_source_id}
 
 ---
 
@@ -1880,7 +1942,7 @@ display_name: str
 
 The user specified display name for the transfer config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#display_name BigqueryDataTransferConfig#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#display_name BigqueryDataTransferConfig#display_name}
 
 ---
 
@@ -1900,7 +1962,7 @@ https://cloud.google.com/bigquery-transfer/docs/cloud-storage-transfer#bq
 
 **NOTE** : If you are attempting to update a parameter that cannot be updated (due to api limitations) [please force recreation of the resource](https://www.terraform.io/cli/state/taint#forcing-re-creation-of-resources).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#params BigqueryDataTransferConfig#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#params BigqueryDataTransferConfig#params}
 
 ---
 
@@ -1919,7 +1981,7 @@ reingests data for [today-10, today-1], rather than ingesting data for
 just [today-1]. Only valid if the data source supports the feature.
 Set the value to 0 to use the default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#data_refresh_window_days BigqueryDataTransferConfig#data_refresh_window_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#data_refresh_window_days BigqueryDataTransferConfig#data_refresh_window_days}
 
 ---
 
@@ -1940,7 +2002,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#deletion_policy BigqueryDataTransferConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#deletion_policy BigqueryDataTransferConfig#deletion_policy}
 
 ---
 
@@ -1954,7 +2016,7 @@ destination_dataset_id: str
 
 The BigQuery target dataset id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#destination_dataset_id BigqueryDataTransferConfig#destination_dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#destination_dataset_id BigqueryDataTransferConfig#destination_dataset_id}
 
 ---
 
@@ -1968,7 +2030,7 @@ disabled: bool | IResolvable
 
 When set to true, no runs are scheduled for a given transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#disabled BigqueryDataTransferConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#disabled BigqueryDataTransferConfig#disabled}
 
 ---
 
@@ -1982,7 +2044,7 @@ email_preferences: BigqueryDataTransferConfigEmailPreferences
 
 email_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#email_preferences BigqueryDataTransferConfig#email_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#email_preferences BigqueryDataTransferConfig#email_preferences}
 
 ---
 
@@ -1996,7 +2058,7 @@ encryption_configuration: BigqueryDataTransferConfigEncryptionConfiguration
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#encryption_configuration BigqueryDataTransferConfig#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#encryption_configuration BigqueryDataTransferConfig#encryption_configuration}
 
 ---
 
@@ -2008,7 +2070,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#id BigqueryDataTransferConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2025,7 +2087,7 @@ location: str
 
 The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#location BigqueryDataTransferConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#location BigqueryDataTransferConfig#location}
 
 ---
 
@@ -2039,7 +2101,7 @@ notification_pubsub_topic: str
 
 Pub/Sub topic where notifications will be sent after transfer runs associated with this transfer config finish.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#notification_pubsub_topic BigqueryDataTransferConfig#notification_pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#notification_pubsub_topic BigqueryDataTransferConfig#notification_pubsub_topic}
 
 ---
 
@@ -2051,7 +2113,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#project BigqueryDataTransferConfig#project}.
 
 ---
 
@@ -2075,7 +2137,7 @@ https://cloud.google.com/appengine/docs/flexible/python/scheduling-jobs-with-cro
 NOTE: The minimum interval time between recurring transfers depends
 on the data source; refer to the documentation for your data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#schedule BigqueryDataTransferConfig#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#schedule BigqueryDataTransferConfig#schedule}
 
 ---
 
@@ -2089,7 +2151,21 @@ schedule_options: BigqueryDataTransferConfigScheduleOptions
 
 schedule_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#schedule_options BigqueryDataTransferConfig#schedule_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#schedule_options BigqueryDataTransferConfig#schedule_options}
+
+---
+
+##### `schedule_options_v2`<sup>Optional</sup> <a name="schedule_options_v2" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig.property.scheduleOptionsV2"></a>
+
+```python
+schedule_options_v2: BigqueryDataTransferConfigScheduleOptionsV2
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a>
+
+schedule_options_v2 block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#schedule_options_v2 BigqueryDataTransferConfig#schedule_options_v2}
 
 ---
 
@@ -2103,7 +2179,7 @@ sensitive_params: BigqueryDataTransferConfigSensitiveParams
 
 sensitive_params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#sensitive_params BigqueryDataTransferConfig#sensitive_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#sensitive_params BigqueryDataTransferConfig#sensitive_params}
 
 ---
 
@@ -2121,7 +2197,7 @@ If this field is set, transfer config will
 be created with this service account credentials. It requires that
 requesting user calling this API has permissions to act as this service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#service_account_name BigqueryDataTransferConfig#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#service_account_name BigqueryDataTransferConfig#service_account_name}
 
 ---
 
@@ -2135,7 +2211,7 @@ timeouts: BigqueryDataTransferConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#timeouts BigqueryDataTransferConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#timeouts BigqueryDataTransferConfig#timeouts}
 
 ---
 
@@ -2169,7 +2245,7 @@ enable_failure_email: bool | IResolvable
 
 If true, email notifications will be sent on transfer run failures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#enable_failure_email BigqueryDataTransferConfig#enable_failure_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#enable_failure_email BigqueryDataTransferConfig#enable_failure_email}
 
 ---
 
@@ -2203,7 +2279,7 @@ kms_key_name: str
 
 The name of the KMS key used for encrypting BigQuery data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#kms_key_name BigqueryDataTransferConfig#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#kms_key_name BigqueryDataTransferConfig#kms_key_name}
 
 ---
 
@@ -2246,7 +2322,7 @@ basis using transferConfigs.startManualRuns API. When automatic
 scheduling is disabled, the TransferConfig.schedule field will
 be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
 
 ---
 
@@ -2265,7 +2341,7 @@ scheduled at or after the end time. The end time can be changed at any
 moment. The time when a data transfer can be triggered manually is not
 limited by this option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#end_time BigqueryDataTransferConfig#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#end_time BigqueryDataTransferConfig#end_time}
 
 ---
 
@@ -2285,7 +2361,75 @@ defined in the schedule string. The start time can be changed at any
 moment. The time when a data transfer can be triggered manually is not
 limited by this option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
+
+---
+
+### BigqueryDataTransferConfigScheduleOptionsV2 <a name="BigqueryDataTransferConfigScheduleOptionsV2" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2.Initializer"></a>
+
+```python
+from cdktn_provider_google import bigquery_data_transfer_config
+
+bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2(
+  event_driven_schedule: BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2.property.eventDrivenSchedule">event_driven_schedule</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a></code> | event_driven_schedule block. |
+
+---
+
+##### `event_driven_schedule`<sup>Required</sup> <a name="event_driven_schedule" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2.property.eventDrivenSchedule"></a>
+
+```python
+event_driven_schedule: BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a>
+
+event_driven_schedule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#event_driven_schedule BigqueryDataTransferConfig#event_driven_schedule}
+
+---
+
+### BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule <a name="BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule.Initializer"></a>
+
+```python
+from cdktn_provider_google import bigquery_data_transfer_config
+
+bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule(
+  pubsub_subscription: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule.property.pubsubSubscription">pubsub_subscription</a></code> | <code>str</code> | Pub/Sub subscription name used to receive events. Only the Google Cloud Storage data source supports this option. Format: projects/{project}/subscriptions/{subscription}. |
+
+---
+
+##### `pubsub_subscription`<sup>Required</sup> <a name="pubsub_subscription" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule.property.pubsubSubscription"></a>
+
+```python
+pubsub_subscription: str
+```
+
+- *Type:* str
+
+Pub/Sub subscription name used to receive events. Only the Google Cloud Storage data source supports this option. Format: projects/{project}/subscriptions/{subscription}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#pubsub_subscription BigqueryDataTransferConfig#pubsub_subscription}
 
 ---
 
@@ -2323,7 +2467,7 @@ secret_access_key: str
 
 The Secret Access Key of the AWS account transferring data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#secret_access_key BigqueryDataTransferConfig#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#secret_access_key BigqueryDataTransferConfig#secret_access_key}
 
 ---
 
@@ -2337,7 +2481,7 @@ secret_access_key_wo: str
 
 The Secret Access Key of the AWS account transferring data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo BigqueryDataTransferConfig#secret_access_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo BigqueryDataTransferConfig#secret_access_key_wo}
 
 ---
 
@@ -2353,7 +2497,7 @@ Triggers update of 'secret_access_key_wo' write-only.
 
 Increment this value when an update to 'secret_access_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo_version BigqueryDataTransferConfig#secret_access_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#secret_access_key_wo_version BigqueryDataTransferConfig#secret_access_key_wo_version}
 
 ---
 
@@ -2375,9 +2519,9 @@ bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#create BigqueryDataTransferConfig#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#delete BigqueryDataTransferConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#update BigqueryDataTransferConfig#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#create BigqueryDataTransferConfig#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#delete BigqueryDataTransferConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#update BigqueryDataTransferConfig#update}. |
 
 ---
 
@@ -2389,7 +2533,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#create BigqueryDataTransferConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#create BigqueryDataTransferConfig#create}.
 
 ---
 
@@ -2401,7 +2545,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#delete BigqueryDataTransferConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#delete BigqueryDataTransferConfig#delete}.
 
 ---
 
@@ -2413,7 +2557,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigquery_data_transfer_config#update BigqueryDataTransferConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#update BigqueryDataTransferConfig#update}.
 
 ---
 
@@ -3368,6 +3512,617 @@ internal_value: BigqueryDataTransferConfigScheduleOptions
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions">BigqueryDataTransferConfigScheduleOptions</a>
+
+---
+
+
+### BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference <a name="BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import bigquery_data_transfer_config
+
+bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.pubsubSubscriptionInput">pubsub_subscription_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.pubsubSubscription">pubsub_subscription</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `pubsub_subscription_input`<sup>Optional</sup> <a name="pubsub_subscription_input" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.pubsubSubscriptionInput"></a>
+
+```python
+pubsub_subscription_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `pubsub_subscription`<sup>Required</sup> <a name="pubsub_subscription" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.pubsubSubscription"></a>
+
+```python
+pubsub_subscription: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference.property.internalValue"></a>
+
+```python
+internal_value: BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a>
+
+---
+
+
+### BigqueryDataTransferConfigScheduleOptionsV2OutputReference <a name="BigqueryDataTransferConfigScheduleOptionsV2OutputReference" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import bigquery_data_transfer_config
+
+bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.putEventDrivenSchedule">put_event_driven_schedule</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_event_driven_schedule` <a name="put_event_driven_schedule" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.putEventDrivenSchedule"></a>
+
+```python
+def put_event_driven_schedule(
+  pubsub_subscription: str
+) -> None
+```
+
+###### `pubsub_subscription`<sup>Required</sup> <a name="pubsub_subscription" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.putEventDrivenSchedule.parameter.pubsubSubscription"></a>
+
+- *Type:* str
+
+Pub/Sub subscription name used to receive events. Only the Google Cloud Storage data source supports this option. Format: projects/{project}/subscriptions/{subscription}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigquery_data_transfer_config#pubsub_subscription BigqueryDataTransferConfig#pubsub_subscription}
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.eventDrivenSchedule">event_driven_schedule</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.eventDrivenScheduleInput">event_driven_schedule_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `event_driven_schedule`<sup>Required</sup> <a name="event_driven_schedule" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.eventDrivenSchedule"></a>
+
+```python
+event_driven_schedule: BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenScheduleOutputReference</a>
+
+---
+
+##### `event_driven_schedule_input`<sup>Optional</sup> <a name="event_driven_schedule_input" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.eventDrivenScheduleInput"></a>
+
+```python
+event_driven_schedule_input: BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule">BigqueryDataTransferConfigScheduleOptionsV2EventDrivenSchedule</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2OutputReference.property.internalValue"></a>
+
+```python
+internal_value: BigqueryDataTransferConfigScheduleOptionsV2
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsV2">BigqueryDataTransferConfigScheduleOptionsV2</a>
 
 ---
 

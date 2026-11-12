@@ -4,7 +4,7 @@
 
 ### IntegrationConnectorsConnection <a name="IntegrationConnectorsConnection" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection google_integration_connectors_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection google_integration_connectors_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer"></a>
 
@@ -83,7 +83,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putNodeConfig">PutNodeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putSslConfig">PutSslConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putTrafficShapingConfigs">PutTrafficShapingConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetAsyncOperationsEnabled">ResetAsyncOperationsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetAuthConfig">ResetAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetAuthOverrideEnabled">ResetAuthOverrideEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetConfigVariable">ResetConfigVariable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetDescription">ResetDescription</a></code> | *No description.* |
@@ -100,6 +103,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetSslConfig">ResetSslConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetSuspended">ResetSuspended</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetTrafficShapingConfigs">ResetTrafficShapingConfigs</a></code> | *No description.* |
 
 ---
 
@@ -520,10 +524,34 @@ func PutTimeouts(value IntegrationConnectorsConnectionTimeouts)
 
 ---
 
+##### `PutTrafficShapingConfigs` <a name="PutTrafficShapingConfigs" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putTrafficShapingConfigs"></a>
+
+```go
+func PutTrafficShapingConfigs(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putTrafficShapingConfigs.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetAsyncOperationsEnabled` <a name="ResetAsyncOperationsEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetAsyncOperationsEnabled"></a>
+
+```go
+func ResetAsyncOperationsEnabled()
+```
+
 ##### `ResetAuthConfig` <a name="ResetAuthConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetAuthConfig"></a>
 
 ```go
 func ResetAuthConfig()
+```
+
+##### `ResetAuthOverrideEnabled` <a name="ResetAuthOverrideEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetAuthOverrideEnabled"></a>
+
+```go
+func ResetAuthOverrideEnabled()
 ```
 
 ##### `ResetConfigVariable` <a name="ResetConfigVariable" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetConfigVariable"></a>
@@ -620,6 +648,12 @@ func ResetSuspended()
 
 ```go
 func ResetTimeouts()
+```
+
+##### `ResetTrafficShapingConfigs` <a name="ResetTrafficShapingConfigs" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.resetTrafficShapingConfigs"></a>
+
+```go
+func ResetTrafficShapingConfigs()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -725,7 +759,7 @@ The construct id used in the generated config for the IntegrationConnectorsConne
 
 The id of the existing IntegrationConnectorsConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,8 +808,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.subscriptionType">SubscriptionType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference">IntegrationConnectorsConnectionTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.trafficShapingConfigs">TrafficShapingConfigs</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList">IntegrationConnectorsConnectionTrafficShapingConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.asyncOperationsEnabledInput">AsyncOperationsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authConfigInput">AuthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig">IntegrationConnectorsConnectionAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authOverrideEnabledInput">AuthOverrideEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.configVariableInput">ConfigVariableInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectorVersionInput">ConnectorVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
@@ -795,6 +832,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.sslConfigInput">SslConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig">IntegrationConnectorsConnectionSslConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.suspendedInput">SuspendedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.trafficShapingConfigsInput">TrafficShapingConfigsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.asyncOperationsEnabled">AsyncOperationsEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authOverrideEnabled">AuthOverrideEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectorVersion">ConnectorVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.description">Description</a></code> | <code>*string</code> | *No description.* |
@@ -1141,6 +1181,16 @@ func Timeouts() IntegrationConnectorsConnectionTimeoutsOutputReference
 
 ---
 
+##### `TrafficShapingConfigs`<sup>Required</sup> <a name="TrafficShapingConfigs" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.trafficShapingConfigs"></a>
+
+```go
+func TrafficShapingConfigs() IntegrationConnectorsConnectionTrafficShapingConfigsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList">IntegrationConnectorsConnectionTrafficShapingConfigsList</a>
+
+---
+
 ##### `UpdateTime`<sup>Required</sup> <a name="UpdateTime" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.updateTime"></a>
 
 ```go
@@ -1151,6 +1201,16 @@ func UpdateTime() *string
 
 ---
 
+##### `AsyncOperationsEnabledInput`<sup>Optional</sup> <a name="AsyncOperationsEnabledInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.asyncOperationsEnabledInput"></a>
+
+```go
+func AsyncOperationsEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AuthConfigInput`<sup>Optional</sup> <a name="AuthConfigInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authConfigInput"></a>
 
 ```go
@@ -1158,6 +1218,16 @@ func AuthConfigInput() IntegrationConnectorsConnectionAuthConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig">IntegrationConnectorsConnectionAuthConfig</a>
+
+---
+
+##### `AuthOverrideEnabledInput`<sup>Optional</sup> <a name="AuthOverrideEnabledInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authOverrideEnabledInput"></a>
+
+```go
+func AuthOverrideEnabledInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1351,6 +1421,36 @@ func TimeoutsInput() interface{}
 
 ---
 
+##### `TrafficShapingConfigsInput`<sup>Optional</sup> <a name="TrafficShapingConfigsInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.trafficShapingConfigsInput"></a>
+
+```go
+func TrafficShapingConfigsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AsyncOperationsEnabled`<sup>Required</sup> <a name="AsyncOperationsEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.asyncOperationsEnabled"></a>
+
+```go
+func AsyncOperationsEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AuthOverrideEnabled`<sup>Required</sup> <a name="AuthOverrideEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authOverrideEnabled"></a>
+
+```go
+func AuthOverrideEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ConnectorVersion`<sup>Required</sup> <a name="ConnectorVersion" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectorVersion"></a>
 
 ```go
@@ -1525,7 +1625,7 @@ AuthType *string
 
 authType of the Connection Possible values: ["AUTH_TYPE_UNSPECIFIED", "USER_PASSWORD", "OAUTH2_JWT_BEARER", "OAUTH2_CLIENT_CREDENTIALS", "SSH_PUBLIC_KEY", "OAUTH2_AUTH_CODE_FLOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_type IntegrationConnectorsConnection#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_type IntegrationConnectorsConnection#auth_type}
 
 ---
 
@@ -1539,7 +1639,7 @@ AdditionalVariable interface{}
 
 additional_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
 
 ---
 
@@ -1553,7 +1653,7 @@ AuthKey *string
 
 The type of authentication configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_key IntegrationConnectorsConnection#auth_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_key IntegrationConnectorsConnection#auth_key}
 
 ---
 
@@ -1567,7 +1667,7 @@ Oauth2AuthCodeFlow IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow
 
 oauth2_auth_code_flow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#oauth2_auth_code_flow IntegrationConnectorsConnection#oauth2_auth_code_flow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#oauth2_auth_code_flow IntegrationConnectorsConnection#oauth2_auth_code_flow}
 
 ---
 
@@ -1581,7 +1681,7 @@ Oauth2ClientCredentials IntegrationConnectorsConnectionAuthConfigOauth2ClientCre
 
 oauth2_client_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#oauth2_client_credentials IntegrationConnectorsConnection#oauth2_client_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#oauth2_client_credentials IntegrationConnectorsConnection#oauth2_client_credentials}
 
 ---
 
@@ -1595,7 +1695,7 @@ Oauth2JwtBearer IntegrationConnectorsConnectionAuthConfigOauth2JwtBearer
 
 oauth2_jwt_bearer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#oauth2_jwt_bearer IntegrationConnectorsConnection#oauth2_jwt_bearer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#oauth2_jwt_bearer IntegrationConnectorsConnection#oauth2_jwt_bearer}
 
 ---
 
@@ -1609,7 +1709,7 @@ SshPublicKey IntegrationConnectorsConnectionAuthConfigSshPublicKey
 
 ssh_public_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#ssh_public_key IntegrationConnectorsConnection#ssh_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#ssh_public_key IntegrationConnectorsConnection#ssh_public_key}
 
 ---
 
@@ -1623,7 +1723,7 @@ UserPassword IntegrationConnectorsConnectionAuthConfigUserPassword
 
 user_password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#user_password IntegrationConnectorsConnection#user_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#user_password IntegrationConnectorsConnection#user_password}
 
 ---
 
@@ -1667,7 +1767,7 @@ Key *string
 
 Key for the configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -1681,7 +1781,7 @@ BooleanValue interface{}
 
 Boolean Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
 
 ---
 
@@ -1695,7 +1795,7 @@ EncryptionKeyValue IntegrationConnectorsConnectionAuthConfigAdditionalVariableEn
 
 encryption_key_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
 
 ---
 
@@ -1709,7 +1809,7 @@ IntegerValue *f64
 
 Integer Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
 
 ---
 
@@ -1723,7 +1823,7 @@ SecretValue IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretVal
 
 secret_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
 
 ---
 
@@ -1737,7 +1837,7 @@ StringValue *string
 
 String Value of configVariabley.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
 
 ---
 
@@ -1773,7 +1873,7 @@ Type *string
 
 Type of Encryption Key Possible values: ["GOOGLE_MANAGED", "CUSTOMER_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
 
 ---
 
@@ -1791,7 +1891,7 @@ The
 expected format: projects/* /locations/* /keyRings/* /cryptoKeys/*.
 Will be empty string if google managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1827,7 +1927,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -1869,7 +1969,7 @@ AuthUri *string
 
 Auth URL for Authorization Code Flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_uri IntegrationConnectorsConnection#auth_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_uri IntegrationConnectorsConnection#auth_uri}
 
 ---
 
@@ -1883,7 +1983,7 @@ ClientId *string
 
 Client ID for user-provided OAuth app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_id IntegrationConnectorsConnection#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_id IntegrationConnectorsConnection#client_id}
 
 ---
 
@@ -1897,7 +1997,7 @@ ClientSecret IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSe
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_secret IntegrationConnectorsConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_secret IntegrationConnectorsConnection#client_secret}
 
 ---
 
@@ -1911,7 +2011,7 @@ EnablePkce interface{}
 
 Whether to enable PKCE when the user performs the auth code flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#enable_pkce IntegrationConnectorsConnection#enable_pkce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#enable_pkce IntegrationConnectorsConnection#enable_pkce}
 
 ---
 
@@ -1925,7 +2025,7 @@ Scopes *[]*string
 
 Scopes the connection will request when the user performs the auth code flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#scopes IntegrationConnectorsConnection#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#scopes IntegrationConnectorsConnection#scopes}
 
 ---
 
@@ -1959,7 +2059,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1997,7 +2097,7 @@ ClientId *string
 
 Secret version of Password for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_id IntegrationConnectorsConnection#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_id IntegrationConnectorsConnection#client_id}
 
 ---
 
@@ -2011,7 +2111,7 @@ ClientSecret IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsCli
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_secret IntegrationConnectorsConnection#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_secret IntegrationConnectorsConnection#client_secret}
 
 ---
 
@@ -2045,7 +2145,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2083,7 +2183,7 @@ ClientKey IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKey
 
 client_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_key IntegrationConnectorsConnection#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_key IntegrationConnectorsConnection#client_key}
 
 ---
 
@@ -2097,7 +2197,7 @@ JwtClaims IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaims
 
 jwt_claims block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#jwt_claims IntegrationConnectorsConnection#jwt_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#jwt_claims IntegrationConnectorsConnection#jwt_claims}
 
 ---
 
@@ -2131,7 +2231,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2171,7 +2271,7 @@ Audience *string
 
 Value for the "aud" claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#audience IntegrationConnectorsConnection#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#audience IntegrationConnectorsConnection#audience}
 
 ---
 
@@ -2185,7 +2285,7 @@ Issuer *string
 
 Value for the "iss" claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#issuer IntegrationConnectorsConnection#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#issuer IntegrationConnectorsConnection#issuer}
 
 ---
 
@@ -2199,7 +2299,7 @@ Subject *string
 
 Value for the "sub" claim.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#subject IntegrationConnectorsConnection#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#subject IntegrationConnectorsConnection#subject}
 
 ---
 
@@ -2239,7 +2339,7 @@ Username *string
 
 The user account used to authenticate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#username IntegrationConnectorsConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#username IntegrationConnectorsConnection#username}
 
 ---
 
@@ -2253,7 +2353,7 @@ CertType *string
 
 Format of SSH Client cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#cert_type IntegrationConnectorsConnection#cert_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#cert_type IntegrationConnectorsConnection#cert_type}
 
 ---
 
@@ -2267,7 +2367,7 @@ SshClientCert IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCert
 
 ssh_client_cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#ssh_client_cert IntegrationConnectorsConnection#ssh_client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#ssh_client_cert IntegrationConnectorsConnection#ssh_client_cert}
 
 ---
 
@@ -2281,7 +2381,7 @@ SshClientCertPass IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClient
 
 ssh_client_cert_pass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#ssh_client_cert_pass IntegrationConnectorsConnection#ssh_client_cert_pass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#ssh_client_cert_pass IntegrationConnectorsConnection#ssh_client_cert_pass}
 
 ---
 
@@ -2315,7 +2415,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2351,7 +2451,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2389,7 +2489,7 @@ Username *string
 
 Username for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#username IntegrationConnectorsConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#username IntegrationConnectorsConnection#username}
 
 ---
 
@@ -2403,7 +2503,7 @@ Password IntegrationConnectorsConnectionAuthConfigUserPasswordPassword
 
 password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#password IntegrationConnectorsConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#password IntegrationConnectorsConnection#password}
 
 ---
 
@@ -2437,7 +2537,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2461,7 +2561,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconne
 	ConnectorVersion: *string,
 	Location: *string,
 	Name: *string,
+	AsyncOperationsEnabled: interface{},
 	AuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig,
+	AuthOverrideEnabled: interface{},
 	ConfigVariable: interface{},
 	DeletionPolicy: *string,
 	Description: *string,
@@ -2478,6 +2580,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconne
 	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig,
 	Suspended: interface{},
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts,
+	TrafficShapingConfigs: interface{},
 }
 ```
 
@@ -2495,23 +2598,26 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconne
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.connectorVersion">ConnectorVersion</a></code> | <code>*string</code> | connectorVersion of the Connector. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.location">Location</a></code> | <code>*string</code> | Location in which Connection needs to be created. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.name">Name</a></code> | <code>*string</code> | Name of Connection needs to be created. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.asyncOperationsEnabled">AsyncOperationsEnabled</a></code> | <code>interface{}</code> | Async operations enabled for the connection. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.authConfig">AuthConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig">IntegrationConnectorsConnectionAuthConfig</a></code> | auth_config block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.authOverrideEnabled">AuthOverrideEnabled</a></code> | <code>interface{}</code> | Auth override enabled for the connection. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.configVariable">ConfigVariable</a></code> | <code>interface{}</code> | config_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.description">Description</a></code> | <code>*string</code> | An arbitrary description for the Connection. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.destinationConfig">DestinationConfig</a></code> | <code>interface{}</code> | destination_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.eventingConfig">EventingConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig">IntegrationConnectorsConnectionEventingConfig</a></code> | eventing_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.eventingEnablementType">EventingEnablementType</a></code> | <code>*string</code> | Eventing enablement type. Will be nil if eventing is not enabled. Possible values: ["EVENTING_AND_CONNECTION", "ONLY_EVENTING"]. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#id IntegrationConnectorsConnection#id}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#id IntegrationConnectorsConnection#id}. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user provided metadata. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.lockConfig">LockConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig">IntegrationConnectorsConnectionLockConfig</a></code> | lock_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig">IntegrationConnectorsConnectionLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.nodeConfig">NodeConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfig">IntegrationConnectorsConnectionNodeConfig</a></code> | node_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#project IntegrationConnectorsConnection#project}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#project IntegrationConnectorsConnection#project}. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Service account needed for runtime plane to access Google Cloud resources. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.sslConfig">SslConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig">IntegrationConnectorsConnectionSslConfig</a></code> | ssl_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.suspended">Suspended</a></code> | <code>interface{}</code> | Suspended indicates if a user has suspended a connection or not. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.trafficShapingConfigs">TrafficShapingConfigs</a></code> | <code>interface{}</code> | traffic_shaping_configs block. |
 
 ---
 
@@ -2595,7 +2701,7 @@ ConnectorVersion *string
 
 connectorVersion of the Connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#connector_version IntegrationConnectorsConnection#connector_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#connector_version IntegrationConnectorsConnection#connector_version}
 
 ---
 
@@ -2609,7 +2715,7 @@ Location *string
 
 Location in which Connection needs to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#location IntegrationConnectorsConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#location IntegrationConnectorsConnection#location}
 
 ---
 
@@ -2623,7 +2729,23 @@ Name *string
 
 Name of Connection needs to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#name IntegrationConnectorsConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#name IntegrationConnectorsConnection#name}
+
+---
+
+##### `AsyncOperationsEnabled`<sup>Optional</sup> <a name="AsyncOperationsEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.asyncOperationsEnabled"></a>
+
+```go
+AsyncOperationsEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Async operations enabled for the connection.
+
+If Async Operations is enabled, Connection allows the customers to initiate async long running operations using the actions API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#async_operations_enabled IntegrationConnectorsConnection#async_operations_enabled}
 
 ---
 
@@ -2637,7 +2759,23 @@ AuthConfig IntegrationConnectorsConnectionAuthConfig
 
 auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_config IntegrationConnectorsConnection#auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_config IntegrationConnectorsConnection#auth_config}
+
+---
+
+##### `AuthOverrideEnabled`<sup>Optional</sup> <a name="AuthOverrideEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.authOverrideEnabled"></a>
+
+```go
+AuthOverrideEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Auth override enabled for the connection.
+
+If Auth Override is enabled, Connection allows the backend service auth to be overridden in the entities/actions API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_override_enabled IntegrationConnectorsConnection#auth_override_enabled}
 
 ---
 
@@ -2651,7 +2789,7 @@ ConfigVariable interface{}
 
 config_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#config_variable IntegrationConnectorsConnection#config_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#config_variable IntegrationConnectorsConnection#config_variable}
 
 ---
 
@@ -2672,7 +2810,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#deletion_policy IntegrationConnectorsConnection#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#deletion_policy IntegrationConnectorsConnection#deletion_policy}
 
 ---
 
@@ -2686,7 +2824,7 @@ Description *string
 
 An arbitrary description for the Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#description IntegrationConnectorsConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#description IntegrationConnectorsConnection#description}
 
 ---
 
@@ -2700,7 +2838,7 @@ DestinationConfig interface{}
 
 destination_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#destination_config IntegrationConnectorsConnection#destination_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#destination_config IntegrationConnectorsConnection#destination_config}
 
 ---
 
@@ -2714,7 +2852,7 @@ EventingConfig IntegrationConnectorsConnectionEventingConfig
 
 eventing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#eventing_config IntegrationConnectorsConnection#eventing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#eventing_config IntegrationConnectorsConnection#eventing_config}
 
 ---
 
@@ -2728,7 +2866,7 @@ EventingEnablementType *string
 
 Eventing enablement type. Will be nil if eventing is not enabled. Possible values: ["EVENTING_AND_CONNECTION", "ONLY_EVENTING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#eventing_enablement_type IntegrationConnectorsConnection#eventing_enablement_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#eventing_enablement_type IntegrationConnectorsConnection#eventing_enablement_type}
 
 ---
 
@@ -2740,7 +2878,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#id IntegrationConnectorsConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#id IntegrationConnectorsConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2760,7 +2898,7 @@ Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#labels IntegrationConnectorsConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#labels IntegrationConnectorsConnection#labels}
 
 ---
 
@@ -2774,7 +2912,7 @@ LockConfig IntegrationConnectorsConnectionLockConfig
 
 lock_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#lock_config IntegrationConnectorsConnection#lock_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#lock_config IntegrationConnectorsConnection#lock_config}
 
 ---
 
@@ -2788,7 +2926,7 @@ LogConfig IntegrationConnectorsConnectionLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#log_config IntegrationConnectorsConnection#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#log_config IntegrationConnectorsConnection#log_config}
 
 ---
 
@@ -2802,7 +2940,7 @@ NodeConfig IntegrationConnectorsConnectionNodeConfig
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#node_config IntegrationConnectorsConnection#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#node_config IntegrationConnectorsConnection#node_config}
 
 ---
 
@@ -2814,7 +2952,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#project IntegrationConnectorsConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#project IntegrationConnectorsConnection#project}.
 
 ---
 
@@ -2828,7 +2966,7 @@ ServiceAccount *string
 
 Service account needed for runtime plane to access Google Cloud resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#service_account IntegrationConnectorsConnection#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#service_account IntegrationConnectorsConnection#service_account}
 
 ---
 
@@ -2842,7 +2980,7 @@ SslConfig IntegrationConnectorsConnectionSslConfig
 
 ssl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#ssl_config IntegrationConnectorsConnection#ssl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#ssl_config IntegrationConnectorsConnection#ssl_config}
 
 ---
 
@@ -2856,7 +2994,7 @@ Suspended interface{}
 
 Suspended indicates if a user has suspended a connection or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#suspended IntegrationConnectorsConnection#suspended}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#suspended IntegrationConnectorsConnection#suspended}
 
 ---
 
@@ -2870,7 +3008,21 @@ Timeouts IntegrationConnectorsConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#timeouts IntegrationConnectorsConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#timeouts IntegrationConnectorsConnection#timeouts}
+
+---
+
+##### `TrafficShapingConfigs`<sup>Optional</sup> <a name="TrafficShapingConfigs" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.trafficShapingConfigs"></a>
+
+```go
+TrafficShapingConfigs interface{}
+```
+
+- *Type:* interface{}
+
+traffic_shaping_configs block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#traffic_shaping_configs IntegrationConnectorsConnection#traffic_shaping_configs}
 
 ---
 
@@ -2914,7 +3066,7 @@ Key *string
 
 Key for the configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -2928,7 +3080,7 @@ BooleanValue interface{}
 
 Boolean Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
 
 ---
 
@@ -2942,7 +3094,7 @@ EncryptionKeyValue IntegrationConnectorsConnectionConfigVariableEncryptionKeyVal
 
 encryption_key_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
 
 ---
 
@@ -2956,7 +3108,7 @@ IntegerValue *f64
 
 Integer Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
 
 ---
 
@@ -2970,7 +3122,7 @@ SecretValue IntegrationConnectorsConnectionConfigVariableSecretValue
 
 secret_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
 
 ---
 
@@ -2984,7 +3136,7 @@ StringValue *string
 
 String Value of configVariabley.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
 
 ---
 
@@ -3020,7 +3172,7 @@ Type *string
 
 Type of Encryption Key Possible values: ["GOOGLE_MANAGED", "CUSTOMER_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
 
 ---
 
@@ -3038,7 +3190,7 @@ The
 expected format: projects/* /locations/* /keyRings/* /cryptoKeys/*.
 Will be empty string if google managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -3074,7 +3226,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -3123,7 +3275,7 @@ Key *string
 
 The key is the destination identifier that is supported by the Connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -3137,7 +3289,7 @@ Destination interface{}
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
 
 ---
 
@@ -3175,7 +3327,7 @@ Host *string
 
 For publicly routable host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#host IntegrationConnectorsConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#host IntegrationConnectorsConnection#host}
 
 ---
 
@@ -3189,7 +3341,7 @@ Port *f64
 
 The port is the target port number that is accepted by the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#port IntegrationConnectorsConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#port IntegrationConnectorsConnection#port}
 
 ---
 
@@ -3203,7 +3355,7 @@ ServiceAttachment *string
 
 PSC service attachments. Format: projects/* /regions/* /serviceAttachments/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#service_attachment IntegrationConnectorsConnection#service_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#service_attachment IntegrationConnectorsConnection#service_attachment}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -3219,8 +3371,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconne
 &integrationconnectorsconnection.IntegrationConnectorsConnectionEventingConfig {
 	RegistrationDestinationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig,
 	AdditionalVariable: interface{},
+	AllowedEventTypes: *[]*string,
 	AuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig,
+	DeadLetterConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig,
+	EnrichmentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig,
 	EnrichmentEnabled: interface{},
+	GlobalEventFilter: *string,
 }
 ```
 
@@ -3230,8 +3386,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconne
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.registrationDestinationConfig">RegistrationDestinationConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig</a></code> | registration_destination_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.additionalVariable">AdditionalVariable</a></code> | <code>interface{}</code> | additional_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.allowedEventTypes">AllowedEventTypes</a></code> | <code>*[]*string</code> | List of allowed event types for the connection. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.authConfig">AuthConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig">IntegrationConnectorsConnectionEventingConfigAuthConfig</a></code> | auth_config block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.deadLetterConfig">DeadLetterConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a></code> | dead_letter_config block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.enrichmentConfig">EnrichmentConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a></code> | enrichment_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.enrichmentEnabled">EnrichmentEnabled</a></code> | <code>interface{}</code> | Enrichment Enabled. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.globalEventFilter">GlobalEventFilter</a></code> | <code>*string</code> | Filter to be applied on the events to be received by the connection. |
 
 ---
 
@@ -3245,7 +3405,7 @@ RegistrationDestinationConfig IntegrationConnectorsConnectionEventingConfigRegis
 
 registration_destination_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#registration_destination_config IntegrationConnectorsConnection#registration_destination_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#registration_destination_config IntegrationConnectorsConnection#registration_destination_config}
 
 ---
 
@@ -3259,7 +3419,21 @@ AdditionalVariable interface{}
 
 additional_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
+
+---
+
+##### `AllowedEventTypes`<sup>Optional</sup> <a name="AllowedEventTypes" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.allowedEventTypes"></a>
+
+```go
+AllowedEventTypes *[]*string
+```
+
+- *Type:* *[]*string
+
+List of allowed event types for the connection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#allowed_event_types IntegrationConnectorsConnection#allowed_event_types}
 
 ---
 
@@ -3273,7 +3447,35 @@ AuthConfig IntegrationConnectorsConnectionEventingConfigAuthConfig
 
 auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_config IntegrationConnectorsConnection#auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_config IntegrationConnectorsConnection#auth_config}
+
+---
+
+##### `DeadLetterConfig`<sup>Optional</sup> <a name="DeadLetterConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.deadLetterConfig"></a>
+
+```go
+DeadLetterConfig IntegrationConnectorsConnectionEventingConfigDeadLetterConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a>
+
+dead_letter_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#dead_letter_config IntegrationConnectorsConnection#dead_letter_config}
+
+---
+
+##### `EnrichmentConfig`<sup>Optional</sup> <a name="EnrichmentConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.enrichmentConfig"></a>
+
+```go
+EnrichmentConfig IntegrationConnectorsConnectionEventingConfigEnrichmentConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a>
+
+enrichment_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#enrichment_config IntegrationConnectorsConnection#enrichment_config}
 
 ---
 
@@ -3287,7 +3489,21 @@ EnrichmentEnabled interface{}
 
 Enrichment Enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#enrichment_enabled IntegrationConnectorsConnection#enrichment_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#enrichment_enabled IntegrationConnectorsConnection#enrichment_enabled}
+
+---
+
+##### `GlobalEventFilter`<sup>Optional</sup> <a name="GlobalEventFilter" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.globalEventFilter"></a>
+
+```go
+GlobalEventFilter *string
+```
+
+- *Type:* *string
+
+Filter to be applied on the events to be received by the connection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#global_event_filter IntegrationConnectorsConnection#global_event_filter}
 
 ---
 
@@ -3331,7 +3547,7 @@ Key *string
 
 Key for the configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -3345,7 +3561,7 @@ BooleanValue interface{}
 
 Boolean Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
 
 ---
 
@@ -3359,7 +3575,7 @@ EncryptionKeyValue IntegrationConnectorsConnectionEventingConfigAdditionalVariab
 
 encryption_key_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
 
 ---
 
@@ -3373,7 +3589,7 @@ IntegerValue *f64
 
 Integer Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
 
 ---
 
@@ -3387,7 +3603,7 @@ SecretValue IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecre
 
 secret_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
 
 ---
 
@@ -3401,7 +3617,7 @@ StringValue *string
 
 String Value of configVariabley.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
 
 ---
 
@@ -3441,7 +3657,7 @@ The
 expected format: projects/* /locations/* /keyRings/* /cryptoKeys/*.
 Will be empty string if google managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -3457,7 +3673,7 @@ Type *string
 
 Type of Encryption Key Possible values: ["GOOGLE_MANAGED", "CUSTOMER_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
 
 ---
 
@@ -3491,7 +3707,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -3531,7 +3747,7 @@ AuthType *string
 
 authType of the Connection Possible values: ["USER_PASSWORD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_type IntegrationConnectorsConnection#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_type IntegrationConnectorsConnection#auth_type}
 
 ---
 
@@ -3545,7 +3761,7 @@ UserPassword IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword
 
 user_password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#user_password IntegrationConnectorsConnection#user_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#user_password IntegrationConnectorsConnection#user_password}
 
 ---
 
@@ -3559,7 +3775,7 @@ AdditionalVariable interface{}
 
 additional_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
 
 ---
 
@@ -3573,7 +3789,7 @@ AuthKey *string
 
 The type of authentication configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#auth_key IntegrationConnectorsConnection#auth_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#auth_key IntegrationConnectorsConnection#auth_key}
 
 ---
 
@@ -3617,7 +3833,7 @@ Key *string
 
 Key for the configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -3631,7 +3847,7 @@ BooleanValue interface{}
 
 Boolean Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
 
 ---
 
@@ -3645,7 +3861,7 @@ EncryptionKeyValue IntegrationConnectorsConnectionEventingConfigAuthConfigAdditi
 
 encryption_key_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
 
 ---
 
@@ -3659,7 +3875,7 @@ IntegerValue *f64
 
 Integer Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
 
 ---
 
@@ -3673,7 +3889,7 @@ SecretValue IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVar
 
 secret_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
 
 ---
 
@@ -3687,7 +3903,7 @@ StringValue *string
 
 String Value of configVariabley.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
 
 ---
 
@@ -3727,7 +3943,7 @@ The
 expected format: projects/* /locations/* /keyRings/* /cryptoKeys/*.
 Will be empty string if google managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -3743,7 +3959,7 @@ Type *string
 
 Type of Encryption Key Possible values: ["GOOGLE_MANAGED", "CUSTOMER_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
 
 ---
 
@@ -3777,7 +3993,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -3813,7 +4029,7 @@ Password IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPass
 
 password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#password IntegrationConnectorsConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#password IntegrationConnectorsConnection#password}
 
 ---
 
@@ -3827,7 +4043,7 @@ Username *string
 
 Username for Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#username IntegrationConnectorsConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#username IntegrationConnectorsConnection#username}
 
 ---
 
@@ -3861,9 +4077,93 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: projects/* /secrets/* /versions/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+
+---
+
+### IntegrationConnectorsConnectionEventingConfigDeadLetterConfig <a name="IntegrationConnectorsConnectionEventingConfigDeadLetterConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+&integrationconnectorsconnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig {
+	ProjectId: *string,
+	Topic: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | Project which has the topic given. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig.property.topic">Topic</a></code> | <code>*string</code> | Topic to push events which couldn't be processed. |
+
+---
+
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig.property.projectId"></a>
+
+```go
+ProjectId *string
+```
+
+- *Type:* *string
+
+Project which has the topic given.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#project_id IntegrationConnectorsConnection#project_id}
+
+---
+
+##### `Topic`<sup>Required</sup> <a name="Topic" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig.property.topic"></a>
+
+```go
+Topic *string
+```
+
+- *Type:* *string
+
+Topic to push events which couldn't be processed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#topic IntegrationConnectorsConnection#topic}
+
+---
+
+### IntegrationConnectorsConnectionEventingConfigEnrichmentConfig <a name="IntegrationConnectorsConnectionEventingConfigEnrichmentConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+&integrationconnectorsconnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig {
+	AppendAcl: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig.property.appendAcl">AppendAcl</a></code> | <code>interface{}</code> | Append ACL to the event. |
+
+---
+
+##### `AppendAcl`<sup>Optional</sup> <a name="AppendAcl" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig.property.appendAcl"></a>
+
+```go
+AppendAcl interface{}
+```
+
+- *Type:* interface{}
+
+Append ACL to the event.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#append_acl IntegrationConnectorsConnection#append_acl}
 
 ---
 
@@ -3899,7 +4199,7 @@ Destination interface{}
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#destination IntegrationConnectorsConnection#destination}
 
 ---
 
@@ -3913,7 +4213,7 @@ Key *string
 
 Key for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -3951,7 +4251,7 @@ Host *string
 
 Host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#host IntegrationConnectorsConnection#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#host IntegrationConnectorsConnection#host}
 
 ---
 
@@ -3965,7 +4265,7 @@ Port *f64
 
 port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#port IntegrationConnectorsConnection#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#port IntegrationConnectorsConnection#port}
 
 ---
 
@@ -3979,7 +4279,7 @@ ServiceAttachment *string
 
 Service Attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#service_attachment IntegrationConnectorsConnection#service_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#service_attachment IntegrationConnectorsConnection#service_attachment}
 
 ---
 
@@ -4041,7 +4341,7 @@ Locked interface{}
 
 Indicates whether or not the connection is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#locked IntegrationConnectorsConnection#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#locked IntegrationConnectorsConnection#locked}
 
 ---
 
@@ -4055,7 +4355,7 @@ Reason *string
 
 Describes why a connection is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#reason IntegrationConnectorsConnection#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#reason IntegrationConnectorsConnection#reason}
 
 ---
 
@@ -4091,7 +4391,7 @@ Enabled interface{}
 
 Enabled represents whether logging is enabled or not for a connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#enabled IntegrationConnectorsConnection#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#enabled IntegrationConnectorsConnection#enabled}
 
 ---
 
@@ -4105,7 +4405,7 @@ Level *string
 
 Log configuration level. Possible values: ["LOG_LEVEL_UNSPECIFIED", "ERROR", "INFO", "DEBUG"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#level IntegrationConnectorsConnection#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#level IntegrationConnectorsConnection#level}
 
 ---
 
@@ -4141,7 +4441,7 @@ MaxNodeCount *f64
 
 Minimum number of nodes in the runtime nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#max_node_count IntegrationConnectorsConnection#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#max_node_count IntegrationConnectorsConnection#max_node_count}
 
 ---
 
@@ -4155,7 +4455,7 @@ MinNodeCount *f64
 
 Minimum number of nodes in the runtime nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#min_node_count IntegrationConnectorsConnection#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#min_node_count IntegrationConnectorsConnection#min_node_count}
 
 ---
 
@@ -4207,7 +4507,7 @@ Type *string
 
 Enum for controlling the SSL Type (TLS/MTLS) Possible values: ["TLS", "MTLS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
 
 ---
 
@@ -4221,7 +4521,7 @@ AdditionalVariable interface{}
 
 additional_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#additional_variable IntegrationConnectorsConnection#additional_variable}
 
 ---
 
@@ -4235,7 +4535,7 @@ ClientCertificate IntegrationConnectorsConnectionSslConfigClientCertificate
 
 client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_certificate IntegrationConnectorsConnection#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_certificate IntegrationConnectorsConnection#client_certificate}
 
 ---
 
@@ -4249,7 +4549,7 @@ ClientCertType *string
 
 Type of Client Cert (PEM/JKS/.. etc.) Possible values: ["PEM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_cert_type IntegrationConnectorsConnection#client_cert_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_cert_type IntegrationConnectorsConnection#client_cert_type}
 
 ---
 
@@ -4263,7 +4563,7 @@ ClientPrivateKey IntegrationConnectorsConnectionSslConfigClientPrivateKey
 
 client_private_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_private_key IntegrationConnectorsConnection#client_private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_private_key IntegrationConnectorsConnection#client_private_key}
 
 ---
 
@@ -4277,7 +4577,7 @@ ClientPrivateKeyPass IntegrationConnectorsConnectionSslConfigClientPrivateKeyPas
 
 client_private_key_pass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#client_private_key_pass IntegrationConnectorsConnection#client_private_key_pass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#client_private_key_pass IntegrationConnectorsConnection#client_private_key_pass}
 
 ---
 
@@ -4291,7 +4591,7 @@ PrivateServerCertificate IntegrationConnectorsConnectionSslConfigPrivateServerCe
 
 private_server_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#private_server_certificate IntegrationConnectorsConnection#private_server_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#private_server_certificate IntegrationConnectorsConnection#private_server_certificate}
 
 ---
 
@@ -4305,7 +4605,7 @@ ServerCertType *string
 
 Type of Server Cert (PEM/JKS/.. etc.) Possible values: ["PEM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#server_cert_type IntegrationConnectorsConnection#server_cert_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#server_cert_type IntegrationConnectorsConnection#server_cert_type}
 
 ---
 
@@ -4319,7 +4619,7 @@ TrustModel *string
 
 Enum for Trust Model Possible values: ["PUBLIC", "PRIVATE", "INSECURE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#trust_model IntegrationConnectorsConnection#trust_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#trust_model IntegrationConnectorsConnection#trust_model}
 
 ---
 
@@ -4333,7 +4633,7 @@ UseSsl interface{}
 
 Bool for enabling SSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#use_ssl IntegrationConnectorsConnection#use_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#use_ssl IntegrationConnectorsConnection#use_ssl}
 
 ---
 
@@ -4377,7 +4677,7 @@ Key *string
 
 Key for the configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#key IntegrationConnectorsConnection#key}
 
 ---
 
@@ -4391,7 +4691,7 @@ BooleanValue interface{}
 
 Boolean Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#boolean_value IntegrationConnectorsConnection#boolean_value}
 
 ---
 
@@ -4405,7 +4705,7 @@ EncryptionKeyValue IntegrationConnectorsConnectionSslConfigAdditionalVariableEnc
 
 encryption_key_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#encryption_key_value IntegrationConnectorsConnection#encryption_key_value}
 
 ---
 
@@ -4419,7 +4719,7 @@ IntegerValue *f64
 
 Integer Value of configVariable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#integer_value IntegrationConnectorsConnection#integer_value}
 
 ---
 
@@ -4433,7 +4733,7 @@ SecretValue IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValu
 
 secret_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_value IntegrationConnectorsConnection#secret_value}
 
 ---
 
@@ -4447,7 +4747,7 @@ StringValue *string
 
 String Value of configVariabley.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#string_value IntegrationConnectorsConnection#string_value}
 
 ---
 
@@ -4487,7 +4787,7 @@ The
 expected format: projects/* /locations/* /keyRings/* /cryptoKeys/*.
 Will be empty string if google managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#kms_key_name IntegrationConnectorsConnection#kms_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -4503,7 +4803,7 @@ Type *string
 
 Type of Encryption Key Possible values: ["GOOGLE_MANAGED", "CUSTOMER_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#type IntegrationConnectorsConnection#type}
 
 ---
 
@@ -4537,7 +4837,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -4571,7 +4871,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -4605,7 +4905,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -4639,7 +4939,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -4673,7 +4973,7 @@ SecretVersion *string
 
 Secret version of Secret Value for Config variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 
 ---
 
@@ -4708,9 +5008,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#create IntegrationConnectorsConnection#create}. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#delete IntegrationConnectorsConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#update IntegrationConnectorsConnection#update}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#create IntegrationConnectorsConnection#create}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#delete IntegrationConnectorsConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#update IntegrationConnectorsConnection#update}. |
 
 ---
 
@@ -4722,7 +5022,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#create IntegrationConnectorsConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#create IntegrationConnectorsConnection#create}.
 
 ---
 
@@ -4734,7 +5034,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#delete IntegrationConnectorsConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#delete IntegrationConnectorsConnection#delete}.
 
 ---
 
@@ -4746,7 +5046,59 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/integration_connectors_connection#update IntegrationConnectorsConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#update IntegrationConnectorsConnection#update}.
+
+---
+
+### IntegrationConnectorsConnectionTrafficShapingConfigs <a name="IntegrationConnectorsConnectionTrafficShapingConfigs" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigs.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+&integrationconnectorsconnection.IntegrationConnectorsConnectionTrafficShapingConfigs {
+	Duration: *string,
+	QuotaLimit: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigs.property.duration">Duration</a></code> | <code>*string</code> | Specifies the duration over which the API call quota limits are calculated. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigs.property.quotaLimit">QuotaLimit</a></code> | <code>*string</code> | Maximum number of api calls allowed. |
+
+---
+
+##### `Duration`<sup>Required</sup> <a name="Duration" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigs.property.duration"></a>
+
+```go
+Duration *string
+```
+
+- *Type:* *string
+
+Specifies the duration over which the API call quota limits are calculated.
+
+A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#duration IntegrationConnectorsConnection#duration}
+
+---
+
+##### `QuotaLimit`<sup>Required</sup> <a name="QuotaLimit" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigs.property.quotaLimit"></a>
+
+```go
+QuotaLimit *string
+```
+
+- *Type:* *string
+
+Maximum number of api calls allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integration_connectors_connection#quota_limit IntegrationConnectorsConnection#quota_limit}
 
 ---
 
@@ -16194,6 +16546,577 @@ func InternalValue() IntegrationConnectorsConnectionEventingConfigAuthConfigUser
 ---
 
 
+### IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference <a name="IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+integrationconnectorsconnection.NewIntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.topicInput">TopicInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.topic">Topic</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.projectIdInput"></a>
+
+```go
+func ProjectIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TopicInput`<sup>Optional</sup> <a name="TopicInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.topicInput"></a>
+
+```go
+func TopicInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.projectId"></a>
+
+```go
+func ProjectId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Topic`<sup>Required</sup> <a name="Topic" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.topic"></a>
+
+```go
+func Topic() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() IntegrationConnectorsConnectionEventingConfigDeadLetterConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a>
+
+---
+
+
+### IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference <a name="IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+integrationconnectorsconnection.NewIntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.resetAppendAcl">ResetAppendAcl</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAppendAcl` <a name="ResetAppendAcl" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.resetAppendAcl"></a>
+
+```go
+func ResetAppendAcl()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.appendAclInput">AppendAclInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.appendAcl">AppendAcl</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AppendAclInput`<sup>Optional</sup> <a name="AppendAclInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.appendAclInput"></a>
+
+```go
+func AppendAclInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AppendAcl`<sup>Required</sup> <a name="AppendAcl" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.appendAcl"></a>
+
+```go
+func AppendAcl() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() IntegrationConnectorsConnectionEventingConfigEnrichmentConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a>
+
+---
+
+
 ### IntegrationConnectorsConnectionEventingConfigOutputReference <a name="IntegrationConnectorsConnectionEventingConfigOutputReference" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.Initializer"></a>
@@ -16246,10 +17169,16 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putAdditionalVariable">PutAdditionalVariable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putAuthConfig">PutAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putDeadLetterConfig">PutDeadLetterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putEnrichmentConfig">PutEnrichmentConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putRegistrationDestinationConfig">PutRegistrationDestinationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetAdditionalVariable">ResetAdditionalVariable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetAllowedEventTypes">ResetAllowedEventTypes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetAuthConfig">ResetAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetDeadLetterConfig">ResetDeadLetterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetEnrichmentConfig">ResetEnrichmentConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetEnrichmentEnabled">ResetEnrichmentEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetGlobalEventFilter">ResetGlobalEventFilter</a></code> | *No description.* |
 
 ---
 
@@ -16427,6 +17356,30 @@ func PutAuthConfig(value IntegrationConnectorsConnectionEventingConfigAuthConfig
 
 ---
 
+##### `PutDeadLetterConfig` <a name="PutDeadLetterConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putDeadLetterConfig"></a>
+
+```go
+func PutDeadLetterConfig(value IntegrationConnectorsConnectionEventingConfigDeadLetterConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putDeadLetterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a>
+
+---
+
+##### `PutEnrichmentConfig` <a name="PutEnrichmentConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putEnrichmentConfig"></a>
+
+```go
+func PutEnrichmentConfig(value IntegrationConnectorsConnectionEventingConfigEnrichmentConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putEnrichmentConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a>
+
+---
+
 ##### `PutRegistrationDestinationConfig` <a name="PutRegistrationDestinationConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putRegistrationDestinationConfig"></a>
 
 ```go
@@ -16445,16 +17398,40 @@ func PutRegistrationDestinationConfig(value IntegrationConnectorsConnectionEvent
 func ResetAdditionalVariable()
 ```
 
+##### `ResetAllowedEventTypes` <a name="ResetAllowedEventTypes" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetAllowedEventTypes"></a>
+
+```go
+func ResetAllowedEventTypes()
+```
+
 ##### `ResetAuthConfig` <a name="ResetAuthConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetAuthConfig"></a>
 
 ```go
 func ResetAuthConfig()
 ```
 
+##### `ResetDeadLetterConfig` <a name="ResetDeadLetterConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetDeadLetterConfig"></a>
+
+```go
+func ResetDeadLetterConfig()
+```
+
+##### `ResetEnrichmentConfig` <a name="ResetEnrichmentConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetEnrichmentConfig"></a>
+
+```go
+func ResetEnrichmentConfig()
+```
+
 ##### `ResetEnrichmentEnabled` <a name="ResetEnrichmentEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetEnrichmentEnabled"></a>
 
 ```go
 func ResetEnrichmentEnabled()
+```
+
+##### `ResetGlobalEventFilter` <a name="ResetGlobalEventFilter" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resetGlobalEventFilter"></a>
+
+```go
+func ResetGlobalEventFilter()
 ```
 
 
@@ -16466,12 +17443,20 @@ func ResetEnrichmentEnabled()
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.additionalVariable">AdditionalVariable</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList">IntegrationConnectorsConnectionEventingConfigAdditionalVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.authConfig">AuthConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference">IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.deadLetterConfig">DeadLetterConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference">IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentConfig">EnrichmentConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference">IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.registrationDestinationConfig">RegistrationDestinationConfig</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.additionalVariableInput">AdditionalVariableInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.allowedEventTypesInput">AllowedEventTypesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.authConfigInput">AuthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig">IntegrationConnectorsConnectionEventingConfigAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.deadLetterConfigInput">DeadLetterConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentConfigInput">EnrichmentConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabledInput">EnrichmentEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.globalEventFilterInput">GlobalEventFilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.registrationDestinationConfigInput">RegistrationDestinationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.allowedEventTypes">AllowedEventTypes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabled">EnrichmentEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.globalEventFilter">GlobalEventFilter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig">IntegrationConnectorsConnectionEventingConfig</a></code> | *No description.* |
 
 ---
@@ -16520,6 +17505,26 @@ func AuthConfig() IntegrationConnectorsConnectionEventingConfigAuthConfigOutputR
 
 ---
 
+##### `DeadLetterConfig`<sup>Required</sup> <a name="DeadLetterConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.deadLetterConfig"></a>
+
+```go
+func DeadLetterConfig() IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference">IntegrationConnectorsConnectionEventingConfigDeadLetterConfigOutputReference</a>
+
+---
+
+##### `EnrichmentConfig`<sup>Required</sup> <a name="EnrichmentConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentConfig"></a>
+
+```go
+func EnrichmentConfig() IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference">IntegrationConnectorsConnectionEventingConfigEnrichmentConfigOutputReference</a>
+
+---
+
 ##### `RegistrationDestinationConfig`<sup>Required</sup> <a name="RegistrationDestinationConfig" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.registrationDestinationConfig"></a>
 
 ```go
@@ -16540,6 +17545,16 @@ func AdditionalVariableInput() interface{}
 
 ---
 
+##### `AllowedEventTypesInput`<sup>Optional</sup> <a name="AllowedEventTypesInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.allowedEventTypesInput"></a>
+
+```go
+func AllowedEventTypesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `AuthConfigInput`<sup>Optional</sup> <a name="AuthConfigInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.authConfigInput"></a>
 
 ```go
@@ -16547,6 +17562,26 @@ func AuthConfigInput() IntegrationConnectorsConnectionEventingConfigAuthConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig">IntegrationConnectorsConnectionEventingConfigAuthConfig</a>
+
+---
+
+##### `DeadLetterConfigInput`<sup>Optional</sup> <a name="DeadLetterConfigInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.deadLetterConfigInput"></a>
+
+```go
+func DeadLetterConfigInput() IntegrationConnectorsConnectionEventingConfigDeadLetterConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigDeadLetterConfig">IntegrationConnectorsConnectionEventingConfigDeadLetterConfig</a>
+
+---
+
+##### `EnrichmentConfigInput`<sup>Optional</sup> <a name="EnrichmentConfigInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentConfigInput"></a>
+
+```go
+func EnrichmentConfigInput() IntegrationConnectorsConnectionEventingConfigEnrichmentConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigEnrichmentConfig">IntegrationConnectorsConnectionEventingConfigEnrichmentConfig</a>
 
 ---
 
@@ -16560,6 +17595,16 @@ func EnrichmentEnabledInput() interface{}
 
 ---
 
+##### `GlobalEventFilterInput`<sup>Optional</sup> <a name="GlobalEventFilterInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.globalEventFilterInput"></a>
+
+```go
+func GlobalEventFilterInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `RegistrationDestinationConfigInput`<sup>Optional</sup> <a name="RegistrationDestinationConfigInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.registrationDestinationConfigInput"></a>
 
 ```go
@@ -16570,6 +17615,16 @@ func RegistrationDestinationConfigInput() IntegrationConnectorsConnectionEventin
 
 ---
 
+##### `AllowedEventTypes`<sup>Required</sup> <a name="AllowedEventTypes" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.allowedEventTypes"></a>
+
+```go
+func AllowedEventTypes() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `EnrichmentEnabled`<sup>Required</sup> <a name="EnrichmentEnabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabled"></a>
 
 ```go
@@ -16577,6 +17632,16 @@ func EnrichmentEnabled() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `GlobalEventFilter`<sup>Required</sup> <a name="GlobalEventFilter" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.globalEventFilter"></a>
+
+```go
+func GlobalEventFilter() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -22862,6 +23927,477 @@ func Update() *string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### IntegrationConnectorsConnectionTrafficShapingConfigsList <a name="IntegrationConnectorsConnectionTrafficShapingConfigsList" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+integrationconnectorsconnection.NewIntegrationConnectorsConnectionTrafficShapingConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationConnectorsConnectionTrafficShapingConfigsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.get"></a>
+
+```go
+func Get(index *f64) IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference <a name="IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/integrationconnectorsconnection"
+
+integrationconnectorsconnection.NewIntegrationConnectorsConnectionTrafficShapingConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.durationInput">DurationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.quotaLimitInput">QuotaLimitInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.duration">Duration</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.quotaLimit">QuotaLimit</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DurationInput`<sup>Optional</sup> <a name="DurationInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.durationInput"></a>
+
+```go
+func DurationInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `QuotaLimitInput`<sup>Optional</sup> <a name="QuotaLimitInput" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.quotaLimitInput"></a>
+
+```go
+func QuotaLimitInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Duration`<sup>Required</sup> <a name="Duration" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.duration"></a>
+
+```go
+func Duration() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `QuotaLimit`<sup>Required</sup> <a name="QuotaLimit" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.quotaLimit"></a>
+
+```go
+func QuotaLimit() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTrafficShapingConfigsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

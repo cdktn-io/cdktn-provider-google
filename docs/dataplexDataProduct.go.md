@@ -4,7 +4,7 @@
 
 ### DataplexDataProduct <a name="DataplexDataProduct" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product google_dataplex_data_product}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product google_dataplex_data_product}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProduct.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the DataplexDataProduct to imp
 
 The id of the existing DataplexDataProduct that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1190,7 +1190,7 @@ ApproverEmails *[]*string
 
 Specifies the email addresses of users who are potential approvers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#approver_emails DataplexDataProduct#approver_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#approver_emails DataplexDataProduct#approver_emails}
 
 ---
 
@@ -1206,6 +1206,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdataprod
 	GroupId: *string,
 	Id: *string,
 	Principal: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipal,
+	DefaultIamRoleConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig,
 	Description: *string,
 }
 ```
@@ -1216,8 +1217,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdataprod
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.displayName">DisplayName</a></code> | <code>*string</code> | User friendly display name. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.groupId">GroupId</a></code> | <code>*string</code> | Unique identifier of the access group. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipal">DataplexDataProductAccessGroupsPrincipal</a></code> | principal block. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.defaultIamRoleConfig">DefaultIamRoleConfig</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a></code> | default_iam_role_config block. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.description">Description</a></code> | <code>*string</code> | Description of the access group. |
 
 ---
@@ -1232,7 +1234,7 @@ DisplayName *string
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
 
 ---
 
@@ -1246,7 +1248,7 @@ GroupId *string
 
 Unique identifier of the access group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#group_id DataplexDataProduct#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#group_id DataplexDataProduct#group_id}
 
 ---
 
@@ -1258,7 +1260,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1275,7 +1277,21 @@ Principal DataplexDataProductAccessGroupsPrincipal
 
 principal block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#principal DataplexDataProduct#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#principal DataplexDataProduct#principal}
+
+---
+
+##### `DefaultIamRoleConfig`<sup>Optional</sup> <a name="DefaultIamRoleConfig" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroups.property.defaultIamRoleConfig"></a>
+
+```go
+DefaultIamRoleConfig DataplexDataProductAccessGroupsDefaultIamRoleConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a>
+
+default_iam_role_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#default_iam_role_config DataplexDataProduct#default_iam_role_config}
 
 ---
 
@@ -1289,7 +1305,41 @@ Description *string
 
 Description of the access group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+
+---
+
+### DataplexDataProductAccessGroupsDefaultIamRoleConfig <a name="DataplexDataProductAccessGroupsDefaultIamRoleConfig" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdataproduct"
+
+&dataplexdataproduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig {
+	Role: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig.property.role">Role</a></code> | <code>*string</code> | Default IAM role associated with the access group, such as 'roles/bigquery.dataViewer'. |
+
+---
+
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig.property.role"></a>
+
+```go
+Role *string
+```
+
+- *Type:* *string
+
+Default IAM role associated with the access group, such as 'roles/bigquery.dataViewer'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#role DataplexDataProduct#role}
 
 ---
 
@@ -1325,7 +1375,7 @@ GoogleGroup *string
 
 Email of the Google Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#google_group DataplexDataProduct#google_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#google_group DataplexDataProduct#google_group}
 
 ---
 
@@ -1339,7 +1389,7 @@ ServiceAccount *string
 
 Specifies the email of the producer service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#service_account DataplexDataProduct#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#service_account DataplexDataProduct#service_account}
 
 ---
 
@@ -1394,9 +1444,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdataprod
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.description">Description</a></code> | <code>*string</code> | Description of the data product. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.icon">Icon</a></code> | <code>*string</code> | Base64 encoded image representing the data product. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-defined labels. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts">DataplexDataProductTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1481,7 +1531,7 @@ DataProductId *string
 
 The ID of the data product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#data_product_id DataplexDataProduct#data_product_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#data_product_id DataplexDataProduct#data_product_id}
 
 ---
 
@@ -1495,7 +1545,7 @@ DisplayName *string
 
 User-friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
 
 ---
 
@@ -1509,7 +1559,7 @@ Location *string
 
 The location for the data product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#location DataplexDataProduct#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#location DataplexDataProduct#location}
 
 ---
 
@@ -1523,7 +1573,7 @@ OwnerEmails *[]*string
 
 Emails of the owners.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#owner_emails DataplexDataProduct#owner_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#owner_emails DataplexDataProduct#owner_emails}
 
 ---
 
@@ -1537,7 +1587,7 @@ AccessApprovalConfig DataplexDataProductAccessApprovalConfig
 
 access_approval_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#access_approval_config DataplexDataProduct#access_approval_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#access_approval_config DataplexDataProduct#access_approval_config}
 
 ---
 
@@ -1551,7 +1601,7 @@ AccessGroups interface{}
 
 access_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#access_groups DataplexDataProduct#access_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#access_groups DataplexDataProduct#access_groups}
 
 ---
 
@@ -1572,7 +1622,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#deletion_policy DataplexDataProduct#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#deletion_policy DataplexDataProduct#deletion_policy}
 
 ---
 
@@ -1586,7 +1636,7 @@ Description *string
 
 Description of the data product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
 
 ---
 
@@ -1606,7 +1656,7 @@ performs validation on size of the encoded data.
 Note: For byte fields, the content of the fields are base64-encoded (which
 increases the size of the data by 33-36%) when using JSON on the wire.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#icon DataplexDataProduct#icon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#icon DataplexDataProduct#icon}
 
 ---
 
@@ -1618,7 +1668,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1638,7 +1688,7 @@ User-defined labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#labels DataplexDataProduct#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#labels DataplexDataProduct#labels}
 
 ---
 
@@ -1650,7 +1700,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}.
 
 ---
 
@@ -1664,7 +1714,7 @@ Timeouts DataplexDataProductTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#timeouts DataplexDataProduct#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#timeouts DataplexDataProduct#timeouts}
 
 ---
 
@@ -1686,9 +1736,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdataprod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}. |
 
 ---
 
@@ -1700,7 +1750,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}.
 
 ---
 
@@ -1712,7 +1762,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}.
 
 ---
 
@@ -1724,7 +1774,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}.
 
 ---
 
@@ -2008,6 +2058,277 @@ func InternalValue() DataplexDataProductAccessApprovalConfig
 ---
 
 
+### DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference <a name="DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/dataplexdataproduct"
+
+dataplexdataproduct.NewDataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.role">Role</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.roleInput"></a>
+
+```go
+func RoleInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.role"></a>
+
+```go
+func Role() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataplexDataProductAccessGroupsDefaultIamRoleConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a>
+
+---
+
+
 ### DataplexDataProductAccessGroupsList <a name="DataplexDataProductAccessGroupsList" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsList.Initializer"></a>
@@ -2236,7 +2557,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.putDefaultIamRoleConfig">PutDefaultIamRoleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.putPrincipal">PutPrincipal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.resetDefaultIamRoleConfig">ResetDefaultIamRoleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
 
 ---
@@ -2391,6 +2714,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDefaultIamRoleConfig` <a name="PutDefaultIamRoleConfig" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.putDefaultIamRoleConfig"></a>
+
+```go
+func PutDefaultIamRoleConfig(value DataplexDataProductAccessGroupsDefaultIamRoleConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.putDefaultIamRoleConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a>
+
+---
+
 ##### `PutPrincipal` <a name="PutPrincipal" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.putPrincipal"></a>
 
 ```go
@@ -2402,6 +2737,12 @@ func PutPrincipal(value DataplexDataProductAccessGroupsPrincipal)
 - *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipal">DataplexDataProductAccessGroupsPrincipal</a>
 
 ---
+
+##### `ResetDefaultIamRoleConfig` <a name="ResetDefaultIamRoleConfig" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.resetDefaultIamRoleConfig"></a>
+
+```go
+func ResetDefaultIamRoleConfig()
+```
 
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.resetDescription"></a>
 
@@ -2416,7 +2757,9 @@ func ResetDescription()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.defaultIamRoleConfig">DefaultIamRoleConfig</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference">DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipalOutputReference">DataplexDataProductAccessGroupsPrincipalOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.defaultIamRoleConfigInput">DefaultIamRoleConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.groupIdInput">GroupIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -2454,6 +2797,16 @@ func Fqn() *string
 
 ---
 
+##### `DefaultIamRoleConfig`<sup>Required</sup> <a name="DefaultIamRoleConfig" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.defaultIamRoleConfig"></a>
+
+```go
+func DefaultIamRoleConfig() DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference">DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference</a>
+
+---
+
 ##### `Principal`<sup>Required</sup> <a name="Principal" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.principal"></a>
 
 ```go
@@ -2461,6 +2814,16 @@ func Principal() DataplexDataProductAccessGroupsPrincipalOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsPrincipalOutputReference">DataplexDataProductAccessGroupsPrincipalOutputReference</a>
+
+---
+
+##### `DefaultIamRoleConfigInput`<sup>Optional</sup> <a name="DefaultIamRoleConfigInput" id="@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsOutputReference.property.defaultIamRoleConfigInput"></a>
+
+```go
+func DefaultIamRoleConfigInput() DataplexDataProductAccessGroupsDefaultIamRoleConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexDataProduct.DataplexDataProductAccessGroupsDefaultIamRoleConfig">DataplexDataProductAccessGroupsDefaultIamRoleConfig</a>
 
 ---
 

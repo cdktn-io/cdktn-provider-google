@@ -4,7 +4,7 @@
 
 ### DataGoogleBackupDrBackupPlan <a name="DataGoogleBackupDrBackupPlan" id="@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleBackupDrBackupPl
 
 The id of the existing DataGoogleBackupDrBackupPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -437,11 +437,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.diskBackupPlanProperties">DiskBackupPlanProperties</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList">DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.effectiveLabels">EffectiveLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.labels">Labels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.logRetentionDays">LogRetentionDays</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.maxCustomOnDemandRetentionDays">MaxCustomOnDemandRetentionDays</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.resourceType">ResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.supportedResourceTypes">SupportedResourceTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.backupPlanIdInput">BackupPlanIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -656,6 +659,26 @@ public DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList DiskBackupPlanPr
 
 ---
 
+##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.effectiveLabels"></a>
+
+```csharp
+public StringMap EffectiveLabels { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
+
+---
+
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.labels"></a>
+
+```csharp
+public StringMap Labels { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
+
+---
+
 ##### `LogRetentionDays`<sup>Required</sup> <a name="LogRetentionDays" id="@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.logRetentionDays"></a>
 
 ```csharp
@@ -703,6 +726,16 @@ public string[] SupportedResourceTypes { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlan.property.terraformLabels"></a>
+
+```csharp
+public StringMap TerraformLabels { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
 
 ---
 
@@ -916,8 +949,8 @@ new DataGoogleBackupDrBackupPlanConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.backupPlanId">BackupPlanId</a></code> | <code>string</code> | The ID of the backup plan. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.location">Location</a></code> | <code>string</code> | The location for the backup plan. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#id DataGoogleBackupDrBackupPlan#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#project DataGoogleBackupDrBackupPlan#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#id DataGoogleBackupDrBackupPlan#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupPlan.DataGoogleBackupDrBackupPlanConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#project DataGoogleBackupDrBackupPlan#project}. |
 
 ---
 
@@ -1001,7 +1034,7 @@ public string BackupPlanId { get; set; }
 
 The ID of the backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#backup_plan_id DataGoogleBackupDrBackupPlan#backup_plan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#backup_plan_id DataGoogleBackupDrBackupPlan#backup_plan_id}
 
 ---
 
@@ -1015,7 +1048,7 @@ public string Location { get; set; }
 
 The location for the backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#location DataGoogleBackupDrBackupPlan#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#location DataGoogleBackupDrBackupPlan#location}
 
 ---
 
@@ -1027,7 +1060,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#id DataGoogleBackupDrBackupPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#id DataGoogleBackupDrBackupPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1075,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/backup_dr_backup_plan#project DataGoogleBackupDrBackupPlan#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/backup_dr_backup_plan#project DataGoogleBackupDrBackupPlan#project}.
 
 ---
 

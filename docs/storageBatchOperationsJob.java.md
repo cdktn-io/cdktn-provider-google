@@ -4,7 +4,7 @@
 
 ### StorageBatchOperationsJob <a name="StorageBatchOperationsJob" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer"></a>
 
@@ -24,8 +24,10 @@ StorageBatchOperationsJob.Builder.create(Construct scope, java.lang.String id)
 //  .deleteProtection(java.lang.Boolean|IResolvable)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
+//  .dryRun(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .jobId(java.lang.String)
+//  .loggingConfig(StorageBatchOperationsJobLoggingConfig)
 //  .project(java.lang.String)
 //  .putMetadata(StorageBatchOperationsJobPutMetadata)
 //  .putObjectHold(StorageBatchOperationsJobPutObjectHold)
@@ -50,9 +52,11 @@ StorageBatchOperationsJob.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.deleteProtection">deleteProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to 'true', the storage batch operation job will not be deleted and new job will be created. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded. |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.dryRun">dryRun</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, the job runs in dry run mode, returning the total object count and, if the object configuration is a prefix list, the bytes found from source. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.jobId">jobId</a></code> | <code>java.lang.String</code> | The ID of the job. |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a></code> | logging_config block. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.putMetadata">putMetadata</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadata">StorageBatchOperationsJobPutMetadata</a></code> | put_metadata block. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.putObjectHold">putObjectHold</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutObjectHold">StorageBatchOperationsJobPutObjectHold</a></code> | put_object_hold block. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.rewriteObject">rewriteObject</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobRewriteObject">StorageBatchOperationsJobRewriteObject</a></code> | rewrite_object block. |
@@ -126,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 bucket_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
 
 ---
 
@@ -136,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delete_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
 
 ---
 
@@ -146,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to 'true', the storage batch operation job will not be deleted and new job will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
 
 ---
 
@@ -163,7 +167,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
 
 ---
 
@@ -173,7 +177,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
+
+---
+
+##### `dryRun`<sup>Optional</sup> <a name="dryRun" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.dryRun"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, the job runs in dry run mode, returning the total object count and, if the object configuration is a prefix list, the bytes found from source.
+
+No transformations are performed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#dry_run StorageBatchOperationsJob#dry_run}
 
 ---
 
@@ -181,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -194,7 +210,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 The ID of the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
+
+---
+
+##### `loggingConfig`<sup>Optional</sup> <a name="loggingConfig" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.Initializer.parameter.loggingConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a>
+
+logging_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#logging_config StorageBatchOperationsJob#logging_config}
 
 ---
 
@@ -202,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}.
 
 ---
 
@@ -212,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 put_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
 
 ---
 
@@ -222,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 put_object_hold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
 
 ---
 
@@ -232,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rewrite_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
 
 ---
 
@@ -242,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
 
 ---
 
@@ -276,6 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putBucketList">putBucketList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putDeleteObject">putDeleteObject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putLoggingConfig">putLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putPutMetadata">putPutMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putPutObjectHold">putPutObjectHold</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putRewriteObject">putRewriteObject</a></code> | *No description.* |
@@ -285,8 +312,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetDeleteProtection">resetDeleteProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetDryRun">resetDryRun</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetJobId">resetJobId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetLoggingConfig">resetLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetPutMetadata">resetPutMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetPutObjectHold">resetPutObjectHold</a></code> | *No description.* |
@@ -630,6 +659,18 @@ public void putDeleteObject(StorageBatchOperationsJobDeleteObject value)
 
 ---
 
+##### `putLoggingConfig` <a name="putLoggingConfig" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putLoggingConfig"></a>
+
+```java
+public void putLoggingConfig(StorageBatchOperationsJobLoggingConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putLoggingConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a>
+
+---
+
 ##### `putPutMetadata` <a name="putPutMetadata" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.putPutMetadata"></a>
 
 ```java
@@ -708,6 +749,12 @@ public void resetDeletionPolicy()
 public void resetDescription()
 ```
 
+##### `resetDryRun` <a name="resetDryRun" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetDryRun"></a>
+
+```java
+public void resetDryRun()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetId"></a>
 
 ```java
@@ -718,6 +765,12 @@ public void resetId()
 
 ```java
 public void resetJobId()
+```
+
+##### `resetLoggingConfig` <a name="resetLoggingConfig" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetLoggingConfig"></a>
+
+```java
+public void resetLoggingConfig()
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.resetProject"></a>
@@ -853,7 +906,7 @@ The construct id used in the generated config for the StorageBatchOperationsJob 
 
 The id of the existing StorageBatchOperationsJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,6 +940,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.completeTime">completeTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.deleteObject">deleteObject</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobDeleteObjectOutputReference">StorageBatchOperationsJobDeleteObjectOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference">StorageBatchOperationsJobLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.putMetadata">putMetadata</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadataOutputReference">StorageBatchOperationsJobPutMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.putObjectHold">putObjectHold</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutObjectHoldOutputReference">StorageBatchOperationsJobPutObjectHoldOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.rewriteObject">rewriteObject</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobRewriteObjectOutputReference">StorageBatchOperationsJobRewriteObjectOutputReference</a></code> | *No description.* |
@@ -899,8 +953,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.deleteProtectionInput">deleteProtectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.dryRunInput">dryRunInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.jobIdInput">jobIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.loggingConfigInput">loggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.putMetadataInput">putMetadataInput</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadata">StorageBatchOperationsJobPutMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.putObjectHoldInput">putObjectHoldInput</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutObjectHold">StorageBatchOperationsJobPutObjectHold</a></code> | *No description.* |
@@ -909,6 +965,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.deleteProtection">deleteProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.dryRun">dryRun</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.jobId">jobId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1097,6 +1154,16 @@ public StorageBatchOperationsJobDeleteObjectOutputReference getDeleteObject();
 
 ---
 
+##### `loggingConfig`<sup>Required</sup> <a name="loggingConfig" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.loggingConfig"></a>
+
+```java
+public StorageBatchOperationsJobLoggingConfigOutputReference getLoggingConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference">StorageBatchOperationsJobLoggingConfigOutputReference</a>
+
+---
+
 ##### `putMetadata`<sup>Required</sup> <a name="putMetadata" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.putMetadata"></a>
 
 ```java
@@ -1217,6 +1284,16 @@ public java.lang.String getDescriptionInput();
 
 ---
 
+##### `dryRunInput`<sup>Optional</sup> <a name="dryRunInput" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.dryRunInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDryRunInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.idInput"></a>
 
 ```java
@@ -1234,6 +1311,16 @@ public java.lang.String getJobIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `loggingConfigInput`<sup>Optional</sup> <a name="loggingConfigInput" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.loggingConfigInput"></a>
+
+```java
+public StorageBatchOperationsJobLoggingConfig getLoggingConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a>
 
 ---
 
@@ -1314,6 +1401,16 @@ public java.lang.String getDescription();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `dryRun`<sup>Required</sup> <a name="dryRun" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJob.property.dryRun"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDryRun();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1401,7 +1498,7 @@ public java.lang.String getBucket();
 
 Bucket name for the objects to be transformed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#bucket StorageBatchOperationsJob#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#bucket StorageBatchOperationsJob#bucket}
 
 ---
 
@@ -1415,7 +1512,7 @@ public StorageBatchOperationsJobBucketListBucketsManifest getManifest();
 
 manifest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#manifest StorageBatchOperationsJob#manifest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#manifest StorageBatchOperationsJob#manifest}
 
 ---
 
@@ -1429,7 +1526,7 @@ public StorageBatchOperationsJobBucketListBucketsPrefixListStruct getPrefixList(
 
 prefix_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#prefix_list StorageBatchOperationsJob#prefix_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#prefix_list StorageBatchOperationsJob#prefix_list}
 
 ---
 
@@ -1463,7 +1560,7 @@ public java.lang.String getManifestLocation();
 
 Specifies objects in a manifest file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#manifest_location StorageBatchOperationsJob#manifest_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#manifest_location StorageBatchOperationsJob#manifest_location}
 
 ---
 
@@ -1483,7 +1580,7 @@ StorageBatchOperationsJobBucketListBucketsPrefixListStruct.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsPrefixListStruct.property.includedObjectPrefixes">includedObjectPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobBucketListBucketsPrefixListStruct.property.includedObjectPrefixes">includedObjectPrefixes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}. |
 
 ---
 
@@ -1495,7 +1592,7 @@ public java.util.List<java.lang.String> getIncludedObjectPrefixes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}.
 
 ---
 
@@ -1529,7 +1626,7 @@ public StorageBatchOperationsJobBucketListBuckets getBuckets();
 
 buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#buckets StorageBatchOperationsJob#buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#buckets StorageBatchOperationsJob#buckets}
 
 ---
 
@@ -1553,8 +1650,10 @@ StorageBatchOperationsJobConfig.builder()
 //  .deleteProtection(java.lang.Boolean|IResolvable)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
+//  .dryRun(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .jobId(java.lang.String)
+//  .loggingConfig(StorageBatchOperationsJobLoggingConfig)
 //  .project(java.lang.String)
 //  .putMetadata(StorageBatchOperationsJobPutMetadata)
 //  .putObjectHold(StorageBatchOperationsJobPutObjectHold)
@@ -1579,9 +1678,11 @@ StorageBatchOperationsJobConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.deleteProtection">deleteProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to 'true', the storage batch operation job will not be deleted and new job will be created. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded. |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.dryRun">dryRun</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, the job runs in dry run mode, returning the total object count and, if the object configuration is a prefix list, the bytes found from source. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.jobId">jobId</a></code> | <code>java.lang.String</code> | The ID of the job. |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a></code> | logging_config block. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.putMetadata">putMetadata</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutMetadata">StorageBatchOperationsJobPutMetadata</a></code> | put_metadata block. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.putObjectHold">putObjectHold</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobPutObjectHold">StorageBatchOperationsJobPutObjectHold</a></code> | put_object_hold block. |
 | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.rewriteObject">rewriteObject</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobRewriteObject">StorageBatchOperationsJobRewriteObject</a></code> | rewrite_object block. |
@@ -1669,7 +1770,7 @@ public StorageBatchOperationsJobBucketListStruct getBucketList();
 
 bucket_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
 
 ---
 
@@ -1683,7 +1784,7 @@ public StorageBatchOperationsJobDeleteObject getDeleteObject();
 
 delete_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
 
 ---
 
@@ -1697,7 +1798,7 @@ public java.lang.Boolean|IResolvable getDeleteProtection();
 
 If set to 'true', the storage batch operation job will not be deleted and new job will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
 
 ---
 
@@ -1718,7 +1819,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
 
 ---
 
@@ -1732,7 +1833,23 @@ public java.lang.String getDescription();
 
 A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
+
+---
+
+##### `dryRun`<sup>Optional</sup> <a name="dryRun" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.dryRun"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDryRun();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If true, the job runs in dry run mode, returning the total object count and, if the object configuration is a prefix list, the bytes found from source.
+
+No transformations are performed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#dry_run StorageBatchOperationsJob#dry_run}
 
 ---
 
@@ -1744,7 +1861,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1761,7 +1878,21 @@ public java.lang.String getJobId();
 
 The ID of the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
+
+---
+
+##### `loggingConfig`<sup>Optional</sup> <a name="loggingConfig" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobConfig.property.loggingConfig"></a>
+
+```java
+public StorageBatchOperationsJobLoggingConfig getLoggingConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a>
+
+logging_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#logging_config StorageBatchOperationsJob#logging_config}
 
 ---
 
@@ -1773,7 +1904,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}.
 
 ---
 
@@ -1787,7 +1918,7 @@ public StorageBatchOperationsJobPutMetadata getPutMetadata();
 
 put_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
 
 ---
 
@@ -1801,7 +1932,7 @@ public StorageBatchOperationsJobPutObjectHold getPutObjectHold();
 
 put_object_hold block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
 
 ---
 
@@ -1815,7 +1946,7 @@ public StorageBatchOperationsJobRewriteObject getRewriteObject();
 
 rewrite_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
 
 ---
 
@@ -1829,7 +1960,7 @@ public StorageBatchOperationsJobTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
 
 ---
 
@@ -1863,7 +1994,57 @@ public java.lang.Boolean|IResolvable getPermanentObjectDeletionEnabled();
 
 enable flag to permanently delete object and all object versions if versioning is enabled on bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#permanent_object_deletion_enabled StorageBatchOperationsJob#permanent_object_deletion_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#permanent_object_deletion_enabled StorageBatchOperationsJob#permanent_object_deletion_enabled}
+
+---
+
+### StorageBatchOperationsJobLoggingConfig <a name="StorageBatchOperationsJobLoggingConfig" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_batch_operations_job.StorageBatchOperationsJobLoggingConfig;
+
+StorageBatchOperationsJobLoggingConfig.builder()
+    .logActions(java.util.List<java.lang.String>)
+    .logActionStates(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig.property.logActions">logActions</a></code> | <code>java.util.List<java.lang.String></code> | Specifies the actions to be logged. Possible values include 'TRANSFORM'. See [LoggingConfig](https://cloud.google.com/storage/docs/batch-operations/reference/rest/v1/projects.locations.jobs#LoggingConfig) for allowed values. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig.property.logActionStates">logActionStates</a></code> | <code>java.util.List<java.lang.String></code> | States in which Action are logged.If empty, no logs are generated. Possible values include 'SUCCEEDED', 'FAILED'. See [LoggingConfig](https://cloud.google.com/storage/docs/batch-operations/reference/rest/v1/projects.locations.jobs#LoggingConfig) for allowed values. |
+
+---
+
+##### `logActions`<sup>Required</sup> <a name="logActions" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig.property.logActions"></a>
+
+```java
+public java.util.List<java.lang.String> getLogActions();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Specifies the actions to be logged. Possible values include 'TRANSFORM'. See [LoggingConfig](https://cloud.google.com/storage/docs/batch-operations/reference/rest/v1/projects.locations.jobs#LoggingConfig) for allowed values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#log_actions StorageBatchOperationsJob#log_actions}
+
+---
+
+##### `logActionStates`<sup>Required</sup> <a name="logActionStates" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig.property.logActionStates"></a>
+
+```java
+public java.util.List<java.lang.String> getLogActionStates();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+States in which Action are logged.If empty, no logs are generated. Possible values include 'SUCCEEDED', 'FAILED'. See [LoggingConfig](https://cloud.google.com/storage/docs/batch-operations/reference/rest/v1/projects.locations.jobs#LoggingConfig) for allowed values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#log_action_states StorageBatchOperationsJob#log_action_states}
 
 ---
 
@@ -1911,7 +2092,7 @@ Cache-Control directive to specify caching behavior of object data.
 
 If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#cache_control StorageBatchOperationsJob#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#cache_control StorageBatchOperationsJob#cache_control}
 
 ---
 
@@ -1925,7 +2106,7 @@ public java.lang.String getContentDisposition();
 
 Content-Disposition of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_disposition StorageBatchOperationsJob#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_disposition StorageBatchOperationsJob#content_disposition}
 
 ---
 
@@ -1939,7 +2120,7 @@ public java.lang.String getContentEncoding();
 
 Content Encoding of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_encoding StorageBatchOperationsJob#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_encoding StorageBatchOperationsJob#content_encoding}
 
 ---
 
@@ -1953,7 +2134,7 @@ public java.lang.String getContentLanguage();
 
 Content-Language of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_language StorageBatchOperationsJob#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_language StorageBatchOperationsJob#content_language}
 
 ---
 
@@ -1967,7 +2148,7 @@ public java.lang.String getContentType();
 
 Content-Type of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_type StorageBatchOperationsJob#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_type StorageBatchOperationsJob#content_type}
 
 ---
 
@@ -1981,7 +2162,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomMetadata();
 
 User-provided metadata, in key/value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#custom_metadata StorageBatchOperationsJob#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#custom_metadata StorageBatchOperationsJob#custom_metadata}
 
 ---
 
@@ -1995,7 +2176,7 @@ public java.lang.String getCustomTime();
 
 Updates the objects fixed custom time metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#custom_time StorageBatchOperationsJob#custom_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#custom_time StorageBatchOperationsJob#custom_time}
 
 ---
 
@@ -2031,7 +2212,7 @@ public java.lang.String getEventBasedHold();
 
 set/unset to update event based hold for objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#event_based_hold StorageBatchOperationsJob#event_based_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#event_based_hold StorageBatchOperationsJob#event_based_hold}
 
 ---
 
@@ -2045,7 +2226,7 @@ public java.lang.String getTemporaryHold();
 
 set/unset to update temporary based hold for objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#temporary_hold StorageBatchOperationsJob#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#temporary_hold StorageBatchOperationsJob#temporary_hold}
 
 ---
 
@@ -2079,7 +2260,7 @@ public java.lang.String getKmsKey();
 
 valid kms key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#kms_key StorageBatchOperationsJob#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#kms_key StorageBatchOperationsJob#kms_key}
 
 ---
 
@@ -2101,9 +2282,9 @@ StorageBatchOperationsJobTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}. |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}. |
-| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}. |
 
 ---
 
@@ -2115,7 +2296,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}.
 
 ---
 
@@ -2127,7 +2308,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}.
 
 ---
 
@@ -2139,7 +2320,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}.
 
 ---
 
@@ -3607,6 +3788,299 @@ public StorageBatchOperationsJobDeleteObject getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobDeleteObject">StorageBatchOperationsJobDeleteObject</a>
+
+---
+
+
+### StorageBatchOperationsJobLoggingConfigOutputReference <a name="StorageBatchOperationsJobLoggingConfigOutputReference" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_batch_operations_job.StorageBatchOperationsJobLoggingConfigOutputReference;
+
+new StorageBatchOperationsJobLoggingConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActionsInput">logActionsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActionStatesInput">logActionStatesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActions">logActions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActionStates">logActionStates</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `logActionsInput`<sup>Optional</sup> <a name="logActionsInput" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActionsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getLogActionsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `logActionStatesInput`<sup>Optional</sup> <a name="logActionStatesInput" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActionStatesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getLogActionStatesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `logActions`<sup>Required</sup> <a name="logActions" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActions"></a>
+
+```java
+public java.util.List<java.lang.String> getLogActions();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `logActionStates`<sup>Required</sup> <a name="logActionStates" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.logActionStates"></a>
+
+```java
+public java.util.List<java.lang.String> getLogActionStates();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfigOutputReference.property.internalValue"></a>
+
+```java
+public StorageBatchOperationsJobLoggingConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBatchOperationsJob.StorageBatchOperationsJobLoggingConfig">StorageBatchOperationsJobLoggingConfig</a>
 
 ---
 

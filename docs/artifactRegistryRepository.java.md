@@ -4,7 +4,7 @@
 
 ### ArtifactRegistryRepository <a name="ArtifactRegistryRepository" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository google_artifact_registry_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository google_artifact_registry_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer"></a>
 
@@ -25,6 +25,7 @@ ArtifactRegistryRepository.Builder.create(Construct scope, java.lang.String id)
 //  .cleanupPolicyDryRun(java.lang.Boolean|IResolvable)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
+//  .disallowUnspecifiedMode(java.lang.Boolean|IResolvable)
 //  .dockerConfig(ArtifactRegistryRepositoryDockerConfig)
 //  .id(java.lang.String)
 //  .kmsKeyName(java.lang.String)
@@ -32,6 +33,7 @@ ArtifactRegistryRepository.Builder.create(Construct scope, java.lang.String id)
 //  .location(java.lang.String)
 //  .mavenConfig(ArtifactRegistryRepositoryMavenConfig)
 //  .mode(java.lang.String)
+//  .platformLogsConfig(ArtifactRegistryRepositoryPlatformLogsConfig)
 //  .project(java.lang.String)
 //  .remoteRepositoryConfig(ArtifactRegistryRepositoryRemoteRepositoryConfig)
 //  .timeouts(ArtifactRegistryRepositoryTimeouts)
@@ -57,14 +59,16 @@ ArtifactRegistryRepository.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.cleanupPolicyDryRun">cleanupPolicyDryRun</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, the cleanup pipeline is prevented from deleting versions in this repository. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The user-provided description of the repository. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.disallowUnspecifiedMode">disallowUnspecifiedMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If this is true, an unspecified repo type will be treated as error rather than defaulting to standard. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.dockerConfig">dockerConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig">ArtifactRegistryRepositoryDockerConfig</a></code> | docker_config block. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | The Cloud KMS resource name of the customer managed encryption key that’s used to encrypt the contents of the Repository. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels with user-defined metadata. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The name of the repository's location. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.mavenConfig">mavenConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig">ArtifactRegistryRepositoryMavenConfig</a></code> | maven_config block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | The mode configures the repository to serve artifacts from different sources. Default value: "STANDARD_REPOSITORY" Possible values: ["STANDARD_REPOSITORY", "VIRTUAL_REPOSITORY", "REMOTE_REPOSITORY"]. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.platformLogsConfig">platformLogsConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a></code> | platform_logs_config block. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.remoteRepositoryConfig">remoteRepositoryConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig">ArtifactRegistryRepositoryRemoteRepositoryConfig</a></code> | remote_repository_config block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts">ArtifactRegistryRepositoryTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.virtualRepositoryConfig">virtualRepositoryConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig">ArtifactRegistryRepositoryVirtualRepositoryConfig</a></code> | virtual_repository_config block. |
@@ -143,7 +147,7 @@ can be found [here](https://cloud.google.com/artifact-registry/docs/supported-fo
 You can only create alpha formats if you are a member of the
 [alpha user group](https://cloud.google.com/artifact-registry/docs/supported-formats#alpha-access).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#format ArtifactRegistryRepository#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#format ArtifactRegistryRepository#format}
 
 ---
 
@@ -153,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The last part of the repository name, for example: "repo1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository_id ArtifactRegistryRepository#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository_id ArtifactRegistryRepository#repository_id}
 
 ---
 
@@ -163,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cleanup_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#cleanup_policies ArtifactRegistryRepository#cleanup_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#cleanup_policies ArtifactRegistryRepository#cleanup_policies}
 
 ---
 
@@ -173,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the cleanup pipeline is prevented from deleting versions in this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#cleanup_policy_dry_run ArtifactRegistryRepository#cleanup_policy_dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#cleanup_policy_dry_run ArtifactRegistryRepository#cleanup_policy_dry_run}
 
 ---
 
@@ -190,7 +194,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#deletion_policy ArtifactRegistryRepository#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#deletion_policy ArtifactRegistryRepository#deletion_policy}
 
 ---
 
@@ -200,7 +204,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user-provided description of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#description ArtifactRegistryRepository#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#description ArtifactRegistryRepository#description}
+
+---
+
+##### `disallowUnspecifiedMode`<sup>Optional</sup> <a name="disallowUnspecifiedMode" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.disallowUnspecifiedMode"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If this is true, an unspecified repo type will be treated as error rather than defaulting to standard.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#disallow_unspecified_mode ArtifactRegistryRepository#disallow_unspecified_mode}
 
 ---
 
@@ -210,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 docker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#docker_config ArtifactRegistryRepository#docker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#docker_config ArtifactRegistryRepository#docker_config}
 
 ---
 
@@ -218,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -235,7 +249,7 @@ Has the form:
 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'.
 This value may not be changed after the Repository has been created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#kms_key_name ArtifactRegistryRepository#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#kms_key_name ArtifactRegistryRepository#kms_key_name}
 
 ---
 
@@ -253,7 +267,7 @@ and dashes.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#labels ArtifactRegistryRepository#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#labels ArtifactRegistryRepository#labels}
 
 ---
 
@@ -270,7 +284,7 @@ or use the
 [google_artifact_registry_locations](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/artifact_registry_locations)
 data source for possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#location ArtifactRegistryRepository#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#location ArtifactRegistryRepository#location}
 
 ---
 
@@ -280,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 maven_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#maven_config ArtifactRegistryRepository#maven_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#maven_config ArtifactRegistryRepository#maven_config}
 
 ---
 
@@ -290,7 +304,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mode configures the repository to serve artifacts from different sources. Default value: "STANDARD_REPOSITORY" Possible values: ["STANDARD_REPOSITORY", "VIRTUAL_REPOSITORY", "REMOTE_REPOSITORY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#mode ArtifactRegistryRepository#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#mode ArtifactRegistryRepository#mode}
+
+---
+
+##### `platformLogsConfig`<sup>Optional</sup> <a name="platformLogsConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.Initializer.parameter.platformLogsConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a>
+
+platform_logs_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#platform_logs_config ArtifactRegistryRepository#platform_logs_config}
 
 ---
 
@@ -298,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}.
 
 ---
 
@@ -308,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 remote_repository_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#remote_repository_config ArtifactRegistryRepository#remote_repository_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#remote_repository_config ArtifactRegistryRepository#remote_repository_config}
 
 ---
 
@@ -318,7 +342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#timeouts ArtifactRegistryRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#timeouts ArtifactRegistryRepository#timeouts}
 
 ---
 
@@ -328,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 virtual_repository_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#virtual_repository_config ArtifactRegistryRepository#virtual_repository_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#virtual_repository_config ArtifactRegistryRepository#virtual_repository_config}
 
 ---
 
@@ -338,7 +362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vulnerability_scanning_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#vulnerability_scanning_config ArtifactRegistryRepository#vulnerability_scanning_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#vulnerability_scanning_config ArtifactRegistryRepository#vulnerability_scanning_config}
 
 ---
 
@@ -373,6 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putCleanupPolicies">putCleanupPolicies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putDockerConfig">putDockerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putMavenConfig">putMavenConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putPlatformLogsConfig">putPlatformLogsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putRemoteRepositoryConfig">putRemoteRepositoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putVirtualRepositoryConfig">putVirtualRepositoryConfig</a></code> | *No description.* |
@@ -381,6 +406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetCleanupPolicyDryRun">resetCleanupPolicyDryRun</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetDisallowUnspecifiedMode">resetDisallowUnspecifiedMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetDockerConfig">resetDockerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetKmsKeyName">resetKmsKeyName</a></code> | *No description.* |
@@ -388,6 +414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetMavenConfig">resetMavenConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetMode">resetMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetPlatformLogsConfig">resetPlatformLogsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetRemoteRepositoryConfig">resetRemoteRepositoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -743,6 +770,18 @@ public void putMavenConfig(ArtifactRegistryRepositoryMavenConfig value)
 
 ---
 
+##### `putPlatformLogsConfig` <a name="putPlatformLogsConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putPlatformLogsConfig"></a>
+
+```java
+public void putPlatformLogsConfig(ArtifactRegistryRepositoryPlatformLogsConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putPlatformLogsConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a>
+
+---
+
 ##### `putRemoteRepositoryConfig` <a name="putRemoteRepositoryConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.putRemoteRepositoryConfig"></a>
 
 ```java
@@ -815,6 +854,12 @@ public void resetDeletionPolicy()
 public void resetDescription()
 ```
 
+##### `resetDisallowUnspecifiedMode` <a name="resetDisallowUnspecifiedMode" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetDisallowUnspecifiedMode"></a>
+
+```java
+public void resetDisallowUnspecifiedMode()
+```
+
 ##### `resetDockerConfig` <a name="resetDockerConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetDockerConfig"></a>
 
 ```java
@@ -855,6 +900,12 @@ public void resetMavenConfig()
 
 ```java
 public void resetMode()
+```
+
+##### `resetPlatformLogsConfig` <a name="resetPlatformLogsConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetPlatformLogsConfig"></a>
+
+```java
+public void resetPlatformLogsConfig()
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.resetProject"></a>
@@ -990,7 +1041,7 @@ The construct id used in the generated config for the ArtifactRegistryRepository
 
 The id of the existing ArtifactRegistryRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1026,6 +1077,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.mavenConfig">mavenConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference">ArtifactRegistryRepositoryMavenConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.platformLogsConfig">platformLogsConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference">ArtifactRegistryRepositoryPlatformLogsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.registryUri">registryUri</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.remoteRepositoryConfig">remoteRepositoryConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference">ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
@@ -1037,6 +1089,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.cleanupPolicyDryRunInput">cleanupPolicyDryRunInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.disallowUnspecifiedModeInput">disallowUnspecifiedModeInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.dockerConfigInput">dockerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig">ArtifactRegistryRepositoryDockerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.formatInput">formatInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1045,6 +1098,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.mavenConfigInput">mavenConfigInput</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig">ArtifactRegistryRepositoryMavenConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.modeInput">modeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.platformLogsConfigInput">platformLogsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.remoteRepositoryConfigInput">remoteRepositoryConfigInput</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig">ArtifactRegistryRepositoryRemoteRepositoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.repositoryIdInput">repositoryIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1054,6 +1108,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.cleanupPolicyDryRun">cleanupPolicyDryRun</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.disallowUnspecifiedMode">disallowUnspecifiedMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.format">format</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1267,6 +1322,16 @@ public java.lang.String getName();
 
 ---
 
+##### `platformLogsConfig`<sup>Required</sup> <a name="platformLogsConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.platformLogsConfig"></a>
+
+```java
+public ArtifactRegistryRepositoryPlatformLogsConfigOutputReference getPlatformLogsConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference">ArtifactRegistryRepositoryPlatformLogsConfigOutputReference</a>
+
+---
+
 ##### `registryUri`<sup>Required</sup> <a name="registryUri" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.registryUri"></a>
 
 ```java
@@ -1377,6 +1442,16 @@ public java.lang.String getDescriptionInput();
 
 ---
 
+##### `disallowUnspecifiedModeInput`<sup>Optional</sup> <a name="disallowUnspecifiedModeInput" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.disallowUnspecifiedModeInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisallowUnspecifiedModeInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `dockerConfigInput`<sup>Optional</sup> <a name="dockerConfigInput" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.dockerConfigInput"></a>
 
 ```java
@@ -1454,6 +1529,16 @@ public java.lang.String getModeInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `platformLogsConfigInput`<sup>Optional</sup> <a name="platformLogsConfigInput" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.platformLogsConfigInput"></a>
+
+```java
+public ArtifactRegistryRepositoryPlatformLogsConfig getPlatformLogsConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a>
 
 ---
 
@@ -1544,6 +1629,16 @@ public java.lang.String getDescription();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `disallowUnspecifiedMode`<sup>Required</sup> <a name="disallowUnspecifiedMode" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepository.property.disallowUnspecifiedMode"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisallowUnspecifiedMode();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1666,7 +1761,7 @@ ArtifactRegistryRepositoryCleanupPolicies.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPolicies.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPolicies.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPolicies.property.action">action</a></code> | <code>java.lang.String</code> | Policy action. Possible values: ["DELETE", "KEEP"]. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPolicies.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesCondition">ArtifactRegistryRepositoryCleanupPoliciesCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPolicies.property.mostRecentVersions">mostRecentVersions</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions">ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions</a></code> | most_recent_versions block. |
@@ -1681,7 +1776,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1698,7 +1793,7 @@ public java.lang.String getAction();
 
 Policy action. Possible values: ["DELETE", "KEEP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#action ArtifactRegistryRepository#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#action ArtifactRegistryRepository#action}
 
 ---
 
@@ -1712,7 +1807,7 @@ public ArtifactRegistryRepositoryCleanupPoliciesCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#condition ArtifactRegistryRepository#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#condition ArtifactRegistryRepository#condition}
 
 ---
 
@@ -1726,7 +1821,7 @@ public ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions getMostRecent
 
 most_recent_versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#most_recent_versions ArtifactRegistryRepository#most_recent_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#most_recent_versions ArtifactRegistryRepository#most_recent_versions}
 
 ---
 
@@ -1770,7 +1865,7 @@ public java.lang.String getNewerThan();
 
 Match versions newer than a duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#newer_than ArtifactRegistryRepository#newer_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#newer_than ArtifactRegistryRepository#newer_than}
 
 ---
 
@@ -1784,7 +1879,7 @@ public java.lang.String getOlderThan();
 
 Match versions older than a duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#older_than ArtifactRegistryRepository#older_than}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#older_than ArtifactRegistryRepository#older_than}
 
 ---
 
@@ -1798,7 +1893,7 @@ public java.util.List<java.lang.String> getPackageNamePrefixes();
 
 Match versions by package prefix. Applied on any prefix match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#package_name_prefixes ArtifactRegistryRepository#package_name_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#package_name_prefixes ArtifactRegistryRepository#package_name_prefixes}
 
 ---
 
@@ -1812,7 +1907,7 @@ public java.util.List<java.lang.String> getTagPrefixes();
 
 Match versions by tag prefix. Applied on any prefix match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#tag_prefixes ArtifactRegistryRepository#tag_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#tag_prefixes ArtifactRegistryRepository#tag_prefixes}
 
 ---
 
@@ -1826,7 +1921,7 @@ public java.lang.String getTagState();
 
 Match versions by tag status. Default value: "ANY" Possible values: ["TAGGED", "UNTAGGED", "ANY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#tag_state ArtifactRegistryRepository#tag_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#tag_state ArtifactRegistryRepository#tag_state}
 
 ---
 
@@ -1840,7 +1935,7 @@ public java.util.List<java.lang.String> getVersionNamePrefixes();
 
 Match versions by version name prefix. Applied on any prefix match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#version_name_prefixes ArtifactRegistryRepository#version_name_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#version_name_prefixes ArtifactRegistryRepository#version_name_prefixes}
 
 ---
 
@@ -1876,7 +1971,7 @@ public java.lang.Number getKeepCount();
 
 Minimum number of versions to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#keep_count ArtifactRegistryRepository#keep_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#keep_count ArtifactRegistryRepository#keep_count}
 
 ---
 
@@ -1890,7 +1985,7 @@ public java.util.List<java.lang.String> getPackageNamePrefixes();
 
 Match versions by package prefix. Applied on any prefix match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#package_name_prefixes ArtifactRegistryRepository#package_name_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#package_name_prefixes ArtifactRegistryRepository#package_name_prefixes}
 
 ---
 
@@ -1915,6 +2010,7 @@ ArtifactRegistryRepositoryConfig.builder()
 //  .cleanupPolicyDryRun(java.lang.Boolean|IResolvable)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
+//  .disallowUnspecifiedMode(java.lang.Boolean|IResolvable)
 //  .dockerConfig(ArtifactRegistryRepositoryDockerConfig)
 //  .id(java.lang.String)
 //  .kmsKeyName(java.lang.String)
@@ -1922,6 +2018,7 @@ ArtifactRegistryRepositoryConfig.builder()
 //  .location(java.lang.String)
 //  .mavenConfig(ArtifactRegistryRepositoryMavenConfig)
 //  .mode(java.lang.String)
+//  .platformLogsConfig(ArtifactRegistryRepositoryPlatformLogsConfig)
 //  .project(java.lang.String)
 //  .remoteRepositoryConfig(ArtifactRegistryRepositoryRemoteRepositoryConfig)
 //  .timeouts(ArtifactRegistryRepositoryTimeouts)
@@ -1947,14 +2044,16 @@ ArtifactRegistryRepositoryConfig.builder()
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.cleanupPolicyDryRun">cleanupPolicyDryRun</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, the cleanup pipeline is prevented from deleting versions in this repository. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.description">description</a></code> | <code>java.lang.String</code> | The user-provided description of the repository. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.disallowUnspecifiedMode">disallowUnspecifiedMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If this is true, an unspecified repo type will be treated as error rather than defaulting to standard. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.dockerConfig">dockerConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig">ArtifactRegistryRepositoryDockerConfig</a></code> | docker_config block. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | The Cloud KMS resource name of the customer managed encryption key that’s used to encrypt the contents of the Repository. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels with user-defined metadata. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.location">location</a></code> | <code>java.lang.String</code> | The name of the repository's location. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.mavenConfig">mavenConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig">ArtifactRegistryRepositoryMavenConfig</a></code> | maven_config block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | The mode configures the repository to serve artifacts from different sources. Default value: "STANDARD_REPOSITORY" Possible values: ["STANDARD_REPOSITORY", "VIRTUAL_REPOSITORY", "REMOTE_REPOSITORY"]. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.platformLogsConfig">platformLogsConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a></code> | platform_logs_config block. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.remoteRepositoryConfig">remoteRepositoryConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig">ArtifactRegistryRepositoryRemoteRepositoryConfig</a></code> | remote_repository_config block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts">ArtifactRegistryRepositoryTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.virtualRepositoryConfig">virtualRepositoryConfig</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig">ArtifactRegistryRepositoryVirtualRepositoryConfig</a></code> | virtual_repository_config block. |
@@ -2047,7 +2146,7 @@ can be found [here](https://cloud.google.com/artifact-registry/docs/supported-fo
 You can only create alpha formats if you are a member of the
 [alpha user group](https://cloud.google.com/artifact-registry/docs/supported-formats#alpha-access).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#format ArtifactRegistryRepository#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#format ArtifactRegistryRepository#format}
 
 ---
 
@@ -2061,7 +2160,7 @@ public java.lang.String getRepositoryId();
 
 The last part of the repository name, for example: "repo1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository_id ArtifactRegistryRepository#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository_id ArtifactRegistryRepository#repository_id}
 
 ---
 
@@ -2075,7 +2174,7 @@ public IResolvable|java.util.List<ArtifactRegistryRepositoryCleanupPolicies> get
 
 cleanup_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#cleanup_policies ArtifactRegistryRepository#cleanup_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#cleanup_policies ArtifactRegistryRepository#cleanup_policies}
 
 ---
 
@@ -2089,7 +2188,7 @@ public java.lang.Boolean|IResolvable getCleanupPolicyDryRun();
 
 If true, the cleanup pipeline is prevented from deleting versions in this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#cleanup_policy_dry_run ArtifactRegistryRepository#cleanup_policy_dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#cleanup_policy_dry_run ArtifactRegistryRepository#cleanup_policy_dry_run}
 
 ---
 
@@ -2110,7 +2209,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#deletion_policy ArtifactRegistryRepository#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#deletion_policy ArtifactRegistryRepository#deletion_policy}
 
 ---
 
@@ -2124,7 +2223,21 @@ public java.lang.String getDescription();
 
 The user-provided description of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#description ArtifactRegistryRepository#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#description ArtifactRegistryRepository#description}
+
+---
+
+##### `disallowUnspecifiedMode`<sup>Optional</sup> <a name="disallowUnspecifiedMode" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.disallowUnspecifiedMode"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisallowUnspecifiedMode();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If this is true, an unspecified repo type will be treated as error rather than defaulting to standard.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#disallow_unspecified_mode ArtifactRegistryRepository#disallow_unspecified_mode}
 
 ---
 
@@ -2138,7 +2251,7 @@ public ArtifactRegistryRepositoryDockerConfig getDockerConfig();
 
 docker_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#docker_config ArtifactRegistryRepository#docker_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#docker_config ArtifactRegistryRepository#docker_config}
 
 ---
 
@@ -2150,7 +2263,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2171,7 +2284,7 @@ Has the form:
 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'.
 This value may not be changed after the Repository has been created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#kms_key_name ArtifactRegistryRepository#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#kms_key_name ArtifactRegistryRepository#kms_key_name}
 
 ---
 
@@ -2193,7 +2306,7 @@ and dashes.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#labels ArtifactRegistryRepository#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#labels ArtifactRegistryRepository#labels}
 
 ---
 
@@ -2214,7 +2327,7 @@ or use the
 [google_artifact_registry_locations](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/artifact_registry_locations)
 data source for possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#location ArtifactRegistryRepository#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#location ArtifactRegistryRepository#location}
 
 ---
 
@@ -2228,7 +2341,7 @@ public ArtifactRegistryRepositoryMavenConfig getMavenConfig();
 
 maven_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#maven_config ArtifactRegistryRepository#maven_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#maven_config ArtifactRegistryRepository#maven_config}
 
 ---
 
@@ -2242,7 +2355,21 @@ public java.lang.String getMode();
 
 The mode configures the repository to serve artifacts from different sources. Default value: "STANDARD_REPOSITORY" Possible values: ["STANDARD_REPOSITORY", "VIRTUAL_REPOSITORY", "REMOTE_REPOSITORY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#mode ArtifactRegistryRepository#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#mode ArtifactRegistryRepository#mode}
+
+---
+
+##### `platformLogsConfig`<sup>Optional</sup> <a name="platformLogsConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig.property.platformLogsConfig"></a>
+
+```java
+public ArtifactRegistryRepositoryPlatformLogsConfig getPlatformLogsConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a>
+
+platform_logs_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#platform_logs_config ArtifactRegistryRepository#platform_logs_config}
 
 ---
 
@@ -2254,7 +2381,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#project ArtifactRegistryRepository#project}.
 
 ---
 
@@ -2268,7 +2395,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfig getRemoteRepositoryConfi
 
 remote_repository_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#remote_repository_config ArtifactRegistryRepository#remote_repository_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#remote_repository_config ArtifactRegistryRepository#remote_repository_config}
 
 ---
 
@@ -2282,7 +2409,7 @@ public ArtifactRegistryRepositoryTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#timeouts ArtifactRegistryRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#timeouts ArtifactRegistryRepository#timeouts}
 
 ---
 
@@ -2296,7 +2423,7 @@ public ArtifactRegistryRepositoryVirtualRepositoryConfig getVirtualRepositoryCon
 
 virtual_repository_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#virtual_repository_config ArtifactRegistryRepository#virtual_repository_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#virtual_repository_config ArtifactRegistryRepository#virtual_repository_config}
 
 ---
 
@@ -2310,7 +2437,7 @@ public ArtifactRegistryRepositoryVulnerabilityScanningConfig getVulnerabilitySca
 
 vulnerability_scanning_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#vulnerability_scanning_config ArtifactRegistryRepository#vulnerability_scanning_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#vulnerability_scanning_config ArtifactRegistryRepository#vulnerability_scanning_config}
 
 ---
 
@@ -2346,7 +2473,7 @@ The repository which enabled this flag prevents all tags from being modified, mo
 
 This does not prevent tags from being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#immutable_tags ArtifactRegistryRepository#immutable_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#immutable_tags ArtifactRegistryRepository#immutable_tags}
 
 ---
 
@@ -2382,7 +2509,7 @@ public java.lang.Boolean|IResolvable getAllowSnapshotOverwrites();
 
 The repository with this flag will allow publishing the same snapshot versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#allow_snapshot_overwrites ArtifactRegistryRepository#allow_snapshot_overwrites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#allow_snapshot_overwrites ArtifactRegistryRepository#allow_snapshot_overwrites}
 
 ---
 
@@ -2396,7 +2523,60 @@ public java.lang.String getVersionPolicy();
 
 Version policy defines the versions that the registry will accept. Default value: "VERSION_POLICY_UNSPECIFIED" Possible values: ["VERSION_POLICY_UNSPECIFIED", "RELEASE", "SNAPSHOT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#version_policy ArtifactRegistryRepository#version_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#version_policy ArtifactRegistryRepository#version_policy}
+
+---
+
+### ArtifactRegistryRepositoryPlatformLogsConfig <a name="ArtifactRegistryRepositoryPlatformLogsConfig" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.artifact_registry_repository.ArtifactRegistryRepositoryPlatformLogsConfig;
+
+ArtifactRegistryRepositoryPlatformLogsConfig.builder()
+//  .loggingState(java.lang.String)
+//  .severityLevel(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig.property.loggingState">loggingState</a></code> | <code>java.lang.String</code> | The state of the platform logs: enabled or disabled. Possible values: ["ENABLED", "DISABLED"]. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig.property.severityLevel">severityLevel</a></code> | <code>java.lang.String</code> | The severity level for the logs. |
+
+---
+
+##### `loggingState`<sup>Optional</sup> <a name="loggingState" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig.property.loggingState"></a>
+
+```java
+public java.lang.String getLoggingState();
+```
+
+- *Type:* java.lang.String
+
+The state of the platform logs: enabled or disabled. Possible values: ["ENABLED", "DISABLED"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#logging_state ArtifactRegistryRepository#logging_state}
+
+---
+
+##### `severityLevel`<sup>Optional</sup> <a name="severityLevel" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig.property.severityLevel"></a>
+
+```java
+public java.lang.String getSeverityLevel();
+```
+
+- *Type:* java.lang.String
+
+The severity level for the logs.
+
+Logs will be generated if their
+severity level is >= than the value of the severity level mentioned here. Possible values: ["DEBUG", "INFO", "NOTICE", "WARNING", "ERROR", "CRITICAL", "ALERT", "EMERGENCY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#severity_level ArtifactRegistryRepository#severity_level}
 
 ---
 
@@ -2450,7 +2630,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository getAptRepos
 
 apt_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#apt_repository ArtifactRegistryRepository#apt_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#apt_repository ArtifactRegistryRepository#apt_repository}
 
 ---
 
@@ -2464,7 +2644,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository getCommo
 
 common_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#common_repository ArtifactRegistryRepository#common_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#common_repository ArtifactRegistryRepository#common_repository}
 
 ---
 
@@ -2478,7 +2658,7 @@ public java.lang.String getDescription();
 
 The description of the remote source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#description ArtifactRegistryRepository#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#description ArtifactRegistryRepository#description}
 
 ---
 
@@ -2492,7 +2672,7 @@ public java.lang.Boolean|IResolvable getDisableUpstreamValidation();
 
 If true, the remote repository upstream and upstream credentials will not be validated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#disable_upstream_validation ArtifactRegistryRepository#disable_upstream_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#disable_upstream_validation ArtifactRegistryRepository#disable_upstream_validation}
 
 ---
 
@@ -2506,7 +2686,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository getDocke
 
 docker_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#docker_repository ArtifactRegistryRepository#docker_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#docker_repository ArtifactRegistryRepository#docker_repository}
 
 ---
 
@@ -2520,7 +2700,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository getMavenR
 
 maven_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#maven_repository ArtifactRegistryRepository#maven_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#maven_repository ArtifactRegistryRepository#maven_repository}
 
 ---
 
@@ -2534,7 +2714,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigNoCache getNoCache();
 
 no_cache block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#no_cache ArtifactRegistryRepository#no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#no_cache ArtifactRegistryRepository#no_cache}
 
 ---
 
@@ -2548,7 +2728,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository getNpmRepos
 
 npm_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#npm_repository ArtifactRegistryRepository#npm_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#npm_repository ArtifactRegistryRepository#npm_repository}
 
 ---
 
@@ -2562,7 +2742,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository getPytho
 
 python_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#python_repository ArtifactRegistryRepository#python_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#python_repository ArtifactRegistryRepository#python_repository}
 
 ---
 
@@ -2576,7 +2756,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials getUp
 
 upstream_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#upstream_credentials ArtifactRegistryRepository#upstream_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#upstream_credentials ArtifactRegistryRepository#upstream_credentials}
 
 ---
 
@@ -2590,7 +2770,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository getYumRepos
 
 yum_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#yum_repository ArtifactRegistryRepository#yum_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#yum_repository ArtifactRegistryRepository#yum_repository}
 
 ---
 
@@ -2624,7 +2804,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicReposi
 
 public_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 
 ---
 
@@ -2660,7 +2840,7 @@ public java.lang.String getRepositoryBase();
 
 A common public repository base for Apt, e.g. '"debian/dists/stable"' Possible values: ["DEBIAN", "UBUNTU", "DEBIAN_SNAPSHOT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository_base ArtifactRegistryRepository#repository_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository_base ArtifactRegistryRepository#repository_base}
 
 ---
 
@@ -2674,7 +2854,7 @@ public java.lang.String getRepositoryPath();
 
 Specific repository from the base.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository_path ArtifactRegistryRepository#repository_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository_path ArtifactRegistryRepository#repository_path}
 
 ---
 
@@ -2712,7 +2892,7 @@ Artifact Registry Repository resource, e.g. 'projects/UPSTREAM_PROJECT_ID/locati
 b. URI to the registry, e.g. '"https://registry-1.docker.io"'
 c. URI to Artifact Registry Repository, e.g. '"https://REGION-docker.pkg.dev/UPSTREAM_PROJECT_ID/UPSTREAM_REPOSITORY"'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 
 ---
 
@@ -2748,7 +2928,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRep
 
 custom_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
 
 ---
 
@@ -2762,7 +2942,7 @@ public java.lang.String getPublicRepository();
 
 Address of the remote repository. Possible values: ["DOCKER_HUB"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 
 ---
 
@@ -2796,7 +2976,7 @@ public java.lang.String getUri();
 
 Specific uri to the registry, e.g. '"https://registry-1.docker.io"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 
 ---
 
@@ -2832,7 +3012,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepo
 
 custom_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
 
 ---
 
@@ -2846,7 +3026,7 @@ public java.lang.String getPublicRepository();
 
 Address of the remote repository. Possible values: ["MAVEN_CENTRAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 
 ---
 
@@ -2880,7 +3060,7 @@ public java.lang.String getUri();
 
 Specific uri to the registry, e.g. '"https://repo.maven.apache.org/maven2"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 
 ---
 
@@ -2928,7 +3108,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomReposi
 
 custom_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
 
 ---
 
@@ -2942,7 +3122,7 @@ public java.lang.String getPublicRepository();
 
 Address of the remote repository. Possible values: ["NPMJS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 
 ---
 
@@ -2976,7 +3156,7 @@ public java.lang.String getUri();
 
 Specific uri to the registry, e.g. '"https://registry.npmjs.org"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 
 ---
 
@@ -3012,7 +3192,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRep
 
 custom_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
 
 ---
 
@@ -3026,7 +3206,7 @@ public java.lang.String getPublicRepository();
 
 Address of the remote repository. Possible values: ["PYPI"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 
 ---
 
@@ -3060,7 +3240,7 @@ public java.lang.String getUri();
 
 Specific uri to the registry, e.g. '"https://pypi.io"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 
 ---
 
@@ -3094,7 +3274,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUserna
 
 username_password_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#username_password_credentials ArtifactRegistryRepository#username_password_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#username_password_credentials ArtifactRegistryRepository#username_password_credentials}
 
 ---
 
@@ -3130,7 +3310,7 @@ public java.lang.String getPasswordSecretVersion();
 
 The Secret Manager key version that holds the password to access the remote repository. Must be in the format of 'projects/{project}/secrets/{secret}/versions/{version}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#password_secret_version ArtifactRegistryRepository#password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#password_secret_version ArtifactRegistryRepository#password_secret_version}
 
 ---
 
@@ -3144,7 +3324,7 @@ public java.lang.String getUsername();
 
 The username to access the remote repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#username ArtifactRegistryRepository#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#username ArtifactRegistryRepository#username}
 
 ---
 
@@ -3178,7 +3358,7 @@ public ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicReposi
 
 public_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 
 ---
 
@@ -3214,7 +3394,7 @@ public java.lang.String getRepositoryBase();
 
 A common public repository base for Yum. Possible values: ["CENTOS", "CENTOS_DEBUG", "CENTOS_VAULT", "CENTOS_STREAM", "ROCKY", "EPEL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository_base ArtifactRegistryRepository#repository_base}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository_base ArtifactRegistryRepository#repository_base}
 
 ---
 
@@ -3228,7 +3408,7 @@ public java.lang.String getRepositoryPath();
 
 Specific repository from the base, e.g. '"pub/rocky/9/BaseOS/x86_64/os"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository_path ArtifactRegistryRepository#repository_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository_path ArtifactRegistryRepository#repository_path}
 
 ---
 
@@ -3250,9 +3430,9 @@ ArtifactRegistryRepositoryTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#create ArtifactRegistryRepository#create}. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#delete ArtifactRegistryRepository#delete}. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#update ArtifactRegistryRepository#update}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#create ArtifactRegistryRepository#create}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#delete ArtifactRegistryRepository#delete}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#update ArtifactRegistryRepository#update}. |
 
 ---
 
@@ -3264,7 +3444,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#create ArtifactRegistryRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#create ArtifactRegistryRepository#create}.
 
 ---
 
@@ -3276,7 +3456,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#delete ArtifactRegistryRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#delete ArtifactRegistryRepository#delete}.
 
 ---
 
@@ -3288,7 +3468,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#update ArtifactRegistryRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#update ArtifactRegistryRepository#update}.
 
 ---
 
@@ -3322,7 +3502,7 @@ public IResolvable|java.util.List<ArtifactRegistryRepositoryVirtualRepositoryCon
 
 upstream_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#upstream_policies ArtifactRegistryRepository#upstream_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#upstream_policies ArtifactRegistryRepository#upstream_policies}
 
 ---
 
@@ -3360,7 +3540,7 @@ public java.lang.String getId();
 
 The user-provided ID of the upstream policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#id ArtifactRegistryRepository#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3377,7 +3557,7 @@ public java.lang.Number getPriority();
 
 Entries with a greater priority value take precedence in the pull order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#priority ArtifactRegistryRepository#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#priority ArtifactRegistryRepository#priority}
 
 ---
 
@@ -3391,7 +3571,7 @@ public java.lang.String getRepository();
 
 A reference to the repository resource, for example: "projects/p1/locations/us-central1/repository/repo1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#repository ArtifactRegistryRepository#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#repository ArtifactRegistryRepository#repository}
 
 ---
 
@@ -3425,7 +3605,7 @@ public java.lang.String getEnablementConfig();
 
 This configures whether vulnerability scanning is automatically performed for artifacts pushed to this repository. Possible values: ["INHERITED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/artifact_registry_repository#enablement_config ArtifactRegistryRepository#enablement_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/artifact_registry_repository#enablement_config ArtifactRegistryRepository#enablement_config}
 
 ---
 
@@ -5304,6 +5484,313 @@ public ArtifactRegistryRepositoryMavenConfig getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig">ArtifactRegistryRepositoryMavenConfig</a>
+
+---
+
+
+### ArtifactRegistryRepositoryPlatformLogsConfigOutputReference <a name="ArtifactRegistryRepositoryPlatformLogsConfigOutputReference" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.artifact_registry_repository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference;
+
+new ArtifactRegistryRepositoryPlatformLogsConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resetLoggingState">resetLoggingState</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resetSeverityLevel">resetSeverityLevel</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetLoggingState` <a name="resetLoggingState" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resetLoggingState"></a>
+
+```java
+public void resetLoggingState()
+```
+
+##### `resetSeverityLevel` <a name="resetSeverityLevel" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.resetSeverityLevel"></a>
+
+```java
+public void resetSeverityLevel()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.loggingStateInput">loggingStateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.severityLevelInput">severityLevelInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.loggingState">loggingState</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.severityLevel">severityLevel</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `loggingStateInput`<sup>Optional</sup> <a name="loggingStateInput" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.loggingStateInput"></a>
+
+```java
+public java.lang.String getLoggingStateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `severityLevelInput`<sup>Optional</sup> <a name="severityLevelInput" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.severityLevelInput"></a>
+
+```java
+public java.lang.String getSeverityLevelInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `loggingState`<sup>Required</sup> <a name="loggingState" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.loggingState"></a>
+
+```java
+public java.lang.String getLoggingState();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `severityLevel`<sup>Required</sup> <a name="severityLevel" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.severityLevel"></a>
+
+```java
+public java.lang.String getSeverityLevel();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfigOutputReference.property.internalValue"></a>
+
+```java
+public ArtifactRegistryRepositoryPlatformLogsConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryPlatformLogsConfig">ArtifactRegistryRepositoryPlatformLogsConfig</a>
 
 ---
 

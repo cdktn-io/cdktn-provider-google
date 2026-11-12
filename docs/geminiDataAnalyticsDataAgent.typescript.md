@@ -4,7 +4,7 @@
 
 ### GeminiDataAnalyticsDataAgent <a name="GeminiDataAnalyticsDataAgent" id="@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent google_gemini_data_analytics_data_agent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent google_gemini_data_analytics_data_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgent.Initializer"></a>
 
@@ -578,7 +578,7 @@ The construct id used in the generated config for the GeminiDataAnalyticsDataAge
 
 The id of the existing GeminiDataAnalyticsDataAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1119,10 +1119,10 @@ const geminiDataAnalyticsDataAgentConfig: geminiDataAnalyticsDataAgent.GeminiDat
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.description">description</a></code> | <code>string</code> | Optional. Description of the agent. Must be between 1 and 1024 characters. |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.displayName">displayName</a></code> | <code>string</code> | Optional. User friendly display name. Must be between 1 and 256 characters. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#id GeminiDataAnalyticsDataAgent#id}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#id GeminiDataAnalyticsDataAgent#id}. |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.kmsKey">kmsKey</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. Labels to help users filter related agents. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project GeminiDataAnalyticsDataAgent#project}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project GeminiDataAnalyticsDataAgent#project}. |
 | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts">GeminiDataAnalyticsDataAgentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1212,7 +1212,7 @@ of the resource name. The ID must start with a lowercase letter and may
 contain lowercase letters, digits, underscores, and hyphens, up to 63
 characters in total.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#data_agent_id GeminiDataAnalyticsDataAgent#data_agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#data_agent_id GeminiDataAnalyticsDataAgent#data_agent_id}
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly location: string;
 
 The location of the DataAgent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#location GeminiDataAnalyticsDataAgent#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#location GeminiDataAnalyticsDataAgent#location}
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly dataAnalyticsAgent: GeminiDataAnalyticsDataAgentDataAnalyticsAge
 
 data_analytics_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#data_analytics_agent GeminiDataAnalyticsDataAgent#data_analytics_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#data_analytics_agent GeminiDataAnalyticsDataAgent#data_analytics_agent}
 
 ---
 
@@ -1262,7 +1262,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#deletion_policy GeminiDataAnalyticsDataAgent#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#deletion_policy GeminiDataAnalyticsDataAgent#deletion_policy}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly description: string;
 
 Optional. Description of the agent. Must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly displayName: string;
 
 Optional. User friendly display name. Must be between 1 and 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#id GeminiDataAnalyticsDataAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#id GeminiDataAnalyticsDataAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1324,7 +1324,7 @@ DataAgent resources. Cloud KMS CryptoKeys must reside in the same location
 as the DataAgent. The expected format is
 projects/* /locations/* /keyRings/* /cryptoKeys/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#kms_key GeminiDataAnalyticsDataAgent#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#kms_key GeminiDataAnalyticsDataAgent#kms_key}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1343,7 +1343,7 @@ Optional. Labels to help users filter related agents.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#labels GeminiDataAnalyticsDataAgent#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#labels GeminiDataAnalyticsDataAgent#labels}
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project GeminiDataAnalyticsDataAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project GeminiDataAnalyticsDataAgent#project}.
 
 ---
 
@@ -1369,7 +1369,7 @@ public readonly timeouts: GeminiDataAnalyticsDataAgentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#timeouts GeminiDataAnalyticsDataAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#timeouts GeminiDataAnalyticsDataAgent#timeouts}
 
 ---
 
@@ -1402,7 +1402,7 @@ public readonly publishedContext: GeminiDataAnalyticsDataAgentDataAnalyticsAgent
 
 published_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#published_context GeminiDataAnalyticsDataAgent#published_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#published_context GeminiDataAnalyticsDataAgent#published_context}
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly stagingContext: GeminiDataAnalyticsDataAgentDataAnalyticsAgentSt
 
 staging_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#staging_context GeminiDataAnalyticsDataAgent#staging_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#staging_context GeminiDataAnalyticsDataAgent#staging_context}
 
 ---
 
@@ -1499,7 +1499,7 @@ public readonly datasourceReferences: GeminiDataAnalyticsDataAgentDataAnalyticsA
 
 datasource_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#datasource_references GeminiDataAnalyticsDataAgent#datasource_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#datasource_references GeminiDataAnalyticsDataAgent#datasource_references}
 
 ---
 
@@ -1513,7 +1513,7 @@ public readonly exampleQueries: IResolvable | GeminiDataAnalyticsDataAgentDataAn
 
 example_queries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#example_queries GeminiDataAnalyticsDataAgent#example_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#example_queries GeminiDataAnalyticsDataAgent#example_queries}
 
 ---
 
@@ -1527,7 +1527,7 @@ public readonly glossaryTerms: IResolvable | GeminiDataAnalyticsDataAgentDataAna
 
 glossary_terms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#glossary_terms GeminiDataAnalyticsDataAgent#glossary_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#glossary_terms GeminiDataAnalyticsDataAgent#glossary_terms}
 
 ---
 
@@ -1541,7 +1541,7 @@ public readonly lookerGoldenQueries: IResolvable | GeminiDataAnalyticsDataAgentD
 
 looker_golden_queries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_golden_queries GeminiDataAnalyticsDataAgent#looker_golden_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_golden_queries GeminiDataAnalyticsDataAgent#looker_golden_queries}
 
 ---
 
@@ -1555,7 +1555,7 @@ public readonly options: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublished
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#options GeminiDataAnalyticsDataAgent#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#options GeminiDataAnalyticsDataAgent#options}
 
 ---
 
@@ -1569,7 +1569,7 @@ public readonly schemaRelationships: IResolvable | GeminiDataAnalyticsDataAgentD
 
 schema_relationships block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#schema_relationships GeminiDataAnalyticsDataAgent#schema_relationships}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#schema_relationships GeminiDataAnalyticsDataAgent#schema_relationships}
 
 ---
 
@@ -1583,7 +1583,7 @@ public readonly systemInstruction: string;
 
 Optional. The basic entry point for data owners creating domain knowledge for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#system_instruction GeminiDataAnalyticsDataAgent#system_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#system_instruction GeminiDataAnalyticsDataAgent#system_instruction}
 
 ---
 
@@ -1597,7 +1597,7 @@ public readonly userFunctions: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPub
 
 user_functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#user_functions GeminiDataAnalyticsDataAgent#user_functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#user_functions GeminiDataAnalyticsDataAgent#user_functions}
 
 ---
 
@@ -1631,7 +1631,7 @@ public readonly bq: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishedConte
 
 bq block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#bq GeminiDataAnalyticsDataAgent#bq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#bq GeminiDataAnalyticsDataAgent#bq}
 
 ---
 
@@ -1645,7 +1645,7 @@ public readonly looker: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishedC
 
 looker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker GeminiDataAnalyticsDataAgent#looker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker GeminiDataAnalyticsDataAgent#looker}
 
 ---
 
@@ -1659,7 +1659,7 @@ public readonly studio: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishedC
 
 studio block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#studio GeminiDataAnalyticsDataAgent#studio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#studio GeminiDataAnalyticsDataAgent#studio}
 
 ---
 
@@ -1692,7 +1692,7 @@ public readonly propertyGraphReferences: IResolvable | GeminiDataAnalyticsDataAg
 
 property_graph_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#property_graph_references GeminiDataAnalyticsDataAgent#property_graph_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#property_graph_references GeminiDataAnalyticsDataAgent#property_graph_references}
 
 ---
 
@@ -1706,7 +1706,7 @@ public readonly tableReferences: IResolvable | GeminiDataAnalyticsDataAgentDataA
 
 table_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_references GeminiDataAnalyticsDataAgent#table_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_references GeminiDataAnalyticsDataAgent#table_references}
 
 ---
 
@@ -1740,7 +1740,7 @@ public readonly datasetId: string;
 
 Required. The dataset that the property graph belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
 
 ---
 
@@ -1754,7 +1754,7 @@ public readonly projectId: string;
 
 Required. The project that the property graph belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
 
 ---
 
@@ -1768,7 +1768,7 @@ public readonly propertyGraphId: string;
 
 Required. The property graph ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#property_graph_id GeminiDataAnalyticsDataAgent#property_graph_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#property_graph_id GeminiDataAnalyticsDataAgent#property_graph_id}
 
 ---
 
@@ -1803,7 +1803,7 @@ public readonly datasetId: string;
 
 Required. The dataset that the table belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
 
 ---
 
@@ -1817,7 +1817,7 @@ public readonly projectId: string;
 
 Required. The project that the table belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
 
 ---
 
@@ -1831,7 +1831,7 @@ public readonly tableId: string;
 
 Required. The table ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_id GeminiDataAnalyticsDataAgent#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_id GeminiDataAnalyticsDataAgent#table_id}
 
 ---
 
@@ -1845,7 +1845,7 @@ public readonly schema: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishedC
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
 
 ---
 
@@ -1882,7 +1882,7 @@ public readonly description: string;
 
 Optional. A textual description of the table's content and purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -1896,7 +1896,7 @@ public readonly displayName: string;
 
 Optional. Table display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -1910,7 +1910,7 @@ public readonly fields: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyticsA
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
 
 ---
 
@@ -1924,7 +1924,7 @@ public readonly filters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalytics
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
 
 ---
 
@@ -1938,7 +1938,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -1952,7 +1952,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the table, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -1992,7 +1992,7 @@ public readonly category: string;
 
 Optional. Field category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
 
 ---
 
@@ -2006,7 +2006,7 @@ public readonly description: string;
 
 Optional. A brief description of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -2020,7 +2020,7 @@ public readonly mode: string;
 
 Optional. The mode of the field (e.g., NULLABLE, REPEATED).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
 
 ---
 
@@ -2034,7 +2034,7 @@ public readonly name: string;
 
 Optional. The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
 
 ---
 
@@ -2048,7 +2048,7 @@ public readonly subfields: string;
 
 Optional. Recursive property for nested schema structures, encoded as a JSON string representing a list of Field objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
 
 ---
 
@@ -2062,7 +2062,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -2076,7 +2076,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the field, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -2090,7 +2090,7 @@ public readonly type: string;
 
 Optional. The type of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -2104,7 +2104,7 @@ public readonly valueFormat: string;
 
 Optional. Value format of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
 
 ---
 
@@ -2138,7 +2138,7 @@ public readonly field: string;
 
 Optional. The field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
 
 ---
 
@@ -2152,7 +2152,7 @@ public readonly type: string;
 
 Optional. The type of filter present on a datasource, such as ALWAYS_FILTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -2166,7 +2166,7 @@ public readonly value: string;
 
 Optional. The default value used for this filter if the filter is not overridden in a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
 
 ---
 
@@ -2198,7 +2198,7 @@ public readonly exploreReferences: IResolvable | GeminiDataAnalyticsDataAgentDat
 
 explore_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#explore_references GeminiDataAnalyticsDataAgent#explore_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#explore_references GeminiDataAnalyticsDataAgent#explore_references}
 
 ---
 
@@ -2234,7 +2234,7 @@ public readonly explore: string;
 
 Required. Name of the LookML Explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
 
 ---
 
@@ -2248,7 +2248,7 @@ public readonly lookmlModel: string;
 
 Required. Name of the LookML model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#lookml_model GeminiDataAnalyticsDataAgent#lookml_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#lookml_model GeminiDataAnalyticsDataAgent#lookml_model}
 
 ---
 
@@ -2262,7 +2262,7 @@ public readonly lookerInstanceUri: string;
 
 Optional. The base URL of the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_uri GeminiDataAnalyticsDataAgent#looker_instance_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_uri GeminiDataAnalyticsDataAgent#looker_instance_uri}
 
 ---
 
@@ -2276,7 +2276,7 @@ public readonly privateLookerInstanceInfo: GeminiDataAnalyticsDataAgentDataAnaly
 
 private_looker_instance_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#private_looker_instance_info GeminiDataAnalyticsDataAgent#private_looker_instance_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#private_looker_instance_info GeminiDataAnalyticsDataAgent#private_looker_instance_info}
 
 ---
 
@@ -2290,7 +2290,7 @@ public readonly schema: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishedC
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
 
 ---
 
@@ -2323,7 +2323,7 @@ public readonly lookerInstanceId: string;
 
 Optional. The Looker instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_id GeminiDataAnalyticsDataAgent#looker_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_id GeminiDataAnalyticsDataAgent#looker_instance_id}
 
 ---
 
@@ -2337,7 +2337,7 @@ public readonly serviceDirectoryName: string;
 
 Optional. The service directory name of the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#service_directory_name GeminiDataAnalyticsDataAgent#service_directory_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#service_directory_name GeminiDataAnalyticsDataAgent#service_directory_name}
 
 ---
 
@@ -2374,7 +2374,7 @@ public readonly description: string;
 
 Optional. A textual description of the explore's content and purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -2388,7 +2388,7 @@ public readonly displayName: string;
 
 Optional. Explore display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -2402,7 +2402,7 @@ public readonly fields: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyticsA
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
 
 ---
 
@@ -2416,7 +2416,7 @@ public readonly filters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalytics
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
 
 ---
 
@@ -2430,7 +2430,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to the explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -2444,7 +2444,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the explore, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -2484,7 +2484,7 @@ public readonly category: string;
 
 Optional. Field category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
 
 ---
 
@@ -2498,7 +2498,7 @@ public readonly description: string;
 
 Optional. A brief description of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -2512,7 +2512,7 @@ public readonly mode: string;
 
 Optional. The mode of the field (e.g., NULLABLE, REPEATED).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
 
 ---
 
@@ -2526,7 +2526,7 @@ public readonly name: string;
 
 Optional. The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
 
 ---
 
@@ -2540,7 +2540,7 @@ public readonly subfields: string;
 
 Optional. Recursive property for nested schema structures, encoded as a JSON string representing a list of Field objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
 
 ---
 
@@ -2554,7 +2554,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -2568,7 +2568,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the field, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -2582,7 +2582,7 @@ public readonly type: string;
 
 Optional. The type of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -2596,7 +2596,7 @@ public readonly valueFormat: string;
 
 Optional. Value format of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
 
 ---
 
@@ -2630,7 +2630,7 @@ public readonly field: string;
 
 Optional. The field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
 
 ---
 
@@ -2644,7 +2644,7 @@ public readonly type: string;
 
 Optional. The type of filter present on a datasource, such as ALWAYS_FILTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -2658,7 +2658,7 @@ public readonly value: string;
 
 Optional. The default value used for this filter if the filter is not overridden in a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
 
 ---
 
@@ -2690,7 +2690,7 @@ public readonly studioReferences: IResolvable | GeminiDataAnalyticsDataAgentData
 
 studio_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#studio_references GeminiDataAnalyticsDataAgent#studio_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#studio_references GeminiDataAnalyticsDataAgent#studio_references}
 
 ---
 
@@ -2722,7 +2722,7 @@ public readonly datasourceId: string;
 
 Required. The ID of the datasource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#datasource_id GeminiDataAnalyticsDataAgent#datasource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#datasource_id GeminiDataAnalyticsDataAgent#datasource_id}
 
 ---
 
@@ -2756,7 +2756,7 @@ public readonly naturalLanguageQuestion: string;
 
 Optional. A natural language question that a user might ask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#natural_language_question GeminiDataAnalyticsDataAgent#natural_language_question}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#natural_language_question GeminiDataAnalyticsDataAgent#natural_language_question}
 
 ---
 
@@ -2770,7 +2770,7 @@ public readonly parameters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyt
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#parameters GeminiDataAnalyticsDataAgent#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#parameters GeminiDataAnalyticsDataAgent#parameters}
 
 ---
 
@@ -2784,7 +2784,7 @@ public readonly sqlQuery: string;
 
 Optional. The SQL query that should be generated to answer the natural language question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#sql_query GeminiDataAnalyticsDataAgent#sql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#sql_query GeminiDataAnalyticsDataAgent#sql_query}
 
 ---
 
@@ -2818,7 +2818,7 @@ public readonly dataType: string;
 
 Required. The data type of the parameter, e.g. "STRING", "INT64", "DATE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#data_type GeminiDataAnalyticsDataAgent#data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#data_type GeminiDataAnalyticsDataAgent#data_type}
 
 ---
 
@@ -2832,7 +2832,7 @@ public readonly name: string;
 
 Required. The name of the parameter reference in the SQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
 
 ---
 
@@ -2848,7 +2848,7 @@ Optional.
 
 The description of the parameter that can be used by the LLM to extract the parameter value from the user question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -2882,7 +2882,7 @@ public readonly description: string;
 
 Required. The description or meaning of the term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -2896,7 +2896,7 @@ public readonly displayName: string;
 
 Required. User friendly display name of the glossary term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -2910,7 +2910,7 @@ public readonly labels: string[];
 
 Optional. A list of general purpose labels associated with this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#labels GeminiDataAnalyticsDataAgent#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#labels GeminiDataAnalyticsDataAgent#labels}
 
 ---
 
@@ -2943,7 +2943,7 @@ public readonly lookerQuery: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPubli
 
 looker_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_query GeminiDataAnalyticsDataAgent#looker_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_query GeminiDataAnalyticsDataAgent#looker_query}
 
 ---
 
@@ -2957,7 +2957,7 @@ public readonly naturalLanguageQuestions: string[];
 
 Optional. Natural language questions that a user might ask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#natural_language_questions GeminiDataAnalyticsDataAgent#natural_language_questions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#natural_language_questions GeminiDataAnalyticsDataAgent#natural_language_questions}
 
 ---
 
@@ -2996,7 +2996,7 @@ public readonly explore: string;
 
 Required. The LookML explore used to generate the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
 
 ---
 
@@ -3010,7 +3010,7 @@ public readonly model: string;
 
 Required. The LookML model used to generate the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
 
 ---
 
@@ -3024,7 +3024,7 @@ public readonly clientId: string;
 
 Optional. The short alphanumeric identifier for the query, used for share links and Explore URLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#client_id GeminiDataAnalyticsDataAgent#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#client_id GeminiDataAnalyticsDataAgent#client_id}
 
 ---
 
@@ -3038,7 +3038,7 @@ public readonly fields: string[];
 
 Optional. The fields to retrieve from the explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
 
 ---
 
@@ -3052,7 +3052,7 @@ public readonly filters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalytics
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
 
 ---
 
@@ -3066,7 +3066,7 @@ public readonly limit: string;
 
 Optional. Limit in the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#limit GeminiDataAnalyticsDataAgent#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#limit GeminiDataAnalyticsDataAgent#limit}
 
 ---
 
@@ -3080,7 +3080,7 @@ public readonly queryId: string;
 
 Optional. The primary identifier for the query resource in Looker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#query_id GeminiDataAnalyticsDataAgent#query_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#query_id GeminiDataAnalyticsDataAgent#query_id}
 
 ---
 
@@ -3094,7 +3094,7 @@ public readonly sorts: string[];
 
 Optional. The sorts to apply to the explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#sorts GeminiDataAnalyticsDataAgent#sorts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#sorts GeminiDataAnalyticsDataAgent#sorts}
 
 ---
 
@@ -3127,7 +3127,7 @@ public readonly field: string;
 
 Required. The field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
 
 ---
 
@@ -3141,7 +3141,7 @@ public readonly value: string;
 
 Optional. The value for the field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
 
 ---
 
@@ -3175,7 +3175,7 @@ public readonly analysis: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishe
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#analysis GeminiDataAnalyticsDataAgent#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#analysis GeminiDataAnalyticsDataAgent#analysis}
 
 ---
 
@@ -3189,7 +3189,7 @@ public readonly datasource: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublis
 
 datasource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#datasource GeminiDataAnalyticsDataAgent#datasource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#datasource GeminiDataAnalyticsDataAgent#datasource}
 
 ---
 
@@ -3203,7 +3203,7 @@ public readonly model: string;
 
 Optional. The model to use for the agent loop.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
 
 ---
 
@@ -3235,7 +3235,7 @@ public readonly python: GeminiDataAnalyticsDataAgentDataAnalyticsAgentPublishedC
 
 python block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#python GeminiDataAnalyticsDataAgent#python}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#python GeminiDataAnalyticsDataAgent#python}
 
 ---
 
@@ -3267,7 +3267,7 @@ public readonly enabled: boolean | IResolvable;
 
 Optional. Whether to enable Python analysis. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#enabled GeminiDataAnalyticsDataAgent#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#enabled GeminiDataAnalyticsDataAgent#enabled}
 
 ---
 
@@ -3299,7 +3299,7 @@ public readonly bigQueryMaxBilledBytes: number;
 
 Optional. Limits the bytes billed for each BigQuery query job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#big_query_max_billed_bytes GeminiDataAnalyticsDataAgent#big_query_max_billed_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#big_query_max_billed_bytes GeminiDataAnalyticsDataAgent#big_query_max_billed_bytes}
 
 ---
 
@@ -3334,7 +3334,7 @@ public readonly leftSchemaPaths: GeminiDataAnalyticsDataAgentDataAnalyticsAgentP
 
 left_schema_paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#left_schema_paths GeminiDataAnalyticsDataAgent#left_schema_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#left_schema_paths GeminiDataAnalyticsDataAgent#left_schema_paths}
 
 ---
 
@@ -3348,7 +3348,7 @@ public readonly rightSchemaPaths: GeminiDataAnalyticsDataAgentDataAnalyticsAgent
 
 right_schema_paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#right_schema_paths GeminiDataAnalyticsDataAgent#right_schema_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#right_schema_paths GeminiDataAnalyticsDataAgent#right_schema_paths}
 
 ---
 
@@ -3362,7 +3362,7 @@ public readonly confidenceScore: number;
 
 Optional. A confidence score for the suggested relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#confidence_score GeminiDataAnalyticsDataAgent#confidence_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#confidence_score GeminiDataAnalyticsDataAgent#confidence_score}
 
 ---
 
@@ -3376,7 +3376,7 @@ public readonly sources: string[];
 
 Optional. Sources which generated the schema relation edge. Possible values: BIGQUERY_JOB_HISTORY, LLM_SUGGESTED, BIGQUERY_TABLE_CONSTRAINTS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#sources GeminiDataAnalyticsDataAgent#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#sources GeminiDataAnalyticsDataAgent#sources}
 
 ---
 
@@ -3409,7 +3409,7 @@ public readonly paths: string[];
 
 Required. The ordered list of paths within the table schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
 
 ---
 
@@ -3423,7 +3423,7 @@ public readonly tableFqn: string;
 
 Required. The service-qualified full resource name of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
 
 ---
 
@@ -3456,7 +3456,7 @@ public readonly paths: string[];
 
 Required. The ordered list of paths within the table schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
 
 ---
 
@@ -3470,7 +3470,7 @@ public readonly tableFqn: string;
 
 Required. The service-qualified full resource name of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
 
 ---
 
@@ -3502,7 +3502,7 @@ public readonly bqRoutines: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyt
 
 bq_routines block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#bq_routines GeminiDataAnalyticsDataAgent#bq_routines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#bq_routines GeminiDataAnalyticsDataAgent#bq_routines}
 
 ---
 
@@ -3535,7 +3535,7 @@ public readonly description: string;
 
 Optional. User override or addition to description, to tell the agent when to use the UDF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -3549,7 +3549,7 @@ public readonly routineReference: GeminiDataAnalyticsDataAgentDataAnalyticsAgent
 
 routine_reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#routine_reference GeminiDataAnalyticsDataAgent#routine_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#routine_reference GeminiDataAnalyticsDataAgent#routine_reference}
 
 ---
 
@@ -3583,7 +3583,7 @@ public readonly datasetId: string;
 
 Optional. The dataset ID of the routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
 
 ---
 
@@ -3597,7 +3597,7 @@ public readonly projectId: string;
 
 Optional. The project ID of the routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
 
 ---
 
@@ -3611,7 +3611,7 @@ public readonly routineId: string;
 
 Optional. The routine ID of the routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#routine_id GeminiDataAnalyticsDataAgent#routine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#routine_id GeminiDataAnalyticsDataAgent#routine_id}
 
 ---
 
@@ -3650,7 +3650,7 @@ public readonly datasourceReferences: GeminiDataAnalyticsDataAgentDataAnalyticsA
 
 datasource_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#datasource_references GeminiDataAnalyticsDataAgent#datasource_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#datasource_references GeminiDataAnalyticsDataAgent#datasource_references}
 
 ---
 
@@ -3664,7 +3664,7 @@ public readonly exampleQueries: IResolvable | GeminiDataAnalyticsDataAgentDataAn
 
 example_queries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#example_queries GeminiDataAnalyticsDataAgent#example_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#example_queries GeminiDataAnalyticsDataAgent#example_queries}
 
 ---
 
@@ -3678,7 +3678,7 @@ public readonly glossaryTerms: IResolvable | GeminiDataAnalyticsDataAgentDataAna
 
 glossary_terms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#glossary_terms GeminiDataAnalyticsDataAgent#glossary_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#glossary_terms GeminiDataAnalyticsDataAgent#glossary_terms}
 
 ---
 
@@ -3692,7 +3692,7 @@ public readonly lookerGoldenQueries: IResolvable | GeminiDataAnalyticsDataAgentD
 
 looker_golden_queries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_golden_queries GeminiDataAnalyticsDataAgent#looker_golden_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_golden_queries GeminiDataAnalyticsDataAgent#looker_golden_queries}
 
 ---
 
@@ -3706,7 +3706,7 @@ public readonly options: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingCo
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#options GeminiDataAnalyticsDataAgent#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#options GeminiDataAnalyticsDataAgent#options}
 
 ---
 
@@ -3720,7 +3720,7 @@ public readonly schemaRelationships: IResolvable | GeminiDataAnalyticsDataAgentD
 
 schema_relationships block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#schema_relationships GeminiDataAnalyticsDataAgent#schema_relationships}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#schema_relationships GeminiDataAnalyticsDataAgent#schema_relationships}
 
 ---
 
@@ -3734,7 +3734,7 @@ public readonly systemInstruction: string;
 
 Optional. The basic entry point for data owners creating domain knowledge for the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#system_instruction GeminiDataAnalyticsDataAgent#system_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#system_instruction GeminiDataAnalyticsDataAgent#system_instruction}
 
 ---
 
@@ -3748,7 +3748,7 @@ public readonly userFunctions: GeminiDataAnalyticsDataAgentDataAnalyticsAgentSta
 
 user_functions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#user_functions GeminiDataAnalyticsDataAgent#user_functions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#user_functions GeminiDataAnalyticsDataAgent#user_functions}
 
 ---
 
@@ -3782,7 +3782,7 @@ public readonly bq: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingContext
 
 bq block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#bq GeminiDataAnalyticsDataAgent#bq}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#bq GeminiDataAnalyticsDataAgent#bq}
 
 ---
 
@@ -3796,7 +3796,7 @@ public readonly looker: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingCon
 
 looker block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker GeminiDataAnalyticsDataAgent#looker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker GeminiDataAnalyticsDataAgent#looker}
 
 ---
 
@@ -3810,7 +3810,7 @@ public readonly studio: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingCon
 
 studio block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#studio GeminiDataAnalyticsDataAgent#studio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#studio GeminiDataAnalyticsDataAgent#studio}
 
 ---
 
@@ -3843,7 +3843,7 @@ public readonly propertyGraphReferences: IResolvable | GeminiDataAnalyticsDataAg
 
 property_graph_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#property_graph_references GeminiDataAnalyticsDataAgent#property_graph_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#property_graph_references GeminiDataAnalyticsDataAgent#property_graph_references}
 
 ---
 
@@ -3857,7 +3857,7 @@ public readonly tableReferences: IResolvable | GeminiDataAnalyticsDataAgentDataA
 
 table_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_references GeminiDataAnalyticsDataAgent#table_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_references GeminiDataAnalyticsDataAgent#table_references}
 
 ---
 
@@ -3891,7 +3891,7 @@ public readonly datasetId: string;
 
 Required. The dataset that the property graph belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
 
 ---
 
@@ -3905,7 +3905,7 @@ public readonly projectId: string;
 
 Required. The project that the property graph belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
 
 ---
 
@@ -3919,7 +3919,7 @@ public readonly propertyGraphId: string;
 
 Required. The property graph ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#property_graph_id GeminiDataAnalyticsDataAgent#property_graph_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#property_graph_id GeminiDataAnalyticsDataAgent#property_graph_id}
 
 ---
 
@@ -3954,7 +3954,7 @@ public readonly datasetId: string;
 
 Required. The dataset that the table belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
 
 ---
 
@@ -3968,7 +3968,7 @@ public readonly projectId: string;
 
 Required. The project that the table belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
 
 ---
 
@@ -3982,7 +3982,7 @@ public readonly tableId: string;
 
 Required. The table ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_id GeminiDataAnalyticsDataAgent#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_id GeminiDataAnalyticsDataAgent#table_id}
 
 ---
 
@@ -3996,7 +3996,7 @@ public readonly schema: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingCon
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
 
 ---
 
@@ -4033,7 +4033,7 @@ public readonly description: string;
 
 Optional. A textual description of the table's content and purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -4047,7 +4047,7 @@ public readonly displayName: string;
 
 Optional. Table display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -4061,7 +4061,7 @@ public readonly fields: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyticsA
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
 
 ---
 
@@ -4075,7 +4075,7 @@ public readonly filters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalytics
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
 
 ---
 
@@ -4089,7 +4089,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -4103,7 +4103,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the table, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -4143,7 +4143,7 @@ public readonly category: string;
 
 Optional. Field category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
 
 ---
 
@@ -4157,7 +4157,7 @@ public readonly description: string;
 
 Optional. A brief description of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -4171,7 +4171,7 @@ public readonly mode: string;
 
 Optional. The mode of the field (e.g., NULLABLE, REPEATED).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
 
 ---
 
@@ -4185,7 +4185,7 @@ public readonly name: string;
 
 Optional. The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
 
 ---
 
@@ -4199,7 +4199,7 @@ public readonly subfields: string;
 
 Optional. Recursive property for nested schema structures, encoded as a JSON string representing a list of Field objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
 
 ---
 
@@ -4213,7 +4213,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -4227,7 +4227,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the field, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -4241,7 +4241,7 @@ public readonly type: string;
 
 Optional. The type of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -4255,7 +4255,7 @@ public readonly valueFormat: string;
 
 Optional. Value format of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
 
 ---
 
@@ -4289,7 +4289,7 @@ public readonly field: string;
 
 Optional. The field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
 
 ---
 
@@ -4303,7 +4303,7 @@ public readonly type: string;
 
 Optional. The type of filter present on a datasource, such as ALWAYS_FILTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -4317,7 +4317,7 @@ public readonly value: string;
 
 Optional. The default value used for this filter if the filter is not overridden in a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
 
 ---
 
@@ -4349,7 +4349,7 @@ public readonly exploreReferences: IResolvable | GeminiDataAnalyticsDataAgentDat
 
 explore_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#explore_references GeminiDataAnalyticsDataAgent#explore_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#explore_references GeminiDataAnalyticsDataAgent#explore_references}
 
 ---
 
@@ -4385,7 +4385,7 @@ public readonly explore: string;
 
 Required. Name of the LookML Explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
 
 ---
 
@@ -4399,7 +4399,7 @@ public readonly lookmlModel: string;
 
 Required. Name of the LookML model.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#lookml_model GeminiDataAnalyticsDataAgent#lookml_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#lookml_model GeminiDataAnalyticsDataAgent#lookml_model}
 
 ---
 
@@ -4413,7 +4413,7 @@ public readonly lookerInstanceUri: string;
 
 Optional. The base URL of the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_uri GeminiDataAnalyticsDataAgent#looker_instance_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_uri GeminiDataAnalyticsDataAgent#looker_instance_uri}
 
 ---
 
@@ -4427,7 +4427,7 @@ public readonly privateLookerInstanceInfo: GeminiDataAnalyticsDataAgentDataAnaly
 
 private_looker_instance_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#private_looker_instance_info GeminiDataAnalyticsDataAgent#private_looker_instance_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#private_looker_instance_info GeminiDataAnalyticsDataAgent#private_looker_instance_info}
 
 ---
 
@@ -4441,7 +4441,7 @@ public readonly schema: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingCon
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#schema GeminiDataAnalyticsDataAgent#schema}
 
 ---
 
@@ -4474,7 +4474,7 @@ public readonly lookerInstanceId: string;
 
 Optional. The Looker instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_id GeminiDataAnalyticsDataAgent#looker_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_instance_id GeminiDataAnalyticsDataAgent#looker_instance_id}
 
 ---
 
@@ -4488,7 +4488,7 @@ public readonly serviceDirectoryName: string;
 
 Optional. The service directory name of the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#service_directory_name GeminiDataAnalyticsDataAgent#service_directory_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#service_directory_name GeminiDataAnalyticsDataAgent#service_directory_name}
 
 ---
 
@@ -4525,7 +4525,7 @@ public readonly description: string;
 
 Optional. A textual description of the explore's content and purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -4539,7 +4539,7 @@ public readonly displayName: string;
 
 Optional. Explore display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -4553,7 +4553,7 @@ public readonly fields: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyticsA
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
 
 ---
 
@@ -4567,7 +4567,7 @@ public readonly filters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalytics
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
 
 ---
 
@@ -4581,7 +4581,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to the explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -4595,7 +4595,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the explore, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -4635,7 +4635,7 @@ public readonly category: string;
 
 Optional. Field category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#category GeminiDataAnalyticsDataAgent#category}
 
 ---
 
@@ -4649,7 +4649,7 @@ public readonly description: string;
 
 Optional. A brief description of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -4663,7 +4663,7 @@ public readonly mode: string;
 
 Optional. The mode of the field (e.g., NULLABLE, REPEATED).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#mode GeminiDataAnalyticsDataAgent#mode}
 
 ---
 
@@ -4677,7 +4677,7 @@ public readonly name: string;
 
 Optional. The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
 
 ---
 
@@ -4691,7 +4691,7 @@ public readonly subfields: string;
 
 Optional. Recursive property for nested schema structures, encoded as a JSON string representing a list of Field objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#subfields GeminiDataAnalyticsDataAgent#subfields}
 
 ---
 
@@ -4705,7 +4705,7 @@ public readonly synonyms: string[];
 
 Optional. A list of alternative names or synonyms that can be used to refer to this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#synonyms GeminiDataAnalyticsDataAgent#synonyms}
 
 ---
 
@@ -4719,7 +4719,7 @@ public readonly tags: string[];
 
 Optional. A list of tags or keywords associated with the field, used for categorization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#tags GeminiDataAnalyticsDataAgent#tags}
 
 ---
 
@@ -4733,7 +4733,7 @@ public readonly type: string;
 
 Optional. The type of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -4747,7 +4747,7 @@ public readonly valueFormat: string;
 
 Optional. Value format of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value_format GeminiDataAnalyticsDataAgent#value_format}
 
 ---
 
@@ -4781,7 +4781,7 @@ public readonly field: string;
 
 Optional. The field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
 
 ---
 
@@ -4795,7 +4795,7 @@ public readonly type: string;
 
 Optional. The type of filter present on a datasource, such as ALWAYS_FILTER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#type GeminiDataAnalyticsDataAgent#type}
 
 ---
 
@@ -4809,7 +4809,7 @@ public readonly value: string;
 
 Optional. The default value used for this filter if the filter is not overridden in a query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
 
 ---
 
@@ -4841,7 +4841,7 @@ public readonly studioReferences: IResolvable | GeminiDataAnalyticsDataAgentData
 
 studio_references block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#studio_references GeminiDataAnalyticsDataAgent#studio_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#studio_references GeminiDataAnalyticsDataAgent#studio_references}
 
 ---
 
@@ -4873,7 +4873,7 @@ public readonly datasourceId: string;
 
 Required. The ID of the datasource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#datasource_id GeminiDataAnalyticsDataAgent#datasource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#datasource_id GeminiDataAnalyticsDataAgent#datasource_id}
 
 ---
 
@@ -4907,7 +4907,7 @@ public readonly naturalLanguageQuestion: string;
 
 Optional. A natural language question that a user might ask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#natural_language_question GeminiDataAnalyticsDataAgent#natural_language_question}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#natural_language_question GeminiDataAnalyticsDataAgent#natural_language_question}
 
 ---
 
@@ -4921,7 +4921,7 @@ public readonly parameters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyt
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#parameters GeminiDataAnalyticsDataAgent#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#parameters GeminiDataAnalyticsDataAgent#parameters}
 
 ---
 
@@ -4935,7 +4935,7 @@ public readonly sqlQuery: string;
 
 Optional. The SQL query that should be generated to answer the natural language question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#sql_query GeminiDataAnalyticsDataAgent#sql_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#sql_query GeminiDataAnalyticsDataAgent#sql_query}
 
 ---
 
@@ -4969,7 +4969,7 @@ public readonly dataType: string;
 
 Required. The data type of the parameter, e.g. "STRING", "INT64", "DATE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#data_type GeminiDataAnalyticsDataAgent#data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#data_type GeminiDataAnalyticsDataAgent#data_type}
 
 ---
 
@@ -4983,7 +4983,7 @@ public readonly name: string;
 
 Required. The name of the parameter reference in the SQL query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#name GeminiDataAnalyticsDataAgent#name}
 
 ---
 
@@ -4999,7 +4999,7 @@ Optional.
 
 The description of the parameter that can be used by the LLM to extract the parameter value from the user question.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -5033,7 +5033,7 @@ public readonly description: string;
 
 Required. The description or meaning of the term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -5047,7 +5047,7 @@ public readonly displayName: string;
 
 Required. User friendly display name of the glossary term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#display_name GeminiDataAnalyticsDataAgent#display_name}
 
 ---
 
@@ -5061,7 +5061,7 @@ public readonly labels: string[];
 
 Optional. A list of general purpose labels associated with this term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#labels GeminiDataAnalyticsDataAgent#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#labels GeminiDataAnalyticsDataAgent#labels}
 
 ---
 
@@ -5094,7 +5094,7 @@ public readonly lookerQuery: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagi
 
 looker_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#looker_query GeminiDataAnalyticsDataAgent#looker_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#looker_query GeminiDataAnalyticsDataAgent#looker_query}
 
 ---
 
@@ -5108,7 +5108,7 @@ public readonly naturalLanguageQuestions: string[];
 
 Optional. Natural language questions that a user might ask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#natural_language_questions GeminiDataAnalyticsDataAgent#natural_language_questions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#natural_language_questions GeminiDataAnalyticsDataAgent#natural_language_questions}
 
 ---
 
@@ -5147,7 +5147,7 @@ public readonly explore: string;
 
 Required. The LookML explore used to generate the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#explore GeminiDataAnalyticsDataAgent#explore}
 
 ---
 
@@ -5161,7 +5161,7 @@ public readonly model: string;
 
 Required. The LookML model used to generate the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
 
 ---
 
@@ -5175,7 +5175,7 @@ public readonly clientId: string;
 
 Optional. The short alphanumeric identifier for the query, used for share links and Explore URLs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#client_id GeminiDataAnalyticsDataAgent#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#client_id GeminiDataAnalyticsDataAgent#client_id}
 
 ---
 
@@ -5189,7 +5189,7 @@ public readonly fields: string[];
 
 Optional. The fields to retrieve from the explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#fields GeminiDataAnalyticsDataAgent#fields}
 
 ---
 
@@ -5203,7 +5203,7 @@ public readonly filters: IResolvable | GeminiDataAnalyticsDataAgentDataAnalytics
 
 filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#filters GeminiDataAnalyticsDataAgent#filters}
 
 ---
 
@@ -5217,7 +5217,7 @@ public readonly limit: string;
 
 Optional. Limit in the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#limit GeminiDataAnalyticsDataAgent#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#limit GeminiDataAnalyticsDataAgent#limit}
 
 ---
 
@@ -5231,7 +5231,7 @@ public readonly queryId: string;
 
 Optional. The primary identifier for the query resource in Looker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#query_id GeminiDataAnalyticsDataAgent#query_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#query_id GeminiDataAnalyticsDataAgent#query_id}
 
 ---
 
@@ -5245,7 +5245,7 @@ public readonly sorts: string[];
 
 Optional. The sorts to apply to the explore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#sorts GeminiDataAnalyticsDataAgent#sorts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#sorts GeminiDataAnalyticsDataAgent#sorts}
 
 ---
 
@@ -5278,7 +5278,7 @@ public readonly field: string;
 
 Required. The field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#field GeminiDataAnalyticsDataAgent#field}
 
 ---
 
@@ -5292,7 +5292,7 @@ public readonly value: string;
 
 Optional. The value for the field to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#value GeminiDataAnalyticsDataAgent#value}
 
 ---
 
@@ -5326,7 +5326,7 @@ public readonly analysis: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingC
 
 analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#analysis GeminiDataAnalyticsDataAgent#analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#analysis GeminiDataAnalyticsDataAgent#analysis}
 
 ---
 
@@ -5340,7 +5340,7 @@ public readonly datasource: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagin
 
 datasource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#datasource GeminiDataAnalyticsDataAgent#datasource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#datasource GeminiDataAnalyticsDataAgent#datasource}
 
 ---
 
@@ -5354,7 +5354,7 @@ public readonly model: string;
 
 Optional. The model to use for the agent loop.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#model GeminiDataAnalyticsDataAgent#model}
 
 ---
 
@@ -5386,7 +5386,7 @@ public readonly python: GeminiDataAnalyticsDataAgentDataAnalyticsAgentStagingCon
 
 python block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#python GeminiDataAnalyticsDataAgent#python}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#python GeminiDataAnalyticsDataAgent#python}
 
 ---
 
@@ -5418,7 +5418,7 @@ public readonly enabled: boolean | IResolvable;
 
 Optional. Whether to enable Python analysis. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#enabled GeminiDataAnalyticsDataAgent#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#enabled GeminiDataAnalyticsDataAgent#enabled}
 
 ---
 
@@ -5450,7 +5450,7 @@ public readonly bigQueryMaxBilledBytes: number;
 
 Optional. Limits the bytes billed for each BigQuery query job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#big_query_max_billed_bytes GeminiDataAnalyticsDataAgent#big_query_max_billed_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#big_query_max_billed_bytes GeminiDataAnalyticsDataAgent#big_query_max_billed_bytes}
 
 ---
 
@@ -5485,7 +5485,7 @@ public readonly leftSchemaPaths: GeminiDataAnalyticsDataAgentDataAnalyticsAgentS
 
 left_schema_paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#left_schema_paths GeminiDataAnalyticsDataAgent#left_schema_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#left_schema_paths GeminiDataAnalyticsDataAgent#left_schema_paths}
 
 ---
 
@@ -5499,7 +5499,7 @@ public readonly rightSchemaPaths: GeminiDataAnalyticsDataAgentDataAnalyticsAgent
 
 right_schema_paths block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#right_schema_paths GeminiDataAnalyticsDataAgent#right_schema_paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#right_schema_paths GeminiDataAnalyticsDataAgent#right_schema_paths}
 
 ---
 
@@ -5513,7 +5513,7 @@ public readonly confidenceScore: number;
 
 Optional. A confidence score for the suggested relationship.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#confidence_score GeminiDataAnalyticsDataAgent#confidence_score}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#confidence_score GeminiDataAnalyticsDataAgent#confidence_score}
 
 ---
 
@@ -5527,7 +5527,7 @@ public readonly sources: string[];
 
 Optional. Sources which generated the schema relation edge. Possible values: BIGQUERY_JOB_HISTORY, LLM_SUGGESTED, BIGQUERY_TABLE_CONSTRAINTS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#sources GeminiDataAnalyticsDataAgent#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#sources GeminiDataAnalyticsDataAgent#sources}
 
 ---
 
@@ -5560,7 +5560,7 @@ public readonly paths: string[];
 
 Required. The ordered list of paths within the table schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
 
 ---
 
@@ -5574,7 +5574,7 @@ public readonly tableFqn: string;
 
 Required. The service-qualified full resource name of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
 
 ---
 
@@ -5607,7 +5607,7 @@ public readonly paths: string[];
 
 Required. The ordered list of paths within the table schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#paths GeminiDataAnalyticsDataAgent#paths}
 
 ---
 
@@ -5621,7 +5621,7 @@ public readonly tableFqn: string;
 
 Required. The service-qualified full resource name of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#table_fqn GeminiDataAnalyticsDataAgent#table_fqn}
 
 ---
 
@@ -5653,7 +5653,7 @@ public readonly bqRoutines: IResolvable | GeminiDataAnalyticsDataAgentDataAnalyt
 
 bq_routines block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#bq_routines GeminiDataAnalyticsDataAgent#bq_routines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#bq_routines GeminiDataAnalyticsDataAgent#bq_routines}
 
 ---
 
@@ -5686,7 +5686,7 @@ public readonly description: string;
 
 Optional. User override or addition to description, to tell the agent when to use the UDF.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#description GeminiDataAnalyticsDataAgent#description}
 
 ---
 
@@ -5700,7 +5700,7 @@ public readonly routineReference: GeminiDataAnalyticsDataAgentDataAnalyticsAgent
 
 routine_reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#routine_reference GeminiDataAnalyticsDataAgent#routine_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#routine_reference GeminiDataAnalyticsDataAgent#routine_reference}
 
 ---
 
@@ -5734,7 +5734,7 @@ public readonly datasetId: string;
 
 Optional. The dataset ID of the routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#dataset_id GeminiDataAnalyticsDataAgent#dataset_id}
 
 ---
 
@@ -5748,7 +5748,7 @@ public readonly projectId: string;
 
 Optional. The project ID of the routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#project_id GeminiDataAnalyticsDataAgent#project_id}
 
 ---
 
@@ -5762,7 +5762,7 @@ public readonly routineId: string;
 
 Optional. The routine ID of the routine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#routine_id GeminiDataAnalyticsDataAgent#routine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#routine_id GeminiDataAnalyticsDataAgent#routine_id}
 
 ---
 
@@ -5780,9 +5780,9 @@ const geminiDataAnalyticsDataAgentTimeouts: geminiDataAnalyticsDataAgent.GeminiD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#create GeminiDataAnalyticsDataAgent#create}. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#delete GeminiDataAnalyticsDataAgent#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#update GeminiDataAnalyticsDataAgent#update}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#create GeminiDataAnalyticsDataAgent#create}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#delete GeminiDataAnalyticsDataAgent#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiDataAnalyticsDataAgent.GeminiDataAnalyticsDataAgentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#update GeminiDataAnalyticsDataAgent#update}. |
 
 ---
 
@@ -5794,7 +5794,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#create GeminiDataAnalyticsDataAgent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#create GeminiDataAnalyticsDataAgent#create}.
 
 ---
 
@@ -5806,7 +5806,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#delete GeminiDataAnalyticsDataAgent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#delete GeminiDataAnalyticsDataAgent#delete}.
 
 ---
 
@@ -5818,7 +5818,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/gemini_data_analytics_data_agent#update GeminiDataAnalyticsDataAgent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/gemini_data_analytics_data_agent#update GeminiDataAnalyticsDataAgent#update}.
 
 ---
 

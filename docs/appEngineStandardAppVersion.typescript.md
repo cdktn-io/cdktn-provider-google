@@ -4,7 +4,7 @@
 
 ### AppEngineStandardAppVersion <a name="AppEngineStandardAppVersion" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer"></a>
 
@@ -82,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putLibraries">putLibraries</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putManualScaling">putManualScaling</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putVpcAccess">putVpcAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putVpcAccessConnector">putVpcAccessConnector</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetAppEngineApis">resetAppEngineApis</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetAppEngineBundledServices">resetAppEngineBundledServices</a></code> | *No description.* |
@@ -103,6 +104,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetThreadsafe">resetThreadsafe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetVersionId">resetVersionId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetVpcAccess">resetVpcAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetVpcAccessConnector">resetVpcAccessConnector</a></code> | *No description.* |
 
 ---
@@ -512,6 +514,18 @@ public putTimeouts(value: AppEngineStandardAppVersionTimeouts): void
 
 ---
 
+##### `putVpcAccess` <a name="putVpcAccess" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putVpcAccess"></a>
+
+```typescript
+public putVpcAccess(value: AppEngineStandardAppVersionVpcAccess): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putVpcAccess.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a>
+
+---
+
 ##### `putVpcAccessConnector` <a name="putVpcAccessConnector" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putVpcAccessConnector"></a>
 
 ```typescript
@@ -644,6 +658,12 @@ public resetTimeouts(): void
 public resetVersionId(): void
 ```
 
+##### `resetVpcAccess` <a name="resetVpcAccess" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetVpcAccess"></a>
+
+```typescript
+public resetVpcAccess(): void
+```
+
 ##### `resetVpcAccessConnector` <a name="resetVpcAccessConnector" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.resetVpcAccessConnector"></a>
 
 ```typescript
@@ -753,7 +773,7 @@ The construct id used in the generated config for the AppEngineStandardAppVersio
 
 The id of the existing AppEngineStandardAppVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,6 +812,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.manualScaling">manualScaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference">AppEngineStandardAppVersionManualScalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference">AppEngineStandardAppVersionTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccess">vpcAccess</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference">AppEngineStandardAppVersionVpcAccessOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccessConnector">vpcAccessConnector</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference">AppEngineStandardAppVersionVpcAccessConnectorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApisInput">appEngineApisInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineBundledServicesInput">appEngineBundledServicesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -818,6 +839,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.versionIdInput">versionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccessConnectorInput">vpcAccessConnectorInput</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector">AppEngineStandardAppVersionVpcAccessConnector</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccessInput">vpcAccessInput</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApis">appEngineApis</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineBundledServices">appEngineBundledServices</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deleteServiceOnDestroy">deleteServiceOnDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -1066,6 +1088,16 @@ public readonly timeouts: AppEngineStandardAppVersionTimeoutsOutputReference;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference">AppEngineStandardAppVersionTimeoutsOutputReference</a>
+
+---
+
+##### `vpcAccess`<sup>Required</sup> <a name="vpcAccess" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccess"></a>
+
+```typescript
+public readonly vpcAccess: AppEngineStandardAppVersionVpcAccessOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference">AppEngineStandardAppVersionVpcAccessOutputReference</a>
 
 ---
 
@@ -1329,6 +1361,16 @@ public readonly vpcAccessConnectorInput: AppEngineStandardAppVersionVpcAccessCon
 
 ---
 
+##### `vpcAccessInput`<sup>Optional</sup> <a name="vpcAccessInput" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccessInput"></a>
+
+```typescript
+public readonly vpcAccessInput: AppEngineStandardAppVersionVpcAccess;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a>
+
+---
+
 ##### `appEngineApis`<sup>Required</sup> <a name="appEngineApis" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApis"></a>
 
 ```typescript
@@ -1544,7 +1586,7 @@ Number of concurrent requests an automatic scaling instance can accept before th
 
 Defaults to a runtime-specific value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_concurrent_requests AppEngineStandardAppVersion#max_concurrent_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_concurrent_requests AppEngineStandardAppVersion#max_concurrent_requests}
 
 ---
 
@@ -1558,7 +1600,7 @@ public readonly maxIdleInstances: number;
 
 Maximum number of idle instances that should be maintained for this version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_idle_instances AppEngineStandardAppVersion#max_idle_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_idle_instances AppEngineStandardAppVersion#max_idle_instances}
 
 ---
 
@@ -1574,7 +1616,7 @@ Maximum amount of time that a request should wait in the pending queue before st
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_pending_latency AppEngineStandardAppVersion#max_pending_latency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_pending_latency AppEngineStandardAppVersion#max_pending_latency}
 
 ---
 
@@ -1590,7 +1632,7 @@ Minimum number of idle instances that should be maintained for this version.
 
 Only applicable for the default version of a service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#min_idle_instances AppEngineStandardAppVersion#min_idle_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#min_idle_instances AppEngineStandardAppVersion#min_idle_instances}
 
 ---
 
@@ -1606,7 +1648,7 @@ Minimum amount of time a request should wait in the pending queue before startin
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#min_pending_latency AppEngineStandardAppVersion#min_pending_latency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#min_pending_latency AppEngineStandardAppVersion#min_pending_latency}
 
 ---
 
@@ -1620,7 +1662,7 @@ public readonly standardSchedulerSettings: AppEngineStandardAppVersionAutomaticS
 
 standard_scheduler_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#standard_scheduler_settings AppEngineStandardAppVersion#standard_scheduler_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#standard_scheduler_settings AppEngineStandardAppVersion#standard_scheduler_settings}
 
 ---
 
@@ -1657,7 +1699,7 @@ Maximum number of instances to run for this version. Set to zero to disable maxI
 
 **Note:** Starting from March 2025, App Engine sets the maxInstances default for standard environment deployments to 20. This change doesn't impact existing apps. To override the default, specify a new value between 0 and 2147483647, and deploy a new version or redeploy over an existing version. To disable the maxInstances default configuration setting, specify the maximum permitted value 2147483647.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
 
 ---
 
@@ -1671,7 +1713,7 @@ public readonly minInstances: number;
 
 Minimum number of instances to run for this version. Set to zero to disable minInstances configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#min_instances AppEngineStandardAppVersion#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#min_instances AppEngineStandardAppVersion#min_instances}
 
 ---
 
@@ -1687,7 +1729,7 @@ Target CPU utilization ratio to maintain when scaling.
 
 Should be a value in the range [0.50, 0.95], zero, or a negative value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#target_cpu_utilization AppEngineStandardAppVersion#target_cpu_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#target_cpu_utilization AppEngineStandardAppVersion#target_cpu_utilization}
 
 ---
 
@@ -1703,7 +1745,7 @@ Target throughput utilization ratio to maintain when scaling.
 
 Should be a value in the range [0.50, 0.95], zero, or a negative value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#target_throughput_utilization AppEngineStandardAppVersion#target_throughput_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#target_throughput_utilization AppEngineStandardAppVersion#target_throughput_utilization}
 
 ---
 
@@ -1736,7 +1778,7 @@ public readonly maxInstances: number;
 
 Maximum number of instances to create for this version. Must be in the range [1.0, 200.0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
 
 ---
 
@@ -1752,7 +1794,7 @@ Duration of time after the last request that an instance must wait before the in
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". Defaults to 900s.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#idle_timeout AppEngineStandardAppVersion#idle_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#idle_timeout AppEngineStandardAppVersion#idle_timeout}
 
 ---
 
@@ -1789,18 +1831,19 @@ const appEngineStandardAppVersionConfig: appEngineStandardAppVersion.AppEngineSt
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.envVariables">envVariables</a></code> | <code>{[ key: string ]: string}</code> | Environment variables available to the application. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.handlers">handlers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>[]</code> | handlers block. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.inboundServices">inboundServices</a></code> | <code>string[]</code> | A list of the types of messages that this application is able to receive. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.instanceClass">instanceClass</a></code> | <code>string</code> | Instance class that is used to run this version. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.libraries">libraries</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>[]</code> | libraries block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.manualScaling">manualScaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling">AppEngineStandardAppVersionManualScaling</a></code> | manual_scaling block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.noopOnDestroy">noopOnDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to 'true', the application version will not be deleted. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.runtimeApiVersion">runtimeApiVersion</a></code> | <code>string</code> | The version of the API in the given runtime environment. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | The identity that the deployed version will run as. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.threadsafe">threadsafe</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether multiple requests can be dispatched to this version at once. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.versionId">versionId</a></code> | <code>string</code> | Relative name of the version within the service. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.vpcAccess">vpcAccess</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a></code> | vpc_access block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.vpcAccessConnector">vpcAccessConnector</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector">AppEngineStandardAppVersionVpcAccessConnector</a></code> | vpc_access_connector block. |
 
 ---
@@ -1885,7 +1928,7 @@ public readonly deployment: AppEngineStandardAppVersionDeployment;
 
 deployment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#deployment AppEngineStandardAppVersion#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#deployment AppEngineStandardAppVersion#deployment}
 
 ---
 
@@ -1899,7 +1942,7 @@ public readonly entrypoint: AppEngineStandardAppVersionEntrypoint;
 
 entrypoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#entrypoint AppEngineStandardAppVersion#entrypoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#entrypoint AppEngineStandardAppVersion#entrypoint}
 
 ---
 
@@ -1913,7 +1956,7 @@ public readonly runtime: string;
 
 Desired runtime. Example python27.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#runtime AppEngineStandardAppVersion#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#runtime AppEngineStandardAppVersion#runtime}
 
 ---
 
@@ -1927,7 +1970,7 @@ public readonly service: string;
 
 AppEngine service resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#service AppEngineStandardAppVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#service AppEngineStandardAppVersion#service}
 
 ---
 
@@ -1941,7 +1984,7 @@ public readonly appEngineApis: boolean | IResolvable;
 
 Allows App Engine second generation runtimes to access the legacy bundled services. Cannot specify both 'app_engine_apis' and 'app_engine_bundled_services' together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#app_engine_apis AppEngineStandardAppVersion#app_engine_apis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#app_engine_apis AppEngineStandardAppVersion#app_engine_apis}
 
 ---
 
@@ -1957,7 +2000,7 @@ A list of legacy bundled services to enable for this version on an App Engine se
 
 Cannot specify both 'app_engine_apis' and 'app_engine_bundled_services' together. Possible values: ["BUNDLED_SERVICE_TYPE_APP_IDENTITY_SERVICE", "BUNDLED_SERVICE_TYPE_BLOBSTORE", "BUNDLED_SERVICE_TYPE_CAPABILITY_SERVICE", "BUNDLED_SERVICE_TYPE_DATASTORE_V3", "BUNDLED_SERVICE_TYPE_IMAGES", "BUNDLED_SERVICE_TYPE_MAIL", "BUNDLED_SERVICE_TYPE_MEMCACHE", "BUNDLED_SERVICE_TYPE_MODULES", "BUNDLED_SERVICE_TYPE_SEARCH", "BUNDLED_SERVICE_TYPE_TASKQUEUES", "BUNDLED_SERVICE_TYPE_URLFETCH", "BUNDLED_SERVICE_TYPE_USERS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#app_engine_bundled_services AppEngineStandardAppVersion#app_engine_bundled_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#app_engine_bundled_services AppEngineStandardAppVersion#app_engine_bundled_services}
 
 ---
 
@@ -1971,7 +2014,7 @@ public readonly automaticScaling: AppEngineStandardAppVersionAutomaticScaling;
 
 automatic_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#automatic_scaling AppEngineStandardAppVersion#automatic_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#automatic_scaling AppEngineStandardAppVersion#automatic_scaling}
 
 ---
 
@@ -1985,7 +2028,7 @@ public readonly basicScaling: AppEngineStandardAppVersionBasicScaling;
 
 basic_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#basic_scaling AppEngineStandardAppVersion#basic_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#basic_scaling AppEngineStandardAppVersion#basic_scaling}
 
 ---
 
@@ -1999,7 +2042,7 @@ public readonly deleteServiceOnDestroy: boolean | IResolvable;
 
 If set to 'true', the service will be deleted if it is the last version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
 
 ---
 
@@ -2021,7 +2064,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#deletion_policy AppEngineStandardAppVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#deletion_policy AppEngineStandardAppVersion#deletion_policy}
 
 ---
 
@@ -2035,7 +2078,7 @@ public readonly envVariables: {[ key: string ]: string};
 
 Environment variables available to the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#env_variables AppEngineStandardAppVersion#env_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#env_variables AppEngineStandardAppVersion#env_variables}
 
 ---
 
@@ -2049,7 +2092,7 @@ public readonly handlers: IResolvable | AppEngineStandardAppVersionHandlers[];
 
 handlers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#handlers AppEngineStandardAppVersion#handlers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#handlers AppEngineStandardAppVersion#handlers}
 
 ---
 
@@ -2061,7 +2104,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2080,7 +2123,7 @@ A list of the types of messages that this application is able to receive.
 
 Possible values: ["INBOUND_SERVICE_MAIL", "INBOUND_SERVICE_MAIL_BOUNCE", "INBOUND_SERVICE_XMPP_ERROR", "INBOUND_SERVICE_XMPP_MESSAGE", "INBOUND_SERVICE_XMPP_SUBSCRIBE", "INBOUND_SERVICE_XMPP_PRESENCE", "INBOUND_SERVICE_CHANNEL_PRESENCE", "INBOUND_SERVICE_WARMUP"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#inbound_services AppEngineStandardAppVersion#inbound_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#inbound_services AppEngineStandardAppVersion#inbound_services}
 
 ---
 
@@ -2099,7 +2142,7 @@ AutomaticScaling: F1, F2, F4, F4_1G
 BasicScaling or ManualScaling: B1, B2, B4, B4_1G, B8
 Defaults to F1 for AutomaticScaling and B2 for ManualScaling and BasicScaling. If no scaling is specified, AutomaticScaling is chosen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#instance_class AppEngineStandardAppVersion#instance_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#instance_class AppEngineStandardAppVersion#instance_class}
 
 ---
 
@@ -2113,7 +2156,7 @@ public readonly libraries: IResolvable | AppEngineStandardAppVersionLibraries[];
 
 libraries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#libraries AppEngineStandardAppVersion#libraries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#libraries AppEngineStandardAppVersion#libraries}
 
 ---
 
@@ -2127,7 +2170,7 @@ public readonly manualScaling: AppEngineStandardAppVersionManualScaling;
 
 manual_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#manual_scaling AppEngineStandardAppVersion#manual_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#manual_scaling AppEngineStandardAppVersion#manual_scaling}
 
 ---
 
@@ -2141,7 +2184,7 @@ public readonly noopOnDestroy: boolean | IResolvable;
 
 If set to 'true', the application version will not be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
 
 ---
 
@@ -2153,7 +2196,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}.
 
 ---
 
@@ -2170,7 +2213,7 @@ The version of the API in the given runtime environment.
 Please see the app.yaml reference for valid values at 'https://cloud.google.com/appengine/docs/standard/<language>/config/appref'\
 Substitute '<language>' with 'python', 'java', 'php', 'ruby', 'go' or 'nodejs'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#runtime_api_version AppEngineStandardAppVersion#runtime_api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#runtime_api_version AppEngineStandardAppVersion#runtime_api_version}
 
 ---
 
@@ -2186,7 +2229,7 @@ The identity that the deployed version will run as.
 
 Admin API will use the App Engine Appspot service account as default if this field is neither provided in app.yaml file nor through CLI flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#service_account AppEngineStandardAppVersion#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#service_account AppEngineStandardAppVersion#service_account}
 
 ---
 
@@ -2200,7 +2243,7 @@ public readonly threadsafe: boolean | IResolvable;
 
 Whether multiple requests can be dispatched to this version at once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#threadsafe AppEngineStandardAppVersion#threadsafe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#threadsafe AppEngineStandardAppVersion#threadsafe}
 
 ---
 
@@ -2214,7 +2257,7 @@ public readonly timeouts: AppEngineStandardAppVersionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#timeouts AppEngineStandardAppVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#timeouts AppEngineStandardAppVersion#timeouts}
 
 ---
 
@@ -2230,7 +2273,21 @@ Relative name of the version within the service.
 
 For example, 'v1'. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#version_id AppEngineStandardAppVersion#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#version_id AppEngineStandardAppVersion#version_id}
+
+---
+
+##### `vpcAccess`<sup>Optional</sup> <a name="vpcAccess" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.vpcAccess"></a>
+
+```typescript
+public readonly vpcAccess: AppEngineStandardAppVersionVpcAccess;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a>
+
+vpc_access block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#vpc_access AppEngineStandardAppVersion#vpc_access}
 
 ---
 
@@ -2244,7 +2301,7 @@ public readonly vpcAccessConnector: AppEngineStandardAppVersionVpcAccessConnecto
 
 vpc_access_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#vpc_access_connector AppEngineStandardAppVersion#vpc_access_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#vpc_access_connector AppEngineStandardAppVersion#vpc_access_connector}
 
 ---
 
@@ -2277,7 +2334,7 @@ public readonly files: IResolvable | AppEngineStandardAppVersionDeploymentFiles[
 
 files block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#files AppEngineStandardAppVersion#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#files AppEngineStandardAppVersion#files}
 
 ---
 
@@ -2291,7 +2348,7 @@ public readonly zip: AppEngineStandardAppVersionDeploymentZip;
 
 zip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#zip AppEngineStandardAppVersion#zip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#zip AppEngineStandardAppVersion#zip}
 
 ---
 
@@ -2309,7 +2366,7 @@ const appEngineStandardAppVersionDeploymentFiles: appEngineStandardAppVersion.Ap
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles.property.sourceUrl">sourceUrl</a></code> | <code>string</code> | Source URL. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles.property.sha1Sum">sha1Sum</a></code> | <code>string</code> | SHA1 checksum of the file. |
 
@@ -2323,7 +2380,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}.
 
 ---
 
@@ -2337,7 +2394,7 @@ public readonly sourceUrl: string;
 
 Source URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
 
 ---
 
@@ -2351,7 +2408,7 @@ public readonly sha1Sum: string;
 
 SHA1 checksum of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#sha1_sum AppEngineStandardAppVersion#sha1_sum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#sha1_sum AppEngineStandardAppVersion#sha1_sum}
 
 ---
 
@@ -2384,7 +2441,7 @@ public readonly sourceUrl: string;
 
 Source URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
 
 ---
 
@@ -2398,7 +2455,7 @@ public readonly filesCount: number;
 
 files count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#files_count AppEngineStandardAppVersion#files_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#files_count AppEngineStandardAppVersion#files_count}
 
 ---
 
@@ -2430,7 +2487,7 @@ public readonly shell: string;
 
 The format should be a shell command that can be fed to bash -c.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#shell AppEngineStandardAppVersion#shell}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#shell AppEngineStandardAppVersion#shell}
 
 ---
 
@@ -2468,7 +2525,7 @@ public readonly authFailAction: string;
 
 Actions to take when the user is not logged in. Possible values: ["AUTH_FAIL_ACTION_REDIRECT", "AUTH_FAIL_ACTION_UNAUTHORIZED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#auth_fail_action AppEngineStandardAppVersion#auth_fail_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#auth_fail_action AppEngineStandardAppVersion#auth_fail_action}
 
 ---
 
@@ -2482,7 +2539,7 @@ public readonly login: string;
 
 Methods to restrict access to a URL based on login status. Possible values: ["LOGIN_OPTIONAL", "LOGIN_ADMIN", "LOGIN_REQUIRED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#login AppEngineStandardAppVersion#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#login AppEngineStandardAppVersion#login}
 
 ---
 
@@ -2496,7 +2553,7 @@ public readonly redirectHttpResponseCode: string;
 
 30x code to use when performing redirects for the secure field. Possible values: ["REDIRECT_HTTP_RESPONSE_CODE_301", "REDIRECT_HTTP_RESPONSE_CODE_302", "REDIRECT_HTTP_RESPONSE_CODE_303", "REDIRECT_HTTP_RESPONSE_CODE_307"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#redirect_http_response_code AppEngineStandardAppVersion#redirect_http_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#redirect_http_response_code AppEngineStandardAppVersion#redirect_http_response_code}
 
 ---
 
@@ -2510,7 +2567,7 @@ public readonly script: AppEngineStandardAppVersionHandlersScript;
 
 script block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#script AppEngineStandardAppVersion#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#script AppEngineStandardAppVersion#script}
 
 ---
 
@@ -2524,7 +2581,7 @@ public readonly securityLevel: string;
 
 Security (HTTPS) enforcement for this URL. Possible values: ["SECURE_DEFAULT", "SECURE_NEVER", "SECURE_OPTIONAL", "SECURE_ALWAYS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#security_level AppEngineStandardAppVersion#security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#security_level AppEngineStandardAppVersion#security_level}
 
 ---
 
@@ -2538,7 +2595,7 @@ public readonly staticFiles: AppEngineStandardAppVersionHandlersStaticFiles;
 
 static_files block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#static_files AppEngineStandardAppVersion#static_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#static_files AppEngineStandardAppVersion#static_files}
 
 ---
 
@@ -2555,7 +2612,7 @@ URL prefix.
 Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings.
 All URLs that begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#url_regex AppEngineStandardAppVersion#url_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#url_regex AppEngineStandardAppVersion#url_regex}
 
 ---
 
@@ -2587,7 +2644,7 @@ public readonly scriptPath: string;
 
 Path to the script from the application root directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#script_path AppEngineStandardAppVersion#script_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#script_path AppEngineStandardAppVersion#script_path}
 
 ---
 
@@ -2629,7 +2686,7 @@ By default, files declared in static file handlers are uploaded as
 static data and are only served to end users; they cannot be read by the application. If enabled, uploads are charged
 against both your code and static data storage resource quotas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#application_readable AppEngineStandardAppVersion#application_readable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#application_readable AppEngineStandardAppVersion#application_readable}
 
 ---
 
@@ -2645,7 +2702,7 @@ Time a static file served by this handler should be cached by web proxies and br
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#expiration AppEngineStandardAppVersion#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#expiration AppEngineStandardAppVersion#expiration}
 
 ---
 
@@ -2659,7 +2716,7 @@ public readonly httpHeaders: {[ key: string ]: string};
 
 HTTP headers to use for all responses from these URLs. An object containing a list of "key:value" value pairs.".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#http_headers AppEngineStandardAppVersion#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#http_headers AppEngineStandardAppVersion#http_headers}
 
 ---
 
@@ -2675,7 +2732,7 @@ MIME type used to serve all files served by this handler.
 
 Defaults to file-specific MIME types, which are derived from each file's filename extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#mime_type AppEngineStandardAppVersion#mime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#mime_type AppEngineStandardAppVersion#mime_type}
 
 ---
 
@@ -2691,7 +2748,7 @@ Path to the static files matched by the URL pattern, from the application root d
 
 The path can refer to text matched in groupings in the URL pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#path AppEngineStandardAppVersion#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#path AppEngineStandardAppVersion#path}
 
 ---
 
@@ -2705,7 +2762,7 @@ public readonly requireMatchingFile: boolean | IResolvable;
 
 Whether this handler should match the request if the file referenced by the handler does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#require_matching_file AppEngineStandardAppVersion#require_matching_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#require_matching_file AppEngineStandardAppVersion#require_matching_file}
 
 ---
 
@@ -2719,7 +2776,7 @@ public readonly uploadPathRegex: string;
 
 Regular expression that matches the file paths for all files that should be referenced by this handler.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#upload_path_regex AppEngineStandardAppVersion#upload_path_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#upload_path_regex AppEngineStandardAppVersion#upload_path_regex}
 
 ---
 
@@ -2752,7 +2809,7 @@ public readonly name: string;
 
 Name of the library. Example "django".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
 
 ---
 
@@ -2766,7 +2823,7 @@ public readonly version: string;
 
 Version of the library to select, or "latest".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#version AppEngineStandardAppVersion#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#version AppEngineStandardAppVersion#version}
 
 ---
 
@@ -2801,7 +2858,7 @@ Number of instances to assign to the service at the start.
 **Note:** When managing the number of instances at runtime through the App Engine Admin API or the (now deprecated) Python 2
 Modules API set_num_instances() you must use 'lifecycle.ignore_changes = ["manual_scaling"[0].instances]' to prevent drift detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#instances AppEngineStandardAppVersion#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#instances AppEngineStandardAppVersion#instances}
 
 ---
 
@@ -2819,9 +2876,9 @@ const appEngineStandardAppVersionTimeouts: appEngineStandardAppVersion.AppEngine
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#create AppEngineStandardAppVersion#create}. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#delete AppEngineStandardAppVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#update AppEngineStandardAppVersion#update}. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#create AppEngineStandardAppVersion#create}. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#delete AppEngineStandardAppVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#update AppEngineStandardAppVersion#update}. |
 
 ---
 
@@ -2833,7 +2890,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#create AppEngineStandardAppVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#create AppEngineStandardAppVersion#create}.
 
 ---
 
@@ -2845,7 +2902,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#delete AppEngineStandardAppVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#delete AppEngineStandardAppVersion#delete}.
 
 ---
 
@@ -2857,7 +2914,56 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#update AppEngineStandardAppVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#update AppEngineStandardAppVersion#update}.
+
+---
+
+### AppEngineStandardAppVersionVpcAccess <a name="AppEngineStandardAppVersionVpcAccess" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess.Initializer"></a>
+
+```typescript
+import { appEngineStandardAppVersion } from '@cdktn/provider-google'
+
+const appEngineStandardAppVersionVpcAccess: appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess.property.networkInterfaces">networkInterfaces</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]</code> | network_interfaces block. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess.property.vpcEgress">vpcEgress</a></code> | <code>string</code> | The traffic egress setting for the VPC network interface, controlling what traffic is diverted through it. |
+
+---
+
+##### `networkInterfaces`<sup>Optional</sup> <a name="networkInterfaces" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess.property.networkInterfaces"></a>
+
+```typescript
+public readonly networkInterfaces: IResolvable | AppEngineStandardAppVersionVpcAccessNetworkInterfaces[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]
+
+network_interfaces block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#network_interfaces AppEngineStandardAppVersion#network_interfaces}
+
+---
+
+##### `vpcEgress`<sup>Optional</sup> <a name="vpcEgress" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess.property.vpcEgress"></a>
+
+```typescript
+public readonly vpcEgress: string;
+```
+
+- *Type:* string
+
+The traffic egress setting for the VPC network interface, controlling what traffic is diverted through it.
+
+Possible values: ["ALL_TRAFFIC", "PRIVATE_IP_RANGES"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#vpc_egress AppEngineStandardAppVersion#vpc_egress}
 
 ---
 
@@ -2890,7 +2996,7 @@ public readonly name: string;
 
 Full Serverless VPC Access Connector name e.g. /projects/my-project/locations/us-central1/connectors/c1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
 
 ---
 
@@ -2904,7 +3010,73 @@ public readonly egressSetting: string;
 
 The egress setting for the connector, controlling what traffic is diverted through it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#egress_setting AppEngineStandardAppVersion#egress_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#egress_setting AppEngineStandardAppVersion#egress_setting}
+
+---
+
+### AppEngineStandardAppVersionVpcAccessNetworkInterfaces <a name="AppEngineStandardAppVersionVpcAccessNetworkInterfaces" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.Initializer"></a>
+
+```typescript
+import { appEngineStandardAppVersion } from '@cdktn/provider-google'
+
+const appEngineStandardAppVersionVpcAccessNetworkInterfaces: appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.property.network">network</a></code> | <code>string</code> | The VPC network that the App Engine resource will be able to send traffic to. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.property.subnetwork">subnetwork</a></code> | <code>string</code> | The VPC subnetwork that the App Engine resource will get IPs from. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.property.tags">tags</a></code> | <code>string[]</code> | Network tags applied to this App Engine version. |
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+The VPC network that the App Engine resource will be able to send traffic to.
+
+At least one of network or subnetwork must be specified. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be looked up from the subnetwork. Could be either a short name or a full path (e.g. 'default' or 'projects/my-project/global/networks/default').
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#network AppEngineStandardAppVersion#network}
+
+---
+
+##### `subnetwork`<sup>Optional</sup> <a name="subnetwork" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.property.subnetwork"></a>
+
+```typescript
+public readonly subnetwork: string;
+```
+
+- *Type:* string
+
+The VPC subnetwork that the App Engine resource will get IPs from.
+
+At least one of network or subnetwork must be specified. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the subnetwork with the same name with the network will be used. Could be either a short name or a full path (e.g. 'default' or 'projects/my-project/regions/us-central1/subnetworks/default').
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#subnetwork AppEngineStandardAppVersion#subnetwork}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
+
+Network tags applied to this App Engine version.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#tags AppEngineStandardAppVersion#tags}
 
 ---
 
@@ -8182,6 +8354,840 @@ public readonly internalValue: AppEngineStandardAppVersionVpcAccessConnector;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector">AppEngineStandardAppVersionVpcAccessConnector</a>
+
+---
+
+
+### AppEngineStandardAppVersionVpcAccessNetworkInterfacesList <a name="AppEngineStandardAppVersionVpcAccessNetworkInterfacesList" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer"></a>
+
+```typescript
+import { appEngineStandardAppVersion } from '@cdktn/provider-google'
+
+new appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.get"></a>
+
+```typescript
+public get(index: number): AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AppEngineStandardAppVersionVpcAccessNetworkInterfaces[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]
+
+---
+
+
+### AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference <a name="AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer"></a>
+
+```typescript
+import { appEngineStandardAppVersion } from '@cdktn/provider-google'
+
+new appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resetNetwork">resetNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resetSubnetwork">resetSubnetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resetTags">resetTags</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetNetwork` <a name="resetNetwork" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resetNetwork"></a>
+
+```typescript
+public resetNetwork(): void
+```
+
+##### `resetSubnetwork` <a name="resetSubnetwork" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resetSubnetwork"></a>
+
+```typescript
+public resetSubnetwork(): void
+```
+
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.networkInput"></a>
+
+```typescript
+public readonly networkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subnetworkInput`<sup>Optional</sup> <a name="subnetworkInput" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.subnetworkInput"></a>
+
+```typescript
+public readonly subnetworkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subnetwork`<sup>Required</sup> <a name="subnetwork" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.subnetwork"></a>
+
+```typescript
+public readonly subnetwork: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | AppEngineStandardAppVersionVpcAccessNetworkInterfaces;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>
+
+---
+
+
+### AppEngineStandardAppVersionVpcAccessOutputReference <a name="AppEngineStandardAppVersionVpcAccessOutputReference" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.Initializer"></a>
+
+```typescript
+import { appEngineStandardAppVersion } from '@cdktn/provider-google'
+
+new appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.putNetworkInterfaces">putNetworkInterfaces</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resetNetworkInterfaces">resetNetworkInterfaces</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resetVpcEgress">resetVpcEgress</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putNetworkInterfaces` <a name="putNetworkInterfaces" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.putNetworkInterfaces"></a>
+
+```typescript
+public putNetworkInterfaces(value: IResolvable | AppEngineStandardAppVersionVpcAccessNetworkInterfaces[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.putNetworkInterfaces.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]
+
+---
+
+##### `resetNetworkInterfaces` <a name="resetNetworkInterfaces" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resetNetworkInterfaces"></a>
+
+```typescript
+public resetNetworkInterfaces(): void
+```
+
+##### `resetVpcEgress` <a name="resetVpcEgress" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.resetVpcEgress"></a>
+
+```typescript
+public resetVpcEgress(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.networkInterfaces">networkInterfaces</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList">AppEngineStandardAppVersionVpcAccessNetworkInterfacesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.networkInterfacesInput">networkInterfacesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.vpcEgressInput">vpcEgressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.vpcEgress">vpcEgress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `networkInterfaces`<sup>Required</sup> <a name="networkInterfaces" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.networkInterfaces"></a>
+
+```typescript
+public readonly networkInterfaces: AppEngineStandardAppVersionVpcAccessNetworkInterfacesList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfacesList">AppEngineStandardAppVersionVpcAccessNetworkInterfacesList</a>
+
+---
+
+##### `networkInterfacesInput`<sup>Optional</sup> <a name="networkInterfacesInput" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.networkInterfacesInput"></a>
+
+```typescript
+public readonly networkInterfacesInput: IResolvable | AppEngineStandardAppVersionVpcAccessNetworkInterfaces[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessNetworkInterfaces">AppEngineStandardAppVersionVpcAccessNetworkInterfaces</a>[]
+
+---
+
+##### `vpcEgressInput`<sup>Optional</sup> <a name="vpcEgressInput" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.vpcEgressInput"></a>
+
+```typescript
+public readonly vpcEgressInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `vpcEgress`<sup>Required</sup> <a name="vpcEgress" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.vpcEgress"></a>
+
+```typescript
+public readonly vpcEgress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: AppEngineStandardAppVersionVpcAccess;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccess">AppEngineStandardAppVersionVpcAccess</a>
 
 ---
 

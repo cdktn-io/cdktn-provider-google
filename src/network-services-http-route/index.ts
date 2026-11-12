@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,20 +21,20 @@ export interface NetworkServicesHttpRouteConfig extends cdktn.TerraformMetaArgum
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#deletion_policy NetworkServicesHttpRoute#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#deletion_policy NetworkServicesHttpRoute#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#description NetworkServicesHttpRoute#description}
   */
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this HttpRoute is attached to, as one of the routing rules to route the requests served by the gateway.
   * Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#gateways NetworkServicesHttpRoute#gateways}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#gateways NetworkServicesHttpRoute#gateways}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -42,11 +42,11 @@ export interface NetworkServicesHttpRouteConfig extends cdktn.TerraformMetaArgum
   /**
   * Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#hostnames NetworkServicesHttpRoute#hostnames}
   */
   readonly hostnames: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#id NetworkServicesHttpRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,7 +58,7 @@ export interface NetworkServicesHttpRouteConfig extends cdktn.TerraformMetaArgum
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#labels NetworkServicesHttpRoute#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#labels NetworkServicesHttpRoute#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -66,7 +66,7 @@ export interface NetworkServicesHttpRouteConfig extends cdktn.TerraformMetaArgum
   * Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>.
   * The attached Mesh should be of a type SIDECAR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#meshes NetworkServicesHttpRoute#meshes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#meshes NetworkServicesHttpRoute#meshes}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -74,23 +74,23 @@ export interface NetworkServicesHttpRouteConfig extends cdktn.TerraformMetaArgum
   /**
   * Name of the HttpRoute resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#name NetworkServicesHttpRoute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#name NetworkServicesHttpRoute#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#project NetworkServicesHttpRoute#project}
   */
   readonly project?: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#rules NetworkServicesHttpRoute#rules}
   */
   readonly rules: NetworkServicesHttpRouteRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#timeouts NetworkServicesHttpRoute#timeouts}
   */
   readonly timeouts?: NetworkServicesHttpRouteTimeouts;
 }
@@ -98,49 +98,49 @@ export interface NetworkServicesHttpRouteRulesActionCorsPolicy {
   /**
   * In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#allow_credentials NetworkServicesHttpRoute#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for Access-Control-Allow-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#allow_headers NetworkServicesHttpRoute#allow_headers}
   */
   readonly allowHeaders?: string[];
   /**
   * Specifies the content for Access-Control-Allow-Methods header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#allow_methods NetworkServicesHttpRoute#allow_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#allow_methods NetworkServicesHttpRoute#allow_methods}
   */
   readonly allowMethods?: string[];
   /**
   * Specifies the regular expression patterns that match allowed origins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#allow_origin_regexes NetworkServicesHttpRoute#allow_origin_regexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#allow_origin_regexes NetworkServicesHttpRoute#allow_origin_regexes}
   */
   readonly allowOriginRegexes?: string[];
   /**
   * Specifies the list of origins that will be allowed to do CORS requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#allow_origins NetworkServicesHttpRoute#allow_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#allow_origins NetworkServicesHttpRoute#allow_origins}
   */
   readonly allowOrigins?: string[];
   /**
   * If true, the CORS policy is disabled. The default value is false, which indicates that the CORS policy is in effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#disabled NetworkServicesHttpRoute#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the content for Access-Control-Expose-Headers header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#expose_headers NetworkServicesHttpRoute#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
   * Specifies how long result of a preflight request can be cached in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#max_age NetworkServicesHttpRoute#max_age}
   */
   readonly maxAge?: string;
 }
@@ -429,7 +429,7 @@ export interface NetworkServicesHttpRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
   */
   readonly serviceName?: string;
   /**
@@ -438,7 +438,7 @@ export interface NetworkServicesHttpRouteRulesActionDestinations {
   * If weights are specified for any one service name, they need to be specified for all of them.
   * If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
   */
   readonly weight?: number;
 }
@@ -581,17 +581,170 @@ export class NetworkServicesHttpRouteRulesActionDestinationsList extends cdktn.C
     return new NetworkServicesHttpRouteRulesActionDestinationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface NetworkServicesHttpRouteRulesActionDirectResponse {
+  /**
+  * Response body as base64 encoded bytes. Maximum body size is 4096B.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#bytes_body NetworkServicesHttpRoute#bytes_body}
+  */
+  readonly bytesBody?: string;
+  /**
+  * Status to return as part of HTTP Response. Must be a positive integer.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#status NetworkServicesHttpRoute#status}
+  */
+  readonly status: number;
+  /**
+  * Response body as a string. Maximum body length is 1024 characters.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#string_body NetworkServicesHttpRoute#string_body}
+  */
+  readonly stringBody?: string;
+}
+
+export function networkServicesHttpRouteRulesActionDirectResponseToTerraform(struct?: NetworkServicesHttpRouteRulesActionDirectResponseOutputReference | NetworkServicesHttpRouteRulesActionDirectResponse): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    bytes_body: cdktn.stringToTerraform(struct!.bytesBody),
+    status: cdktn.numberToTerraform(struct!.status),
+    string_body: cdktn.stringToTerraform(struct!.stringBody),
+  }
+}
+
+
+export function networkServicesHttpRouteRulesActionDirectResponseToHclTerraform(struct?: NetworkServicesHttpRouteRulesActionDirectResponseOutputReference | NetworkServicesHttpRouteRulesActionDirectResponse): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    bytes_body: {
+      value: cdktn.stringToHclTerraform(struct!.bytesBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status: {
+      value: cdktn.numberToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    string_body: {
+      value: cdktn.stringToHclTerraform(struct!.stringBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkServicesHttpRouteRulesActionDirectResponseOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkServicesHttpRouteRulesActionDirectResponse | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bytesBody !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bytesBody = this._bytesBody;
+    }
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    if (this._stringBody !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringBody = this._stringBody;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkServicesHttpRouteRulesActionDirectResponse | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bytesBody = undefined;
+      this._status = undefined;
+      this._stringBody = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bytesBody = value.bytesBody;
+      this._status = value.status;
+      this._stringBody = value.stringBody;
+    }
+  }
+
+  // bytes_body - computed: false, optional: true, required: false
+  private _bytesBody?: string; 
+  public get bytesBody() {
+    return this.getStringAttribute('bytes_body');
+  }
+  public set bytesBody(value: string) {
+    this._bytesBody = value;
+  }
+  public resetBytesBody() {
+    this._bytesBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bytesBodyInput() {
+    return this._bytesBody;
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: number; 
+  public get status() {
+    return this.getNumberAttribute('status');
+  }
+  public set status(value: number) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+
+  // string_body - computed: false, optional: true, required: false
+  private _stringBody?: string; 
+  public get stringBody() {
+    return this.getStringAttribute('string_body');
+  }
+  public set stringBody(value: string) {
+    this._stringBody = value;
+  }
+  public resetStringBody() {
+    this._stringBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringBodyInput() {
+    return this._stringBody;
+  }
+}
 export interface NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort {
   /**
   * The HTTP status code used to abort the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#http_status NetworkServicesHttpRoute#http_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#http_status NetworkServicesHttpRoute#http_status}
   */
   readonly httpStatus?: number;
   /**
   * The percentage of traffic which will be aborted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
   */
   readonly percentage?: number;
 }
@@ -706,13 +859,13 @@ export interface NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay {
   /**
   * Specify a fixed delay before forwarding the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#fixed_delay NetworkServicesHttpRoute#fixed_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#fixed_delay NetworkServicesHttpRoute#fixed_delay}
   */
   readonly fixedDelay?: string;
   /**
   * The percentage of traffic on which delay will be injected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#percentage NetworkServicesHttpRoute#percentage}
   */
   readonly percentage?: number;
 }
@@ -827,13 +980,13 @@ export interface NetworkServicesHttpRouteRulesActionFaultInjectionPolicy {
   /**
   * abort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#abort NetworkServicesHttpRoute#abort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#abort NetworkServicesHttpRoute#abort}
   */
   readonly abort?: NetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort;
   /**
   * delay block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#delay NetworkServicesHttpRoute#delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#delay NetworkServicesHttpRoute#delay}
   */
   readonly delay?: NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay;
 }
@@ -948,43 +1101,43 @@ export interface NetworkServicesHttpRouteRulesActionRedirect {
   /**
   * The host that will be used in the redirect response instead of the one that was supplied in the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#host_redirect NetworkServicesHttpRoute#host_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#host_redirect NetworkServicesHttpRoute#host_redirect}
   */
   readonly hostRedirect?: string;
   /**
   * If set to true, the URL scheme in the redirected request is set to https.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#https_redirect NetworkServicesHttpRoute#https_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#https_redirect NetworkServicesHttpRoute#https_redirect}
   */
   readonly httpsRedirect?: boolean | cdktn.IResolvable;
   /**
   * The path that will be used in the redirect response instead of the one that was supplied in the request. pathRedirect can not be supplied together with prefixRedirect. Supply one alone or neither. If neither is supplied, the path of the original request will be used for the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#path_redirect NetworkServicesHttpRoute#path_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#path_redirect NetworkServicesHttpRoute#path_redirect}
   */
   readonly pathRedirect?: string;
   /**
   * The port that will be used in the redirected request instead of the one that was supplied in the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#port_redirect NetworkServicesHttpRoute#port_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#port_redirect NetworkServicesHttpRoute#port_redirect}
   */
   readonly portRedirect?: number;
   /**
   * Indicates that during redirection, the matched prefix (or path) should be swapped with this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#prefix_rewrite NetworkServicesHttpRoute#prefix_rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#prefix_rewrite NetworkServicesHttpRoute#prefix_rewrite}
   */
   readonly prefixRewrite?: string;
   /**
   * The HTTP Status code to use for the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#response_code NetworkServicesHttpRoute#response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#response_code NetworkServicesHttpRoute#response_code}
   */
   readonly responseCode?: string;
   /**
   * If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#strip_query NetworkServicesHttpRoute#strip_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#strip_query NetworkServicesHttpRoute#strip_query}
   */
   readonly stripQuery?: boolean | cdktn.IResolvable;
 }
@@ -1244,19 +1397,19 @@ export interface NetworkServicesHttpRouteRulesActionRequestHeaderModifier {
   /**
   * Add the headers with given map where key is the name of the header, value is the value of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
   */
   readonly add?: { [key: string]: string };
   /**
   * Remove headers (matching by header names) specified in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
   */
   readonly remove?: string[];
   /**
   * Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
   */
   readonly set?: { [key: string]: string };
 }
@@ -1400,7 +1553,7 @@ export interface NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinati
   /**
   * The URL of a BackendService to route traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
   */
   readonly serviceName?: string;
   /**
@@ -1409,7 +1562,7 @@ export interface NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinati
   * If weights are specified for any one service name, they need to be specified for all of them.
   * If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
   */
   readonly weight?: number;
 }
@@ -1522,9 +1675,15 @@ export class NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOu
 }
 export interface NetworkServicesHttpRouteRulesActionRequestMirrorPolicy {
   /**
+  * The percentage of requests to get mirrored to the desired destination.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#mirror_percent NetworkServicesHttpRoute#mirror_percent}
+  */
+  readonly mirrorPercent?: number;
+  /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#destination NetworkServicesHttpRoute#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#destination NetworkServicesHttpRoute#destination}
   */
   readonly destination?: NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination;
 }
@@ -1535,6 +1694,7 @@ export function networkServicesHttpRouteRulesActionRequestMirrorPolicyToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    mirror_percent: cdktn.numberToTerraform(struct!.mirrorPercent),
     destination: networkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationToTerraform(struct!.destination),
   }
 }
@@ -1546,6 +1706,12 @@ export function networkServicesHttpRouteRulesActionRequestMirrorPolicyToHclTerra
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    mirror_percent: {
+      value: cdktn.numberToHclTerraform(struct!.mirrorPercent),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
     destination: {
       value: networkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationToHclTerraform(struct!.destination),
       isBlock: true,
@@ -1572,6 +1738,10 @@ export class NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReferen
   public get internalValue(): NetworkServicesHttpRouteRulesActionRequestMirrorPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._mirrorPercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mirrorPercent = this._mirrorPercent;
+    }
     if (this._destination?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.destination = this._destination?.internalValue;
@@ -1582,12 +1752,30 @@ export class NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReferen
   public set internalValue(value: NetworkServicesHttpRouteRulesActionRequestMirrorPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._mirrorPercent = undefined;
       this._destination.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._mirrorPercent = value.mirrorPercent;
       this._destination.internalValue = value.destination;
     }
+  }
+
+  // mirror_percent - computed: false, optional: true, required: false
+  private _mirrorPercent?: number; 
+  public get mirrorPercent() {
+    return this.getNumberAttribute('mirror_percent');
+  }
+  public set mirrorPercent(value: number) {
+    this._mirrorPercent = value;
+  }
+  public resetMirrorPercent() {
+    this._mirrorPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mirrorPercentInput() {
+    return this._mirrorPercent;
   }
 
   // destination - computed: false, optional: true, required: false
@@ -1610,19 +1798,19 @@ export interface NetworkServicesHttpRouteRulesActionResponseHeaderModifier {
   /**
   * Add the headers with given map where key is the name of the header, value is the value of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#add NetworkServicesHttpRoute#add}
   */
   readonly add?: { [key: string]: string };
   /**
   * Remove headers (matching by header names) specified in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#remove NetworkServicesHttpRoute#remove}
   */
   readonly remove?: string[];
   /**
   * Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#set NetworkServicesHttpRoute#set}
   */
   readonly set?: { [key: string]: string };
 }
@@ -1766,19 +1954,19 @@ export interface NetworkServicesHttpRouteRulesActionRetryPolicy {
   /**
   * Specifies the allowed number of retries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#num_retries NetworkServicesHttpRoute#num_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#num_retries NetworkServicesHttpRoute#num_retries}
   */
   readonly numRetries?: number;
   /**
   * Specifies a non-zero timeout per retry attempt. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#per_try_timeout NetworkServicesHttpRoute#per_try_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#per_try_timeout NetworkServicesHttpRoute#per_try_timeout}
   */
   readonly perTryTimeout?: string;
   /**
   * Specifies one or more conditions when this retry policy applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#retry_conditions NetworkServicesHttpRoute#retry_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#retry_conditions NetworkServicesHttpRoute#retry_conditions}
   */
   readonly retryConditions?: string[];
 }
@@ -1922,13 +2110,13 @@ export interface NetworkServicesHttpRouteRulesActionUrlRewrite {
   /**
   * Prior to forwarding the request to the selected destination, the requests host header is replaced by this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#host_rewrite NetworkServicesHttpRoute#host_rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#host_rewrite NetworkServicesHttpRoute#host_rewrite}
   */
   readonly hostRewrite?: string;
   /**
   * Prior to forwarding the request to the selected destination, the matching portion of the requests path is replaced by this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#path_prefix_rewrite NetworkServicesHttpRoute#path_prefix_rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#path_prefix_rewrite NetworkServicesHttpRoute#path_prefix_rewrite}
   */
   readonly pathPrefixRewrite?: string;
 }
@@ -2041,63 +2229,77 @@ export class NetworkServicesHttpRouteRulesActionUrlRewriteOutputReference extend
 }
 export interface NetworkServicesHttpRouteRulesAction {
   /**
+  * Specifies the idle timeout for the selected route. The idle timeout is defined as the period in which there are no bytes sent or received on either the upstream or downstream connection. If not set, the default idle timeout is 1 hour. If set to 0s, the timeout will be disabled.
+  * 
+  * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#idle_timeout NetworkServicesHttpRoute#idle_timeout}
+  */
+  readonly idleTimeout?: string;
+  /**
   * Specifies the timeout for selected route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#timeout NetworkServicesHttpRoute#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#timeout NetworkServicesHttpRoute#timeout}
   */
   readonly timeout?: string;
   /**
   * cors_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#cors_policy NetworkServicesHttpRoute#cors_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#cors_policy NetworkServicesHttpRoute#cors_policy}
   */
   readonly corsPolicy?: NetworkServicesHttpRouteRulesActionCorsPolicy;
   /**
   * destinations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#destinations NetworkServicesHttpRoute#destinations}
   */
   readonly destinations?: NetworkServicesHttpRouteRulesActionDestinations[] | cdktn.IResolvable;
   /**
+  * direct_response block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#direct_response NetworkServicesHttpRoute#direct_response}
+  */
+  readonly directResponse?: NetworkServicesHttpRouteRulesActionDirectResponse;
+  /**
   * fault_injection_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#fault_injection_policy NetworkServicesHttpRoute#fault_injection_policy}
   */
   readonly faultInjectionPolicy?: NetworkServicesHttpRouteRulesActionFaultInjectionPolicy;
   /**
   * redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#redirect NetworkServicesHttpRoute#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#redirect NetworkServicesHttpRoute#redirect}
   */
   readonly redirect?: NetworkServicesHttpRouteRulesActionRedirect;
   /**
   * request_header_modifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#request_header_modifier NetworkServicesHttpRoute#request_header_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#request_header_modifier NetworkServicesHttpRoute#request_header_modifier}
   */
   readonly requestHeaderModifier?: NetworkServicesHttpRouteRulesActionRequestHeaderModifier;
   /**
   * request_mirror_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#request_mirror_policy NetworkServicesHttpRoute#request_mirror_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#request_mirror_policy NetworkServicesHttpRoute#request_mirror_policy}
   */
   readonly requestMirrorPolicy?: NetworkServicesHttpRouteRulesActionRequestMirrorPolicy;
   /**
   * response_header_modifier block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#response_header_modifier NetworkServicesHttpRoute#response_header_modifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#response_header_modifier NetworkServicesHttpRoute#response_header_modifier}
   */
   readonly responseHeaderModifier?: NetworkServicesHttpRouteRulesActionResponseHeaderModifier;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#retry_policy NetworkServicesHttpRoute#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#retry_policy NetworkServicesHttpRoute#retry_policy}
   */
   readonly retryPolicy?: NetworkServicesHttpRouteRulesActionRetryPolicy;
   /**
   * url_rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#url_rewrite NetworkServicesHttpRoute#url_rewrite}
   */
   readonly urlRewrite?: NetworkServicesHttpRouteRulesActionUrlRewrite;
 }
@@ -2108,9 +2310,11 @@ export function networkServicesHttpRouteRulesActionToTerraform(struct?: NetworkS
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    idle_timeout: cdktn.stringToTerraform(struct!.idleTimeout),
     timeout: cdktn.stringToTerraform(struct!.timeout),
     cors_policy: networkServicesHttpRouteRulesActionCorsPolicyToTerraform(struct!.corsPolicy),
     destinations: cdktn.listMapper(networkServicesHttpRouteRulesActionDestinationsToTerraform, true)(struct!.destinations),
+    direct_response: networkServicesHttpRouteRulesActionDirectResponseToTerraform(struct!.directResponse),
     fault_injection_policy: networkServicesHttpRouteRulesActionFaultInjectionPolicyToTerraform(struct!.faultInjectionPolicy),
     redirect: networkServicesHttpRouteRulesActionRedirectToTerraform(struct!.redirect),
     request_header_modifier: networkServicesHttpRouteRulesActionRequestHeaderModifierToTerraform(struct!.requestHeaderModifier),
@@ -2128,6 +2332,12 @@ export function networkServicesHttpRouteRulesActionToHclTerraform(struct?: Netwo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    idle_timeout: {
+      value: cdktn.stringToHclTerraform(struct!.idleTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     timeout: {
       value: cdktn.stringToHclTerraform(struct!.timeout),
       isBlock: false,
@@ -2145,6 +2355,12 @@ export function networkServicesHttpRouteRulesActionToHclTerraform(struct?: Netwo
       isBlock: true,
       type: "list",
       storageClassType: "NetworkServicesHttpRouteRulesActionDestinationsList",
+    },
+    direct_response: {
+      value: networkServicesHttpRouteRulesActionDirectResponseToHclTerraform(struct!.directResponse),
+      isBlock: true,
+      type: "list",
+      storageClassType: "NetworkServicesHttpRouteRulesActionDirectResponseList",
     },
     fault_injection_policy: {
       value: networkServicesHttpRouteRulesActionFaultInjectionPolicyToHclTerraform(struct!.faultInjectionPolicy),
@@ -2208,6 +2424,10 @@ export class NetworkServicesHttpRouteRulesActionOutputReference extends cdktn.Co
   public get internalValue(): NetworkServicesHttpRouteRulesAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._idleTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.idleTimeout = this._idleTimeout;
+    }
     if (this._timeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeout = this._timeout;
@@ -2219,6 +2439,10 @@ export class NetworkServicesHttpRouteRulesActionOutputReference extends cdktn.Co
     if (this._destinations?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.destinations = this._destinations?.internalValue;
+    }
+    if (this._directResponse?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.directResponse = this._directResponse?.internalValue;
     }
     if (this._faultInjectionPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2254,9 +2478,11 @@ export class NetworkServicesHttpRouteRulesActionOutputReference extends cdktn.Co
   public set internalValue(value: NetworkServicesHttpRouteRulesAction | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._idleTimeout = undefined;
       this._timeout = undefined;
       this._corsPolicy.internalValue = undefined;
       this._destinations.internalValue = undefined;
+      this._directResponse.internalValue = undefined;
       this._faultInjectionPolicy.internalValue = undefined;
       this._redirect.internalValue = undefined;
       this._requestHeaderModifier.internalValue = undefined;
@@ -2267,9 +2493,11 @@ export class NetworkServicesHttpRouteRulesActionOutputReference extends cdktn.Co
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._idleTimeout = value.idleTimeout;
       this._timeout = value.timeout;
       this._corsPolicy.internalValue = value.corsPolicy;
       this._destinations.internalValue = value.destinations;
+      this._directResponse.internalValue = value.directResponse;
       this._faultInjectionPolicy.internalValue = value.faultInjectionPolicy;
       this._redirect.internalValue = value.redirect;
       this._requestHeaderModifier.internalValue = value.requestHeaderModifier;
@@ -2278,6 +2506,22 @@ export class NetworkServicesHttpRouteRulesActionOutputReference extends cdktn.Co
       this._retryPolicy.internalValue = value.retryPolicy;
       this._urlRewrite.internalValue = value.urlRewrite;
     }
+  }
+
+  // idle_timeout - computed: false, optional: true, required: false
+  private _idleTimeout?: string; 
+  public get idleTimeout() {
+    return this.getStringAttribute('idle_timeout');
+  }
+  public set idleTimeout(value: string) {
+    this._idleTimeout = value;
+  }
+  public resetIdleTimeout() {
+    this._idleTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idleTimeoutInput() {
+    return this._idleTimeout;
   }
 
   // timeout - computed: false, optional: true, required: false
@@ -2326,6 +2570,22 @@ export class NetworkServicesHttpRouteRulesActionOutputReference extends cdktn.Co
   // Temporarily expose input value. Use with caution.
   public get destinationsInput() {
     return this._destinations.internalValue;
+  }
+
+  // direct_response - computed: false, optional: true, required: false
+  private _directResponse = new NetworkServicesHttpRouteRulesActionDirectResponseOutputReference(this, "direct_response");
+  public get directResponse() {
+    return this._directResponse;
+  }
+  public putDirectResponse(value: NetworkServicesHttpRouteRulesActionDirectResponse) {
+    this._directResponse.internalValue = value;
+  }
+  public resetDirectResponse() {
+    this._directResponse.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directResponseInput() {
+    return this._directResponse.internalValue;
   }
 
   // fault_injection_policy - computed: false, optional: true, required: false
@@ -2444,13 +2704,13 @@ export interface NetworkServicesHttpRouteRulesMatchesHeadersRangeMatch {
   /**
   * End of the range (exclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#end NetworkServicesHttpRoute#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#end NetworkServicesHttpRoute#end}
   */
   readonly end: number;
   /**
   * Start of the range (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#start NetworkServicesHttpRoute#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#start NetworkServicesHttpRoute#start}
   */
   readonly start: number;
 }
@@ -2559,49 +2819,49 @@ export interface NetworkServicesHttpRouteRulesMatchesHeaders {
   /**
   * The value of the header should match exactly the content of exactMatch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
   */
   readonly exactMatch?: string;
   /**
   * The name of the HTTP header to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#header NetworkServicesHttpRoute#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#header NetworkServicesHttpRoute#header}
   */
   readonly header?: string;
   /**
   * If specified, the match result will be inverted before checking. Default value is set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#invert_match NetworkServicesHttpRoute#invert_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#invert_match NetworkServicesHttpRoute#invert_match}
   */
   readonly invertMatch?: boolean | cdktn.IResolvable;
   /**
   * The value of the header must start with the contents of prefixMatch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
   */
   readonly prefixMatch?: string;
   /**
   * A header with headerName must exist. The match takes place whether or not the header has a value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
   */
   readonly presentMatch?: boolean | cdktn.IResolvable;
   /**
   * The value of the header must match the regular expression specified in regexMatch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
   */
   readonly regexMatch?: string;
   /**
   * The value of the header must end with the contents of suffixMatch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#suffix_match NetworkServicesHttpRoute#suffix_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#suffix_match NetworkServicesHttpRoute#suffix_match}
   */
   readonly suffixMatch?: string;
   /**
   * range_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#range_match NetworkServicesHttpRoute#range_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#range_match NetworkServicesHttpRoute#range_match}
   */
   readonly rangeMatch?: NetworkServicesHttpRouteRulesMatchesHeadersRangeMatch;
 }
@@ -2922,25 +3182,25 @@ export interface NetworkServicesHttpRouteRulesMatchesQueryParameters {
   /**
   * The value of the query parameter must exactly match the contents of exactMatch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#exact_match NetworkServicesHttpRoute#exact_match}
   */
   readonly exactMatch?: string;
   /**
   * Specifies that the QueryParameterMatcher matches if request contains query parameter, irrespective of whether the parameter has a value or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#present_match NetworkServicesHttpRoute#present_match}
   */
   readonly presentMatch?: boolean | cdktn.IResolvable;
   /**
   * The name of the query parameter to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#query_parameter NetworkServicesHttpRoute#query_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#query_parameter NetworkServicesHttpRoute#query_parameter}
   */
   readonly queryParameter?: string;
   /**
   * The value of the query parameter must match the regular expression specified by regexMatch.For regular expression grammar, please see https://github.com/google/re2/wiki/Syntax
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
   */
   readonly regexMatch?: string;
 }
@@ -3145,37 +3405,37 @@ export interface NetworkServicesHttpRouteRulesMatches {
   /**
   * The HTTP request path value should exactly match this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#full_path_match NetworkServicesHttpRoute#full_path_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#full_path_match NetworkServicesHttpRoute#full_path_match}
   */
   readonly fullPathMatch?: string;
   /**
   * Specifies if prefixMatch and fullPathMatch matches are case sensitive. The default value is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#ignore_case NetworkServicesHttpRoute#ignore_case}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#ignore_case NetworkServicesHttpRoute#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktn.IResolvable;
   /**
   * The HTTP request path value must begin with specified prefixMatch. prefixMatch must begin with a /.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#prefix_match NetworkServicesHttpRoute#prefix_match}
   */
   readonly prefixMatch?: string;
   /**
   * The HTTP request path value must satisfy the regular expression specified by regexMatch after removing any query parameters and anchor supplied with the original URL. For regular expression grammar, please see https://github.com/google/re2/wiki/Syntax
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#regex_match NetworkServicesHttpRoute#regex_match}
   */
   readonly regexMatch?: string;
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#headers NetworkServicesHttpRoute#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#headers NetworkServicesHttpRoute#headers}
   */
   readonly headers?: NetworkServicesHttpRouteRulesMatchesHeaders[] | cdktn.IResolvable;
   /**
   * query_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#query_parameters NetworkServicesHttpRoute#query_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#query_parameters NetworkServicesHttpRoute#query_parameters}
   */
   readonly queryParameters?: NetworkServicesHttpRouteRulesMatchesQueryParameters[] | cdktn.IResolvable;
 }
@@ -3438,13 +3698,13 @@ export interface NetworkServicesHttpRouteRules {
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#action NetworkServicesHttpRoute#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#action NetworkServicesHttpRoute#action}
   */
   readonly action?: NetworkServicesHttpRouteRulesAction;
   /**
   * matches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#matches NetworkServicesHttpRoute#matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#matches NetworkServicesHttpRoute#matches}
   */
   readonly matches?: NetworkServicesHttpRouteRulesMatches[] | cdktn.IResolvable;
 }
@@ -3589,15 +3849,15 @@ export class NetworkServicesHttpRouteRulesList extends cdktn.ComplexList {
 }
 export interface NetworkServicesHttpRouteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#create NetworkServicesHttpRoute#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#delete NetworkServicesHttpRoute#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#update NetworkServicesHttpRoute#update}
   */
   readonly update?: string;
 }
@@ -3749,7 +4009,7 @@ export class NetworkServicesHttpRouteTimeoutsOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route google_network_services_http_route}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route google_network_services_http_route}
 */
 export class NetworkServicesHttpRoute extends cdktn.TerraformResource {
 
@@ -3765,7 +4025,7 @@ export class NetworkServicesHttpRoute extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesHttpRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesHttpRoute to import
-  * @param importFromId The id of the existing NetworkServicesHttpRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesHttpRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesHttpRoute to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3777,7 +4037,7 @@ export class NetworkServicesHttpRoute extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_services_http_route google_network_services_http_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_services_http_route google_network_services_http_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3788,7 +4048,7 @@ export class NetworkServicesHttpRoute extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_http_route',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### VectorSearchIndex <a name="VectorSearchIndex" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index google_vector_search_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index google_vector_search_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer"></a>
 
@@ -63,9 +63,9 @@ vectorSearchIndex.VectorSearchIndex(
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User-specified display name of the index. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.distanceMetric">distance_metric</a></code> | <code>str</code> | Distance metric used for indexing. If not specified, will default to 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"]. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.filterFields">filter_fields</a></code> | <code>typing.List[str]</code> | The fields to push into the index to enable fast ANN inline filtering. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#project VectorSearchIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#project VectorSearchIndex#project}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.skipWait">skip_wait</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to skip waiting for the index to be created. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.storeFields">store_fields</a></code> | <code>typing.List[str]</code> | The fields to push into the index to enable inline data retrieval. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndex.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts">VectorSearchIndexTimeouts</a></code> | timeouts block. |
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the parent Collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The collection schema field to index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
 
 ---
 
@@ -163,7 +163,7 @@ The id must be 1-63 characters long, and comply with
 Specifically, it must be 1-63 characters long and match the regular
 expression '[a-z](?:%5B-a-z0-9%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dedicated_infrastructure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
 
 ---
 
@@ -200,7 +200,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dense_scann block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-specified description of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-specified display name of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Distance metric used for indexing. If not specified, will default to 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The fields to push into the index to enable fast ANN inline filtering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
 
 ---
 
@@ -258,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -274,7 +274,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
 
 ---
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#project VectorSearchIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#project VectorSearchIndex#project}.
 
 ---
 
@@ -302,7 +302,7 @@ resources or workloads depend on the index being ready to serve queries
 immediately after 'terraform apply', or if you want Terraform to fail
 synchronously when an asynchronous index build fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#skip_wait VectorSearchIndex#skip_wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#skip_wait VectorSearchIndex#skip_wait}
 
 ---
 
@@ -312,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The fields to push into the index to enable inline data retrieval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
 
 ---
 
@@ -322,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
 
 ---
 
@@ -736,7 +736,7 @@ def put_dedicated_infrastructure(
 
 autoscaling_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
 
 ---
 
@@ -746,7 +746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Mode of the dedicated infrastructure. Defaults to 'PERFORMANCE_OPTIMIZED'. Possible values: ["MODE_UNSPECIFIED", "STORAGE_OPTIMIZED", "PERFORMANCE_OPTIMIZED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
 
 ---
 
@@ -764,7 +764,7 @@ def put_dense_scann(
 
 Feature norm type for the ScaNN index. Possible values: ["FEATURE_NORM_TYPE_UNSPECIFIED", "NONE", "UNIT_L2_NORM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
 
 ---
 
@@ -782,7 +782,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
 
 ---
 
@@ -790,7 +790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}.
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#update VectorSearchIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#update VectorSearchIndex#update}.
 
 ---
 
@@ -994,7 +994,7 @@ The construct id used in the generated config for the VectorSearchIndex to impor
 
 The id of the existing VectorSearchIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1675,9 +1675,9 @@ vectorSearchIndex.VectorSearchIndexConfig(
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.displayName">display_name</a></code> | <code>str</code> | User-specified display name of the index. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.distanceMetric">distance_metric</a></code> | <code>str</code> | Distance metric used for indexing. If not specified, will default to 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"]. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.filterFields">filter_fields</a></code> | <code>typing.List[str]</code> | The fields to push into the index to enable fast ANN inline filtering. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#id VectorSearchIndex#id}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#project VectorSearchIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#project VectorSearchIndex#project}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.skipWait">skip_wait</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to skip waiting for the index to be created. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.storeFields">store_fields</a></code> | <code>typing.List[str]</code> | The fields to push into the index to enable inline data retrieval. |
 | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts">VectorSearchIndexTimeouts</a></code> | timeouts block. |
@@ -1764,7 +1764,7 @@ collection_id: str
 
 The ID of the parent Collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#collection_id VectorSearchIndex#collection_id}
 
 ---
 
@@ -1778,7 +1778,7 @@ index_field: str
 
 The collection schema field to index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#index_field VectorSearchIndex#index_field}
 
 ---
 
@@ -1797,7 +1797,7 @@ The id must be 1-63 characters long, and comply with
 Specifically, it must be 1-63 characters long and match the regular
 expression '[a-z](?:%5B-a-z0-9%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#index_id VectorSearchIndex#index_id}
 
 ---
 
@@ -1811,7 +1811,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#location VectorSearchIndex#location}
 
 ---
 
@@ -1825,7 +1825,7 @@ dedicated_infrastructure: VectorSearchIndexDedicatedInfrastructure
 
 dedicated_infrastructure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#dedicated_infrastructure VectorSearchIndex#dedicated_infrastructure}
 
 ---
 
@@ -1846,7 +1846,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#deletion_policy VectorSearchIndex#deletion_policy}
 
 ---
 
@@ -1860,7 +1860,7 @@ dense_scann: VectorSearchIndexDenseScann
 
 dense_scann block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#dense_scann VectorSearchIndex#dense_scann}
 
 ---
 
@@ -1874,7 +1874,7 @@ description: str
 
 User-specified description of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#description VectorSearchIndex#description}
 
 ---
 
@@ -1888,7 +1888,7 @@ display_name: str
 
 User-specified display name of the index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#display_name VectorSearchIndex#display_name}
 
 ---
 
@@ -1902,7 +1902,7 @@ distance_metric: str
 
 Distance metric used for indexing. If not specified, will default to 'DOT_PRODUCT'. Possible values: ["DOT_PRODUCT", "COSINE_DISTANCE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#distance_metric VectorSearchIndex#distance_metric}
 
 ---
 
@@ -1916,7 +1916,7 @@ filter_fields: typing.List[str]
 
 The fields to push into the index to enable fast ANN inline filtering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#filter_fields VectorSearchIndex#filter_fields}
 
 ---
 
@@ -1928,7 +1928,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#id VectorSearchIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1948,7 +1948,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#labels VectorSearchIndex#labels}
 
 ---
 
@@ -1960,7 +1960,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#project VectorSearchIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#project VectorSearchIndex#project}.
 
 ---
 
@@ -1984,7 +1984,7 @@ resources or workloads depend on the index being ready to serve queries
 immediately after 'terraform apply', or if you want Terraform to fail
 synchronously when an asynchronous index build fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#skip_wait VectorSearchIndex#skip_wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#skip_wait VectorSearchIndex#skip_wait}
 
 ---
 
@@ -1998,7 +1998,7 @@ store_fields: typing.List[str]
 
 The fields to push into the index to enable inline data retrieval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#store_fields VectorSearchIndex#store_fields}
 
 ---
 
@@ -2012,7 +2012,7 @@ timeouts: VectorSearchIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#timeouts VectorSearchIndex#timeouts}
 
 ---
 
@@ -2048,7 +2048,7 @@ autoscaling_spec: VectorSearchIndexDedicatedInfrastructureAutoscalingSpec
 
 autoscaling_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#autoscaling_spec VectorSearchIndex#autoscaling_spec}
 
 ---
 
@@ -2062,7 +2062,7 @@ mode: str
 
 Mode of the dedicated infrastructure. Defaults to 'PERFORMANCE_OPTIMIZED'. Possible values: ["MODE_UNSPECIFIED", "STORAGE_OPTIMIZED", "PERFORMANCE_OPTIMIZED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#mode VectorSearchIndex#mode}
 
 ---
 
@@ -2102,7 +2102,7 @@ Must be >= 'min_replica_count'
 and <= '1000'. If not set or set to '0', defaults to the greater
 of 'min_replica_count' and '2' (or '5' for the v1beta version).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
 
 ---
 
@@ -2119,7 +2119,7 @@ The minimum number of replicas.
 If not set or set to '0', defaults
 to '2'. Must be >= '1' and <= '1000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
 
 ---
 
@@ -2153,7 +2153,7 @@ feature_norm_type: str
 
 Feature norm type for the ScaNN index. Possible values: ["FEATURE_NORM_TYPE_UNSPECIFIED", "NONE", "UNIT_L2_NORM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#feature_norm_type VectorSearchIndex#feature_norm_type}
 
 ---
 
@@ -2175,9 +2175,9 @@ vectorSearchIndex.VectorSearchIndexTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#update VectorSearchIndex#update}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#create VectorSearchIndex#create}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchIndex.VectorSearchIndexTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#update VectorSearchIndex#update}. |
 
 ---
 
@@ -2189,7 +2189,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#create VectorSearchIndex#create}.
 
 ---
 
@@ -2201,7 +2201,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#delete VectorSearchIndex#delete}.
 
 ---
 
@@ -2213,7 +2213,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#update VectorSearchIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#update VectorSearchIndex#update}.
 
 ---
 
@@ -2801,7 +2801,7 @@ Must be >= 'min_replica_count'
 and <= '1000'. If not set or set to '0', defaults to the greater
 of 'min_replica_count' and '2' (or '5' for the v1beta version).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#max_replica_count VectorSearchIndex#max_replica_count}
 
 ---
 
@@ -2814,7 +2814,7 @@ The minimum number of replicas.
 If not set or set to '0', defaults
 to '2'. Must be >= '1' and <= '1000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vector_search_index#min_replica_count VectorSearchIndex#min_replica_count}
 
 ---
 

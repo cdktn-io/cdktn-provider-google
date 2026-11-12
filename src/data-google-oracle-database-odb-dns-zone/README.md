@@ -1,0 +1,3 @@
+# `data_google_oracle_database_odb_dns_zone`
+
+Refer to the Terraform Registry for docs: [`data_google_oracle_database_odb_dns_zone`](https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/oracle_database_odb_dns_zone).

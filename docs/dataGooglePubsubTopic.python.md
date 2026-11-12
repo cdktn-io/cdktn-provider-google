@@ -4,7 +4,7 @@
 
 ### DataGooglePubsubTopic <a name="DataGooglePubsubTopic" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic google_pubsub_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer"></a>
 
@@ -39,8 +39,8 @@ dataGooglePubsubTopic.DataGooglePubsubTopic(
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopic.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
 
 ---
 
@@ -526,7 +526,7 @@ The construct id used in the generated config for the DataGooglePubsubTopic to i
 
 The id of the existing DataGooglePubsubTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,8 +919,8 @@ dataGooglePubsubTopic.DataGooglePubsubTopicConfig(
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.name">name</a></code> | <code>str</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}. |
 
 ---
 
@@ -1004,7 +1004,7 @@ name: str
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
 
 ---
 
@@ -1016,7 +1016,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1031,7 +1031,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}.
 
 ---
 
@@ -1186,6 +1186,17 @@ dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInference()
 from cdktn_provider_google import data_google_pubsub_topic
 
 dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference()
+```
+
+
+### DataGooglePubsubTopicMessageTransformsCompression <a name="DataGooglePubsubTopicMessageTransformsCompression" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompression"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompression.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_pubsub_topic
+
+dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompression()
 ```
 
 
@@ -7542,6 +7553,481 @@ internal_value: DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInf
 ---
 
 
+### DataGooglePubsubTopicMessageTransformsCompressionList <a name="DataGooglePubsubTopicMessageTransformsCompressionList" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_pubsub_topic
+
+dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGooglePubsubTopicMessageTransformsCompressionOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGooglePubsubTopicMessageTransformsCompressionOutputReference <a name="DataGooglePubsubTopicMessageTransformsCompressionOutputReference" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_pubsub_topic
+
+dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.compressionAlgorithm">compression_algorithm</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.compressionMode">compression_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompression">DataGooglePubsubTopicMessageTransformsCompression</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `compression_algorithm`<sup>Required</sup> <a name="compression_algorithm" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.compressionAlgorithm"></a>
+
+```python
+compression_algorithm: str
+```
+
+- *Type:* str
+
+---
+
+##### `compression_mode`<sup>Required</sup> <a name="compression_mode" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.compressionMode"></a>
+
+```python
+compression_mode: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGooglePubsubTopicMessageTransformsCompression
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompression">DataGooglePubsubTopicMessageTransformsCompression</a>
+
+---
+
+
 ### DataGooglePubsubTopicMessageTransformsJavascriptUdfList <a name="DataGooglePubsubTopicMessageTransformsJavascriptUdfList" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsJavascriptUdfList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsJavascriptUdfList.Initializer"></a>
@@ -8432,6 +8918,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.aiInference">ai_inference</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceList">DataGooglePubsubTopicMessageTransformsAiInferenceList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.compression">compression</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList">DataGooglePubsubTopicMessageTransformsCompressionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.javascriptUdf">javascript_udf</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsJavascriptUdfList">DataGooglePubsubTopicMessageTransformsJavascriptUdfList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransforms">DataGooglePubsubTopicMessageTransforms</a></code> | *No description.* |
@@ -8469,6 +8956,16 @@ ai_inference: DataGooglePubsubTopicMessageTransformsAiInferenceList
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceList">DataGooglePubsubTopicMessageTransformsAiInferenceList</a>
+
+---
+
+##### `compression`<sup>Required</sup> <a name="compression" id="@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsOutputReference.property.compression"></a>
+
+```python
+compression: DataGooglePubsubTopicMessageTransformsCompressionList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsCompressionList">DataGooglePubsubTopicMessageTransformsCompressionList</a>
 
 ---
 

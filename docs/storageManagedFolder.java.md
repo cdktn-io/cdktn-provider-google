@@ -4,7 +4,7 @@
 
 ### StorageManagedFolder <a name="StorageManagedFolder" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer"></a>
 
@@ -24,6 +24,7 @@ StorageManagedFolder.Builder.create(Construct scope, java.lang.String id)
 //  .deletionPolicy(java.lang.String)
 //  .forceDestroy(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
+//  .rapidCacheConfig(StorageManagedFolderRapidCacheConfig)
 //  .timeouts(StorageManagedFolderTimeouts)
     .build();
 ```
@@ -43,7 +44,8 @@ StorageManagedFolder.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Allows the deletion of a managed folder even if contains objects. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.rapidCacheConfig">rapidCacheConfig</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | rapid_cache_config block. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts">StorageManagedFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket that contains the managed folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
 
 ---
 
@@ -141,7 +143,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
 
 ---
 
@@ -155,7 +157,7 @@ If a non-empty managed folder is deleted, any objects
 within the folder will remain in a simulated folder with the
 same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
 
 ---
 
@@ -163,10 +165,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `rapidCacheConfig`<sup>Optional</sup> <a name="rapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.rapidCacheConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+rapid_cache_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
 
 ---
 
@@ -176,7 +188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
 
 ---
 
@@ -208,10 +220,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putRapidCacheConfig">putRapidCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetForceDestroy">resetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetRapidCacheConfig">resetRapidCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -527,6 +541,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putRapidCacheConfig` <a name="putRapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putRapidCacheConfig"></a>
+
+```java
+public void putRapidCacheConfig(StorageManagedFolderRapidCacheConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putRapidCacheConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putTimeouts"></a>
 
 ```java
@@ -555,6 +581,12 @@ public void resetForceDestroy()
 
 ```java
 public void resetId()
+```
+
+##### `resetRapidCacheConfig` <a name="resetRapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetRapidCacheConfig"></a>
+
+```java
+public void resetRapidCacheConfig()
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetTimeouts"></a>
@@ -666,7 +698,7 @@ The construct id used in the generated config for the StorageManagedFolder to im
 
 The id of the existing StorageManagedFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -698,6 +730,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.metageneration">metageneration</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfig">rapidCacheConfig</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference">StorageManagedFolderRapidCacheConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.selfLink">selfLink</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeoutsOutputReference">StorageManagedFolderTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -706,6 +739,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.forceDestroyInput">forceDestroyInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfigInput">rapidCacheConfigInput</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts">StorageManagedFolderTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -877,6 +911,16 @@ public java.lang.String getMetageneration();
 
 ---
 
+##### `rapidCacheConfig`<sup>Required</sup> <a name="rapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfig"></a>
+
+```java
+public StorageManagedFolderRapidCacheConfigOutputReference getRapidCacheConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference">StorageManagedFolderRapidCacheConfigOutputReference</a>
+
+---
+
 ##### `selfLink`<sup>Required</sup> <a name="selfLink" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.selfLink"></a>
 
 ```java
@@ -954,6 +998,16 @@ public java.lang.String getNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `rapidCacheConfigInput`<sup>Optional</sup> <a name="rapidCacheConfigInput" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfigInput"></a>
+
+```java
+public StorageManagedFolderRapidCacheConfig getRapidCacheConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
 
 ---
 
@@ -1057,6 +1111,7 @@ StorageManagedFolderConfig.builder()
 //  .deletionPolicy(java.lang.String)
 //  .forceDestroy(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
+//  .rapidCacheConfig(StorageManagedFolderRapidCacheConfig)
 //  .timeouts(StorageManagedFolderTimeouts)
     .build();
 ```
@@ -1076,7 +1131,8 @@ StorageManagedFolderConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Allows the deletion of a managed folder even if contains objects. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.rapidCacheConfig">rapidCacheConfig</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | rapid_cache_config block. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts">StorageManagedFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1161,7 +1217,7 @@ public java.lang.String getBucket();
 
 The name of the bucket that contains the managed folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
 
 ---
 
@@ -1175,7 +1231,7 @@ public java.lang.String getName();
 
 The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
 
 ---
 
@@ -1196,7 +1252,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
 
 ---
 
@@ -1214,7 +1270,7 @@ If a non-empty managed folder is deleted, any objects
 within the folder will remain in a simulated folder with the
 same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
 
 ---
 
@@ -1226,10 +1282,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `rapidCacheConfig`<sup>Optional</sup> <a name="rapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.rapidCacheConfig"></a>
+
+```java
+public StorageManagedFolderRapidCacheConfig getRapidCacheConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+rapid_cache_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
 
 ---
 
@@ -1243,7 +1313,96 @@ public StorageManagedFolderTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+
+---
+
+### StorageManagedFolderRapidCacheConfig <a name="StorageManagedFolderRapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_managed_folder.StorageManagedFolderRapidCacheConfig;
+
+StorageManagedFolderRapidCacheConfig.builder()
+    .policies(IResolvable|java.util.List<StorageManagedFolderRapidCacheConfigPolicies>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig.property.policies">policies</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>></code> | policies block. |
+
+---
+
+##### `policies`<sup>Required</sup> <a name="policies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig.property.policies"></a>
+
+```java
+public IResolvable|java.util.List<StorageManagedFolderRapidCacheConfigPolicies> getPolicies();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>>
+
+policies block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#policies StorageManagedFolder#policies}
+
+---
+
+### StorageManagedFolderRapidCacheConfigPolicies <a name="StorageManagedFolderRapidCacheConfigPolicies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_managed_folder.StorageManagedFolderRapidCacheConfigPolicies;
+
+StorageManagedFolderRapidCacheConfigPolicies.builder()
+    .rapidCacheId(java.lang.String)
+//  .ingestOnWrite(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.rapidCacheId">rapidCacheId</a></code> | <code>java.lang.String</code> | The unique identifier of the rapid cache. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.ingestOnWrite">ingestOnWrite</a></code> | <code>java.lang.String</code> | The ingest-on-write policy for objects in the managed folder. |
+
+---
+
+##### `rapidCacheId`<sup>Required</sup> <a name="rapidCacheId" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.rapidCacheId"></a>
+
+```java
+public java.lang.String getRapidCacheId();
+```
+
+- *Type:* java.lang.String
+
+The unique identifier of the rapid cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_id StorageManagedFolder#rapid_cache_id}
+
+---
+
+##### `ingestOnWrite`<sup>Optional</sup> <a name="ingestOnWrite" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.ingestOnWrite"></a>
+
+```java
+public java.lang.String getIngestOnWrite();
+```
+
+- *Type:* java.lang.String
+
+The ingest-on-write policy for objects in the managed folder.
+
+When
+set to 'enabled', objects are automatically ingested into the cache
+when they are written to the managed folder.
+Possible values: ["enabled", "unspecified"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#ingest_on_write StorageManagedFolder#ingest_on_write}
 
 ---
 
@@ -1265,9 +1424,9 @@ StorageManagedFolderTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}. |
 
 ---
 
@@ -1279,7 +1438,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}.
 
 ---
 
@@ -1291,7 +1450,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}.
 
 ---
 
@@ -1303,11 +1462,773 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### StorageManagedFolderRapidCacheConfigOutputReference <a name="StorageManagedFolderRapidCacheConfigOutputReference" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_managed_folder.StorageManagedFolderRapidCacheConfigOutputReference;
+
+new StorageManagedFolderRapidCacheConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.putPolicies">putPolicies</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPolicies` <a name="putPolicies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.putPolicies"></a>
+
+```java
+public void putPolicies(IResolvable|java.util.List<StorageManagedFolderRapidCacheConfigPolicies> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.putPolicies.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policies">policies</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList">StorageManagedFolderRapidCacheConfigPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policiesInput">policiesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `policies`<sup>Required</sup> <a name="policies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policies"></a>
+
+```java
+public StorageManagedFolderRapidCacheConfigPoliciesList getPolicies();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList">StorageManagedFolderRapidCacheConfigPoliciesList</a>
+
+---
+
+##### `policiesInput`<sup>Optional</sup> <a name="policiesInput" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policiesInput"></a>
+
+```java
+public IResolvable|java.util.List<StorageManagedFolderRapidCacheConfigPolicies> getPoliciesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.internalValue"></a>
+
+```java
+public StorageManagedFolderRapidCacheConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+---
+
+
+### StorageManagedFolderRapidCacheConfigPoliciesList <a name="StorageManagedFolderRapidCacheConfigPoliciesList" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_managed_folder.StorageManagedFolderRapidCacheConfigPoliciesList;
+
+new StorageManagedFolderRapidCacheConfigPoliciesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.get"></a>
+
+```java
+public StorageManagedFolderRapidCacheConfigPoliciesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<StorageManagedFolderRapidCacheConfigPolicies> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>>
+
+---
+
+
+### StorageManagedFolderRapidCacheConfigPoliciesOutputReference <a name="StorageManagedFolderRapidCacheConfigPoliciesOutputReference" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_managed_folder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference;
+
+new StorageManagedFolderRapidCacheConfigPoliciesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resetIngestOnWrite">resetIngestOnWrite</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetIngestOnWrite` <a name="resetIngestOnWrite" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resetIngestOnWrite"></a>
+
+```java
+public void resetIngestOnWrite()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWriteInput">ingestOnWriteInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheIdInput">rapidCacheIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWrite">ingestOnWrite</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheId">rapidCacheId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ingestOnWriteInput`<sup>Optional</sup> <a name="ingestOnWriteInput" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWriteInput"></a>
+
+```java
+public java.lang.String getIngestOnWriteInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `rapidCacheIdInput`<sup>Optional</sup> <a name="rapidCacheIdInput" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheIdInput"></a>
+
+```java
+public java.lang.String getRapidCacheIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ingestOnWrite`<sup>Required</sup> <a name="ingestOnWrite" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWrite"></a>
+
+```java
+public java.lang.String getIngestOnWrite();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `rapidCacheId`<sup>Required</sup> <a name="rapidCacheId" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheId"></a>
+
+```java
+public java.lang.String getRapidCacheId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|StorageManagedFolderRapidCacheConfigPolicies getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>
+
+---
+
 
 ### StorageManagedFolderTimeoutsOutputReference <a name="StorageManagedFolderTimeoutsOutputReference" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeoutsOutputReference"></a>
 

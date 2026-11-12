@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   /**
   * The name of the bucket that contains the managed folder.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
   */
   readonly bucket: string;
   /**
@@ -27,7 +27,7 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -36,11 +36,11 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   * within the folder will remain in a simulated folder with the
   * same name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,27 +50,269 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   * The name of the managed folder expressed as a path. Must include
   * trailing '/'. For example, 'example_dir/example_dir2/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
   */
   readonly name: string;
   /**
+  * rapid_cache_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
+  */
+  readonly rapidCacheConfig?: StorageManagedFolderRapidCacheConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
   */
   readonly timeouts?: StorageManagedFolderTimeouts;
 }
+export interface StorageManagedFolderRapidCacheConfigPolicies {
+  /**
+  * The ingest-on-write policy for objects in the managed folder. When
+  * set to 'enabled', objects are automatically ingested into the cache
+  * when they are written to the managed folder.
+  * Possible values: ["enabled", "unspecified"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#ingest_on_write StorageManagedFolder#ingest_on_write}
+  */
+  readonly ingestOnWrite?: string;
+  /**
+  * The unique identifier of the rapid cache.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_id StorageManagedFolder#rapid_cache_id}
+  */
+  readonly rapidCacheId: string;
+}
+
+export function storageManagedFolderRapidCacheConfigPoliciesToTerraform(struct?: StorageManagedFolderRapidCacheConfigPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    ingest_on_write: cdktn.stringToTerraform(struct!.ingestOnWrite),
+    rapid_cache_id: cdktn.stringToTerraform(struct!.rapidCacheId),
+  }
+}
+
+
+export function storageManagedFolderRapidCacheConfigPoliciesToHclTerraform(struct?: StorageManagedFolderRapidCacheConfigPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    ingest_on_write: {
+      value: cdktn.stringToHclTerraform(struct!.ingestOnWrite),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rapid_cache_id: {
+      value: cdktn.stringToHclTerraform(struct!.rapidCacheId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class StorageManagedFolderRapidCacheConfigPoliciesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): StorageManagedFolderRapidCacheConfigPolicies | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ingestOnWrite !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ingestOnWrite = this._ingestOnWrite;
+    }
+    if (this._rapidCacheId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rapidCacheId = this._rapidCacheId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StorageManagedFolderRapidCacheConfigPolicies | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ingestOnWrite = undefined;
+      this._rapidCacheId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ingestOnWrite = value.ingestOnWrite;
+      this._rapidCacheId = value.rapidCacheId;
+    }
+  }
+
+  // ingest_on_write - computed: false, optional: true, required: false
+  private _ingestOnWrite?: string; 
+  public get ingestOnWrite() {
+    return this.getStringAttribute('ingest_on_write');
+  }
+  public set ingestOnWrite(value: string) {
+    this._ingestOnWrite = value;
+  }
+  public resetIngestOnWrite() {
+    this._ingestOnWrite = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingestOnWriteInput() {
+    return this._ingestOnWrite;
+  }
+
+  // rapid_cache_id - computed: false, optional: false, required: true
+  private _rapidCacheId?: string; 
+  public get rapidCacheId() {
+    return this.getStringAttribute('rapid_cache_id');
+  }
+  public set rapidCacheId(value: string) {
+    this._rapidCacheId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rapidCacheIdInput() {
+    return this._rapidCacheId;
+  }
+}
+
+export class StorageManagedFolderRapidCacheConfigPoliciesList extends cdktn.ComplexList {
+  public internalValue? : StorageManagedFolderRapidCacheConfigPolicies[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): StorageManagedFolderRapidCacheConfigPoliciesOutputReference {
+    return new StorageManagedFolderRapidCacheConfigPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface StorageManagedFolderRapidCacheConfig {
+  /**
+  * policies block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#policies StorageManagedFolder#policies}
+  */
+  readonly policies: StorageManagedFolderRapidCacheConfigPolicies[] | cdktn.IResolvable;
+}
+
+export function storageManagedFolderRapidCacheConfigToTerraform(struct?: StorageManagedFolderRapidCacheConfigOutputReference | StorageManagedFolderRapidCacheConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    policies: cdktn.listMapper(storageManagedFolderRapidCacheConfigPoliciesToTerraform, true)(struct!.policies),
+  }
+}
+
+
+export function storageManagedFolderRapidCacheConfigToHclTerraform(struct?: StorageManagedFolderRapidCacheConfigOutputReference | StorageManagedFolderRapidCacheConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    policies: {
+      value: cdktn.listMapperHcl(storageManagedFolderRapidCacheConfigPoliciesToHclTerraform, true)(struct!.policies),
+      isBlock: true,
+      type: "set",
+      storageClassType: "StorageManagedFolderRapidCacheConfigPoliciesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class StorageManagedFolderRapidCacheConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): StorageManagedFolderRapidCacheConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._policies?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policies = this._policies?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StorageManagedFolderRapidCacheConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._policies.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._policies.internalValue = value.policies;
+    }
+  }
+
+  // policies - computed: false, optional: false, required: true
+  private _policies = new StorageManagedFolderRapidCacheConfigPoliciesList(this, "policies", true);
+  public get policies() {
+    return this._policies;
+  }
+  public putPolicies(value: StorageManagedFolderRapidCacheConfigPolicies[] | cdktn.IResolvable) {
+    this._policies.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policiesInput() {
+    return this._policies.internalValue;
+  }
+}
 export interface StorageManagedFolderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}
   */
   readonly update?: string;
 }
@@ -222,7 +464,7 @@ export class StorageManagedFolderTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder google_storage_managed_folder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder google_storage_managed_folder}
 */
 export class StorageManagedFolder extends cdktn.TerraformResource {
 
@@ -238,7 +480,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageManagedFolder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageManagedFolder to import
-  * @param importFromId The id of the existing StorageManagedFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageManagedFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageManagedFolder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -250,7 +492,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -261,7 +503,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_managed_folder',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -277,6 +519,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
     this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._name = config.name;
+    this._rapidCacheConfig.internalValue = config.rapidCacheConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -378,6 +621,22 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // rapid_cache_config - computed: false, optional: true, required: false
+  private _rapidCacheConfig = new StorageManagedFolderRapidCacheConfigOutputReference(this, "rapid_cache_config");
+  public get rapidCacheConfig() {
+    return this._rapidCacheConfig;
+  }
+  public putRapidCacheConfig(value: StorageManagedFolderRapidCacheConfig) {
+    this._rapidCacheConfig.internalValue = value;
+  }
+  public resetRapidCacheConfig() {
+    this._rapidCacheConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rapidCacheConfigInput() {
+    return this._rapidCacheConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new StorageManagedFolderTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -405,6 +664,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
       force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
+      rapid_cache_config: storageManagedFolderRapidCacheConfigToTerraform(this._rapidCacheConfig.internalValue),
       timeouts: storageManagedFolderTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -440,6 +700,12 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      rapid_cache_config: {
+        value: storageManagedFolderRapidCacheConfigToHclTerraform(this._rapidCacheConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageManagedFolderRapidCacheConfigList",
       },
       timeouts: {
         value: storageManagedFolderTimeoutsToHclTerraform(this._timeouts.internalValue),

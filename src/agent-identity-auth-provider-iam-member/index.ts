@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface AgentIdentityAuthProviderIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#auth_provider_id AgentIdentityAuthProviderIamMember#auth_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#auth_provider_id AgentIdentityAuthProviderIamMember#auth_provider_id}
   */
   readonly authProviderId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#id AgentIdentityAuthProviderIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#id AgentIdentityAuthProviderIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#location AgentIdentityAuthProviderIamMember#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#location AgentIdentityAuthProviderIamMember#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#member AgentIdentityAuthProviderIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#member AgentIdentityAuthProviderIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#project AgentIdentityAuthProviderIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#project AgentIdentityAuthProviderIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#role AgentIdentityAuthProviderIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#role AgentIdentityAuthProviderIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#condition AgentIdentityAuthProviderIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#condition AgentIdentityAuthProviderIamMember#condition}
   */
   readonly condition?: AgentIdentityAuthProviderIamMemberCondition;
 }
 export interface AgentIdentityAuthProviderIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#description AgentIdentityAuthProviderIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#description AgentIdentityAuthProviderIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#expression AgentIdentityAuthProviderIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#expression AgentIdentityAuthProviderIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#title AgentIdentityAuthProviderIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#title AgentIdentityAuthProviderIamMember#title}
   */
   readonly title: string;
 }
@@ -192,7 +192,7 @@ export class AgentIdentityAuthProviderIamMemberConditionOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member google_agent_identity_auth_provider_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member google_agent_identity_auth_provider_iam_member}
 */
 export class AgentIdentityAuthProviderIamMember extends cdktn.TerraformResource {
 
@@ -208,7 +208,7 @@ export class AgentIdentityAuthProviderIamMember extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a AgentIdentityAuthProviderIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentIdentityAuthProviderIamMember to import
-  * @param importFromId The id of the existing AgentIdentityAuthProviderIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentIdentityAuthProviderIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentIdentityAuthProviderIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -220,7 +220,7 @@ export class AgentIdentityAuthProviderIamMember extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_member google_agent_identity_auth_provider_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_member google_agent_identity_auth_provider_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class AgentIdentityAuthProviderIamMember extends cdktn.TerraformResource 
       terraformResourceType: 'google_agent_identity_auth_provider_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

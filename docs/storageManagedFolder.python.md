@@ -4,7 +4,7 @@
 
 ### StorageManagedFolder <a name="StorageManagedFolder" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer"></a>
 
@@ -26,6 +26,7 @@ storageManagedFolder.StorageManagedFolder(
   deletion_policy: str = None,
   force_destroy: bool | IResolvable = None,
   id: str = None,
+  rapid_cache_config: StorageManagedFolderRapidCacheConfig = None,
   timeouts: StorageManagedFolderTimeouts = None
 )
 ```
@@ -45,7 +46,8 @@ storageManagedFolder.StorageManagedFolder(
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Allows the deletion of a managed folder even if contains objects. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.rapidCacheConfig">rapid_cache_config</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | rapid_cache_config block. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts">StorageManagedFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket that contains the managed folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
 
 ---
 
@@ -143,7 +145,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
 
 ---
 
@@ -157,7 +159,7 @@ If a non-empty managed folder is deleted, any objects
 within the folder will remain in a simulated folder with the
 same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
 
 ---
 
@@ -165,10 +167,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `rapid_cache_config`<sup>Optional</sup> <a name="rapid_cache_config" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.Initializer.parameter.rapidCacheConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+rapid_cache_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
 
 ---
 
@@ -178,7 +190,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
 
 ---
 
@@ -210,10 +222,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putRapidCacheConfig">put_rapid_cache_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetRapidCacheConfig">reset_rapid_cache_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -566,6 +580,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_rapid_cache_config` <a name="put_rapid_cache_config" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putRapidCacheConfig"></a>
+
+```python
+def put_rapid_cache_config(
+  policies: IResolvable | typing.List[StorageManagedFolderRapidCacheConfigPolicies]
+) -> None
+```
+
+###### `policies`<sup>Required</sup> <a name="policies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putRapidCacheConfig.parameter.policies"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]
+
+policies block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#policies StorageManagedFolder#policies}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.putTimeouts"></a>
 
 ```python
@@ -580,7 +612,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}.
 
 ---
 
@@ -588,7 +620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}.
 
 ---
 
@@ -596,7 +628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}.
 
 ---
 
@@ -616,6 +648,12 @@ def reset_force_destroy() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_rapid_cache_config` <a name="reset_rapid_cache_config" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetRapidCacheConfig"></a>
+
+```python
+def reset_rapid_cache_config() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.resetTimeouts"></a>
@@ -738,7 +776,7 @@ The construct id used in the generated config for the StorageManagedFolder to im
 
 The id of the existing StorageManagedFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,6 +808,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.metageneration">metageneration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfig">rapid_cache_config</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference">StorageManagedFolderRapidCacheConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeoutsOutputReference">StorageManagedFolderTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
@@ -778,6 +817,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.forceDestroyInput">force_destroy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfigInput">rapid_cache_config_input</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts">StorageManagedFolderTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.bucket">bucket</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
@@ -949,6 +989,16 @@ metageneration: str
 
 ---
 
+##### `rapid_cache_config`<sup>Required</sup> <a name="rapid_cache_config" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfig"></a>
+
+```python
+rapid_cache_config: StorageManagedFolderRapidCacheConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference">StorageManagedFolderRapidCacheConfigOutputReference</a>
+
+---
+
 ##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.selfLink"></a>
 
 ```python
@@ -1026,6 +1076,16 @@ name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `rapid_cache_config_input`<sup>Optional</sup> <a name="rapid_cache_config_input" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolder.property.rapidCacheConfigInput"></a>
+
+```python
+rapid_cache_config_input: StorageManagedFolderRapidCacheConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
 
 ---
 
@@ -1129,6 +1189,7 @@ storageManagedFolder.StorageManagedFolderConfig(
   deletion_policy: str = None,
   force_destroy: bool | IResolvable = None,
   id: str = None,
+  rapid_cache_config: StorageManagedFolderRapidCacheConfig = None,
   timeouts: StorageManagedFolderTimeouts = None
 )
 ```
@@ -1148,7 +1209,8 @@ storageManagedFolder.StorageManagedFolderConfig(
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.name">name</a></code> | <code>str</code> | The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Allows the deletion of a managed folder even if contains objects. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.rapidCacheConfig">rapid_cache_config</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | rapid_cache_config block. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts">StorageManagedFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1233,7 +1295,7 @@ bucket: str
 
 The name of the bucket that contains the managed folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
 
 ---
 
@@ -1247,7 +1309,7 @@ name: str
 
 The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
 
 ---
 
@@ -1268,7 +1330,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
 
 ---
 
@@ -1286,7 +1348,7 @@ If a non-empty managed folder is deleted, any objects
 within the folder will remain in a simulated folder with the
 same name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
 
 ---
 
@@ -1298,10 +1360,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `rapid_cache_config`<sup>Optional</sup> <a name="rapid_cache_config" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderConfig.property.rapidCacheConfig"></a>
+
+```python
+rapid_cache_config: StorageManagedFolderRapidCacheConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+rapid_cache_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
 
 ---
 
@@ -1315,7 +1391,96 @@ timeouts: StorageManagedFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+
+---
+
+### StorageManagedFolderRapidCacheConfig <a name="StorageManagedFolderRapidCacheConfig" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import storage_managed_folder
+
+storageManagedFolder.StorageManagedFolderRapidCacheConfig(
+  policies: IResolvable | typing.List[StorageManagedFolderRapidCacheConfigPolicies]
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig.property.policies">policies</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]</code> | policies block. |
+
+---
+
+##### `policies`<sup>Required</sup> <a name="policies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig.property.policies"></a>
+
+```python
+policies: IResolvable | typing.List[StorageManagedFolderRapidCacheConfigPolicies]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]
+
+policies block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#policies StorageManagedFolder#policies}
+
+---
+
+### StorageManagedFolderRapidCacheConfigPolicies <a name="StorageManagedFolderRapidCacheConfigPolicies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.Initializer"></a>
+
+```python
+from cdktn_provider_google import storage_managed_folder
+
+storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies(
+  rapid_cache_id: str,
+  ingest_on_write: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.rapidCacheId">rapid_cache_id</a></code> | <code>str</code> | The unique identifier of the rapid cache. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.ingestOnWrite">ingest_on_write</a></code> | <code>str</code> | The ingest-on-write policy for objects in the managed folder. |
+
+---
+
+##### `rapid_cache_id`<sup>Required</sup> <a name="rapid_cache_id" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.rapidCacheId"></a>
+
+```python
+rapid_cache_id: str
+```
+
+- *Type:* str
+
+The unique identifier of the rapid cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_id StorageManagedFolder#rapid_cache_id}
+
+---
+
+##### `ingest_on_write`<sup>Optional</sup> <a name="ingest_on_write" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies.property.ingestOnWrite"></a>
+
+```python
+ingest_on_write: str
+```
+
+- *Type:* str
+
+The ingest-on-write policy for objects in the managed folder.
+
+When
+set to 'enabled', objects are automatically ingested into the cache
+when they are written to the managed folder.
+Possible values: ["enabled", "unspecified"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#ingest_on_write StorageManagedFolder#ingest_on_write}
 
 ---
 
@@ -1337,9 +1502,9 @@ storageManagedFolder.StorageManagedFolderTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}. |
 
 ---
 
@@ -1351,7 +1516,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}.
 
 ---
 
@@ -1363,7 +1528,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}.
 
 ---
 
@@ -1375,11 +1540,837 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### StorageManagedFolderRapidCacheConfigOutputReference <a name="StorageManagedFolderRapidCacheConfigOutputReference" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import storage_managed_folder
+
+storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.putPolicies">put_policies</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_policies` <a name="put_policies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.putPolicies"></a>
+
+```python
+def put_policies(
+  value: IResolvable | typing.List[StorageManagedFolderRapidCacheConfigPolicies]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.putPolicies.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policies">policies</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList">StorageManagedFolderRapidCacheConfigPoliciesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policiesInput">policies_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `policies`<sup>Required</sup> <a name="policies" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policies"></a>
+
+```python
+policies: StorageManagedFolderRapidCacheConfigPoliciesList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList">StorageManagedFolderRapidCacheConfigPoliciesList</a>
+
+---
+
+##### `policies_input`<sup>Optional</sup> <a name="policies_input" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.policiesInput"></a>
+
+```python
+policies_input: IResolvable | typing.List[StorageManagedFolderRapidCacheConfigPolicies]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: StorageManagedFolderRapidCacheConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfig">StorageManagedFolderRapidCacheConfig</a>
+
+---
+
+
+### StorageManagedFolderRapidCacheConfigPoliciesList <a name="StorageManagedFolderRapidCacheConfigPoliciesList" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer"></a>
+
+```python
+from cdktn_provider_google import storage_managed_folder
+
+storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> StorageManagedFolderRapidCacheConfigPoliciesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[StorageManagedFolderRapidCacheConfigPolicies]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>]
+
+---
+
+
+### StorageManagedFolderRapidCacheConfigPoliciesOutputReference <a name="StorageManagedFolderRapidCacheConfigPoliciesOutputReference" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import storage_managed_folder
+
+storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resetIngestOnWrite">reset_ingest_on_write</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_ingest_on_write` <a name="reset_ingest_on_write" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.resetIngestOnWrite"></a>
+
+```python
+def reset_ingest_on_write() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWriteInput">ingest_on_write_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheIdInput">rapid_cache_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWrite">ingest_on_write</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheId">rapid_cache_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `ingest_on_write_input`<sup>Optional</sup> <a name="ingest_on_write_input" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWriteInput"></a>
+
+```python
+ingest_on_write_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rapid_cache_id_input`<sup>Optional</sup> <a name="rapid_cache_id_input" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheIdInput"></a>
+
+```python
+rapid_cache_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ingest_on_write`<sup>Required</sup> <a name="ingest_on_write" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.ingestOnWrite"></a>
+
+```python
+ingest_on_write: str
+```
+
+- *Type:* str
+
+---
+
+##### `rapid_cache_id`<sup>Required</sup> <a name="rapid_cache_id" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.rapidCacheId"></a>
+
+```python
+rapid_cache_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPoliciesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | StorageManagedFolderRapidCacheConfigPolicies
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageManagedFolder.StorageManagedFolderRapidCacheConfigPolicies">StorageManagedFolderRapidCacheConfigPolicies</a>
+
+---
+
 
 ### StorageManagedFolderTimeoutsOutputReference <a name="StorageManagedFolderTimeoutsOutputReference" id="@cdktn/provider-google.storageManagedFolder.StorageManagedFolderTimeoutsOutputReference"></a>
 

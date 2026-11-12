@@ -4,7 +4,7 @@
 
 ### SecretManagerRegionalSecret <a name="SecretManagerRegionalSecret" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret google_secret_manager_regional_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret google_secret_manager_regional_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.Initializer"></a>
 
@@ -653,7 +653,7 @@ The construct id used in the generated config for the SecretManagerRegionalSecre
 
 The id of the existing SecretManagerRegionalSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -688,6 +688,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.effectiveAnnotations">EffectiveAnnotations</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.effectiveLabels">EffectiveLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.policyMember">PolicyMember</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList">SecretManagerRegionalSecretPolicyMemberList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.rotation">Rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotationOutputReference">SecretManagerRegionalSecretRotationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeoutsOutputReference">SecretManagerRegionalSecretTimeoutsOutputReference</a></code> | *No description.* |
@@ -916,6 +917,16 @@ public string Name { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `PolicyMember`<sup>Required</sup> <a name="PolicyMember" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.property.policyMember"></a>
+
+```csharp
+public SecretManagerRegionalSecretPolicyMemberList PolicyMember { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList">SecretManagerRegionalSecretPolicyMemberList</a>
 
 ---
 
@@ -1353,9 +1364,9 @@ new SecretManagerRegionalSecretConfig {
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.deletionProtection">DeletionProtection</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the regional secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.expireTime">ExpireTime</a></code> | <code>string</code> | Timestamp in UTC when the regional secret is scheduled to expire. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The labels assigned to this regional secret. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.rotation">Rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation">SecretManagerRegionalSecretRotation</a></code> | rotation block. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.secretType">SecretType</a></code> | <code>string</code> | This defines the type of the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of resource manager tags. |
@@ -1447,7 +1458,7 @@ public string Location { get; set; }
 
 The location of the regional secret. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#location SecretManagerRegionalSecret#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#location SecretManagerRegionalSecret#location}
 
 ---
 
@@ -1461,7 +1472,7 @@ public string SecretId { get; set; }
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#secret_id SecretManagerRegionalSecret#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#secret_id SecretManagerRegionalSecret#secret_id}
 
 ---
 
@@ -1491,7 +1502,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#annotations SecretManagerRegionalSecret#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#annotations SecretManagerRegionalSecret#annotations}
 
 ---
 
@@ -1505,7 +1516,7 @@ public SecretManagerRegionalSecretCustomerManagedEncryption CustomerManagedEncry
 
 customer_managed_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#customer_managed_encryption SecretManagerRegionalSecret#customer_managed_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#customer_managed_encryption SecretManagerRegionalSecret#customer_managed_encryption}
 
 ---
 
@@ -1526,7 +1537,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#deletion_policy SecretManagerRegionalSecret#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#deletion_policy SecretManagerRegionalSecret#deletion_policy}
 
 ---
 
@@ -1544,7 +1555,7 @@ Defaults to false.
 When the field is set to true in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the federation will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#deletion_protection SecretManagerRegionalSecret#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#deletion_protection SecretManagerRegionalSecret#deletion_protection}
 
 ---
 
@@ -1563,7 +1574,7 @@ output, regardless of what was sent on input. A timestamp in RFC3339 UTC "Zulu" 
 nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and
 "2014-10-02T15:01:23.045123456Z". Only one of 'expire_time' or 'ttl' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#expire_time SecretManagerRegionalSecret#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#expire_time SecretManagerRegionalSecret#expire_time}
 
 ---
 
@@ -1575,7 +1586,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1606,7 +1617,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#labels SecretManagerRegionalSecret#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#labels SecretManagerRegionalSecret#labels}
 
 ---
 
@@ -1618,7 +1629,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}.
 
 ---
 
@@ -1632,7 +1643,7 @@ public SecretManagerRegionalSecretRotation Rotation { get; set; }
 
 rotation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#rotation SecretManagerRegionalSecret#rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#rotation SecretManagerRegionalSecret#rotation}
 
 ---
 
@@ -1648,8 +1659,18 @@ This defines the type of the secret.
 
 Enforces certain structural requirements on the SecretVersions.
 For secret of type UNSPECIFIED, the SecretVersions can be of any type.
+Supported values are:
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#secret_type SecretManagerRegionalSecret#secret_type}
+* 'CLOUD_SQL_DB_CREDENTIALS': Secrets used for managed rotation of Cloud SQL single-user
+  credentials. Managed rotation can be enabled on these secrets using the
+  'google_secret_manager_regional_secret_managed_rotation' resource. Secret versions cannot
+  be added manually to secrets of this type.
+* 'OTHER_DB_CREDENTIALS': Secrets where the payload contains database credentials.
+* 'ACCESS_KEY': Secrets where the payload contains an access key.
+* 'CERTIFICATE': Secrets where the payload contains a certificate.
+* 'OTHER': Secrets whose type doesn't belong to any of the above types.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#secret_type SecretManagerRegionalSecret#secret_type}
 
 ---
 
@@ -1666,7 +1687,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#tags SecretManagerRegionalSecret#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#tags SecretManagerRegionalSecret#tags}
 
 ---
 
@@ -1680,7 +1701,7 @@ public SecretManagerRegionalSecretTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#timeouts SecretManagerRegionalSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#timeouts SecretManagerRegionalSecret#timeouts}
 
 ---
 
@@ -1694,7 +1715,7 @@ public IResolvable|SecretManagerRegionalSecretTopics[] Topics { get; set; }
 
 topics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#topics SecretManagerRegionalSecret#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#topics SecretManagerRegionalSecret#topics}
 
 ---
 
@@ -1711,7 +1732,7 @@ The TTL for the regional secret.
 A duration in seconds with up to nine fractional digits,
 terminated by 's'. Example: "3.5s". Only one of 'ttl' or 'expire_time' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#ttl SecretManagerRegionalSecret#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#ttl SecretManagerRegionalSecret#ttl}
 
 ---
 
@@ -1733,7 +1754,7 @@ characters. An alias string must start with a letter and cannot be the string
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#version_aliases SecretManagerRegionalSecret#version_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#version_aliases SecretManagerRegionalSecret#version_aliases}
 
 ---
 
@@ -1752,7 +1773,7 @@ For secret with versionDestroyTtl>0, version destruction doesn't happen immediat
 on calling destroy instead the version goes to a disabled state and
 the actual destruction happens after this TTL expires. It must be atleast 24h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#version_destroy_ttl SecretManagerRegionalSecret#version_destroy_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#version_destroy_ttl SecretManagerRegionalSecret#version_destroy_ttl}
 
 ---
 
@@ -1786,9 +1807,22 @@ public string KmsKeyName { get; set; }
 
 The resource name of the Cloud KMS CryptoKey used to encrypt secret payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#kms_key_name SecretManagerRegionalSecret#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#kms_key_name SecretManagerRegionalSecret#kms_key_name}
 
 ---
+
+### SecretManagerRegionalSecretPolicyMember <a name="SecretManagerRegionalSecretPolicyMember" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMember"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMember.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new SecretManagerRegionalSecretPolicyMember {
+
+};
+```
+
 
 ### SecretManagerRegionalSecretRotation <a name="SecretManagerRegionalSecretRotation" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation"></a>
 
@@ -1825,7 +1859,7 @@ Timestamp in UTC at which the Secret is scheduled to rotate.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine
 fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#next_rotation_time SecretManagerRegionalSecret#next_rotation_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#next_rotation_time SecretManagerRegionalSecret#next_rotation_time}
 
 ---
 
@@ -1844,7 +1878,7 @@ and at most 3153600000s (100 years). If rotationPeriod is set, 'next_rotation_ti
 be set. 'next_rotation_time' will be advanced by this period when the service
 automatically sends rotation notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#rotation_period SecretManagerRegionalSecret#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#rotation_period SecretManagerRegionalSecret#rotation_period}
 
 ---
 
@@ -1866,9 +1900,9 @@ new SecretManagerRegionalSecretTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}. |
 
 ---
 
@@ -1880,7 +1914,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}.
 
 ---
 
@@ -1892,7 +1926,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}.
 
 ---
 
@@ -1904,7 +1938,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}.
 
 ---
 
@@ -1941,7 +1975,7 @@ The resource name of the Pub/Sub topic that will be published to, in the followi
 For publication to succeed, the Secret Manager Service
 Agent service account must have pubsub.publisher permissions on the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/secret_manager_regional_secret#name SecretManagerRegionalSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/secret_manager_regional_secret#name SecretManagerRegionalSecret#name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2216,6 +2250,433 @@ public SecretManagerRegionalSecretCustomerManagedEncryption InternalValue { get;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption">SecretManagerRegionalSecretCustomerManagedEncryption</a>
+
+---
+
+
+### SecretManagerRegionalSecretPolicyMemberList <a name="SecretManagerRegionalSecretPolicyMemberList" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new SecretManagerRegionalSecretPolicyMemberList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.get"></a>
+
+```csharp
+private SecretManagerRegionalSecretPolicyMemberOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### SecretManagerRegionalSecretPolicyMemberOutputReference <a name="SecretManagerRegionalSecretPolicyMemberOutputReference" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new SecretManagerRegionalSecretPolicyMemberOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.iamPolicyUidPrincipal">IamPolicyUidPrincipal</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMember">SecretManagerRegionalSecretPolicyMember</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IamPolicyUidPrincipal`<sup>Required</sup> <a name="IamPolicyUidPrincipal" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.iamPolicyUidPrincipal"></a>
+
+```csharp
+public string IamPolicyUidPrincipal { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMemberOutputReference.property.internalValue"></a>
+
+```csharp
+public SecretManagerRegionalSecretPolicyMember InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretPolicyMember">SecretManagerRegionalSecretPolicyMember</a>
 
 ---
 

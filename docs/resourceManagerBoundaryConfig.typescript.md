@@ -4,7 +4,7 @@
 
 ### ResourceManagerBoundaryConfigA <a name="ResourceManagerBoundaryConfigA" id="@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config google_resource_manager_boundary_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config google_resource_manager_boundary_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigA.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ResourceManagerBoundaryCon
 
 The id of the existing ResourceManagerBoundaryConfigA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,7 +885,7 @@ const resourceManagerBoundaryConfigAConfig: resourceManagerBoundaryConfig.Resour
 | <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigAConfig.property.parent">parent</a></code> | <code>string</code> | The parent resource whose BoundaryConfig this is. Must be of the form 'organizations/{organization_id}' or 'folders/{folder_id}'. |
 | <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigAConfig.property.tagKey">tagKey</a></code> | <code>string</code> | The namespaced name of the partitioning tag key, in the form '{parent_id}/{tag_key_short_name}', for example '123456789012/env'. |
 | <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigAConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#id ResourceManagerBoundaryConfigA#id}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigAConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#id ResourceManagerBoundaryConfigA#id}. |
 | <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigAConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts">ResourceManagerBoundaryConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -970,7 +970,7 @@ public readonly parent: string;
 
 The parent resource whose BoundaryConfig this is. Must be of the form 'organizations/{organization_id}' or 'folders/{folder_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#parent ResourceManagerBoundaryConfigA#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#parent ResourceManagerBoundaryConfigA#parent}
 
 ---
 
@@ -993,7 +993,7 @@ every subsequent Boundary create fail with 'FAILED_PRECONDITION'. Always
 use the namespaced form, for example
 'google_tags_tag_key.example.namespaced_name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#tag_key ResourceManagerBoundaryConfigA#tag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#tag_key ResourceManagerBoundaryConfigA#tag_key}
 
 ---
 
@@ -1015,7 +1015,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#deletion_policy ResourceManagerBoundaryConfigA#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#deletion_policy ResourceManagerBoundaryConfigA#deletion_policy}
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#id ResourceManagerBoundaryConfigA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#id ResourceManagerBoundaryConfigA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1044,7 @@ public readonly timeouts: ResourceManagerBoundaryConfigTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#timeouts ResourceManagerBoundaryConfigA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#timeouts ResourceManagerBoundaryConfigA#timeouts}
 
 ---
 
@@ -1062,9 +1062,9 @@ const resourceManagerBoundaryConfigTimeouts: resourceManagerBoundaryConfig.Resou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#create ResourceManagerBoundaryConfigA#create}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#delete ResourceManagerBoundaryConfigA#delete}. |
-| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#update ResourceManagerBoundaryConfigA#update}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#create ResourceManagerBoundaryConfigA#create}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#delete ResourceManagerBoundaryConfigA#delete}. |
+| <code><a href="#@cdktn/provider-google.resourceManagerBoundaryConfig.ResourceManagerBoundaryConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#update ResourceManagerBoundaryConfigA#update}. |
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#create ResourceManagerBoundaryConfigA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#create ResourceManagerBoundaryConfigA#create}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#delete ResourceManagerBoundaryConfigA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#delete ResourceManagerBoundaryConfigA#delete}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/resource_manager_boundary_config#update ResourceManagerBoundaryConfigA#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/resource_manager_boundary_config#update ResourceManagerBoundaryConfigA#update}.
 
 ---
 

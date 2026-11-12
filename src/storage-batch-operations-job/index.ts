@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface StorageBatchOperationsJobConfig extends cdktn.TerraformMetaArgu
   /**
   * If set to 'true', the storage batch operation job will not be deleted and new job will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete_protection StorageBatchOperationsJob#delete_protection}
   */
   readonly deleteProtection?: boolean | cdktn.IResolvable;
   /**
@@ -27,17 +27,23 @@ export interface StorageBatchOperationsJobConfig extends cdktn.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#deletion_policy StorageBatchOperationsJob#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description provided by the user for the job. Its max length is 1024 bytes when Unicode-encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#description StorageBatchOperationsJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}
+  * If true, the job runs in dry run mode, returning the total object count and, if the object configuration is a prefix list, the bytes found from source. No transformations are performed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#dry_run StorageBatchOperationsJob#dry_run}
+  */
+  readonly dryRun?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#id StorageBatchOperationsJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,47 +52,53 @@ export interface StorageBatchOperationsJobConfig extends cdktn.TerraformMetaArgu
   /**
   * The ID of the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#job_id StorageBatchOperationsJob#job_id}
   */
   readonly jobId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#project StorageBatchOperationsJob#project}
   */
   readonly project?: string;
   /**
   * bucket_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#bucket_list StorageBatchOperationsJob#bucket_list}
   */
   readonly bucketList?: StorageBatchOperationsJobBucketListStruct;
   /**
   * delete_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete_object StorageBatchOperationsJob#delete_object}
   */
   readonly deleteObject?: StorageBatchOperationsJobDeleteObject;
   /**
+  * logging_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#logging_config StorageBatchOperationsJob#logging_config}
+  */
+  readonly loggingConfig?: StorageBatchOperationsJobLoggingConfig;
+  /**
   * put_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#put_metadata StorageBatchOperationsJob#put_metadata}
   */
   readonly putMetadata?: StorageBatchOperationsJobPutMetadata;
   /**
   * put_object_hold block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#put_object_hold StorageBatchOperationsJob#put_object_hold}
   */
   readonly putObjectHold?: StorageBatchOperationsJobPutObjectHold;
   /**
   * rewrite_object block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#rewrite_object StorageBatchOperationsJob#rewrite_object}
   */
   readonly rewriteObject?: StorageBatchOperationsJobRewriteObject;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#timeouts StorageBatchOperationsJob#timeouts}
   */
   readonly timeouts?: StorageBatchOperationsJobTimeouts;
 }
@@ -94,7 +106,7 @@ export interface StorageBatchOperationsJobBucketListBucketsManifest {
   /**
   * Specifies objects in a manifest file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#manifest_location StorageBatchOperationsJob#manifest_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#manifest_location StorageBatchOperationsJob#manifest_location}
   */
   readonly manifestLocation?: string;
 }
@@ -178,7 +190,7 @@ export class StorageBatchOperationsJobBucketListBucketsManifestOutputReference e
 }
 export interface StorageBatchOperationsJobBucketListBucketsPrefixListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#included_object_prefixes StorageBatchOperationsJob#included_object_prefixes}
   */
   readonly includedObjectPrefixes?: string[];
 }
@@ -264,19 +276,19 @@ export interface StorageBatchOperationsJobBucketListBuckets {
   /**
   * Bucket name for the objects to be transformed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#bucket StorageBatchOperationsJob#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#bucket StorageBatchOperationsJob#bucket}
   */
   readonly bucket: string;
   /**
   * manifest block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#manifest StorageBatchOperationsJob#manifest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#manifest StorageBatchOperationsJob#manifest}
   */
   readonly manifest?: StorageBatchOperationsJobBucketListBucketsManifest;
   /**
   * prefix_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#prefix_list StorageBatchOperationsJob#prefix_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#prefix_list StorageBatchOperationsJob#prefix_list}
   */
   readonly prefixList?: StorageBatchOperationsJobBucketListBucketsPrefixListStruct;
 }
@@ -417,7 +429,7 @@ export interface StorageBatchOperationsJobBucketListStruct {
   /**
   * buckets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#buckets StorageBatchOperationsJob#buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#buckets StorageBatchOperationsJob#buckets}
   */
   readonly buckets: StorageBatchOperationsJobBucketListBuckets;
 }
@@ -500,7 +512,7 @@ export interface StorageBatchOperationsJobDeleteObject {
   /**
   * enable flag to permanently delete object and all object versions if versioning is enabled on bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#permanent_object_deletion_enabled StorageBatchOperationsJob#permanent_object_deletion_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#permanent_object_deletion_enabled StorageBatchOperationsJob#permanent_object_deletion_enabled}
   */
   readonly permanentObjectDeletionEnabled: boolean | cdktn.IResolvable;
 }
@@ -579,47 +591,166 @@ export class StorageBatchOperationsJobDeleteObjectOutputReference extends cdktn.
     return this._permanentObjectDeletionEnabled;
   }
 }
+export interface StorageBatchOperationsJobLoggingConfig {
+  /**
+  * States in which Action are logged.If empty, no logs are generated.
+  * Possible values include 'SUCCEEDED', 'FAILED'.
+  * See [LoggingConfig](https://cloud.google.com/storage/docs/batch-operations/reference/rest/v1/projects.locations.jobs#LoggingConfig) for allowed values.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#log_action_states StorageBatchOperationsJob#log_action_states}
+  */
+  readonly logActionStates: string[];
+  /**
+  * Specifies the actions to be logged.
+  * Possible values include 'TRANSFORM'.
+  * See [LoggingConfig](https://cloud.google.com/storage/docs/batch-operations/reference/rest/v1/projects.locations.jobs#LoggingConfig) for allowed values.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#log_actions StorageBatchOperationsJob#log_actions}
+  */
+  readonly logActions: string[];
+}
+
+export function storageBatchOperationsJobLoggingConfigToTerraform(struct?: StorageBatchOperationsJobLoggingConfigOutputReference | StorageBatchOperationsJobLoggingConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    log_action_states: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.logActionStates),
+    log_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.logActions),
+  }
+}
+
+
+export function storageBatchOperationsJobLoggingConfigToHclTerraform(struct?: StorageBatchOperationsJobLoggingConfigOutputReference | StorageBatchOperationsJobLoggingConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    log_action_states: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.logActionStates),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    log_actions: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.logActions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class StorageBatchOperationsJobLoggingConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): StorageBatchOperationsJobLoggingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._logActionStates !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logActionStates = this._logActionStates;
+    }
+    if (this._logActions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logActions = this._logActions;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: StorageBatchOperationsJobLoggingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._logActionStates = undefined;
+      this._logActions = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._logActionStates = value.logActionStates;
+      this._logActions = value.logActions;
+    }
+  }
+
+  // log_action_states - computed: false, optional: false, required: true
+  private _logActionStates?: string[]; 
+  public get logActionStates() {
+    return this.getListAttribute('log_action_states');
+  }
+  public set logActionStates(value: string[]) {
+    this._logActionStates = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logActionStatesInput() {
+    return this._logActionStates;
+  }
+
+  // log_actions - computed: false, optional: false, required: true
+  private _logActions?: string[]; 
+  public get logActions() {
+    return this.getListAttribute('log_actions');
+  }
+  public set logActions(value: string[]) {
+    this._logActions = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logActionsInput() {
+    return this._logActions;
+  }
+}
 export interface StorageBatchOperationsJobPutMetadata {
   /**
   * Cache-Control directive to specify caching behavior of object data. If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#cache_control StorageBatchOperationsJob#cache_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#cache_control StorageBatchOperationsJob#cache_control}
   */
   readonly cacheControl?: string;
   /**
   * Content-Disposition of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_disposition StorageBatchOperationsJob#content_disposition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_disposition StorageBatchOperationsJob#content_disposition}
   */
   readonly contentDisposition?: string;
   /**
   * Content Encoding of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_encoding StorageBatchOperationsJob#content_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_encoding StorageBatchOperationsJob#content_encoding}
   */
   readonly contentEncoding?: string;
   /**
   * Content-Language of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_language StorageBatchOperationsJob#content_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_language StorageBatchOperationsJob#content_language}
   */
   readonly contentLanguage?: string;
   /**
   * Content-Type of the object data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#content_type StorageBatchOperationsJob#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#content_type StorageBatchOperationsJob#content_type}
   */
   readonly contentType?: string;
   /**
   * User-provided metadata, in key/value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#custom_metadata StorageBatchOperationsJob#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#custom_metadata StorageBatchOperationsJob#custom_metadata}
   */
   readonly customMetadata?: { [key: string]: string };
   /**
   * Updates the objects fixed custom time metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#custom_time StorageBatchOperationsJob#custom_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#custom_time StorageBatchOperationsJob#custom_time}
   */
   readonly customTime?: string;
 }
@@ -879,13 +1010,13 @@ export interface StorageBatchOperationsJobPutObjectHold {
   /**
   * set/unset to update event based hold for objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#event_based_hold StorageBatchOperationsJob#event_based_hold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#event_based_hold StorageBatchOperationsJob#event_based_hold}
   */
   readonly eventBasedHold?: string;
   /**
   * set/unset to update temporary based hold for objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#temporary_hold StorageBatchOperationsJob#temporary_hold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#temporary_hold StorageBatchOperationsJob#temporary_hold}
   */
   readonly temporaryHold?: string;
 }
@@ -1000,7 +1131,7 @@ export interface StorageBatchOperationsJobRewriteObject {
   /**
   * valid kms key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#kms_key StorageBatchOperationsJob#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#kms_key StorageBatchOperationsJob#kms_key}
   */
   readonly kmsKey: string;
 }
@@ -1081,15 +1212,15 @@ export class StorageBatchOperationsJobRewriteObjectOutputReference extends cdktn
 }
 export interface StorageBatchOperationsJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}
   */
   readonly update?: string;
 }
@@ -1241,7 +1372,7 @@ export class StorageBatchOperationsJobTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job}
 */
 export class StorageBatchOperationsJob extends cdktn.TerraformResource {
 
@@ -1257,7 +1388,7 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageBatchOperationsJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageBatchOperationsJob to import
-  * @param importFromId The id of the existing StorageBatchOperationsJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageBatchOperationsJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageBatchOperationsJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1269,7 +1400,7 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_batch_operations_job google_storage_batch_operations_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1280,7 +1411,7 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_batch_operations_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -1294,11 +1425,13 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
     this._deleteProtection = config.deleteProtection;
     this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
+    this._dryRun = config.dryRun;
     this._id = config.id;
     this._jobId = config.jobId;
     this._project = config.project;
     this._bucketList.internalValue = config.bucketList;
     this._deleteObject.internalValue = config.deleteObject;
+    this._loggingConfig.internalValue = config.loggingConfig;
     this._putMetadata.internalValue = config.putMetadata;
     this._putObjectHold.internalValue = config.putObjectHold;
     this._rewriteObject.internalValue = config.rewriteObject;
@@ -1365,6 +1498,22 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // dry_run - computed: false, optional: true, required: false
+  private _dryRun?: boolean | cdktn.IResolvable; 
+  public get dryRun() {
+    return this.getBooleanAttribute('dry_run');
+  }
+  public set dryRun(value: boolean | cdktn.IResolvable) {
+    this._dryRun = value;
+  }
+  public resetDryRun() {
+    this._dryRun = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dryRunInput() {
+    return this._dryRun;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1462,6 +1611,22 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
     return this._deleteObject.internalValue;
   }
 
+  // logging_config - computed: false, optional: true, required: false
+  private _loggingConfig = new StorageBatchOperationsJobLoggingConfigOutputReference(this, "logging_config");
+  public get loggingConfig() {
+    return this._loggingConfig;
+  }
+  public putLoggingConfig(value: StorageBatchOperationsJobLoggingConfig) {
+    this._loggingConfig.internalValue = value;
+  }
+  public resetLoggingConfig() {
+    this._loggingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingConfigInput() {
+    return this._loggingConfig.internalValue;
+  }
+
   // put_metadata - computed: false, optional: true, required: false
   private _putMetadata = new StorageBatchOperationsJobPutMetadataOutputReference(this, "put_metadata");
   public get putMetadata() {
@@ -1535,11 +1700,13 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
       delete_protection: cdktn.booleanToTerraform(this._deleteProtection),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
+      dry_run: cdktn.booleanToTerraform(this._dryRun),
       id: cdktn.stringToTerraform(this._id),
       job_id: cdktn.stringToTerraform(this._jobId),
       project: cdktn.stringToTerraform(this._project),
       bucket_list: storageBatchOperationsJobBucketListStructToTerraform(this._bucketList.internalValue),
       delete_object: storageBatchOperationsJobDeleteObjectToTerraform(this._deleteObject.internalValue),
+      logging_config: storageBatchOperationsJobLoggingConfigToTerraform(this._loggingConfig.internalValue),
       put_metadata: storageBatchOperationsJobPutMetadataToTerraform(this._putMetadata.internalValue),
       put_object_hold: storageBatchOperationsJobPutObjectHoldToTerraform(this._putObjectHold.internalValue),
       rewrite_object: storageBatchOperationsJobRewriteObjectToTerraform(this._rewriteObject.internalValue),
@@ -1566,6 +1733,12 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      dry_run: {
+        value: cdktn.booleanToHclTerraform(this._dryRun),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
@@ -1596,6 +1769,12 @@ export class StorageBatchOperationsJob extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "StorageBatchOperationsJobDeleteObjectList",
+      },
+      logging_config: {
+        value: storageBatchOperationsJobLoggingConfigToHclTerraform(this._loggingConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "StorageBatchOperationsJobLoggingConfigList",
       },
       put_metadata: {
         value: storageBatchOperationsJobPutMetadataToHclTerraform(this._putMetadata.internalValue),

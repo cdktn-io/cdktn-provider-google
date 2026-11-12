@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * For project-scoped endpoints, it is optional but must match the
   * endpoint's project if specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#billing_project_id NetworkSecurityFirewallEndpoint#billing_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#billing_project_id NetworkSecurityFirewallEndpoint#billing_project_id}
   */
   readonly billingProjectId?: string;
   /**
@@ -30,11 +30,11 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#deletion_policy NetworkSecurityFirewallEndpoint#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#deletion_policy NetworkSecurityFirewallEndpoint#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#id NetworkSecurityFirewallEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#id NetworkSecurityFirewallEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,44 +47,44 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#labels NetworkSecurityFirewallEndpoint#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#labels NetworkSecurityFirewallEndpoint#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location (zone) of the firewall endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#location NetworkSecurityFirewallEndpoint#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#location NetworkSecurityFirewallEndpoint#location}
   */
   readonly location: string;
   /**
   * The name of the firewall endpoint resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#name NetworkSecurityFirewallEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#name NetworkSecurityFirewallEndpoint#name}
   */
   readonly name: string;
   /**
   * The name of the parent this firewall endpoint belongs to.
   * Format: 'organizations/{organization_id}' or 'projects/{project_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#parent NetworkSecurityFirewallEndpoint#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#parent NetworkSecurityFirewallEndpoint#parent}
   */
   readonly parent: string;
   /**
   * endpoint_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#endpoint_settings NetworkSecurityFirewallEndpoint#endpoint_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#endpoint_settings NetworkSecurityFirewallEndpoint#endpoint_settings}
   */
   readonly endpointSettings?: NetworkSecurityFirewallEndpointEndpointSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#timeouts NetworkSecurityFirewallEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#timeouts NetworkSecurityFirewallEndpoint#timeouts}
   */
   readonly timeouts?: NetworkSecurityFirewallEndpointTimeouts;
   /**
   * wildfire_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_settings NetworkSecurityFirewallEndpoint#wildfire_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#wildfire_settings NetworkSecurityFirewallEndpoint#wildfire_settings}
   */
   readonly wildfireSettings?: NetworkSecurityFirewallEndpointWildfireSettings;
 }
@@ -95,7 +95,7 @@ export interface NetworkSecurityFirewallEndpointEndpointSettings {
   * [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.firewallEndpoints#contentcloudregion)
   * for the list of supported regions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#content_cloud_region NetworkSecurityFirewallEndpoint#content_cloud_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#content_cloud_region NetworkSecurityFirewallEndpoint#content_cloud_region}
   */
   readonly contentCloudRegion?: string;
   /**
@@ -104,13 +104,13 @@ export interface NetworkSecurityFirewallEndpointEndpointSettings {
   * blocked by the firewall. 'false' provides maximum availability, 'true'
   * provides maximum security.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#http_partial_response_blocked NetworkSecurityFirewallEndpoint#http_partial_response_blocked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#http_partial_response_blocked NetworkSecurityFirewallEndpoint#http_partial_response_blocked}
   */
   readonly httpPartialResponseBlocked?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether Jumbo Frames are enabled for the firewall endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#jumbo_frames_enabled NetworkSecurityFirewallEndpoint#jumbo_frames_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#jumbo_frames_enabled NetworkSecurityFirewallEndpoint#jumbo_frames_enabled}
   */
   readonly jumboFramesEnabled?: boolean | cdktn.IResolvable;
 }
@@ -252,15 +252,15 @@ export class NetworkSecurityFirewallEndpointEndpointSettingsOutputReference exte
 }
 export interface NetworkSecurityFirewallEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#create NetworkSecurityFirewallEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#create NetworkSecurityFirewallEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#delete NetworkSecurityFirewallEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#delete NetworkSecurityFirewallEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#update NetworkSecurityFirewallEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#update NetworkSecurityFirewallEndpoint#update}
   */
   readonly update?: string;
 }
@@ -418,20 +418,20 @@ export interface NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCl
   * A duration in seconds with up to nine fractional digits, ending with 's'.
   * Example: "30s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#max_analysis_duration NetworkSecurityFirewallEndpoint#max_analysis_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#max_analysis_duration NetworkSecurityFirewallEndpoint#max_analysis_duration}
   */
   readonly maxAnalysisDuration?: string;
   /**
   * Indicates whether logging is disabled when a WildFire inline cloud
   * analysis submission times out.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#submission_timeout_logging_disabled NetworkSecurityFirewallEndpoint#submission_timeout_logging_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#submission_timeout_logging_disabled NetworkSecurityFirewallEndpoint#submission_timeout_logging_disabled}
   */
   readonly submissionTimeoutLoggingDisabled?: boolean | cdktn.IResolvable;
   /**
   * The action to take when WildFire inline cloud analysis times out. Possible values: ["ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#timeout_action NetworkSecurityFirewallEndpoint#timeout_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#timeout_action NetworkSecurityFirewallEndpoint#timeout_action}
   */
   readonly timeoutAction?: string;
 }
@@ -578,7 +578,7 @@ export interface NetworkSecurityFirewallEndpointWildfireSettings {
   * agreement (EULA) for the endpoint's billing project; see
   * [Configure WildFire](https://docs.cloud.google.com/firewall/docs/configure-wildfire).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#enabled NetworkSecurityFirewallEndpoint#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#enabled NetworkSecurityFirewallEndpoint#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
@@ -588,13 +588,13 @@ export interface NetworkSecurityFirewallEndpointWildfireSettings {
   * A duration in seconds with up to nine fractional digits, ending with 's'.
   * Example: "1s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_realtime_lookup_duration NetworkSecurityFirewallEndpoint#wildfire_realtime_lookup_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#wildfire_realtime_lookup_duration NetworkSecurityFirewallEndpoint#wildfire_realtime_lookup_duration}
   */
   readonly wildfireRealtimeLookupDuration?: string;
   /**
   * The action to take when a WildFire real-time signature lookup times out. Possible values: ["ALLOW", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_realtime_lookup_timeout_action NetworkSecurityFirewallEndpoint#wildfire_realtime_lookup_timeout_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#wildfire_realtime_lookup_timeout_action NetworkSecurityFirewallEndpoint#wildfire_realtime_lookup_timeout_action}
   */
   readonly wildfireRealtimeLookupTimeoutAction?: string;
   /**
@@ -603,13 +603,13 @@ export interface NetworkSecurityFirewallEndpointWildfireSettings {
   * [API docs](https://docs.cloud.google.com/firewall/docs/reference/network-security/rest/v1beta1/organizations.locations.firewallEndpoints#wildfireregion)
   * for the list of supported regions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_region NetworkSecurityFirewallEndpoint#wildfire_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#wildfire_region NetworkSecurityFirewallEndpoint#wildfire_region}
   */
   readonly wildfireRegion?: string;
   /**
   * wildfire_inline_cloud_analysis_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#wildfire_inline_cloud_analysis_settings NetworkSecurityFirewallEndpoint#wildfire_inline_cloud_analysis_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#wildfire_inline_cloud_analysis_settings NetworkSecurityFirewallEndpoint#wildfire_inline_cloud_analysis_settings}
   */
   readonly wildfireInlineCloudAnalysisSettings?: NetworkSecurityFirewallEndpointWildfireSettingsWildfireInlineCloudAnalysisSettings;
 }
@@ -809,7 +809,7 @@ export class NetworkSecurityFirewallEndpointWildfireSettingsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}
 */
 export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
 
@@ -825,7 +825,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityFirewallEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityFirewallEndpoint to import
-  * @param importFromId The id of the existing NetworkSecurityFirewallEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityFirewallEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityFirewallEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -837,7 +837,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -848,7 +848,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_firewall_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

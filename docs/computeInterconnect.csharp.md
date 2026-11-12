@@ -4,7 +4,7 @@
 
 ### ComputeInterconnect <a name="ComputeInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect google_compute_interconnect}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect google_compute_interconnect}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.Initializer"></a>
 
@@ -74,10 +74,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putApplicationAwareInterconnect">PutApplicationAwareInterconnect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putMacsec">PutMacsec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putParams">PutParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetAaiEnabled">ResetAaiEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetAdminEnabled">ResetAdminEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetApplicationAwareInterconnect">ResetApplicationAwareInterconnect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetCustomerName">ResetCustomerName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetDescription">ResetDescription</a></code> | *No description.* |
@@ -403,6 +406,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutApplicationAwareInterconnect` <a name="PutApplicationAwareInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putApplicationAwareInterconnect"></a>
+
+```csharp
+private void PutApplicationAwareInterconnect(ComputeInterconnectApplicationAwareInterconnect Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putApplicationAwareInterconnect.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a>
+
+---
+
 ##### `PutMacsec` <a name="PutMacsec" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.putMacsec"></a>
 
 ```csharp
@@ -439,10 +454,22 @@ private void PutTimeouts(ComputeInterconnectTimeouts Value)
 
 ---
 
+##### `ResetAaiEnabled` <a name="ResetAaiEnabled" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetAaiEnabled"></a>
+
+```csharp
+private void ResetAaiEnabled()
+```
+
 ##### `ResetAdminEnabled` <a name="ResetAdminEnabled" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetAdminEnabled"></a>
 
 ```csharp
 private void ResetAdminEnabled()
+```
+
+##### `ResetApplicationAwareInterconnect` <a name="ResetApplicationAwareInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetApplicationAwareInterconnect"></a>
+
+```csharp
+private void ResetApplicationAwareInterconnect()
 ```
 
 ##### `ResetCustomerName` <a name="ResetCustomerName" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.resetCustomerName"></a>
@@ -626,7 +653,7 @@ The construct id used in the generated config for the ComputeInterconnect to imp
 
 The id of the existing ComputeInterconnect that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,6 +683,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.applicationAwareInterconnect">ApplicationAwareInterconnect</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference">ComputeInterconnectApplicationAwareInterconnectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.availableFeatures">AvailableFeatures</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.circuitInfos">CircuitInfos</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList">ComputeInterconnectCircuitInfosList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.creationTimestamp">CreationTimestamp</a></code> | <code>string</code> | *No description.* |
@@ -677,7 +705,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference">ComputeInterconnectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.wireGroups">WireGroups</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.aaiEnabledInput">AaiEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabledInput">AdminEnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.applicationAwareInterconnectInput">ApplicationAwareInterconnectInput</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.customerNameInput">CustomerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
@@ -696,6 +726,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.requestedFeaturesInput">RequestedFeaturesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.requestedLinkCountInput">RequestedLinkCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.aaiEnabled">AaiEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabled">AdminEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.customerName">CustomerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
@@ -854,6 +885,16 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 ```
 
 - *Type:* Io.Cdktn.FileProvisioner|Io.Cdktn.LocalExecProvisioner|Io.Cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `ApplicationAwareInterconnect`<sup>Required</sup> <a name="ApplicationAwareInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.applicationAwareInterconnect"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectOutputReference ApplicationAwareInterconnect { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference">ComputeInterconnectApplicationAwareInterconnectOutputReference</a>
 
 ---
 
@@ -1067,6 +1108,16 @@ public string[] WireGroups { get; }
 
 ---
 
+##### `AaiEnabledInput`<sup>Optional</sup> <a name="AaiEnabledInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.aaiEnabledInput"></a>
+
+```csharp
+public bool|IResolvable AaiEnabledInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `AdminEnabledInput`<sup>Optional</sup> <a name="AdminEnabledInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabledInput"></a>
 
 ```csharp
@@ -1074,6 +1125,16 @@ public bool|IResolvable AdminEnabledInput { get; }
 ```
 
 - *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `ApplicationAwareInterconnectInput`<sup>Optional</sup> <a name="ApplicationAwareInterconnectInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.applicationAwareInterconnectInput"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnect ApplicationAwareInterconnectInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a>
 
 ---
 
@@ -1257,6 +1318,16 @@ public IResolvable|ComputeInterconnectTimeouts TimeoutsInput { get; }
 
 ---
 
+##### `AaiEnabled`<sup>Required</sup> <a name="AaiEnabled" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.aaiEnabled"></a>
+
+```csharp
+public bool|IResolvable AaiEnabled { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `AdminEnabled`<sup>Required</sup> <a name="AdminEnabled" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabled"></a>
 
 ```csharp
@@ -1437,6 +1508,239 @@ public string TfResourceType { get; }
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ComputeInterconnectApplicationAwareInterconnect <a name="ComputeInterconnectApplicationAwareInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnect {
+    ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy BandwidthPercentagePolicy = null,
+    string ProfileDescription = null,
+    IResolvable|ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] ShapeAveragePercentage = null,
+    ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy StrictPriorityPolicy = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.bandwidthPercentagePolicy">BandwidthPercentagePolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a></code> | bandwidth_percentage_policy block. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.profileDescription">ProfileDescription</a></code> | <code>string</code> | A description for the AAI profile on this interconnect. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.shapeAveragePercentage">ShapeAveragePercentage</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]</code> | shape_average_percentage block. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.strictPriorityPolicy">StrictPriorityPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a></code> | strict_priority_policy block. |
+
+---
+
+##### `BandwidthPercentagePolicy`<sup>Optional</sup> <a name="BandwidthPercentagePolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.bandwidthPercentagePolicy"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy BandwidthPercentagePolicy { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a>
+
+bandwidth_percentage_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#bandwidth_percentage_policy ComputeInterconnect#bandwidth_percentage_policy}
+
+---
+
+##### `ProfileDescription`<sup>Optional</sup> <a name="ProfileDescription" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.profileDescription"></a>
+
+```csharp
+public string ProfileDescription { get; set; }
+```
+
+- *Type:* string
+
+A description for the AAI profile on this interconnect.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#profile_description ComputeInterconnect#profile_description}
+
+---
+
+##### `ShapeAveragePercentage`<sup>Optional</sup> <a name="ShapeAveragePercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.shapeAveragePercentage"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] ShapeAveragePercentage { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]
+
+shape_average_percentage block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#shape_average_percentage ComputeInterconnect#shape_average_percentage}
+
+---
+
+##### `StrictPriorityPolicy`<sup>Optional</sup> <a name="StrictPriorityPolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect.property.strictPriorityPolicy"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy StrictPriorityPolicy { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a>
+
+strict_priority_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#strict_priority_policy ComputeInterconnect#strict_priority_policy}
+
+---
+
+### ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy <a name="ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy {
+    IResolvable|ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] BandwidthPercentage = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy.property.bandwidthPercentage">BandwidthPercentage</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]</code> | bandwidth_percentage block. |
+
+---
+
+##### `BandwidthPercentage`<sup>Optional</sup> <a name="BandwidthPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy.property.bandwidthPercentage"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] BandwidthPercentage { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]
+
+bandwidth_percentage block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#bandwidth_percentage ComputeInterconnect#bandwidth_percentage}
+
+---
+
+### ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage <a name="ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage {
+    double Percentage = null,
+    string TrafficClass = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage.property.percentage">Percentage</a></code> | <code>double</code> | Bandwidth percentage for a specific traffic class. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage.property.trafficClass">TrafficClass</a></code> | <code>string</code> | Enum representing the various traffic classes offered by AAI. |
+
+---
+
+##### `Percentage`<sup>Optional</sup> <a name="Percentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage.property.percentage"></a>
+
+```csharp
+public double Percentage { get; set; }
+```
+
+- *Type:* double
+
+Bandwidth percentage for a specific traffic class.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#percentage ComputeInterconnect#percentage}
+
+---
+
+##### `TrafficClass`<sup>Optional</sup> <a name="TrafficClass" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage.property.trafficClass"></a>
+
+```csharp
+public string TrafficClass { get; set; }
+```
+
+- *Type:* string
+
+Enum representing the various traffic classes offered by AAI.
+
+Default value: "TC_UNSPECIFIED" Possible values: ["TC_UNSPECIFIED", "TC1", "TC2", "TC3", "TC4", "TC5", "TC6"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#traffic_class ComputeInterconnect#traffic_class}
+
+---
+
+### ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage <a name="ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage {
+    double Percentage = null,
+    string TrafficClass = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage.property.percentage">Percentage</a></code> | <code>double</code> | Bandwidth percentage for a specific traffic class. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage.property.trafficClass">TrafficClass</a></code> | <code>string</code> | Enum representing the various traffic classes offered by AAI. |
+
+---
+
+##### `Percentage`<sup>Optional</sup> <a name="Percentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage.property.percentage"></a>
+
+```csharp
+public double Percentage { get; set; }
+```
+
+- *Type:* double
+
+Bandwidth percentage for a specific traffic class.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#percentage ComputeInterconnect#percentage}
+
+---
+
+##### `TrafficClass`<sup>Optional</sup> <a name="TrafficClass" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage.property.trafficClass"></a>
+
+```csharp
+public string TrafficClass { get; set; }
+```
+
+- *Type:* string
+
+Enum representing the various traffic classes offered by AAI.
+
+Default value: "TC_UNSPECIFIED" Possible values: ["TC_UNSPECIFIED", "TC1", "TC2", "TC3", "TC4", "TC5", "TC6"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#traffic_class ComputeInterconnect#traffic_class}
+
+---
+
+### ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy <a name="ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy {
+
+};
+```
+
+
 ### ComputeInterconnectCircuitInfos <a name="ComputeInterconnectCircuitInfos" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfos"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfos.Initializer"></a>
@@ -1470,7 +1774,9 @@ new ComputeInterconnectConfig {
     string Location,
     string Name,
     double RequestedLinkCount,
+    bool|IResolvable AaiEnabled = null,
     bool|IResolvable AdminEnabled = null,
+    ComputeInterconnectApplicationAwareInterconnect ApplicationAwareInterconnect = null,
     string CustomerName = null,
     string DeletionPolicy = null,
     string Description = null,
@@ -1503,17 +1809,19 @@ new ComputeInterconnectConfig {
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.location">Location</a></code> | <code>string</code> | URL of the InterconnectLocation object that represents where this connection is requested to be provisioned. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.requestedLinkCount">RequestedLinkCount</a></code> | <code>double</code> | Target number of physical links in the link bundle, as requested by the customer. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.aaiEnabled">AaiEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Enable or disable the Application Aware Interconnect(AAI) feature on this interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.adminEnabled">AdminEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Administrative status of the interconnect. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.applicationAwareInterconnect">ApplicationAwareInterconnect</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a></code> | application_aware_interconnect block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.customerName">CustomerName</a></code> | <code>string</code> | Customer name, to put in the Letter of Authorization as the party authorized to request a crossconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels for this resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsec">Macsec</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec">ComputeInterconnectMacsec</a></code> | macsec block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsecEnabled">MacsecEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.nocContactEmail">NocContactEmail</a></code> | <code>string</code> | Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectParams">ComputeInterconnectParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.remoteLocation">RemoteLocation</a></code> | <code>string</code> | Indicates that this is a Cross-Cloud Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.requestedFeatures">RequestedFeatures</a></code> | <code>string[]</code> | List of features to request for this Interconnect connection. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | timeouts block. |
@@ -1606,7 +1914,7 @@ Can take one of the following values:
 * PARTNER: A partner-managed interconnection shared between customers though a partner.
 * DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
 
 ---
 
@@ -1627,7 +1935,7 @@ bundle, not the speed of the entire bundle. Can take one of the following values
 * LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics.
 * LINK_TYPE_ETHERNET_400G_LR4: A 400G Ethernet with LR4 optics Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR", "LINK_TYPE_ETHERNET_400G_LR4"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
 
 ---
 
@@ -1643,7 +1951,7 @@ URL of the InterconnectLocation object that represents where this connection is 
 
 Specifies the location inside Google's Networks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
 
 ---
 
@@ -1663,7 +1971,7 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
 
 ---
 
@@ -1677,7 +1985,21 @@ public double RequestedLinkCount { get; set; }
 
 Target number of physical links in the link bundle, as requested by the customer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
+
+---
+
+##### `AaiEnabled`<sup>Optional</sup> <a name="AaiEnabled" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.aaiEnabled"></a>
+
+```csharp
+public bool|IResolvable AaiEnabled { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Enable or disable the Application Aware Interconnect(AAI) feature on this interconnect.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#aai_enabled ComputeInterconnect#aai_enabled}
 
 ---
 
@@ -1695,7 +2017,21 @@ When this is set to true, the Interconnect is
 functional and can carry traffic. When set to false, no packets can be carried over the
 interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
+
+---
+
+##### `ApplicationAwareInterconnect`<sup>Optional</sup> <a name="ApplicationAwareInterconnect" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.applicationAwareInterconnect"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnect ApplicationAwareInterconnect { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a>
+
+application_aware_interconnect block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#application_aware_interconnect ComputeInterconnect#application_aware_interconnect}
 
 ---
 
@@ -1712,7 +2048,7 @@ Customer name, to put in the Letter of Authorization as the party authorized to 
 This field is required for Dedicated and Partner Interconnect, should not be specified
 for cross-cloud interconnect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
 
 ---
 
@@ -1733,7 +2069,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#deletion_policy ComputeInterconnect#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#deletion_policy ComputeInterconnect#deletion_policy}
 
 ---
 
@@ -1747,7 +2083,7 @@ public string Description { get; set; }
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
 
 ---
 
@@ -1759,7 +2095,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1782,7 +2118,7 @@ method. Each label key/value pair must comply with RFC1035. Label values may be 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
 
 ---
 
@@ -1796,7 +2132,7 @@ public ComputeInterconnectMacsec Macsec { get; set; }
 
 macsec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
 
 ---
 
@@ -1810,7 +2146,7 @@ public bool|IResolvable MacsecEnabled { get; set; }
 
 Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
 
 ---
 
@@ -1829,7 +2165,7 @@ all other forms described, such as Cloud Monitoring logs alerting and Cloud Noti
 This field is required for users who sign up for Cloud Interconnect using workforce identity
 federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
 
 ---
 
@@ -1843,7 +2179,7 @@ public ComputeInterconnectParams Params { get; set; }
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
 
 ---
 
@@ -1855,7 +2191,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}.
 
 ---
 
@@ -1872,7 +2208,7 @@ Indicates that this is a Cross-Cloud Interconnect.
 This field specifies the location outside
 of Google's network that the interconnect is connected to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
 
 ---
 
@@ -1894,7 +2230,7 @@ Possible values include:
 * 'IF_CROSS_SITE_NETWORK': Provisions the connection exclusively for Cross-Site Networking.
   Note: 'MACSEC' is a legacy value for compatibility reasons. 'IF_MACSEC' should be used. Choosing 'MACSEC' can result in allocation of non-MACsec capable ports, if available. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC", "IF_L2_FORWARDING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
 
 ---
 
@@ -1908,7 +2244,7 @@ public ComputeInterconnectTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
 
 ---
 
@@ -1957,7 +2293,7 @@ public IResolvable|ComputeInterconnectMacsecPreSharedKeys[] PreSharedKeys { get;
 
 pre_shared_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
 
 ---
 
@@ -1975,7 +2311,7 @@ By default, the Interconnect
 connection is configured with a must-secure security policy that drops all traffic
 if the MKA session cannot be established with your router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
 
 ---
 
@@ -2019,7 +2355,7 @@ the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which means the firs
 must be a lowercase letter, and all following characters must be a dash, lowercase
 letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
 
 ---
 
@@ -2037,7 +2373,7 @@ By default, the Interconnect
 connection is configured with a must-secure security policy that drops all traffic
 if the MKA session cannot be established with your router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
 
 ---
 
@@ -2057,7 +2393,7 @@ has multiple keys, startTime is mandatory for each key. The start times of keys 
 be in increasing order. The start times of two consecutive keys must be at least 6
 hours apart.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
 
 ---
 
@@ -2095,7 +2431,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
 
 ---
 
@@ -2117,9 +2453,9 @@ new ComputeInterconnectTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}. |
 
 ---
 
@@ -2131,7 +2467,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}.
 
 ---
 
@@ -2143,7 +2479,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}.
 
 ---
 
@@ -2155,11 +2491,1925 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList <a name="ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.get"></a>
+
+```csharp
+private ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]
+
+---
+
+
+### ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference <a name="ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resetPercentage">ResetPercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resetTrafficClass">ResetTrafficClass</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPercentage` <a name="ResetPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resetPercentage"></a>
+
+```csharp
+private void ResetPercentage()
+```
+
+##### `ResetTrafficClass` <a name="ResetTrafficClass" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.resetTrafficClass"></a>
+
+```csharp
+private void ResetTrafficClass()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.percentageInput">PercentageInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.trafficClassInput">TrafficClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.percentage">Percentage</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.trafficClass">TrafficClass</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PercentageInput`<sup>Optional</sup> <a name="PercentageInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.percentageInput"></a>
+
+```csharp
+public double PercentageInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TrafficClassInput`<sup>Optional</sup> <a name="TrafficClassInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.trafficClassInput"></a>
+
+```csharp
+public string TrafficClassInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Percentage`<sup>Required</sup> <a name="Percentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.percentage"></a>
+
+```csharp
+public double Percentage { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TrafficClass`<sup>Required</sup> <a name="TrafficClass" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.trafficClass"></a>
+
+```csharp
+public string TrafficClass { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>
+
+---
+
+
+### ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference <a name="ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.putBandwidthPercentage">PutBandwidthPercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.resetBandwidthPercentage">ResetBandwidthPercentage</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutBandwidthPercentage` <a name="PutBandwidthPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.putBandwidthPercentage"></a>
+
+```csharp
+private void PutBandwidthPercentage(IResolvable|ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.putBandwidthPercentage.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]
+
+---
+
+##### `ResetBandwidthPercentage` <a name="ResetBandwidthPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.resetBandwidthPercentage"></a>
+
+```csharp
+private void ResetBandwidthPercentage()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.bandwidthPercentage">BandwidthPercentage</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.bandwidthPercentageInput">BandwidthPercentageInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BandwidthPercentage`<sup>Required</sup> <a name="BandwidthPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.bandwidthPercentage"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList BandwidthPercentage { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList</a>
+
+---
+
+##### `BandwidthPercentageInput`<sup>Optional</sup> <a name="BandwidthPercentageInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.bandwidthPercentageInput"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] BandwidthPercentageInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage</a>[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference.property.internalValue"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a>
+
+---
+
+
+### ComputeInterconnectApplicationAwareInterconnectOutputReference <a name="ComputeInterconnectApplicationAwareInterconnectOutputReference" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putBandwidthPercentagePolicy">PutBandwidthPercentagePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putShapeAveragePercentage">PutShapeAveragePercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putStrictPriorityPolicy">PutStrictPriorityPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetBandwidthPercentagePolicy">ResetBandwidthPercentagePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetProfileDescription">ResetProfileDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetShapeAveragePercentage">ResetShapeAveragePercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetStrictPriorityPolicy">ResetStrictPriorityPolicy</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutBandwidthPercentagePolicy` <a name="PutBandwidthPercentagePolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putBandwidthPercentagePolicy"></a>
+
+```csharp
+private void PutBandwidthPercentagePolicy(ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putBandwidthPercentagePolicy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a>
+
+---
+
+##### `PutShapeAveragePercentage` <a name="PutShapeAveragePercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putShapeAveragePercentage"></a>
+
+```csharp
+private void PutShapeAveragePercentage(IResolvable|ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putShapeAveragePercentage.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]
+
+---
+
+##### `PutStrictPriorityPolicy` <a name="PutStrictPriorityPolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putStrictPriorityPolicy"></a>
+
+```csharp
+private void PutStrictPriorityPolicy(ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.putStrictPriorityPolicy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a>
+
+---
+
+##### `ResetBandwidthPercentagePolicy` <a name="ResetBandwidthPercentagePolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetBandwidthPercentagePolicy"></a>
+
+```csharp
+private void ResetBandwidthPercentagePolicy()
+```
+
+##### `ResetProfileDescription` <a name="ResetProfileDescription" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetProfileDescription"></a>
+
+```csharp
+private void ResetProfileDescription()
+```
+
+##### `ResetShapeAveragePercentage` <a name="ResetShapeAveragePercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetShapeAveragePercentage"></a>
+
+```csharp
+private void ResetShapeAveragePercentage()
+```
+
+##### `ResetStrictPriorityPolicy` <a name="ResetStrictPriorityPolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.resetStrictPriorityPolicy"></a>
+
+```csharp
+private void ResetStrictPriorityPolicy()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.bandwidthPercentagePolicy">BandwidthPercentagePolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.shapeAveragePercentage">ShapeAveragePercentage</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.strictPriorityPolicy">StrictPriorityPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.bandwidthPercentagePolicyInput">BandwidthPercentagePolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.profileDescriptionInput">ProfileDescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.shapeAveragePercentageInput">ShapeAveragePercentageInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.strictPriorityPolicyInput">StrictPriorityPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.profileDescription">ProfileDescription</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BandwidthPercentagePolicy`<sup>Required</sup> <a name="BandwidthPercentagePolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.bandwidthPercentagePolicy"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference BandwidthPercentagePolicy { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference</a>
+
+---
+
+##### `ShapeAveragePercentage`<sup>Required</sup> <a name="ShapeAveragePercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.shapeAveragePercentage"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList ShapeAveragePercentage { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList</a>
+
+---
+
+##### `StrictPriorityPolicy`<sup>Required</sup> <a name="StrictPriorityPolicy" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.strictPriorityPolicy"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference StrictPriorityPolicy { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference</a>
+
+---
+
+##### `BandwidthPercentagePolicyInput`<sup>Optional</sup> <a name="BandwidthPercentagePolicyInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.bandwidthPercentagePolicyInput"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy BandwidthPercentagePolicyInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy">ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy</a>
+
+---
+
+##### `ProfileDescriptionInput`<sup>Optional</sup> <a name="ProfileDescriptionInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.profileDescriptionInput"></a>
+
+```csharp
+public string ProfileDescriptionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ShapeAveragePercentageInput`<sup>Optional</sup> <a name="ShapeAveragePercentageInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.shapeAveragePercentageInput"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] ShapeAveragePercentageInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]
+
+---
+
+##### `StrictPriorityPolicyInput`<sup>Optional</sup> <a name="StrictPriorityPolicyInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.strictPriorityPolicyInput"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy StrictPriorityPolicyInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a>
+
+---
+
+##### `ProfileDescription`<sup>Required</sup> <a name="ProfileDescription" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.profileDescription"></a>
+
+```csharp
+public string ProfileDescription { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectOutputReference.property.internalValue"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnect InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnect">ComputeInterconnectApplicationAwareInterconnect</a>
+
+---
+
+
+### ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList <a name="ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.get"></a>
+
+```csharp
+private ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>[]
+
+---
+
+
+### ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference <a name="ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resetPercentage">ResetPercentage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resetTrafficClass">ResetTrafficClass</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPercentage` <a name="ResetPercentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resetPercentage"></a>
+
+```csharp
+private void ResetPercentage()
+```
+
+##### `ResetTrafficClass` <a name="ResetTrafficClass" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.resetTrafficClass"></a>
+
+```csharp
+private void ResetTrafficClass()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.percentageInput">PercentageInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.trafficClassInput">TrafficClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.percentage">Percentage</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.trafficClass">TrafficClass</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PercentageInput`<sup>Optional</sup> <a name="PercentageInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.percentageInput"></a>
+
+```csharp
+public double PercentageInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TrafficClassInput`<sup>Optional</sup> <a name="TrafficClassInput" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.trafficClassInput"></a>
+
+```csharp
+public string TrafficClassInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Percentage`<sup>Required</sup> <a name="Percentage" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.percentage"></a>
+
+```csharp
+public double Percentage { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TrafficClass`<sup>Required</sup> <a name="TrafficClass" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.trafficClass"></a>
+
+```csharp
+public string TrafficClass { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage">ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage</a>
+
+---
+
+
+### ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference <a name="ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference.property.internalValue"></a>
+
+```csharp
+public ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy">ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy</a>
+
+---
+
 
 ### ComputeInterconnectCircuitInfosList <a name="ComputeInterconnectCircuitInfosList" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList"></a>
 

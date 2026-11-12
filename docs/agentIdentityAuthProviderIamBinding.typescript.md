@@ -4,7 +4,7 @@
 
 ### AgentIdentityAuthProviderIamBinding <a name="AgentIdentityAuthProviderIamBinding" id="@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding google_agent_identity_auth_provider_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding google_agent_identity_auth_provider_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the AgentIdentityAuthProviderI
 
 The id of the existing AgentIdentityAuthProviderIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const agentIdentityAuthProviderIamBindingCondition: agentIdentityAuthProviderIam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#expression AgentIdentityAuthProviderIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#title AgentIdentityAuthProviderIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#description AgentIdentityAuthProviderIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#expression AgentIdentityAuthProviderIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#title AgentIdentityAuthProviderIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#description AgentIdentityAuthProviderIamBinding#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#expression AgentIdentityAuthProviderIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#expression AgentIdentityAuthProviderIamBinding#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#title AgentIdentityAuthProviderIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#title AgentIdentityAuthProviderIamBinding#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#description AgentIdentityAuthProviderIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#description AgentIdentityAuthProviderIamBinding#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const agentIdentityAuthProviderIamBindingConfig: agentIdentityAuthProviderIamBin
 | <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.authProviderId">authProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#auth_provider_id AgentIdentityAuthProviderIamBinding#auth_provider_id}. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#members AgentIdentityAuthProviderIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#role AgentIdentityAuthProviderIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.authProviderId">authProviderId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#auth_provider_id AgentIdentityAuthProviderIamBinding#auth_provider_id}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#members AgentIdentityAuthProviderIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#role AgentIdentityAuthProviderIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingCondition">AgentIdentityAuthProviderIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#id AgentIdentityAuthProviderIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#location AgentIdentityAuthProviderIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#project AgentIdentityAuthProviderIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#id AgentIdentityAuthProviderIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#location AgentIdentityAuthProviderIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.agentIdentityAuthProviderIamBinding.AgentIdentityAuthProviderIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#project AgentIdentityAuthProviderIamBinding#project}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly authProviderId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#auth_provider_id AgentIdentityAuthProviderIamBinding#auth_provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#auth_provider_id AgentIdentityAuthProviderIamBinding#auth_provider_id}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#members AgentIdentityAuthProviderIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#members AgentIdentityAuthProviderIamBinding#members}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#role AgentIdentityAuthProviderIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#role AgentIdentityAuthProviderIamBinding#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: AgentIdentityAuthProviderIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#condition AgentIdentityAuthProviderIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#condition AgentIdentityAuthProviderIamBinding#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#id AgentIdentityAuthProviderIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#id AgentIdentityAuthProviderIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#location AgentIdentityAuthProviderIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#location AgentIdentityAuthProviderIamBinding#location}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/agent_identity_auth_provider_iam_binding#project AgentIdentityAuthProviderIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agent_identity_auth_provider_iam_binding#project AgentIdentityAuthProviderIamBinding#project}.
 
 ---
 

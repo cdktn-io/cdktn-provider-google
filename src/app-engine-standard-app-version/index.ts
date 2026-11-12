@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,20 +16,20 @@ export interface AppEngineStandardAppVersionConfig extends cdktn.TerraformMetaAr
   * Allows App Engine second generation runtimes to access the legacy bundled services.
   * Cannot specify both 'app_engine_apis' and 'app_engine_bundled_services' together.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#app_engine_apis AppEngineStandardAppVersion#app_engine_apis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#app_engine_apis AppEngineStandardAppVersion#app_engine_apis}
   */
   readonly appEngineApis?: boolean | cdktn.IResolvable;
   /**
   * A list of legacy bundled services to enable for this version on an App Engine second-generation runtime.
   * Cannot specify both 'app_engine_apis' and 'app_engine_bundled_services' together. Possible values: ["BUNDLED_SERVICE_TYPE_APP_IDENTITY_SERVICE", "BUNDLED_SERVICE_TYPE_BLOBSTORE", "BUNDLED_SERVICE_TYPE_CAPABILITY_SERVICE", "BUNDLED_SERVICE_TYPE_DATASTORE_V3", "BUNDLED_SERVICE_TYPE_IMAGES", "BUNDLED_SERVICE_TYPE_MAIL", "BUNDLED_SERVICE_TYPE_MEMCACHE", "BUNDLED_SERVICE_TYPE_MODULES", "BUNDLED_SERVICE_TYPE_SEARCH", "BUNDLED_SERVICE_TYPE_TASKQUEUES", "BUNDLED_SERVICE_TYPE_URLFETCH", "BUNDLED_SERVICE_TYPE_USERS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#app_engine_bundled_services AppEngineStandardAppVersion#app_engine_bundled_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#app_engine_bundled_services AppEngineStandardAppVersion#app_engine_bundled_services}
   */
   readonly appEngineBundledServices?: string[];
   /**
   * If set to 'true', the service will be deleted if it is the last version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
   */
   readonly deleteServiceOnDestroy?: boolean | cdktn.IResolvable;
   /**
@@ -41,17 +41,17 @@ export interface AppEngineStandardAppVersionConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#deletion_policy AppEngineStandardAppVersion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#deletion_policy AppEngineStandardAppVersion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Environment variables available to the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#env_variables AppEngineStandardAppVersion#env_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#env_variables AppEngineStandardAppVersion#env_variables}
   */
   readonly envVariables?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,7 +60,7 @@ export interface AppEngineStandardAppVersionConfig extends cdktn.TerraformMetaAr
   /**
   * A list of the types of messages that this application is able to receive. Possible values: ["INBOUND_SERVICE_MAIL", "INBOUND_SERVICE_MAIL_BOUNCE", "INBOUND_SERVICE_XMPP_ERROR", "INBOUND_SERVICE_XMPP_MESSAGE", "INBOUND_SERVICE_XMPP_SUBSCRIBE", "INBOUND_SERVICE_XMPP_PRESENCE", "INBOUND_SERVICE_CHANNEL_PRESENCE", "INBOUND_SERVICE_WARMUP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#inbound_services AppEngineStandardAppVersion#inbound_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#inbound_services AppEngineStandardAppVersion#inbound_services}
   */
   readonly inboundServices?: string[];
   /**
@@ -69,23 +69,23 @@ export interface AppEngineStandardAppVersionConfig extends cdktn.TerraformMetaAr
   * BasicScaling or ManualScaling: B1, B2, B4, B4_1G, B8
   * Defaults to F1 for AutomaticScaling and B2 for ManualScaling and BasicScaling. If no scaling is specified, AutomaticScaling is chosen.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#instance_class AppEngineStandardAppVersion#instance_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#instance_class AppEngineStandardAppVersion#instance_class}
   */
   readonly instanceClass?: string;
   /**
   * If set to 'true', the application version will not be deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
   */
   readonly noopOnDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}
   */
   readonly project?: string;
   /**
   * Desired runtime. Example python27.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#runtime AppEngineStandardAppVersion#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#runtime AppEngineStandardAppVersion#runtime}
   */
   readonly runtime: string;
   /**
@@ -93,85 +93,91 @@ export interface AppEngineStandardAppVersionConfig extends cdktn.TerraformMetaAr
   * Please see the app.yaml reference for valid values at 'https://cloud.google.com/appengine/docs/standard/<language>/config/appref'\
   * Substitute '<language>' with 'python', 'java', 'php', 'ruby', 'go' or 'nodejs'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#runtime_api_version AppEngineStandardAppVersion#runtime_api_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#runtime_api_version AppEngineStandardAppVersion#runtime_api_version}
   */
   readonly runtimeApiVersion?: string;
   /**
   * AppEngine service resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#service AppEngineStandardAppVersion#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#service AppEngineStandardAppVersion#service}
   */
   readonly service: string;
   /**
   * The identity that the deployed version will run as. Admin API will use the App Engine Appspot service account as default if this field is neither provided in app.yaml file nor through CLI flag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#service_account AppEngineStandardAppVersion#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#service_account AppEngineStandardAppVersion#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Whether multiple requests can be dispatched to this version at once.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#threadsafe AppEngineStandardAppVersion#threadsafe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#threadsafe AppEngineStandardAppVersion#threadsafe}
   */
   readonly threadsafe?: boolean | cdktn.IResolvable;
   /**
   * Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#version_id AppEngineStandardAppVersion#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#version_id AppEngineStandardAppVersion#version_id}
   */
   readonly versionId?: string;
   /**
   * automatic_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#automatic_scaling AppEngineStandardAppVersion#automatic_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#automatic_scaling AppEngineStandardAppVersion#automatic_scaling}
   */
   readonly automaticScaling?: AppEngineStandardAppVersionAutomaticScaling;
   /**
   * basic_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#basic_scaling AppEngineStandardAppVersion#basic_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#basic_scaling AppEngineStandardAppVersion#basic_scaling}
   */
   readonly basicScaling?: AppEngineStandardAppVersionBasicScaling;
   /**
   * deployment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#deployment AppEngineStandardAppVersion#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#deployment AppEngineStandardAppVersion#deployment}
   */
   readonly deployment: AppEngineStandardAppVersionDeployment;
   /**
   * entrypoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#entrypoint AppEngineStandardAppVersion#entrypoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#entrypoint AppEngineStandardAppVersion#entrypoint}
   */
   readonly entrypoint: AppEngineStandardAppVersionEntrypoint;
   /**
   * handlers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#handlers AppEngineStandardAppVersion#handlers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#handlers AppEngineStandardAppVersion#handlers}
   */
   readonly handlers?: AppEngineStandardAppVersionHandlers[] | cdktn.IResolvable;
   /**
   * libraries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#libraries AppEngineStandardAppVersion#libraries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#libraries AppEngineStandardAppVersion#libraries}
   */
   readonly libraries?: AppEngineStandardAppVersionLibraries[] | cdktn.IResolvable;
   /**
   * manual_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#manual_scaling AppEngineStandardAppVersion#manual_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#manual_scaling AppEngineStandardAppVersion#manual_scaling}
   */
   readonly manualScaling?: AppEngineStandardAppVersionManualScaling;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#timeouts AppEngineStandardAppVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#timeouts AppEngineStandardAppVersion#timeouts}
   */
   readonly timeouts?: AppEngineStandardAppVersionTimeouts;
   /**
+  * vpc_access block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#vpc_access AppEngineStandardAppVersion#vpc_access}
+  */
+  readonly vpcAccess?: AppEngineStandardAppVersionVpcAccess;
+  /**
   * vpc_access_connector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#vpc_access_connector AppEngineStandardAppVersion#vpc_access_connector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#vpc_access_connector AppEngineStandardAppVersion#vpc_access_connector}
   */
   readonly vpcAccessConnector?: AppEngineStandardAppVersionVpcAccessConnector;
 }
@@ -181,25 +187,25 @@ export interface AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSet
   * 
   * **Note:** Starting from March 2025, App Engine sets the maxInstances default for standard environment deployments to 20. This change doesn't impact existing apps. To override the default, specify a new value between 0 and 2147483647, and deploy a new version or redeploy over an existing version. To disable the maxInstances default configuration setting, specify the maximum permitted value 2147483647.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
   */
   readonly maxInstances?: number;
   /**
   * Minimum number of instances to run for this version. Set to zero to disable minInstances configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#min_instances AppEngineStandardAppVersion#min_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#min_instances AppEngineStandardAppVersion#min_instances}
   */
   readonly minInstances?: number;
   /**
   * Target CPU utilization ratio to maintain when scaling. Should be a value in the range [0.50, 0.95], zero, or a negative value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#target_cpu_utilization AppEngineStandardAppVersion#target_cpu_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#target_cpu_utilization AppEngineStandardAppVersion#target_cpu_utilization}
   */
   readonly targetCpuUtilization?: number;
   /**
   * Target throughput utilization ratio to maintain when scaling. Should be a value in the range [0.50, 0.95], zero, or a negative value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#target_throughput_utilization AppEngineStandardAppVersion#target_throughput_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#target_throughput_utilization AppEngineStandardAppVersion#target_throughput_utilization}
   */
   readonly targetThroughputUtilization?: number;
 }
@@ -374,39 +380,39 @@ export interface AppEngineStandardAppVersionAutomaticScaling {
   * 
   * Defaults to a runtime-specific value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_concurrent_requests AppEngineStandardAppVersion#max_concurrent_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_concurrent_requests AppEngineStandardAppVersion#max_concurrent_requests}
   */
   readonly maxConcurrentRequests?: number;
   /**
   * Maximum number of idle instances that should be maintained for this version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_idle_instances AppEngineStandardAppVersion#max_idle_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_idle_instances AppEngineStandardAppVersion#max_idle_instances}
   */
   readonly maxIdleInstances?: number;
   /**
   * Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_pending_latency AppEngineStandardAppVersion#max_pending_latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_pending_latency AppEngineStandardAppVersion#max_pending_latency}
   */
   readonly maxPendingLatency?: string;
   /**
   * Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#min_idle_instances AppEngineStandardAppVersion#min_idle_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#min_idle_instances AppEngineStandardAppVersion#min_idle_instances}
   */
   readonly minIdleInstances?: number;
   /**
   * Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#min_pending_latency AppEngineStandardAppVersion#min_pending_latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#min_pending_latency AppEngineStandardAppVersion#min_pending_latency}
   */
   readonly minPendingLatency?: string;
   /**
   * standard_scheduler_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#standard_scheduler_settings AppEngineStandardAppVersion#standard_scheduler_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#standard_scheduler_settings AppEngineStandardAppVersion#standard_scheduler_settings}
   */
   readonly standardSchedulerSettings?: AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings;
 }
@@ -638,13 +644,13 @@ export interface AppEngineStandardAppVersionBasicScaling {
   * Duration of time after the last request that an instance must wait before the instance is shut down.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". Defaults to 900s.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#idle_timeout AppEngineStandardAppVersion#idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#idle_timeout AppEngineStandardAppVersion#idle_timeout}
   */
   readonly idleTimeout?: string;
   /**
   * Maximum number of instances to create for this version. Must be in the range [1.0, 200.0].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#max_instances AppEngineStandardAppVersion#max_instances}
   */
   readonly maxInstances: number;
 }
@@ -754,19 +760,19 @@ export class AppEngineStandardAppVersionBasicScalingOutputReference extends cdkt
 }
 export interface AppEngineStandardAppVersionDeploymentFiles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
   */
   readonly name: string;
   /**
   * SHA1 checksum of the file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#sha1_sum AppEngineStandardAppVersion#sha1_sum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#sha1_sum AppEngineStandardAppVersion#sha1_sum}
   */
   readonly sha1Sum?: string;
   /**
   * Source URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
   */
   readonly sourceUrl: string;
 }
@@ -936,13 +942,13 @@ export interface AppEngineStandardAppVersionDeploymentZip {
   /**
   * files count
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#files_count AppEngineStandardAppVersion#files_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#files_count AppEngineStandardAppVersion#files_count}
   */
   readonly filesCount?: number;
   /**
   * Source URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#source_url AppEngineStandardAppVersion#source_url}
   */
   readonly sourceUrl: string;
 }
@@ -1054,13 +1060,13 @@ export interface AppEngineStandardAppVersionDeployment {
   /**
   * files block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#files AppEngineStandardAppVersion#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#files AppEngineStandardAppVersion#files}
   */
   readonly files?: AppEngineStandardAppVersionDeploymentFiles[] | cdktn.IResolvable;
   /**
   * zip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#zip AppEngineStandardAppVersion#zip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#zip AppEngineStandardAppVersion#zip}
   */
   readonly zip?: AppEngineStandardAppVersionDeploymentZip;
 }
@@ -1175,7 +1181,7 @@ export interface AppEngineStandardAppVersionEntrypoint {
   /**
   * The format should be a shell command that can be fed to bash -c.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#shell AppEngineStandardAppVersion#shell}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#shell AppEngineStandardAppVersion#shell}
   */
   readonly shell: string;
 }
@@ -1258,7 +1264,7 @@ export interface AppEngineStandardAppVersionHandlersScript {
   /**
   * Path to the script from the application root directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#script_path AppEngineStandardAppVersion#script_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#script_path AppEngineStandardAppVersion#script_path}
   */
   readonly scriptPath: string;
 }
@@ -1343,46 +1349,46 @@ export interface AppEngineStandardAppVersionHandlersStaticFiles {
   * static data and are only served to end users; they cannot be read by the application. If enabled, uploads are charged
   * against both your code and static data storage resource quotas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#application_readable AppEngineStandardAppVersion#application_readable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#application_readable AppEngineStandardAppVersion#application_readable}
   */
   readonly applicationReadable?: boolean | cdktn.IResolvable;
   /**
   * Time a static file served by this handler should be cached by web proxies and browsers.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#expiration AppEngineStandardAppVersion#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#expiration AppEngineStandardAppVersion#expiration}
   */
   readonly expiration?: string;
   /**
   * HTTP headers to use for all responses from these URLs.
   * An object containing a list of "key:value" value pairs.".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#http_headers AppEngineStandardAppVersion#http_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#http_headers AppEngineStandardAppVersion#http_headers}
   */
   readonly httpHeaders?: { [key: string]: string };
   /**
   * MIME type used to serve all files served by this handler.
   * Defaults to file-specific MIME types, which are derived from each file's filename extension.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#mime_type AppEngineStandardAppVersion#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#mime_type AppEngineStandardAppVersion#mime_type}
   */
   readonly mimeType?: string;
   /**
   * Path to the static files matched by the URL pattern, from the application root directory. The path can refer to text matched in groupings in the URL pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#path AppEngineStandardAppVersion#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#path AppEngineStandardAppVersion#path}
   */
   readonly path?: string;
   /**
   * Whether this handler should match the request if the file referenced by the handler does not exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#require_matching_file AppEngineStandardAppVersion#require_matching_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#require_matching_file AppEngineStandardAppVersion#require_matching_file}
   */
   readonly requireMatchingFile?: boolean | cdktn.IResolvable;
   /**
   * Regular expression that matches the file paths for all files that should be referenced by this handler.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#upload_path_regex AppEngineStandardAppVersion#upload_path_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#upload_path_regex AppEngineStandardAppVersion#upload_path_regex}
   */
   readonly uploadPathRegex?: string;
 }
@@ -1642,44 +1648,44 @@ export interface AppEngineStandardAppVersionHandlers {
   /**
   * Actions to take when the user is not logged in. Possible values: ["AUTH_FAIL_ACTION_REDIRECT", "AUTH_FAIL_ACTION_UNAUTHORIZED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#auth_fail_action AppEngineStandardAppVersion#auth_fail_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#auth_fail_action AppEngineStandardAppVersion#auth_fail_action}
   */
   readonly authFailAction?: string;
   /**
   * Methods to restrict access to a URL based on login status. Possible values: ["LOGIN_OPTIONAL", "LOGIN_ADMIN", "LOGIN_REQUIRED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#login AppEngineStandardAppVersion#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#login AppEngineStandardAppVersion#login}
   */
   readonly login?: string;
   /**
   * 30x code to use when performing redirects for the secure field. Possible values: ["REDIRECT_HTTP_RESPONSE_CODE_301", "REDIRECT_HTTP_RESPONSE_CODE_302", "REDIRECT_HTTP_RESPONSE_CODE_303", "REDIRECT_HTTP_RESPONSE_CODE_307"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#redirect_http_response_code AppEngineStandardAppVersion#redirect_http_response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#redirect_http_response_code AppEngineStandardAppVersion#redirect_http_response_code}
   */
   readonly redirectHttpResponseCode?: string;
   /**
   * Security (HTTPS) enforcement for this URL. Possible values: ["SECURE_DEFAULT", "SECURE_NEVER", "SECURE_OPTIONAL", "SECURE_ALWAYS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#security_level AppEngineStandardAppVersion#security_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#security_level AppEngineStandardAppVersion#security_level}
   */
   readonly securityLevel?: string;
   /**
   * URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings.
   * All URLs that begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#url_regex AppEngineStandardAppVersion#url_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#url_regex AppEngineStandardAppVersion#url_regex}
   */
   readonly urlRegex?: string;
   /**
   * script block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#script AppEngineStandardAppVersion#script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#script AppEngineStandardAppVersion#script}
   */
   readonly script?: AppEngineStandardAppVersionHandlersScript;
   /**
   * static_files block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#static_files AppEngineStandardAppVersion#static_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#static_files AppEngineStandardAppVersion#static_files}
   */
   readonly staticFiles?: AppEngineStandardAppVersionHandlersStaticFiles;
 }
@@ -1971,13 +1977,13 @@ export interface AppEngineStandardAppVersionLibraries {
   /**
   * Name of the library. Example "django".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
   */
   readonly name?: string;
   /**
   * Version of the library to select, or "latest".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#version AppEngineStandardAppVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#version AppEngineStandardAppVersion#version}
   */
   readonly version?: string;
 }
@@ -2127,7 +2133,7 @@ export interface AppEngineStandardAppVersionManualScaling {
   * **Note:** When managing the number of instances at runtime through the App Engine Admin API or the (now deprecated) Python 2
   * Modules API set_num_instances() you must use 'lifecycle.ignore_changes = ["manual_scaling"[0].instances]' to prevent drift detection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#instances AppEngineStandardAppVersion#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#instances AppEngineStandardAppVersion#instances}
   */
   readonly instances: number;
 }
@@ -2208,15 +2214,15 @@ export class AppEngineStandardAppVersionManualScalingOutputReference extends cdk
 }
 export interface AppEngineStandardAppVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#create AppEngineStandardAppVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#create AppEngineStandardAppVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#delete AppEngineStandardAppVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#delete AppEngineStandardAppVersion#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#update AppEngineStandardAppVersion#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#update AppEngineStandardAppVersion#update}
   */
   readonly update?: string;
 }
@@ -2366,17 +2372,326 @@ export class AppEngineStandardAppVersionTimeoutsOutputReference extends cdktn.Co
     return this._update;
   }
 }
+export interface AppEngineStandardAppVersionVpcAccessNetworkInterfaces {
+  /**
+  * The VPC network that the App Engine resource will be able to send traffic to. At least one of network or subnetwork must be specified. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be looked up from the subnetwork. Could be either a short name or a full path (e.g. 'default' or 'projects/my-project/global/networks/default').
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#network AppEngineStandardAppVersion#network}
+  */
+  readonly network?: string;
+  /**
+  * The VPC subnetwork that the App Engine resource will get IPs from. At least one of network or subnetwork must be specified. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the subnetwork with the same name with the network will be used. Could be either a short name or a full path (e.g. 'default' or 'projects/my-project/regions/us-central1/subnetworks/default').
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#subnetwork AppEngineStandardAppVersion#subnetwork}
+  */
+  readonly subnetwork?: string;
+  /**
+  * Network tags applied to this App Engine version.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#tags AppEngineStandardAppVersion#tags}
+  */
+  readonly tags?: string[];
+}
+
+export function appEngineStandardAppVersionVpcAccessNetworkInterfacesToTerraform(struct?: AppEngineStandardAppVersionVpcAccessNetworkInterfaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    network: cdktn.stringToTerraform(struct!.network),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
+    tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tags),
+  }
+}
+
+
+export function appEngineStandardAppVersionVpcAccessNetworkInterfacesToHclTerraform(struct?: AppEngineStandardAppVersionVpcAccessNetworkInterfaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    network: {
+      value: cdktn.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnetwork: {
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tags: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AppEngineStandardAppVersionVpcAccessNetworkInterfaces | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._subnetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetwork = this._subnetwork;
+    }
+    if (this._tags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tags = this._tags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppEngineStandardAppVersionVpcAccessNetworkInterfaces | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._network = undefined;
+      this._subnetwork = undefined;
+      this._tags = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._network = value.network;
+      this._subnetwork = value.subnetwork;
+      this._tags = value.tags;
+    }
+  }
+
+  // network - computed: true, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // subnetwork - computed: true, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+
+  // tags - computed: false, optional: true, required: false
+  private _tags?: string[]; 
+  public get tags() {
+    return this.getListAttribute('tags');
+  }
+  public set tags(value: string[]) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+}
+
+export class AppEngineStandardAppVersionVpcAccessNetworkInterfacesList extends cdktn.ComplexList {
+  public internalValue? : AppEngineStandardAppVersionVpcAccessNetworkInterfaces[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference {
+    return new AppEngineStandardAppVersionVpcAccessNetworkInterfacesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface AppEngineStandardAppVersionVpcAccess {
+  /**
+  * The traffic egress setting for the VPC network interface, controlling what traffic is diverted through it. Possible values: ["ALL_TRAFFIC", "PRIVATE_IP_RANGES"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#vpc_egress AppEngineStandardAppVersion#vpc_egress}
+  */
+  readonly vpcEgress?: string;
+  /**
+  * network_interfaces block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#network_interfaces AppEngineStandardAppVersion#network_interfaces}
+  */
+  readonly networkInterfaces?: AppEngineStandardAppVersionVpcAccessNetworkInterfaces[] | cdktn.IResolvable;
+}
+
+export function appEngineStandardAppVersionVpcAccessToTerraform(struct?: AppEngineStandardAppVersionVpcAccessOutputReference | AppEngineStandardAppVersionVpcAccess): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    vpc_egress: cdktn.stringToTerraform(struct!.vpcEgress),
+    network_interfaces: cdktn.listMapper(appEngineStandardAppVersionVpcAccessNetworkInterfacesToTerraform, true)(struct!.networkInterfaces),
+  }
+}
+
+
+export function appEngineStandardAppVersionVpcAccessToHclTerraform(struct?: AppEngineStandardAppVersionVpcAccessOutputReference | AppEngineStandardAppVersionVpcAccess): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    vpc_egress: {
+      value: cdktn.stringToHclTerraform(struct!.vpcEgress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network_interfaces: {
+      value: cdktn.listMapperHcl(appEngineStandardAppVersionVpcAccessNetworkInterfacesToHclTerraform, true)(struct!.networkInterfaces),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AppEngineStandardAppVersionVpcAccessNetworkInterfacesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AppEngineStandardAppVersionVpcAccessOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AppEngineStandardAppVersionVpcAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._vpcEgress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcEgress = this._vpcEgress;
+    }
+    if (this._networkInterfaces?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkInterfaces = this._networkInterfaces?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AppEngineStandardAppVersionVpcAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._vpcEgress = undefined;
+      this._networkInterfaces.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._vpcEgress = value.vpcEgress;
+      this._networkInterfaces.internalValue = value.networkInterfaces;
+    }
+  }
+
+  // vpc_egress - computed: true, optional: true, required: false
+  private _vpcEgress?: string; 
+  public get vpcEgress() {
+    return this.getStringAttribute('vpc_egress');
+  }
+  public set vpcEgress(value: string) {
+    this._vpcEgress = value;
+  }
+  public resetVpcEgress() {
+    this._vpcEgress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcEgressInput() {
+    return this._vpcEgress;
+  }
+
+  // network_interfaces - computed: false, optional: true, required: false
+  private _networkInterfaces = new AppEngineStandardAppVersionVpcAccessNetworkInterfacesList(this, "network_interfaces", false);
+  public get networkInterfaces() {
+    return this._networkInterfaces;
+  }
+  public putNetworkInterfaces(value: AppEngineStandardAppVersionVpcAccessNetworkInterfaces[] | cdktn.IResolvable) {
+    this._networkInterfaces.internalValue = value;
+  }
+  public resetNetworkInterfaces() {
+    this._networkInterfaces.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInterfacesInput() {
+    return this._networkInterfaces.internalValue;
+  }
+}
 export interface AppEngineStandardAppVersionVpcAccessConnector {
   /**
   * The egress setting for the connector, controlling what traffic is diverted through it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#egress_setting AppEngineStandardAppVersion#egress_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#egress_setting AppEngineStandardAppVersion#egress_setting}
   */
   readonly egressSetting?: string;
   /**
   * Full Serverless VPC Access Connector name e.g. /projects/my-project/locations/us-central1/connectors/c1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#name AppEngineStandardAppVersion#name}
   */
   readonly name: string;
 }
@@ -2486,7 +2801,7 @@ export class AppEngineStandardAppVersionVpcAccessConnectorOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}
 */
 export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
 
@@ -2502,7 +2817,7 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AppEngineStandardAppVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppEngineStandardAppVersion to import
-  * @param importFromId The id of the existing AppEngineStandardAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppEngineStandardAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppEngineStandardAppVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2514,7 +2829,7 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2525,7 +2840,7 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
       terraformResourceType: 'google_app_engine_standard_app_version',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -2560,6 +2875,7 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
     this._libraries.internalValue = config.libraries;
     this._manualScaling.internalValue = config.manualScaling;
     this._timeouts.internalValue = config.timeouts;
+    this._vpcAccess.internalValue = config.vpcAccess;
     this._vpcAccessConnector.internalValue = config.vpcAccessConnector;
   }
 
@@ -2944,6 +3260,22 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // vpc_access - computed: false, optional: true, required: false
+  private _vpcAccess = new AppEngineStandardAppVersionVpcAccessOutputReference(this, "vpc_access");
+  public get vpcAccess() {
+    return this._vpcAccess;
+  }
+  public putVpcAccess(value: AppEngineStandardAppVersionVpcAccess) {
+    this._vpcAccess.internalValue = value;
+  }
+  public resetVpcAccess() {
+    this._vpcAccess.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcAccessInput() {
+    return this._vpcAccess.internalValue;
+  }
+
   // vpc_access_connector - computed: false, optional: true, required: false
   private _vpcAccessConnector = new AppEngineStandardAppVersionVpcAccessConnectorOutputReference(this, "vpc_access_connector");
   public get vpcAccessConnector() {
@@ -2990,6 +3322,7 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
       libraries: cdktn.listMapper(appEngineStandardAppVersionLibrariesToTerraform, true)(this._libraries.internalValue),
       manual_scaling: appEngineStandardAppVersionManualScalingToTerraform(this._manualScaling.internalValue),
       timeouts: appEngineStandardAppVersionTimeoutsToTerraform(this._timeouts.internalValue),
+      vpc_access: appEngineStandardAppVersionVpcAccessToTerraform(this._vpcAccess.internalValue),
       vpc_access_connector: appEngineStandardAppVersionVpcAccessConnectorToTerraform(this._vpcAccessConnector.internalValue),
     };
   }
@@ -3139,6 +3472,12 @@ export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "AppEngineStandardAppVersionTimeouts",
+      },
+      vpc_access: {
+        value: appEngineStandardAppVersionVpcAccessToHclTerraform(this._vpcAccess.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AppEngineStandardAppVersionVpcAccessList",
       },
       vpc_access_connector: {
         value: appEngineStandardAppVersionVpcAccessConnectorToHclTerraform(this._vpcAccessConnector.internalValue),
