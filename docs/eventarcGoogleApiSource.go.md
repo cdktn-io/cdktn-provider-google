@@ -4,7 +4,7 @@
 
 ### EventarcGoogleApiSource <a name="EventarcGoogleApiSource" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.Initializer"></a>
 
@@ -75,6 +75,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putLoggingConfig">PutLoggingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putOrganizationSubscription">PutOrganizationSubscription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putProjectSubscriptions">PutProjectSubscriptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetCryptoKeyName">ResetCryptoKeyName</a></code> | *No description.* |
@@ -83,7 +85,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetLoggingConfig">ResetLoggingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetOrganizationSubscription">ResetOrganizationSubscription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetProjectSubscriptions">ResetProjectSubscriptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -409,6 +413,30 @@ func PutLoggingConfig(value EventarcGoogleApiSourceLoggingConfig)
 
 ---
 
+##### `PutOrganizationSubscription` <a name="PutOrganizationSubscription" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putOrganizationSubscription"></a>
+
+```go
+func PutOrganizationSubscription(value EventarcGoogleApiSourceOrganizationSubscription)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putOrganizationSubscription.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a>
+
+---
+
+##### `PutProjectSubscriptions` <a name="PutProjectSubscriptions" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putProjectSubscriptions"></a>
+
+```go
+func PutProjectSubscriptions(value EventarcGoogleApiSourceProjectSubscriptions)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putProjectSubscriptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.putTimeouts"></a>
 
 ```go
@@ -463,10 +491,22 @@ func ResetLabels()
 func ResetLoggingConfig()
 ```
 
+##### `ResetOrganizationSubscription` <a name="ResetOrganizationSubscription" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetOrganizationSubscription"></a>
+
+```go
+func ResetOrganizationSubscription()
+```
+
 ##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetProject"></a>
 
 ```go
 func ResetProject()
+```
+
+##### `ResetProjectSubscriptions` <a name="ResetProjectSubscriptions" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetProjectSubscriptions"></a>
+
+```go
+func ResetProjectSubscriptions()
 ```
 
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.resetTimeouts"></a>
@@ -578,7 +618,7 @@ The construct id used in the generated config for the EventarcGoogleApiSource to
 
 The id of the existing EventarcGoogleApiSource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -614,6 +654,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceLoggingConfigOutputReference">EventarcGoogleApiSourceLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.organizationSubscription">OrganizationSubscription</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference">EventarcGoogleApiSourceOrganizationSubscriptionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.projectSubscriptions">ProjectSubscriptions</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference">EventarcGoogleApiSourceProjectSubscriptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeoutsOutputReference">EventarcGoogleApiSourceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
@@ -628,7 +670,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.loggingConfigInput">LoggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceLoggingConfig">EventarcGoogleApiSourceLoggingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.organizationSubscriptionInput">OrganizationSubscriptionInput</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.projectSubscriptionsInput">ProjectSubscriptionsInput</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.cryptoKeyName">CryptoKeyName</a></code> | <code>*string</code> | *No description.* |
@@ -845,6 +889,26 @@ func Name() *string
 
 ---
 
+##### `OrganizationSubscription`<sup>Required</sup> <a name="OrganizationSubscription" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.organizationSubscription"></a>
+
+```go
+func OrganizationSubscription() EventarcGoogleApiSourceOrganizationSubscriptionOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference">EventarcGoogleApiSourceOrganizationSubscriptionOutputReference</a>
+
+---
+
+##### `ProjectSubscriptions`<sup>Required</sup> <a name="ProjectSubscriptions" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.projectSubscriptions"></a>
+
+```go
+func ProjectSubscriptions() EventarcGoogleApiSourceProjectSubscriptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference">EventarcGoogleApiSourceProjectSubscriptionsOutputReference</a>
+
+---
+
 ##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.terraformLabels"></a>
 
 ```go
@@ -985,6 +1049,16 @@ func LoggingConfigInput() EventarcGoogleApiSourceLoggingConfig
 
 ---
 
+##### `OrganizationSubscriptionInput`<sup>Optional</sup> <a name="OrganizationSubscriptionInput" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.organizationSubscriptionInput"></a>
+
+```go
+func OrganizationSubscriptionInput() EventarcGoogleApiSourceOrganizationSubscription
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a>
+
+---
+
 ##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.projectInput"></a>
 
 ```go
@@ -992,6 +1066,16 @@ func ProjectInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ProjectSubscriptionsInput`<sup>Optional</sup> <a name="ProjectSubscriptionsInput" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSource.property.projectSubscriptionsInput"></a>
+
+```go
+func ProjectSubscriptionsInput() EventarcGoogleApiSourceProjectSubscriptions
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a>
 
 ---
 
@@ -1150,7 +1234,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleap
 	Id: *string,
 	Labels: *map[string]*string,
 	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.eventarcGoogleApiSource.EventarcGoogleApiSourceLoggingConfig,
+	OrganizationSubscription: github.com/cdktn-io/cdktn-provider-google-go/google/v22.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription,
 	Project: *string,
+	ProjectSubscriptions: github.com/cdktn-io/cdktn-provider-google-go/google/v22.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts,
 }
 ```
@@ -1173,10 +1259,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleap
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.cryptoKeyName">CryptoKeyName</a></code> | <code>*string</code> | Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Resource display name. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#id EventarcGoogleApiSource#id}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#id EventarcGoogleApiSource#id}. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceLoggingConfig">EventarcGoogleApiSourceLoggingConfig</a></code> | logging_config block. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#project EventarcGoogleApiSource#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.organizationSubscription">OrganizationSubscription</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a></code> | organization_subscription block. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#project EventarcGoogleApiSource#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.projectSubscriptions">ProjectSubscriptions</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a></code> | project_subscriptions block. |
 | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts">EventarcGoogleApiSourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1264,7 +1352,7 @@ Destination is the message bus that the GoogleApiSource is delivering to.
 It must be point to the full resource name of a MessageBus. Format:
 "projects/{PROJECT_ID}/locations/{region}/messagesBuses/{MESSAGE_BUS_ID)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#destination EventarcGoogleApiSource#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#destination EventarcGoogleApiSource#destination}
 
 ---
 
@@ -1278,7 +1366,7 @@ GoogleApiSourceId *string
 
 The user-provided ID to be assigned to the GoogleApiSource. It should match the format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#google_api_source_id EventarcGoogleApiSource#google_api_source_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#google_api_source_id EventarcGoogleApiSource#google_api_source_id}
 
 ---
 
@@ -1292,7 +1380,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#location EventarcGoogleApiSource#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#location EventarcGoogleApiSource#location}
 
 ---
 
@@ -1309,7 +1397,7 @@ Resource annotations.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#annotations EventarcGoogleApiSource#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#annotations EventarcGoogleApiSource#annotations}
 
 ---
 
@@ -1326,7 +1414,7 @@ Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt 
 It must match the pattern
 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#crypto_key_name EventarcGoogleApiSource#crypto_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#crypto_key_name EventarcGoogleApiSource#crypto_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1349,7 +1437,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#deletion_policy EventarcGoogleApiSource#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#deletion_policy EventarcGoogleApiSource#deletion_policy}
 
 ---
 
@@ -1363,7 +1451,7 @@ DisplayName *string
 
 Resource display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#display_name EventarcGoogleApiSource#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#display_name EventarcGoogleApiSource#display_name}
 
 ---
 
@@ -1375,7 +1463,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#id EventarcGoogleApiSource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#id EventarcGoogleApiSource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1395,7 +1483,7 @@ Resource labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#labels EventarcGoogleApiSource#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#labels EventarcGoogleApiSource#labels}
 
 ---
 
@@ -1409,7 +1497,21 @@ LoggingConfig EventarcGoogleApiSourceLoggingConfig
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#logging_config EventarcGoogleApiSource#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#logging_config EventarcGoogleApiSource#logging_config}
+
+---
+
+##### `OrganizationSubscription`<sup>Optional</sup> <a name="OrganizationSubscription" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.organizationSubscription"></a>
+
+```go
+OrganizationSubscription EventarcGoogleApiSourceOrganizationSubscription
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a>
+
+organization_subscription block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#organization_subscription EventarcGoogleApiSource#organization_subscription}
 
 ---
 
@@ -1421,7 +1523,21 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#project EventarcGoogleApiSource#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#project EventarcGoogleApiSource#project}.
+
+---
+
+##### `ProjectSubscriptions`<sup>Optional</sup> <a name="ProjectSubscriptions" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceConfig.property.projectSubscriptions"></a>
+
+```go
+ProjectSubscriptions EventarcGoogleApiSourceProjectSubscriptions
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a>
+
+project_subscriptions block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#project_subscriptions EventarcGoogleApiSource#project_subscriptions}
 
 ---
 
@@ -1435,7 +1551,7 @@ Timeouts EventarcGoogleApiSourceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#timeouts EventarcGoogleApiSource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#timeouts EventarcGoogleApiSource#timeouts}
 
 ---
 
@@ -1471,7 +1587,80 @@ The minimum severity of logs that will be sent to Stackdriver/Platform Telemetry
 
 Logs at severitiy ≥ this value will be sent, unless it is NONE. Possible values: ["NONE", "DEBUG", "INFO", "NOTICE", "WARNING", "ERROR", "CRITICAL", "ALERT", "EMERGENCY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#log_severity EventarcGoogleApiSource#log_severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#log_severity EventarcGoogleApiSource#log_severity}
+
+---
+
+### EventarcGoogleApiSourceOrganizationSubscription <a name="EventarcGoogleApiSourceOrganizationSubscription" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleapisource"
+
+&eventarcgoogleapisource.EventarcGoogleApiSourceOrganizationSubscription {
+	Enabled: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription.property.enabled">Enabled</a></code> | <code>interface{}</code> | Enable org level subscription. |
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription.property.enabled"></a>
+
+```go
+Enabled interface{}
+```
+
+- *Type:* interface{}
+
+Enable org level subscription.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#enabled EventarcGoogleApiSource#enabled}
+
+---
+
+### EventarcGoogleApiSourceProjectSubscriptions <a name="EventarcGoogleApiSourceProjectSubscriptions" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleapisource"
+
+&eventarcgoogleapisource.EventarcGoogleApiSourceProjectSubscriptions {
+	List: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions.property.list">List</a></code> | <code>*[]*string</code> | A list of projects to receive events from. |
+
+---
+
+##### `List`<sup>Required</sup> <a name="List" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions.property.list"></a>
+
+```go
+List *[]*string
+```
+
+- *Type:* *[]*string
+
+A list of projects to receive events from.
+
+All the projects must be in the same org. The listed projects should have
+the format project/{identifier} where identifier can be either the
+project id for project number. A single list may contain both formats. At
+most 100 projects can be listed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#list EventarcGoogleApiSource#list}
 
 ---
 
@@ -1493,9 +1682,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleap
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#create EventarcGoogleApiSource#create}. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#delete EventarcGoogleApiSource#delete}. |
-| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#update EventarcGoogleApiSource#update}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#create EventarcGoogleApiSource#create}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#delete EventarcGoogleApiSource#delete}. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#update EventarcGoogleApiSource#update}. |
 
 ---
 
@@ -1507,7 +1696,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#create EventarcGoogleApiSource#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#create EventarcGoogleApiSource#create}.
 
 ---
 
@@ -1519,7 +1708,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#delete EventarcGoogleApiSource#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#delete EventarcGoogleApiSource#delete}.
 
 ---
 
@@ -1531,7 +1720,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#update EventarcGoogleApiSource#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#update EventarcGoogleApiSource#update}.
 
 ---
 
@@ -1811,6 +2000,548 @@ func InternalValue() EventarcGoogleApiSourceLoggingConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceLoggingConfig">EventarcGoogleApiSourceLoggingConfig</a>
+
+---
+
+
+### EventarcGoogleApiSourceOrganizationSubscriptionOutputReference <a name="EventarcGoogleApiSourceOrganizationSubscriptionOutputReference" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleapisource"
+
+eventarcgoogleapisource.NewEventarcGoogleApiSourceOrganizationSubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventarcGoogleApiSourceOrganizationSubscriptionOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.enabledInput"></a>
+
+```go
+func EnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.enabled"></a>
+
+```go
+func Enabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscriptionOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() EventarcGoogleApiSourceOrganizationSubscription
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceOrganizationSubscription">EventarcGoogleApiSourceOrganizationSubscription</a>
+
+---
+
+
+### EventarcGoogleApiSourceProjectSubscriptionsOutputReference <a name="EventarcGoogleApiSourceProjectSubscriptionsOutputReference" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/eventarcgoogleapisource"
+
+eventarcgoogleapisource.NewEventarcGoogleApiSourceProjectSubscriptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EventarcGoogleApiSourceProjectSubscriptionsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.listInput">ListInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.list">List</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListInput`<sup>Optional</sup> <a name="ListInput" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.listInput"></a>
+
+```go
+func ListInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `List`<sup>Required</sup> <a name="List" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.list"></a>
+
+```go
+func List() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptionsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() EventarcGoogleApiSourceProjectSubscriptions
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcGoogleApiSource.EventarcGoogleApiSourceProjectSubscriptions">EventarcGoogleApiSourceProjectSubscriptions</a>
 
 ---
 

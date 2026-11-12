@@ -4,7 +4,7 @@
 
 ### ComputeNetworkEdgeSecurityService <a name="ComputeNetworkEdgeSecurityService" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityService.Initializer"></a>
 
@@ -571,7 +571,7 @@ The construct id used in the generated config for the ComputeNetworkEdgeSecurity
 
 The id of the existing ComputeNetworkEdgeSecurityService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1060,9 +1060,9 @@ new ComputeNetworkEdgeSecurityServiceConfig {
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. Provided by the client when the resource is created. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.description">Description</a></code> | <code>string</code> | Free-text description of the resource. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceParams">ComputeNetworkEdgeSecurityServiceParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.region">Region</a></code> | <code>string</code> | The region of the gateway security policy. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.securityPolicy">SecurityPolicy</a></code> | <code>string</code> | The resource URL for the network edge security service associated with this network edge security service. |
 | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts">ComputeNetworkEdgeSecurityServiceTimeouts</a></code> | timeouts block. |
@@ -1149,7 +1149,7 @@ public string Name { get; set; }
 
 Name of the resource. Provided by the client when the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
 
 ---
 
@@ -1170,7 +1170,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
 
 ---
 
@@ -1184,7 +1184,7 @@ public string Description { get; set; }
 
 Free-text description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
 
 ---
 
@@ -1196,7 +1196,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1213,7 +1213,7 @@ public ComputeNetworkEdgeSecurityServiceParams Params { get; set; }
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#params ComputeNetworkEdgeSecurityService#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#params ComputeNetworkEdgeSecurityService#params}
 
 ---
 
@@ -1225,7 +1225,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public string Region { get; set; }
 
 The region of the gateway security policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
 
 ---
 
@@ -1253,7 +1253,7 @@ public string SecurityPolicy { get; set; }
 
 The resource URL for the network edge security service associated with this network edge security service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
 
 ---
 
@@ -1267,7 +1267,7 @@ public ComputeNetworkEdgeSecurityServiceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
 
 ---
 
@@ -1305,7 +1305,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#resource_manager_tags ComputeNetworkEdgeSecurityService#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#resource_manager_tags ComputeNetworkEdgeSecurityService#resource_manager_tags}
 
 ---
 
@@ -1327,9 +1327,9 @@ new ComputeNetworkEdgeSecurityServiceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkEdgeSecurityService.ComputeNetworkEdgeSecurityServiceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}. |
 
 ---
 
@@ -1341,7 +1341,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}.
 
 ---
 
@@ -1353,7 +1353,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}.
 
 ---
 
@@ -1365,7 +1365,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}.
 
 ---
 

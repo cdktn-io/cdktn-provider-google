@@ -4,7 +4,7 @@
 
 ### BigtableMemoryLayer <a name="BigtableMemoryLayer" id="@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer google_bigtable_memory_layer}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer google_bigtable_memory_layer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayer.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the BigtableMemoryLayer to imp
 
 The id of the existing BigtableMemoryLayer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -925,8 +925,8 @@ const bigtableMemoryLayerConfig: bigtableMemoryLayer.BigtableMemoryLayerConfig =
 | <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.cluster">cluster</a></code> | <code>string</code> | The ID of the cluster to enable the memory layer on. |
 | <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.instance">instance</a></code> | <code>string</code> | The name of the instance to enable the memory layer within. |
 | <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#id BigtableMemoryLayer#id}. |
-| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#project BigtableMemoryLayer#project}. |
+| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#id BigtableMemoryLayer#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#project BigtableMemoryLayer#project}. |
 | <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerTimeouts">BigtableMemoryLayerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1011,7 +1011,7 @@ public readonly cluster: string;
 
 The ID of the cluster to enable the memory layer on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#cluster BigtableMemoryLayer#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#cluster BigtableMemoryLayer#cluster}
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly instance: string;
 
 The name of the instance to enable the memory layer within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#instance BigtableMemoryLayer#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#instance BigtableMemoryLayer#instance}
 
 ---
 
@@ -1047,7 +1047,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#deletion_policy BigtableMemoryLayer#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#deletion_policy BigtableMemoryLayer#deletion_policy}
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#id BigtableMemoryLayer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#id BigtableMemoryLayer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1074,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#project BigtableMemoryLayer#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#project BigtableMemoryLayer#project}.
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly timeouts: BigtableMemoryLayerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#timeouts BigtableMemoryLayer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#timeouts BigtableMemoryLayer#timeouts}
 
 ---
 
@@ -1117,8 +1117,8 @@ const bigtableMemoryLayerTimeouts: bigtableMemoryLayer.BigtableMemoryLayerTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#create BigtableMemoryLayer#create}. |
-| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#delete BigtableMemoryLayer#delete}. |
+| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#create BigtableMemoryLayer#create}. |
+| <code><a href="#@cdktn/provider-google.bigtableMemoryLayer.BigtableMemoryLayerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#delete BigtableMemoryLayer#delete}. |
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#create BigtableMemoryLayer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#create BigtableMemoryLayer#create}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/bigtable_memory_layer#delete BigtableMemoryLayer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/bigtable_memory_layer#delete BigtableMemoryLayer#delete}.
 
 ---
 

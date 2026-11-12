@@ -4,7 +4,7 @@
 
 ### VertexAiCacheConfig <a name="VertexAiCacheConfig" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config google_vertex_ai_cache_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config google_vertex_ai_cache_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer"></a>
 
@@ -24,6 +24,7 @@ vertexAiCacheConfig.VertexAiCacheConfig(
   disable_cache: bool | IResolvable,
   id: str = None,
   project: str = None,
+  region: str = None,
   timeouts: VertexAiCacheConfigTimeouts = None
 )
 ```
@@ -40,8 +41,9 @@ vertexAiCacheConfig.VertexAiCacheConfig(
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.disableCache">disable_cache</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, disables GenAI caching. Otherwise caching is enabled. |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the Vertex AI API endpoint used to manage the cache config, e.g. 'us-central1'. The cache config is a project-level setting, so this only selects which regional endpoint requests are sent to. If not specified, the provider-level region is used. |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts">VertexAiCacheConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 If set to true, disables GenAI caching. Otherwise caching is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#disable_cache VertexAiCacheConfig#disable_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#disable_cache VertexAiCacheConfig#disable_cache}
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +133,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+The region of the Vertex AI API endpoint used to manage the cache config, e.g. 'us-central1'. The cache config is a project-level setting, so this only selects which regional endpoint requests are sent to. If not specified, the provider-level region is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#region VertexAiCacheConfig#region}
 
 ---
 
@@ -141,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#timeouts VertexAiCacheConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#timeouts VertexAiCacheConfig#timeouts}
 
 ---
 
@@ -176,6 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -542,7 +555,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}.
 
 ---
 
@@ -550,7 +563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}.
 
 ---
 
@@ -558,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}.
 
 ---
 
@@ -572,6 +585,12 @@ def reset_id() -> None
 
 ```python
 def reset_project() -> None
+```
+
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.resetRegion"></a>
+
+```python
+def reset_region() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.resetTimeouts"></a>
@@ -694,7 +713,7 @@ The construct id used in the generated config for the VertexAiCacheConfig to imp
 
 The id of the existing VertexAiCacheConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,10 +748,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.disableCacheInput">disable_cache_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts">VertexAiCacheConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.disableCache">disable_cache</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.region">region</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -928,6 +949,16 @@ project_input: str
 
 ---
 
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.timeoutsInput"></a>
 
 ```python
@@ -962,6 +993,16 @@ id: str
 
 ```python
 project: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfig.property.region"></a>
+
+```python
+region: str
 ```
 
 - *Type:* str
@@ -1006,6 +1047,7 @@ vertexAiCacheConfig.VertexAiCacheConfigConfig(
   disable_cache: bool | IResolvable,
   id: str = None,
   project: str = None,
+  region: str = None,
   timeouts: VertexAiCacheConfigTimeouts = None
 )
 ```
@@ -1022,8 +1064,9 @@ vertexAiCacheConfig.VertexAiCacheConfigConfig(
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.disableCache">disable_cache</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, disables GenAI caching. Otherwise caching is enabled. |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.region">region</a></code> | <code>str</code> | The region of the Vertex AI API endpoint used to manage the cache config, e.g. 'us-central1'. The cache config is a project-level setting, so this only selects which regional endpoint requests are sent to. If not specified, the provider-level region is used. |
 | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts">VertexAiCacheConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1108,7 +1151,7 @@ disable_cache: bool | IResolvable
 
 If set to true, disables GenAI caching. Otherwise caching is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#disable_cache VertexAiCacheConfig#disable_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#disable_cache VertexAiCacheConfig#disable_cache}
 
 ---
 
@@ -1120,7 +1163,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#id VertexAiCacheConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1135,7 +1178,21 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#project VertexAiCacheConfig#project}.
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+The region of the Vertex AI API endpoint used to manage the cache config, e.g. 'us-central1'. The cache config is a project-level setting, so this only selects which regional endpoint requests are sent to. If not specified, the provider-level region is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#region VertexAiCacheConfig#region}
 
 ---
 
@@ -1149,7 +1206,7 @@ timeouts: VertexAiCacheConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#timeouts VertexAiCacheConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#timeouts VertexAiCacheConfig#timeouts}
 
 ---
 
@@ -1171,9 +1228,9 @@ vertexAiCacheConfig.VertexAiCacheConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCacheConfig.VertexAiCacheConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}. |
 
 ---
 
@@ -1185,7 +1242,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#create VertexAiCacheConfig#create}.
 
 ---
 
@@ -1197,7 +1254,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#delete VertexAiCacheConfig#delete}.
 
 ---
 
@@ -1209,7 +1266,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_cache_config#update VertexAiCacheConfig#update}.
 
 ---
 

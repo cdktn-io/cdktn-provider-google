@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineAssistant <a name="DiscoveryEngineAssistant" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant google_discovery_engine_assistant}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant google_discovery_engine_assistant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.putGenerationConfig">PutGenerationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetCustomerPolicy">ResetCustomerPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetDefaultWebGroundingToggleOff">ResetDefaultWebGroundingToggleOff</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetGenerationConfig">ResetGenerationConfig</a></code> | *No description.* |
@@ -439,6 +440,12 @@ func PutTimeouts(value DiscoveryEngineAssistantTimeouts)
 func ResetCustomerPolicy()
 ```
 
+##### `ResetDefaultWebGroundingToggleOff` <a name="ResetDefaultWebGroundingToggleOff" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetDefaultWebGroundingToggleOff"></a>
+
+```go
+func ResetDefaultWebGroundingToggleOff()
+```
+
 ##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.resetDeletionPolicy"></a>
 
 ```go
@@ -584,7 +591,7 @@ The construct id used in the generated config for the DiscoveryEngineAssistant t
 
 The id of the existing DiscoveryEngineAssistant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,6 +628,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.assistantIdInput">AssistantIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.collectionIdInput">CollectionIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.customerPolicyInput">CustomerPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicy">DiscoveryEngineAssistantCustomerPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.defaultWebGroundingToggleOffInput">DefaultWebGroundingToggleOffInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
@@ -633,6 +641,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.webGroundingTypeInput">WebGroundingTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.assistantId">AssistantId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.collectionId">CollectionId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.defaultWebGroundingToggleOff">DefaultWebGroundingToggleOff</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
@@ -856,6 +865,16 @@ func CustomerPolicyInput() DiscoveryEngineAssistantCustomerPolicy
 
 ---
 
+##### `DefaultWebGroundingToggleOffInput`<sup>Optional</sup> <a name="DefaultWebGroundingToggleOffInput" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.defaultWebGroundingToggleOffInput"></a>
+
+```go
+func DefaultWebGroundingToggleOffInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.deletionPolicyInput"></a>
 
 ```go
@@ -973,6 +992,16 @@ func CollectionId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DefaultWebGroundingToggleOff`<sup>Required</sup> <a name="DefaultWebGroundingToggleOff" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistant.property.defaultWebGroundingToggleOff"></a>
+
+```go
+func DefaultWebGroundingToggleOff() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1097,6 +1126,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/discoveryenginea
 	EngineId: *string,
 	Location: *string,
 	CustomerPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v22.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicy,
+	DefaultWebGroundingToggleOff: interface{},
 	DeletionPolicy: *string,
 	Description: *string,
 	GenerationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v22.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfig,
@@ -1124,11 +1154,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/discoveryenginea
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.engineId">EngineId</a></code> | <code>*string</code> | The unique id of the engine. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.location">Location</a></code> | <code>*string</code> | The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu". |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.customerPolicy">CustomerPolicy</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantCustomerPolicy">DiscoveryEngineAssistantCustomerPolicy</a></code> | customer_policy block. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.defaultWebGroundingToggleOff">DefaultWebGroundingToggleOff</a></code> | <code>interface{}</code> | This field controls the default web grounding toggle for end users if 'web_grounding_type' is set to 'WEB_GROUNDING_TYPE_GOOGLE_SEARCH' or 'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH'. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.description">Description</a></code> | <code>*string</code> | Description for additional information. Expected to be shown on the configuration UI, not to the users of the assistant. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.generationConfig">GenerationConfig</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfig">DiscoveryEngineAssistantGenerationConfig</a></code> | generation_config block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#id DiscoveryEngineAssistant#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#project DiscoveryEngineAssistant#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#id DiscoveryEngineAssistant#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#project DiscoveryEngineAssistant#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts">DiscoveryEngineAssistantTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.webGroundingType">WebGroundingType</a></code> | <code>*string</code> | The type of web grounding to use. The supported values: 'WEB_GROUNDING_TYPE_DISABLED', 'WEB_GROUNDING_TYPE_GOOGLE_SEARCH', 'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH'. |
 
@@ -1214,7 +1245,7 @@ AssistantId *string
 
 The unique id of the assistant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#assistant_id DiscoveryEngineAssistant#assistant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#assistant_id DiscoveryEngineAssistant#assistant_id}
 
 ---
 
@@ -1228,7 +1259,7 @@ CollectionId *string
 
 The unique id of the collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#collection_id DiscoveryEngineAssistant#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#collection_id DiscoveryEngineAssistant#collection_id}
 
 ---
 
@@ -1244,7 +1275,7 @@ The assistant display name.
 
 It must be a UTF-8 encoded string with a length limit of 128 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#display_name DiscoveryEngineAssistant#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#display_name DiscoveryEngineAssistant#display_name}
 
 ---
 
@@ -1258,7 +1289,7 @@ EngineId *string
 
 The unique id of the engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#engine_id DiscoveryEngineAssistant#engine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#engine_id DiscoveryEngineAssistant#engine_id}
 
 ---
 
@@ -1272,7 +1303,7 @@ Location *string
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#location DiscoveryEngineAssistant#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#location DiscoveryEngineAssistant#location}
 
 ---
 
@@ -1286,7 +1317,28 @@ CustomerPolicy DiscoveryEngineAssistantCustomerPolicy
 
 customer_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#customer_policy DiscoveryEngineAssistant#customer_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#customer_policy DiscoveryEngineAssistant#customer_policy}
+
+---
+
+##### `DefaultWebGroundingToggleOff`<sup>Optional</sup> <a name="DefaultWebGroundingToggleOff" id="@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantConfig.property.defaultWebGroundingToggleOff"></a>
+
+```go
+DefaultWebGroundingToggleOff interface{}
+```
+
+- *Type:* interface{}
+
+This field controls the default web grounding toggle for end users if 'web_grounding_type' is set to 'WEB_GROUNDING_TYPE_GOOGLE_SEARCH' or 'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH'.
+
+By default, this field is set to false. If 'web_grounding_type' is
+'WEB_GROUNDING_TYPE_GOOGLE_SEARCH' or
+'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH', end users will have web
+grounding enabled by default on UI. If true, grounding toggle will be
+disabled by default on UI. End users can still enable web grounding in
+the UI if web grounding is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#default_web_grounding_toggle_off DiscoveryEngineAssistant#default_web_grounding_toggle_off}
 
 ---
 
@@ -1307,7 +1359,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#deletion_policy DiscoveryEngineAssistant#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#deletion_policy DiscoveryEngineAssistant#deletion_policy}
 
 ---
 
@@ -1321,7 +1373,7 @@ Description *string
 
 Description for additional information. Expected to be shown on the configuration UI, not to the users of the assistant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#description DiscoveryEngineAssistant#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#description DiscoveryEngineAssistant#description}
 
 ---
 
@@ -1335,7 +1387,7 @@ GenerationConfig DiscoveryEngineAssistantGenerationConfig
 
 generation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#generation_config DiscoveryEngineAssistant#generation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#generation_config DiscoveryEngineAssistant#generation_config}
 
 ---
 
@@ -1347,7 +1399,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#id DiscoveryEngineAssistant#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#id DiscoveryEngineAssistant#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1362,7 +1414,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#project DiscoveryEngineAssistant#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#project DiscoveryEngineAssistant#project}.
 
 ---
 
@@ -1376,7 +1428,7 @@ Timeouts DiscoveryEngineAssistantTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#timeouts DiscoveryEngineAssistant#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#timeouts DiscoveryEngineAssistant#timeouts}
 
 ---
 
@@ -1390,7 +1442,7 @@ WebGroundingType *string
 
 The type of web grounding to use. The supported values: 'WEB_GROUNDING_TYPE_DISABLED', 'WEB_GROUNDING_TYPE_GOOGLE_SEARCH', 'WEB_GROUNDING_TYPE_ENTERPRISE_WEB_SEARCH'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#web_grounding_type DiscoveryEngineAssistant#web_grounding_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#web_grounding_type DiscoveryEngineAssistant#web_grounding_type}
 
 ---
 
@@ -1426,7 +1478,7 @@ BannedPhrases interface{}
 
 banned_phrases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#banned_phrases DiscoveryEngineAssistant#banned_phrases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#banned_phrases DiscoveryEngineAssistant#banned_phrases}
 
 ---
 
@@ -1440,7 +1492,7 @@ ModelArmorConfig DiscoveryEngineAssistantCustomerPolicyModelArmorConfig
 
 model_armor_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#model_armor_config DiscoveryEngineAssistant#model_armor_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#model_armor_config DiscoveryEngineAssistant#model_armor_config}
 
 ---
 
@@ -1478,7 +1530,7 @@ Phrase *string
 
 The raw string content to be banned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#phrase DiscoveryEngineAssistant#phrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#phrase DiscoveryEngineAssistant#phrase}
 
 ---
 
@@ -1492,7 +1544,7 @@ IgnoreDiacritics interface{}
 
 If true, diacritical marks (e.g., accents, umlauts) are ignored when matching banned phrases. For example, "cafe" would match "café".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#ignore_diacritics DiscoveryEngineAssistant#ignore_diacritics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#ignore_diacritics DiscoveryEngineAssistant#ignore_diacritics}
 
 ---
 
@@ -1506,7 +1558,7 @@ MatchType *string
 
 Match type for the banned phrase. The supported values: 'SIMPLE_STRING_MATCH', 'WORD_BOUNDARY_STRING_MATCH'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#match_type DiscoveryEngineAssistant#match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#match_type DiscoveryEngineAssistant#match_type}
 
 ---
 
@@ -1547,7 +1599,7 @@ The resource name of the Model Armor template for sanitizing assistant responses
 If not specified, no sanitization will be applied to the assistant
 response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#response_template DiscoveryEngineAssistant#response_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#response_template DiscoveryEngineAssistant#response_template}
 
 ---
 
@@ -1563,7 +1615,7 @@ The resource name of the Model Armor template for sanitizing user prompts. Forma
 
 If not specified, no sanitization will be applied to the user prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#user_prompt_template DiscoveryEngineAssistant#user_prompt_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#user_prompt_template DiscoveryEngineAssistant#user_prompt_template}
 
 ---
 
@@ -1577,7 +1629,7 @@ FailureMode *string
 
 Defines the failure mode for Model Armor sanitization. The supported values: 'FAIL_OPEN', 'FAIL_CLOSED'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#failure_mode DiscoveryEngineAssistant#failure_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#failure_mode DiscoveryEngineAssistant#failure_mode}
 
 ---
 
@@ -1616,7 +1668,7 @@ The default language to use for the generation of the assistant response.
 Use an ISO 639-1 language code such as 'en'.
 If not specified, the language will be automatically detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#default_language DiscoveryEngineAssistant#default_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#default_language DiscoveryEngineAssistant#default_language}
 
 ---
 
@@ -1630,7 +1682,7 @@ SystemInstruction DiscoveryEngineAssistantGenerationConfigSystemInstruction
 
 system_instruction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#system_instruction DiscoveryEngineAssistant#system_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#system_instruction DiscoveryEngineAssistant#system_instruction}
 
 ---
 
@@ -1664,7 +1716,7 @@ AdditionalSystemInstruction *string
 
 Additional system instruction that will be added to the default system instruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#additional_system_instruction DiscoveryEngineAssistant#additional_system_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#additional_system_instruction DiscoveryEngineAssistant#additional_system_instruction}
 
 ---
 
@@ -1686,9 +1738,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/discoveryenginea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#create DiscoveryEngineAssistant#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#delete DiscoveryEngineAssistant#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#update DiscoveryEngineAssistant#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#create DiscoveryEngineAssistant#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#delete DiscoveryEngineAssistant#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#update DiscoveryEngineAssistant#update}. |
 
 ---
 
@@ -1700,7 +1752,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#create DiscoveryEngineAssistant#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#create DiscoveryEngineAssistant#create}.
 
 ---
 
@@ -1712,7 +1764,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#delete DiscoveryEngineAssistant#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#delete DiscoveryEngineAssistant#delete}.
 
 ---
 
@@ -1724,7 +1776,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/discovery_engine_assistant#update DiscoveryEngineAssistant#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_assistant#update DiscoveryEngineAssistant#update}.
 
 ---
 

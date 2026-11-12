@@ -4,7 +4,7 @@
 
 ### FirestoreIndex <a name="FirestoreIndex" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index google_firestore_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index google_firestore_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer"></a>
 
@@ -31,6 +31,7 @@ firestoreIndex.FirestoreIndex(
   multikey: bool | IResolvable = None,
   project: str = None,
   query_scope: str = None,
+  search_index_options: FirestoreIndexSearchIndexOptions = None,
   skip_wait: bool | IResolvable = None,
   timeouts: FirestoreIndexTimeouts = None,
   unique: bool | IResolvable = None
@@ -54,10 +55,11 @@ firestoreIndex.FirestoreIndex(
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.database">database</a></code> | <code>str</code> | The Firestore database id. Defaults to '"(default)"'. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.density">density</a></code> | <code>str</code> | The density configuration for this index. Possible values: ["SPARSE_ALL", "SPARSE_ANY", "DENSE"]. |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#id FirestoreIndex#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#id FirestoreIndex#id}. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.multikey">multikey</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#project FirestoreIndex#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#project FirestoreIndex#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.queryScope">query_scope</a></code> | <code>str</code> | The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"]. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.searchIndexOptions">search_index_options</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a></code> | search_index_options block. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.skipWait">skip_wait</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to skip waiting for the index to be created. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts">FirestoreIndexTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.unique">unique</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether it is an unique index. Unique index ensures all values for the indexed field(s) are unique across documents. |
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The collection being indexed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API", "MONGODB_COMPATIBLE_API"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#database FirestoreIndex#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#database FirestoreIndex#database}
 
 ---
 
@@ -177,7 +179,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#deletion_policy FirestoreIndex#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#deletion_policy FirestoreIndex#deletion_policy}
 
 ---
 
@@ -187,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The density configuration for this index. Possible values: ["SPARSE_ALL", "SPARSE_ANY", "DENSE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#density FirestoreIndex#density}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#density FirestoreIndex#density}
 
 ---
 
@@ -195,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#id FirestoreIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#id FirestoreIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -210,7 +212,7 @@ Optional.
 
 Whether the index is multikey. By default, the index is not multikey. For non-multikey indexes, none of the paths in the index definition reach or traverse an array, except via an explicit array index. For multikey indexes, at most one of the paths in the index definition reach or traverse an array, except via an explicit array index. Violations will result in errors. Note this field only applies to indexes with MONGODB_COMPATIBLE_API ApiScope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
 
 ---
 
@@ -218,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#project FirestoreIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#project FirestoreIndex#project}.
 
 ---
 
@@ -228,7 +230,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#query_scope FirestoreIndex#query_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#query_scope FirestoreIndex#query_scope}
+
+---
+
+##### `search_index_options`<sup>Optional</sup> <a name="search_index_options" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.Initializer.parameter.searchIndexOptions"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a>
+
+search_index_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#search_index_options FirestoreIndex#search_index_options}
 
 ---
 
@@ -238,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether to skip waiting for the index to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
 
 ---
 
@@ -248,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
 
 ---
 
@@ -258,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether it is an unique index. Unique index ensures all values for the indexed field(s) are unique across documents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
 
 ---
 
@@ -291,6 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.putFields">put_fields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.putSearchIndexOptions">put_search_index_options</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetApiScope">reset_api_scope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetDatabase">reset_database</a></code> | *No description.* |
@@ -300,6 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetMultikey">reset_multikey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetQueryScope">reset_query_scope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetSearchIndexOptions">reset_search_index_options</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetSkipWait">reset_skip_wait</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetUnique">reset_unique</a></code> | *No description.* |
@@ -668,6 +682,35 @@ def put_fields(
 
 ---
 
+##### `put_search_index_options` <a name="put_search_index_options" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.putSearchIndexOptions"></a>
+
+```python
+def put_search_index_options(
+  text_language: str = None,
+  text_language_override_field_path: str = None
+) -> None
+```
+
+###### `text_language`<sup>Optional</sup> <a name="text_language" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.putSearchIndexOptions.parameter.textLanguage"></a>
+
+- *Type:* str
+
+Optional. The language code used to parse all text fields included in the search index, for example, "en", "es", "jp".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#text_language FirestoreIndex#text_language}
+
+---
+
+###### `text_language_override_field_path`<sup>Optional</sup> <a name="text_language_override_field_path" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.putSearchIndexOptions.parameter.textLanguageOverrideFieldPath"></a>
+
+- *Type:* str
+
+Optional. The path to the field that records the text language override of each document.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#text_language_override_field_path FirestoreIndex#text_language_override_field_path}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.putTimeouts"></a>
 
 ```python
@@ -682,7 +725,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#create FirestoreIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#create FirestoreIndex#create}.
 
 ---
 
@@ -690,7 +733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#delete FirestoreIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#delete FirestoreIndex#delete}.
 
 ---
 
@@ -698,7 +741,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#update FirestoreIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#update FirestoreIndex#update}.
 
 ---
 
@@ -748,6 +791,12 @@ def reset_project() -> None
 
 ```python
 def reset_query_scope() -> None
+```
+
+##### `reset_search_index_options` <a name="reset_search_index_options" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetSearchIndexOptions"></a>
+
+```python
+def reset_search_index_options() -> None
 ```
 
 ##### `reset_skip_wait` <a name="reset_skip_wait" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.resetSkipWait"></a>
@@ -882,7 +931,7 @@ The construct id used in the generated config for the FirestoreIndex to import.
 
 The id of the existing FirestoreIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,6 +963,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.fields">fields</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsList">FirestoreIndexFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.searchIndexOptions">search_index_options</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference">FirestoreIndexSearchIndexOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeoutsOutputReference">FirestoreIndexTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.apiScopeInput">api_scope_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.collectionInput">collection_input</a></code> | <code>str</code> | *No description.* |
@@ -925,6 +975,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.multikeyInput">multikey_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.queryScopeInput">query_scope_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.searchIndexOptionsInput">search_index_options_input</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.skipWaitInput">skip_wait_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts">FirestoreIndexTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.uniqueInput">unique_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1104,6 +1155,16 @@ name: str
 
 ---
 
+##### `search_index_options`<sup>Required</sup> <a name="search_index_options" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.searchIndexOptions"></a>
+
+```python
+search_index_options: FirestoreIndexSearchIndexOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference">FirestoreIndexSearchIndexOptionsOutputReference</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.timeouts"></a>
 
 ```python
@@ -1211,6 +1272,16 @@ query_scope_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `search_index_options_input`<sup>Optional</sup> <a name="search_index_options_input" id="@cdktn/provider-google.firestoreIndex.FirestoreIndex.property.searchIndexOptionsInput"></a>
+
+```python
+search_index_options_input: FirestoreIndexSearchIndexOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a>
 
 ---
 
@@ -1399,6 +1470,7 @@ firestoreIndex.FirestoreIndexConfig(
   multikey: bool | IResolvable = None,
   project: str = None,
   query_scope: str = None,
+  search_index_options: FirestoreIndexSearchIndexOptions = None,
   skip_wait: bool | IResolvable = None,
   timeouts: FirestoreIndexTimeouts = None,
   unique: bool | IResolvable = None
@@ -1422,10 +1494,11 @@ firestoreIndex.FirestoreIndexConfig(
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.database">database</a></code> | <code>str</code> | The Firestore database id. Defaults to '"(default)"'. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.density">density</a></code> | <code>str</code> | The density configuration for this index. Possible values: ["SPARSE_ALL", "SPARSE_ANY", "DENSE"]. |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#id FirestoreIndex#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#id FirestoreIndex#id}. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.multikey">multikey</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#project FirestoreIndex#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#project FirestoreIndex#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.queryScope">query_scope</a></code> | <code>str</code> | The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"]. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.searchIndexOptions">search_index_options</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a></code> | search_index_options block. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.skipWait">skip_wait</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to skip waiting for the index to be created. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts">FirestoreIndexTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.unique">unique</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether it is an unique index. Unique index ensures all values for the indexed field(s) are unique across documents. |
@@ -1512,7 +1585,7 @@ collection: str
 
 The collection being indexed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#collection FirestoreIndex#collection}
 
 ---
 
@@ -1526,7 +1599,7 @@ fields: IResolvable | typing.List[FirestoreIndexFields]
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#fields FirestoreIndex#fields}
 
 ---
 
@@ -1540,7 +1613,7 @@ api_scope: str
 
 The API scope at which a query is run. Default value: "ANY_API" Possible values: ["ANY_API", "DATASTORE_MODE_API", "MONGODB_COMPATIBLE_API"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#api_scope FirestoreIndex#api_scope}
 
 ---
 
@@ -1554,7 +1627,7 @@ database: str
 
 The Firestore database id. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#database FirestoreIndex#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#database FirestoreIndex#database}
 
 ---
 
@@ -1575,7 +1648,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#deletion_policy FirestoreIndex#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#deletion_policy FirestoreIndex#deletion_policy}
 
 ---
 
@@ -1589,7 +1662,7 @@ density: str
 
 The density configuration for this index. Possible values: ["SPARSE_ALL", "SPARSE_ANY", "DENSE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#density FirestoreIndex#density}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#density FirestoreIndex#density}
 
 ---
 
@@ -1601,7 +1674,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#id FirestoreIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#id FirestoreIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1620,7 +1693,7 @@ Optional.
 
 Whether the index is multikey. By default, the index is not multikey. For non-multikey indexes, none of the paths in the index definition reach or traverse an array, except via an explicit array index. For multikey indexes, at most one of the paths in the index definition reach or traverse an array, except via an explicit array index. Violations will result in errors. Note this field only applies to indexes with MONGODB_COMPATIBLE_API ApiScope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#multikey FirestoreIndex#multikey}
 
 ---
 
@@ -1632,7 +1705,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#project FirestoreIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#project FirestoreIndex#project}.
 
 ---
 
@@ -1646,7 +1719,21 @@ query_scope: str
 
 The scope at which a query is run. Default value: "COLLECTION" Possible values: ["COLLECTION", "COLLECTION_GROUP", "COLLECTION_RECURSIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#query_scope FirestoreIndex#query_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#query_scope FirestoreIndex#query_scope}
+
+---
+
+##### `search_index_options`<sup>Optional</sup> <a name="search_index_options" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexConfig.property.searchIndexOptions"></a>
+
+```python
+search_index_options: FirestoreIndexSearchIndexOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a>
+
+search_index_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#search_index_options FirestoreIndex#search_index_options}
 
 ---
 
@@ -1660,7 +1747,7 @@ skip_wait: bool | IResolvable
 
 Whether to skip waiting for the index to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#skip_wait FirestoreIndex#skip_wait}
 
 ---
 
@@ -1674,7 +1761,7 @@ timeouts: FirestoreIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#timeouts FirestoreIndex#timeouts}
 
 ---
 
@@ -1688,7 +1775,7 @@ unique: bool | IResolvable
 
 Whether it is an unique index. Unique index ensures all values for the indexed field(s) are unique across documents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#unique FirestoreIndex#unique}
 
 ---
 
@@ -1733,7 +1820,7 @@ Indicates that this field supports operations on arrayValues.
 Only one of 'order', 'arrayConfig', 'searchConfig' and
 'vectorConfig' can be specified. Possible values: ["CONTAINS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#array_config FirestoreIndex#array_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#array_config FirestoreIndex#array_config}
 
 ---
 
@@ -1747,7 +1834,7 @@ field_path: str
 
 Name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#field_path FirestoreIndex#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#field_path FirestoreIndex#field_path}
 
 ---
 
@@ -1763,7 +1850,7 @@ Indicates that this field supports ordering by the specified order or comparing 
 
 Only one of 'order', 'arrayConfig', 'searchConfig' and 'vectorConfig' can be specified. Possible values: ["ASCENDING", "DESCENDING"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#order FirestoreIndex#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#order FirestoreIndex#order}
 
 ---
 
@@ -1777,7 +1864,7 @@ search_config: FirestoreIndexFieldsSearchConfig
 
 search_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#search_config FirestoreIndex#search_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#search_config FirestoreIndex#search_config}
 
 ---
 
@@ -1791,7 +1878,7 @@ vector_config: FirestoreIndexFieldsVectorConfig
 
 vector_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#vector_config FirestoreIndex#vector_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#vector_config FirestoreIndex#vector_config}
 
 ---
 
@@ -1827,7 +1914,7 @@ geo_spec: FirestoreIndexFieldsSearchConfigGeoSpec
 
 geo_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#geo_spec FirestoreIndex#geo_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#geo_spec FirestoreIndex#geo_spec}
 
 ---
 
@@ -1841,7 +1928,7 @@ text_spec: FirestoreIndexFieldsSearchConfigTextSpec
 
 text_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#text_spec FirestoreIndex#text_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#text_spec FirestoreIndex#text_spec}
 
 ---
 
@@ -1878,7 +1965,7 @@ If true, disables GeoJSON indexing for the field.
 By default, GeoJSON points are indexed.
 Firestore GeoPoints are indexed regardless of the value of this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#geo_json_indexing_disabled FirestoreIndex#geo_json_indexing_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#geo_json_indexing_disabled FirestoreIndex#geo_json_indexing_disabled}
 
 ---
 
@@ -1912,7 +1999,7 @@ index_specs: IResolvable | typing.List[FirestoreIndexFieldsSearchConfigTextSpecI
 
 index_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#index_specs FirestoreIndex#index_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#index_specs FirestoreIndex#index_specs}
 
 ---
 
@@ -1948,7 +2035,7 @@ index_type: str
 
 Ways to index the text field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#index_type FirestoreIndex#index_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#index_type FirestoreIndex#index_type}
 
 ---
 
@@ -1962,7 +2049,7 @@ match_type: str
 
 How to match the text field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#match_type FirestoreIndex#match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#match_type FirestoreIndex#match_type}
 
 ---
 
@@ -1998,7 +2085,7 @@ dimension: typing.Union[int, float]
 
 The resulting index will only include vectors of this dimension, and can be used for vector search with the same dimension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#dimension FirestoreIndex#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#dimension FirestoreIndex#dimension}
 
 ---
 
@@ -2012,7 +2099,7 @@ flat: FirestoreIndexFieldsVectorConfigFlat
 
 flat block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#flat FirestoreIndex#flat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#flat FirestoreIndex#flat}
 
 ---
 
@@ -2026,6 +2113,56 @@ from cdktn_provider_google import firestore_index
 firestoreIndex.FirestoreIndexFieldsVectorConfigFlat()
 ```
 
+
+### FirestoreIndexSearchIndexOptions <a name="FirestoreIndexSearchIndexOptions" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions.Initializer"></a>
+
+```python
+from cdktn_provider_google import firestore_index
+
+firestoreIndex.FirestoreIndexSearchIndexOptions(
+  text_language: str = None,
+  text_language_override_field_path: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions.property.textLanguage">text_language</a></code> | <code>str</code> | Optional. The language code used to parse all text fields included in the search index, for example, "en", "es", "jp". |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions.property.textLanguageOverrideFieldPath">text_language_override_field_path</a></code> | <code>str</code> | Optional. The path to the field that records the text language override of each document. |
+
+---
+
+##### `text_language`<sup>Optional</sup> <a name="text_language" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions.property.textLanguage"></a>
+
+```python
+text_language: str
+```
+
+- *Type:* str
+
+Optional. The language code used to parse all text fields included in the search index, for example, "en", "es", "jp".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#text_language FirestoreIndex#text_language}
+
+---
+
+##### `text_language_override_field_path`<sup>Optional</sup> <a name="text_language_override_field_path" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions.property.textLanguageOverrideFieldPath"></a>
+
+```python
+text_language_override_field_path: str
+```
+
+- *Type:* str
+
+Optional. The path to the field that records the text language override of each document.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#text_language_override_field_path FirestoreIndex#text_language_override_field_path}
+
+---
 
 ### FirestoreIndexTimeouts <a name="FirestoreIndexTimeouts" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts"></a>
 
@@ -2045,9 +2182,9 @@ firestoreIndex.FirestoreIndexTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#create FirestoreIndex#create}. |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#delete FirestoreIndex#delete}. |
-| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#update FirestoreIndex#update}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#create FirestoreIndex#create}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#delete FirestoreIndex#delete}. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#update FirestoreIndex#update}. |
 
 ---
 
@@ -2059,7 +2196,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#create FirestoreIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#create FirestoreIndex#create}.
 
 ---
 
@@ -2071,7 +2208,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#delete FirestoreIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#delete FirestoreIndex#delete}.
 
 ---
 
@@ -2083,7 +2220,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#update FirestoreIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#update FirestoreIndex#update}.
 
 ---
 
@@ -2529,7 +2666,7 @@ def put_search_config(
 
 geo_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#geo_spec FirestoreIndex#geo_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#geo_spec FirestoreIndex#geo_spec}
 
 ---
 
@@ -2539,7 +2676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 text_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#text_spec FirestoreIndex#text_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#text_spec FirestoreIndex#text_spec}
 
 ---
 
@@ -2558,7 +2695,7 @@ def put_vector_config(
 
 The resulting index will only include vectors of this dimension, and can be used for vector search with the same dimension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#dimension FirestoreIndex#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#dimension FirestoreIndex#dimension}
 
 ---
 
@@ -2568,7 +2705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 flat block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#flat FirestoreIndex#flat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#flat FirestoreIndex#flat}
 
 ---
 
@@ -3303,7 +3440,7 @@ If true, disables GeoJSON indexing for the field.
 By default, GeoJSON points are indexed.
 Firestore GeoPoints are indexed regardless of the value of this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#geo_json_indexing_disabled FirestoreIndex#geo_json_indexing_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#geo_json_indexing_disabled FirestoreIndex#geo_json_indexing_disabled}
 
 ---
 
@@ -3321,7 +3458,7 @@ def put_text_spec(
 
 index_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/firestore_index#index_specs FirestoreIndex#index_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/firestore_index#index_specs FirestoreIndex#index_specs}
 
 ---
 
@@ -4869,6 +5006,338 @@ internal_value: FirestoreIndexFieldsVectorConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsVectorConfig">FirestoreIndexFieldsVectorConfig</a>
+
+---
+
+
+### FirestoreIndexSearchIndexOptionsOutputReference <a name="FirestoreIndexSearchIndexOptionsOutputReference" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import firestore_index
+
+firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resetTextLanguage">reset_text_language</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resetTextLanguageOverrideFieldPath">reset_text_language_override_field_path</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_text_language` <a name="reset_text_language" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resetTextLanguage"></a>
+
+```python
+def reset_text_language() -> None
+```
+
+##### `reset_text_language_override_field_path` <a name="reset_text_language_override_field_path" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.resetTextLanguageOverrideFieldPath"></a>
+
+```python
+def reset_text_language_override_field_path() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguageInput">text_language_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguageOverrideFieldPathInput">text_language_override_field_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguage">text_language</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguageOverrideFieldPath">text_language_override_field_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `text_language_input`<sup>Optional</sup> <a name="text_language_input" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguageInput"></a>
+
+```python
+text_language_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `text_language_override_field_path_input`<sup>Optional</sup> <a name="text_language_override_field_path_input" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguageOverrideFieldPathInput"></a>
+
+```python
+text_language_override_field_path_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `text_language`<sup>Required</sup> <a name="text_language" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguage"></a>
+
+```python
+text_language: str
+```
+
+- *Type:* str
+
+---
+
+##### `text_language_override_field_path`<sup>Required</sup> <a name="text_language_override_field_path" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.textLanguageOverrideFieldPath"></a>
+
+```python
+text_language_override_field_path: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptionsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: FirestoreIndexSearchIndexOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-google.firestoreIndex.FirestoreIndexSearchIndexOptions">FirestoreIndexSearchIndexOptions</a>
 
 ---
 
