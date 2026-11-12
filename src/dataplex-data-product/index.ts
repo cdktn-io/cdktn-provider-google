@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   /**
   * The ID of the data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#data_product_id DataplexDataProduct#data_product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#data_product_id DataplexDataProduct#data_product_id}
   */
   readonly dataProductId: string;
   /**
@@ -27,19 +27,19 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#deletion_policy DataplexDataProduct#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#deletion_policy DataplexDataProduct#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
   */
   readonly description?: string;
   /**
   * User-friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
   */
   readonly displayName: string;
   /**
@@ -49,11 +49,11 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   * Note: For byte fields, the content of the fields are base64-encoded (which
   * increases the size of the data by 33-36%) when using JSON on the wire.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#icon DataplexDataProduct#icon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#icon DataplexDataProduct#icon}
   */
   readonly icon?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,41 +65,41 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#labels DataplexDataProduct#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#labels DataplexDataProduct#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#location DataplexDataProduct#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#location DataplexDataProduct#location}
   */
   readonly location: string;
   /**
   * Emails of the owners.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#owner_emails DataplexDataProduct#owner_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#owner_emails DataplexDataProduct#owner_emails}
   */
   readonly ownerEmails: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}
   */
   readonly project?: string;
   /**
   * access_approval_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#access_approval_config DataplexDataProduct#access_approval_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#access_approval_config DataplexDataProduct#access_approval_config}
   */
   readonly accessApprovalConfig?: DataplexDataProductAccessApprovalConfig;
   /**
   * access_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#access_groups DataplexDataProduct#access_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#access_groups DataplexDataProduct#access_groups}
   */
   readonly accessGroups?: DataplexDataProductAccessGroups[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#timeouts DataplexDataProduct#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#timeouts DataplexDataProduct#timeouts}
   */
   readonly timeouts?: DataplexDataProductTimeouts;
 }
@@ -107,7 +107,7 @@ export interface DataplexDataProductAccessApprovalConfig {
   /**
   * Specifies the email addresses of users who are potential approvers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#approver_emails DataplexDataProduct#approver_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#approver_emails DataplexDataProduct#approver_emails}
   */
   readonly approverEmails?: string[];
 }
@@ -189,17 +189,101 @@ export class DataplexDataProductAccessApprovalConfigOutputReference extends cdkt
     return this._approverEmails;
   }
 }
+export interface DataplexDataProductAccessGroupsDefaultIamRoleConfig {
+  /**
+  * Default IAM role associated with the access group, such as
+  * 'roles/bigquery.dataViewer'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#role DataplexDataProduct#role}
+  */
+  readonly role: string;
+}
+
+export function dataplexDataProductAccessGroupsDefaultIamRoleConfigToTerraform(struct?: DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference | DataplexDataProductAccessGroupsDefaultIamRoleConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    role: cdktn.stringToTerraform(struct!.role),
+  }
+}
+
+
+export function dataplexDataProductAccessGroupsDefaultIamRoleConfigToHclTerraform(struct?: DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference | DataplexDataProductAccessGroupsDefaultIamRoleConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    role: {
+      value: cdktn.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataplexDataProductAccessGroupsDefaultIamRoleConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._role !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.role = this._role;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataplexDataProductAccessGroupsDefaultIamRoleConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._role = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._role = value.role;
+    }
+  }
+
+  // role - computed: false, optional: false, required: true
+  private _role?: string; 
+  public get role() {
+    return this.getStringAttribute('role');
+  }
+  public set role(value: string) {
+    this._role = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleInput() {
+    return this._role;
+  }
+}
 export interface DataplexDataProductAccessGroupsPrincipal {
   /**
   * Email of the Google Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#google_group DataplexDataProduct#google_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#google_group DataplexDataProduct#google_group}
   */
   readonly googleGroup?: string;
   /**
   * Specifies the email of the producer service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#service_account DataplexDataProduct#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#service_account DataplexDataProduct#service_account}
   */
   readonly serviceAccount?: string;
 }
@@ -314,32 +398,38 @@ export interface DataplexDataProductAccessGroups {
   /**
   * Description of the access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
   */
   readonly displayName: string;
   /**
   * Unique identifier of the access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#group_id DataplexDataProduct#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#group_id DataplexDataProduct#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
+  * default_iam_role_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#default_iam_role_config DataplexDataProduct#default_iam_role_config}
+  */
+  readonly defaultIamRoleConfig?: DataplexDataProductAccessGroupsDefaultIamRoleConfig;
+  /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#principal DataplexDataProduct#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#principal DataplexDataProduct#principal}
   */
   readonly principal: DataplexDataProductAccessGroupsPrincipal;
 }
@@ -354,6 +444,7 @@ export function dataplexDataProductAccessGroupsToTerraform(struct?: DataplexData
     display_name: cdktn.stringToTerraform(struct!.displayName),
     group_id: cdktn.stringToTerraform(struct!.groupId),
     id: cdktn.stringToTerraform(struct!.id),
+    default_iam_role_config: dataplexDataProductAccessGroupsDefaultIamRoleConfigToTerraform(struct!.defaultIamRoleConfig),
     principal: dataplexDataProductAccessGroupsPrincipalToTerraform(struct!.principal),
   }
 }
@@ -388,6 +479,12 @@ export function dataplexDataProductAccessGroupsToHclTerraform(struct?: DataplexD
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    default_iam_role_config: {
+      value: dataplexDataProductAccessGroupsDefaultIamRoleConfigToHclTerraform(struct!.defaultIamRoleConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DataplexDataProductAccessGroupsDefaultIamRoleConfigList",
     },
     principal: {
       value: dataplexDataProductAccessGroupsPrincipalToHclTerraform(struct!.principal),
@@ -437,6 +534,10 @@ export class DataplexDataProductAccessGroupsOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
+    if (this._defaultIamRoleConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultIamRoleConfig = this._defaultIamRoleConfig?.internalValue;
+    }
     if (this._principal?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.principal = this._principal?.internalValue;
@@ -452,6 +553,7 @@ export class DataplexDataProductAccessGroupsOutputReference extends cdktn.Comple
       this._displayName = undefined;
       this._groupId = undefined;
       this._id = undefined;
+      this._defaultIamRoleConfig.internalValue = undefined;
       this._principal.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -465,6 +567,7 @@ export class DataplexDataProductAccessGroupsOutputReference extends cdktn.Comple
       this._displayName = value.displayName;
       this._groupId = value.groupId;
       this._id = value.id;
+      this._defaultIamRoleConfig.internalValue = value.defaultIamRoleConfig;
       this._principal.internalValue = value.principal;
     }
   }
@@ -524,6 +627,22 @@ export class DataplexDataProductAccessGroupsOutputReference extends cdktn.Comple
     return this._id;
   }
 
+  // default_iam_role_config - computed: false, optional: true, required: false
+  private _defaultIamRoleConfig = new DataplexDataProductAccessGroupsDefaultIamRoleConfigOutputReference(this, "default_iam_role_config");
+  public get defaultIamRoleConfig() {
+    return this._defaultIamRoleConfig;
+  }
+  public putDefaultIamRoleConfig(value: DataplexDataProductAccessGroupsDefaultIamRoleConfig) {
+    this._defaultIamRoleConfig.internalValue = value;
+  }
+  public resetDefaultIamRoleConfig() {
+    this._defaultIamRoleConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultIamRoleConfigInput() {
+    return this._defaultIamRoleConfig.internalValue;
+  }
+
   // principal - computed: false, optional: false, required: true
   private _principal = new DataplexDataProductAccessGroupsPrincipalOutputReference(this, "principal");
   public get principal() {
@@ -559,15 +678,15 @@ export class DataplexDataProductAccessGroupsList extends cdktn.ComplexList {
 }
 export interface DataplexDataProductTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}
   */
   readonly update?: string;
 }
@@ -719,7 +838,7 @@ export class DataplexDataProductTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product google_dataplex_data_product}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product google_dataplex_data_product}
 */
 export class DataplexDataProduct extends cdktn.TerraformResource {
 
@@ -735,7 +854,7 @@ export class DataplexDataProduct extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexDataProduct resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexDataProduct to import
-  * @param importFromId The id of the existing DataplexDataProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexDataProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexDataProduct to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -747,7 +866,7 @@ export class DataplexDataProduct extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/dataplex_data_product google_dataplex_data_product} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataplex_data_product google_dataplex_data_product} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -758,7 +877,7 @@ export class DataplexDataProduct extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_data_product',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

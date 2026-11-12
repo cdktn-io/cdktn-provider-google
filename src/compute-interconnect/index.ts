@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,17 @@ import * as cdktn from 'cdktn';
 
 export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Enable or disable the Application Aware Interconnect(AAI) feature on this interconnect.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#aai_enabled ComputeInterconnect#aai_enabled}
+  */
+  readonly aaiEnabled?: boolean | cdktn.IResolvable;
+  /**
   * Administrative status of the interconnect. When this is set to true, the Interconnect is
   * functional and can carry traffic. When set to false, no packets can be carried over the
   * interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -25,7 +31,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * crossconnect. This field is required for Dedicated and Partner Interconnect, should not be specified
   * for cross-cloud interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
   */
   readonly customerName?: string;
   /**
@@ -37,17 +43,17 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#deletion_policy ComputeInterconnect#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#deletion_policy ComputeInterconnect#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -59,7 +65,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   *   - PARTNER: A partner-managed interconnection shared between customers though a partner.
   *   - DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
   */
   readonly interconnectType: string;
   /**
@@ -70,7 +76,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -80,21 +86,21 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   *   - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics.
   *   - LINK_TYPE_ETHERNET_400G_LR4: A 400G Ethernet with LR4 optics Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR", "LINK_TYPE_ETHERNET_400G_LR4"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
   */
   readonly linkType: string;
   /**
   * URL of the InterconnectLocation object that represents where this connection is requested to be provisioned.
   * Specifies the location inside Google's Networks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
   */
   readonly location: string;
   /**
   * Enable or disable MACsec on this Interconnect connection.
   * MACsec enablement fails if the MACsec object is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
   */
   readonly macsecEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -104,7 +110,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
   */
   readonly name: string;
   /**
@@ -114,18 +120,18 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * This field is required for users who sign up for Cloud Interconnect using workforce identity
   * federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
   */
   readonly nocContactEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}
   */
   readonly project?: string;
   /**
   * Indicates that this is a Cross-Cloud Interconnect. This field specifies the location outside
   * of Google's network that the interconnect is connected to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
   */
   readonly remoteLocation?: string;
   /**
@@ -136,31 +142,37 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * - 'IF_CROSS_SITE_NETWORK': Provisions the connection exclusively for Cross-Site Networking.
   *       Note: 'MACSEC' is a legacy value for compatibility reasons. 'IF_MACSEC' should be used. Choosing 'MACSEC' can result in allocation of non-MACsec capable ports, if available. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC", "IF_L2_FORWARDING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
   */
   readonly requestedFeatures?: string[];
   /**
   * Target number of physical links in the link bundle, as requested by the customer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
   */
   readonly requestedLinkCount: number;
   /**
+  * application_aware_interconnect block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#application_aware_interconnect ComputeInterconnect#application_aware_interconnect}
+  */
+  readonly applicationAwareInterconnect?: ComputeInterconnectApplicationAwareInterconnect;
+  /**
   * macsec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
   */
   readonly macsec?: ComputeInterconnectMacsec;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
   */
   readonly params?: ComputeInterconnectParams;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
   */
   readonly timeouts?: ComputeInterconnectTimeouts;
 }
@@ -359,6 +371,638 @@ export class ComputeInterconnectExpectedOutagesList extends cdktn.ComplexList {
     return new ComputeInterconnectExpectedOutagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage {
+  /**
+  * Bandwidth percentage for a specific traffic class.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#percentage ComputeInterconnect#percentage}
+  */
+  readonly percentage?: number;
+  /**
+  * Enum representing the various traffic classes offered by AAI. Default value: "TC_UNSPECIFIED" Possible values: ["TC_UNSPECIFIED", "TC1", "TC2", "TC3", "TC4", "TC5", "TC6"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#traffic_class ComputeInterconnect#traffic_class}
+  */
+  readonly trafficClass?: string;
+}
+
+export function computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    percentage: cdktn.numberToTerraform(struct!.percentage),
+    traffic_class: cdktn.stringToTerraform(struct!.trafficClass),
+  }
+}
+
+
+export function computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToHclTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    percentage: {
+      value: cdktn.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    traffic_class: {
+      value: cdktn.stringToHclTerraform(struct!.trafficClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._percentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.percentage = this._percentage;
+    }
+    if (this._trafficClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trafficClass = this._trafficClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._percentage = undefined;
+      this._trafficClass = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._percentage = value.percentage;
+      this._trafficClass = value.trafficClass;
+    }
+  }
+
+  // percentage - computed: false, optional: true, required: false
+  private _percentage?: number; 
+  public get percentage() {
+    return this.getNumberAttribute('percentage');
+  }
+  public set percentage(value: number) {
+    this._percentage = value;
+  }
+  public resetPercentage() {
+    this._percentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get percentageInput() {
+    return this._percentage;
+  }
+
+  // traffic_class - computed: false, optional: true, required: false
+  private _trafficClass?: string; 
+  public get trafficClass() {
+    return this.getStringAttribute('traffic_class');
+  }
+  public set trafficClass(value: string) {
+    this._trafficClass = value;
+  }
+  public resetTrafficClass() {
+    this._trafficClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficClassInput() {
+    return this._trafficClass;
+  }
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList extends cdktn.ComplexList {
+  public internalValue? : ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference {
+    return new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy {
+  /**
+  * bandwidth_percentage block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#bandwidth_percentage ComputeInterconnect#bandwidth_percentage}
+  */
+  readonly bandwidthPercentage?: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] | cdktn.IResolvable;
+}
+
+export function computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference | ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    bandwidth_percentage: cdktn.listMapper(computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToTerraform, true)(struct!.bandwidthPercentage),
+  }
+}
+
+
+export function computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToHclTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference | ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    bandwidth_percentage: {
+      value: cdktn.listMapperHcl(computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageToHclTerraform, true)(struct!.bandwidthPercentage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bandwidthPercentage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthPercentage = this._bandwidthPercentage?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bandwidthPercentage.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bandwidthPercentage.internalValue = value.bandwidthPercentage;
+    }
+  }
+
+  // bandwidth_percentage - computed: false, optional: true, required: false
+  private _bandwidthPercentage = new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentageList(this, "bandwidth_percentage", false);
+  public get bandwidthPercentage() {
+    return this._bandwidthPercentage;
+  }
+  public putBandwidthPercentage(value: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyBandwidthPercentage[] | cdktn.IResolvable) {
+    this._bandwidthPercentage.internalValue = value;
+  }
+  public resetBandwidthPercentage() {
+    this._bandwidthPercentage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthPercentageInput() {
+    return this._bandwidthPercentage.internalValue;
+  }
+}
+export interface ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage {
+  /**
+  * Bandwidth percentage for a specific traffic class.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#percentage ComputeInterconnect#percentage}
+  */
+  readonly percentage?: number;
+  /**
+  * Enum representing the various traffic classes offered by AAI. Default value: "TC_UNSPECIFIED" Possible values: ["TC_UNSPECIFIED", "TC1", "TC2", "TC3", "TC4", "TC5", "TC6"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#traffic_class ComputeInterconnect#traffic_class}
+  */
+  readonly trafficClass?: string;
+}
+
+export function computeInterconnectApplicationAwareInterconnectShapeAveragePercentageToTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    percentage: cdktn.numberToTerraform(struct!.percentage),
+    traffic_class: cdktn.stringToTerraform(struct!.trafficClass),
+  }
+}
+
+
+export function computeInterconnectApplicationAwareInterconnectShapeAveragePercentageToHclTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    percentage: {
+      value: cdktn.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    traffic_class: {
+      value: cdktn.stringToHclTerraform(struct!.trafficClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._percentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.percentage = this._percentage;
+    }
+    if (this._trafficClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trafficClass = this._trafficClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._percentage = undefined;
+      this._trafficClass = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._percentage = value.percentage;
+      this._trafficClass = value.trafficClass;
+    }
+  }
+
+  // percentage - computed: false, optional: true, required: false
+  private _percentage?: number; 
+  public get percentage() {
+    return this.getNumberAttribute('percentage');
+  }
+  public set percentage(value: number) {
+    this._percentage = value;
+  }
+  public resetPercentage() {
+    this._percentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get percentageInput() {
+    return this._percentage;
+  }
+
+  // traffic_class - computed: false, optional: true, required: false
+  private _trafficClass?: string; 
+  public get trafficClass() {
+    return this.getStringAttribute('traffic_class');
+  }
+  public set trafficClass(value: string) {
+    this._trafficClass = value;
+  }
+  public resetTrafficClass() {
+    this._trafficClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficClassInput() {
+    return this._trafficClass;
+  }
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList extends cdktn.ComplexList {
+  public internalValue? : ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference {
+    return new ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy {
+}
+
+export function computeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference | ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function computeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToHclTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference | ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+}
+export interface ComputeInterconnectApplicationAwareInterconnect {
+  /**
+  * A description for the AAI profile on this interconnect.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#profile_description ComputeInterconnect#profile_description}
+  */
+  readonly profileDescription?: string;
+  /**
+  * bandwidth_percentage_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#bandwidth_percentage_policy ComputeInterconnect#bandwidth_percentage_policy}
+  */
+  readonly bandwidthPercentagePolicy?: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy;
+  /**
+  * shape_average_percentage block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#shape_average_percentage ComputeInterconnect#shape_average_percentage}
+  */
+  readonly shapeAveragePercentage?: ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] | cdktn.IResolvable;
+  /**
+  * strict_priority_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#strict_priority_policy ComputeInterconnect#strict_priority_policy}
+  */
+  readonly strictPriorityPolicy?: ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy;
+}
+
+export function computeInterconnectApplicationAwareInterconnectToTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectOutputReference | ComputeInterconnectApplicationAwareInterconnect): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    profile_description: cdktn.stringToTerraform(struct!.profileDescription),
+    bandwidth_percentage_policy: computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToTerraform(struct!.bandwidthPercentagePolicy),
+    shape_average_percentage: cdktn.listMapper(computeInterconnectApplicationAwareInterconnectShapeAveragePercentageToTerraform, true)(struct!.shapeAveragePercentage),
+    strict_priority_policy: computeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToTerraform(struct!.strictPriorityPolicy),
+  }
+}
+
+
+export function computeInterconnectApplicationAwareInterconnectToHclTerraform(struct?: ComputeInterconnectApplicationAwareInterconnectOutputReference | ComputeInterconnectApplicationAwareInterconnect): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    profile_description: {
+      value: cdktn.stringToHclTerraform(struct!.profileDescription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bandwidth_percentage_policy: {
+      value: computeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyToHclTerraform(struct!.bandwidthPercentagePolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyList",
+    },
+    shape_average_percentage: {
+      value: cdktn.listMapperHcl(computeInterconnectApplicationAwareInterconnectShapeAveragePercentageToHclTerraform, true)(struct!.shapeAveragePercentage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList",
+    },
+    strict_priority_policy: {
+      value: computeInterconnectApplicationAwareInterconnectStrictPriorityPolicyToHclTerraform(struct!.strictPriorityPolicy),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeInterconnectApplicationAwareInterconnectOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeInterconnectApplicationAwareInterconnect | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._profileDescription !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.profileDescription = this._profileDescription;
+    }
+    if (this._bandwidthPercentagePolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthPercentagePolicy = this._bandwidthPercentagePolicy?.internalValue;
+    }
+    if (this._shapeAveragePercentage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shapeAveragePercentage = this._shapeAveragePercentage?.internalValue;
+    }
+    if (this._strictPriorityPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strictPriorityPolicy = this._strictPriorityPolicy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInterconnectApplicationAwareInterconnect | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._profileDescription = undefined;
+      this._bandwidthPercentagePolicy.internalValue = undefined;
+      this._shapeAveragePercentage.internalValue = undefined;
+      this._strictPriorityPolicy.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._profileDescription = value.profileDescription;
+      this._bandwidthPercentagePolicy.internalValue = value.bandwidthPercentagePolicy;
+      this._shapeAveragePercentage.internalValue = value.shapeAveragePercentage;
+      this._strictPriorityPolicy.internalValue = value.strictPriorityPolicy;
+    }
+  }
+
+  // profile_description - computed: false, optional: true, required: false
+  private _profileDescription?: string; 
+  public get profileDescription() {
+    return this.getStringAttribute('profile_description');
+  }
+  public set profileDescription(value: string) {
+    this._profileDescription = value;
+  }
+  public resetProfileDescription() {
+    this._profileDescription = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get profileDescriptionInput() {
+    return this._profileDescription;
+  }
+
+  // bandwidth_percentage_policy - computed: false, optional: true, required: false
+  private _bandwidthPercentagePolicy = new ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicyOutputReference(this, "bandwidth_percentage_policy");
+  public get bandwidthPercentagePolicy() {
+    return this._bandwidthPercentagePolicy;
+  }
+  public putBandwidthPercentagePolicy(value: ComputeInterconnectApplicationAwareInterconnectBandwidthPercentagePolicy) {
+    this._bandwidthPercentagePolicy.internalValue = value;
+  }
+  public resetBandwidthPercentagePolicy() {
+    this._bandwidthPercentagePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthPercentagePolicyInput() {
+    return this._bandwidthPercentagePolicy.internalValue;
+  }
+
+  // shape_average_percentage - computed: false, optional: true, required: false
+  private _shapeAveragePercentage = new ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageList(this, "shape_average_percentage", false);
+  public get shapeAveragePercentage() {
+    return this._shapeAveragePercentage;
+  }
+  public putShapeAveragePercentage(value: ComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage[] | cdktn.IResolvable) {
+    this._shapeAveragePercentage.internalValue = value;
+  }
+  public resetShapeAveragePercentage() {
+    this._shapeAveragePercentage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shapeAveragePercentageInput() {
+    return this._shapeAveragePercentage.internalValue;
+  }
+
+  // strict_priority_policy - computed: false, optional: true, required: false
+  private _strictPriorityPolicy = new ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicyOutputReference(this, "strict_priority_policy");
+  public get strictPriorityPolicy() {
+    return this._strictPriorityPolicy;
+  }
+  public putStrictPriorityPolicy(value: ComputeInterconnectApplicationAwareInterconnectStrictPriorityPolicy) {
+    this._strictPriorityPolicy.internalValue = value;
+  }
+  public resetStrictPriorityPolicy() {
+    this._strictPriorityPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strictPriorityPolicyInput() {
+    return this._strictPriorityPolicy.internalValue;
+  }
+}
 export interface ComputeInterconnectMacsecPreSharedKeys {
   /**
   * If set to true, the Interconnect connection is configured with a should-secure
@@ -367,7 +1011,7 @@ export interface ComputeInterconnectMacsecPreSharedKeys {
   * connection is configured with a must-secure security policy that drops all traffic
   * if the MKA session cannot be established with your router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
@@ -377,7 +1021,7 @@ export interface ComputeInterconnectMacsecPreSharedKeys {
   *  must be a lowercase letter, and all following characters must be a dash, lowercase
   *  letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
   */
   readonly name: string;
   /**
@@ -387,7 +1031,7 @@ export interface ComputeInterconnectMacsecPreSharedKeys {
   * be in increasing order. The start times of two consecutive keys must be at least 6
   * hours apart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
   */
   readonly startTime?: string;
 }
@@ -564,13 +1208,13 @@ export interface ComputeInterconnectMacsec {
   * connection is configured with a must-secure security policy that drops all traffic
   * if the MKA session cannot be established with your router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * pre_shared_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
   */
   readonly preSharedKeys: ComputeInterconnectMacsecPreSharedKeys[] | cdktn.IResolvable;
 }
@@ -684,7 +1328,7 @@ export interface ComputeInterconnectParams {
   * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
   * and values are in the format tagValues/456.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -768,15 +1412,15 @@ export class ComputeInterconnectParamsOutputReference extends cdktn.ComplexObjec
 }
 export interface ComputeInterconnectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}
   */
   readonly update?: string;
 }
@@ -928,7 +1572,7 @@ export class ComputeInterconnectTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect google_compute_interconnect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect google_compute_interconnect}
 */
 export class ComputeInterconnect extends cdktn.TerraformResource {
 
@@ -944,7 +1588,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeInterconnect resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInterconnect to import
-  * @param importFromId The id of the existing ComputeInterconnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeInterconnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInterconnect to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -956,7 +1600,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_interconnect google_compute_interconnect} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_interconnect google_compute_interconnect} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -967,7 +1611,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_interconnect',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -978,6 +1622,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._aaiEnabled = config.aaiEnabled;
     this._adminEnabled = config.adminEnabled;
     this._customerName = config.customerName;
     this._deletionPolicy = config.deletionPolicy;
@@ -994,6 +1639,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
     this._remoteLocation = config.remoteLocation;
     this._requestedFeatures = config.requestedFeatures;
     this._requestedLinkCount = config.requestedLinkCount;
+    this._applicationAwareInterconnect.internalValue = config.applicationAwareInterconnect;
     this._macsec.internalValue = config.macsec;
     this._params.internalValue = config.params;
     this._timeouts.internalValue = config.timeouts;
@@ -1002,6 +1648,22 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // aai_enabled - computed: false, optional: true, required: false
+  private _aaiEnabled?: boolean | cdktn.IResolvable; 
+  public get aaiEnabled() {
+    return this.getBooleanAttribute('aai_enabled');
+  }
+  public set aaiEnabled(value: boolean | cdktn.IResolvable) {
+    this._aaiEnabled = value;
+  }
+  public resetAaiEnabled() {
+    this._aaiEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aaiEnabledInput() {
+    return this._aaiEnabled;
+  }
 
   // admin_enabled - computed: false, optional: true, required: false
   private _adminEnabled?: boolean | cdktn.IResolvable; 
@@ -1338,6 +2000,22 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
     return this.getListAttribute('wire_groups');
   }
 
+  // application_aware_interconnect - computed: false, optional: true, required: false
+  private _applicationAwareInterconnect = new ComputeInterconnectApplicationAwareInterconnectOutputReference(this, "application_aware_interconnect");
+  public get applicationAwareInterconnect() {
+    return this._applicationAwareInterconnect;
+  }
+  public putApplicationAwareInterconnect(value: ComputeInterconnectApplicationAwareInterconnect) {
+    this._applicationAwareInterconnect.internalValue = value;
+  }
+  public resetApplicationAwareInterconnect() {
+    this._applicationAwareInterconnect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationAwareInterconnectInput() {
+    return this._applicationAwareInterconnect.internalValue;
+  }
+
   // macsec - computed: false, optional: true, required: false
   private _macsec = new ComputeInterconnectMacsecOutputReference(this, "macsec");
   public get macsec() {
@@ -1392,6 +2070,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      aai_enabled: cdktn.booleanToTerraform(this._aaiEnabled),
       admin_enabled: cdktn.booleanToTerraform(this._adminEnabled),
       customer_name: cdktn.stringToTerraform(this._customerName),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
@@ -1408,6 +2087,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
       remote_location: cdktn.stringToTerraform(this._remoteLocation),
       requested_features: cdktn.listMapper(cdktn.stringToTerraform, false)(this._requestedFeatures),
       requested_link_count: cdktn.numberToTerraform(this._requestedLinkCount),
+      application_aware_interconnect: computeInterconnectApplicationAwareInterconnectToTerraform(this._applicationAwareInterconnect.internalValue),
       macsec: computeInterconnectMacsecToTerraform(this._macsec.internalValue),
       params: computeInterconnectParamsToTerraform(this._params.internalValue),
       timeouts: computeInterconnectTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1416,6 +2096,12 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      aai_enabled: {
+        value: cdktn.booleanToHclTerraform(this._aaiEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       admin_enabled: {
         value: cdktn.booleanToHclTerraform(this._adminEnabled),
         isBlock: false,
@@ -1511,6 +2197,12 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      application_aware_interconnect: {
+        value: computeInterconnectApplicationAwareInterconnectToHclTerraform(this._applicationAwareInterconnect.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeInterconnectApplicationAwareInterconnectList",
       },
       macsec: {
         value: computeInterconnectMacsecToHclTerraform(this._macsec.internalValue),

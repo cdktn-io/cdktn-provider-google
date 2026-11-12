@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleSqlDatabaseInstancesConfig extends cdktn.TerraformMet
   /**
   * To filter out the database instances which are of the specified database version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#database_version DataGoogleSqlDatabaseInstances#database_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#database_version DataGoogleSqlDatabaseInstances#database_version}
   */
   readonly databaseVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#id DataGoogleSqlDatabaseInstances#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#id DataGoogleSqlDatabaseInstances#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,33 +28,234 @@ export interface DataGoogleSqlDatabaseInstancesConfig extends cdktn.TerraformMet
   /**
   * Project ID of the project that contains the instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#project DataGoogleSqlDatabaseInstances#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#project DataGoogleSqlDatabaseInstances#project}
   */
   readonly project?: string;
   /**
   * To filter out the database instances which are located in this specified region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#region DataGoogleSqlDatabaseInstances#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#region DataGoogleSqlDatabaseInstances#region}
   */
   readonly region?: string;
   /**
   * To filter out the database instances based on the current state of the database instance, valid values include : "SQL_INSTANCE_STATE_UNSPECIFIED", "RUNNABLE", "SUSPENDED", "PENDING_DELETE", "PENDING_CREATE", "MAINTENANCE" and "FAILED".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#state DataGoogleSqlDatabaseInstances#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#state DataGoogleSqlDatabaseInstances#state}
   */
   readonly state?: string;
   /**
   * To filter out the database instances based on the machine type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#tier DataGoogleSqlDatabaseInstances#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#tier DataGoogleSqlDatabaseInstances#tier}
   */
   readonly tier?: string;
   /**
   * To filter out the database instances which are located in this specified zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#zone DataGoogleSqlDatabaseInstances#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#zone DataGoogleSqlDatabaseInstances#zone}
   */
   readonly zone?: string;
+}
+export interface DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddresses {
+}
+
+export function dataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesToTerraform(struct?: DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddresses): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesToHclTerraform(struct?: DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddresses): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddresses | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddresses | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ip_address - computed: true, optional: false, required: false
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+
+  // time_to_retire - computed: true, optional: false, required: false
+  public get timeToRetire() {
+    return this.getStringAttribute('time_to_retire');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesOutputReference {
+    return new DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeployment {
+}
+
+export function dataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentToTerraform(struct?: DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeployment): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentToHclTerraform(struct?: DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeployment): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeployment | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeployment | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // active_environment - computed: true, optional: false, required: false
+  public get activeEnvironment() {
+    return this.getStringAttribute('active_environment');
+  }
+
+  // delete_old_source_on_destroy - computed: true, optional: false, required: false
+  public get deleteOldSourceOnDestroy() {
+    return this.getBooleanAttribute('delete_old_source_on_destroy');
+  }
+
+  // deployment_name - computed: true, optional: false, required: false
+  public get deploymentName() {
+    return this.getStringAttribute('deployment_name');
+  }
+
+  // old_source_instance_connection_name - computed: true, optional: false, required: false
+  public get oldSourceInstanceConnectionName() {
+    return this.getStringAttribute('old_source_instance_connection_name');
+  }
+
+  // old_source_instance_name - computed: true, optional: false, required: false
+  public get oldSourceInstanceName() {
+    return this.getStringAttribute('old_source_instance_name');
+  }
+
+  // target_database_version - computed: true, optional: false, required: false
+  public get targetDatabaseVersion() {
+    return this.getStringAttribute('target_database_version');
+  }
+
+  // target_instance_connection_name - computed: true, optional: false, required: false
+  public get targetInstanceConnectionName() {
+    return this.getStringAttribute('target_instance_connection_name');
+  }
+
+  // target_instance_ip_addresses - computed: true, optional: false, required: false
+  private _targetInstanceIpAddresses = new DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentTargetInstanceIpAddressesList(this, "target_instance_ip_addresses", false);
+  public get targetInstanceIpAddresses() {
+    return this._targetInstanceIpAddresses;
+  }
+
+  // target_instance_name - computed: true, optional: false, required: false
+  public get targetInstanceName() {
+    return this.getStringAttribute('target_instance_name');
+  }
+}
+
+export class DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentOutputReference {
+    return new DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataGoogleSqlDatabaseInstancesInstancesClone {
 }
@@ -2237,7 +2438,7 @@ export class DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutpu
   }
 
   // psc_config - computed: true, optional: false, required: false
-  private _pscConfig = new DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList(this, "psc_config", true);
+  private _pscConfig = new DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList(this, "psc_config", false);
   public get pscConfig() {
     return this._pscConfig;
   }
@@ -3170,6 +3371,12 @@ export class DataGoogleSqlDatabaseInstancesInstancesOutputReference extends cdkt
     return this.getStringAttribute('backupdr_backup');
   }
 
+  // blue_green_deployment - computed: true, optional: false, required: false
+  private _blueGreenDeployment = new DataGoogleSqlDatabaseInstancesInstancesBlueGreenDeploymentList(this, "blue_green_deployment", false);
+  public get blueGreenDeployment() {
+    return this._blueGreenDeployment;
+  }
+
   // clone - computed: true, optional: false, required: false
   private _clone = new DataGoogleSqlDatabaseInstancesInstancesCloneList(this, "clone", false);
   public get clone() {
@@ -3179,6 +3386,11 @@ export class DataGoogleSqlDatabaseInstancesInstancesOutputReference extends cdkt
   // connection_name - computed: true, optional: false, required: false
   public get connectionName() {
     return this.getStringAttribute('connection_name');
+  }
+
+  // database_center_integration - computed: true, optional: false, required: false
+  public get databaseCenterIntegration() {
+    return this.getStringAttribute('database_center_integration');
   }
 
   // database_version - computed: true, optional: false, required: false
@@ -3385,7 +3597,7 @@ export class DataGoogleSqlDatabaseInstancesInstancesList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances google_sql_database_instances}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances google_sql_database_instances}
 */
 export class DataGoogleSqlDatabaseInstances extends cdktn.TerraformDataSource {
 
@@ -3401,7 +3613,7 @@ export class DataGoogleSqlDatabaseInstances extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleSqlDatabaseInstances resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSqlDatabaseInstances to import
-  * @param importFromId The id of the existing DataGoogleSqlDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleSqlDatabaseInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSqlDatabaseInstances to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3413,7 +3625,7 @@ export class DataGoogleSqlDatabaseInstances extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/sql_database_instances google_sql_database_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/sql_database_instances google_sql_database_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3424,7 +3636,7 @@ export class DataGoogleSqlDatabaseInstances extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_sql_database_instances',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

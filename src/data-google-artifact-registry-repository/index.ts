@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleArtifactRegistryRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository#id DataGoogleArtifactRegistryRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository#id DataGoogleArtifactRegistryRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -27,18 +27,18 @@ export interface DataGoogleArtifactRegistryRepositoryConfig extends cdktn.Terraf
   * [google_artifact_registry_locations](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/artifact_registry_locations)
   * data source for possible values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository#location DataGoogleArtifactRegistryRepository#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository#location DataGoogleArtifactRegistryRepository#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository#project DataGoogleArtifactRegistryRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository#project DataGoogleArtifactRegistryRepository#project}
   */
   readonly project?: string;
   /**
   * The last part of the repository name, for example:
   * "repo1"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository#repository_id DataGoogleArtifactRegistryRepository#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository#repository_id DataGoogleArtifactRegistryRepository#repository_id}
   */
   readonly repositoryId: string;
 }
@@ -467,6 +467,86 @@ export class DataGoogleArtifactRegistryRepositoryMavenConfigList extends cdktn.C
   */
   public get(index: number): DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference {
     return new DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleArtifactRegistryRepositoryPlatformLogsConfig {
+}
+
+export function dataGoogleArtifactRegistryRepositoryPlatformLogsConfigToTerraform(struct?: DataGoogleArtifactRegistryRepositoryPlatformLogsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleArtifactRegistryRepositoryPlatformLogsConfigToHclTerraform(struct?: DataGoogleArtifactRegistryRepositoryPlatformLogsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleArtifactRegistryRepositoryPlatformLogsConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleArtifactRegistryRepositoryPlatformLogsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleArtifactRegistryRepositoryPlatformLogsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // logging_state - computed: true, optional: false, required: false
+  public get loggingState() {
+    return this.getStringAttribute('logging_state');
+  }
+
+  // severity_level - computed: true, optional: false, required: false
+  public get severityLevel() {
+    return this.getStringAttribute('severity_level');
+  }
+}
+
+export class DataGoogleArtifactRegistryRepositoryPlatformLogsConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleArtifactRegistryRepositoryPlatformLogsConfigOutputReference {
+    return new DataGoogleArtifactRegistryRepositoryPlatformLogsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository {
@@ -2088,7 +2168,7 @@ export class DataGoogleArtifactRegistryRepositoryVulnerabilityScanningConfigList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}
 */
 export class DataGoogleArtifactRegistryRepository extends cdktn.TerraformDataSource {
 
@@ -2104,7 +2184,7 @@ export class DataGoogleArtifactRegistryRepository extends cdktn.TerraformDataSou
   * Generates CDKTN code for importing a DataGoogleArtifactRegistryRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleArtifactRegistryRepository to import
-  * @param importFromId The id of the existing DataGoogleArtifactRegistryRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleArtifactRegistryRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleArtifactRegistryRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2116,7 +2196,7 @@ export class DataGoogleArtifactRegistryRepository extends cdktn.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2127,7 +2207,7 @@ export class DataGoogleArtifactRegistryRepository extends cdktn.TerraformDataSou
       terraformResourceType: 'google_artifact_registry_repository',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -2172,6 +2252,11 @@ export class DataGoogleArtifactRegistryRepository extends cdktn.TerraformDataSou
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // disallow_unspecified_mode - computed: true, optional: false, required: false
+  public get disallowUnspecifiedMode() {
+    return this.getBooleanAttribute('disallow_unspecified_mode');
   }
 
   // docker_config - computed: true, optional: false, required: false
@@ -2245,6 +2330,12 @@ export class DataGoogleArtifactRegistryRepository extends cdktn.TerraformDataSou
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // platform_logs_config - computed: true, optional: false, required: false
+  private _platformLogsConfig = new DataGoogleArtifactRegistryRepositoryPlatformLogsConfigList(this, "platform_logs_config", false);
+  public get platformLogsConfig() {
+    return this._platformLogsConfig;
   }
 
   // project - computed: false, optional: true, required: false

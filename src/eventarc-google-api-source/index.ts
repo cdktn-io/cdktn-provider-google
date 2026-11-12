@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,7 +18,7 @@ export interface EventarcGoogleApiSourceConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#annotations EventarcGoogleApiSource#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#annotations EventarcGoogleApiSource#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
@@ -28,7 +28,7 @@ export interface EventarcGoogleApiSourceConfig extends cdktn.TerraformMetaArgume
   * It must match the pattern
   * 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#crypto_key_name EventarcGoogleApiSource#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#crypto_key_name EventarcGoogleApiSource#crypto_key_name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -42,7 +42,7 @@ export interface EventarcGoogleApiSourceConfig extends cdktn.TerraformMetaArgume
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#deletion_policy EventarcGoogleApiSource#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#deletion_policy EventarcGoogleApiSource#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -50,24 +50,24 @@ export interface EventarcGoogleApiSourceConfig extends cdktn.TerraformMetaArgume
   * It must be point to the full resource name of a MessageBus. Format:
   * "projects/{PROJECT_ID}/locations/{region}/messagesBuses/{MESSAGE_BUS_ID)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#destination EventarcGoogleApiSource#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#destination EventarcGoogleApiSource#destination}
   */
   readonly destination: string;
   /**
   * Resource display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#display_name EventarcGoogleApiSource#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#display_name EventarcGoogleApiSource#display_name}
   */
   readonly displayName?: string;
   /**
   * The user-provided ID to be assigned to the GoogleApiSource. It should match
   * the format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#google_api_source_id EventarcGoogleApiSource#google_api_source_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#google_api_source_id EventarcGoogleApiSource#google_api_source_id}
   */
   readonly googleApiSourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#id EventarcGoogleApiSource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#id EventarcGoogleApiSource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -79,29 +79,41 @@ export interface EventarcGoogleApiSourceConfig extends cdktn.TerraformMetaArgume
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#labels EventarcGoogleApiSource#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#labels EventarcGoogleApiSource#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#location EventarcGoogleApiSource#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#location EventarcGoogleApiSource#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#project EventarcGoogleApiSource#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#project EventarcGoogleApiSource#project}
   */
   readonly project?: string;
   /**
   * logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#logging_config EventarcGoogleApiSource#logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#logging_config EventarcGoogleApiSource#logging_config}
   */
   readonly loggingConfig?: EventarcGoogleApiSourceLoggingConfig;
   /**
+  * organization_subscription block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#organization_subscription EventarcGoogleApiSource#organization_subscription}
+  */
+  readonly organizationSubscription?: EventarcGoogleApiSourceOrganizationSubscription;
+  /**
+  * project_subscriptions block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#project_subscriptions EventarcGoogleApiSource#project_subscriptions}
+  */
+  readonly projectSubscriptions?: EventarcGoogleApiSourceProjectSubscriptions;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#timeouts EventarcGoogleApiSource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#timeouts EventarcGoogleApiSource#timeouts}
   */
   readonly timeouts?: EventarcGoogleApiSourceTimeouts;
 }
@@ -110,7 +122,7 @@ export interface EventarcGoogleApiSourceLoggingConfig {
   * The minimum severity of logs that will be sent to Stackdriver/Platform
   * Telemetry. Logs at severitiy ≥ this value will be sent, unless it is NONE. Possible values: ["NONE", "DEBUG", "INFO", "NOTICE", "WARNING", "ERROR", "CRITICAL", "ALERT", "EMERGENCY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#log_severity EventarcGoogleApiSource#log_severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#log_severity EventarcGoogleApiSource#log_severity}
   */
   readonly logSeverity?: string;
 }
@@ -192,17 +204,188 @@ export class EventarcGoogleApiSourceLoggingConfigOutputReference extends cdktn.C
     return this._logSeverity;
   }
 }
+export interface EventarcGoogleApiSourceOrganizationSubscription {
+  /**
+  * Enable org level subscription.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#enabled EventarcGoogleApiSource#enabled}
+  */
+  readonly enabled: boolean | cdktn.IResolvable;
+}
+
+export function eventarcGoogleApiSourceOrganizationSubscriptionToTerraform(struct?: EventarcGoogleApiSourceOrganizationSubscriptionOutputReference | EventarcGoogleApiSourceOrganizationSubscription): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+  }
+}
+
+
+export function eventarcGoogleApiSourceOrganizationSubscriptionToHclTerraform(struct?: EventarcGoogleApiSourceOrganizationSubscriptionOutputReference | EventarcGoogleApiSourceOrganizationSubscription): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EventarcGoogleApiSourceOrganizationSubscriptionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EventarcGoogleApiSourceOrganizationSubscription | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EventarcGoogleApiSourceOrganizationSubscription | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+export interface EventarcGoogleApiSourceProjectSubscriptions {
+  /**
+  * A list of projects to receive events from.
+  * 
+  * All the projects must be in the same org. The listed projects should have
+  * the format project/{identifier} where identifier can be either the
+  * project id for project number. A single list may contain both formats. At
+  * most 100 projects can be listed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#list EventarcGoogleApiSource#list}
+  */
+  readonly list: string[];
+}
+
+export function eventarcGoogleApiSourceProjectSubscriptionsToTerraform(struct?: EventarcGoogleApiSourceProjectSubscriptionsOutputReference | EventarcGoogleApiSourceProjectSubscriptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.list),
+  }
+}
+
+
+export function eventarcGoogleApiSourceProjectSubscriptionsToHclTerraform(struct?: EventarcGoogleApiSourceProjectSubscriptionsOutputReference | EventarcGoogleApiSourceProjectSubscriptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    list: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.list),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class EventarcGoogleApiSourceProjectSubscriptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): EventarcGoogleApiSourceProjectSubscriptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._list !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.list = this._list;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EventarcGoogleApiSourceProjectSubscriptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._list = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._list = value.list;
+    }
+  }
+
+  // list - computed: false, optional: false, required: true
+  private _list?: string[]; 
+  public get list() {
+    return this.getListAttribute('list');
+  }
+  public set list(value: string[]) {
+    this._list = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listInput() {
+    return this._list;
+  }
+}
 export interface EventarcGoogleApiSourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#create EventarcGoogleApiSource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#create EventarcGoogleApiSource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#delete EventarcGoogleApiSource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#delete EventarcGoogleApiSource#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#update EventarcGoogleApiSource#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#update EventarcGoogleApiSource#update}
   */
   readonly update?: string;
 }
@@ -354,7 +537,7 @@ export class EventarcGoogleApiSourceTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source}
 */
 export class EventarcGoogleApiSource extends cdktn.TerraformResource {
 
@@ -370,7 +553,7 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventarcGoogleApiSource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventarcGoogleApiSource to import
-  * @param importFromId The id of the existing EventarcGoogleApiSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventarcGoogleApiSource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventarcGoogleApiSource to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -382,7 +565,7 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -393,7 +576,7 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
       terraformResourceType: 'google_eventarc_google_api_source',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -415,6 +598,8 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
     this._location = config.location;
     this._project = config.project;
     this._loggingConfig.internalValue = config.loggingConfig;
+    this._organizationSubscription.internalValue = config.organizationSubscription;
+    this._projectSubscriptions.internalValue = config.projectSubscriptions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -632,6 +817,38 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
     return this._loggingConfig.internalValue;
   }
 
+  // organization_subscription - computed: false, optional: true, required: false
+  private _organizationSubscription = new EventarcGoogleApiSourceOrganizationSubscriptionOutputReference(this, "organization_subscription");
+  public get organizationSubscription() {
+    return this._organizationSubscription;
+  }
+  public putOrganizationSubscription(value: EventarcGoogleApiSourceOrganizationSubscription) {
+    this._organizationSubscription.internalValue = value;
+  }
+  public resetOrganizationSubscription() {
+    this._organizationSubscription.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationSubscriptionInput() {
+    return this._organizationSubscription.internalValue;
+  }
+
+  // project_subscriptions - computed: false, optional: true, required: false
+  private _projectSubscriptions = new EventarcGoogleApiSourceProjectSubscriptionsOutputReference(this, "project_subscriptions");
+  public get projectSubscriptions() {
+    return this._projectSubscriptions;
+  }
+  public putProjectSubscriptions(value: EventarcGoogleApiSourceProjectSubscriptions) {
+    this._projectSubscriptions.internalValue = value;
+  }
+  public resetProjectSubscriptions() {
+    this._projectSubscriptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectSubscriptionsInput() {
+    return this._projectSubscriptions.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new EventarcGoogleApiSourceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -665,6 +882,8 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
       logging_config: eventarcGoogleApiSourceLoggingConfigToTerraform(this._loggingConfig.internalValue),
+      organization_subscription: eventarcGoogleApiSourceOrganizationSubscriptionToTerraform(this._organizationSubscription.internalValue),
+      project_subscriptions: eventarcGoogleApiSourceProjectSubscriptionsToTerraform(this._projectSubscriptions.internalValue),
       timeouts: eventarcGoogleApiSourceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -736,6 +955,18 @@ export class EventarcGoogleApiSource extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "EventarcGoogleApiSourceLoggingConfigList",
+      },
+      organization_subscription: {
+        value: eventarcGoogleApiSourceOrganizationSubscriptionToHclTerraform(this._organizationSubscription.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EventarcGoogleApiSourceOrganizationSubscriptionList",
+      },
+      project_subscriptions: {
+        value: eventarcGoogleApiSourceProjectSubscriptionsToHclTerraform(this._projectSubscriptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EventarcGoogleApiSourceProjectSubscriptionsList",
       },
       timeouts: {
         value: eventarcGoogleApiSourceTimeoutsToHclTerraform(this._timeouts.internalValue),

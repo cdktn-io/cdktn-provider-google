@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service
+// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface ComputeNetworkEdgeSecurityServiceConfig extends cdktn.Terraform
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#deletion_policy ComputeNetworkEdgeSecurityService#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Free-text description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#description ComputeNetworkEdgeSecurityService#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#id ComputeNetworkEdgeSecurityService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,35 +40,35 @@ export interface ComputeNetworkEdgeSecurityServiceConfig extends cdktn.Terraform
   /**
   * Name of the resource. Provided by the client when the resource is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#name ComputeNetworkEdgeSecurityService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#project ComputeNetworkEdgeSecurityService#project}
   */
   readonly project?: string;
   /**
   * The region of the gateway security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#region ComputeNetworkEdgeSecurityService#region}
   */
   readonly region?: string;
   /**
   * The resource URL for the network edge security service associated with this network edge security service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#security_policy ComputeNetworkEdgeSecurityService#security_policy}
   */
   readonly securityPolicy?: string;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#params ComputeNetworkEdgeSecurityService#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#params ComputeNetworkEdgeSecurityService#params}
   */
   readonly params?: ComputeNetworkEdgeSecurityServiceParams;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#timeouts ComputeNetworkEdgeSecurityService#timeouts}
   */
   readonly timeouts?: ComputeNetworkEdgeSecurityServiceTimeouts;
 }
@@ -78,7 +78,7 @@ export interface ComputeNetworkEdgeSecurityServiceParams {
   * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
   * and values are in the format tagValues/456.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#resource_manager_tags ComputeNetworkEdgeSecurityService#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#resource_manager_tags ComputeNetworkEdgeSecurityService#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -162,15 +162,15 @@ export class ComputeNetworkEdgeSecurityServiceParamsOutputReference extends cdkt
 }
 export interface ComputeNetworkEdgeSecurityServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#create ComputeNetworkEdgeSecurityService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#delete ComputeNetworkEdgeSecurityService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#update ComputeNetworkEdgeSecurityService#update}
   */
   readonly update?: string;
 }
@@ -322,7 +322,7 @@ export class ComputeNetworkEdgeSecurityServiceTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service}
 */
 export class ComputeNetworkEdgeSecurityService extends cdktn.TerraformResource {
 
@@ -338,7 +338,7 @@ export class ComputeNetworkEdgeSecurityService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeNetworkEdgeSecurityService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeNetworkEdgeSecurityService to import
-  * @param importFromId The id of the existing ComputeNetworkEdgeSecurityService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeNetworkEdgeSecurityService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeNetworkEdgeSecurityService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -350,7 +350,7 @@ export class ComputeNetworkEdgeSecurityService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.9.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_network_edge_security_service google_compute_network_edge_security_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -361,7 +361,7 @@ export class ComputeNetworkEdgeSecurityService extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_network_edge_security_service',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.9.0',
+        providerVersion: '8.11.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
