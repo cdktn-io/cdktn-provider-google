@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface ModelArmorTemplateConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#deletion_policy ModelArmorTemplate#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#deletion_policy ModelArmorTemplate#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#id ModelArmorTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#id ModelArmorTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,17 +37,17 @@ export interface ModelArmorTemplateConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#labels ModelArmorTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#labels ModelArmorTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#location ModelArmorTemplate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#location ModelArmorTemplate#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#project ModelArmorTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#project ModelArmorTemplate#project}
   */
   readonly project?: string;
   /**
@@ -55,25 +55,25 @@ export interface ModelArmorTemplateConfig extends cdktn.TerraformMetaArguments {
   * If auto-generating Id server-side, remove this field and
   * template_id from the method_signature of Create RPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#template_id ModelArmorTemplate#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#template_id ModelArmorTemplate#template_id}
   */
   readonly templateId: string;
   /**
   * filter_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_config ModelArmorTemplate#filter_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_config ModelArmorTemplate#filter_config}
   */
   readonly filterConfig: ModelArmorTemplateFilterConfig;
   /**
   * template_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#template_metadata ModelArmorTemplate#template_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#template_metadata ModelArmorTemplate#template_metadata}
   */
   readonly templateMetadata?: ModelArmorTemplateTemplateMetadata;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#timeouts ModelArmorTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#timeouts ModelArmorTemplate#timeouts}
   */
   readonly timeouts?: ModelArmorTemplateTimeouts;
 }
@@ -83,7 +83,7 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesEx
   * least one phrase and every phrase must contain at least two characters that
   * are letters or digits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#words ModelArmorTemplate#words}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#words ModelArmorTemplate#words}
   */
   readonly words: string[];
 }
@@ -166,7 +166,7 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesEx
   /**
   * word_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#word_list ModelArmorTemplate#word_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#word_list ModelArmorTemplate#word_list}
   */
   readonly wordList?: ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesExclusionRuleDictionaryWordListStruct;
 }
@@ -252,7 +252,7 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesEx
   /**
   * The regular expression pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#pattern ModelArmorTemplate#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#pattern ModelArmorTemplate#pattern}
   */
   readonly pattern: string;
 }
@@ -339,19 +339,19 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesEx
   * MATCHING_SCOPE_FULL_MATCH
   * MATCHING_SCOPE_PARTIAL_MATCH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#matching_scope ModelArmorTemplate#matching_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#matching_scope ModelArmorTemplate#matching_scope}
   */
   readonly matchingScope?: string;
   /**
   * dictionary block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#dictionary ModelArmorTemplate#dictionary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#dictionary ModelArmorTemplate#dictionary}
   */
   readonly dictionary?: ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesExclusionRuleDictionary;
   /**
   * regex block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#regex ModelArmorTemplate#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#regex ModelArmorTemplate#regex}
   */
   readonly regex?: ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesExclusionRuleRegex;
 }
@@ -495,7 +495,7 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRules {
   /**
   * exclusion_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#exclusion_rule ModelArmorTemplate#exclusion_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#exclusion_rule ModelArmorTemplate#exclusion_rule}
   */
   readonly exclusionRule?: ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRulesExclusionRule;
 }
@@ -616,13 +616,13 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSets {
   * PROMPT_INJECTION_AND_JAILBREAK
   * RESPONSIBLE_AI
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_types ModelArmorTemplate#filter_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_types ModelArmorTemplate#filter_types}
   */
   readonly filterTypes: string[];
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#rules ModelArmorTemplate#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#rules ModelArmorTemplate#rules}
   */
   readonly rules: ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSetsRules[] | cdktn.IResolvable;
 }
@@ -763,7 +763,7 @@ export interface ModelArmorTemplateFilterConfigFilterRuleSettings {
   /**
   * rule_sets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#rule_sets ModelArmorTemplate#rule_sets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#rule_sets ModelArmorTemplate#rule_sets}
   */
   readonly ruleSets?: ModelArmorTemplateFilterConfigFilterRuleSettingsRuleSets[] | cdktn.IResolvable;
 }
@@ -852,7 +852,7 @@ export interface ModelArmorTemplateFilterConfigMaliciousUriFilterSettings {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -941,7 +941,7 @@ export interface ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings {
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -951,7 +951,7 @@ export interface ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -1069,7 +1069,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#confidence_level ModelArmorTemplate#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -1079,7 +1079,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettingsRaiFilters {
   * HARASSMENT
   * DANGEROUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_type ModelArmorTemplate#filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_type ModelArmorTemplate#filter_type}
   */
   readonly filterType: string;
 }
@@ -1223,7 +1223,7 @@ export interface ModelArmorTemplateFilterConfigRaiSettings {
   /**
   * rai_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#rai_filters ModelArmorTemplate#rai_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#rai_filters ModelArmorTemplate#rai_filters}
   */
   readonly raiFilters: ModelArmorTemplateFilterConfigRaiSettingsRaiFilters[] | cdktn.IResolvable;
 }
@@ -1313,7 +1313,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
   * e.g.
   * 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#deidentify_template ModelArmorTemplate#deidentify_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#deidentify_template ModelArmorTemplate#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
@@ -1325,7 +1325,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig {
   * e.g:-
   * 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#inspect_template ModelArmorTemplate#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#inspect_template ModelArmorTemplate#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -1444,7 +1444,7 @@ export interface ModelArmorTemplateFilterConfigSdpSettingsBasicConfig {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_enforcement ModelArmorTemplate#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -1530,13 +1530,13 @@ export interface ModelArmorTemplateFilterConfigSdpSettings {
   /**
   * advanced_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#advanced_config ModelArmorTemplate#advanced_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#advanced_config ModelArmorTemplate#advanced_config}
   */
   readonly advancedConfig?: ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig;
   /**
   * basic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#basic_config ModelArmorTemplate#basic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#basic_config ModelArmorTemplate#basic_config}
   */
   readonly basicConfig?: ModelArmorTemplateFilterConfigSdpSettingsBasicConfig;
 }
@@ -1651,31 +1651,31 @@ export interface ModelArmorTemplateFilterConfig {
   /**
   * filter_rule_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_rule_settings ModelArmorTemplate#filter_rule_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_rule_settings ModelArmorTemplate#filter_rule_settings}
   */
   readonly filterRuleSettings?: ModelArmorTemplateFilterConfigFilterRuleSettings;
   /**
   * malicious_uri_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#malicious_uri_filter_settings ModelArmorTemplate#malicious_uri_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#malicious_uri_filter_settings ModelArmorTemplate#malicious_uri_filter_settings}
   */
   readonly maliciousUriFilterSettings?: ModelArmorTemplateFilterConfigMaliciousUriFilterSettings;
   /**
   * pi_and_jailbreak_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#pi_and_jailbreak_filter_settings ModelArmorTemplate#pi_and_jailbreak_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#pi_and_jailbreak_filter_settings ModelArmorTemplate#pi_and_jailbreak_filter_settings}
   */
   readonly piAndJailbreakFilterSettings?: ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettings;
   /**
   * rai_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#rai_settings ModelArmorTemplate#rai_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#rai_settings ModelArmorTemplate#rai_settings}
   */
   readonly raiSettings?: ModelArmorTemplateFilterConfigRaiSettings;
   /**
   * sdp_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#sdp_settings ModelArmorTemplate#sdp_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#sdp_settings ModelArmorTemplate#sdp_settings}
   */
   readonly sdpSettings?: ModelArmorTemplateFilterConfigSdpSettings;
 }
@@ -1881,14 +1881,14 @@ export interface ModelArmorTemplateTemplateMetadataFilterVersionSelector {
   * FILTER_VERSION_ALIAS_STABLE
   * FILTER_VERSION_ALIAS_LATEST
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#alias ModelArmorTemplate#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#alias ModelArmorTemplate#alias}
   */
   readonly alias?: string;
   /**
   * Pins the template to a specific, immutable filter version. Expected
   * format is a case-sensitive string such as 'v1' or 'v2'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#version ModelArmorTemplate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#version ModelArmorTemplate#version}
   */
   readonly version?: string;
 }
@@ -2003,7 +2003,7 @@ export interface ModelArmorTemplateTemplateMetadataMultiLanguageDetection {
   /**
   * If true, multi language detection will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#enable_multi_language_detection ModelArmorTemplate#enable_multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#enable_multi_language_detection ModelArmorTemplate#enable_multi_language_detection}
   */
   readonly enableMultiLanguageDetection: boolean | cdktn.IResolvable;
 }
@@ -2087,28 +2087,28 @@ export interface ModelArmorTemplateTemplateMetadata {
   * Indicates the custom error code set by the user to be returned to the end
   * user if the LLM response trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#custom_llm_response_safety_error_code ModelArmorTemplate#custom_llm_response_safety_error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#custom_llm_response_safety_error_code ModelArmorTemplate#custom_llm_response_safety_error_code}
   */
   readonly customLlmResponseSafetyErrorCode?: number;
   /**
   * Indicates the custom error message set by the user to be returned to the
   * end user if the LLM response trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#custom_llm_response_safety_error_message ModelArmorTemplate#custom_llm_response_safety_error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#custom_llm_response_safety_error_message ModelArmorTemplate#custom_llm_response_safety_error_message}
   */
   readonly customLlmResponseSafetyErrorMessage?: string;
   /**
   * Indicates the custom error code set by the user to be returned to the end
   * user by the service extension if the prompt trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#custom_prompt_safety_error_code ModelArmorTemplate#custom_prompt_safety_error_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#custom_prompt_safety_error_code ModelArmorTemplate#custom_prompt_safety_error_code}
   */
   readonly customPromptSafetyErrorCode?: number;
   /**
   * Indicates the custom error message set by the user to be returned to the
   * end user if the prompt trips Model Armor filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#custom_prompt_safety_error_message ModelArmorTemplate#custom_prompt_safety_error_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#custom_prompt_safety_error_message ModelArmorTemplate#custom_prompt_safety_error_message}
   */
   readonly customPromptSafetyErrorMessage?: string;
   /**
@@ -2118,7 +2118,7 @@ export interface ModelArmorTemplateTemplateMetadata {
   * checks. If unset, the value is determined by the API; templates created
   * before data residency enforcement may report false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#data_residency_compliant ModelArmorTemplate#data_residency_compliant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#data_residency_compliant ModelArmorTemplate#data_residency_compliant}
   */
   readonly dataResidencyCompliant?: boolean | cdktn.IResolvable;
   /**
@@ -2126,25 +2126,25 @@ export interface ModelArmorTemplateTemplateMetadata {
   * INSPECT_ONLY
   * INSPECT_AND_BLOCK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#enforcement_type ModelArmorTemplate#enforcement_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#enforcement_type ModelArmorTemplate#enforcement_type}
   */
   readonly enforcementType?: string;
   /**
   * If true, partial detector failures should be ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#ignore_partial_invocation_failures ModelArmorTemplate#ignore_partial_invocation_failures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#ignore_partial_invocation_failures ModelArmorTemplate#ignore_partial_invocation_failures}
   */
   readonly ignorePartialInvocationFailures?: boolean | cdktn.IResolvable;
   /**
   * If true, log sanitize operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#log_sanitize_operations ModelArmorTemplate#log_sanitize_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#log_sanitize_operations ModelArmorTemplate#log_sanitize_operations}
   */
   readonly logSanitizeOperations?: boolean | cdktn.IResolvable;
   /**
   * If true, log template crud operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#log_template_operations ModelArmorTemplate#log_template_operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#log_template_operations ModelArmorTemplate#log_template_operations}
   */
   readonly logTemplateOperations?: boolean | cdktn.IResolvable;
   /**
@@ -2156,19 +2156,19 @@ export interface ModelArmorTemplateTemplateMetadata {
   * MODALITY_TEXT
   * MODALITY_IMAGE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#modalities ModelArmorTemplate#modalities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#modalities ModelArmorTemplate#modalities}
   */
   readonly modalities?: string[];
   /**
   * filter_version_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#filter_version_selector ModelArmorTemplate#filter_version_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#filter_version_selector ModelArmorTemplate#filter_version_selector}
   */
   readonly filterVersionSelector?: ModelArmorTemplateTemplateMetadataFilterVersionSelector;
   /**
   * multi_language_detection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#multi_language_detection ModelArmorTemplate#multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#multi_language_detection ModelArmorTemplate#multi_language_detection}
   */
   readonly multiLanguageDetection?: ModelArmorTemplateTemplateMetadataMultiLanguageDetection;
 }
@@ -2571,15 +2571,15 @@ export class ModelArmorTemplateTemplateMetadataOutputReference extends cdktn.Com
 }
 export interface ModelArmorTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#create ModelArmorTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#create ModelArmorTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#delete ModelArmorTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#delete ModelArmorTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#update ModelArmorTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#update ModelArmorTemplate#update}
   */
   readonly update?: string;
 }
@@ -2731,7 +2731,7 @@ export class ModelArmorTemplateTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template google_model_armor_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template google_model_armor_template}
 */
 export class ModelArmorTemplate extends cdktn.TerraformResource {
 
@@ -2747,7 +2747,7 @@ export class ModelArmorTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ModelArmorTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelArmorTemplate to import
-  * @param importFromId The id of the existing ModelArmorTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelArmorTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelArmorTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2759,7 +2759,7 @@ export class ModelArmorTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/model_armor_template google_model_armor_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/model_armor_template google_model_armor_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2770,7 +2770,7 @@ export class ModelArmorTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'google_model_armor_template',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

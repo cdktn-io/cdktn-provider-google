@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   /**
   * The name of the bucket that contains the managed folder.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
   */
   readonly bucket: string;
   /**
@@ -27,7 +27,7 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#deletion_policy StorageManagedFolder#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -36,11 +36,11 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   * within the folder will remain in a simulated folder with the
   * same name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,19 +50,19 @@ export interface StorageManagedFolderConfig extends cdktn.TerraformMetaArguments
   * The name of the managed folder expressed as a path. Must include
   * trailing '/'. For example, 'example_dir/example_dir2/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
   */
   readonly name: string;
   /**
   * rapid_cache_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#rapid_cache_config StorageManagedFolder#rapid_cache_config}
   */
   readonly rapidCacheConfig?: StorageManagedFolderRapidCacheConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
   */
   readonly timeouts?: StorageManagedFolderTimeouts;
 }
@@ -73,13 +73,13 @@ export interface StorageManagedFolderRapidCacheConfigPolicies {
   * when they are written to the managed folder.
   * Possible values: ["enabled", "unspecified"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#ingest_on_write StorageManagedFolder#ingest_on_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#ingest_on_write StorageManagedFolder#ingest_on_write}
   */
   readonly ingestOnWrite?: string;
   /**
   * The unique identifier of the rapid cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#rapid_cache_id StorageManagedFolder#rapid_cache_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#rapid_cache_id StorageManagedFolder#rapid_cache_id}
   */
   readonly rapidCacheId: string;
 }
@@ -223,7 +223,7 @@ export interface StorageManagedFolderRapidCacheConfig {
   /**
   * policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#policies StorageManagedFolder#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#policies StorageManagedFolder#policies}
   */
   readonly policies: StorageManagedFolderRapidCacheConfigPolicies[] | cdktn.IResolvable;
 }
@@ -304,15 +304,15 @@ export class StorageManagedFolderRapidCacheConfigOutputReference extends cdktn.C
 }
 export interface StorageManagedFolderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#create StorageManagedFolder#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#delete StorageManagedFolder#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#update StorageManagedFolder#update}
   */
   readonly update?: string;
 }
@@ -464,7 +464,7 @@ export class StorageManagedFolderTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder google_storage_managed_folder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder google_storage_managed_folder}
 */
 export class StorageManagedFolder extends cdktn.TerraformResource {
 
@@ -480,7 +480,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageManagedFolder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageManagedFolder to import
-  * @param importFromId The id of the existing StorageManagedFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageManagedFolder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageManagedFolder to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -492,7 +492,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -503,7 +503,7 @@ export class StorageManagedFolder extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_managed_folder',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

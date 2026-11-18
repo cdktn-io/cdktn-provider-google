@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
   */
   readonly project?: string;
   /**
@@ -28,7 +28,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktn.T
   * value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
   */
   readonly workloadIdentityPoolId: string;
   /**
@@ -36,7 +36,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktn.T
   * value must be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
   * 'gcp-' is reserved for use by Google, and may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
   */
   readonly workloadIdentityPoolProviderId: string;
 }
@@ -169,6 +169,11 @@ export class DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference extend
   // allowed_audiences - computed: true, optional: false, required: false
   public get allowedAudiences() {
     return this.getListAttribute('allowed_audiences');
+  }
+
+  // discovery_uri - computed: true, optional: false, required: false
+  public get discoveryUri() {
+    return this.getStringAttribute('discovery_uri');
   }
 
   // issuer_uri - computed: true, optional: false, required: false
@@ -585,7 +590,7 @@ export class DataGoogleIamWorkloadIdentityPoolProviderX509List extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
 */
 export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDataSource {
 
@@ -601,7 +606,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataGoogleIamWorkloadIdentityPoolProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamWorkloadIdentityPoolProvider to import
-  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamWorkloadIdentityPoolProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -613,7 +618,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -624,7 +629,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
       terraformResourceType: 'google_iam_workload_identity_pool_provider',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -644,6 +649,11 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktn.TerraformDa
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // actor_providers - computed: true, optional: false, required: false
+  public get actorProviders() {
+    return this.getListAttribute('actor_providers');
+  }
 
   // attribute_condition - computed: true, optional: false, required: false
   public get attributeCondition() {

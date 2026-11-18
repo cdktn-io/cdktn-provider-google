@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudRunV2WorkerPoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool#id DataGoogleCloudRunV2WorkerPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool#id DataGoogleCloudRunV2WorkerPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataGoogleCloudRunV2WorkerPoolConfig extends cdktn.TerraformMet
   /**
   * The location of the cloud run worker pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool#location DataGoogleCloudRunV2WorkerPool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool#location DataGoogleCloudRunV2WorkerPool#location}
   */
   readonly location?: string;
   /**
   * Name of the WorkerPool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool#name DataGoogleCloudRunV2WorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool#name DataGoogleCloudRunV2WorkerPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool#project DataGoogleCloudRunV2WorkerPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool#project DataGoogleCloudRunV2WorkerPool#project}
   */
   readonly project?: string;
 }
@@ -1962,6 +1962,354 @@ export class DataGoogleCloudRunV2WorkerPoolTemplateNodeSelectorList extends cdkt
     return new DataGoogleCloudRunV2WorkerPoolTemplateNodeSelectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv {
+}
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvToTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvToHclTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference {
+    return new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts {
+}
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsToTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsToHclTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // mount_path - computed: true, optional: false, required: false
+  public get mountPath() {
+    return this.getStringAttribute('mount_path');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // sub_path - computed: true, optional: false, required: false
+  public get subPath() {
+    return this.getStringAttribute('sub_path');
+  }
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference {
+    return new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplates {
+}
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesToTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplates): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesToHclTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplates): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplates | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplates | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // args - computed: true, optional: false, required: false
+  public get args() {
+    return this.getListAttribute('args');
+  }
+
+  // command - computed: true, optional: false, required: false
+  public get command() {
+    return this.getListAttribute('command');
+  }
+
+  // env - computed: true, optional: false, required: false
+  private _env = new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList(this, "env", true);
+  public get env() {
+    return this._env;
+  }
+
+  // image - computed: true, optional: false, required: false
+  public get image() {
+    return this.getStringAttribute('image');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // volume_mounts - computed: true, optional: false, required: false
+  private _volumeMounts = new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList(this, "volume_mounts", false);
+  public get volumeMounts() {
+    return this._volumeMounts;
+  }
+
+  // working_dir - computed: true, optional: false, required: false
+  public get workingDir() {
+    return this.getStringAttribute('working_dir');
+  }
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference {
+    return new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunV2WorkerPoolTemplateSandboxes {
+}
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesToTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleCloudRunV2WorkerPoolTemplateSandboxesToHclTerraform(struct?: DataGoogleCloudRunV2WorkerPoolTemplateSandboxes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunV2WorkerPoolTemplateSandboxes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunV2WorkerPoolTemplateSandboxes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // templates - computed: true, optional: false, required: false
+  private _templates = new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesTemplatesList(this, "templates", false);
+  public get templates() {
+    return this._templates;
+  }
+}
+
+export class DataGoogleCloudRunV2WorkerPoolTemplateSandboxesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunV2WorkerPoolTemplateSandboxesOutputReference {
+    return new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance {
 }
 
@@ -2844,6 +3192,12 @@ export class DataGoogleCloudRunV2WorkerPoolTemplateOutputReference extends cdktn
     return this.getStringAttribute('revision');
   }
 
+  // sandboxes - computed: true, optional: false, required: false
+  private _sandboxes = new DataGoogleCloudRunV2WorkerPoolTemplateSandboxesList(this, "sandboxes", false);
+  public get sandboxes() {
+    return this._sandboxes;
+  }
+
   // service_account - computed: true, optional: false, required: false
   public get serviceAccount() {
     return this.getStringAttribute('service_account');
@@ -2992,7 +3346,7 @@ export class DataGoogleCloudRunV2WorkerPoolTerminalConditionList extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}
 */
 export class DataGoogleCloudRunV2WorkerPool extends cdktn.TerraformDataSource {
 
@@ -3008,7 +3362,7 @@ export class DataGoogleCloudRunV2WorkerPool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleCloudRunV2WorkerPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudRunV2WorkerPool to import
-  * @param importFromId The id of the existing DataGoogleCloudRunV2WorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudRunV2WorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudRunV2WorkerPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3020,7 +3374,7 @@ export class DataGoogleCloudRunV2WorkerPool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3031,7 +3385,7 @@ export class DataGoogleCloudRunV2WorkerPool extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_cloud_run_v2_worker_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

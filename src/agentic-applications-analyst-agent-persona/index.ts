@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,13 +17,13 @@ export interface AgenticApplicationsAnalystAgentPersonaConfig extends cdktn.Terr
   * If auto-generating Id server-side, remove this field and
   * analyst_agent_persona_id from the method_signature of Create RPC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#analyst_agent_persona_id AgenticApplicationsAnalystAgentPersona#analyst_agent_persona_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#analyst_agent_persona_id AgenticApplicationsAnalystAgentPersona#analyst_agent_persona_id}
   */
   readonly analystAgentPersonaId: string;
   /**
   * The customer-specific context to be used by the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#customer_context AgenticApplicationsAnalystAgentPersona#customer_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#customer_context AgenticApplicationsAnalystAgentPersona#customer_context}
   */
   readonly customerContext?: string[];
   /**
@@ -35,19 +35,19 @@ export interface AgenticApplicationsAnalystAgentPersonaConfig extends cdktn.Terr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#deletion_policy AgenticApplicationsAnalystAgentPersona#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#deletion_policy AgenticApplicationsAnalystAgentPersona#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the persona, shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_description AgenticApplicationsAnalystAgentPersona#display_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_description AgenticApplicationsAnalystAgentPersona#display_description}
   */
   readonly displayDescription?: string;
   /**
   * The display name of the persona, shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_name AgenticApplicationsAnalystAgentPersona#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_name AgenticApplicationsAnalystAgentPersona#display_name}
   */
   readonly displayName: string;
   /**
@@ -57,11 +57,11 @@ export interface AgenticApplicationsAnalystAgentPersonaConfig extends cdktn.Terr
   * If not set, requests from GE will only be routed to this persona if its
   * name ends in "/default".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#gemini_enterprise_engine AgenticApplicationsAnalystAgentPersona#gemini_enterprise_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#gemini_enterprise_engine AgenticApplicationsAnalystAgentPersona#gemini_enterprise_engine}
   */
   readonly geminiEnterpriseEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#id AgenticApplicationsAnalystAgentPersona#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#id AgenticApplicationsAnalystAgentPersona#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,7 +70,7 @@ export interface AgenticApplicationsAnalystAgentPersonaConfig extends cdktn.Terr
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#location AgenticApplicationsAnalystAgentPersona#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#location AgenticApplicationsAnalystAgentPersona#location}
   */
   readonly location: string;
   /**
@@ -79,17 +79,17 @@ export interface AgenticApplicationsAnalystAgentPersonaConfig extends cdktn.Terr
   * MATH_RENDERING_MODE_LATEX
   * MATH_RENDERING_MODE_PLAIN_TEXT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#math_rendering_mode AgenticApplicationsAnalystAgentPersona#math_rendering_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#math_rendering_mode AgenticApplicationsAnalystAgentPersona#math_rendering_mode}
   */
   readonly mathRenderingMode?: string;
   /**
   * The description of the persona review, used by the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
   */
   readonly modelDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#project AgenticApplicationsAnalystAgentPersona#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#project AgenticApplicationsAnalystAgentPersona#project}
   */
   readonly project?: string;
   /**
@@ -122,61 +122,61 @@ export interface AgenticApplicationsAnalystAgentPersonaConfig extends cdktn.Terr
   * ANALYST_ROLE_SPECIALTY_LIABILITY_UNDERWRITER
   * ANALYST_ROLE_CATASTROPHE_EXPOSURE_MODELER
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#role AgenticApplicationsAnalystAgentPersona#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#role AgenticApplicationsAnalystAgentPersona#role}
   */
   readonly role?: string;
   /**
   * artifact_examples block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#artifact_examples AgenticApplicationsAnalystAgentPersona#artifact_examples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#artifact_examples AgenticApplicationsAnalystAgentPersona#artifact_examples}
   */
   readonly artifactExamples?: AgenticApplicationsAnalystAgentPersonaArtifactExamples[] | cdktn.IResolvable;
   /**
   * artifacts_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#artifacts_config AgenticApplicationsAnalystAgentPersona#artifacts_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#artifacts_config AgenticApplicationsAnalystAgentPersona#artifacts_config}
   */
   readonly artifactsConfig?: AgenticApplicationsAnalystAgentPersonaArtifactsConfig;
   /**
   * external_data_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#external_data_sources AgenticApplicationsAnalystAgentPersona#external_data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#external_data_sources AgenticApplicationsAnalystAgentPersona#external_data_sources}
   */
   readonly externalDataSources?: AgenticApplicationsAnalystAgentPersonaExternalDataSources[] | cdktn.IResolvable;
   /**
   * mcp_data_sources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#mcp_data_sources AgenticApplicationsAnalystAgentPersona#mcp_data_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#mcp_data_sources AgenticApplicationsAnalystAgentPersona#mcp_data_sources}
   */
   readonly mcpDataSources?: AgenticApplicationsAnalystAgentPersonaMcpDataSources[] | cdktn.IResolvable;
   /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#resources AgenticApplicationsAnalystAgentPersona#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#resources AgenticApplicationsAnalystAgentPersona#resources}
   */
   readonly resources?: AgenticApplicationsAnalystAgentPersonaResources[] | cdktn.IResolvable;
   /**
   * skills block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#skills AgenticApplicationsAnalystAgentPersona#skills}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#skills AgenticApplicationsAnalystAgentPersona#skills}
   */
   readonly skills?: AgenticApplicationsAnalystAgentPersonaSkills[] | cdktn.IResolvable;
   /**
   * tables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#tables AgenticApplicationsAnalystAgentPersona#tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#tables AgenticApplicationsAnalystAgentPersona#tables}
   */
   readonly tables?: AgenticApplicationsAnalystAgentPersonaTables[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#timeouts AgenticApplicationsAnalystAgentPersona#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#timeouts AgenticApplicationsAnalystAgentPersona#timeouts}
   */
   readonly timeouts?: AgenticApplicationsAnalystAgentPersonaTimeouts;
   /**
   * web_search_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#web_search_config AgenticApplicationsAnalystAgentPersona#web_search_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#web_search_config AgenticApplicationsAnalystAgentPersona#web_search_config}
   */
   readonly webSearchConfig?: AgenticApplicationsAnalystAgentPersonaWebSearchConfig;
 }
@@ -187,7 +187,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceB
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
   */
   readonly bigqueryDataset?: string;
   /**
@@ -196,13 +196,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceB
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}/tables/{table_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
   */
   readonly bigqueryTable?: string;
   /**
   * A map of column names to column descriptions for the bigquery_table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
   */
   readonly columnDescriptions?: { [key: string]: string };
 }
@@ -349,7 +349,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceF
   * - Expected Format:
   * - {group}.{table_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
   */
   readonly f1Table?: string;
 }
@@ -436,7 +436,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceG
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -447,7 +447,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceG
   * 
   * Note that to refer to a folder, it _must_ end in a slash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
   */
   readonly googleCloudStorageObject: string;
 }
@@ -560,7 +560,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceG
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -571,7 +571,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceG
   * Expected Format:
   * files/{file_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
   */
   readonly fileReference?: string;
 }
@@ -686,19 +686,19 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceR
   /**
   * The raw file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
   */
   readonly fileContent: string;
   /**
   * The title of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
   */
   readonly fileTitle: string;
   /**
   * The mime type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
   */
   readonly mimeType: string;
 }
@@ -834,14 +834,14 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResource 
   * A user-friendly name for this resource. This can be shown to the user
   * and used by the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
   */
   readonly displayLabel?: string;
   /**
   * A description of the resource. The model may use this, it will not be
   * shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
   */
   readonly modelDescription?: string;
   /**
@@ -849,37 +849,37 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamplesResource 
   * 
   * Must only be set for file-based resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
   */
   readonly useRag?: boolean | cdktn.IResolvable;
   /**
   * bigquery_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
   */
   readonly bigqueryResource?: AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceBigqueryResource;
   /**
   * f1_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
   */
   readonly f1Resource?: AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceF1Resource;
   /**
   * google_cloud_storage_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
   */
   readonly googleCloudStorageResource?: AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceGoogleCloudStorageResource;
   /**
   * google_drive_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
   */
   readonly googleDriveResource?: AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceGoogleDriveResource;
   /**
   * raw_file_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
   */
   readonly rawFileResource?: AgenticApplicationsAnalystAgentPersonaArtifactExamplesResourceRawFileResource;
 }
@@ -1168,7 +1168,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactExamples {
   /**
   * resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
   */
   readonly resource: AgenticApplicationsAnalystAgentPersonaArtifactExamplesResource;
 }
@@ -1283,13 +1283,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigAuditTrail
   /**
   * If true, append the audit trail to the final response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#append_audit_trail AgenticApplicationsAnalystAgentPersona#append_audit_trail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#append_audit_trail AgenticApplicationsAnalystAgentPersona#append_audit_trail}
   */
   readonly appendAuditTrail?: boolean | cdktn.IResolvable;
   /**
   * If true, export the audit trail as a separate artifact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#export_audit_trail_artifact AgenticApplicationsAnalystAgentPersona#export_audit_trail_artifact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#export_audit_trail_artifact AgenticApplicationsAnalystAgentPersona#export_audit_trail_artifact}
   */
   readonly exportAuditTrailArtifact?: boolean | cdktn.IResolvable;
   /**
@@ -1299,7 +1299,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigAuditTrail
   * HTML
   * PDF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
   */
   readonly exportFormat?: string;
 }
@@ -1446,7 +1446,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
   */
   readonly bigqueryDataset?: string;
   /**
@@ -1455,13 +1455,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}/tables/{table_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
   */
   readonly bigqueryTable?: string;
   /**
   * A map of column names to column descriptions for the bigquery_table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
   */
   readonly columnDescriptions?: { [key: string]: string };
 }
@@ -1608,7 +1608,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * - Expected Format:
   * - {group}.{table_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
   */
   readonly f1Table?: string;
 }
@@ -1695,7 +1695,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -1706,7 +1706,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * 
   * Note that to refer to a folder, it _must_ end in a slash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
   */
   readonly googleCloudStorageObject: string;
 }
@@ -1819,7 +1819,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -1830,7 +1830,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * Expected Format:
   * files/{file_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
   */
   readonly fileReference?: string;
 }
@@ -1945,19 +1945,19 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   /**
   * The raw file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
   */
   readonly fileContent: string;
   /**
   * The title of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
   */
   readonly fileTitle: string;
   /**
   * The mime type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
   */
   readonly mimeType: string;
 }
@@ -2093,14 +2093,14 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * A user-friendly name for this resource. This can be shown to the user
   * and used by the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
   */
   readonly displayLabel?: string;
   /**
   * A description of the resource. The model may use this, it will not be
   * shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
   */
   readonly modelDescription?: string;
   /**
@@ -2108,37 +2108,37 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * 
   * Must only be set for file-based resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
   */
   readonly useRag?: boolean | cdktn.IResolvable;
   /**
   * bigquery_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
   */
   readonly bigqueryResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamplesResourceBigqueryResource;
   /**
   * f1_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
   */
   readonly f1Resource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamplesResourceF1Resource;
   /**
   * google_cloud_storage_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
   */
   readonly googleCloudStorageResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamplesResourceGoogleCloudStorageResource;
   /**
   * google_drive_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
   */
   readonly googleDriveResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamplesResourceGoogleDriveResource;
   /**
   * raw_file_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
   */
   readonly rawFileResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamplesResourceRawFileResource;
 }
@@ -2427,7 +2427,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   /**
   * resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
   */
   readonly resource: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamplesResource;
 }
@@ -2546,13 +2546,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGe
   * DOCX
   * GOOGLE_DOCS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
   */
   readonly exportFormat?: string;
   /**
   * document_examples block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#document_examples AgenticApplicationsAnalystAgentPersona#document_examples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#document_examples AgenticApplicationsAnalystAgentPersona#document_examples}
   */
   readonly documentExamples?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptionsDocumentExamples[] | cdktn.IResolvable;
 }
@@ -2667,7 +2667,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigMethodolog
   /**
   * If true, append the detailed methodology to the final response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#append_methodology AgenticApplicationsAnalystAgentPersona#append_methodology}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#append_methodology AgenticApplicationsAnalystAgentPersona#append_methodology}
   */
   readonly appendMethodology?: boolean | cdktn.IResolvable;
   /**
@@ -2677,13 +2677,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigMethodolog
   * HTML
   * PDF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
   */
   readonly exportFormat?: string;
   /**
   * If true, export the detailed methodology as a separate artifact.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#export_methodology_artifact AgenticApplicationsAnalystAgentPersona#export_methodology_artifact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#export_methodology_artifact AgenticApplicationsAnalystAgentPersona#export_methodology_artifact}
   */
   readonly exportMethodologyArtifact?: boolean | cdktn.IResolvable;
 }
@@ -2830,7 +2830,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
   */
   readonly bigqueryDataset?: string;
   /**
@@ -2839,13 +2839,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}/tables/{table_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
   */
   readonly bigqueryTable?: string;
   /**
   * A map of column names to column descriptions for the bigquery_table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
   */
   readonly columnDescriptions?: { [key: string]: string };
 }
@@ -2992,7 +2992,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * - Expected Format:
   * - {group}.{table_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
   */
   readonly f1Table?: string;
 }
@@ -3079,7 +3079,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -3090,7 +3090,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * 
   * Note that to refer to a folder, it _must_ end in a slash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
   */
   readonly googleCloudStorageObject: string;
 }
@@ -3203,7 +3203,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -3214,7 +3214,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * Expected Format:
   * files/{file_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
   */
   readonly fileReference?: string;
 }
@@ -3329,19 +3329,19 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   /**
   * The raw file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
   */
   readonly fileContent: string;
   /**
   * The title of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
   */
   readonly fileTitle: string;
   /**
   * The mime type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
   */
   readonly mimeType: string;
 }
@@ -3477,14 +3477,14 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * A user-friendly name for this resource. This can be shown to the user
   * and used by the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
   */
   readonly displayLabel?: string;
   /**
   * A description of the resource. The model may use this, it will not be
   * shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
   */
   readonly modelDescription?: string;
   /**
@@ -3492,37 +3492,37 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * 
   * Must only be set for file-based resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
   */
   readonly useRag?: boolean | cdktn.IResolvable;
   /**
   * bigquery_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
   */
   readonly bigqueryResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamplesResourceBigqueryResource;
   /**
   * f1_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
   */
   readonly f1Resource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamplesResourceF1Resource;
   /**
   * google_cloud_storage_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
   */
   readonly googleCloudStorageResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamplesResourceGoogleCloudStorageResource;
   /**
   * google_drive_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
   */
   readonly googleDriveResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamplesResourceGoogleDriveResource;
   /**
   * raw_file_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
   */
   readonly rawFileResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamplesResourceRawFileResource;
 }
@@ -3811,7 +3811,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   /**
   * resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
   */
   readonly resource: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamplesResource;
 }
@@ -3931,13 +3931,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGener
   * PPTX
   * GOOGLE_SLIDES
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#export_format AgenticApplicationsAnalystAgentPersona#export_format}
   */
   readonly exportFormat?: string;
   /**
   * slide_examples block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#slide_examples AgenticApplicationsAnalystAgentPersona#slide_examples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#slide_examples AgenticApplicationsAnalystAgentPersona#slide_examples}
   */
   readonly slideExamples?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptionsSlideExamples[] | cdktn.IResolvable;
 }
@@ -4055,7 +4055,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
   */
   readonly bigqueryDataset?: string;
   /**
@@ -4064,13 +4064,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}/tables/{table_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
   */
   readonly bigqueryTable?: string;
   /**
   * A map of column names to column descriptions for the bigquery_table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
   */
   readonly columnDescriptions?: { [key: string]: string };
 }
@@ -4217,7 +4217,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * - Expected Format:
   * - {group}.{table_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
   */
   readonly f1Table?: string;
 }
@@ -4304,7 +4304,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -4315,7 +4315,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * 
   * Note that to refer to a folder, it _must_ end in a slash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
   */
   readonly googleCloudStorageObject: string;
 }
@@ -4428,7 +4428,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -4439,7 +4439,7 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * Expected Format:
   * files/{file_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
   */
   readonly fileReference?: string;
 }
@@ -4554,19 +4554,19 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   /**
   * The raw file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
   */
   readonly fileContent: string;
   /**
   * The title of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
   */
   readonly fileTitle: string;
   /**
   * The mime type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
   */
   readonly mimeType: string;
 }
@@ -4702,14 +4702,14 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * A user-friendly name for this resource. This can be shown to the user
   * and used by the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
   */
   readonly displayLabel?: string;
   /**
   * A description of the resource. The model may use this, it will not be
   * shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
   */
   readonly modelDescription?: string;
   /**
@@ -4717,37 +4717,37 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * 
   * Must only be set for file-based resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
   */
   readonly useRag?: boolean | cdktn.IResolvable;
   /**
   * bigquery_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
   */
   readonly bigqueryResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamplesResourceBigqueryResource;
   /**
   * f1_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
   */
   readonly f1Resource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamplesResourceF1Resource;
   /**
   * google_cloud_storage_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
   */
   readonly googleCloudStorageResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamplesResourceGoogleCloudStorageResource;
   /**
   * google_drive_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
   */
   readonly googleDriveResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamplesResourceGoogleDriveResource;
   /**
   * raw_file_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
   */
   readonly rawFileResource?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamplesResourceRawFileResource;
 }
@@ -5036,13 +5036,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   /**
   * The type of the visualization (e.g. "Bar Chart", "Line Chart").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_type AgenticApplicationsAnalystAgentPersona#visualization_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_type AgenticApplicationsAnalystAgentPersona#visualization_type}
   */
   readonly visualizationType: string;
   /**
   * resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#resource AgenticApplicationsAnalystAgentPersona#resource}
   */
   readonly resource: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamplesResource;
 }
@@ -5188,13 +5188,13 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizat
   * VISUALIZATION_MODE_WHEN_HELPFUL
   * VISUALIZATION_MODE_ALWAYS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_mode AgenticApplicationsAnalystAgentPersona#visualization_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_mode AgenticApplicationsAnalystAgentPersona#visualization_mode}
   */
   readonly visualizationMode?: string;
   /**
   * visualization_examples block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_examples AgenticApplicationsAnalystAgentPersona#visualization_examples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_examples AgenticApplicationsAnalystAgentPersona#visualization_examples}
   */
   readonly visualizationExamples?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptionsVisualizationExamples[] | cdktn.IResolvable;
 }
@@ -5309,31 +5309,31 @@ export interface AgenticApplicationsAnalystAgentPersonaArtifactsConfig {
   /**
   * audit_trail_export_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#audit_trail_export_options AgenticApplicationsAnalystAgentPersona#audit_trail_export_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#audit_trail_export_options AgenticApplicationsAnalystAgentPersona#audit_trail_export_options}
   */
   readonly auditTrailExportOptions?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigAuditTrailExportOptions;
   /**
   * document_generation_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#document_generation_options AgenticApplicationsAnalystAgentPersona#document_generation_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#document_generation_options AgenticApplicationsAnalystAgentPersona#document_generation_options}
   */
   readonly documentGenerationOptions?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigDocumentGenerationOptions;
   /**
   * methodology_export_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#methodology_export_options AgenticApplicationsAnalystAgentPersona#methodology_export_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#methodology_export_options AgenticApplicationsAnalystAgentPersona#methodology_export_options}
   */
   readonly methodologyExportOptions?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigMethodologyExportOptions;
   /**
   * slide_generation_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#slide_generation_options AgenticApplicationsAnalystAgentPersona#slide_generation_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#slide_generation_options AgenticApplicationsAnalystAgentPersona#slide_generation_options}
   */
   readonly slideGenerationOptions?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigSlideGenerationOptions;
   /**
   * visualization_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_options AgenticApplicationsAnalystAgentPersona#visualization_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#visualization_options AgenticApplicationsAnalystAgentPersona#visualization_options}
   */
   readonly visualizationOptions?: AgenticApplicationsAnalystAgentPersonaArtifactsConfigVisualizationOptions;
 }
@@ -5927,55 +5927,55 @@ export interface AgenticApplicationsAnalystAgentPersonaExternalDataSources {
   /**
   * Whether this external data source is enabled for the current analysis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#enabled AgenticApplicationsAnalystAgentPersona#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#enabled AgenticApplicationsAnalystAgentPersona#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * air_quality block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#air_quality AgenticApplicationsAnalystAgentPersona#air_quality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#air_quality AgenticApplicationsAnalystAgentPersona#air_quality}
   */
   readonly airQuality?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesAirQuality;
   /**
   * bureau_labor_statistics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bureau_labor_statistics AgenticApplicationsAnalystAgentPersona#bureau_labor_statistics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bureau_labor_statistics AgenticApplicationsAnalystAgentPersona#bureau_labor_statistics}
   */
   readonly bureauLaborStatistics?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesBureauLaborStatistics;
   /**
   * coindesk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#coindesk AgenticApplicationsAnalystAgentPersona#coindesk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#coindesk AgenticApplicationsAnalystAgentPersona#coindesk}
   */
   readonly coindesk?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesCoindesk;
   /**
   * finnhub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#finnhub AgenticApplicationsAnalystAgentPersona#finnhub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#finnhub AgenticApplicationsAnalystAgentPersona#finnhub}
   */
   readonly finnhub?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesFinnhub;
   /**
   * fred block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#fred AgenticApplicationsAnalystAgentPersona#fred}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#fred AgenticApplicationsAnalystAgentPersona#fred}
   */
   readonly fred?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesFred;
   /**
   * sec_edgar block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#sec_edgar AgenticApplicationsAnalystAgentPersona#sec_edgar}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#sec_edgar AgenticApplicationsAnalystAgentPersona#sec_edgar}
   */
   readonly secEdgar?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesSecEdgar;
   /**
   * treasury_securities_auctions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#treasury_securities_auctions AgenticApplicationsAnalystAgentPersona#treasury_securities_auctions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#treasury_securities_auctions AgenticApplicationsAnalystAgentPersona#treasury_securities_auctions}
   */
   readonly treasurySecuritiesAuctions?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesTreasurySecuritiesAuctions;
   /**
   * usda block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#usda AgenticApplicationsAnalystAgentPersona#usda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#usda AgenticApplicationsAnalystAgentPersona#usda}
   */
   readonly usda?: AgenticApplicationsAnalystAgentPersonaExternalDataSourcesUsda;
 }
@@ -6323,73 +6323,264 @@ export class AgenticApplicationsAnalystAgentPersonaExternalDataSourcesList exten
     return new AgenticApplicationsAnalystAgentPersonaExternalDataSourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders {
+  /**
+  * A value the agent fills in for each request.
+  * Possible values:
+  * USER_ID
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#dynamic_value AgenticApplicationsAnalystAgentPersona#dynamic_value}
+  */
+  readonly dynamicValue?: string;
+  /**
+  * The header name. Must be a valid HTTP field name (RFC 9110 token),
+  * unique ignoring case within the data source, and not a header managed
+  * by the agent (such as 'Authorization', 'Content-Type', 'mcp-session-id',
+  * or the configured API key, session ID, or task ID headers).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#header_name AgenticApplicationsAnalystAgentPersona#header_name}
+  */
+  readonly headerName: string;
+  /**
+  * A static value, sent as-is on every request. The value is stored and
+  * returned in plain text, so do not use it for credentials.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#value AgenticApplicationsAnalystAgentPersona#value}
+  */
+  readonly value?: string;
+}
+
+export function agenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersToTerraform(struct?: AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    dynamic_value: cdktn.stringToTerraform(struct!.dynamicValue),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function agenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersToHclTerraform(struct?: AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    dynamic_value: {
+      value: cdktn.stringToHclTerraform(struct!.dynamicValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    header_name: {
+      value: cdktn.stringToHclTerraform(struct!.headerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dynamicValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dynamicValue = this._dynamicValue;
+    }
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dynamicValue = undefined;
+      this._headerName = undefined;
+      this._value = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dynamicValue = value.dynamicValue;
+      this._headerName = value.headerName;
+      this._value = value.value;
+    }
+  }
+
+  // dynamic_value - computed: false, optional: true, required: false
+  private _dynamicValue?: string; 
+  public get dynamicValue() {
+    return this.getStringAttribute('dynamic_value');
+  }
+  public set dynamicValue(value: string) {
+    this._dynamicValue = value;
+  }
+  public resetDynamicValue() {
+    this._dynamicValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dynamicValueInput() {
+    return this._dynamicValue;
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersList extends cdktn.ComplexList {
+  public internalValue? : AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersOutputReference {
+    return new AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AgenticApplicationsAnalystAgentPersonaMcpDataSources {
   /**
   * Input only. The API key of the MCP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#api_key AgenticApplicationsAnalystAgentPersona#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#api_key AgenticApplicationsAnalystAgentPersona#api_key}
   */
   readonly apiKey?: string;
   /**
   * The HTTP header when the API key is passed in a request header
   * (e.g. 'x-api-key', 'api-key', 'X-Auth-Token').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#api_key_header AgenticApplicationsAnalystAgentPersona#api_key_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#api_key_header AgenticApplicationsAnalystAgentPersona#api_key_header}
   */
   readonly apiKeyHeader?: string;
   /**
   * The API key parameter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#api_key_name AgenticApplicationsAnalystAgentPersona#api_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#api_key_name AgenticApplicationsAnalystAgentPersona#api_key_name}
   */
   readonly apiKeyName?: string;
   /**
   * The client ID for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#client_id AgenticApplicationsAnalystAgentPersona#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#client_id AgenticApplicationsAnalystAgentPersona#client_id}
   */
   readonly clientId?: string;
   /**
   * Input only. The client secret for authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#client_secret AgenticApplicationsAnalystAgentPersona#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#client_secret AgenticApplicationsAnalystAgentPersona#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The description of the MCP agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
   */
   readonly description: string;
   /**
   * The display name of the MCP server. Must be no longer than 63 characters
   * and can only contain letters, numbers, spaces, underscores, and hyphens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_name AgenticApplicationsAnalystAgentPersona#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_name AgenticApplicationsAnalystAgentPersona#display_name}
   */
   readonly displayName: string;
   /**
   * Whether this external data source is enabled for the current analysis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#enabled AgenticApplicationsAnalystAgentPersona#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#enabled AgenticApplicationsAnalystAgentPersona#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The URL to use for retrieving the OAuth token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#oauth_token_url AgenticApplicationsAnalystAgentPersona#oauth_token_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#oauth_token_url AgenticApplicationsAnalystAgentPersona#oauth_token_url}
   */
   readonly oauthTokenUrl?: string;
   /**
   * The custom prompt for the MCP agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#prompt AgenticApplicationsAnalystAgentPersona#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#prompt AgenticApplicationsAnalystAgentPersona#prompt}
   */
   readonly prompt?: string;
   /**
   * The URL of the MCP server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#server_url AgenticApplicationsAnalystAgentPersona#server_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#server_url AgenticApplicationsAnalystAgentPersona#server_url}
   */
   readonly serverUrl: string;
   /**
@@ -6397,7 +6588,7 @@ export interface AgenticApplicationsAnalystAgentPersonaMcpDataSources {
   * requests (defaults to 'X-Session-Id' when unset). Must be a valid HTTP
   * header field name (RFC 9110 token).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#session_id_header AgenticApplicationsAnalystAgentPersona#session_id_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#session_id_header AgenticApplicationsAnalystAgentPersona#session_id_header}
   */
   readonly sessionIdHeader?: string;
   /**
@@ -6405,9 +6596,15 @@ export interface AgenticApplicationsAnalystAgentPersonaMcpDataSources {
   * requests (defaults to 'X-Task-Id' when unset). Must be a valid HTTP
   * header field name (RFC 9110 token).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#task_id_header AgenticApplicationsAnalystAgentPersona#task_id_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#task_id_header AgenticApplicationsAnalystAgentPersona#task_id_header}
   */
   readonly taskIdHeader?: string;
+  /**
+  * request_headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#request_headers AgenticApplicationsAnalystAgentPersona#request_headers}
+  */
+  readonly requestHeaders?: AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders[] | cdktn.IResolvable;
 }
 
 export function agenticApplicationsAnalystAgentPersonaMcpDataSourcesToTerraform(struct?: AgenticApplicationsAnalystAgentPersonaMcpDataSources | cdktn.IResolvable): any {
@@ -6429,6 +6626,7 @@ export function agenticApplicationsAnalystAgentPersonaMcpDataSourcesToTerraform(
     server_url: cdktn.stringToTerraform(struct!.serverUrl),
     session_id_header: cdktn.stringToTerraform(struct!.sessionIdHeader),
     task_id_header: cdktn.stringToTerraform(struct!.taskIdHeader),
+    request_headers: cdktn.listMapper(agenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersToTerraform, true)(struct!.requestHeaders),
   }
 }
 
@@ -6517,6 +6715,12 @@ export function agenticApplicationsAnalystAgentPersonaMcpDataSourcesToHclTerrafo
       type: "simple",
       storageClassType: "string",
     },
+    request_headers: {
+      value: cdktn.listMapperHcl(agenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersToHclTerraform, true)(struct!.requestHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersList",
+    },
   };
 
   // remove undefined attributes
@@ -6595,6 +6799,10 @@ export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesOutputReference
       hasAnyValues = true;
       internalValueResult.taskIdHeader = this._taskIdHeader;
     }
+    if (this._requestHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestHeaders = this._requestHeaders?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6615,6 +6823,7 @@ export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesOutputReference
       this._serverUrl = undefined;
       this._sessionIdHeader = undefined;
       this._taskIdHeader = undefined;
+      this._requestHeaders.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -6636,6 +6845,7 @@ export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesOutputReference
       this._serverUrl = value.serverUrl;
       this._sessionIdHeader = value.sessionIdHeader;
       this._taskIdHeader = value.taskIdHeader;
+      this._requestHeaders.internalValue = value.requestHeaders;
     }
   }
 
@@ -6834,6 +7044,22 @@ export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesOutputReference
   public get taskIdHeaderInput() {
     return this._taskIdHeader;
   }
+
+  // request_headers - computed: false, optional: true, required: false
+  private _requestHeaders = new AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeadersList(this, "request_headers", false);
+  public get requestHeaders() {
+    return this._requestHeaders;
+  }
+  public putRequestHeaders(value: AgenticApplicationsAnalystAgentPersonaMcpDataSourcesRequestHeaders[] | cdktn.IResolvable) {
+    this._requestHeaders.internalValue = value;
+  }
+  public resetRequestHeaders() {
+    this._requestHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestHeadersInput() {
+    return this._requestHeaders.internalValue;
+  }
 }
 
 export class AgenticApplicationsAnalystAgentPersonaMcpDataSourcesList extends cdktn.ComplexList {
@@ -6862,7 +7088,7 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesBigqueryResource
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_dataset AgenticApplicationsAnalystAgentPersona#bigquery_dataset}
   */
   readonly bigqueryDataset?: string;
   /**
@@ -6871,13 +7097,13 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesBigqueryResource
   * Expected Format:
   * projects/{project_id_or_number}/datasets/{dataset_id}/tables/{table_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_table AgenticApplicationsAnalystAgentPersona#bigquery_table}
   */
   readonly bigqueryTable?: string;
   /**
   * A map of column names to column descriptions for the bigquery_table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#column_descriptions AgenticApplicationsAnalystAgentPersona#column_descriptions}
   */
   readonly columnDescriptions?: { [key: string]: string };
 }
@@ -7024,7 +7250,7 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesF1Resource {
   * - Expected Format:
   * - {group}.{table_name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_table AgenticApplicationsAnalystAgentPersona#f1_table}
   */
   readonly f1Table?: string;
 }
@@ -7111,7 +7337,7 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesGoogleCloudStora
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -7122,7 +7348,7 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesGoogleCloudStora
   * 
   * Note that to refer to a folder, it _must_ end in a slash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_object AgenticApplicationsAnalystAgentPersona#google_cloud_storage_object}
   */
   readonly googleCloudStorageObject: string;
 }
@@ -7235,7 +7461,7 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesGoogleDriveResou
   * If non-empty, only files with these extensions are included when
   * expanding the resource.  If empty, all files are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_extension_restrictions AgenticApplicationsAnalystAgentPersona#file_extension_restrictions}
   */
   readonly fileExtensionRestrictions?: string[];
   /**
@@ -7246,7 +7472,7 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesGoogleDriveResou
   * Expected Format:
   * files/{file_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_reference AgenticApplicationsAnalystAgentPersona#file_reference}
   */
   readonly fileReference?: string;
 }
@@ -7361,19 +7587,19 @@ export interface AgenticApplicationsAnalystAgentPersonaResourcesRawFileResource 
   /**
   * The raw file content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_content AgenticApplicationsAnalystAgentPersona#file_content}
   */
   readonly fileContent: string;
   /**
   * The title of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#file_title AgenticApplicationsAnalystAgentPersona#file_title}
   */
   readonly fileTitle: string;
   /**
   * The mime type of the file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#mime_type AgenticApplicationsAnalystAgentPersona#mime_type}
   */
   readonly mimeType: string;
 }
@@ -7509,14 +7735,14 @@ export interface AgenticApplicationsAnalystAgentPersonaResources {
   * A user-friendly name for this resource. This can be shown to the user
   * and used by the model.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#display_label AgenticApplicationsAnalystAgentPersona#display_label}
   */
   readonly displayLabel?: string;
   /**
   * A description of the resource. The model may use this, it will not be
   * shown to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#model_description AgenticApplicationsAnalystAgentPersona#model_description}
   */
   readonly modelDescription?: string;
   /**
@@ -7524,37 +7750,37 @@ export interface AgenticApplicationsAnalystAgentPersonaResources {
   * 
   * Must only be set for file-based resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#use_rag AgenticApplicationsAnalystAgentPersona#use_rag}
   */
   readonly useRag?: boolean | cdktn.IResolvable;
   /**
   * bigquery_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#bigquery_resource AgenticApplicationsAnalystAgentPersona#bigquery_resource}
   */
   readonly bigqueryResource?: AgenticApplicationsAnalystAgentPersonaResourcesBigqueryResource;
   /**
   * f1_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#f1_resource AgenticApplicationsAnalystAgentPersona#f1_resource}
   */
   readonly f1Resource?: AgenticApplicationsAnalystAgentPersonaResourcesF1Resource;
   /**
   * google_cloud_storage_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_cloud_storage_resource AgenticApplicationsAnalystAgentPersona#google_cloud_storage_resource}
   */
   readonly googleCloudStorageResource?: AgenticApplicationsAnalystAgentPersonaResourcesGoogleCloudStorageResource;
   /**
   * google_drive_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#google_drive_resource AgenticApplicationsAnalystAgentPersona#google_drive_resource}
   */
   readonly googleDriveResource?: AgenticApplicationsAnalystAgentPersonaResourcesGoogleDriveResource;
   /**
   * raw_file_resource block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#raw_file_resource AgenticApplicationsAnalystAgentPersona#raw_file_resource}
   */
   readonly rawFileResource?: AgenticApplicationsAnalystAgentPersonaResourcesRawFileResource;
 }
@@ -7875,14 +8101,14 @@ export interface AgenticApplicationsAnalystAgentPersonaSkillsReferences {
   /**
   * The content of the reference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#content AgenticApplicationsAnalystAgentPersona#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#content AgenticApplicationsAnalystAgentPersona#content}
   */
   readonly content: string;
   /**
   * The identifier of the reference within the skill. Use a descriptive
   * string that reflects the reference's function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#reference_id AgenticApplicationsAnalystAgentPersona#reference_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#reference_id AgenticApplicationsAnalystAgentPersona#reference_id}
   */
   readonly referenceId: string;
 }
@@ -8023,26 +8249,26 @@ export interface AgenticApplicationsAnalystAgentPersonaSkills {
   /**
   * The markdown text content of the skill.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#content AgenticApplicationsAnalystAgentPersona#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#content AgenticApplicationsAnalystAgentPersona#content}
   */
   readonly content: string;
   /**
   * The description of the skill.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
   */
   readonly description?: string;
   /**
   * The identifier of the skill. Use a descriptive string that reflects the
   * skill's function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#skill_id AgenticApplicationsAnalystAgentPersona#skill_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#skill_id AgenticApplicationsAnalystAgentPersona#skill_id}
   */
   readonly skillId: string;
   /**
   * references block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#references AgenticApplicationsAnalystAgentPersona#references}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#references AgenticApplicationsAnalystAgentPersona#references}
   */
   readonly references?: AgenticApplicationsAnalystAgentPersonaSkillsReferences[] | cdktn.IResolvable;
 }
@@ -8243,19 +8469,19 @@ export interface AgenticApplicationsAnalystAgentPersonaTablesColumns {
   * Parameterized types such as PROTO, ENUM, ARRAY, STRUCT<...>, and
   * RANGE are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#data_type AgenticApplicationsAnalystAgentPersona#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#data_type AgenticApplicationsAnalystAgentPersona#data_type}
   */
   readonly dataType: string;
   /**
   * The description of the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
   */
   readonly description?: string;
   /**
   * The name of the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#name AgenticApplicationsAnalystAgentPersona#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#name AgenticApplicationsAnalystAgentPersona#name}
   */
   readonly name: string;
 }
@@ -8425,19 +8651,19 @@ export interface AgenticApplicationsAnalystAgentPersonaTables {
   /**
   * The description of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#description AgenticApplicationsAnalystAgentPersona#description}
   */
   readonly description?: string;
   /**
   * The name of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#name AgenticApplicationsAnalystAgentPersona#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#name AgenticApplicationsAnalystAgentPersona#name}
   */
   readonly name: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#columns AgenticApplicationsAnalystAgentPersona#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#columns AgenticApplicationsAnalystAgentPersona#columns}
   */
   readonly columns?: AgenticApplicationsAnalystAgentPersonaTablesColumns[] | cdktn.IResolvable;
 }
@@ -8608,15 +8834,15 @@ export class AgenticApplicationsAnalystAgentPersonaTablesList extends cdktn.Comp
 }
 export interface AgenticApplicationsAnalystAgentPersonaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#create AgenticApplicationsAnalystAgentPersona#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#create AgenticApplicationsAnalystAgentPersona#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#delete AgenticApplicationsAnalystAgentPersona#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#delete AgenticApplicationsAnalystAgentPersona#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#update AgenticApplicationsAnalystAgentPersona#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#update AgenticApplicationsAnalystAgentPersona#update}
   */
   readonly update?: string;
 }
@@ -8771,14 +8997,14 @@ export interface AgenticApplicationsAnalystAgentPersonaWebSearchConfig {
   * Whether web search grounding is disabled for the analyst agent.
   * Defaults to false if not specified (i.e. web search grounding is enabled).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#disabled AgenticApplicationsAnalystAgentPersona#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#disabled AgenticApplicationsAnalystAgentPersona#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * List of domains to be excluded from Google Search / Enterprise Web Search
   * grounding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#excluded_domains AgenticApplicationsAnalystAgentPersona#excluded_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#excluded_domains AgenticApplicationsAnalystAgentPersona#excluded_domains}
   */
   readonly excludedDomains?: string[];
 }
@@ -8891,7 +9117,7 @@ export class AgenticApplicationsAnalystAgentPersonaWebSearchConfigOutputReferenc
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona google_agentic_applications_analyst_agent_persona}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona google_agentic_applications_analyst_agent_persona}
 */
 export class AgenticApplicationsAnalystAgentPersona extends cdktn.TerraformResource {
 
@@ -8907,7 +9133,7 @@ export class AgenticApplicationsAnalystAgentPersona extends cdktn.TerraformResou
   * Generates CDKTN code for importing a AgenticApplicationsAnalystAgentPersona resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgenticApplicationsAnalystAgentPersona to import
-  * @param importFromId The id of the existing AgenticApplicationsAnalystAgentPersona that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgenticApplicationsAnalystAgentPersona that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgenticApplicationsAnalystAgentPersona to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -8919,7 +9145,7 @@ export class AgenticApplicationsAnalystAgentPersona extends cdktn.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/agentic_applications_analyst_agent_persona google_agentic_applications_analyst_agent_persona} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/agentic_applications_analyst_agent_persona google_agentic_applications_analyst_agent_persona} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -8930,7 +9156,7 @@ export class AgenticApplicationsAnalystAgentPersona extends cdktn.TerraformResou
       terraformResourceType: 'google_agentic_applications_analyst_agent_persona',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

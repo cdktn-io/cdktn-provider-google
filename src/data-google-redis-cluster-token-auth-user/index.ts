@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface DataGoogleRedisClusterTokenAuthUserConfig extends cdktn.Terrafo
   /**
   * The name or resource ID of the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#cluster DataGoogleRedisClusterTokenAuthUser#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#cluster DataGoogleRedisClusterTokenAuthUser#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}
   */
   readonly project?: string;
   /**
   * The name of the region of the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#region DataGoogleRedisClusterTokenAuthUser#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#region DataGoogleRedisClusterTokenAuthUser#region}
   */
   readonly region?: string;
   /**
   * The unique ID (username) of the Token Auth User.
   * The 'default' user cannot be managed with this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#user_id DataGoogleRedisClusterTokenAuthUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#user_id DataGoogleRedisClusterTokenAuthUser#user_id}
   */
   readonly userId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user google_redis_cluster_token_auth_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user google_redis_cluster_token_auth_user}
 */
 export class DataGoogleRedisClusterTokenAuthUser extends cdktn.TerraformDataSource {
 
@@ -61,7 +61,7 @@ export class DataGoogleRedisClusterTokenAuthUser extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataGoogleRedisClusterTokenAuthUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleRedisClusterTokenAuthUser to import
-  * @param importFromId The id of the existing DataGoogleRedisClusterTokenAuthUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleRedisClusterTokenAuthUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleRedisClusterTokenAuthUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class DataGoogleRedisClusterTokenAuthUser extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user google_redis_cluster_token_auth_user} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user google_redis_cluster_token_auth_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class DataGoogleRedisClusterTokenAuthUser extends cdktn.TerraformDataSour
       terraformResourceType: 'google_redis_cluster_token_auth_user',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

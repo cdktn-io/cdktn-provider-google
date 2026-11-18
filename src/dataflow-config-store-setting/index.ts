@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataflowConfigStoreSettingConfig extends cdktn.TerraformMetaArg
   /**
   * The ID of the config store setting (e.g. 'default_launcher_machine_type').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#config_store_setting_id DataflowConfigStoreSetting#config_store_setting_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#config_store_setting_id DataflowConfigStoreSetting#config_store_setting_id}
   */
   readonly configStoreSettingId: string;
   /**
@@ -27,11 +27,11 @@ export interface DataflowConfigStoreSettingConfig extends cdktn.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#deletion_policy DataflowConfigStoreSetting#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#deletion_policy DataflowConfigStoreSetting#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#id DataflowConfigStoreSetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#id DataflowConfigStoreSetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +40,7 @@ export interface DataflowConfigStoreSettingConfig extends cdktn.TerraformMetaArg
   /**
   * The Dataflow region for the setting (e.g. 'us-central1').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#location DataflowConfigStoreSetting#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#location DataflowConfigStoreSetting#location}
   */
   readonly location: string;
   /**
@@ -50,33 +50,33 @@ export interface DataflowConfigStoreSettingConfig extends cdktn.TerraformMetaArg
   * * 'folders/{folder_id}'
   * * 'organizations/{organization_id}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#parent DataflowConfigStoreSetting#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#parent DataflowConfigStoreSetting#parent}
   */
   readonly parent: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#timeouts DataflowConfigStoreSetting#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#timeouts DataflowConfigStoreSetting#timeouts}
   */
   readonly timeouts?: DataflowConfigStoreSettingTimeouts;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#value DataflowConfigStoreSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#value DataflowConfigStoreSetting#value}
   */
   readonly value: DataflowConfigStoreSettingValue;
 }
 export interface DataflowConfigStoreSettingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#create DataflowConfigStoreSetting#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#create DataflowConfigStoreSetting#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#delete DataflowConfigStoreSetting#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#delete DataflowConfigStoreSetting#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#update DataflowConfigStoreSetting#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#update DataflowConfigStoreSetting#update}
   */
   readonly update?: string;
 }
@@ -230,13 +230,13 @@ export interface DataflowConfigStoreSettingValue {
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#bool_value DataflowConfigStoreSetting#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#bool_value DataflowConfigStoreSetting#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#string_value DataflowConfigStoreSetting#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#string_value DataflowConfigStoreSetting#string_value}
   */
   readonly stringValue?: string;
 }
@@ -349,7 +349,7 @@ export class DataflowConfigStoreSettingValueOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting google_dataflow_config_store_setting}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting google_dataflow_config_store_setting}
 */
 export class DataflowConfigStoreSetting extends cdktn.TerraformResource {
 
@@ -365,7 +365,7 @@ export class DataflowConfigStoreSetting extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataflowConfigStoreSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataflowConfigStoreSetting to import
-  * @param importFromId The id of the existing DataflowConfigStoreSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataflowConfigStoreSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataflowConfigStoreSetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -377,7 +377,7 @@ export class DataflowConfigStoreSetting extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataflow_config_store_setting google_dataflow_config_store_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataflow_config_store_setting google_dataflow_config_store_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +388,7 @@ export class DataflowConfigStoreSetting extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataflow_config_store_setting',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

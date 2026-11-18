@@ -1,0 +1,3 @@
+# `google_backup_dr_auto_protection_policy_binding`
+
+Refer to the Terraform Registry for docs: [`google_backup_dr_auto_protection_policy_binding`](https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/backup_dr_auto_protection_policy_binding).

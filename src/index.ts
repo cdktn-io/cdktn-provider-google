@@ -78,6 +78,7 @@ export * as apigeeSharedflowDeployment from './apigee-sharedflow-deployment/inde
 export * as apigeeSpace from './apigee-space/index';
 export * as apigeeSyncAuthorization from './apigee-sync-authorization/index';
 export * as apigeeTargetServer from './apigee-target-server/index';
+export * as apihubAddon from './apihub-addon/index';
 export * as apihubApiHubInstance from './apihub-api-hub-instance/index';
 export * as apihubCuration from './apihub-curation/index';
 export * as apihubHostProjectRegistration from './apihub-host-project-registration/index';
@@ -106,6 +107,7 @@ export * as artifactRegistryRepositoryIamPolicy from './artifact-registry-reposi
 export * as artifactRegistryRule from './artifact-registry-rule/index';
 export * as assuredWorkloadsWorkload from './assured-workloads-workload/index';
 export * as backupDrAutoProtectionPolicy from './backup-dr-auto-protection-policy/index';
+export * as backupDrAutoProtectionPolicyBinding from './backup-dr-auto-protection-policy-binding/index';
 export * as backupDrBackupPlan from './backup-dr-backup-plan/index';
 export * as backupDrBackupPlanAssociation from './backup-dr-backup-plan-association/index';
 export * as backupDrBackupVault from './backup-dr-backup-vault/index';
@@ -263,6 +265,9 @@ export * as cloudAssetOrganizationFeed from './cloud-asset-organization-feed/ind
 export * as cloudAssetProjectFeed from './cloud-asset-project-feed/index';
 export * as cloudIdentityGroup from './cloud-identity-group/index';
 export * as cloudIdentityGroupMembership from './cloud-identity-group-membership/index';
+export * as cloudIdentityInboundOidcSsoProfile from './cloud-identity-inbound-oidc-sso-profile/index';
+export * as cloudIdentityInboundSamlSsoProfile from './cloud-identity-inbound-saml-sso-profile/index';
+export * as cloudIdentityPolicy from './cloud-identity-policy/index';
 export * as cloudIdsEndpoint from './cloud-ids-endpoint/index';
 export * as cloudQuotasQuotaAdjusterSettings from './cloud-quotas-quota-adjuster-settings/index';
 export * as cloudQuotasQuotaPreference from './cloud-quotas-quota-preference/index';
@@ -660,6 +665,11 @@ export * as datastreamConnectionProfile from './datastream-connection-profile/in
 export * as datastreamPrivateConnection from './datastream-private-connection/index';
 export * as datastreamStream from './datastream-stream/index';
 export * as deploymentManagerDeployment from './deployment-manager-deployment/index';
+export * as designCenterApplication from './design-center-application/index';
+export * as designCenterSpace from './design-center-space/index';
+export * as designCenterSpaceIamBinding from './design-center-space-iam-binding/index';
+export * as designCenterSpaceIamMember from './design-center-space-iam-member/index';
+export * as designCenterSpaceIamPolicy from './design-center-space-iam-policy/index';
 export * as developerConnectAccountConnector from './developer-connect-account-connector/index';
 export * as developerConnectConnection from './developer-connect-connection/index';
 export * as developerConnectGitRepositoryLink from './developer-connect-git-repository-link/index';
@@ -1210,6 +1220,13 @@ export * as resourceManagerBoundaryConfig from './resource-manager-boundary-conf
 export * as resourceManagerCapability from './resource-manager-capability/index';
 export * as resourceManagerCapabilityConfig from './resource-manager-capability-config/index';
 export * as resourceManagerLien from './resource-manager-lien/index';
+export * as saasRuntimeRelease from './saas-runtime-release/index';
+export * as saasRuntimeRolloutKind from './saas-runtime-rollout-kind/index';
+export * as saasRuntimeSaas from './saas-runtime-saas/index';
+export * as saasRuntimeTenant from './saas-runtime-tenant/index';
+export * as saasRuntimeUnit from './saas-runtime-unit/index';
+export * as saasRuntimeUnitKind from './saas-runtime-unit-kind/index';
+export * as saasRuntimeUnitOperation from './saas-runtime-unit-operation/index';
 export * as sccEventThreatDetectionCustomModule from './scc-event-threat-detection-custom-module/index';
 export * as sccFolderCustomModule from './scc-folder-custom-module/index';
 export * as sccFolderNotificationConfig from './scc-folder-notification-config/index';
@@ -1644,6 +1661,7 @@ export * as dataGoogleDataprocMetastoreService from './data-google-dataproc-meta
 export * as dataGoogleDataprocMetastoreServiceIamPolicy from './data-google-dataproc-metastore-service-iam-policy/index';
 export * as dataGoogleDataprocMetastoreTableIamPolicy from './data-google-dataproc-metastore-table-iam-policy/index';
 export * as dataGoogleDatastreamStaticIps from './data-google-datastream-static-ips/index';
+export * as dataGoogleDesignCenterSpaceIamPolicy from './data-google-design-center-space-iam-policy/index';
 export * as dataGoogleDiscoveryEngineDataStore from './data-google-discovery-engine-data-store/index';
 export * as dataGoogleDiscoveryEngineDataStores from './data-google-discovery-engine-data-stores/index';
 export * as dataGoogleDiscoveryEngineSearchEngineIamPolicy from './data-google-discovery-engine-search-engine-iam-policy/index';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface DataLineageOpenLineageJobConfig extends cdktn.TerraformMetaArgu
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#deletion_policy DataLineageOpenLineageJob#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#deletion_policy DataLineageOpenLineageJob#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the OpenLineage job. Changes to description do not trigger updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#description DataLineageOpenLineageJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#description DataLineageOpenLineageJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#id DataLineageOpenLineageJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#id DataLineageOpenLineageJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +40,31 @@ export interface DataLineageOpenLineageJobConfig extends cdktn.TerraformMetaArgu
   /**
   * Name of the OpenLineage job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the OpenLineage job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#input DataLineageOpenLineageJob#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#input DataLineageOpenLineageJob#input}
   */
   readonly input?: DataLineageOpenLineageJobInput[] | cdktn.IResolvable;
   /**
   * output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#output DataLineageOpenLineageJob#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#output DataLineageOpenLineageJob#output}
   */
   readonly output?: DataLineageOpenLineageJobOutput[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#timeouts DataLineageOpenLineageJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#timeouts DataLineageOpenLineageJob#timeouts}
   */
   readonly timeouts?: DataLineageOpenLineageJobTimeouts;
 }
@@ -72,19 +72,19 @@ export interface DataLineageOpenLineageJobInputCatalog {
   /**
   * Catalog framework.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#framework DataLineageOpenLineageJob#framework}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#framework DataLineageOpenLineageJob#framework}
   */
   readonly framework: string;
   /**
   * Catalog entity name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Catalog entity type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
   */
   readonly type: string;
 }
@@ -219,19 +219,19 @@ export interface DataLineageOpenLineageJobInputSymlink {
   /**
   * Name of the symlink target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the symlink target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * Type of the symlink target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
   */
   readonly type: string;
 }
@@ -398,25 +398,25 @@ export interface DataLineageOpenLineageJobInput {
   /**
   * Name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * catalog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#catalog DataLineageOpenLineageJob#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#catalog DataLineageOpenLineageJob#catalog}
   */
   readonly catalog?: DataLineageOpenLineageJobInputCatalog;
   /**
   * symlink block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#symlink DataLineageOpenLineageJob#symlink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#symlink DataLineageOpenLineageJob#symlink}
   */
   readonly symlink?: DataLineageOpenLineageJobInputSymlink[] | cdktn.IResolvable;
 }
@@ -615,19 +615,19 @@ export interface DataLineageOpenLineageJobOutputCatalog {
   /**
   * Catalog framework.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#framework DataLineageOpenLineageJob#framework}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#framework DataLineageOpenLineageJob#framework}
   */
   readonly framework: string;
   /**
   * Catalog entity name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Catalog entity type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
   */
   readonly type: string;
 }
@@ -762,13 +762,13 @@ export interface DataLineageOpenLineageJobOutputColumnLineageDatasetInputTransfo
   /**
   * Transformation subtype.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#subtype DataLineageOpenLineageJob#subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#subtype DataLineageOpenLineageJob#subtype}
   */
   readonly subtype?: string;
   /**
   * Transformation type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
   */
   readonly type: string;
 }
@@ -912,25 +912,25 @@ export interface DataLineageOpenLineageJobOutputColumnLineageDatasetInput {
   /**
   * Source field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#field DataLineageOpenLineageJob#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#field DataLineageOpenLineageJob#field}
   */
   readonly field: string;
   /**
   * Name of the source dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the source dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * transformation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#transformation DataLineageOpenLineageJob#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#transformation DataLineageOpenLineageJob#transformation}
   */
   readonly transformation?: DataLineageOpenLineageJobOutputColumnLineageDatasetInputTransformation[] | cdktn.IResolvable;
 }
@@ -1126,13 +1126,13 @@ export interface DataLineageOpenLineageJobOutputColumnLineageFieldInputTransform
   /**
   * Transformation subtype.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#subtype DataLineageOpenLineageJob#subtype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#subtype DataLineageOpenLineageJob#subtype}
   */
   readonly subtype?: string;
   /**
   * Transformation type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
   */
   readonly type: string;
 }
@@ -1276,25 +1276,25 @@ export interface DataLineageOpenLineageJobOutputColumnLineageFieldInput {
   /**
   * Source field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#field DataLineageOpenLineageJob#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#field DataLineageOpenLineageJob#field}
   */
   readonly field: string;
   /**
   * Name of the source dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the source dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * transformation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#transformation DataLineageOpenLineageJob#transformation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#transformation DataLineageOpenLineageJob#transformation}
   */
   readonly transformation?: DataLineageOpenLineageJobOutputColumnLineageFieldInputTransformation[] | cdktn.IResolvable;
 }
@@ -1490,13 +1490,13 @@ export interface DataLineageOpenLineageJobOutputColumnLineageField {
   /**
   * Output field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#input DataLineageOpenLineageJob#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#input DataLineageOpenLineageJob#input}
   */
   readonly input: DataLineageOpenLineageJobOutputColumnLineageFieldInput[] | cdktn.IResolvable;
 }
@@ -1637,13 +1637,13 @@ export interface DataLineageOpenLineageJobOutputColumnLineage {
   /**
   * dataset_input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#dataset_input DataLineageOpenLineageJob#dataset_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#dataset_input DataLineageOpenLineageJob#dataset_input}
   */
   readonly datasetInput?: DataLineageOpenLineageJobOutputColumnLineageDatasetInput[] | cdktn.IResolvable;
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#field DataLineageOpenLineageJob#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#field DataLineageOpenLineageJob#field}
   */
   readonly field: DataLineageOpenLineageJobOutputColumnLineageField[] | cdktn.IResolvable;
 }
@@ -1755,19 +1755,19 @@ export interface DataLineageOpenLineageJobOutputSymlink {
   /**
   * Name of the symlink target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the symlink target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * Type of the symlink target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#type DataLineageOpenLineageJob#type}
   */
   readonly type: string;
 }
@@ -1934,31 +1934,31 @@ export interface DataLineageOpenLineageJobOutput {
   /**
   * Name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#name DataLineageOpenLineageJob#name}
   */
   readonly name: string;
   /**
   * Namespace of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#namespace DataLineageOpenLineageJob#namespace}
   */
   readonly namespace: string;
   /**
   * catalog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#catalog DataLineageOpenLineageJob#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#catalog DataLineageOpenLineageJob#catalog}
   */
   readonly catalog?: DataLineageOpenLineageJobOutputCatalog;
   /**
   * column_lineage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#column_lineage DataLineageOpenLineageJob#column_lineage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#column_lineage DataLineageOpenLineageJob#column_lineage}
   */
   readonly columnLineage?: DataLineageOpenLineageJobOutputColumnLineage;
   /**
   * symlink block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#symlink DataLineageOpenLineageJob#symlink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#symlink DataLineageOpenLineageJob#symlink}
   */
   readonly symlink?: DataLineageOpenLineageJobOutputSymlink[] | cdktn.IResolvable;
 }
@@ -2184,15 +2184,15 @@ export class DataLineageOpenLineageJobOutputList extends cdktn.ComplexList {
 }
 export interface DataLineageOpenLineageJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#create DataLineageOpenLineageJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#create DataLineageOpenLineageJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#delete DataLineageOpenLineageJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#delete DataLineageOpenLineageJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#update DataLineageOpenLineageJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#update DataLineageOpenLineageJob#update}
   */
   readonly update?: string;
 }
@@ -2344,7 +2344,7 @@ export class DataLineageOpenLineageJobTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job google_data_lineage_open_lineage_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job google_data_lineage_open_lineage_job}
 */
 export class DataLineageOpenLineageJob extends cdktn.TerraformResource {
 
@@ -2360,7 +2360,7 @@ export class DataLineageOpenLineageJob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataLineageOpenLineageJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLineageOpenLineageJob to import
-  * @param importFromId The id of the existing DataLineageOpenLineageJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataLineageOpenLineageJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLineageOpenLineageJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2372,7 +2372,7 @@ export class DataLineageOpenLineageJob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/data_lineage_open_lineage_job google_data_lineage_open_lineage_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/data_lineage_open_lineage_job google_data_lineage_open_lineage_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2383,7 +2383,7 @@ export class DataLineageOpenLineageJob extends cdktn.TerraformResource {
       terraformResourceType: 'google_data_lineage_open_lineage_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
