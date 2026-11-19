@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface IdentityPlatformTenantOauthIdpConfigConfig extends cdktn.Terraf
   /**
   * The client id of an OAuth client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#client_id IdentityPlatformTenantOauthIdpConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#client_id IdentityPlatformTenantOauthIdpConfig#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret of the OAuth client, to enable OIDC code flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#client_secret IdentityPlatformTenantOauthIdpConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#client_secret IdentityPlatformTenantOauthIdpConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
@@ -33,23 +33,23 @@ export interface IdentityPlatformTenantOauthIdpConfigConfig extends cdktn.Terraf
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#deletion_policy IdentityPlatformTenantOauthIdpConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#deletion_policy IdentityPlatformTenantOauthIdpConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#display_name IdentityPlatformTenantOauthIdpConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#display_name IdentityPlatformTenantOauthIdpConfig#display_name}
   */
   readonly displayName: string;
   /**
   * If this config allows users to sign in with the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#enabled IdentityPlatformTenantOauthIdpConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#enabled IdentityPlatformTenantOauthIdpConfig#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#id IdentityPlatformTenantOauthIdpConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#id IdentityPlatformTenantOauthIdpConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,43 +58,170 @@ export interface IdentityPlatformTenantOauthIdpConfigConfig extends cdktn.Terraf
   /**
   * For OIDC Idps, the issuer identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#issuer IdentityPlatformTenantOauthIdpConfig#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#issuer IdentityPlatformTenantOauthIdpConfig#issuer}
   */
   readonly issuer: string;
   /**
   * The name of the OauthIdpConfig. Must start with 'oidc.'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#name IdentityPlatformTenantOauthIdpConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#name IdentityPlatformTenantOauthIdpConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#project IdentityPlatformTenantOauthIdpConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#project IdentityPlatformTenantOauthIdpConfig#project}
   */
   readonly project?: string;
   /**
   * The name of the tenant where this OIDC IDP configuration resource exists
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#tenant IdentityPlatformTenantOauthIdpConfig#tenant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#tenant IdentityPlatformTenantOauthIdpConfig#tenant}
   */
   readonly tenant: string;
   /**
+  * response_type block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#response_type IdentityPlatformTenantOauthIdpConfig#response_type}
+  */
+  readonly responseType?: IdentityPlatformTenantOauthIdpConfigResponseType;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#timeouts IdentityPlatformTenantOauthIdpConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#timeouts IdentityPlatformTenantOauthIdpConfig#timeouts}
   */
   readonly timeouts?: IdentityPlatformTenantOauthIdpConfigTimeouts;
 }
+export interface IdentityPlatformTenantOauthIdpConfigResponseType {
+  /**
+  * If true, authorization code is returned from IdP's authorization endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#code IdentityPlatformTenantOauthIdpConfig#code}
+  */
+  readonly code?: boolean | cdktn.IResolvable;
+  /**
+  * If true, ID token is returned from IdP's authorization endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#id_token IdentityPlatformTenantOauthIdpConfig#id_token}
+  */
+  readonly idToken?: boolean | cdktn.IResolvable;
+}
+
+export function identityPlatformTenantOauthIdpConfigResponseTypeToTerraform(struct?: IdentityPlatformTenantOauthIdpConfigResponseTypeOutputReference | IdentityPlatformTenantOauthIdpConfigResponseType): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    code: cdktn.booleanToTerraform(struct!.code),
+    id_token: cdktn.booleanToTerraform(struct!.idToken),
+  }
+}
+
+
+export function identityPlatformTenantOauthIdpConfigResponseTypeToHclTerraform(struct?: IdentityPlatformTenantOauthIdpConfigResponseTypeOutputReference | IdentityPlatformTenantOauthIdpConfigResponseType): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    code: {
+      value: cdktn.booleanToHclTerraform(struct!.code),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    id_token: {
+      value: cdktn.booleanToHclTerraform(struct!.idToken),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class IdentityPlatformTenantOauthIdpConfigResponseTypeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): IdentityPlatformTenantOauthIdpConfigResponseType | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._code !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.code = this._code;
+    }
+    if (this._idToken !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.idToken = this._idToken;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IdentityPlatformTenantOauthIdpConfigResponseType | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._code = undefined;
+      this._idToken = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._code = value.code;
+      this._idToken = value.idToken;
+    }
+  }
+
+  // code - computed: false, optional: true, required: false
+  private _code?: boolean | cdktn.IResolvable; 
+  public get code() {
+    return this.getBooleanAttribute('code');
+  }
+  public set code(value: boolean | cdktn.IResolvable) {
+    this._code = value;
+  }
+  public resetCode() {
+    this._code = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeInput() {
+    return this._code;
+  }
+
+  // id_token - computed: false, optional: true, required: false
+  private _idToken?: boolean | cdktn.IResolvable; 
+  public get idToken() {
+    return this.getBooleanAttribute('id_token');
+  }
+  public set idToken(value: boolean | cdktn.IResolvable) {
+    this._idToken = value;
+  }
+  public resetIdToken() {
+    this._idToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idTokenInput() {
+    return this._idToken;
+  }
+}
 export interface IdentityPlatformTenantOauthIdpConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#create IdentityPlatformTenantOauthIdpConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#create IdentityPlatformTenantOauthIdpConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#delete IdentityPlatformTenantOauthIdpConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#delete IdentityPlatformTenantOauthIdpConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#update IdentityPlatformTenantOauthIdpConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#update IdentityPlatformTenantOauthIdpConfig#update}
   */
   readonly update?: string;
 }
@@ -246,7 +373,7 @@ export class IdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config}
 */
 export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResource {
 
@@ -262,7 +389,7 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a IdentityPlatformTenantOauthIdpConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityPlatformTenantOauthIdpConfig to import
-  * @param importFromId The id of the existing IdentityPlatformTenantOauthIdpConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityPlatformTenantOauthIdpConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityPlatformTenantOauthIdpConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -274,7 +401,7 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -285,7 +412,7 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
       terraformResourceType: 'google_identity_platform_tenant_oauth_idp_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -306,6 +433,7 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
     this._name = config.name;
     this._project = config.project;
     this._tenant = config.tenant;
+    this._responseType.internalValue = config.responseType;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -458,6 +586,22 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
     return this._tenant;
   }
 
+  // response_type - computed: false, optional: true, required: false
+  private _responseType = new IdentityPlatformTenantOauthIdpConfigResponseTypeOutputReference(this, "response_type");
+  public get responseType() {
+    return this._responseType;
+  }
+  public putResponseType(value: IdentityPlatformTenantOauthIdpConfigResponseType) {
+    this._responseType.internalValue = value;
+  }
+  public resetResponseType() {
+    this._responseType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseTypeInput() {
+    return this._responseType.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new IdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -490,6 +634,7 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
       name: cdktn.stringToTerraform(this._name),
       project: cdktn.stringToTerraform(this._project),
       tenant: cdktn.stringToTerraform(this._tenant),
+      response_type: identityPlatformTenantOauthIdpConfigResponseTypeToTerraform(this._responseType.internalValue),
       timeouts: identityPlatformTenantOauthIdpConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -555,6 +700,12 @@ export class IdentityPlatformTenantOauthIdpConfig extends cdktn.TerraformResourc
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      response_type: {
+        value: identityPlatformTenantOauthIdpConfigResponseTypeToHclTerraform(this._responseType.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IdentityPlatformTenantOauthIdpConfigResponseTypeList",
       },
       timeouts: {
         value: identityPlatformTenantOauthIdpConfigTimeoutsToHclTerraform(this._timeouts.internalValue),

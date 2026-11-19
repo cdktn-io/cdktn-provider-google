@@ -78,6 +78,7 @@ Object.defineProperty(exports, 'apigeeSharedflowDeployment', { get: function () 
 Object.defineProperty(exports, 'apigeeSpace', { get: function () { return require('./apigee-space'); } });
 Object.defineProperty(exports, 'apigeeSyncAuthorization', { get: function () { return require('./apigee-sync-authorization'); } });
 Object.defineProperty(exports, 'apigeeTargetServer', { get: function () { return require('./apigee-target-server'); } });
+Object.defineProperty(exports, 'apihubAddon', { get: function () { return require('./apihub-addon'); } });
 Object.defineProperty(exports, 'apihubApiHubInstance', { get: function () { return require('./apihub-api-hub-instance'); } });
 Object.defineProperty(exports, 'apihubCuration', { get: function () { return require('./apihub-curation'); } });
 Object.defineProperty(exports, 'apihubHostProjectRegistration', { get: function () { return require('./apihub-host-project-registration'); } });
@@ -106,6 +107,7 @@ Object.defineProperty(exports, 'artifactRegistryRepositoryIamPolicy', { get: fun
 Object.defineProperty(exports, 'artifactRegistryRule', { get: function () { return require('./artifact-registry-rule'); } });
 Object.defineProperty(exports, 'assuredWorkloadsWorkload', { get: function () { return require('./assured-workloads-workload'); } });
 Object.defineProperty(exports, 'backupDrAutoProtectionPolicy', { get: function () { return require('./backup-dr-auto-protection-policy'); } });
+Object.defineProperty(exports, 'backupDrAutoProtectionPolicyBinding', { get: function () { return require('./backup-dr-auto-protection-policy-binding'); } });
 Object.defineProperty(exports, 'backupDrBackupPlan', { get: function () { return require('./backup-dr-backup-plan'); } });
 Object.defineProperty(exports, 'backupDrBackupPlanAssociation', { get: function () { return require('./backup-dr-backup-plan-association'); } });
 Object.defineProperty(exports, 'backupDrBackupVault', { get: function () { return require('./backup-dr-backup-vault'); } });
@@ -263,6 +265,9 @@ Object.defineProperty(exports, 'cloudAssetOrganizationFeed', { get: function () 
 Object.defineProperty(exports, 'cloudAssetProjectFeed', { get: function () { return require('./cloud-asset-project-feed'); } });
 Object.defineProperty(exports, 'cloudIdentityGroup', { get: function () { return require('./cloud-identity-group'); } });
 Object.defineProperty(exports, 'cloudIdentityGroupMembership', { get: function () { return require('./cloud-identity-group-membership'); } });
+Object.defineProperty(exports, 'cloudIdentityInboundOidcSsoProfile', { get: function () { return require('./cloud-identity-inbound-oidc-sso-profile'); } });
+Object.defineProperty(exports, 'cloudIdentityInboundSamlSsoProfile', { get: function () { return require('./cloud-identity-inbound-saml-sso-profile'); } });
+Object.defineProperty(exports, 'cloudIdentityPolicy', { get: function () { return require('./cloud-identity-policy'); } });
 Object.defineProperty(exports, 'cloudIdsEndpoint', { get: function () { return require('./cloud-ids-endpoint'); } });
 Object.defineProperty(exports, 'cloudQuotasQuotaAdjusterSettings', { get: function () { return require('./cloud-quotas-quota-adjuster-settings'); } });
 Object.defineProperty(exports, 'cloudQuotasQuotaPreference', { get: function () { return require('./cloud-quotas-quota-preference'); } });
@@ -660,6 +665,11 @@ Object.defineProperty(exports, 'datastreamConnectionProfile', { get: function ()
 Object.defineProperty(exports, 'datastreamPrivateConnection', { get: function () { return require('./datastream-private-connection'); } });
 Object.defineProperty(exports, 'datastreamStream', { get: function () { return require('./datastream-stream'); } });
 Object.defineProperty(exports, 'deploymentManagerDeployment', { get: function () { return require('./deployment-manager-deployment'); } });
+Object.defineProperty(exports, 'designCenterApplication', { get: function () { return require('./design-center-application'); } });
+Object.defineProperty(exports, 'designCenterSpace', { get: function () { return require('./design-center-space'); } });
+Object.defineProperty(exports, 'designCenterSpaceIamBinding', { get: function () { return require('./design-center-space-iam-binding'); } });
+Object.defineProperty(exports, 'designCenterSpaceIamMember', { get: function () { return require('./design-center-space-iam-member'); } });
+Object.defineProperty(exports, 'designCenterSpaceIamPolicy', { get: function () { return require('./design-center-space-iam-policy'); } });
 Object.defineProperty(exports, 'developerConnectAccountConnector', { get: function () { return require('./developer-connect-account-connector'); } });
 Object.defineProperty(exports, 'developerConnectConnection', { get: function () { return require('./developer-connect-connection'); } });
 Object.defineProperty(exports, 'developerConnectGitRepositoryLink', { get: function () { return require('./developer-connect-git-repository-link'); } });
@@ -1210,6 +1220,13 @@ Object.defineProperty(exports, 'resourceManagerBoundaryConfig', { get: function 
 Object.defineProperty(exports, 'resourceManagerCapability', { get: function () { return require('./resource-manager-capability'); } });
 Object.defineProperty(exports, 'resourceManagerCapabilityConfig', { get: function () { return require('./resource-manager-capability-config'); } });
 Object.defineProperty(exports, 'resourceManagerLien', { get: function () { return require('./resource-manager-lien'); } });
+Object.defineProperty(exports, 'saasRuntimeRelease', { get: function () { return require('./saas-runtime-release'); } });
+Object.defineProperty(exports, 'saasRuntimeRolloutKind', { get: function () { return require('./saas-runtime-rollout-kind'); } });
+Object.defineProperty(exports, 'saasRuntimeSaas', { get: function () { return require('./saas-runtime-saas'); } });
+Object.defineProperty(exports, 'saasRuntimeTenant', { get: function () { return require('./saas-runtime-tenant'); } });
+Object.defineProperty(exports, 'saasRuntimeUnit', { get: function () { return require('./saas-runtime-unit'); } });
+Object.defineProperty(exports, 'saasRuntimeUnitKind', { get: function () { return require('./saas-runtime-unit-kind'); } });
+Object.defineProperty(exports, 'saasRuntimeUnitOperation', { get: function () { return require('./saas-runtime-unit-operation'); } });
 Object.defineProperty(exports, 'sccEventThreatDetectionCustomModule', { get: function () { return require('./scc-event-threat-detection-custom-module'); } });
 Object.defineProperty(exports, 'sccFolderCustomModule', { get: function () { return require('./scc-folder-custom-module'); } });
 Object.defineProperty(exports, 'sccFolderNotificationConfig', { get: function () { return require('./scc-folder-notification-config'); } });
@@ -1644,6 +1661,7 @@ Object.defineProperty(exports, 'dataGoogleDataprocMetastoreService', { get: func
 Object.defineProperty(exports, 'dataGoogleDataprocMetastoreServiceIamPolicy', { get: function () { return require('./data-google-dataproc-metastore-service-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDataprocMetastoreTableIamPolicy', { get: function () { return require('./data-google-dataproc-metastore-table-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDatastreamStaticIps', { get: function () { return require('./data-google-datastream-static-ips'); } });
+Object.defineProperty(exports, 'dataGoogleDesignCenterSpaceIamPolicy', { get: function () { return require('./data-google-design-center-space-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleDiscoveryEngineDataStore', { get: function () { return require('./data-google-discovery-engine-data-store'); } });
 Object.defineProperty(exports, 'dataGoogleDiscoveryEngineDataStores', { get: function () { return require('./data-google-discovery-engine-data-stores'); } });
 Object.defineProperty(exports, 'dataGoogleDiscoveryEngineSearchEngineIamPolicy', { get: function () { return require('./data-google-discovery-engine-search-engine-iam-policy'); } });

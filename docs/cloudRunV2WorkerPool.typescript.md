@@ -4,7 +4,7 @@
 
 ### CloudRunV2WorkerPool <a name="CloudRunV2WorkerPool" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer"></a>
 
@@ -652,7 +652,7 @@ The construct id used in the generated config for the CloudRunV2WorkerPool to im
 
 The id of the existing CloudRunV2WorkerPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1462,7 +1462,7 @@ If present, indicates to use Breakglass using this justification.
 
 If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
 
 ---
 
@@ -1476,7 +1476,7 @@ public readonly policy: string;
 
 The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
 
 ---
 
@@ -1490,7 +1490,7 @@ public readonly useDefault: boolean | IResolvable;
 
 If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
 
 ---
 
@@ -1536,11 +1536,11 @@ const cloudRunV2WorkerPoolConfig: cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfi
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.description">description</a></code> | <code>string</code> | User-provided description of the WorkerPool. This field currently has a 512-character limit. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.instanceSplits">instanceSplits</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplits">CloudRunV2WorkerPoolInstanceSplits</a>[]</code> | instance_splits block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.launchStage">launchStage</a></code> | <code>string</code> | The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScaling">CloudRunV2WorkerPoolScaling</a></code> | scaling block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts">CloudRunV2WorkerPoolTimeouts</a></code> | timeouts block. |
 
@@ -1626,7 +1626,7 @@ public readonly location: string;
 
 The location of the cloud run worker pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
 
 ---
 
@@ -1640,7 +1640,7 @@ public readonly name: string;
 
 Name of the WorkerPool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -1654,7 +1654,7 @@ public readonly template: CloudRunV2WorkerPoolTemplate;
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
 
 ---
 
@@ -1678,7 +1678,7 @@ This field follows Kubernetes annotations' namespacing, limits, and rules.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 
 ---
 
@@ -1692,7 +1692,7 @@ public readonly binaryAuthorization: CloudRunV2WorkerPoolBinaryAuthorization;
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
 
 ---
 
@@ -1706,7 +1706,7 @@ public readonly client: string;
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 
 ---
 
@@ -1720,7 +1720,7 @@ public readonly clientVersion: string;
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 
 ---
 
@@ -1742,7 +1742,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#deletion_policy CloudRunV2WorkerPool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#deletion_policy CloudRunV2WorkerPool#deletion_policy}
 
 ---
 
@@ -1763,7 +1763,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the WorkerPool will fail.
 When the field is set to false, deleting the WorkerPool is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
 
 ---
 
@@ -1777,7 +1777,7 @@ public readonly description: string;
 
 User-provided description of the WorkerPool. This field currently has a 512-character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
 
 ---
 
@@ -1789,7 +1789,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1806,7 +1806,7 @@ public readonly instanceSplits: IResolvable | CloudRunV2WorkerPoolInstanceSplits
 
 instance_splits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
 
 ---
 
@@ -1829,7 +1829,7 @@ All system labels in v1 now have a corresponding field in v2 WorkerPool.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 
 ---
 
@@ -1845,7 +1845,7 @@ The launch stage as defined by [Google Cloud Platform Launch Stages](https://clo
 
 For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
 
 ---
 
@@ -1857,7 +1857,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
 
 ---
 
@@ -1871,7 +1871,7 @@ public readonly scaling: CloudRunV2WorkerPoolScaling;
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
 
 ---
 
@@ -1885,7 +1885,7 @@ public readonly timeouts: CloudRunV2WorkerPoolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly percent: number;
 
 Specifies percent of the instance split to this Revision. This defaults to zero if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#percent CloudRunV2WorkerPool#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#percent CloudRunV2WorkerPool#percent}
 
 ---
 
@@ -1933,7 +1933,7 @@ public readonly revision: string;
 
 Revision to which to assign this portion of instances, if split allocation is by revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
 
 ---
 
@@ -1947,7 +1947,7 @@ public readonly type: string;
 
 The allocation type for this instance split. Possible values: ["INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST", "INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#type CloudRunV2WorkerPool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#type CloudRunV2WorkerPool#type}
 
 ---
 
@@ -1993,7 +1993,7 @@ public readonly manualInstanceCount: number;
 
 The total number of instances in manual scaling mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly maxInstanceCount: number;
 
 The maximum count of instances distributed among revisions based on the specified instance split percentages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
 
 ---
 
@@ -2021,7 +2021,7 @@ public readonly minInstanceCount: number;
 
 The minimum count of instances distributed among revisions based on the specified instance split percentages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
 
 ---
 
@@ -2035,7 +2035,7 @@ public readonly scalingMode: string;
 
 The scaling mode for the worker pool. It defaults to MANUAL. Possible values: ["AUTOMATIC", "MANUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
 
 ---
 
@@ -2064,6 +2064,7 @@ const cloudRunV2WorkerPoolTemplate: cloudRunV2WorkerPool.CloudRunV2WorkerPoolTem
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.nodeSelector">nodeSelector</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelector">CloudRunV2WorkerPoolTemplateNodeSelector</a></code> | node_selector block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.revision">revision</a></code> | <code>string</code> | The unique name for the revision. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.sandboxes">sandboxes</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a></code> | sandboxes block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | Email address of the IAM service account associated with the revision of the WorkerPool. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.volumes">volumes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumes">CloudRunV2WorkerPoolTemplateVolumes</a>[]</code> | volumes block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.vpcAccess">vpcAccess</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccess">CloudRunV2WorkerPoolTemplateVpcAccess</a></code> | vpc_access block. |
@@ -2087,7 +2088,7 @@ All system annotations in v1 now have a corresponding field in v2 WorkerPoolRevi
 
 This field follows Kubernetes annotations' namespacing, limits, and rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 
 ---
 
@@ -2101,7 +2102,7 @@ public readonly client: string;
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 
 ---
 
@@ -2115,7 +2116,7 @@ public readonly clientVersion: string;
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 
 ---
 
@@ -2129,7 +2130,7 @@ public readonly containers: IResolvable | CloudRunV2WorkerPoolTemplateContainers
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
 
 ---
 
@@ -2145,7 +2146,7 @@ A reference to a customer managed encryption key (CMEK) to use to encrypt this c
 
 For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
 
 ---
 
@@ -2159,7 +2160,7 @@ public readonly encryptionKeyRevocationAction: string;
 
 The action to take if the encryption key is revoked. Possible values: ["PREVENT_NEW", "SHUTDOWN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
 
 ---
 
@@ -2175,7 +2176,7 @@ If encryptionKeyRevocationAction is SHUTDOWN, the duration before shutting down 
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
 
 ---
 
@@ -2189,7 +2190,7 @@ public readonly gpuZonalRedundancyDisabled: boolean | IResolvable;
 
 True if GPU zonal redundancy is disabled on this revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
 
 ---
 
@@ -2209,7 +2210,7 @@ For more information, visit https://docs.cloud.google.com/resource-manager/docs/
 Cloud Run API v2 does not support labels with 'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 WorkerPoolRevisionTemplate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 
 ---
 
@@ -2223,7 +2224,7 @@ public readonly nodeSelector: CloudRunV2WorkerPoolTemplateNodeSelector;
 
 node_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
 
 ---
 
@@ -2239,7 +2240,21 @@ The unique name for the revision.
 
 If this field is omitted, it will be automatically generated based on the WorkerPool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+
+---
+
+##### `sandboxes`<sup>Optional</sup> <a name="sandboxes" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate.property.sandboxes"></a>
+
+```typescript
+public readonly sandboxes: CloudRunV2WorkerPoolTemplateSandboxes;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a>
+
+sandboxes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#sandboxes CloudRunV2WorkerPool#sandboxes}
 
 ---
 
@@ -2255,7 +2270,7 @@ Email address of the IAM service account associated with the revision of the Wor
 
 The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project's default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
 
 ---
 
@@ -2269,7 +2284,7 @@ public readonly volumes: IResolvable | CloudRunV2WorkerPoolTemplateVolumes[];
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
 
 ---
 
@@ -2283,7 +2298,7 @@ public readonly vpcAccess: CloudRunV2WorkerPoolTemplateVpcAccess;
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
 
 ---
 
@@ -2326,7 +2341,7 @@ public readonly image: string;
 
 URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
 
 ---
 
@@ -2342,7 +2357,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
 
 ---
 
@@ -2358,7 +2373,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
 
 ---
 
@@ -2372,7 +2387,7 @@ public readonly dependsOn: string[];
 
 Names of the containers that must start before this container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#depends_on CloudRunV2WorkerPool#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#depends_on CloudRunV2WorkerPool#depends_on}
 
 ---
 
@@ -2386,7 +2401,7 @@ public readonly env: IResolvable | CloudRunV2WorkerPoolTemplateContainersEnv[];
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
 
 ---
 
@@ -2400,7 +2415,7 @@ public readonly livenessProbe: CloudRunV2WorkerPoolTemplateContainersLivenessPro
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#liveness_probe CloudRunV2WorkerPool#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#liveness_probe CloudRunV2WorkerPool#liveness_probe}
 
 ---
 
@@ -2414,7 +2429,7 @@ public readonly name: string;
 
 Name of the container specified as a DNS_LABEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -2428,7 +2443,7 @@ public readonly resources: CloudRunV2WorkerPoolTemplateContainersResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#resources CloudRunV2WorkerPool#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#resources CloudRunV2WorkerPool#resources}
 
 ---
 
@@ -2442,7 +2457,7 @@ public readonly sandboxLauncher: boolean | IResolvable;
 
 Indicates that this container can act as a sandbox supervisor and launch sandboxes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#sandbox_launcher CloudRunV2WorkerPool#sandbox_launcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#sandbox_launcher CloudRunV2WorkerPool#sandbox_launcher}
 
 ---
 
@@ -2456,7 +2471,7 @@ public readonly startupProbe: CloudRunV2WorkerPoolTemplateContainersStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#startup_probe CloudRunV2WorkerPool#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#startup_probe CloudRunV2WorkerPool#startup_probe}
 
 ---
 
@@ -2470,7 +2485,7 @@ public readonly volumeMounts: IResolvable | CloudRunV2WorkerPoolTemplateContaine
 
 volume_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
 
 ---
 
@@ -2486,7 +2501,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
 
 ---
 
@@ -2520,7 +2535,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -2536,7 +2551,7 @@ Literal value of the environment variable.
 
 Defaults to "" and the maximum allowed length is 32768 characters. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
 
 ---
 
@@ -2550,7 +2565,7 @@ public readonly valueSource: CloudRunV2WorkerPoolTemplateContainersEnvValueSourc
 
 value_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#value_source CloudRunV2WorkerPool#value_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#value_source CloudRunV2WorkerPool#value_source}
 
 ---
 
@@ -2582,7 +2597,7 @@ public readonly secretKeyRef: CloudRunV2WorkerPoolTemplateContainersEnvValueSour
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
 
 ---
 
@@ -2617,7 +2632,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secretName} if the secret is in the same project. projects/{project}/secrets/{secretName} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -2633,7 +2648,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
 
 ---
 
@@ -2673,7 +2688,7 @@ Optional.
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
 
 ---
 
@@ -2687,7 +2702,7 @@ public readonly grpc: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc;
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
 
 ---
 
@@ -2701,7 +2716,7 @@ public readonly httpGet: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttp
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
 
 ---
 
@@ -2717,7 +2732,7 @@ Optional.
 
 Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
 
 ---
 
@@ -2733,7 +2748,7 @@ Optional.
 
 How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
 
 ---
 
@@ -2747,7 +2762,7 @@ public readonly tcpSocket: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTc
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
 
 ---
 
@@ -2763,7 +2778,7 @@ Optional.
 
 Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
 
 ---
 
@@ -2798,7 +2813,7 @@ Optional.
 
 Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -2814,7 +2829,7 @@ Optional.
 
 Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
 
 ---
 
@@ -2848,7 +2863,7 @@ public readonly httpHeaders: IResolvable | CloudRunV2WorkerPoolTemplateContainer
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
 
 ---
 
@@ -2862,7 +2877,7 @@ public readonly path: string;
 
 Optional. Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -2878,7 +2893,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -2911,7 +2926,7 @@ public readonly name: string;
 
 Required. The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -2925,7 +2940,7 @@ public readonly value: string;
 
 Optional. The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
 
 ---
 
@@ -2959,7 +2974,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -2991,7 +3006,7 @@ public readonly limits: {[ key: string ]: string};
 
 Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6', and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
 
 ---
 
@@ -3031,7 +3046,7 @@ Optional.
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
 
 ---
 
@@ -3045,7 +3060,7 @@ public readonly grpc: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc;
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
 
 ---
 
@@ -3059,7 +3074,7 @@ public readonly httpGet: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpG
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
 
 ---
 
@@ -3075,7 +3090,7 @@ Optional.
 
 Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
 
 ---
 
@@ -3091,7 +3106,7 @@ Optional.
 
 How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
 
 ---
 
@@ -3105,7 +3120,7 @@ public readonly tcpSocket: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcp
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
 
 ---
 
@@ -3121,7 +3136,7 @@ Optional.
 
 Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
 
 ---
 
@@ -3156,7 +3171,7 @@ Optional.
 
 Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3172,7 +3187,7 @@ Optional.
 
 Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
 
 ---
 
@@ -3206,7 +3221,7 @@ public readonly httpHeaders: IResolvable | CloudRunV2WorkerPoolTemplateContainer
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
 
 ---
 
@@ -3220,7 +3235,7 @@ public readonly path: string;
 
 Optional. Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -3236,7 +3251,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3269,7 +3284,7 @@ public readonly name: string;
 
 Required. The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -3283,7 +3298,7 @@ public readonly value: string;
 
 Optional. The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
 
 ---
 
@@ -3317,7 +3332,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3353,7 +3368,7 @@ Path within the container at which the volume should be mounted.
 
 Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
 
 ---
 
@@ -3367,7 +3382,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -3381,7 +3396,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#sub_path CloudRunV2WorkerPool#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#sub_path CloudRunV2WorkerPool#sub_path}
 
 ---
 
@@ -3413,7 +3428,276 @@ public readonly accelerator: string;
 
 The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
+
+---
+
+### CloudRunV2WorkerPoolTemplateSandboxes <a name="CloudRunV2WorkerPoolTemplateSandboxes" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+const cloudRunV2WorkerPoolTemplateSandboxes: cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes.property.templates">templates</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]</code> | templates block. |
+
+---
+
+##### `templates`<sup>Optional</sup> <a name="templates" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes.property.templates"></a>
+
+```typescript
+public readonly templates: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplates[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]
+
+templates block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#templates CloudRunV2WorkerPool#templates}
+
+---
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplates <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplates" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+const cloudRunV2WorkerPoolTemplateSandboxesTemplates: cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.image">image</a></code> | <code>string</code> | Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.name">name</a></code> | <code>string</code> | Name of the sandbox specified as a DNS_LABEL (RFC 1123). |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.args">args</a></code> | <code>string[]</code> | Arguments to the entrypoint. The docker image's CMD is used if this is not provided. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.command">command</a></code> | <code>string[]</code> | Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.env">env</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]</code> | env block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.volumeMounts">volumeMounts</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]</code> | volume_mounts block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.workingDir">workingDir</a></code> | <code>string</code> | Container's working directory. |
+
+---
+
+##### `image`<sup>Required</sup> <a name="image" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.image"></a>
+
+```typescript
+public readonly image: string;
+```
+
+- *Type:* string
+
+Name of the container image in Dockerhub or Artifact Registry. If the host is not provided, Dockerhub is assumed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Name of the sandbox specified as a DNS_LABEL (RFC 1123).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+
+---
+
+##### `args`<sup>Optional</sup> <a name="args" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.args"></a>
+
+```typescript
+public readonly args: string[];
+```
+
+- *Type:* string[]
+
+Arguments to the entrypoint. The docker image's CMD is used if this is not provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
+
+---
+
+##### `command`<sup>Optional</sup> <a name="command" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.command"></a>
+
+```typescript
+public readonly command: string[];
+```
+
+- *Type:* string[]
+
+Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
+
+---
+
+##### `env`<sup>Optional</sup> <a name="env" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.env"></a>
+
+```typescript
+public readonly env: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]
+
+env block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
+
+---
+
+##### `volumeMounts`<sup>Optional</sup> <a name="volumeMounts" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.volumeMounts"></a>
+
+```typescript
+public readonly volumeMounts: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]
+
+volume_mounts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
+
+---
+
+##### `workingDir`<sup>Optional</sup> <a name="workingDir" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates.property.workingDir"></a>
+
+```typescript
+public readonly workingDir: string;
+```
+
+- *Type:* string
+
+Container's working directory.
+
+If not specified, the container runtime's default will be used, which might be configured in the container image.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
+
+---
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+const cloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv: cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv.property.name">name</a></code> | <code>string</code> | Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv.property.value">value</a></code> | <code>string</code> | Literal value of the environment variable. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+Literal value of the environment variable.
+
+Defaults to "" and the maximum allowed length is 32768 characters. Variable references are not supported in Cloud Run.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+
+---
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+const cloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts: cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.property.mountPath">mountPath</a></code> | <code>string</code> | Path within the container at which the volume should be mounted. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.property.name">name</a></code> | <code>string</code> | This must match the Name of a Volume. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.property.subPath">subPath</a></code> | <code>string</code> | Path within the volume from which the container's volume should be mounted. |
+
+---
+
+##### `mountPath`<sup>Required</sup> <a name="mountPath" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.property.mountPath"></a>
+
+```typescript
+public readonly mountPath: string;
+```
+
+- *Type:* string
+
+Path within the container at which the volume should be mounted.
+
+Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+This must match the Name of a Volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+
+---
+
+##### `subPath`<sup>Optional</sup> <a name="subPath" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts.property.subPath"></a>
+
+```typescript
+public readonly subPath: string;
+```
+
+- *Type:* string
+
+Path within the volume from which the container's volume should be mounted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#sub_path CloudRunV2WorkerPool#sub_path}
 
 ---
 
@@ -3450,7 +3734,7 @@ public readonly name: string;
 
 Volume's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -3464,7 +3748,7 @@ public readonly cloudSqlInstance: CloudRunV2WorkerPoolTemplateVolumesCloudSqlIns
 
 cloud_sql_instance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#cloud_sql_instance CloudRunV2WorkerPool#cloud_sql_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#cloud_sql_instance CloudRunV2WorkerPool#cloud_sql_instance}
 
 ---
 
@@ -3478,7 +3762,7 @@ public readonly emptyDir: CloudRunV2WorkerPoolTemplateVolumesEmptyDir;
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#empty_dir CloudRunV2WorkerPool#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#empty_dir CloudRunV2WorkerPool#empty_dir}
 
 ---
 
@@ -3492,7 +3776,7 @@ public readonly gcs: CloudRunV2WorkerPoolTemplateVolumesGcs;
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#gcs CloudRunV2WorkerPool#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#gcs CloudRunV2WorkerPool#gcs}
 
 ---
 
@@ -3506,7 +3790,7 @@ public readonly nfs: CloudRunV2WorkerPoolTemplateVolumesNfs;
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#nfs CloudRunV2WorkerPool#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#nfs CloudRunV2WorkerPool#nfs}
 
 ---
 
@@ -3520,7 +3804,7 @@ public readonly secret: CloudRunV2WorkerPoolTemplateVolumesSecret;
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -3552,7 +3836,7 @@ public readonly instances: string[];
 
 The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
 
 ---
 
@@ -3585,7 +3869,7 @@ public readonly medium: string;
 
 The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
 
 ---
 
@@ -3601,7 +3885,7 @@ Limit on the storage usable by this EmptyDir volume.
 
 The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field's values are of the 'Quantity' k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
 
 ---
 
@@ -3635,7 +3919,7 @@ public readonly bucket: string;
 
 GCS Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
 
 ---
 
@@ -3651,7 +3935,7 @@ A list of flags to pass to the gcsfuse command for configuring this volume.
 
 Flags should be passed without leading dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
 
 ---
 
@@ -3665,7 +3949,7 @@ public readonly readOnly: boolean | IResolvable;
 
 If true, mount the GCS bucket as read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
 
 ---
 
@@ -3699,7 +3983,7 @@ public readonly path: string;
 
 Path that is exported by the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -3713,7 +3997,7 @@ public readonly server: string;
 
 Hostname or IP address of the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
 
 ---
 
@@ -3727,7 +4011,7 @@ public readonly readOnly: boolean | IResolvable;
 
 If true, mount the NFS volume as read only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
 
 ---
 
@@ -3763,7 +4047,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secret} if the secret is in the same project. projects/{project}/secrets/{secret} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -3779,7 +4063,7 @@ Integer representation of mode bits to use on created files by default.
 
 Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
 
 ---
 
@@ -3793,7 +4077,7 @@ public readonly items: IResolvable | CloudRunV2WorkerPoolTemplateVolumesSecretIt
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
 
 ---
 
@@ -3827,7 +4111,7 @@ public readonly path: string;
 
 The relative path of the secret in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -3843,7 +4127,7 @@ Integer octal mode bits to use on this file, must be a value between 01 and 0777
 
 If 0 or not set, the Volume's default mode will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#mode CloudRunV2WorkerPool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#mode CloudRunV2WorkerPool#mode}
 
 ---
 
@@ -3859,7 +4143,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
 
 ---
 
@@ -3893,7 +4177,7 @@ public readonly connector: string;
 
 VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
 
 ---
 
@@ -3907,7 +4191,7 @@ public readonly egress: string;
 
 Traffic VPC egress settings. Possible values: ["ALL_TRAFFIC", "PRIVATE_RANGES_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
 
 ---
 
@@ -3921,7 +4205,7 @@ public readonly networkInterfaces: IResolvable | CloudRunV2WorkerPoolTemplateVpc
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
 
 ---
 
@@ -3959,7 +4243,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
 looked up from the subnetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#network CloudRunV2WorkerPool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#network CloudRunV2WorkerPool#network}
 
 ---
 
@@ -3977,7 +4261,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
 subnetwork with the same name with the network will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#subnetwork CloudRunV2WorkerPool#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#subnetwork CloudRunV2WorkerPool#subnetwork}
 
 ---
 
@@ -3991,7 +4275,7 @@ public readonly tags: string[];
 
 Network tags applied to this Cloud Run WorkerPool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#tags CloudRunV2WorkerPool#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#tags CloudRunV2WorkerPool#tags}
 
 ---
 
@@ -4020,9 +4304,9 @@ const cloudRunV2WorkerPoolTimeouts: cloudRunV2WorkerPool.CloudRunV2WorkerPoolTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}. |
 
 ---
 
@@ -4034,7 +4318,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}.
 
 ---
 
@@ -4046,7 +4330,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}.
 
 ---
 
@@ -4058,7 +4342,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}.
 
 ---
 
@@ -13083,6 +13367,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putContainers">putContainers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putNodeSelector">putNodeSelector</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putSandboxes">putSandboxes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putVolumes">putVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putVpcAccess">putVpcAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetAnnotations">resetAnnotations</a></code> | *No description.* |
@@ -13096,6 +13381,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetNodeSelector">resetNodeSelector</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetRevision">resetRevision</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetSandboxes">resetSandboxes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetVolumes">resetVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetVpcAccess">resetVpcAccess</a></code> | *No description.* |
@@ -13276,6 +13562,18 @@ public putNodeSelector(value: CloudRunV2WorkerPoolTemplateNodeSelector): void
 
 ---
 
+##### `putSandboxes` <a name="putSandboxes" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putSandboxes"></a>
+
+```typescript
+public putSandboxes(value: CloudRunV2WorkerPoolTemplateSandboxes): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putSandboxes.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a>
+
+---
+
 ##### `putVolumes` <a name="putVolumes" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.putVolumes"></a>
 
 ```typescript
@@ -13366,6 +13664,12 @@ public resetNodeSelector(): void
 public resetRevision(): void
 ```
 
+##### `resetSandboxes` <a name="resetSandboxes" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetSandboxes"></a>
+
+```typescript
+public resetSandboxes(): void
+```
+
 ##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.resetServiceAccount"></a>
 
 ```typescript
@@ -13393,6 +13697,7 @@ public resetVpcAccess(): void
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.containers">containers</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersList">CloudRunV2WorkerPoolTemplateContainersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.nodeSelector">nodeSelector</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference">CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.sandboxes">sandboxes</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference">CloudRunV2WorkerPoolTemplateSandboxesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumesList">CloudRunV2WorkerPoolTemplateVolumesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.vpcAccess">vpcAccess</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccessOutputReference">CloudRunV2WorkerPoolTemplateVpcAccessOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.annotationsInput">annotationsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -13406,6 +13711,7 @@ public resetVpcAccess(): void
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.nodeSelectorInput">nodeSelectorInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelector">CloudRunV2WorkerPoolTemplateNodeSelector</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.revisionInput">revisionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.sandboxesInput">sandboxesInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.volumesInput">volumesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVolumes">CloudRunV2WorkerPoolTemplateVolumes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.vpcAccessInput">vpcAccessInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateVpcAccess">CloudRunV2WorkerPoolTemplateVpcAccess</a></code> | *No description.* |
@@ -13464,6 +13770,16 @@ public readonly nodeSelector: CloudRunV2WorkerPoolTemplateNodeSelectorOutputRefe
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference">CloudRunV2WorkerPoolTemplateNodeSelectorOutputReference</a>
+
+---
+
+##### `sandboxes`<sup>Required</sup> <a name="sandboxes" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.sandboxes"></a>
+
+```typescript
+public readonly sandboxes: CloudRunV2WorkerPoolTemplateSandboxesOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference">CloudRunV2WorkerPoolTemplateSandboxesOutputReference</a>
 
 ---
 
@@ -13594,6 +13910,16 @@ public readonly revisionInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `sandboxesInput`<sup>Optional</sup> <a name="sandboxesInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateOutputReference.property.sandboxesInput"></a>
+
+```typescript
+public readonly sandboxesInput: CloudRunV2WorkerPoolTemplateSandboxes;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a>
 
 ---
 
@@ -13734,6 +14060,1917 @@ public readonly internalValue: CloudRunV2WorkerPoolTemplate;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplate">CloudRunV2WorkerPoolTemplate</a>
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesOutputReference <a name="CloudRunV2WorkerPoolTemplateSandboxesOutputReference" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.putTemplates">putTemplates</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.resetTemplates">resetTemplates</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTemplates` <a name="putTemplates" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.putTemplates"></a>
+
+```typescript
+public putTemplates(value: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplates[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.putTemplates.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]
+
+---
+
+##### `resetTemplates` <a name="resetTemplates" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.resetTemplates"></a>
+
+```typescript
+public resetTemplates(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.templates">templates</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList">CloudRunV2WorkerPoolTemplateSandboxesTemplatesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.templatesInput">templatesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `templates`<sup>Required</sup> <a name="templates" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.templates"></a>
+
+```typescript
+public readonly templates: CloudRunV2WorkerPoolTemplateSandboxesTemplatesList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList">CloudRunV2WorkerPoolTemplateSandboxesTemplatesList</a>
+
+---
+
+##### `templatesInput`<sup>Optional</sup> <a name="templatesInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.templatesInput"></a>
+
+```typescript
+public readonly templatesInput: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplates[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CloudRunV2WorkerPoolTemplateSandboxes;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxes">CloudRunV2WorkerPoolTemplateSandboxes</a>
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.get"></a>
+
+```typescript
+public get(index: number): CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.resetValue">resetValue</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetValue` <a name="resetValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.resetValue"></a>
+
+```typescript
+public resetValue(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesList <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesList" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.get"></a>
+
+```typescript
+public get(index: number): CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplates[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>[]
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.putEnv">putEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.putVolumeMounts">putVolumeMounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetArgs">resetArgs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetCommand">resetCommand</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetEnv">resetEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetVolumeMounts">resetVolumeMounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetWorkingDir">resetWorkingDir</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putEnv` <a name="putEnv" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.putEnv"></a>
+
+```typescript
+public putEnv(value: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.putEnv.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]
+
+---
+
+##### `putVolumeMounts` <a name="putVolumeMounts" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.putVolumeMounts"></a>
+
+```typescript
+public putVolumeMounts(value: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.putVolumeMounts.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]
+
+---
+
+##### `resetArgs` <a name="resetArgs" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetArgs"></a>
+
+```typescript
+public resetArgs(): void
+```
+
+##### `resetCommand` <a name="resetCommand" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetCommand"></a>
+
+```typescript
+public resetCommand(): void
+```
+
+##### `resetEnv` <a name="resetEnv" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetEnv"></a>
+
+```typescript
+public resetEnv(): void
+```
+
+##### `resetVolumeMounts` <a name="resetVolumeMounts" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetVolumeMounts"></a>
+
+```typescript
+public resetVolumeMounts(): void
+```
+
+##### `resetWorkingDir` <a name="resetWorkingDir" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.resetWorkingDir"></a>
+
+```typescript
+public resetWorkingDir(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.env">env</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.volumeMounts">volumeMounts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.argsInput">argsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.commandInput">commandInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.envInput">envInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.workingDirInput">workingDirInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.args">args</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.command">command</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.workingDir">workingDir</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.env"></a>
+
+```typescript
+public readonly env: CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnvList</a>
+
+---
+
+##### `volumeMounts`<sup>Required</sup> <a name="volumeMounts" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.volumeMounts"></a>
+
+```typescript
+public readonly volumeMounts: CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList</a>
+
+---
+
+##### `argsInput`<sup>Optional</sup> <a name="argsInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.argsInput"></a>
+
+```typescript
+public readonly argsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `commandInput`<sup>Optional</sup> <a name="commandInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.commandInput"></a>
+
+```typescript
+public readonly commandInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `envInput`<sup>Optional</sup> <a name="envInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.envInput"></a>
+
+```typescript
+public readonly envInput: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv">CloudRunV2WorkerPoolTemplateSandboxesTemplatesEnv</a>[]
+
+---
+
+##### `imageInput`<sup>Optional</sup> <a name="imageInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.imageInput"></a>
+
+```typescript
+public readonly imageInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `volumeMountsInput`<sup>Optional</sup> <a name="volumeMountsInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.volumeMountsInput"></a>
+
+```typescript
+public readonly volumeMountsInput: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]
+
+---
+
+##### `workingDirInput`<sup>Optional</sup> <a name="workingDirInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.workingDirInput"></a>
+
+```typescript
+public readonly workingDirInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `args`<sup>Required</sup> <a name="args" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.args"></a>
+
+```typescript
+public readonly args: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.command"></a>
+
+```typescript
+public readonly command: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `image`<sup>Required</sup> <a name="image" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.image"></a>
+
+```typescript
+public readonly image: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workingDir`<sup>Required</sup> <a name="workingDir" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.workingDir"></a>
+
+```typescript
+public readonly workingDir: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplates;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplates">CloudRunV2WorkerPoolTemplateSandboxesTemplates</a>
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.get"></a>
+
+```typescript
+public get(index: number): CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>[]
+
+---
+
+
+### CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference <a name="CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer"></a>
+
+```typescript
+import { cloudRunV2WorkerPool } from '@cdktn/provider-google'
+
+new cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.resetSubPath">resetSubPath</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetSubPath` <a name="resetSubPath" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.resetSubPath"></a>
+
+```typescript
+public resetSubPath(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPathInput">mountPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPathInput">subPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPath">mountPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPath">subPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mountPathInput`<sup>Optional</sup> <a name="mountPathInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPathInput"></a>
+
+```typescript
+public readonly mountPathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subPathInput`<sup>Optional</sup> <a name="subPathInput" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPathInput"></a>
+
+```typescript
+public readonly subPathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mountPath`<sup>Required</sup> <a name="mountPath" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPath"></a>
+
+```typescript
+public readonly mountPath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subPath`<sup>Required</sup> <a name="subPath" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPath"></a>
+
+```typescript
+public readonly subPath: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMountsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts">CloudRunV2WorkerPoolTemplateSandboxesTemplatesVolumeMounts</a>
 
 ---
 

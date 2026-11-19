@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface DiscoveryEngineProjectProvisionConfig extends cdktn.TerraformMe
   * Set to 'true' to specify that the caller has read and consents to the
   * [Terms for data use](https://cloud.google.com/retail/data-use-terms).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#accept_data_use_terms DiscoveryEngineProjectProvision#accept_data_use_terms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#accept_data_use_terms DiscoveryEngineProjectProvision#accept_data_use_terms}
   */
   readonly acceptDataUseTerms?: boolean | cdktn.IResolvable;
   /**
@@ -24,11 +24,11 @@ export interface DiscoveryEngineProjectProvisionConfig extends cdktn.TerraformMe
   * that the caller has read and consents to. An acceptable version is '2022-11-23',
   * and this may change over time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#data_use_terms_version DiscoveryEngineProjectProvision#data_use_terms_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#data_use_terms_version DiscoveryEngineProjectProvision#data_use_terms_version}
   */
   readonly dataUseTermsVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#id DiscoveryEngineProjectProvision#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#id DiscoveryEngineProjectProvision#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,23 +38,37 @@ export interface DiscoveryEngineProjectProvisionConfig extends cdktn.TerraformMe
   * The geographic location in which to provision the project, such as
   * 'global', 'us', or 'eu'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#location DiscoveryEngineProjectProvision#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#location DiscoveryEngineProjectProvision#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#project DiscoveryEngineProjectProvision#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#project DiscoveryEngineProjectProvision#project}
   */
   readonly project?: string;
   /**
+  * The Gemini Enterprise experience that the project is provisioned for.
+  * 'PROVISION_INTENT_SOBI' provisions the project for the new Gemini Enterprise
+  * experience, and 'PROVISION_INTENT_LEGACY' provisions it for the classic
+  * Gemini Enterprise experience. If unset, the API chooses the experience.
+  * 
+  * Changing this field forces a new resource, which calls the provisioning API
+  * again with the new value. Provisioning doesn't remove an experience that the
+  * project was already provisioned for, and the API may reject provisioning a
+  * project that uses the classic experience for the new experience. Possible values: ["PROVISION_INTENT_SOBI", "PROVISION_INTENT_LEGACY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#provision_intent DiscoveryEngineProjectProvision#provision_intent}
+  */
+  readonly provisionIntent?: string;
+  /**
   * saas_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#saas_params DiscoveryEngineProjectProvision#saas_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#saas_params DiscoveryEngineProjectProvision#saas_params}
   */
   readonly saasParams?: DiscoveryEngineProjectProvisionSaasParams;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#timeouts DiscoveryEngineProjectProvision#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#timeouts DiscoveryEngineProjectProvision#timeouts}
   */
   readonly timeouts?: DiscoveryEngineProjectProvisionTimeouts;
 }
@@ -63,14 +77,14 @@ export interface DiscoveryEngineProjectProvisionSaasParams {
   * Set to 'true' to specify that the caller has read and consents to the
   * Terms for business edition quality of service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#accept_biz_qos DiscoveryEngineProjectProvision#accept_biz_qos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#accept_biz_qos DiscoveryEngineProjectProvision#accept_biz_qos}
   */
   readonly acceptBizQos?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the current request is for Business edition ('true')
   * or not ('false').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#is_biz DiscoveryEngineProjectProvision#is_biz}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#is_biz DiscoveryEngineProjectProvision#is_biz}
   */
   readonly isBiz?: boolean | cdktn.IResolvable;
 }
@@ -183,11 +197,11 @@ export class DiscoveryEngineProjectProvisionSaasParamsOutputReference extends cd
 }
 export interface DiscoveryEngineProjectProvisionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#create DiscoveryEngineProjectProvision#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#create DiscoveryEngineProjectProvision#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#delete DiscoveryEngineProjectProvision#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#delete DiscoveryEngineProjectProvision#delete}
   */
   readonly delete?: string;
 }
@@ -310,7 +324,7 @@ export class DiscoveryEngineProjectProvisionTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision google_discovery_engine_project_provision}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision google_discovery_engine_project_provision}
 */
 export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
 
@@ -326,7 +340,7 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DiscoveryEngineProjectProvision resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineProjectProvision to import
-  * @param importFromId The id of the existing DiscoveryEngineProjectProvision that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DiscoveryEngineProjectProvision that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineProjectProvision to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -338,7 +352,7 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision google_discovery_engine_project_provision} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision google_discovery_engine_project_provision} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,7 +363,7 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
       terraformResourceType: 'google_discovery_engine_project_provision',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -365,6 +379,7 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
     this._id = config.id;
     this._location = config.location;
     this._project = config.project;
+    this._provisionIntent = config.provisionIntent;
     this._saasParams.internalValue = config.saasParams;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -453,6 +468,22 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
     return this._project;
   }
 
+  // provision_intent - computed: false, optional: true, required: false
+  private _provisionIntent?: string; 
+  public get provisionIntent() {
+    return this.getStringAttribute('provision_intent');
+  }
+  public set provisionIntent(value: string) {
+    this._provisionIntent = value;
+  }
+  public resetProvisionIntent() {
+    this._provisionIntent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get provisionIntentInput() {
+    return this._provisionIntent;
+  }
+
   // saas_params - computed: false, optional: true, required: false
   private _saasParams = new DiscoveryEngineProjectProvisionSaasParamsOutputReference(this, "saas_params");
   public get saasParams() {
@@ -496,6 +527,7 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
+      provision_intent: cdktn.stringToTerraform(this._provisionIntent),
       saas_params: discoveryEngineProjectProvisionSaasParamsToTerraform(this._saasParams.internalValue),
       timeouts: discoveryEngineProjectProvisionTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -529,6 +561,12 @@ export class DiscoveryEngineProjectProvision extends cdktn.TerraformResource {
       },
       project: {
         value: cdktn.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provision_intent: {
+        value: cdktn.stringToHclTerraform(this._provisionIntent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

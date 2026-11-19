@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,30 +21,30 @@ export interface VertexAiEvaluationItemConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#deletion_policy VertexAiEvaluationItem#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#deletion_policy VertexAiEvaluationItem#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-friendly display name for the EvaluationItem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#display_name VertexAiEvaluationItem#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#display_name VertexAiEvaluationItem#display_name}
   */
   readonly displayName: string;
   /**
   * The type of the EvaluationItem. Possible values: ["REQUEST", "RESULT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#evaluation_item_type VertexAiEvaluationItem#evaluation_item_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#evaluation_item_type VertexAiEvaluationItem#evaluation_item_type}
   */
   readonly evaluationItemType: string;
   /**
   * The Cloud Storage object where the request or response is stored.
   * Exactly one of 'evaluation_request' or 'gcs_uri' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#gcs_uri VertexAiEvaluationItem#gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#gcs_uri VertexAiEvaluationItem#gcs_uri}
   */
   readonly gcsUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#id VertexAiEvaluationItem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#id VertexAiEvaluationItem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,35 +57,35 @@ export interface VertexAiEvaluationItemConfig extends cdktn.TerraformMetaArgumen
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#labels VertexAiEvaluationItem#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#labels VertexAiEvaluationItem#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * User-defined metadata for this evaluation item as a JSON string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#metadata VertexAiEvaluationItem#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#metadata VertexAiEvaluationItem#metadata}
   */
   readonly metadata?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#project VertexAiEvaluationItem#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#project VertexAiEvaluationItem#project}
   */
   readonly project?: string;
   /**
   * The region of the EvaluationItem. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#region VertexAiEvaluationItem#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#region VertexAiEvaluationItem#region}
   */
   readonly region: string;
   /**
   * evaluation_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#evaluation_request VertexAiEvaluationItem#evaluation_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#evaluation_request VertexAiEvaluationItem#evaluation_request}
   */
   readonly evaluationRequest?: VertexAiEvaluationItemEvaluationRequest;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#timeouts VertexAiEvaluationItem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#timeouts VertexAiEvaluationItem#timeouts}
   */
   readonly timeouts?: VertexAiEvaluationItemTimeouts;
 }
@@ -630,27 +630,27 @@ export interface VertexAiEvaluationItemEvaluationRequestCandidateResponses {
   * all turns and events, for direct evaluation.
   * At most one of 'text', 'value', or 'agent_data' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#agent_data VertexAiEvaluationItem#agent_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#agent_data VertexAiEvaluationItem#agent_data}
   */
   readonly agentData?: string;
   /**
   * The name of the candidate that produced the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#candidate VertexAiEvaluationItem#candidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#candidate VertexAiEvaluationItem#candidate}
   */
   readonly candidate: string;
   /**
   * Text response.
   * At most one of 'text', 'value', or 'agent_data' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#text VertexAiEvaluationItem#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#text VertexAiEvaluationItem#text}
   */
   readonly text?: string;
   /**
   * Fields and values that can be used to populate the response template, as a JSON string.
   * At most one of 'text', 'value', or 'agent_data' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#value VertexAiEvaluationItem#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#value VertexAiEvaluationItem#value}
   */
   readonly value?: string;
 }
@@ -942,27 +942,27 @@ export interface VertexAiEvaluationItemEvaluationRequestGoldenResponse {
   * all turns and events, for direct evaluation.
   * At most one of 'text', 'value', or 'agent_data' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#agent_data VertexAiEvaluationItem#agent_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#agent_data VertexAiEvaluationItem#agent_data}
   */
   readonly agentData?: string;
   /**
   * The name of the candidate that produced the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#candidate VertexAiEvaluationItem#candidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#candidate VertexAiEvaluationItem#candidate}
   */
   readonly candidate: string;
   /**
   * Text response.
   * At most one of 'text', 'value', or 'agent_data' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#text VertexAiEvaluationItem#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#text VertexAiEvaluationItem#text}
   */
   readonly text?: string;
   /**
   * Fields and values that can be used to populate the response template, as a JSON string.
   * At most one of 'text', 'value', or 'agent_data' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#value VertexAiEvaluationItem#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#value VertexAiEvaluationItem#value}
   */
   readonly value?: string;
 }
@@ -1139,7 +1139,7 @@ export interface VertexAiEvaluationItemEvaluationRequestPromptPromptTemplateData
   * The values for fields in the prompt template, as a JSON string mapping
   * field names to Content objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#values VertexAiEvaluationItem#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#values VertexAiEvaluationItem#values}
   */
   readonly values?: string;
 }
@@ -1226,14 +1226,14 @@ export interface VertexAiEvaluationItemEvaluationRequestPromptUserScenario {
   * The plan for the conversation, used to drive the multi-turn agent run and
   * generate the simulated agent evaluation dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#conversation_plan VertexAiEvaluationItem#conversation_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#conversation_plan VertexAiEvaluationItem#conversation_plan}
   */
   readonly conversationPlan: string;
   /**
   * The prompt that starts the conversation between the simulated user and
   * the agent under test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#starting_prompt VertexAiEvaluationItem#starting_prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#starting_prompt VertexAiEvaluationItem#starting_prompt}
   */
   readonly startingPrompt: string;
 }
@@ -1345,33 +1345,33 @@ export interface VertexAiEvaluationItemEvaluationRequestPrompt {
   * serves as the input context for agent scraping.
   * At most one of 'text', 'value', 'prompt_template_data', 'agent_data', or 'user_scenario' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#agent_data VertexAiEvaluationItem#agent_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#agent_data VertexAiEvaluationItem#agent_data}
   */
   readonly agentData?: string;
   /**
   * Text prompt.
   * At most one of 'text', 'value', 'prompt_template_data', 'agent_data', or 'user_scenario' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#text VertexAiEvaluationItem#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#text VertexAiEvaluationItem#text}
   */
   readonly text?: string;
   /**
   * Fields and values that can be used to populate the prompt template, as a JSON string.
   * At most one of 'text', 'value', 'prompt_template_data', 'agent_data', or 'user_scenario' can be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#value VertexAiEvaluationItem#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#value VertexAiEvaluationItem#value}
   */
   readonly value?: string;
   /**
   * prompt_template_data block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#prompt_template_data VertexAiEvaluationItem#prompt_template_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#prompt_template_data VertexAiEvaluationItem#prompt_template_data}
   */
   readonly promptTemplateData?: VertexAiEvaluationItemEvaluationRequestPromptPromptTemplateData;
   /**
   * user_scenario block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#user_scenario VertexAiEvaluationItem#user_scenario}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#user_scenario VertexAiEvaluationItem#user_scenario}
   */
   readonly userScenario?: VertexAiEvaluationItemEvaluationRequestPromptUserScenario;
 }
@@ -1573,7 +1573,7 @@ export interface VertexAiEvaluationItemEvaluationRequestRubricsRubricsContentPro
   /**
   * Description of the property being evaluated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#description VertexAiEvaluationItem#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#description VertexAiEvaluationItem#description}
   */
   readonly description?: string;
 }
@@ -1659,7 +1659,7 @@ export interface VertexAiEvaluationItemEvaluationRequestRubricsRubricsContent {
   /**
   * property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#property VertexAiEvaluationItem#property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#property VertexAiEvaluationItem#property}
   */
   readonly property?: VertexAiEvaluationItemEvaluationRequestRubricsRubricsContentProperty;
 }
@@ -1745,25 +1745,25 @@ export interface VertexAiEvaluationItemEvaluationRequestRubricsRubrics {
   /**
   * The relative importance of this rubric. Possible values: ["HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#importance VertexAiEvaluationItem#importance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#importance VertexAiEvaluationItem#importance}
   */
   readonly importance?: string;
   /**
   * Unique identifier for the rubric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#rubric_id VertexAiEvaluationItem#rubric_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#rubric_id VertexAiEvaluationItem#rubric_id}
   */
   readonly rubricId?: string;
   /**
   * A type designator for the rubric, e.g. 'SUMMARIZATION_QUALITY'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#type VertexAiEvaluationItem#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#type VertexAiEvaluationItem#type}
   */
   readonly type?: string;
   /**
   * content block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#content VertexAiEvaluationItem#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#content VertexAiEvaluationItem#content}
   */
   readonly content: VertexAiEvaluationItemEvaluationRequestRubricsRubricsContent;
 }
@@ -1965,23 +1965,23 @@ export interface VertexAiEvaluationItemEvaluationRequestRubrics {
   /**
   * Human-readable name for the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#display_name VertexAiEvaluationItem#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#display_name VertexAiEvaluationItem#display_name}
   */
   readonly displayName?: string;
   /**
   * Unique identifier for the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#group_id VertexAiEvaluationItem#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#group_id VertexAiEvaluationItem#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#name VertexAiEvaluationItem#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#name VertexAiEvaluationItem#name}
   */
   readonly name: string;
   /**
   * rubrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#rubrics VertexAiEvaluationItem#rubrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#rubrics VertexAiEvaluationItem#rubrics}
   */
   readonly rubrics?: VertexAiEvaluationItemEvaluationRequestRubricsRubrics[] | cdktn.IResolvable;
 }
@@ -2183,25 +2183,25 @@ export interface VertexAiEvaluationItemEvaluationRequest {
   /**
   * candidate_responses block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#candidate_responses VertexAiEvaluationItem#candidate_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#candidate_responses VertexAiEvaluationItem#candidate_responses}
   */
   readonly candidateResponses?: VertexAiEvaluationItemEvaluationRequestCandidateResponses[] | cdktn.IResolvable;
   /**
   * golden_response block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#golden_response VertexAiEvaluationItem#golden_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#golden_response VertexAiEvaluationItem#golden_response}
   */
   readonly goldenResponse?: VertexAiEvaluationItemEvaluationRequestGoldenResponse;
   /**
   * prompt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#prompt VertexAiEvaluationItem#prompt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#prompt VertexAiEvaluationItem#prompt}
   */
   readonly prompt?: VertexAiEvaluationItemEvaluationRequestPrompt;
   /**
   * rubrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#rubrics VertexAiEvaluationItem#rubrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#rubrics VertexAiEvaluationItem#rubrics}
   */
   readonly rubrics?: VertexAiEvaluationItemEvaluationRequestRubrics[] | cdktn.IResolvable;
 }
@@ -2372,15 +2372,15 @@ export class VertexAiEvaluationItemEvaluationRequestOutputReference extends cdkt
 }
 export interface VertexAiEvaluationItemTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#create VertexAiEvaluationItem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#create VertexAiEvaluationItem#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#delete VertexAiEvaluationItem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#delete VertexAiEvaluationItem#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#update VertexAiEvaluationItem#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#update VertexAiEvaluationItem#update}
   */
   readonly update?: string;
 }
@@ -2532,7 +2532,7 @@ export class VertexAiEvaluationItemTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item google_vertex_ai_evaluation_item}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item google_vertex_ai_evaluation_item}
 */
 export class VertexAiEvaluationItem extends cdktn.TerraformResource {
 
@@ -2548,7 +2548,7 @@ export class VertexAiEvaluationItem extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiEvaluationItem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiEvaluationItem to import
-  * @param importFromId The id of the existing VertexAiEvaluationItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiEvaluationItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiEvaluationItem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2560,7 +2560,7 @@ export class VertexAiEvaluationItem extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_evaluation_item google_vertex_ai_evaluation_item} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_evaluation_item google_vertex_ai_evaluation_item} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2571,7 +2571,7 @@ export class VertexAiEvaluationItem extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_evaluation_item',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

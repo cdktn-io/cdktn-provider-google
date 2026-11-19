@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config
+// https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,19 +21,19 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#deletion_policy IntegrationsAuthConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#deletion_policy IntegrationsAuthConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the auth config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#description IntegrationsAuthConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#description IntegrationsAuthConfig#description}
   */
   readonly description?: string;
   /**
   * The name of the auth config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#display_name IntegrationsAuthConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#display_name IntegrationsAuthConfig#display_name}
   */
   readonly displayName: string;
   /**
@@ -41,11 +41,11 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   * 
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#expiry_notification_duration IntegrationsAuthConfig#expiry_notification_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#expiry_notification_duration IntegrationsAuthConfig#expiry_notification_duration}
   */
   readonly expiryNotificationDuration?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#id IntegrationsAuthConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#id IntegrationsAuthConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,7 +54,7 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   /**
   * Location in which client needs to be provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#location IntegrationsAuthConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#location IntegrationsAuthConfig#location}
   */
   readonly location: string;
   /**
@@ -62,35 +62,35 @@ export interface IntegrationsAuthConfigConfig extends cdktn.TerraformMetaArgumen
   * 
   * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#override_valid_time IntegrationsAuthConfig#override_valid_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#override_valid_time IntegrationsAuthConfig#override_valid_time}
   */
   readonly overrideValidTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#project IntegrationsAuthConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#project IntegrationsAuthConfig#project}
   */
   readonly project?: string;
   /**
   * The visibility of the auth config. Possible values: ["PRIVATE", "CLIENT_VISIBLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#visibility IntegrationsAuthConfig#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#visibility IntegrationsAuthConfig#visibility}
   */
   readonly visibility?: string;
   /**
   * client_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#client_certificate IntegrationsAuthConfig#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#client_certificate IntegrationsAuthConfig#client_certificate}
   */
   readonly clientCertificate?: IntegrationsAuthConfigClientCertificate;
   /**
   * decrypted_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#decrypted_credential IntegrationsAuthConfig#decrypted_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#decrypted_credential IntegrationsAuthConfig#decrypted_credential}
   */
   readonly decryptedCredential?: IntegrationsAuthConfigDecryptedCredential;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#timeouts IntegrationsAuthConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#timeouts IntegrationsAuthConfig#timeouts}
   */
   readonly timeouts?: IntegrationsAuthConfigTimeouts;
 }
@@ -98,20 +98,20 @@ export interface IntegrationsAuthConfigClientCertificate {
   /**
   * The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#encrypted_private_key IntegrationsAuthConfig#encrypted_private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#encrypted_private_key IntegrationsAuthConfig#encrypted_private_key}
   */
   readonly encryptedPrivateKey: string;
   /**
   * 'passphrase' should be left unset if private key is not encrypted.
   * Note that 'passphrase' is not the password for web server, but an extra layer of security to protected private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#passphrase IntegrationsAuthConfig#passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#passphrase IntegrationsAuthConfig#passphrase}
   */
   readonly passphrase?: string;
   /**
   * The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#ssl_certificate IntegrationsAuthConfig#ssl_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#ssl_certificate IntegrationsAuthConfig#ssl_certificate}
   */
   readonly sslCertificate: string;
 }
@@ -249,13 +249,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialAuthToken {
   /**
   * The token for the auth type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#token IntegrationsAuthConfig#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#token IntegrationsAuthConfig#token}
   */
   readonly token?: string;
   /**
   * Authentication type, e.g. "Basic", "Bearer", etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#type IntegrationsAuthConfig#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#type IntegrationsAuthConfig#type}
   */
   readonly type?: string;
 }
@@ -370,19 +370,19 @@ export interface IntegrationsAuthConfigDecryptedCredentialJwt {
   /**
   * Identifies which algorithm is used to generate the signature.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#jwt_header IntegrationsAuthConfig#jwt_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#jwt_header IntegrationsAuthConfig#jwt_header}
   */
   readonly jwtHeader?: string;
   /**
   * Contains a set of claims. The JWT specification defines seven Registered Claim Names which are the standard fields commonly included in tokens. Custom claims are usually also included, depending on the purpose of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#jwt_payload IntegrationsAuthConfig#jwt_payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#jwt_payload IntegrationsAuthConfig#jwt_payload}
   */
   readonly jwtPayload?: string;
   /**
   * User's pre-shared secret to sign the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#secret IntegrationsAuthConfig#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#secret IntegrationsAuthConfig#secret}
   */
   readonly secret?: string;
 }
@@ -531,7 +531,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * The string value of the parameter key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -617,7 +617,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeAuthParamsEntriesKeyLiteralValue;
 }
@@ -703,7 +703,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * The string value of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -789,7 +789,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeAuthParamsEntriesValueLiteralValue;
 }
@@ -875,13 +875,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
   */
   readonly key?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeAuthParamsEntriesKey;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
   */
   readonly value?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeAuthParamsEntriesValue;
 }
@@ -1028,7 +1028,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
   */
   readonly entries?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeAuthParamsEntries[] | cdktn.IResolvable;
 }
@@ -1114,7 +1114,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * The string value of the parameter key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -1200,7 +1200,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeTokenParamsEntriesKeyLiteralValue;
 }
@@ -1286,7 +1286,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * The string value of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -1372,7 +1372,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeTokenParamsEntriesValueLiteralValue;
 }
@@ -1458,13 +1458,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
   */
   readonly key?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeTokenParamsEntriesKey;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
   */
   readonly value?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeTokenParamsEntriesValue;
 }
@@ -1611,7 +1611,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
   */
   readonly entries?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeTokenParamsEntries[] | cdktn.IResolvable;
 }
@@ -1697,55 +1697,55 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCod
   /**
   * Indicates if the user has opted in Google Reauth Policy. If opted in, the refresh token will be valid for 20 hours, after which time users must re-authenticate in order to obtain a new one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#apply_reauth_policy IntegrationsAuthConfig#apply_reauth_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#apply_reauth_policy IntegrationsAuthConfig#apply_reauth_policy}
   */
   readonly applyReauthPolicy?: boolean | cdktn.IResolvable;
   /**
   * The auth url endpoint to send the auth code request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#auth_endpoint IntegrationsAuthConfig#auth_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#auth_endpoint IntegrationsAuthConfig#auth_endpoint}
   */
   readonly authEndpoint?: string;
   /**
   * The client's id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * The client's secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Represent how to pass parameters to fetch access token Possible values: ["REQUEST_BODY", "QUERY_PARAMETERS", "ENCODED_HEADER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#request_type IntegrationsAuthConfig#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#request_type IntegrationsAuthConfig#request_type}
   */
   readonly requestType?: string;
   /**
   * A space-delimited list of requested scope permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
   */
   readonly scope?: string;
   /**
   * The token url endpoint to send the token request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
   */
   readonly tokenEndpoint?: string;
   /**
   * auth_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#auth_params IntegrationsAuthConfig#auth_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#auth_params IntegrationsAuthConfig#auth_params}
   */
   readonly authParams?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeAuthParams;
   /**
   * token_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#token_params IntegrationsAuthConfig#token_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#token_params IntegrationsAuthConfig#token_params}
   */
   readonly tokenParams?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeTokenParams;
 }
@@ -2063,7 +2063,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * String.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -2149,7 +2149,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKeyLiteralValue;
 }
@@ -2235,7 +2235,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * String.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#string_value IntegrationsAuthConfig#string_value}
   */
   readonly stringValue?: string;
 }
@@ -2321,7 +2321,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * literal_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#literal_value IntegrationsAuthConfig#literal_value}
   */
   readonly literalValue?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValueLiteralValue;
 }
@@ -2407,13 +2407,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#key IntegrationsAuthConfig#key}
   */
   readonly key?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesKey;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#value IntegrationsAuthConfig#value}
   */
   readonly value?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntriesValue;
 }
@@ -2560,7 +2560,7 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#entries IntegrationsAuthConfig#entries}
   */
   readonly entries?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParamsEntries[] | cdktn.IResolvable;
 }
@@ -2646,37 +2646,37 @@ export interface IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredential
   /**
   * The client's ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#client_id IntegrationsAuthConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * The client's secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#client_secret IntegrationsAuthConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Represent how to pass parameters to fetch access token Possible values: ["REQUEST_TYPE_UNSPECIFIED", "REQUEST_BODY", "QUERY_PARAMETERS", "ENCODED_HEADER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#request_type IntegrationsAuthConfig#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#request_type IntegrationsAuthConfig#request_type}
   */
   readonly requestType?: string;
   /**
   * A space-delimited list of requested scope permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
   */
   readonly scope?: string;
   /**
   * The token endpoint is used by the client to obtain an access token by presenting its authorization grant or refresh token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#token_endpoint IntegrationsAuthConfig#token_endpoint}
   */
   readonly tokenEndpoint?: string;
   /**
   * token_params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#token_params IntegrationsAuthConfig#token_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#token_params IntegrationsAuthConfig#token_params}
   */
   readonly tokenParams?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams;
 }
@@ -2907,13 +2907,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialOidcToken {
   /**
   * Audience to be used when generating OIDC token. The audience claim identifies the recipients that the JWT is intended for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#audience IntegrationsAuthConfig#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#audience IntegrationsAuthConfig#audience}
   */
   readonly audience?: string;
   /**
   * The service account email to be used as the identity for the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#service_account_email IntegrationsAuthConfig#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#service_account_email IntegrationsAuthConfig#service_account_email}
   */
   readonly serviceAccountEmail?: string;
 }
@@ -3038,13 +3038,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialServiceAccountCredenti
   /**
   * A space-delimited list of requested scope permissions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#scope IntegrationsAuthConfig#scope}
   */
   readonly scope?: string;
   /**
   * Name of the service account that has the permission to make the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#service_account IntegrationsAuthConfig#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#service_account IntegrationsAuthConfig#service_account}
   */
   readonly serviceAccount?: string;
 }
@@ -3159,13 +3159,13 @@ export interface IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword {
   /**
   * Password to be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#password IntegrationsAuthConfig#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#password IntegrationsAuthConfig#password}
   */
   readonly password?: string;
   /**
   * Username to be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#username IntegrationsAuthConfig#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#username IntegrationsAuthConfig#username}
   */
   readonly username?: string;
 }
@@ -3280,49 +3280,49 @@ export interface IntegrationsAuthConfigDecryptedCredential {
   /**
   * Credential type associated with auth configs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#credential_type IntegrationsAuthConfig#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#credential_type IntegrationsAuthConfig#credential_type}
   */
   readonly credentialType: string;
   /**
   * auth_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#auth_token IntegrationsAuthConfig#auth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#auth_token IntegrationsAuthConfig#auth_token}
   */
   readonly authToken?: IntegrationsAuthConfigDecryptedCredentialAuthToken;
   /**
   * jwt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#jwt IntegrationsAuthConfig#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#jwt IntegrationsAuthConfig#jwt}
   */
   readonly jwt?: IntegrationsAuthConfigDecryptedCredentialJwt;
   /**
   * oauth2_authorization_code block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#oauth2_authorization_code IntegrationsAuthConfig#oauth2_authorization_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#oauth2_authorization_code IntegrationsAuthConfig#oauth2_authorization_code}
   */
   readonly oauth2AuthorizationCode?: IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCode;
   /**
   * oauth2_client_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#oauth2_client_credentials IntegrationsAuthConfig#oauth2_client_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#oauth2_client_credentials IntegrationsAuthConfig#oauth2_client_credentials}
   */
   readonly oauth2ClientCredentials?: IntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentials;
   /**
   * oidc_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#oidc_token IntegrationsAuthConfig#oidc_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#oidc_token IntegrationsAuthConfig#oidc_token}
   */
   readonly oidcToken?: IntegrationsAuthConfigDecryptedCredentialOidcToken;
   /**
   * service_account_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#service_account_credentials IntegrationsAuthConfig#service_account_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#service_account_credentials IntegrationsAuthConfig#service_account_credentials}
   */
   readonly serviceAccountCredentials?: IntegrationsAuthConfigDecryptedCredentialServiceAccountCredentials;
   /**
   * username_and_password block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#username_and_password IntegrationsAuthConfig#username_and_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#username_and_password IntegrationsAuthConfig#username_and_password}
   */
   readonly usernameAndPassword?: IntegrationsAuthConfigDecryptedCredentialUsernameAndPassword;
 }
@@ -3606,15 +3606,15 @@ export class IntegrationsAuthConfigDecryptedCredentialOutputReference extends cd
 }
 export interface IntegrationsAuthConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#create IntegrationsAuthConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#create IntegrationsAuthConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#delete IntegrationsAuthConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#delete IntegrationsAuthConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#update IntegrationsAuthConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#update IntegrationsAuthConfig#update}
   */
   readonly update?: string;
 }
@@ -3766,7 +3766,7 @@ export class IntegrationsAuthConfigTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config google_integrations_auth_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config google_integrations_auth_config}
 */
 export class IntegrationsAuthConfig extends cdktn.TerraformResource {
 
@@ -3782,7 +3782,7 @@ export class IntegrationsAuthConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationsAuthConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationsAuthConfig to import
-  * @param importFromId The id of the existing IntegrationsAuthConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationsAuthConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationsAuthConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3794,7 +3794,7 @@ export class IntegrationsAuthConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3805,7 +3805,7 @@ export class IntegrationsAuthConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_integrations_auth_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.11.0',
+        providerVersion: '8.12.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
