@@ -4,7 +4,7 @@
 
 ### VertexAiCustomJob <a name="VertexAiCustomJob" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job google_vertex_ai_custom_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job google_vertex_ai_custom_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer"></a>
 
@@ -49,9 +49,9 @@ vertexAiCustomJob.VertexAiCustomJob(
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.region">region</a></code> | <code>str</code> | The Google Cloud region to run the custom job in. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobEncryptionSpec">VertexAiCustomJobEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels with user-defined metadata to organize CustomJobs. |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts">VertexAiCustomJobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +124,7 @@ The display name of the CustomJob.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#display_name VertexAiCustomJob#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#display_name VertexAiCustomJob#display_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 job_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#job_spec VertexAiCustomJob#job_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#job_spec VertexAiCustomJob#job_spec}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Google Cloud region to run the custom job in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#region VertexAiCustomJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#region VertexAiCustomJob#region}
 
 ---
 
@@ -161,7 +161,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#deletion_policy VertexAiCustomJob#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#deletion_policy VertexAiCustomJob#deletion_policy}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#encryption_spec VertexAiCustomJob#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#encryption_spec VertexAiCustomJob#encryption_spec}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -198,7 +198,7 @@ See https://goo.gl/xmQnxf for more information and examples of labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#labels VertexAiCustomJob#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#labels VertexAiCustomJob#labels}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}.
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#timeouts VertexAiCustomJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#timeouts VertexAiCustomJob#timeouts}
 
 ---
 
@@ -625,7 +625,7 @@ Resource name of the Cloud KMS key used to protect the resource.
 The Cloud KMS key must be in the same region as the resource. It must have the format
 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#kms_key_name VertexAiCustomJob#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#kms_key_name VertexAiCustomJob#kms_key_name}
 
 ---
 
@@ -637,7 +637,12 @@ def put_job_spec(
   base_output_directory: VertexAiCustomJobJobSpecBaseOutputDirectory = None,
   enable_dashboard_access: bool | IResolvable = None,
   enable_web_access: bool | IResolvable = None,
+  experiment: str = None,
+  experiment_run: str = None,
+  models: typing.List[str] = None,
   network: str = None,
+  persistent_resource_id: str = None,
+  protected_artifact_location_id: str = None,
   psc_interface_config: VertexAiCustomJobJobSpecPscInterfaceConfig = None,
   reserved_ip_ranges: typing.List[str] = None,
   scheduling: VertexAiCustomJobJobSpecScheduling = None,
@@ -652,7 +657,7 @@ def put_job_spec(
 
 worker_pool_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#worker_pool_specs VertexAiCustomJob#worker_pool_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#worker_pool_specs VertexAiCustomJob#worker_pool_specs}
 
 ---
 
@@ -662,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 base_output_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#base_output_directory VertexAiCustomJob#base_output_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#base_output_directory VertexAiCustomJob#base_output_directory}
 
 ---
 
@@ -672,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether you want Vertex AI to enable access to the customized dashboard in training chief container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#enable_dashboard_access VertexAiCustomJob#enable_dashboard_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#enable_dashboard_access VertexAiCustomJob#enable_dashboard_access}
 
 ---
 
@@ -682,7 +687,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether you want Vertex AI to enable interactive shell access to training containers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#enable_web_access VertexAiCustomJob#enable_web_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#enable_web_access VertexAiCustomJob#enable_web_access}
+
+---
+
+###### `experiment`<sup>Optional</sup> <a name="experiment" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.putJobSpec.parameter.experiment"></a>
+
+- *Type:* str
+
+The Experiment associated with this job. Format: 'projects/{project}/locations/{location}/metadataStores/{metadataStores}/contexts/{experiment-name}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#experiment VertexAiCustomJob#experiment}
+
+---
+
+###### `experiment_run`<sup>Optional</sup> <a name="experiment_run" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.putJobSpec.parameter.experimentRun"></a>
+
+- *Type:* str
+
+The Experiment Run associated with this job. Format: 'projects/{project}/locations/{location}/metadataStores/{metadataStores}/contexts/{experiment-name}-{experiment-run-name}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#experiment_run VertexAiCustomJob#experiment_run}
+
+---
+
+###### `models`<sup>Optional</sup> <a name="models" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.putJobSpec.parameter.models"></a>
+
+- *Type:* typing.List[str]
+
+The name of the Model resources for which to generate a mapping to artifact URIs.
+
+Applicable only to some of the Google-provided custom jobs.
+Format: 'projects/{project}/locations/{location}/models/{model}'
+In order to retrieve a specific version of the model, also provide the version ID or version alias.
+Example: 'projects/{project}/locations/{location}/models/{model}@2' or 'projects/{project}/locations/{location}/models/{model}@golden'
+If no version ID or alias is specified, the "default" version will be returned.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#models VertexAiCustomJob#models}
 
 ---
 
@@ -692,7 +733,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The full name of the Compute Engine network to which the Job should be peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#network VertexAiCustomJob#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#network VertexAiCustomJob#network}
+
+---
+
+###### `persistent_resource_id`<sup>Optional</sup> <a name="persistent_resource_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.putJobSpec.parameter.persistentResourceId"></a>
+
+- *Type:* str
+
+The ID of the PersistentResource in the same Project and Location which to run.
+
+If this is specified, the job will be run on existing machines held by the PersistentResource instead of on-demand short-live machines.
+The network and CMEK configs on the job should be consistent with those on the PersistentResource, otherwise, the job will be rejected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#persistent_resource_id VertexAiCustomJob#persistent_resource_id}
+
+---
+
+###### `protected_artifact_location_id`<sup>Optional</sup> <a name="protected_artifact_location_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJob.putJobSpec.parameter.protectedArtifactLocationId"></a>
+
+- *Type:* str
+
+The ID of the location to store protected artifacts.
+
+e.g. us-central1. Populate only when the location is different than CustomJob location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#protected_artifact_location_id VertexAiCustomJob#protected_artifact_location_id}
 
 ---
 
@@ -702,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 psc_interface_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#psc_interface_config VertexAiCustomJob#psc_interface_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#psc_interface_config VertexAiCustomJob#psc_interface_config}
 
 ---
 
@@ -712,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of names for the reserved ip ranges under the VPC network that can be used for this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#reserved_ip_ranges VertexAiCustomJob#reserved_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#reserved_ip_ranges VertexAiCustomJob#reserved_ip_ranges}
 
 ---
 
@@ -722,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#scheduling VertexAiCustomJob#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#scheduling VertexAiCustomJob#scheduling}
 
 ---
 
@@ -732,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the service account for workload run-as account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#service_account VertexAiCustomJob#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#service_account VertexAiCustomJob#service_account}
 
 ---
 
@@ -742,7 +808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a Vertex AI Tensorboard resource to which this CustomJob will upload Tensorboard logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#tensorboard VertexAiCustomJob#tensorboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#tensorboard VertexAiCustomJob#tensorboard}
 
 ---
 
@@ -760,7 +826,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#create VertexAiCustomJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#create VertexAiCustomJob#create}.
 
 ---
 
@@ -768,7 +834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#delete VertexAiCustomJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#delete VertexAiCustomJob#delete}.
 
 ---
 
@@ -776,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#update VertexAiCustomJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#update VertexAiCustomJob#update}.
 
 ---
 
@@ -930,7 +996,7 @@ The construct id used in the generated config for the VertexAiCustomJob to impor
 
 The id of the existing VertexAiCustomJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1476,9 +1542,9 @@ vertexAiCustomJob.VertexAiCustomJobConfig(
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.region">region</a></code> | <code>str</code> | The Google Cloud region to run the custom job in. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobEncryptionSpec">VertexAiCustomJobEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels with user-defined metadata to organize CustomJobs. |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts">VertexAiCustomJobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1565,7 +1631,7 @@ The display name of the CustomJob.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#display_name VertexAiCustomJob#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#display_name VertexAiCustomJob#display_name}
 
 ---
 
@@ -1579,7 +1645,7 @@ job_spec: VertexAiCustomJobJobSpec
 
 job_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#job_spec VertexAiCustomJob#job_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#job_spec VertexAiCustomJob#job_spec}
 
 ---
 
@@ -1593,7 +1659,7 @@ region: str
 
 The Google Cloud region to run the custom job in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#region VertexAiCustomJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#region VertexAiCustomJob#region}
 
 ---
 
@@ -1614,7 +1680,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#deletion_policy VertexAiCustomJob#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#deletion_policy VertexAiCustomJob#deletion_policy}
 
 ---
 
@@ -1628,7 +1694,7 @@ encryption_spec: VertexAiCustomJobEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#encryption_spec VertexAiCustomJob#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#encryption_spec VertexAiCustomJob#encryption_spec}
 
 ---
 
@@ -1640,7 +1706,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#id VertexAiCustomJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1663,7 +1729,7 @@ See https://goo.gl/xmQnxf for more information and examples of labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#labels VertexAiCustomJob#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#labels VertexAiCustomJob#labels}
 
 ---
 
@@ -1675,7 +1741,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#project VertexAiCustomJob#project}.
 
 ---
 
@@ -1689,7 +1755,7 @@ timeouts: VertexAiCustomJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#timeouts VertexAiCustomJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#timeouts VertexAiCustomJob#timeouts}
 
 ---
 
@@ -1726,7 +1792,7 @@ Resource name of the Cloud KMS key used to protect the resource.
 The Cloud KMS key must be in the same region as the resource. It must have the format
 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#kms_key_name VertexAiCustomJob#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#kms_key_name VertexAiCustomJob#kms_key_name}
 
 ---
 
@@ -1753,7 +1819,12 @@ vertexAiCustomJob.VertexAiCustomJobJobSpec(
   base_output_directory: VertexAiCustomJobJobSpecBaseOutputDirectory = None,
   enable_dashboard_access: bool | IResolvable = None,
   enable_web_access: bool | IResolvable = None,
+  experiment: str = None,
+  experiment_run: str = None,
+  models: typing.List[str] = None,
   network: str = None,
+  persistent_resource_id: str = None,
+  protected_artifact_location_id: str = None,
   psc_interface_config: VertexAiCustomJobJobSpecPscInterfaceConfig = None,
   reserved_ip_ranges: typing.List[str] = None,
   scheduling: VertexAiCustomJobJobSpecScheduling = None,
@@ -1770,7 +1841,12 @@ vertexAiCustomJob.VertexAiCustomJobJobSpec(
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.baseOutputDirectory">base_output_directory</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecBaseOutputDirectory">VertexAiCustomJobJobSpecBaseOutputDirectory</a></code> | base_output_directory block. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.enableDashboardAccess">enable_dashboard_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether you want Vertex AI to enable access to the customized dashboard in training chief container. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.enableWebAccess">enable_web_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether you want Vertex AI to enable interactive shell access to training containers. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.experiment">experiment</a></code> | <code>str</code> | The Experiment associated with this job. Format: 'projects/{project}/locations/{location}/metadataStores/{metadataStores}/contexts/{experiment-name}'. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.experimentRun">experiment_run</a></code> | <code>str</code> | The Experiment Run associated with this job. Format: 'projects/{project}/locations/{location}/metadataStores/{metadataStores}/contexts/{experiment-name}-{experiment-run-name}'. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.models">models</a></code> | <code>typing.List[str]</code> | The name of the Model resources for which to generate a mapping to artifact URIs. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.network">network</a></code> | <code>str</code> | The full name of the Compute Engine network to which the Job should be peered. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.persistentResourceId">persistent_resource_id</a></code> | <code>str</code> | The ID of the PersistentResource in the same Project and Location which to run. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.protectedArtifactLocationId">protected_artifact_location_id</a></code> | <code>str</code> | The ID of the location to store protected artifacts. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.pscInterfaceConfig">psc_interface_config</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecPscInterfaceConfig">VertexAiCustomJobJobSpecPscInterfaceConfig</a></code> | psc_interface_config block. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.reservedIpRanges">reserved_ip_ranges</a></code> | <code>typing.List[str]</code> | A list of names for the reserved ip ranges under the VPC network that can be used for this job. |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.scheduling">scheduling</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecScheduling">VertexAiCustomJobJobSpecScheduling</a></code> | scheduling block. |
@@ -1789,7 +1865,7 @@ worker_pool_specs: IResolvable | typing.List[VertexAiCustomJobJobSpecWorkerPoolS
 
 worker_pool_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#worker_pool_specs VertexAiCustomJob#worker_pool_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#worker_pool_specs VertexAiCustomJob#worker_pool_specs}
 
 ---
 
@@ -1803,7 +1879,7 @@ base_output_directory: VertexAiCustomJobJobSpecBaseOutputDirectory
 
 base_output_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#base_output_directory VertexAiCustomJob#base_output_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#base_output_directory VertexAiCustomJob#base_output_directory}
 
 ---
 
@@ -1817,7 +1893,7 @@ enable_dashboard_access: bool | IResolvable
 
 Whether you want Vertex AI to enable access to the customized dashboard in training chief container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#enable_dashboard_access VertexAiCustomJob#enable_dashboard_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#enable_dashboard_access VertexAiCustomJob#enable_dashboard_access}
 
 ---
 
@@ -1831,7 +1907,55 @@ enable_web_access: bool | IResolvable
 
 Whether you want Vertex AI to enable interactive shell access to training containers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#enable_web_access VertexAiCustomJob#enable_web_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#enable_web_access VertexAiCustomJob#enable_web_access}
+
+---
+
+##### `experiment`<sup>Optional</sup> <a name="experiment" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.experiment"></a>
+
+```python
+experiment: str
+```
+
+- *Type:* str
+
+The Experiment associated with this job. Format: 'projects/{project}/locations/{location}/metadataStores/{metadataStores}/contexts/{experiment-name}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#experiment VertexAiCustomJob#experiment}
+
+---
+
+##### `experiment_run`<sup>Optional</sup> <a name="experiment_run" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.experimentRun"></a>
+
+```python
+experiment_run: str
+```
+
+- *Type:* str
+
+The Experiment Run associated with this job. Format: 'projects/{project}/locations/{location}/metadataStores/{metadataStores}/contexts/{experiment-name}-{experiment-run-name}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#experiment_run VertexAiCustomJob#experiment_run}
+
+---
+
+##### `models`<sup>Optional</sup> <a name="models" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.models"></a>
+
+```python
+models: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The name of the Model resources for which to generate a mapping to artifact URIs.
+
+Applicable only to some of the Google-provided custom jobs.
+Format: 'projects/{project}/locations/{location}/models/{model}'
+In order to retrieve a specific version of the model, also provide the version ID or version alias.
+Example: 'projects/{project}/locations/{location}/models/{model}@2' or 'projects/{project}/locations/{location}/models/{model}@golden'
+If no version ID or alias is specified, the "default" version will be returned.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#models VertexAiCustomJob#models}
 
 ---
 
@@ -1845,7 +1969,40 @@ network: str
 
 The full name of the Compute Engine network to which the Job should be peered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#network VertexAiCustomJob#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#network VertexAiCustomJob#network}
+
+---
+
+##### `persistent_resource_id`<sup>Optional</sup> <a name="persistent_resource_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.persistentResourceId"></a>
+
+```python
+persistent_resource_id: str
+```
+
+- *Type:* str
+
+The ID of the PersistentResource in the same Project and Location which to run.
+
+If this is specified, the job will be run on existing machines held by the PersistentResource instead of on-demand short-live machines.
+The network and CMEK configs on the job should be consistent with those on the PersistentResource, otherwise, the job will be rejected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#persistent_resource_id VertexAiCustomJob#persistent_resource_id}
+
+---
+
+##### `protected_artifact_location_id`<sup>Optional</sup> <a name="protected_artifact_location_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpec.property.protectedArtifactLocationId"></a>
+
+```python
+protected_artifact_location_id: str
+```
+
+- *Type:* str
+
+The ID of the location to store protected artifacts.
+
+e.g. us-central1. Populate only when the location is different than CustomJob location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#protected_artifact_location_id VertexAiCustomJob#protected_artifact_location_id}
 
 ---
 
@@ -1859,7 +2016,7 @@ psc_interface_config: VertexAiCustomJobJobSpecPscInterfaceConfig
 
 psc_interface_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#psc_interface_config VertexAiCustomJob#psc_interface_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#psc_interface_config VertexAiCustomJob#psc_interface_config}
 
 ---
 
@@ -1873,7 +2030,7 @@ reserved_ip_ranges: typing.List[str]
 
 A list of names for the reserved ip ranges under the VPC network that can be used for this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#reserved_ip_ranges VertexAiCustomJob#reserved_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#reserved_ip_ranges VertexAiCustomJob#reserved_ip_ranges}
 
 ---
 
@@ -1887,7 +2044,7 @@ scheduling: VertexAiCustomJobJobSpecScheduling
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#scheduling VertexAiCustomJob#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#scheduling VertexAiCustomJob#scheduling}
 
 ---
 
@@ -1901,7 +2058,7 @@ service_account: str
 
 Specifies the service account for workload run-as account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#service_account VertexAiCustomJob#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#service_account VertexAiCustomJob#service_account}
 
 ---
 
@@ -1915,7 +2072,7 @@ tensorboard: str
 
 The name of a Vertex AI Tensorboard resource to which this CustomJob will upload Tensorboard logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#tensorboard VertexAiCustomJob#tensorboard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#tensorboard VertexAiCustomJob#tensorboard}
 
 ---
 
@@ -1949,7 +2106,7 @@ output_uri_prefix: str
 
 Cloud Storage folder URL to store the output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#output_uri_prefix VertexAiCustomJob#output_uri_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#output_uri_prefix VertexAiCustomJob#output_uri_prefix}
 
 ---
 
@@ -1985,7 +2142,7 @@ dns_peering_configs: IResolvable | typing.List[VertexAiCustomJobJobSpecPscInterf
 
 dns_peering_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#dns_peering_configs VertexAiCustomJob#dns_peering_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#dns_peering_configs VertexAiCustomJob#dns_peering_configs}
 
 ---
 
@@ -1999,7 +2156,7 @@ network_attachment: str
 
 The name of the attachment to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#network_attachment VertexAiCustomJob#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#network_attachment VertexAiCustomJob#network_attachment}
 
 ---
 
@@ -2037,7 +2194,7 @@ domain: str
 
 The DNS name suffix of the zone being peered to, e.g., "my-internal-domain.corp.". Must end with a dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#domain VertexAiCustomJob#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#domain VertexAiCustomJob#domain}
 
 ---
 
@@ -2051,7 +2208,7 @@ target_network: str
 
 The VPC network name in the target_project where the DNS zone specified by 'domain' is visible.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#target_network VertexAiCustomJob#target_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#target_network VertexAiCustomJob#target_network}
 
 ---
 
@@ -2067,7 +2224,7 @@ The project ID hosting the Cloud DNS managed zone that contains the 'domain'.
 
 The Vertex AI Service Agent requires the dns.peer role on this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#target_project VertexAiCustomJob#target_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#target_project VertexAiCustomJob#target_project}
 
 ---
 
@@ -2109,7 +2266,7 @@ disable_retries: bool | IResolvable
 
 Indicates if the job should retry for internal errors after the job starts running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#disable_retries VertexAiCustomJob#disable_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#disable_retries VertexAiCustomJob#disable_retries}
 
 ---
 
@@ -2123,7 +2280,7 @@ max_wait_duration: str
 
 The maximum duration that a job will wait for the requested resources to be provisioned if the scheduling strategy is set to FLEX_START.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#max_wait_duration VertexAiCustomJob#max_wait_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#max_wait_duration VertexAiCustomJob#max_wait_duration}
 
 ---
 
@@ -2137,7 +2294,7 @@ restart_job_on_worker_restart: bool | IResolvable
 
 Restarts the entire CustomJob if a worker gets restarted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#restart_job_on_worker_restart VertexAiCustomJob#restart_job_on_worker_restart}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#restart_job_on_worker_restart VertexAiCustomJob#restart_job_on_worker_restart}
 
 ---
 
@@ -2151,7 +2308,7 @@ strategy: str
 
 This determines which type of scheduling strategy to use. Possible values: ["STANDARD", "SPOT", "FLEX_START"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#strategy VertexAiCustomJob#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#strategy VertexAiCustomJob#strategy}
 
 ---
 
@@ -2167,7 +2324,7 @@ The maximum job running time.
 
 The default is 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#timeout VertexAiCustomJob#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#timeout VertexAiCustomJob#timeout}
 
 ---
 
@@ -2213,7 +2370,7 @@ container_spec: VertexAiCustomJobJobSpecWorkerPoolSpecsContainerSpec
 
 container_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#container_spec VertexAiCustomJob#container_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#container_spec VertexAiCustomJob#container_spec}
 
 ---
 
@@ -2227,7 +2384,7 @@ disk_spec: VertexAiCustomJobJobSpecWorkerPoolSpecsDiskSpec
 
 disk_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#disk_spec VertexAiCustomJob#disk_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#disk_spec VertexAiCustomJob#disk_spec}
 
 ---
 
@@ -2241,7 +2398,7 @@ lustre_mounts: IResolvable | typing.List[VertexAiCustomJobJobSpecWorkerPoolSpecs
 
 lustre_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#lustre_mounts VertexAiCustomJob#lustre_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#lustre_mounts VertexAiCustomJob#lustre_mounts}
 
 ---
 
@@ -2255,7 +2412,7 @@ machine_spec: VertexAiCustomJobJobSpecWorkerPoolSpecsMachineSpec
 
 machine_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#machine_spec VertexAiCustomJob#machine_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#machine_spec VertexAiCustomJob#machine_spec}
 
 ---
 
@@ -2269,7 +2426,7 @@ nfs_mounts: IResolvable | typing.List[VertexAiCustomJobJobSpecWorkerPoolSpecsNfs
 
 nfs_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#nfs_mounts VertexAiCustomJob#nfs_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#nfs_mounts VertexAiCustomJob#nfs_mounts}
 
 ---
 
@@ -2283,7 +2440,7 @@ python_package_spec: VertexAiCustomJobJobSpecWorkerPoolSpecsPythonPackageSpec
 
 python_package_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#python_package_spec VertexAiCustomJob#python_package_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#python_package_spec VertexAiCustomJob#python_package_spec}
 
 ---
 
@@ -2297,7 +2454,7 @@ replica_count: typing.Union[int, float]
 
 The number of worker replicas to use for this worker pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#replica_count VertexAiCustomJob#replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#replica_count VertexAiCustomJob#replica_count}
 
 ---
 
@@ -2337,7 +2494,7 @@ image_uri: str
 
 The URI of a container image in the Container Registry that is to be run on each worker replica.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#image_uri VertexAiCustomJob#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#image_uri VertexAiCustomJob#image_uri}
 
 ---
 
@@ -2351,7 +2508,7 @@ args: typing.List[str]
 
 The arguments to be passed when starting the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
 
 ---
 
@@ -2365,7 +2522,7 @@ command: typing.List[str]
 
 The command to be invoked when the container is started. It overrides the entrypoint instruction in Dockerfile when provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#command VertexAiCustomJob#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#command VertexAiCustomJob#command}
 
 ---
 
@@ -2379,7 +2536,7 @@ env: IResolvable | typing.List[VertexAiCustomJobJobSpecWorkerPoolSpecsContainerS
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
 
 ---
 
@@ -2415,7 +2572,7 @@ name: str
 
 Name of the environment variable. Must be a valid C identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#name VertexAiCustomJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#name VertexAiCustomJob#name}
 
 ---
 
@@ -2429,7 +2586,7 @@ value: str
 
 Variables that reference a $(VAR_NAME) are expanded using the previous defined environment variables in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#value VertexAiCustomJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#value VertexAiCustomJob#value}
 
 ---
 
@@ -2465,7 +2622,7 @@ boot_disk_size_gb: typing.Union[int, float]
 
 Size in GB of the boot disk (default is 100GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#boot_disk_size_gb VertexAiCustomJob#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#boot_disk_size_gb VertexAiCustomJob#boot_disk_size_gb}
 
 ---
 
@@ -2481,7 +2638,7 @@ Type of the disk.
 
 The default value depends on the machine type. Valid values include: "pd-ssd", "pd-standard", "pd-balanced", and "hyperdisk-balanced".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#boot_disk_type VertexAiCustomJob#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#boot_disk_type VertexAiCustomJob#boot_disk_type}
 
 ---
 
@@ -2521,7 +2678,7 @@ filesystem: str
 
 The name of the Lustre filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#filesystem VertexAiCustomJob#filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#filesystem VertexAiCustomJob#filesystem}
 
 ---
 
@@ -2535,7 +2692,7 @@ instance_ip: str
 
 IP address of the Lustre instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#instance_ip VertexAiCustomJob#instance_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#instance_ip VertexAiCustomJob#instance_ip}
 
 ---
 
@@ -2549,7 +2706,7 @@ mount_point: str
 
 Destination mount path. The Lustre file system will be mounted for the user under /mnt/lustre/<mount_point>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#mount_point VertexAiCustomJob#mount_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#mount_point VertexAiCustomJob#mount_point}
 
 ---
 
@@ -2563,7 +2720,7 @@ volume_handle: str
 
 The unique identifier of the Lustre volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#volume_handle VertexAiCustomJob#volume_handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#volume_handle VertexAiCustomJob#volume_handle}
 
 ---
 
@@ -2605,7 +2762,7 @@ accelerator_count: typing.Union[int, float]
 
 The number of accelerators to attach to the machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#accelerator_count VertexAiCustomJob#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#accelerator_count VertexAiCustomJob#accelerator_count}
 
 ---
 
@@ -2619,7 +2776,7 @@ accelerator_type: str
 
 The type of accelerator(s) that may be attached to the machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#accelerator_type VertexAiCustomJob#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#accelerator_type VertexAiCustomJob#accelerator_type}
 
 ---
 
@@ -2633,7 +2790,7 @@ machine_type: str
 
 The type of the machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#machine_type VertexAiCustomJob#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#machine_type VertexAiCustomJob#machine_type}
 
 ---
 
@@ -2647,7 +2804,7 @@ reservation_affinity: VertexAiCustomJobJobSpecWorkerPoolSpecsMachineSpecReservat
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#reservation_affinity VertexAiCustomJob#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#reservation_affinity VertexAiCustomJob#reservation_affinity}
 
 ---
 
@@ -2661,7 +2818,7 @@ tpu_topology: str
 
 The topology of the TPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#tpu_topology VertexAiCustomJob#tpu_topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#tpu_topology VertexAiCustomJob#tpu_topology}
 
 ---
 
@@ -2699,7 +2856,7 @@ reservation_affinity_type: str
 
 Specifies the reservation affinity type. Possible values: "NO_RESERVATION", "ANY_RESERVATION", and "SPECIFIC_RESERVATION".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#reservation_affinity_type VertexAiCustomJob#reservation_affinity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#reservation_affinity_type VertexAiCustomJob#reservation_affinity_type}
 
 ---
 
@@ -2713,7 +2870,7 @@ key: str
 
 Corresponds to the label key of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#key VertexAiCustomJob#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#key VertexAiCustomJob#key}
 
 ---
 
@@ -2727,7 +2884,7 @@ values: typing.List[str]
 
 Corresponds to the label values of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#values VertexAiCustomJob#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#values VertexAiCustomJob#values}
 
 ---
 
@@ -2765,7 +2922,7 @@ mount_point: str
 
 Destination mount path. The path must be absolute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#mount_point VertexAiCustomJob#mount_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#mount_point VertexAiCustomJob#mount_point}
 
 ---
 
@@ -2779,7 +2936,7 @@ path: str
 
 Source path exported from NFS database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#path VertexAiCustomJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#path VertexAiCustomJob#path}
 
 ---
 
@@ -2793,7 +2950,7 @@ server: str
 
 IP address of the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#server VertexAiCustomJob#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#server VertexAiCustomJob#server}
 
 ---
 
@@ -2835,7 +2992,7 @@ executor_image_uri: str
 
 The URI of a container image in Artifact Registry that will run the provided Python package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#executor_image_uri VertexAiCustomJob#executor_image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#executor_image_uri VertexAiCustomJob#executor_image_uri}
 
 ---
 
@@ -2849,7 +3006,7 @@ package_uris: typing.List[str]
 
 The Google Cloud Storage location of the Python package files which are the training program and its dependent packages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#package_uris VertexAiCustomJob#package_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#package_uris VertexAiCustomJob#package_uris}
 
 ---
 
@@ -2863,7 +3020,7 @@ python_module: str
 
 The Python module name to run after installing the packages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#python_module VertexAiCustomJob#python_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#python_module VertexAiCustomJob#python_module}
 
 ---
 
@@ -2877,7 +3034,7 @@ args: typing.List[str]
 
 Command line arguments to be passed to the Python task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
 
 ---
 
@@ -2891,7 +3048,7 @@ env: IResolvable | typing.List[VertexAiCustomJobJobSpecWorkerPoolSpecsPythonPack
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
 
 ---
 
@@ -2927,7 +3084,7 @@ name: str
 
 Name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#name VertexAiCustomJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#name VertexAiCustomJob#name}
 
 ---
 
@@ -2941,7 +3098,7 @@ value: str
 
 Value of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#value VertexAiCustomJob#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#value VertexAiCustomJob#value}
 
 ---
 
@@ -2963,9 +3120,9 @@ vertexAiCustomJob.VertexAiCustomJobTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#create VertexAiCustomJob#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#delete VertexAiCustomJob#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#update VertexAiCustomJob#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#create VertexAiCustomJob#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#delete VertexAiCustomJob#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#update VertexAiCustomJob#update}. |
 
 ---
 
@@ -2977,7 +3134,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#create VertexAiCustomJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#create VertexAiCustomJob#create}.
 
 ---
 
@@ -2989,7 +3146,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#delete VertexAiCustomJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#delete VertexAiCustomJob#delete}.
 
 ---
 
@@ -3001,7 +3158,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#update VertexAiCustomJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#update VertexAiCustomJob#update}.
 
 ---
 
@@ -4134,7 +4291,12 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetBaseOutputDirectory">reset_base_output_directory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetEnableDashboardAccess">reset_enable_dashboard_access</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetEnableWebAccess">reset_enable_web_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetExperiment">reset_experiment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetExperimentRun">reset_experiment_run</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetModels">reset_models</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetNetwork">reset_network</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetPersistentResourceId">reset_persistent_resource_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetProtectedArtifactLocationId">reset_protected_artifact_location_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetPscInterfaceConfig">reset_psc_interface_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetReservedIpRanges">reset_reserved_ip_ranges</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetScheduling">reset_scheduling</a></code> | *No description.* |
@@ -4329,7 +4491,7 @@ def put_base_output_directory(
 
 Cloud Storage folder URL to store the output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#output_uri_prefix VertexAiCustomJob#output_uri_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#output_uri_prefix VertexAiCustomJob#output_uri_prefix}
 
 ---
 
@@ -4348,7 +4510,7 @@ def put_psc_interface_config(
 
 dns_peering_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#dns_peering_configs VertexAiCustomJob#dns_peering_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#dns_peering_configs VertexAiCustomJob#dns_peering_configs}
 
 ---
 
@@ -4358,7 +4520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the attachment to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#network_attachment VertexAiCustomJob#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#network_attachment VertexAiCustomJob#network_attachment}
 
 ---
 
@@ -4380,7 +4542,7 @@ def put_scheduling(
 
 Indicates if the job should retry for internal errors after the job starts running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#disable_retries VertexAiCustomJob#disable_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#disable_retries VertexAiCustomJob#disable_retries}
 
 ---
 
@@ -4390,7 +4552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum duration that a job will wait for the requested resources to be provisioned if the scheduling strategy is set to FLEX_START.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#max_wait_duration VertexAiCustomJob#max_wait_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#max_wait_duration VertexAiCustomJob#max_wait_duration}
 
 ---
 
@@ -4400,7 +4562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Restarts the entire CustomJob if a worker gets restarted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#restart_job_on_worker_restart VertexAiCustomJob#restart_job_on_worker_restart}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#restart_job_on_worker_restart VertexAiCustomJob#restart_job_on_worker_restart}
 
 ---
 
@@ -4410,7 +4572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 This determines which type of scheduling strategy to use. Possible values: ["STANDARD", "SPOT", "FLEX_START"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#strategy VertexAiCustomJob#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#strategy VertexAiCustomJob#strategy}
 
 ---
 
@@ -4422,7 +4584,7 @@ The maximum job running time.
 
 The default is 7 days. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#timeout VertexAiCustomJob#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#timeout VertexAiCustomJob#timeout}
 
 ---
 
@@ -4458,10 +4620,40 @@ def reset_enable_dashboard_access() -> None
 def reset_enable_web_access() -> None
 ```
 
+##### `reset_experiment` <a name="reset_experiment" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetExperiment"></a>
+
+```python
+def reset_experiment() -> None
+```
+
+##### `reset_experiment_run` <a name="reset_experiment_run" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetExperimentRun"></a>
+
+```python
+def reset_experiment_run() -> None
+```
+
+##### `reset_models` <a name="reset_models" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetModels"></a>
+
+```python
+def reset_models() -> None
+```
+
 ##### `reset_network` <a name="reset_network" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetNetwork"></a>
 
 ```python
 def reset_network() -> None
+```
+
+##### `reset_persistent_resource_id` <a name="reset_persistent_resource_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetPersistentResourceId"></a>
+
+```python
+def reset_persistent_resource_id() -> None
+```
+
+##### `reset_protected_artifact_location_id` <a name="reset_protected_artifact_location_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetProtectedArtifactLocationId"></a>
+
+```python
+def reset_protected_artifact_location_id() -> None
 ```
 
 ##### `reset_psc_interface_config` <a name="reset_psc_interface_config" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.resetPscInterfaceConfig"></a>
@@ -4508,7 +4700,12 @@ def reset_tensorboard() -> None
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.baseOutputDirectoryInput">base_output_directory_input</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecBaseOutputDirectory">VertexAiCustomJobJobSpecBaseOutputDirectory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.enableDashboardAccessInput">enable_dashboard_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.enableWebAccessInput">enable_web_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experimentInput">experiment_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experimentRunInput">experiment_run_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.modelsInput">models_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.persistentResourceIdInput">persistent_resource_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.protectedArtifactLocationIdInput">protected_artifact_location_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.pscInterfaceConfigInput">psc_interface_config_input</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecPscInterfaceConfig">VertexAiCustomJobJobSpecPscInterfaceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.reservedIpRangesInput">reserved_ip_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.schedulingInput">scheduling_input</a></code> | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecScheduling">VertexAiCustomJobJobSpecScheduling</a></code> | *No description.* |
@@ -4517,7 +4714,12 @@ def reset_tensorboard() -> None
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.workerPoolSpecsInput">worker_pool_specs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecWorkerPoolSpecs">VertexAiCustomJobJobSpecWorkerPoolSpecs</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.enableDashboardAccess">enable_dashboard_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.enableWebAccess">enable_web_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experiment">experiment</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experimentRun">experiment_run</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.models">models</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.network">network</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.persistentResourceId">persistent_resource_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.protectedArtifactLocationId">protected_artifact_location_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.reservedIpRanges">reserved_ip_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.tensorboard">tensorboard</a></code> | <code>str</code> | *No description.* |
@@ -4619,10 +4821,60 @@ enable_web_access_input: bool | IResolvable
 
 ---
 
+##### `experiment_input`<sup>Optional</sup> <a name="experiment_input" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experimentInput"></a>
+
+```python
+experiment_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `experiment_run_input`<sup>Optional</sup> <a name="experiment_run_input" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experimentRunInput"></a>
+
+```python
+experiment_run_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `models_input`<sup>Optional</sup> <a name="models_input" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.modelsInput"></a>
+
+```python
+models_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.networkInput"></a>
 
 ```python
 network_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `persistent_resource_id_input`<sup>Optional</sup> <a name="persistent_resource_id_input" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.persistentResourceIdInput"></a>
+
+```python
+persistent_resource_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `protected_artifact_location_id_input`<sup>Optional</sup> <a name="protected_artifact_location_id_input" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.protectedArtifactLocationIdInput"></a>
+
+```python
+protected_artifact_location_id_input: str
 ```
 
 - *Type:* str
@@ -4709,10 +4961,60 @@ enable_web_access: bool | IResolvable
 
 ---
 
+##### `experiment`<sup>Required</sup> <a name="experiment" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experiment"></a>
+
+```python
+experiment: str
+```
+
+- *Type:* str
+
+---
+
+##### `experiment_run`<sup>Required</sup> <a name="experiment_run" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.experimentRun"></a>
+
+```python
+experiment_run: str
+```
+
+- *Type:* str
+
+---
+
+##### `models`<sup>Required</sup> <a name="models" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.models"></a>
+
+```python
+models: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.network"></a>
 
 ```python
 network: str
+```
+
+- *Type:* str
+
+---
+
+##### `persistent_resource_id`<sup>Required</sup> <a name="persistent_resource_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.persistentResourceId"></a>
+
+```python
+persistent_resource_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `protected_artifact_location_id`<sup>Required</sup> <a name="protected_artifact_location_id" id="@cdktn/provider-google.vertexAiCustomJob.VertexAiCustomJobJobSpecOutputReference.property.protectedArtifactLocationId"></a>
+
+```python
+protected_artifact_location_id: str
 ```
 
 - *Type:* str
@@ -8266,7 +8568,7 @@ def put_reservation_affinity(
 
 Specifies the reservation affinity type. Possible values: "NO_RESERVATION", "ANY_RESERVATION", and "SPECIFIC_RESERVATION".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#reservation_affinity_type VertexAiCustomJob#reservation_affinity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#reservation_affinity_type VertexAiCustomJob#reservation_affinity_type}
 
 ---
 
@@ -8276,7 +8578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Corresponds to the label key of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#key VertexAiCustomJob#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#key VertexAiCustomJob#key}
 
 ---
 
@@ -8286,7 +8588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Corresponds to the label values of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#values VertexAiCustomJob#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#values VertexAiCustomJob#values}
 
 ---
 
@@ -9638,7 +9940,7 @@ def put_container_spec(
 
 The URI of a container image in the Container Registry that is to be run on each worker replica.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#image_uri VertexAiCustomJob#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#image_uri VertexAiCustomJob#image_uri}
 
 ---
 
@@ -9648,7 +9950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The arguments to be passed when starting the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
 
 ---
 
@@ -9658,7 +9960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The command to be invoked when the container is started. It overrides the entrypoint instruction in Dockerfile when provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#command VertexAiCustomJob#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#command VertexAiCustomJob#command}
 
 ---
 
@@ -9668,7 +9970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
 
 ---
 
@@ -9687,7 +9989,7 @@ def put_disk_spec(
 
 Size in GB of the boot disk (default is 100GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#boot_disk_size_gb VertexAiCustomJob#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#boot_disk_size_gb VertexAiCustomJob#boot_disk_size_gb}
 
 ---
 
@@ -9699,7 +10001,7 @@ Type of the disk.
 
 The default value depends on the machine type. Valid values include: "pd-ssd", "pd-standard", "pd-balanced", and "hyperdisk-balanced".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#boot_disk_type VertexAiCustomJob#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#boot_disk_type VertexAiCustomJob#boot_disk_type}
 
 ---
 
@@ -9735,7 +10037,7 @@ def put_machine_spec(
 
 The number of accelerators to attach to the machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#accelerator_count VertexAiCustomJob#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#accelerator_count VertexAiCustomJob#accelerator_count}
 
 ---
 
@@ -9745,7 +10047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of accelerator(s) that may be attached to the machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#accelerator_type VertexAiCustomJob#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#accelerator_type VertexAiCustomJob#accelerator_type}
 
 ---
 
@@ -9755,7 +10057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of the machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#machine_type VertexAiCustomJob#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#machine_type VertexAiCustomJob#machine_type}
 
 ---
 
@@ -9765,7 +10067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#reservation_affinity VertexAiCustomJob#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#reservation_affinity VertexAiCustomJob#reservation_affinity}
 
 ---
 
@@ -9775,7 +10077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The topology of the TPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#tpu_topology VertexAiCustomJob#tpu_topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#tpu_topology VertexAiCustomJob#tpu_topology}
 
 ---
 
@@ -9811,7 +10113,7 @@ def put_python_package_spec(
 
 The URI of a container image in Artifact Registry that will run the provided Python package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#executor_image_uri VertexAiCustomJob#executor_image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#executor_image_uri VertexAiCustomJob#executor_image_uri}
 
 ---
 
@@ -9821,7 +10123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Google Cloud Storage location of the Python package files which are the training program and its dependent packages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#package_uris VertexAiCustomJob#package_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#package_uris VertexAiCustomJob#package_uris}
 
 ---
 
@@ -9831,7 +10133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Python module name to run after installing the packages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#python_module VertexAiCustomJob#python_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#python_module VertexAiCustomJob#python_module}
 
 ---
 
@@ -9841,7 +10143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Command line arguments to be passed to the Python task.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#args VertexAiCustomJob#args}
 
 ---
 
@@ -9851,7 +10153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/vertex_ai_custom_job#env VertexAiCustomJob#env}
 
 ---
 

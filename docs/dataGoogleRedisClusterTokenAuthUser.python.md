@@ -4,7 +4,7 @@
 
 ### DataGoogleRedisClusterTokenAuthUser <a name="DataGoogleRedisClusterTokenAuthUser" id="@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user google_redis_cluster_token_auth_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user google_redis_cluster_token_auth_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer"></a>
 
@@ -42,8 +42,8 @@ dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser(
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | The name or resource ID of the Redis cluster. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | The unique ID (username) of the Token Auth User. The 'default' user cannot be managed with this resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUser.Initializer.parameter.region">region</a></code> | <code>str</code> | The name of the region of the Redis cluster. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name or resource ID of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#cluster DataGoogleRedisClusterTokenAuthUser#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#cluster DataGoogleRedisClusterTokenAuthUser#cluster}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique ID (username) of the Token Auth User. The 'default' user cannot be managed with this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#user_id DataGoogleRedisClusterTokenAuthUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#user_id DataGoogleRedisClusterTokenAuthUser#user_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the region of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#region DataGoogleRedisClusterTokenAuthUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#region DataGoogleRedisClusterTokenAuthUser#region}
 
 ---
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the DataGoogleRedisClusterToke
 
 The id of the existing DataGoogleRedisClusterTokenAuthUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,8 +909,8 @@ dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.cluster">cluster</a></code> | <code>str</code> | The name or resource ID of the Redis cluster. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.userId">user_id</a></code> | <code>str</code> | The unique ID (username) of the Token Auth User. The 'default' user cannot be managed with this resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterTokenAuthUser.DataGoogleRedisClusterTokenAuthUserConfig.property.region">region</a></code> | <code>str</code> | The name of the region of the Redis cluster. |
 
 ---
@@ -995,7 +995,7 @@ cluster: str
 
 The name or resource ID of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#cluster DataGoogleRedisClusterTokenAuthUser#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#cluster DataGoogleRedisClusterTokenAuthUser#cluster}
 
 ---
 
@@ -1009,7 +1009,7 @@ user_id: str
 
 The unique ID (username) of the Token Auth User. The 'default' user cannot be managed with this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#user_id DataGoogleRedisClusterTokenAuthUser#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#user_id DataGoogleRedisClusterTokenAuthUser#user_id}
 
 ---
 
@@ -1021,7 +1021,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#id DataGoogleRedisClusterTokenAuthUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#project DataGoogleRedisClusterTokenAuthUser#project}.
 
 ---
 
@@ -1050,7 +1050,7 @@ region: str
 
 The name of the region of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/data-sources/redis_cluster_token_auth_user#region DataGoogleRedisClusterTokenAuthUser#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/data-sources/redis_cluster_token_auth_user#region DataGoogleRedisClusterTokenAuthUser#region}
 
 ---
 

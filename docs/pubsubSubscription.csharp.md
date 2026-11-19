@@ -4,7 +4,7 @@
 
 ### PubsubSubscription <a name="PubsubSubscription" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscription.Initializer"></a>
 
@@ -746,7 +746,7 @@ The construct id used in the generated config for the PubsubSubscription to impo
 
 The id of the existing PubsubSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1487,7 +1487,7 @@ public string Table { get; set; }
 
 The name of the table to which to write data, of the form {projectId}.{datasetId}.{tableId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#table PubsubSubscription#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#table PubsubSubscription#table}
 
 ---
 
@@ -1504,7 +1504,7 @@ When true and use_topic_schema or use_table_schema is true, any fields that are 
 Otherwise, the schemas must be kept in sync
 and any messages with extra fields are not written and remain in the subscription's backlog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#drop_unknown_fields PubsubSubscription#drop_unknown_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#drop_unknown_fields PubsubSubscription#drop_unknown_fields}
 
 ---
 
@@ -1518,7 +1518,7 @@ public string ServiceAccountEmail { get; set; }
 
 The service account to use to write to BigQuery. If not specified, the Pub/Sub [service agent](https://cloud.google.com/iam/docs/service-agents), service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
 
 ---
 
@@ -1535,7 +1535,7 @@ When true, use the BigQuery table's schema as the columns to write to in BigQuer
 Messages
 must be published in JSON format. Only one of use_topic_schema and use_table_schema can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#use_table_schema PubsubSubscription#use_table_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#use_table_schema PubsubSubscription#use_table_schema}
 
 ---
 
@@ -1551,7 +1551,7 @@ When true, use the topic's schema as the columns to write to in BigQuery, if it 
 
 Only one of use_topic_schema and use_table_schema can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#use_topic_schema PubsubSubscription#use_topic_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#use_topic_schema PubsubSubscription#use_topic_schema}
 
 ---
 
@@ -1567,7 +1567,7 @@ When true, write the subscription name, messageId, publishTime, attributes, and 
 
 The subscription name, messageId, and publishTime fields are put in their own columns while all other message properties (other than data) are written to a JSON object in the attributes column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
 
 ---
 
@@ -1609,7 +1609,7 @@ public string Table { get; set; }
 
 The unique name of the table to write messages to, of the form 'projects/{project}/instances/{instance}/tables/{table}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#table PubsubSubscription#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#table PubsubSubscription#table}
 
 ---
 
@@ -1626,7 +1626,7 @@ The app profile to use for the Bigtable writes.
 If not specified, the "default" application
 profile will be used. The app profile must use single-cluster routing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#app_profile_id PubsubSubscription#app_profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#app_profile_id PubsubSubscription#app_profile_id}
 
 ---
 
@@ -1640,7 +1640,7 @@ public PubsubSubscriptionBigtableConfigColumnFamilyMapping ColumnFamilyMapping {
 
 column_family_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#column_family_mapping PubsubSubscription#column_family_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#column_family_mapping PubsubSubscription#column_family_mapping}
 
 ---
 
@@ -1659,7 +1659,7 @@ specifies this field must have 'iam.serviceAccounts.actAs' permission on the ser
 If not specified, the Pub/Sub [service agent](https://cloud.google.com/iam/docs/service-agents),
 service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
 
 ---
 
@@ -1677,7 +1677,7 @@ The subscription name,
 messageId, and publishTime fields are put in their own columns while all other message properties
 (other than data) are written to a JSON object in the attributes column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
 
 ---
 
@@ -1713,7 +1713,7 @@ public PubsubSubscriptionBigtableConfigColumnFamilyMappingDelimitedKey Delimited
 
 delimited_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#delimited_key PubsubSubscription#delimited_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#delimited_key PubsubSubscription#delimited_key}
 
 ---
 
@@ -1727,7 +1727,7 @@ public PubsubSubscriptionBigtableConfigColumnFamilyMappingRowKeySchema RowKeySch
 
 row_key_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#row_key_schema PubsubSubscription#row_key_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#row_key_schema PubsubSubscription#row_key_schema}
 
 ---
 
@@ -1766,7 +1766,7 @@ The key fields to construct the row key from.
 The fields must be present in the message
 as top-level fields; JSON path expressions will not traverse into nested objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#key_fields PubsubSubscription#key_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#key_fields PubsubSubscription#key_fields}
 
 ---
 
@@ -1783,7 +1783,7 @@ The byte sequence used to delimit concatenated key fields, as a base64-encoded s
 Must be specified if multiple key fields are used. The
 delimiter must contain at least 1 character and at most 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#delimiter PubsubSubscription#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#delimiter PubsubSubscription#delimiter}
 
 ---
 
@@ -1850,7 +1850,7 @@ User-provided name for the Cloud Storage bucket.
 
 The bucket must be created by the user. The bucket name must be without any prefix like "gs://".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#bucket PubsubSubscription#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#bucket PubsubSubscription#bucket}
 
 ---
 
@@ -1864,7 +1864,7 @@ public PubsubSubscriptionCloudStorageConfigAvroConfig AvroConfig { get; set; }
 
 avro_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#avro_config PubsubSubscription#avro_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#avro_config PubsubSubscription#avro_config}
 
 ---
 
@@ -1878,7 +1878,7 @@ public string FilenameDatetimeFormat { get; set; }
 
 User-provided format string specifying how to represent datetimes in Cloud Storage filenames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#filename_datetime_format PubsubSubscription#filename_datetime_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#filename_datetime_format PubsubSubscription#filename_datetime_format}
 
 ---
 
@@ -1892,7 +1892,7 @@ public string FilenamePrefix { get; set; }
 
 User-provided prefix for Cloud Storage filename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#filename_prefix PubsubSubscription#filename_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#filename_prefix PubsubSubscription#filename_prefix}
 
 ---
 
@@ -1906,7 +1906,7 @@ public string FilenameSuffix { get; set; }
 
 User-provided suffix for Cloud Storage filename. Must not end in "/".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#filename_suffix PubsubSubscription#filename_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#filename_suffix PubsubSubscription#filename_suffix}
 
 ---
 
@@ -1923,7 +1923,7 @@ The maximum bytes that can be written to a Cloud Storage file before a new file 
 Min 1 KB, max 10 GiB.
 The maxBytes limit may be exceeded in cases where messages are larger than the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#max_bytes PubsubSubscription#max_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#max_bytes PubsubSubscription#max_bytes}
 
 ---
 
@@ -1941,7 +1941,7 @@ Min 1 minute, max 10 minutes, default 5 minutes.
 May not exceed the subscription's acknowledgement deadline.
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#max_duration PubsubSubscription#max_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#max_duration PubsubSubscription#max_duration}
 
 ---
 
@@ -1957,7 +1957,7 @@ The maximum messages that can be written to a Cloud Storage file before a new fi
 
 Min 1000 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#max_messages PubsubSubscription#max_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#max_messages PubsubSubscription#max_messages}
 
 ---
 
@@ -1971,7 +1971,7 @@ public string ServiceAccountEmail { get; set; }
 
 The service account to use to write to Cloud Storage. If not specified, the Pub/Sub [service agent](https://cloud.google.com/iam/docs/service-agents), service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
 
 ---
 
@@ -1985,7 +1985,7 @@ public PubsubSubscriptionCloudStorageConfigTextConfig TextConfig { get; set; }
 
 text_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#text_config PubsubSubscription#text_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#text_config PubsubSubscription#text_config}
 
 ---
 
@@ -2021,7 +2021,7 @@ public bool|IResolvable UseTopicSchema { get; set; }
 
 When true, the output Cloud Storage file will be serialized using the topic schema, if it exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#use_topic_schema PubsubSubscription#use_topic_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#use_topic_schema PubsubSubscription#use_topic_schema}
 
 ---
 
@@ -2035,7 +2035,7 @@ public bool|IResolvable WriteMetadata { get; set; }
 
 When true, write the subscription name, messageId, publishTime, attributes, and orderingKey as additional fields in the output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
 
 ---
 
@@ -2115,11 +2115,11 @@ new PubsubSubscriptionConfig {
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.enableMessageOrdering">EnableMessageOrdering</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If 'true', messages published with the same orderingKey in PubsubMessage will be delivered to the subscribers in the order in which they are received by the Pub/Sub system. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.expirationPolicy">ExpirationPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicy">PubsubSubscriptionExpirationPolicy</a></code> | expiration_policy block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.filter">Filter</a></code> | <code>string</code> | The subscription only delivers the messages that match the filter. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#id PubsubSubscription#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#id PubsubSubscription#id}. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A set of key/value label pairs to assign to this Subscription. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.messageRetentionDuration">MessageRetentionDuration</a></code> | <code>string</code> | How long to retain unacknowledged messages in the subscription's backlog, from the moment a message is published. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.messageTransforms">MessageTransforms</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | message_transforms block. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#project PubsubSubscription#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#project PubsubSubscription#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.pushConfig">PushConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfig">PubsubSubscriptionPushConfig</a></code> | push_config block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.retainAckedMessages">RetainAckedMessages</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Indicates whether to retain acknowledged messages. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicy">PubsubSubscriptionRetryPolicy</a></code> | retry_policy block. |
@@ -2208,7 +2208,7 @@ public string Name { get; set; }
 
 Name of the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#name PubsubSubscription#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#name PubsubSubscription#name}
 
 ---
 
@@ -2222,7 +2222,7 @@ public string Topic { get; set; }
 
 A reference to a Topic resource, of the form projects/{project}/topics/{{name}} (as in the id property of a google_pubsub_topic), or just a topic name if the topic is in the same project as the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#topic PubsubSubscription#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#topic PubsubSubscription#topic}
 
 ---
 
@@ -2254,7 +2254,7 @@ for the call to the push endpoint.
 If the subscriber never acknowledges the message, the Pub/Sub system
 will eventually redeliver the message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#ack_deadline_seconds PubsubSubscription#ack_deadline_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#ack_deadline_seconds PubsubSubscription#ack_deadline_seconds}
 
 ---
 
@@ -2268,7 +2268,7 @@ public PubsubSubscriptionBigqueryConfig BigqueryConfig { get; set; }
 
 bigquery_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#bigquery_config PubsubSubscription#bigquery_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#bigquery_config PubsubSubscription#bigquery_config}
 
 ---
 
@@ -2282,7 +2282,7 @@ public PubsubSubscriptionBigtableConfig BigtableConfig { get; set; }
 
 bigtable_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#bigtable_config PubsubSubscription#bigtable_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#bigtable_config PubsubSubscription#bigtable_config}
 
 ---
 
@@ -2296,7 +2296,7 @@ public PubsubSubscriptionCloudStorageConfig CloudStorageConfig { get; set; }
 
 cloud_storage_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#cloud_storage_config PubsubSubscription#cloud_storage_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#cloud_storage_config PubsubSubscription#cloud_storage_config}
 
 ---
 
@@ -2310,7 +2310,7 @@ public PubsubSubscriptionDeadLetterPolicy DeadLetterPolicy { get; set; }
 
 dead_letter_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#dead_letter_policy PubsubSubscription#dead_letter_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#dead_letter_policy PubsubSubscription#dead_letter_policy}
 
 ---
 
@@ -2331,7 +2331,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#deletion_policy PubsubSubscription#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#deletion_policy PubsubSubscription#deletion_policy}
 
 ---
 
@@ -2350,7 +2350,7 @@ If 'true', Pub/Sub provides the following guarantees for the delivery of a messa
 Note that subscribers may still receive multiple copies of a message when 'enable_exactly_once_delivery'
 is true if the message was published multiple times by a publisher client. These copies are considered distinct by Pub/Sub and have distinct messageId values
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#enable_exactly_once_delivery PubsubSubscription#enable_exactly_once_delivery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#enable_exactly_once_delivery PubsubSubscription#enable_exactly_once_delivery}
 
 ---
 
@@ -2367,7 +2367,7 @@ If 'true', messages published with the same orderingKey in PubsubMessage will be
 Otherwise, they
 may be delivered in any order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#enable_message_ordering PubsubSubscription#enable_message_ordering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#enable_message_ordering PubsubSubscription#enable_message_ordering}
 
 ---
 
@@ -2381,7 +2381,7 @@ public PubsubSubscriptionExpirationPolicy ExpirationPolicy { get; set; }
 
 expiration_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#expiration_policy PubsubSubscription#expiration_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#expiration_policy PubsubSubscription#expiration_policy}
 
 ---
 
@@ -2399,7 +2399,7 @@ Pub/Sub automatically acknowledges the messages that don't match the filter. You
 by their attributes. The maximum length of a filter is 256 bytes. After creating the subscription,
 you can't modify the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#filter PubsubSubscription#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#filter PubsubSubscription#filter}
 
 ---
 
@@ -2411,7 +2411,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#id PubsubSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#id PubsubSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2431,7 +2431,7 @@ A set of key/value label pairs to assign to this Subscription.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#labels PubsubSubscription#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#labels PubsubSubscription#labels}
 
 ---
 
@@ -2454,7 +2454,7 @@ than 31 days ('"2678400s"') or less than 10 minutes ('"600s"').
 A duration in seconds with up to nine fractional digits, terminated
 by 's'. Example: '"600.5s"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#message_retention_duration PubsubSubscription#message_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#message_retention_duration PubsubSubscription#message_retention_duration}
 
 ---
 
@@ -2468,7 +2468,7 @@ public IResolvable|PubsubSubscriptionMessageTransforms[] MessageTransforms { get
 
 message_transforms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#message_transforms PubsubSubscription#message_transforms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#message_transforms PubsubSubscription#message_transforms}
 
 ---
 
@@ -2480,7 +2480,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#project PubsubSubscription#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#project PubsubSubscription#project}.
 
 ---
 
@@ -2494,7 +2494,7 @@ public PubsubSubscriptionPushConfig PushConfig { get; set; }
 
 push_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#push_config PubsubSubscription#push_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#push_config PubsubSubscription#push_config}
 
 ---
 
@@ -2513,7 +2513,7 @@ messages are not expunged from the subscription's backlog, even if
 they are acknowledged, until they fall out of the
 messageRetentionDuration window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#retain_acked_messages PubsubSubscription#retain_acked_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#retain_acked_messages PubsubSubscription#retain_acked_messages}
 
 ---
 
@@ -2527,7 +2527,7 @@ public PubsubSubscriptionRetryPolicy RetryPolicy { get; set; }
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#retry_policy PubsubSubscription#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#retry_policy PubsubSubscription#retry_policy}
 
 ---
 
@@ -2550,7 +2550,7 @@ time and modifying this field after creation will trigger recreation. To
 apply tags to an existing resource, see the 'google_tags_tag_value'
 resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#tags PubsubSubscription#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#tags PubsubSubscription#tags}
 
 ---
 
@@ -2564,7 +2564,7 @@ public PubsubSubscriptionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#timeouts PubsubSubscription#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#timeouts PubsubSubscription#timeouts}
 
 ---
 
@@ -2609,7 +2609,7 @@ The operation will fail if the topic does not exist.
 Users should ensure that there is a subscription attached to this topic
 since messages published to a topic with no subscriptions are lost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#dead_letter_topic PubsubSubscription#dead_letter_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#dead_letter_topic PubsubSubscription#dead_letter_topic}
 
 ---
 
@@ -2633,7 +2633,7 @@ This field will be honored on a best effort basis.
 
 If this parameter is 0, a default value of 5 is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#max_delivery_attempts PubsubSubscription#max_delivery_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#max_delivery_attempts PubsubSubscription#max_delivery_attempts}
 
 ---
 
@@ -2673,7 +2673,7 @@ If ttl is set to "", the associated resource never expires.
 A duration in seconds with up to nine fractional digits, terminated by 's'.
 Example - "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#ttl PubsubSubscription#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#ttl PubsubSubscription#ttl}
 
 ---
 
@@ -2713,7 +2713,7 @@ public PubsubSubscriptionMessageTransformsAiInference AiInference { get; set; }
 
 ai_inference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#ai_inference PubsubSubscription#ai_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#ai_inference PubsubSubscription#ai_inference}
 
 ---
 
@@ -2727,7 +2727,7 @@ public PubsubSubscriptionMessageTransformsCompression Compression { get; set; }
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#compression PubsubSubscription#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#compression PubsubSubscription#compression}
 
 ---
 
@@ -2744,7 +2744,7 @@ Controls whether or not to use this transform.
 If not set or 'false',
 the transform will be applied to messages. Default: 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#disabled PubsubSubscription#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#disabled PubsubSubscription#disabled}
 
 ---
 
@@ -2758,7 +2758,7 @@ public PubsubSubscriptionMessageTransformsJavascriptUdf JavascriptUdf { get; set
 
 javascript_udf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#javascript_udf PubsubSubscription#javascript_udf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#javascript_udf PubsubSubscription#javascript_udf}
 
 ---
 
@@ -2798,7 +2798,7 @@ The endpoint to a Vertex AI model of the form 'projects/{project}/locations/{loc
 
 Vertex AI API requests will be sent to this endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#endpoint PubsubSubscription#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#endpoint PubsubSubscription#endpoint}
 
 ---
 
@@ -2812,7 +2812,7 @@ public string ServiceAccountEmail { get; set; }
 
 The service account to use to make prediction requests against endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
 
 ---
 
@@ -2826,7 +2826,7 @@ public PubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference Unstr
 
 unstructured_inference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#unstructured_inference PubsubSubscription#unstructured_inference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#unstructured_inference PubsubSubscription#unstructured_inference}
 
 ---
 
@@ -2863,7 +2863,7 @@ A parameters object to be included in each inference request.
 The parameters object is combined with the data field of the Pub/Sub
 message to form the inference request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#parameters PubsubSubscription#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#parameters PubsubSubscription#parameters}
 
 ---
 
@@ -2899,7 +2899,7 @@ public string CompressionAlgorithm { get; set; }
 
 Specifies the compression algorithm to use. Possible values include 'ZLIB'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#compression_algorithm PubsubSubscription#compression_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#compression_algorithm PubsubSubscription#compression_algorithm}
 
 ---
 
@@ -2913,7 +2913,7 @@ public string CompressionMode { get; set; }
 
 Specifies whether to compress or decompress the message. Possible values: ["COMPRESS", "DECOMPRESS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#compression_mode PubsubSubscription#compression_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#compression_mode PubsubSubscription#compression_mode}
 
 ---
 
@@ -2963,7 +2963,7 @@ public string FunctionName { get; set; }
 
 Name of the JavaScript function that should be applied to Pub/Sub messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#function_name PubsubSubscription#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#function_name PubsubSubscription#function_name}
 
 ---
 
@@ -3003,7 +3003,7 @@ public string PushEndpoint { get; set; }
 
 A URL locating the endpoint to which messages should be pushed. For example, a Webhook endpoint might use "https://example.com/push".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#push_endpoint PubsubSubscription#push_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#push_endpoint PubsubSubscription#push_endpoint}
 
 ---
 
@@ -3039,7 +3039,7 @@ The possible values for this attribute are:
 * v1beta1: uses the push format defined in the v1beta1 Pub/Sub API.
 * v1 or v1beta2: uses the push format defined in the v1 Pub/Sub API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#attributes PubsubSubscription#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#attributes PubsubSubscription#attributes}
 
 ---
 
@@ -3053,7 +3053,7 @@ public PubsubSubscriptionPushConfigNoWrapper NoWrapper { get; set; }
 
 no_wrapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#no_wrapper PubsubSubscription#no_wrapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#no_wrapper PubsubSubscription#no_wrapper}
 
 ---
 
@@ -3067,7 +3067,7 @@ public PubsubSubscriptionPushConfigOidcToken OidcToken { get; set; }
 
 oidc_token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#oidc_token PubsubSubscription#oidc_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#oidc_token PubsubSubscription#oidc_token}
 
 ---
 
@@ -3104,7 +3104,7 @@ When true, writes the Pub/Sub message metadata to 'x-goog-pubsub-<KEY>:<VAL>' he
 Writes the
 Pub/Sub message attributes to '<KEY>:<VAL>' headers of the HTTP request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
 
 ---
 
@@ -3144,7 +3144,7 @@ The caller (for subscriptions.create, subscriptions.patch, and
 subscriptions.modifyPushConfig RPCs) must have the
 iam.serviceAccounts.actAs permission for the service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#service_account_email PubsubSubscription#service_account_email}
 
 ---
 
@@ -3165,7 +3165,7 @@ for the audience field is not supported. More info about the OIDC JWT
 token audience here: https://tools.ietf.org/html/rfc7519#section-4.1.3
 Note: if not specified, the Push endpoint URL will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#audience PubsubSubscription#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#audience PubsubSubscription#audience}
 
 ---
 
@@ -3204,7 +3204,7 @@ The maximum delay between consecutive deliveries of a given message.
 Value should be between 0 and 600 seconds. Defaults to 600 seconds.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#maximum_backoff PubsubSubscription#maximum_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#maximum_backoff PubsubSubscription#maximum_backoff}
 
 ---
 
@@ -3221,7 +3221,7 @@ The minimum delay between consecutive deliveries of a given message.
 Value should be between 0 and 600 seconds. Defaults to 10 seconds.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#minimum_backoff PubsubSubscription#minimum_backoff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#minimum_backoff PubsubSubscription#minimum_backoff}
 
 ---
 
@@ -3243,9 +3243,9 @@ new PubsubSubscriptionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#create PubsubSubscription#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#delete PubsubSubscription#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#update PubsubSubscription#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#create PubsubSubscription#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#delete PubsubSubscription#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#update PubsubSubscription#update}. |
 
 ---
 
@@ -3257,7 +3257,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#create PubsubSubscription#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#create PubsubSubscription#create}.
 
 ---
 
@@ -3269,7 +3269,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#delete PubsubSubscription#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#delete PubsubSubscription#delete}.
 
 ---
 
@@ -3281,7 +3281,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/pubsub_subscription#update PubsubSubscription#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/pubsub_subscription#update PubsubSubscription#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeUrlMap <a name="ComputeUrlMap" id="@cdktn/provider-google.computeUrlMap.ComputeUrlMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map google_compute_url_map}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map google_compute_url_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer"></a>
 
@@ -58,9 +58,9 @@ computeUrlMap.ComputeUrlMap(
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.headerAction">header_action</a></code> | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapHeaderAction">ComputeUrlMapHeaderAction</a></code> | header_action block. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.hostRule">host_rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapHostRule">ComputeUrlMapHostRule</a>]</code> | host_rule block. |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#id ComputeUrlMap#id}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#id ComputeUrlMap#id}. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.pathMatcher">path_matcher</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapPathMatcher">ComputeUrlMapPathMatcher</a>]</code> | path_matcher block. |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#project ComputeUrlMap#project}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#project ComputeUrlMap#project}. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.test">test</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTest">ComputeUrlMapTest</a>]</code> | test block. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMap.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts">ComputeUrlMapTimeouts</a></code> | timeouts block. |
 
@@ -139,7 +139,7 @@ name must be 1-63 characters long and match the regular expression
 letter, and all following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_custom_error_response_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_route_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The backend service or backend bucket to use when none of the given rules match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_url_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
 
 ---
 
@@ -196,7 +196,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#deletion_policy ComputeUrlMap#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#deletion_policy ComputeUrlMap#deletion_policy}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 host_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rule ComputeUrlMap#host_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rule ComputeUrlMap#host_rule}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#id ComputeUrlMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#id ComputeUrlMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -247,7 +247,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 path_matcher block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_matcher ComputeUrlMap#path_matcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_matcher ComputeUrlMap#path_matcher}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#project ComputeUrlMap#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#project ComputeUrlMap#project}.
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 test block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#test ComputeUrlMap#test}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#test ComputeUrlMap#test}
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeouts ComputeUrlMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeouts ComputeUrlMap#timeouts}
 
 ---
 
@@ -694,7 +694,7 @@ def put_default_custom_error_response_policy(
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -711,7 +711,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -738,7 +738,7 @@ def put_default_route_action(
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -808,7 +808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -818,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -855,7 +855,7 @@ If set to false, the query portion of the original URL is
 retained. The default is set to false.
 This field is required to ensure an empty block is not set. The normal default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -867,7 +867,7 @@ The host that will be used in the redirect response instead of the one that was 
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -882,7 +882,7 @@ false, the URL scheme of the redirected request will remain the same as that of 
 request. This must only be set for UrlMaps used in TargetHttpProxys. Setting this
 true for TargetHttpsProxy is not permitted. The default is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -897,7 +897,7 @@ prefixRedirect. Supply one alone or neither. If neither is supplied, the path of
 original request will be used for the redirect. The value must be between 1 and 1024
 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -911,7 +911,7 @@ prefixRedirect cannot be supplied together with pathRedirect. Supply one alone o
 neither. If neither is supplied, the path of the original request will be used for
 the redirect. The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -929,7 +929,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case,
   the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -950,7 +950,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -1040,7 +1040,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#create ComputeUrlMap#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#create ComputeUrlMap#create}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#update ComputeUrlMap#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#update ComputeUrlMap#update}.
 
 ---
 
@@ -1252,7 +1252,7 @@ The construct id used in the generated config for the ComputeUrlMap to import.
 
 The id of the existing ComputeUrlMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1851,9 +1851,9 @@ computeUrlMap.ComputeUrlMapConfig(
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.headerAction">header_action</a></code> | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapHeaderAction">ComputeUrlMapHeaderAction</a></code> | header_action block. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.hostRule">host_rule</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapHostRule">ComputeUrlMapHostRule</a>]</code> | host_rule block. |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#id ComputeUrlMap#id}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#id ComputeUrlMap#id}. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.pathMatcher">path_matcher</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapPathMatcher">ComputeUrlMapPathMatcher</a>]</code> | path_matcher block. |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#project ComputeUrlMap#project}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#project ComputeUrlMap#project}. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.test">test</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTest">ComputeUrlMapTest</a>]</code> | test block. |
 | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts">ComputeUrlMapTimeouts</a></code> | timeouts block. |
 
@@ -1946,7 +1946,7 @@ name must be 1-63 characters long and match the regular expression
 letter, and all following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
 
 ---
 
@@ -1960,7 +1960,7 @@ default_custom_error_response_policy: ComputeUrlMapDefaultCustomErrorResponsePol
 
 default_custom_error_response_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
 
 ---
 
@@ -1974,7 +1974,7 @@ default_route_action: ComputeUrlMapDefaultRouteAction
 
 default_route_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
 
 ---
 
@@ -1988,7 +1988,7 @@ default_service: str
 
 The backend service or backend bucket to use when none of the given rules match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
 
 ---
 
@@ -2002,7 +2002,7 @@ default_url_redirect: ComputeUrlMapDefaultUrlRedirect
 
 default_url_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
 
 ---
 
@@ -2023,7 +2023,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#deletion_policy ComputeUrlMap#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#deletion_policy ComputeUrlMap#deletion_policy}
 
 ---
 
@@ -2037,7 +2037,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
 
 ---
 
@@ -2051,7 +2051,7 @@ header_action: ComputeUrlMapHeaderAction
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -2065,7 +2065,7 @@ host_rule: IResolvable | typing.List[ComputeUrlMapHostRule]
 
 host_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rule ComputeUrlMap#host_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rule ComputeUrlMap#host_rule}
 
 ---
 
@@ -2077,7 +2077,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#id ComputeUrlMap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#id ComputeUrlMap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2094,7 +2094,7 @@ path_matcher: IResolvable | typing.List[ComputeUrlMapPathMatcher]
 
 path_matcher block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_matcher ComputeUrlMap#path_matcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_matcher ComputeUrlMap#path_matcher}
 
 ---
 
@@ -2106,7 +2106,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#project ComputeUrlMap#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#project ComputeUrlMap#project}.
 
 ---
 
@@ -2120,7 +2120,7 @@ test: IResolvable | typing.List[ComputeUrlMapTest]
 
 test block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#test ComputeUrlMap#test}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#test ComputeUrlMap#test}
 
 ---
 
@@ -2134,7 +2134,7 @@ timeouts: ComputeUrlMapTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeouts ComputeUrlMap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeouts ComputeUrlMap#timeouts}
 
 ---
 
@@ -2170,7 +2170,7 @@ error_response_rule: IResolvable | typing.List[ComputeUrlMapDefaultCustomErrorRe
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -2191,7 +2191,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -2233,7 +2233,7 @@ Valid values include: - A number between 400 and 599: For example 401 or 503, in
 * 4xx: Load Balancer will apply the policy if the backend service responds with any response code in the range of 400 to 499.
   Values must be unique within matchResponseCodes and across all errorResponseRules of CustomErrorResponsePolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
 
 ---
 
@@ -2249,7 +2249,7 @@ The HTTP status code returned with the response containing the custom error cont
 
 If overrideResponseCode is not supplied, the same response code returned by the original backend bucket or backend service is returned to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
 
 ---
 
@@ -2268,7 +2268,7 @@ path must start with a leading slash. path cannot have trailing slashes.
 If the file is not available in backendBucket or the load balancer cannot reach the BackendBucket, a simple Not Found Error is returned to the client.
 The value must be from 1 to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
 
 ---
 
@@ -2320,7 +2320,7 @@ cache_policy: ComputeUrlMapDefaultRouteActionCachePolicy
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -2334,7 +2334,7 @@ cors_policy: ComputeUrlMapDefaultRouteActionCorsPolicy
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -2348,7 +2348,7 @@ fault_injection_policy: ComputeUrlMapDefaultRouteActionFaultInjectionPolicy
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -2362,7 +2362,7 @@ image_optimization_policy: ComputeUrlMapDefaultRouteActionImageOptimizationPolic
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -2376,7 +2376,7 @@ max_stream_duration: ComputeUrlMapDefaultRouteActionMaxStreamDuration
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -2390,7 +2390,7 @@ request_mirror_policy: ComputeUrlMapDefaultRouteActionRequestMirrorPolicy
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -2404,7 +2404,7 @@ retry_policy: ComputeUrlMapDefaultRouteActionRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -2418,7 +2418,7 @@ timeout: ComputeUrlMapDefaultRouteActionTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -2432,7 +2432,7 @@ url_rewrite: ComputeUrlMapDefaultRouteActionUrlRewrite
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -2446,7 +2446,7 @@ weighted_backend_services: IResolvable | typing.List[ComputeUrlMapDefaultRouteAc
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -2498,7 +2498,7 @@ cache_bypass_request_header_names: typing.List[str]
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -2512,7 +2512,7 @@ cache_key_policy: ComputeUrlMapDefaultRouteActionCachePolicyCacheKeyPolicy
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -2529,7 +2529,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -2543,7 +2543,7 @@ client_ttl: ComputeUrlMapDefaultRouteActionCachePolicyClientTtl
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -2557,7 +2557,7 @@ default_ttl: ComputeUrlMapDefaultRouteActionCachePolicyDefaultTtl
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -2571,7 +2571,7 @@ max_ttl: ComputeUrlMapDefaultRouteActionCachePolicyMaxTtl
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -2601,7 +2601,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -2615,7 +2615,7 @@ negative_caching_policy: IResolvable | typing.List[ComputeUrlMapDefaultRouteActi
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -2632,7 +2632,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -2646,7 +2646,7 @@ serve_while_stale: ComputeUrlMapDefaultRouteActionCachePolicyServeWhileStale
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -2702,7 +2702,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -2724,7 +2724,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -2738,7 +2738,7 @@ included_header_names: typing.List[str]
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -2757,7 +2757,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -2778,7 +2778,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -2799,7 +2799,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -2822,7 +2822,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -2858,7 +2858,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -2872,7 +2872,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -2908,7 +2908,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -2922,7 +2922,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -2958,7 +2958,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -2972,7 +2972,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3013,7 +3013,7 @@ Only HTTP status codes
 specified as values, and you cannot specify a status code more than
 once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
 
 ---
 
@@ -3027,7 +3027,7 @@ ttl: ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
 
 ---
 
@@ -3063,7 +3063,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -3077,7 +3077,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3113,7 +3113,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -3127,7 +3127,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3177,7 +3177,7 @@ In response to a preflight request, setting this to true indicates that the actu
 
 This translates to the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -3191,7 +3191,7 @@ allow_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -3205,7 +3205,7 @@ allow_methods: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -3223,7 +3223,7 @@ For regular expression grammar
 please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -3239,7 +3239,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -3255,7 +3255,7 @@ If true, specifies the CORS policy is disabled.
 
 The default value is false, which indicates that the CORS policy is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -3269,7 +3269,7 @@ expose_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -3283,7 +3283,7 @@ max_age: typing.Union[int, float]
 
 Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -3319,7 +3319,7 @@ abort: ComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbort
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -3333,7 +3333,7 @@ delay: ComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelay
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -3369,7 +3369,7 @@ http_status: typing.Union[int, float]
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -3385,7 +3385,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -3421,7 +3421,7 @@ fixed_delay: ComputeUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -3437,7 +3437,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -3476,7 +3476,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3493,7 +3493,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -3530,7 +3530,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -3569,7 +3569,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -3586,7 +3586,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3622,7 +3622,7 @@ backend_service: str
 
 The full or partial URL to the BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -3636,7 +3636,7 @@ mirror_percent: typing.Union[int, float]
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -3674,7 +3674,7 @@ num_retries: typing.Union[int, float]
 
 Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -3688,7 +3688,7 @@ per_try_timeout: ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeout
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -3717,7 +3717,7 @@ Specfies one or more conditions when this retry rule applies. Valid values are:.
 * resource-exhausted: Loadbalancer will retry if the gRPC status code in the response header is set to resource-exhausted
 * unavailable: Loadbalancer will retry if the gRPC status code in the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -3756,7 +3756,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3773,7 +3773,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -3812,7 +3812,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -3829,7 +3829,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -3867,7 +3867,7 @@ Prior to forwarding the request to the selected service, the request's host head
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -3883,7 +3883,7 @@ Prior to forwarding the request to the selected backend service, the matching po
 
 The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -3925,7 +3925,7 @@ Before forwarding the
 request to backendService, the loadbalancer applies any relevant headerActions
 specified as part of this backendServiceWeight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -3939,7 +3939,7 @@ header_action: ComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActio
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -3959,7 +3959,7 @@ as determined by the BackendService's session affinity policy.
 
 The value must be between 0 and 1000
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
 
 ---
 
@@ -3999,7 +3999,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapDefaultRouteActio
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -4013,7 +4013,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -4027,7 +4027,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapDefaultRouteActi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -4041,7 +4041,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -4079,7 +4079,7 @@ header_name: str
 
 The name of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -4093,7 +4093,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -4109,7 +4109,7 @@ If false, headerValue is appended to any values that already exist for the heade
 
 If true, headerValue is set for the header, discarding any values that were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -4147,7 +4147,7 @@ header_name: str
 
 The name of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -4161,7 +4161,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -4177,7 +4177,7 @@ If false, headerValue is appended to any values that already exist for the heade
 
 If true, headerValue is set for the header, discarding any values that were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -4225,7 +4225,7 @@ If set to false, the query portion of the original URL is
 retained. The default is set to false.
 This field is required to ensure an empty block is not set. The normal default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -4241,7 +4241,7 @@ The host that will be used in the redirect response instead of the one that was 
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -4260,7 +4260,7 @@ false, the URL scheme of the redirected request will remain the same as that of 
 request. This must only be set for UrlMaps used in TargetHttpProxys. Setting this
 true for TargetHttpsProxy is not permitted. The default is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -4279,7 +4279,7 @@ prefixRedirect. Supply one alone or neither. If neither is supplied, the path of
 original request will be used for the redirect. The value must be between 1 and 1024
 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -4297,7 +4297,7 @@ prefixRedirect cannot be supplied together with pathRedirect. Supply one alone o
 neither. If neither is supplied, the path of the original request will be used for
 the redirect. The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -4319,7 +4319,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case,
   the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -4359,7 +4359,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapHeaderActionReque
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -4373,7 +4373,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -4387,7 +4387,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapHeaderActionResp
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -4401,7 +4401,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -4439,7 +4439,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -4453,7 +4453,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -4470,7 +4470,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -4508,7 +4508,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -4522,7 +4522,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -4539,7 +4539,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -4581,7 +4581,7 @@ They must be valid hostnames, except * will
 match any string of ([a-z0-9-.]*). In that case, * must be the first character
 and must be followed in the pattern by either - or ..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#hosts ComputeUrlMap#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#hosts ComputeUrlMap#hosts}
 
 ---
 
@@ -4595,7 +4595,7 @@ path_matcher: str
 
 The name of the PathMatcher to use to match the path portion of the URL if the hostRule matches the URL's host portion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_matcher ComputeUrlMap#path_matcher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_matcher ComputeUrlMap#path_matcher}
 
 ---
 
@@ -4609,7 +4609,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
 
 ---
 
@@ -4659,7 +4659,7 @@ name: str
 
 The name to which this PathMatcher is referred by the HostRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
 
 ---
 
@@ -4673,7 +4673,7 @@ default_custom_error_response_policy: ComputeUrlMapPathMatcherDefaultCustomError
 
 default_custom_error_response_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
 
 ---
 
@@ -4687,7 +4687,7 @@ default_route_action: ComputeUrlMapPathMatcherDefaultRouteAction
 
 default_route_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
 
 ---
 
@@ -4701,7 +4701,7 @@ default_service: str
 
 The backend service or backend bucket to use when none of the given paths match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
 
 ---
 
@@ -4715,7 +4715,7 @@ default_url_redirect: ComputeUrlMapPathMatcherDefaultUrlRedirect
 
 default_url_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
 
 ---
 
@@ -4729,7 +4729,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
 
 ---
 
@@ -4743,7 +4743,7 @@ header_action: ComputeUrlMapPathMatcherHeaderAction
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -4757,7 +4757,7 @@ path_rule: IResolvable | typing.List[ComputeUrlMapPathMatcherPathRule]
 
 path_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_rule ComputeUrlMap#path_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_rule ComputeUrlMap#path_rule}
 
 ---
 
@@ -4771,7 +4771,7 @@ route_rules: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteRules]
 
 route_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#route_rules ComputeUrlMap#route_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#route_rules ComputeUrlMap#route_rules}
 
 ---
 
@@ -4807,7 +4807,7 @@ error_response_rule: IResolvable | typing.List[ComputeUrlMapPathMatcherDefaultCu
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -4828,7 +4828,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -4870,7 +4870,7 @@ Valid values include: - A number between 400 and 599: For example 401 or 503, in
 * 4xx: Load Balancer will apply the policy if the backend service responds with any response code in the range of 400 to 499.
   Values must be unique within matchResponseCodes and across all errorResponseRules of CustomErrorResponsePolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
 
 ---
 
@@ -4886,7 +4886,7 @@ The HTTP status code returned with the response containing the custom error cont
 
 If overrideResponseCode is not supplied, the same response code returned by the original backend bucket or backend service is returned to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
 
 ---
 
@@ -4905,7 +4905,7 @@ path must start with a leading slash. path cannot have trailing slashes.
 If the file is not available in backendBucket or the load balancer cannot reach the BackendBucket, a simple Not Found Error is returned to the client.
 The value must be from 1 to 1024 characters
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
 
 ---
 
@@ -4957,7 +4957,7 @@ cache_policy: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicy
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -4971,7 +4971,7 @@ cors_policy: ComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -4985,7 +4985,7 @@ fault_injection_policy: ComputeUrlMapPathMatcherDefaultRouteActionFaultInjection
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -4999,7 +4999,7 @@ image_optimization_policy: ComputeUrlMapPathMatcherDefaultRouteActionImageOptimi
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -5013,7 +5013,7 @@ max_stream_duration: ComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDuration
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -5027,7 +5027,7 @@ request_mirror_policy: ComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPo
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -5041,7 +5041,7 @@ retry_policy: ComputeUrlMapPathMatcherDefaultRouteActionRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -5055,7 +5055,7 @@ timeout: ComputeUrlMapPathMatcherDefaultRouteActionTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -5069,7 +5069,7 @@ url_rewrite: ComputeUrlMapPathMatcherDefaultRouteActionUrlRewrite
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -5083,7 +5083,7 @@ weighted_backend_services: IResolvable | typing.List[ComputeUrlMapPathMatcherDef
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -5135,7 +5135,7 @@ cache_bypass_request_header_names: typing.List[str]
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -5149,7 +5149,7 @@ cache_key_policy: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyCacheKeyP
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -5166,7 +5166,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -5180,7 +5180,7 @@ client_ttl: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyClientTtl
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -5194,7 +5194,7 @@ default_ttl: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyDefaultTtl
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -5208,7 +5208,7 @@ max_ttl: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyMaxTtl
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -5238,7 +5238,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -5252,7 +5252,7 @@ negative_caching_policy: IResolvable | typing.List[ComputeUrlMapPathMatcherDefau
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -5269,7 +5269,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -5283,7 +5283,7 @@ serve_while_stale: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyServeWhi
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -5339,7 +5339,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -5361,7 +5361,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -5375,7 +5375,7 @@ included_header_names: typing.List[str]
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -5394,7 +5394,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -5415,7 +5415,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -5436,7 +5436,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -5459,7 +5459,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -5495,7 +5495,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -5509,7 +5509,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -5545,7 +5545,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -5559,7 +5559,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -5595,7 +5595,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -5609,7 +5609,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -5650,7 +5650,7 @@ Only HTTP status codes
 specified as values, and you cannot specify a status code more than
 once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
 
 ---
 
@@ -5664,7 +5664,7 @@ ttl: ComputeUrlMapPathMatcherDefaultRouteActionCachePolicyNegativeCachingPolicyT
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
 
 ---
 
@@ -5700,7 +5700,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -5714,7 +5714,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -5750,7 +5750,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -5764,7 +5764,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -5814,7 +5814,7 @@ In response to a preflight request, setting this to true indicates that the actu
 
 This translates to the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -5828,7 +5828,7 @@ allow_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -5842,7 +5842,7 @@ allow_methods: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -5860,7 +5860,7 @@ For regular expression grammar
 please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -5876,7 +5876,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -5892,7 +5892,7 @@ If true, specifies the CORS policy is disabled.
 
 The default value is false, which indicates that the CORS policy is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -5906,7 +5906,7 @@ expose_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -5920,7 +5920,7 @@ max_age: typing.Union[int, float]
 
 Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -5956,7 +5956,7 @@ abort: ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -5970,7 +5970,7 @@ delay: ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -6006,7 +6006,7 @@ http_status: typing.Union[int, float]
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -6022,7 +6022,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -6058,7 +6058,7 @@ fixed_delay: ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -6074,7 +6074,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -6113,7 +6113,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -6130,7 +6130,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -6167,7 +6167,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -6206,7 +6206,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -6223,7 +6223,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -6259,7 +6259,7 @@ backend_service: str
 
 The full or partial URL to the BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -6273,7 +6273,7 @@ mirror_percent: typing.Union[int, float]
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -6311,7 +6311,7 @@ num_retries: typing.Union[int, float]
 
 Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -6325,7 +6325,7 @@ per_try_timeout: ComputeUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTime
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -6354,7 +6354,7 @@ Specfies one or more conditions when this retry rule applies. Valid values are:.
 * resource-exhausted: Loadbalancer will retry if the gRPC status code in the response header is set to resource-exhausted
 * unavailable: Loadbalancer will retry if the gRPC status code in the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -6393,7 +6393,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -6410,7 +6410,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -6449,7 +6449,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -6466,7 +6466,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -6504,7 +6504,7 @@ Prior to forwarding the request to the selected service, the request's host head
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -6520,7 +6520,7 @@ Prior to forwarding the request to the selected backend service, the matching po
 
 The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -6562,7 +6562,7 @@ Before forwarding the
 request to backendService, the loadbalancer applies any relevant headerActions
 specified as part of this backendServiceWeight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -6576,7 +6576,7 @@ header_action: ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -6596,7 +6596,7 @@ as determined by the BackendService's session affinity policy.
 
 The value must be between 0 and 1000
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
 
 ---
 
@@ -6636,7 +6636,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherDefaul
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -6650,7 +6650,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -6664,7 +6664,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherDefau
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -6678,7 +6678,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -6716,7 +6716,7 @@ header_name: str
 
 The name of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -6730,7 +6730,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -6746,7 +6746,7 @@ If false, headerValue is appended to any values that already exist for the heade
 
 If true, headerValue is set for the header, discarding any values that were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -6784,7 +6784,7 @@ header_name: str
 
 The name of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -6798,7 +6798,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -6814,7 +6814,7 @@ If false, headerValue is appended to any values that already exist for the heade
 
 If true, headerValue is set for the header, discarding any values that were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -6862,7 +6862,7 @@ If set to false, the query portion of the original URL is
 retained.
 This field is required to ensure an empty block is not set. The normal default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -6878,7 +6878,7 @@ The host that will be used in the redirect response instead of the one that was 
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -6897,7 +6897,7 @@ false, the URL scheme of the redirected request will remain the same as that of 
 request. This must only be set for UrlMaps used in TargetHttpProxys. Setting this
 true for TargetHttpsProxy is not permitted. The default is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -6916,7 +6916,7 @@ prefixRedirect. Supply one alone or neither. If neither is supplied, the path of
 original request will be used for the redirect. The value must be between 1 and 1024
 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -6934,7 +6934,7 @@ prefixRedirect cannot be supplied together with pathRedirect. Supply one alone o
 neither. If neither is supplied, the path of the original request will be used for
 the redirect. The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -6956,7 +6956,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case,
   the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -6996,7 +6996,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherHeader
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -7010,7 +7010,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -7024,7 +7024,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherHeade
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -7038,7 +7038,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -7076,7 +7076,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -7090,7 +7090,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -7107,7 +7107,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -7145,7 +7145,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -7159,7 +7159,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -7176,7 +7176,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -7223,7 +7223,7 @@ Each must start with / and the only place a
 does not include any text after the first ? or #, and those chars are not
 allowed here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#paths ComputeUrlMap#paths}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#paths ComputeUrlMap#paths}
 
 ---
 
@@ -7237,7 +7237,7 @@ custom_error_response_policy: ComputeUrlMapPathMatcherPathRuleCustomErrorRespons
 
 custom_error_response_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
 
 ---
 
@@ -7251,7 +7251,7 @@ route_action: ComputeUrlMapPathMatcherPathRuleRouteAction
 
 route_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
 
 ---
 
@@ -7265,7 +7265,7 @@ service: str
 
 The backend service or backend bucket to use if any of the given paths match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
 
 ---
 
@@ -7279,7 +7279,7 @@ url_redirect: ComputeUrlMapPathMatcherPathRuleUrlRedirect
 
 url_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
 
 ---
 
@@ -7315,7 +7315,7 @@ error_response_rule: IResolvable | typing.List[ComputeUrlMapPathMatcherPathRuleC
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -7336,7 +7336,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -7380,7 +7380,7 @@ Valid values include:.
 
 Values must be unique within matchResponseCodes and across all errorResponseRules of CustomErrorResponsePolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
 
 ---
 
@@ -7396,7 +7396,7 @@ The HTTP status code returned with the response containing the custom error cont
 
 If overrideResponseCode is not supplied, the same response code returned by the original backend bucket or backend service is returned to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
 
 ---
 
@@ -7415,7 +7415,7 @@ path must start with a leading slash. path cannot have trailing slashes.
 If the file is not available in backendBucket or the load balancer cannot reach the BackendBucket, a simple Not Found Error is returned to the client.
 The value must be from 1 to 1024 characters
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
 
 ---
 
@@ -7467,7 +7467,7 @@ cache_policy: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicy
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -7481,7 +7481,7 @@ cors_policy: ComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -7495,7 +7495,7 @@ fault_injection_policy: ComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectio
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -7509,7 +7509,7 @@ image_optimization_policy: ComputeUrlMapPathMatcherPathRuleRouteActionImageOptim
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -7523,7 +7523,7 @@ max_stream_duration: ComputeUrlMapPathMatcherPathRuleRouteActionMaxStreamDuratio
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -7537,7 +7537,7 @@ request_mirror_policy: ComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorP
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -7551,7 +7551,7 @@ retry_policy: ComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -7565,7 +7565,7 @@ timeout: ComputeUrlMapPathMatcherPathRuleRouteActionTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -7579,7 +7579,7 @@ url_rewrite: ComputeUrlMapPathMatcherPathRuleRouteActionUrlRewrite
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -7593,7 +7593,7 @@ weighted_backend_services: IResolvable | typing.List[ComputeUrlMapPathMatcherPat
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -7645,7 +7645,7 @@ cache_bypass_request_header_names: typing.List[str]
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -7659,7 +7659,7 @@ cache_key_policy: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyCacheKey
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -7676,7 +7676,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -7690,7 +7690,7 @@ client_ttl: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyClientTtl
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -7704,7 +7704,7 @@ default_ttl: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyDefaultTtl
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -7718,7 +7718,7 @@ max_ttl: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyMaxTtl
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -7748,7 +7748,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -7762,7 +7762,7 @@ negative_caching_policy: IResolvable | typing.List[ComputeUrlMapPathMatcherPathR
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -7779,7 +7779,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -7793,7 +7793,7 @@ serve_while_stale: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyServeWh
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -7849,7 +7849,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -7871,7 +7871,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -7885,7 +7885,7 @@ included_header_names: typing.List[str]
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -7904,7 +7904,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -7925,7 +7925,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -7946,7 +7946,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -7969,7 +7969,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -8005,7 +8005,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8019,7 +8019,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8055,7 +8055,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8069,7 +8069,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8105,7 +8105,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8119,7 +8119,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8160,7 +8160,7 @@ Only HTTP status codes
 specified as values, and you cannot specify a status code more than
 once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
 
 ---
 
@@ -8174,7 +8174,7 @@ ttl: ComputeUrlMapPathMatcherPathRuleRouteActionCachePolicyNegativeCachingPolicy
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
 
 ---
 
@@ -8210,7 +8210,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8224,7 +8224,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8260,7 +8260,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8274,7 +8274,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8322,7 +8322,7 @@ disabled: bool | IResolvable
 
 If true, specifies the CORS policy is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -8339,7 +8339,7 @@ In response to a preflight request, setting this to true indicates that the actu
 This translates to the Access-
 Control-Allow-Credentials header. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -8353,7 +8353,7 @@ allow_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -8367,7 +8367,7 @@ allow_methods: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -8385,7 +8385,7 @@ For
 regular expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -8402,7 +8402,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 An
 origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -8416,7 +8416,7 @@ expose_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -8433,7 +8433,7 @@ Specifies how long the results of a preflight request can be cached.
 This
 translates to the content for the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -8469,7 +8469,7 @@ abort: ComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -8483,7 +8483,7 @@ delay: ComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -8519,7 +8519,7 @@ http_status: typing.Union[int, float]
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -8536,7 +8536,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 The value must be between 0.0 and 100.0
 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -8572,7 +8572,7 @@ fixed_delay: ComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDela
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -8589,7 +8589,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 The value must be between 0.0 and
 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -8625,7 +8625,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8643,7 +8643,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8680,7 +8680,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -8716,7 +8716,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8734,7 +8734,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8770,7 +8770,7 @@ backend_service: str
 
 The BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -8784,7 +8784,7 @@ mirror_percent: typing.Union[int, float]
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -8822,7 +8822,7 @@ num_retries: typing.Union[int, float]
 
 Specifies the allowed number retries. This number must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -8836,7 +8836,7 @@ per_try_timeout: ComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTim
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -8871,7 +8871,7 @@ Specifies one or more conditions when this retry rule applies. Valid values are:
 * unavailable: Loadbalancer will retry if
   the gRPC status code in the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -8907,7 +8907,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8925,7 +8925,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -8961,7 +8961,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -8979,7 +8979,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -9018,7 +9018,7 @@ Prior to forwarding the request to the selected service, the request's host head
 The value must be between 1 and
 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -9035,7 +9035,7 @@ Prior to forwarding the request to the selected backend service, the matching po
 The value must
 be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -9077,7 +9077,7 @@ Before
 forwarding the request to backendService, the loadbalancer applies any relevant
 headerActions specified as part of this backendServiceWeight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -9097,7 +9097,7 @@ been directed to a backendService, subsequent requests will be sent to the same
 backendService as determined by the BackendService's session affinity policy.
 The value must be between 0 and 1000
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
 
 ---
 
@@ -9111,7 +9111,7 @@ header_action: ComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendService
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -9151,7 +9151,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherPathRu
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -9165,7 +9165,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -9179,7 +9179,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherPathR
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -9193,7 +9193,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -9231,7 +9231,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -9245,7 +9245,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -9262,7 +9262,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -9300,7 +9300,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -9314,7 +9314,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -9331,7 +9331,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -9379,7 +9379,7 @@ If set to false, the query
 portion of the original URL is retained.
 This field is required to ensure an empty block is not set. The normal default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -9396,7 +9396,7 @@ The host that will be used in the redirect response instead of the one that was 
 The value must be between 1 and 255
 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -9415,7 +9415,7 @@ same as that of the request. This must only be set for UrlMaps used in
 TargetHttpProxys. Setting this true for TargetHttpsProxy is not
 permitted. The default is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -9434,7 +9434,7 @@ together with prefixRedirect. Supply one alone or neither. If neither is
 supplied, the path of the original request will be used for the redirect.
 The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -9453,7 +9453,7 @@ pathRedirect. Supply one alone or neither. If neither is supplied, the
 path of the original request will be used for the redirect. The value
 must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -9475,7 +9475,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case,
   the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -9536,7 +9536,7 @@ in the future without affecting the rest of the rules. For example,
 you could add rules numbered from 6 to 8, 10 to 11, and 13 to 15 in the
 future without any impact on existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#priority ComputeUrlMap#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#priority ComputeUrlMap#priority}
 
 ---
 
@@ -9550,7 +9550,7 @@ custom_error_response_policy: ComputeUrlMapPathMatcherRouteRulesCustomErrorRespo
 
 custom_error_response_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
 
 ---
 
@@ -9564,7 +9564,7 @@ header_action: ComputeUrlMapPathMatcherRouteRulesHeaderAction
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -9578,7 +9578,7 @@ match_rules: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteRulesMatchRu
 
 match_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#match_rules ComputeUrlMap#match_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#match_rules ComputeUrlMap#match_rules}
 
 ---
 
@@ -9592,7 +9592,7 @@ route_action: ComputeUrlMapPathMatcherRouteRulesRouteAction
 
 route_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
 
 ---
 
@@ -9613,7 +9613,7 @@ contain any weightedBackendService s. Conversely, if routeAction specifies any
 weightedBackendServices, service must not be specified. Only one of urlRedirect,
 service or routeAction.weightedBackendService must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
 
 ---
 
@@ -9627,7 +9627,7 @@ url_redirect: ComputeUrlMapPathMatcherRouteRulesUrlRedirect
 
 url_redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
 
 ---
 
@@ -9663,7 +9663,7 @@ error_response_rule: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteRule
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -9684,7 +9684,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -9728,7 +9728,7 @@ Valid values include:.
 
 Values must be unique within matchResponseCodes and across all errorResponseRules of CustomErrorResponsePolicy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
 
 ---
 
@@ -9744,7 +9744,7 @@ The HTTP status code returned with the response containing the custom error cont
 
 If overrideResponseCode is not supplied, the same response code returned by the original backend bucket or backend service is returned to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
 
 ---
 
@@ -9763,7 +9763,7 @@ path must start with a leading slash. path cannot have trailing slashes.
 If the file is not available in backendBucket or the load balancer cannot reach the BackendBucket, a simple Not Found Error is returned to the client.
 The value must be from 1 to 1024 characters
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
 
 ---
 
@@ -9803,7 +9803,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteR
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -9817,7 +9817,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -9831,7 +9831,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherRoute
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -9845,7 +9845,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -9883,7 +9883,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -9897,7 +9897,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -9914,7 +9914,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -9952,7 +9952,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -9966,7 +9966,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -9983,7 +9983,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -10035,7 +10035,7 @@ FullPathMatch must be between 1
 and 1024 characters. Only one of prefixMatch, fullPathMatch or regexMatch must
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#full_path_match ComputeUrlMap#full_path_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#full_path_match ComputeUrlMap#full_path_match}
 
 ---
 
@@ -10049,7 +10049,7 @@ header_matches: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteRulesMatc
 
 header_matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_matches ComputeUrlMap#header_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_matches ComputeUrlMap#header_matches}
 
 ---
 
@@ -10063,7 +10063,7 @@ ignore_case: bool | IResolvable
 
 Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#ignore_case ComputeUrlMap#ignore_case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#ignore_case ComputeUrlMap#ignore_case}
 
 ---
 
@@ -10077,7 +10077,7 @@ metadata_filters: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteRulesMa
 
 metadata_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#metadata_filters ComputeUrlMap#metadata_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#metadata_filters ComputeUrlMap#metadata_filters}
 
 ---
 
@@ -10096,7 +10096,7 @@ pathTemplateMatch must be between 1 and 255 characters
 have at most 5 wildcard operators and at most 5 variable
 captures in total.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_template_match ComputeUrlMap#path_template_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_template_match ComputeUrlMap#path_template_match}
 
 ---
 
@@ -10114,7 +10114,7 @@ prefixMatch must begin with a /. The value must be
 between 1 and 1024 characters. Only one of prefixMatch, fullPathMatch or
 regexMatch must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_match ComputeUrlMap#prefix_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_match ComputeUrlMap#prefix_match}
 
 ---
 
@@ -10128,7 +10128,7 @@ query_parameter_matches: IResolvable | typing.List[ComputeUrlMapPathMatcherRoute
 
 query_parameter_matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_matches ComputeUrlMap#query_parameter_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_matches ComputeUrlMap#query_parameter_matches}
 
 ---
 
@@ -10146,7 +10146,7 @@ For regular expression grammar please
 see en.cppreference.com/w/cpp/regex/ecmascript  Only one of prefixMatch,
 fullPathMatch or regexMatch must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
 
 ---
 
@@ -10198,7 +10198,7 @@ For matching against the HTTP request's
 authority, use a headerMatch with the header name ":authority". For matching a
 request's method, use the headerName ":method".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -10215,7 +10215,7 @@ The value should exactly match contents of exactMatch.
 Only one of exactMatch,
 prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#exact_match ComputeUrlMap#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#exact_match ComputeUrlMap#exact_match}
 
 ---
 
@@ -10232,7 +10232,7 @@ If set to false, the headerMatch is considered a match if the match criteria abo
 If set to true, the headerMatch is considered a match if the
 match criteria above are NOT met. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#invert_match ComputeUrlMap#invert_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#invert_match ComputeUrlMap#invert_match}
 
 ---
 
@@ -10250,7 +10250,7 @@ Only one of
 exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch
 must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_match ComputeUrlMap#prefix_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_match ComputeUrlMap#prefix_match}
 
 ---
 
@@ -10268,7 +10268,7 @@ The match takes place
 whether or not the request's header has a value or not. Only one of exactMatch,
 prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#present_match ComputeUrlMap#present_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#present_match ComputeUrlMap#present_match}
 
 ---
 
@@ -10282,7 +10282,7 @@ range_match: ComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 
 range_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#range_match ComputeUrlMap#range_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#range_match ComputeUrlMap#range_match}
 
 ---
 
@@ -10303,7 +10303,7 @@ a regular expression that satisfies the RFC2616 Host header's port specifier.
 Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or
 rangeMatch must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
 
 ---
 
@@ -10321,7 +10321,7 @@ Only one of
 exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch
 must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#suffix_match ComputeUrlMap#suffix_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#suffix_match ComputeUrlMap#suffix_match}
 
 ---
 
@@ -10357,7 +10357,7 @@ range_end: typing.Union[int, float]
 
 The end of the range (exclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#range_end ComputeUrlMap#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#range_end ComputeUrlMap#range_end}
 
 ---
 
@@ -10371,7 +10371,7 @@ range_start: typing.Union[int, float]
 
 The start of the range (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#range_start ComputeUrlMap#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#range_start ComputeUrlMap#range_start}
 
 ---
 
@@ -10407,7 +10407,7 @@ filter_labels: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteRulesMatch
 
 filter_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#filter_labels ComputeUrlMap#filter_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#filter_labels ComputeUrlMap#filter_labels}
 
 ---
 
@@ -10428,7 +10428,7 @@ Supported values are:
 * MATCH_ALL: All filterLabels must have matching labels in
   the provided metadata. Possible values: ["MATCH_ALL", "MATCH_ANY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#filter_match_criteria ComputeUrlMap#filter_match_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#filter_match_criteria ComputeUrlMap#filter_match_criteria}
 
 ---
 
@@ -10467,7 +10467,7 @@ Name of metadata label.
 The name can have a maximum length of 1024 characters
 and must be at least 1 character long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
 
 ---
 
@@ -10481,7 +10481,7 @@ value: str
 
 The value of the label must match the specified value. value can have a maximum length of 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#value ComputeUrlMap#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#value ComputeUrlMap#value}
 
 ---
 
@@ -10524,7 +10524,7 @@ The name of the query parameter to match.
 The query parameter must exist in the
 request, in the absence of which the request match fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
 
 ---
 
@@ -10541,7 +10541,7 @@ The queryParameterMatch matches if the value of the parameter exactly matches th
 Only one of presentMatch, exactMatch and regexMatch
 must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#exact_match ComputeUrlMap#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#exact_match ComputeUrlMap#exact_match}
 
 ---
 
@@ -10558,7 +10558,7 @@ Specifies that the queryParameterMatch matches if the request contains the query
 Only one of
 presentMatch, exactMatch and regexMatch must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#present_match ComputeUrlMap#present_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#present_match ComputeUrlMap#present_match}
 
 ---
 
@@ -10576,7 +10576,7 @@ For the regular expression grammar,
 please see en.cppreference.com/w/cpp/regex/ecmascript  Only one of presentMatch,
 exactMatch and regexMatch must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#regex_match ComputeUrlMap#regex_match}
 
 ---
 
@@ -10628,7 +10628,7 @@ cache_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -10642,7 +10642,7 @@ cors_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -10656,7 +10656,7 @@ fault_injection_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInject
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -10670,7 +10670,7 @@ image_optimization_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionImageOpt
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -10684,7 +10684,7 @@ max_stream_duration: ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurat
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -10698,7 +10698,7 @@ request_mirror_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirro
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -10712,7 +10712,7 @@ retry_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -10726,7 +10726,7 @@ timeout: ComputeUrlMapPathMatcherRouteRulesRouteActionTimeout
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -10740,7 +10740,7 @@ url_rewrite: ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -10754,7 +10754,7 @@ weighted_backend_services: IResolvable | typing.List[ComputeUrlMapPathMatcherRou
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -10806,7 +10806,7 @@ cache_bypass_request_header_names: typing.List[str]
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -10820,7 +10820,7 @@ cache_key_policy: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyCacheK
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -10837,7 +10837,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -10851,7 +10851,7 @@ client_ttl: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyClientTtl
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -10865,7 +10865,7 @@ default_ttl: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyDefaultTtl
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -10879,7 +10879,7 @@ max_ttl: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyMaxTtl
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -10909,7 +10909,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -10923,7 +10923,7 @@ negative_caching_policy: IResolvable | typing.List[ComputeUrlMapPathMatcherRoute
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -10940,7 +10940,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -10954,7 +10954,7 @@ serve_while_stale: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyServe
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -11010,7 +11010,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -11032,7 +11032,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -11046,7 +11046,7 @@ included_header_names: typing.List[str]
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -11065,7 +11065,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -11086,7 +11086,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -11107,7 +11107,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -11130,7 +11130,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -11166,7 +11166,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11180,7 +11180,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11216,7 +11216,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11230,7 +11230,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11266,7 +11266,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11280,7 +11280,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11321,7 +11321,7 @@ Only HTTP status codes
 specified as values, and you cannot specify a status code more than
 once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#code ComputeUrlMap#code}
 
 ---
 
@@ -11335,7 +11335,7 @@ ttl: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicyNegativeCachingPoli
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#ttl ComputeUrlMap#ttl}
 
 ---
 
@@ -11371,7 +11371,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11385,7 +11385,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11421,7 +11421,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11435,7 +11435,7 @@ nanos: typing.Union[int, float]
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11486,7 +11486,7 @@ In response to a preflight request, setting this to true indicates that the actu
 This translates to the Access-
 Control-Allow-Credentials header. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -11500,7 +11500,7 @@ allow_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -11514,7 +11514,7 @@ allow_methods: typing.List[str]
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -11532,7 +11532,7 @@ For
 regular expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -11549,7 +11549,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 An
 origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -11563,7 +11563,7 @@ disabled: bool | IResolvable
 
 If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -11577,7 +11577,7 @@ expose_headers: typing.List[str]
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -11594,7 +11594,7 @@ Specifies how long the results of a preflight request can be cached.
 This
 translates to the content for the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -11630,7 +11630,7 @@ abort: ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -11644,7 +11644,7 @@ delay: ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -11680,7 +11680,7 @@ http_status: typing.Union[int, float]
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -11697,7 +11697,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 The value must be between 0.0 and 100.0
 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -11733,7 +11733,7 @@ fixed_delay: ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDe
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -11750,7 +11750,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 The value must be between 0.0 and
 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -11786,7 +11786,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11804,7 +11804,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11841,7 +11841,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -11877,7 +11877,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -11895,7 +11895,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -11931,7 +11931,7 @@ backend_service: str
 
 The BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -11945,7 +11945,7 @@ mirror_percent: typing.Union[int, float]
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -11983,7 +11983,7 @@ num_retries: typing.Union[int, float]
 
 Specifies the allowed number retries. This number must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -11997,7 +11997,7 @@ per_try_timeout: ComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryT
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -12032,7 +12032,7 @@ Specfies one or more conditions when this retry rule applies. Valid values are:.
 * unavailable: Loadbalancer will retry if the gRPC status code in
   the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -12068,7 +12068,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -12086,7 +12086,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -12122,7 +12122,7 @@ seconds: str
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -12140,7 +12140,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -12183,7 +12183,7 @@ Prior to forwarding the request to the selected service, the request's host head
 The value must be between 1 and
 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -12203,7 +12203,7 @@ be between 1 and 1024 characters.
 Only one of pathPrefixRewrite, pathTemplateRewrite, or regexRewrite may be
 specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -12227,7 +12227,7 @@ MatchRules specify pathTemplate.
 Only one of pathPrefixRewrite, pathTemplateRewrite, or regexRewrite may be
 specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_template_rewrite ComputeUrlMap#path_template_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_template_rewrite ComputeUrlMap#path_template_rewrite}
 
 ---
 
@@ -12241,7 +12241,7 @@ regex_rewrite: ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteRegexRewri
 
 regex_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#regex_rewrite ComputeUrlMap#regex_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#regex_rewrite ComputeUrlMap#regex_rewrite}
 
 ---
 
@@ -12286,7 +12286,7 @@ The regular expression used to match against the URL path. It uses RE2 syntax wi
 * Ranges may only contain character ranges, digit ranges, and
   symbols allowed for ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_pattern ComputeUrlMap#path_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_pattern ComputeUrlMap#path_pattern}
 
 ---
 
@@ -12300,7 +12300,7 @@ path_substitution: str
 
 The substitution used to rewrite the parts of the URL path matched by pathPattern. May reference capture groups from pathPattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_substitution ComputeUrlMap#path_substitution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_substitution ComputeUrlMap#path_substitution}
 
 ---
 
@@ -12342,7 +12342,7 @@ Before
 forwarding the request to backendService, the loadbalancer applies any relevant
 headerActions specified as part of this backendServiceWeight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -12362,7 +12362,7 @@ been directed to a backendService, subsequent requests will be sent to the same
 backendService as determined by the BackendService's session affinity policy.
 The value must be between 0 and 1000
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
 
 ---
 
@@ -12376,7 +12376,7 @@ header_action: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServi
 
 header_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
 
 ---
 
@@ -12416,7 +12416,7 @@ request_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherRouteR
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -12430,7 +12430,7 @@ request_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -12444,7 +12444,7 @@ response_headers_to_add: IResolvable | typing.List[ComputeUrlMapPathMatcherRoute
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -12458,7 +12458,7 @@ response_headers_to_remove: typing.List[str]
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -12496,7 +12496,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -12510,7 +12510,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -12527,7 +12527,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -12565,7 +12565,7 @@ header_name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_name ComputeUrlMap#header_name}
 
 ---
 
@@ -12579,7 +12579,7 @@ header_value: str
 
 The value of the header to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#header_value ComputeUrlMap#header_value}
 
 ---
 
@@ -12596,7 +12596,7 @@ If false, headerValue is appended to any values that already exist for the heade
 If true, headerValue is set for the header, discarding any values that
 were set for that header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#replace ComputeUrlMap#replace}
 
 ---
 
@@ -12642,7 +12642,7 @@ The host that will be used in the redirect response instead of the one that was 
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -12661,7 +12661,7 @@ to false, the URL scheme of the redirected request will remain the same as that
 of the request. This must only be set for UrlMaps used in TargetHttpProxys.
 Setting this true for TargetHttpsProxy is not permitted. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -12678,7 +12678,7 @@ The path that will be used in the redirect response instead of the one that was 
 Only one of pathRedirect or prefixRedirect must be
 specified. The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -12692,7 +12692,7 @@ prefix_redirect: str
 
 The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -12712,7 +12712,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * TEMPORARY_REDIRECT, which corresponds to 307. In this case, the request method will be retained.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case, the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -12729,7 +12729,7 @@ If set to true, any accompanying query portion of the original URL is removed pr
 If set to false, the query portion of the
 original URL is retained. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -12775,7 +12775,7 @@ host: str
 
 Host portion of the URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host ComputeUrlMap#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host ComputeUrlMap#host}
 
 ---
 
@@ -12789,7 +12789,7 @@ path: str
 
 Path portion of the URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
 
 ---
 
@@ -12803,7 +12803,7 @@ description: str
 
 Description of this test case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
 
 ---
 
@@ -12823,7 +12823,7 @@ For rules with urlRedirect, the test passes only if expectedOutputUrl matches th
 
 expectedOutputUrl is optional when service is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expected_output_url ComputeUrlMap#expected_output_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expected_output_url ComputeUrlMap#expected_output_url}
 
 ---
 
@@ -12839,7 +12839,7 @@ For rules with urlRedirect, the test passes only if expectedRedirectResponseCode
 
 expectedRedirectResponseCode cannot be set when service is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expected_redirect_response_code ComputeUrlMap#expected_redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expected_redirect_response_code ComputeUrlMap#expected_redirect_response_code}
 
 ---
 
@@ -12853,7 +12853,7 @@ headers: IResolvable | typing.List[ComputeUrlMapTestHeaders]
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#headers ComputeUrlMap#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#headers ComputeUrlMap#headers}
 
 ---
 
@@ -12867,7 +12867,7 @@ service: str
 
 The backend service or backend bucket link that should be matched by this test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
 
 ---
 
@@ -12903,7 +12903,7 @@ name: str
 
 Header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
 
 ---
 
@@ -12917,7 +12917,7 @@ value: str
 
 Header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#value ComputeUrlMap#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#value ComputeUrlMap#value}
 
 ---
 
@@ -12939,9 +12939,9 @@ computeUrlMap.ComputeUrlMapTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#create ComputeUrlMap#create}. |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}. |
-| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#update ComputeUrlMap#update}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#create ComputeUrlMap#create}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}. |
+| <code><a href="#@cdktn/provider-google.computeUrlMap.ComputeUrlMapTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#update ComputeUrlMap#update}. |
 
 ---
 
@@ -12953,7 +12953,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#create ComputeUrlMap#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#create ComputeUrlMap#create}.
 
 ---
 
@@ -12965,7 +12965,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}.
 
 ---
 
@@ -12977,7 +12977,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#update ComputeUrlMap#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#update ComputeUrlMap#update}.
 
 ---
 
@@ -15769,7 +15769,7 @@ def put_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -15779,7 +15779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -16484,7 +16484,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -16502,7 +16502,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -16512,7 +16512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -16527,7 +16527,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -16544,7 +16544,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -16561,7 +16561,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -16580,7 +16580,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -16599,7 +16599,7 @@ def put_client_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -16609,7 +16609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -16628,7 +16628,7 @@ def put_default_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -16638,7 +16638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -16657,7 +16657,7 @@ def put_max_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -16667,7 +16667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -16700,7 +16700,7 @@ def put_serve_while_stale(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -16710,7 +16710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -18784,7 +18784,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -18797,7 +18797,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -19150,7 +19150,7 @@ def put_abort(
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -19162,7 +19162,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -19181,7 +19181,7 @@ def put_delay(
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -19193,7 +19193,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -20198,7 +20198,7 @@ def put_cache_policy(
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -20208,7 +20208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -20221,7 +20221,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -20231,7 +20231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -20241,7 +20241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -20251,7 +20251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -20277,7 +20277,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -20287,7 +20287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -20300,7 +20300,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -20310,7 +20310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -20337,7 +20337,7 @@ In response to a preflight request, setting this to true indicates that the actu
 
 This translates to the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -20347,7 +20347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -20357,7 +20357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -20371,7 +20371,7 @@ For regular expression grammar
 please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -20383,7 +20383,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -20395,7 +20395,7 @@ If true, specifies the CORS policy is disabled.
 
 The default value is false, which indicates that the CORS policy is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -20405,7 +20405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -20415,7 +20415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -20434,7 +20434,7 @@ def put_fault_injection_policy(
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -20444,7 +20444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -20465,7 +20465,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -20487,7 +20487,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -20500,7 +20500,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -20519,7 +20519,7 @@ def put_request_mirror_policy(
 
 The full or partial URL to the BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -20529,7 +20529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -20549,7 +20549,7 @@ def put_retry_policy(
 
 Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -20559,7 +20559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -20584,7 +20584,7 @@ Specfies one or more conditions when this retry rule applies. Valid values are:.
 * resource-exhausted: Loadbalancer will retry if the gRPC status code in the response header is set to resource-exhausted
 * unavailable: Loadbalancer will retry if the gRPC status code in the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -20606,7 +20606,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -20619,7 +20619,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -20640,7 +20640,7 @@ Prior to forwarding the request to the selected service, the request's host head
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -20652,7 +20652,7 @@ Prior to forwarding the request to the selected backend service, the matching po
 
 The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -21571,7 +21571,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -21584,7 +21584,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -24675,7 +24675,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -24685,7 +24685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -24695,7 +24695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -24705,7 +24705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -30083,7 +30083,7 @@ def put_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -30093,7 +30093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -30798,7 +30798,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -30816,7 +30816,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -30826,7 +30826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -30841,7 +30841,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -30858,7 +30858,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -30875,7 +30875,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -30894,7 +30894,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -30913,7 +30913,7 @@ def put_client_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -30923,7 +30923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -30942,7 +30942,7 @@ def put_default_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -30952,7 +30952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -30971,7 +30971,7 @@ def put_max_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -30981,7 +30981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -31014,7 +31014,7 @@ def put_serve_while_stale(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -31024,7 +31024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -33098,7 +33098,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -33111,7 +33111,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -33464,7 +33464,7 @@ def put_abort(
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -33476,7 +33476,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -33495,7 +33495,7 @@ def put_delay(
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -33507,7 +33507,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 
 The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -34512,7 +34512,7 @@ def put_cache_policy(
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -34522,7 +34522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -34535,7 +34535,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -34545,7 +34545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -34555,7 +34555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -34565,7 +34565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -34591,7 +34591,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -34601,7 +34601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -34614,7 +34614,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -34624,7 +34624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -34651,7 +34651,7 @@ In response to a preflight request, setting this to true indicates that the actu
 
 This translates to the Access-Control-Allow-Credentials header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -34661,7 +34661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -34671,7 +34671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -34685,7 +34685,7 @@ For regular expression grammar
 please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -34697,7 +34697,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 
 An origin is allowed if it matches either an item in allowOrigins or an item in allowOriginRegexes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -34709,7 +34709,7 @@ If true, specifies the CORS policy is disabled.
 
 The default value is false, which indicates that the CORS policy is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -34719,7 +34719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -34729,7 +34729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -34748,7 +34748,7 @@ def put_fault_injection_policy(
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -34758,7 +34758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -34779,7 +34779,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -34801,7 +34801,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -34814,7 +34814,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -34833,7 +34833,7 @@ def put_request_mirror_policy(
 
 The full or partial URL to the BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -34843,7 +34843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -34863,7 +34863,7 @@ def put_retry_policy(
 
 Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -34873,7 +34873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -34898,7 +34898,7 @@ Specfies one or more conditions when this retry rule applies. Valid values are:.
 * resource-exhausted: Loadbalancer will retry if the gRPC status code in the response header is set to resource-exhausted
 * unavailable: Loadbalancer will retry if the gRPC status code in the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -34920,7 +34920,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -34933,7 +34933,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -34954,7 +34954,7 @@ Prior to forwarding the request to the selected service, the request's host head
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -34966,7 +34966,7 @@ Prior to forwarding the request to the selected backend service, the matching po
 
 The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -35885,7 +35885,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are
 represented with a 0 seconds field and a positive nanos field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -35898,7 +35898,7 @@ Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
 Note: these bounds are computed from: 60 sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -38989,7 +38989,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -38999,7 +38999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -39009,7 +39009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -39019,7 +39019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -41521,7 +41521,7 @@ def put_default_custom_error_response_policy(
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -41538,7 +41538,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -41565,7 +41565,7 @@ def put_default_route_action(
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -41575,7 +41575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -41585,7 +41585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -41595,7 +41595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -41605,7 +41605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -41615,7 +41615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -41625,7 +41625,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -41635,7 +41635,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -41645,7 +41645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -41655,7 +41655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -41682,7 +41682,7 @@ If set to false, the query portion of the original URL is
 retained.
 This field is required to ensure an empty block is not set. The normal default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -41694,7 +41694,7 @@ The host that will be used in the redirect response instead of the one that was 
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -41709,7 +41709,7 @@ false, the URL scheme of the redirected request will remain the same as that of 
 request. This must only be set for UrlMaps used in TargetHttpProxys. Setting this
 true for TargetHttpsProxy is not permitted. The default is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -41724,7 +41724,7 @@ prefixRedirect. Supply one alone or neither. If neither is supplied, the path of
 original request will be used for the redirect. The value must be between 1 and 1024
 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -41738,7 +41738,7 @@ prefixRedirect cannot be supplied together with pathRedirect. Supply one alone o
 neither. If neither is supplied, the path of the original request will be used for
 the redirect. The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -41756,7 +41756,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case,
   the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -41777,7 +41777,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -41787,7 +41787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -41797,7 +41797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -41807,7 +41807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -43469,7 +43469,7 @@ def put_custom_error_response_policy(
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -43486,7 +43486,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -43513,7 +43513,7 @@ def put_route_action(
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -43523,7 +43523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -43533,7 +43533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -43543,7 +43543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -43553,7 +43553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -43563,7 +43563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -43573,7 +43573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -43583,7 +43583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -43593,7 +43593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -43603,7 +43603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -43630,7 +43630,7 @@ If set to false, the query
 portion of the original URL is retained.
 This field is required to ensure an empty block is not set. The normal default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -43643,7 +43643,7 @@ The host that will be used in the redirect response instead of the one that was 
 The value must be between 1 and 255
 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -43658,7 +43658,7 @@ same as that of the request. This must only be set for UrlMaps used in
 TargetHttpProxys. Setting this true for TargetHttpsProxy is not
 permitted. The default is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -43673,7 +43673,7 @@ together with prefixRedirect. Supply one alone or neither. If neither is
 supplied, the path of the original request will be used for the redirect.
 The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -43688,7 +43688,7 @@ pathRedirect. Supply one alone or neither. If neither is supplied, the
 path of the original request will be used for the redirect. The value
 must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -43706,7 +43706,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case,
   the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -45778,7 +45778,7 @@ def put_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -45788,7 +45788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -46493,7 +46493,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -46511,7 +46511,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -46521,7 +46521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -46536,7 +46536,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -46553,7 +46553,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -46570,7 +46570,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -46589,7 +46589,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -46608,7 +46608,7 @@ def put_client_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -46618,7 +46618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -46637,7 +46637,7 @@ def put_default_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -46647,7 +46647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -46666,7 +46666,7 @@ def put_max_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -46676,7 +46676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -46709,7 +46709,7 @@ def put_serve_while_stale(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -46719,7 +46719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -48760,7 +48760,7 @@ def put_fixed_delay(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -48774,7 +48774,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -49115,7 +49115,7 @@ def put_abort(
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -49128,7 +49128,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 The value must be between 0.0 and 100.0
 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -49147,7 +49147,7 @@ def put_delay(
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -49160,7 +49160,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 The value must be between 0.0 and
 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -50165,7 +50165,7 @@ def put_cache_policy(
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -50175,7 +50175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -50188,7 +50188,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -50198,7 +50198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -50208,7 +50208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -50218,7 +50218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -50244,7 +50244,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -50254,7 +50254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -50267,7 +50267,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -50277,7 +50277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -50302,7 +50302,7 @@ def put_cors_policy(
 
 If true, specifies the CORS policy is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -50315,7 +50315,7 @@ In response to a preflight request, setting this to true indicates that the actu
 This translates to the Access-
 Control-Allow-Credentials header. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -50325,7 +50325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -50335,7 +50335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -50349,7 +50349,7 @@ For
 regular expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -50362,7 +50362,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 An
 origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -50372,7 +50372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -50385,7 +50385,7 @@ Specifies how long the results of a preflight request can be cached.
 This
 translates to the content for the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -50404,7 +50404,7 @@ def put_fault_injection_policy(
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -50414,7 +50414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -50435,7 +50435,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -50454,7 +50454,7 @@ def put_max_stream_duration(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -50468,7 +50468,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -50487,7 +50487,7 @@ def put_request_mirror_policy(
 
 The BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -50497,7 +50497,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -50517,7 +50517,7 @@ def put_retry_policy(
 
 Specifies the allowed number retries. This number must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -50527,7 +50527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -50558,7 +50558,7 @@ Specifies one or more conditions when this retry rule applies. Valid values are:
 * unavailable: Loadbalancer will retry if
   the gRPC status code in the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -50577,7 +50577,7 @@ def put_timeout(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -50591,7 +50591,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -50613,7 +50613,7 @@ Prior to forwarding the request to the selected service, the request's host head
 The value must be between 1 and
 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -50626,7 +50626,7 @@ Prior to forwarding the request to the selected backend service, the matching po
 The value must
 be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -51542,7 +51542,7 @@ def put_per_try_timeout(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -51556,7 +51556,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -54589,7 +54589,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -54599,7 +54599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -54609,7 +54609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -54619,7 +54619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -58171,7 +58171,7 @@ def put_range_match(
 
 The end of the range (exclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#range_end ComputeUrlMap#range_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#range_end ComputeUrlMap#range_end}
 
 ---
 
@@ -58181,7 +58181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The start of the range (inclusive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#range_start ComputeUrlMap#range_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#range_start ComputeUrlMap#range_start}
 
 ---
 
@@ -61386,7 +61386,7 @@ def put_custom_error_response_policy(
 
 error_response_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_response_rule ComputeUrlMap#error_response_rule}
 
 ---
 
@@ -61403,7 +61403,7 @@ global/backendBuckets/myBackendBucket
 If errorService is not specified at lower levels like pathMatcher, pathRule and routeRule, an errorService specified at a higher level in the UrlMap will be used. If UrlMap.defaultCustomErrorResponsePolicy contains one or more errorResponseRules[], it must specify errorService.
 If load balancer cannot reach the backendBucket, a simple Not Found Error will be returned, with the original response code (or overrideResponseCode if configured).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#error_service ComputeUrlMap#error_service}
 
 ---
 
@@ -61424,7 +61424,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -61434,7 +61434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -61444,7 +61444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -61454,7 +61454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 
@@ -61495,7 +61495,7 @@ def put_route_action(
 
 cache_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
 
 ---
 
@@ -61505,7 +61505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cors_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 
 ---
 
@@ -61515,7 +61515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fault_injection_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 
 ---
 
@@ -61525,7 +61525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 image_optimization_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#image_optimization_policy ComputeUrlMap#image_optimization_policy}
 
 ---
 
@@ -61535,7 +61535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 
 ---
 
@@ -61545,7 +61545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 request_mirror_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 
 ---
 
@@ -61555,7 +61555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retry_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 
 ---
 
@@ -61565,7 +61565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 
 ---
 
@@ -61575,7 +61575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 url_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 
 ---
 
@@ -61585,7 +61585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 weighted_backend_services block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 
 ---
 
@@ -61610,7 +61610,7 @@ The host that will be used in the redirect response instead of the one that was 
 
 The value must be between 1 and 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
 
 ---
 
@@ -61625,7 +61625,7 @@ to false, the URL scheme of the redirected request will remain the same as that
 of the request. This must only be set for UrlMaps used in TargetHttpProxys.
 Setting this true for TargetHttpsProxy is not permitted. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
 
 ---
 
@@ -61638,7 +61638,7 @@ The path that will be used in the redirect response instead of the one that was 
 Only one of pathRedirect or prefixRedirect must be
 specified. The value must be between 1 and 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
 
 ---
 
@@ -61648,7 +61648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
 
 ---
 
@@ -61664,7 +61664,7 @@ The HTTP Status code to use for this RedirectAction. Supported values are:.
 * TEMPORARY_REDIRECT, which corresponds to 307. In this case, the request method will be retained.
 * PERMANENT_REDIRECT, which corresponds to 308. In this case, the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
 
 ---
 
@@ -61677,7 +61677,7 @@ If set to true, any accompanying query portion of the original URL is removed pr
 If set to false, the query portion of the
 original URL is retained. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
 
 ---
 
@@ -63805,7 +63805,7 @@ def put_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -63815,7 +63815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -64520,7 +64520,7 @@ error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#excluded_query_parameters ComputeUrlMap#excluded_query_parameters}
 
 ---
 
@@ -64538,7 +64538,7 @@ Attempting to set it on a route that points exclusively to Backend
 Buckets will result in a configuration error. Up to 5 cookie names can
 be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_cookie_names ComputeUrlMap#included_cookie_names}
 
 ---
 
@@ -64548,7 +64548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_header_names ComputeUrlMap#included_header_names}
 
 ---
 
@@ -64563,7 +64563,7 @@ parameters will be excluded. Either specify includedQueryParameters
 or excludedQueryParameters, not both. '&' and '=' will be percent
 encoded and not treated as delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#included_query_parameters ComputeUrlMap#included_query_parameters}
 
 ---
 
@@ -64580,7 +64580,7 @@ never included in a Backend Bucket's cache key. Attempting to set it on
 a route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_host ComputeUrlMap#include_host}
 
 ---
 
@@ -64597,7 +64597,7 @@ never included in a Backend Bucket's cache key. Attempting to set on a
 route that points exclusively to Backend Buckets will result in a
 configuration error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_protocol ComputeUrlMap#include_protocol}
 
 ---
 
@@ -64616,7 +64616,7 @@ configuration error. For routes that point to a Backend Bucket, use
 includedQueryParameters to define which parameters should be part of
 the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#include_query_string ComputeUrlMap#include_query_string}
 
 ---
 
@@ -64635,7 +64635,7 @@ def put_client_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -64645,7 +64645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -64664,7 +64664,7 @@ def put_default_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -64674,7 +64674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -64693,7 +64693,7 @@ def put_max_ttl(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -64703,7 +64703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -64736,7 +64736,7 @@ def put_serve_while_stale(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -64746,7 +64746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Span of time that's a fraction of a second at nanosecond resolution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -66810,7 +66810,7 @@ def put_fixed_delay(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -66824,7 +66824,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -67177,7 +67177,7 @@ def put_abort(
 
 The HTTP status code used to abort the request. The value must be between 200 and 599 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#http_status ComputeUrlMap#http_status}
 
 ---
 
@@ -67190,7 +67190,7 @@ The percentage of traffic (connections/operations/requests) which will be aborte
 The value must be between 0.0 and 100.0
 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -67209,7 +67209,7 @@ def put_delay(
 
 fixed_delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#fixed_delay ComputeUrlMap#fixed_delay}
 
 ---
 
@@ -67222,7 +67222,7 @@ The percentage of traffic (connections/operations/requests) on which delay will 
 The value must be between 0.0 and
 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#percentage ComputeUrlMap#percentage}
 
 ---
 
@@ -68227,7 +68227,7 @@ def put_cache_policy(
 
 Bypass the cache when the specified request headers are matched by name, e.g. Pragma or Authorization headers. Values are case-insensitive. Up to 5 header names can be specified. The cache is bypassed for all cacheMode values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_bypass_request_header_names ComputeUrlMap#cache_bypass_request_header_names}
 
 ---
 
@@ -68237,7 +68237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_key_policy ComputeUrlMap#cache_key_policy}
 
 ---
 
@@ -68250,7 +68250,7 @@ Specifies the cache setting for all responses from this route.
 If not
 specified, Cloud CDN uses CACHE_ALL_STATIC mode. Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#cache_mode ComputeUrlMap#cache_mode}
 
 ---
 
@@ -68260,7 +68260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#client_ttl ComputeUrlMap#client_ttl}
 
 ---
 
@@ -68270,7 +68270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#default_ttl ComputeUrlMap#default_ttl}
 
 ---
 
@@ -68280,7 +68280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 max_ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_ttl ComputeUrlMap#max_ttl}
 
 ---
 
@@ -68306,7 +68306,7 @@ Cloud CDN applies the following TTLs to these HTTP status codes:
   These defaults can be overridden in negativeCachingPolicy. If not
   specified, Cloud CDN applies negative caching by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching ComputeUrlMap#negative_caching}
 
 ---
 
@@ -68316,7 +68316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#negative_caching_policy ComputeUrlMap#negative_caching_policy}
 
 ---
 
@@ -68329,7 +68329,7 @@ If true then Cloud CDN will combine multiple concurrent cache fill requests into
 If not specified,
 Cloud CDN applies request coalescing by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_coalescing ComputeUrlMap#request_coalescing}
 
 ---
 
@@ -68339,7 +68339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 serve_while_stale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#serve_while_stale ComputeUrlMap#serve_while_stale}
 
 ---
 
@@ -68367,7 +68367,7 @@ In response to a preflight request, setting this to true indicates that the actu
 This translates to the Access-
 Control-Allow-Credentials header. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_credentials ComputeUrlMap#allow_credentials}
 
 ---
 
@@ -68377,7 +68377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_headers ComputeUrlMap#allow_headers}
 
 ---
 
@@ -68387,7 +68387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Allow-Methods header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_methods ComputeUrlMap#allow_methods}
 
 ---
 
@@ -68401,7 +68401,7 @@ For
 regular expression grammar please see en.cppreference.com/w/cpp/regex/ecmascript
 An origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origin_regexes ComputeUrlMap#allow_origin_regexes}
 
 ---
 
@@ -68414,7 +68414,7 @@ Specifies the list of origins that will be allowed to do CORS requests.
 An
 origin is allowed if it matches either allow_origins or allow_origin_regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#allow_origins ComputeUrlMap#allow_origins}
 
 ---
 
@@ -68424,7 +68424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#disabled ComputeUrlMap#disabled}
 
 ---
 
@@ -68434,7 +68434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the content for the Access-Control-Expose-Headers header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#expose_headers ComputeUrlMap#expose_headers}
 
 ---
 
@@ -68447,7 +68447,7 @@ Specifies how long the results of a preflight request can be cached.
 This
 translates to the content for the Access-Control-Max-Age header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#max_age ComputeUrlMap#max_age}
 
 ---
 
@@ -68466,7 +68466,7 @@ def put_fault_injection_policy(
 
 abort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#abort ComputeUrlMap#abort}
 
 ---
 
@@ -68476,7 +68476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 delay block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#delay ComputeUrlMap#delay}
 
 ---
 
@@ -68497,7 +68497,7 @@ Controls whether presets or control parameters specified as URL query parameters
 If not specified, the default
 value is DISABLED. Possible values: ["DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#query_parameter_interpretation ComputeUrlMap#query_parameter_interpretation}
 
 ---
 
@@ -68516,7 +68516,7 @@ def put_max_stream_duration(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -68530,7 +68530,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -68549,7 +68549,7 @@ def put_request_mirror_policy(
 
 The BackendService resource being mirrored to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
 
 ---
 
@@ -68559,7 +68559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of requests to be mirrored to backendService. The value must be between 0.0 and 100.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#mirror_percent ComputeUrlMap#mirror_percent}
 
 ---
 
@@ -68579,7 +68579,7 @@ def put_retry_policy(
 
 Specifies the allowed number retries. This number must be > 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 
 ---
 
@@ -68589,7 +68589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 per_try_timeout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 
 ---
 
@@ -68620,7 +68620,7 @@ Specfies one or more conditions when this retry rule applies. Valid values are:.
 * unavailable: Loadbalancer will retry if the gRPC status code in
   the response header is set to unavailable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 
 ---
 
@@ -68639,7 +68639,7 @@ def put_timeout(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -68653,7 +68653,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -68677,7 +68677,7 @@ Prior to forwarding the request to the selected service, the request's host head
 The value must be between 1 and
 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#host_rewrite ComputeUrlMap#host_rewrite}
 
 ---
 
@@ -68693,7 +68693,7 @@ be between 1 and 1024 characters.
 Only one of pathPrefixRewrite, pathTemplateRewrite, or regexRewrite may be
 specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_prefix_rewrite ComputeUrlMap#path_prefix_rewrite}
 
 ---
 
@@ -68713,7 +68713,7 @@ MatchRules specify pathTemplate.
 Only one of pathPrefixRewrite, pathTemplateRewrite, or regexRewrite may be
 specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_template_rewrite ComputeUrlMap#path_template_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_template_rewrite ComputeUrlMap#path_template_rewrite}
 
 ---
 
@@ -68723,7 +68723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 regex_rewrite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#regex_rewrite ComputeUrlMap#regex_rewrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#regex_rewrite ComputeUrlMap#regex_rewrite}
 
 ---
 
@@ -69638,7 +69638,7 @@ def put_per_try_timeout(
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#seconds ComputeUrlMap#seconds}
 
 ---
 
@@ -69652,7 +69652,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#nanos ComputeUrlMap#nanos}
 
 ---
 
@@ -70687,7 +70687,7 @@ The regular expression used to match against the URL path. It uses RE2 syntax wi
 * Ranges may only contain character ranges, digit ranges, and
   symbols allowed for ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_pattern ComputeUrlMap#path_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_pattern ComputeUrlMap#path_pattern}
 
 ---
 
@@ -70697,7 +70697,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The substitution used to rewrite the parts of the URL path matched by pathPattern. May reference capture groups from pathPattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#path_substitution ComputeUrlMap#path_substitution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#path_substitution ComputeUrlMap#path_substitution}
 
 ---
 
@@ -73094,7 +73094,7 @@ def put_header_action(
 
 request_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
 
 ---
 
@@ -73104,7 +73104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
 
 ---
 
@@ -73114,7 +73114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 response_headers_to_add block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
 
 ---
 
@@ -73124,7 +73124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of header names for headers that need to be removed from the response prior to sending the response back to the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
 
 ---
 

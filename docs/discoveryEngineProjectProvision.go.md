@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineProjectProvision <a name="DiscoveryEngineProjectProvision" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision google_discovery_engine_project_provision}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision google_discovery_engine_project_provision}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetProvisionIntent">ResetProvisionIntent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetSaasParams">ResetSaasParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -449,6 +450,12 @@ func ResetLocation()
 func ResetProject()
 ```
 
+##### `ResetProvisionIntent` <a name="ResetProvisionIntent" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetProvisionIntent"></a>
+
+```go
+func ResetProvisionIntent()
+```
+
 ##### `ResetSaasParams` <a name="ResetSaasParams" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.resetSaasParams"></a>
 
 ```go
@@ -564,7 +571,7 @@ The construct id used in the generated config for the DiscoveryEngineProjectProv
 
 The id of the existing DiscoveryEngineProjectProvision that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,6 +608,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.1
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.provisionIntentInput">ProvisionIntentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.saasParamsInput">SaasParamsInput</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionSaasParams">DiscoveryEngineProjectProvisionSaasParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.acceptDataUseTerms">AcceptDataUseTerms</a></code> | <code>interface{}</code> | *No description.* |
@@ -608,6 +616,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.1
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.provisionIntent">ProvisionIntent</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -823,6 +832,16 @@ func ProjectInput() *string
 
 ---
 
+##### `ProvisionIntentInput`<sup>Optional</sup> <a name="ProvisionIntentInput" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.provisionIntentInput"></a>
+
+```go
+func ProvisionIntentInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SaasParamsInput`<sup>Optional</sup> <a name="SaasParamsInput" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.saasParamsInput"></a>
 
 ```go
@@ -893,6 +912,16 @@ func Project() *string
 
 ---
 
+##### `ProvisionIntent`<sup>Required</sup> <a name="ProvisionIntent" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvision.property.provisionIntent"></a>
+
+```go
+func ProvisionIntent() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -933,6 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/discoveryenginep
 	Id: *string,
 	Location: *string,
 	Project: *string,
+	ProvisionIntent: *string,
 	SaasParams: github.com/cdktn-io/cdktn-provider-google-go/google/v22.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionSaasParams,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v22.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionTimeouts,
 }
@@ -951,9 +981,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/discoveryenginep
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.acceptDataUseTerms">AcceptDataUseTerms</a></code> | <code>interface{}</code> | Set to 'true' to specify that the caller has read and consents to the [Terms for data use](https://cloud.google.com/retail/data-use-terms). |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.dataUseTermsVersion">DataUseTermsVersion</a></code> | <code>*string</code> | The version of the [Terms for data use](https://cloud.google.com/retail/data-use-terms) that the caller has read and consents to. An acceptable version is '2022-11-23', and this may change over time. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#id DiscoveryEngineProjectProvision#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#id DiscoveryEngineProjectProvision#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.location">Location</a></code> | <code>*string</code> | The geographic location in which to provision the project, such as 'global', 'us', or 'eu'. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#project DiscoveryEngineProjectProvision#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#project DiscoveryEngineProjectProvision#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.provisionIntent">ProvisionIntent</a></code> | <code>*string</code> | The Gemini Enterprise experience that the project is provisioned for. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.saasParams">SaasParams</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionSaasParams">DiscoveryEngineProjectProvisionSaasParams</a></code> | saas_params block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionTimeouts">DiscoveryEngineProjectProvisionTimeouts</a></code> | timeouts block. |
 
@@ -1039,7 +1070,7 @@ AcceptDataUseTerms interface{}
 
 Set to 'true' to specify that the caller has read and consents to the [Terms for data use](https://cloud.google.com/retail/data-use-terms).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#accept_data_use_terms DiscoveryEngineProjectProvision#accept_data_use_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#accept_data_use_terms DiscoveryEngineProjectProvision#accept_data_use_terms}
 
 ---
 
@@ -1053,7 +1084,7 @@ DataUseTermsVersion *string
 
 The version of the [Terms for data use](https://cloud.google.com/retail/data-use-terms) that the caller has read and consents to. An acceptable version is '2022-11-23', and this may change over time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#data_use_terms_version DiscoveryEngineProjectProvision#data_use_terms_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#data_use_terms_version DiscoveryEngineProjectProvision#data_use_terms_version}
 
 ---
 
@@ -1065,7 +1096,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#id DiscoveryEngineProjectProvision#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#id DiscoveryEngineProjectProvision#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1113,7 @@ Location *string
 
 The geographic location in which to provision the project, such as 'global', 'us', or 'eu'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#location DiscoveryEngineProjectProvision#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#location DiscoveryEngineProjectProvision#location}
 
 ---
 
@@ -1094,7 +1125,30 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#project DiscoveryEngineProjectProvision#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#project DiscoveryEngineProjectProvision#project}.
+
+---
+
+##### `ProvisionIntent`<sup>Optional</sup> <a name="ProvisionIntent" id="@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionConfig.property.provisionIntent"></a>
+
+```go
+ProvisionIntent *string
+```
+
+- *Type:* *string
+
+The Gemini Enterprise experience that the project is provisioned for.
+
+'PROVISION_INTENT_SOBI' provisions the project for the new Gemini Enterprise
+experience, and 'PROVISION_INTENT_LEGACY' provisions it for the classic
+Gemini Enterprise experience. If unset, the API chooses the experience.
+
+Changing this field forces a new resource, which calls the provisioning API
+again with the new value. Provisioning doesn't remove an experience that the
+project was already provisioned for, and the API may reject provisioning a
+project that uses the classic experience for the new experience. Possible values: ["PROVISION_INTENT_SOBI", "PROVISION_INTENT_LEGACY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#provision_intent DiscoveryEngineProjectProvision#provision_intent}
 
 ---
 
@@ -1108,7 +1162,7 @@ SaasParams DiscoveryEngineProjectProvisionSaasParams
 
 saas_params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#saas_params DiscoveryEngineProjectProvision#saas_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#saas_params DiscoveryEngineProjectProvision#saas_params}
 
 ---
 
@@ -1122,7 +1176,7 @@ Timeouts DiscoveryEngineProjectProvisionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#timeouts DiscoveryEngineProjectProvision#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#timeouts DiscoveryEngineProjectProvision#timeouts}
 
 ---
 
@@ -1158,7 +1212,7 @@ AcceptBizQos interface{}
 
 Set to 'true' to specify that the caller has read and consents to the Terms for business edition quality of service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#accept_biz_qos DiscoveryEngineProjectProvision#accept_biz_qos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#accept_biz_qos DiscoveryEngineProjectProvision#accept_biz_qos}
 
 ---
 
@@ -1172,7 +1226,7 @@ IsBiz interface{}
 
 Indicates whether the current request is for Business edition ('true') or not ('false').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#is_biz DiscoveryEngineProjectProvision#is_biz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#is_biz DiscoveryEngineProjectProvision#is_biz}
 
 ---
 
@@ -1193,8 +1247,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v22/discoveryenginep
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#create DiscoveryEngineProjectProvision#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#delete DiscoveryEngineProjectProvision#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#create DiscoveryEngineProjectProvision#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineProjectProvision.DiscoveryEngineProjectProvisionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#delete DiscoveryEngineProjectProvision#delete}. |
 
 ---
 
@@ -1206,7 +1260,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#create DiscoveryEngineProjectProvision#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#create DiscoveryEngineProjectProvision#create}.
 
 ---
 
@@ -1218,7 +1272,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/discovery_engine_project_provision#delete DiscoveryEngineProjectProvision#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/discovery_engine_project_provision#delete DiscoveryEngineProjectProvision#delete}.
 
 ---
 

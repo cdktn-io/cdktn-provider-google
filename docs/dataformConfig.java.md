@@ -4,7 +4,7 @@
 
 ### DataformConfig <a name="DataformConfig" id="@cdktn/provider-google.dataformConfig.DataformConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config google_dataform_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config google_dataform_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataformConfig.DataformConfig.Initializer"></a>
 
@@ -40,8 +40,8 @@ DataformConfig.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | A reference to the region. |
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.defaultKmsKeyName">defaultKmsKeyName</a></code> | <code>java.lang.String</code> | Optional. A reference to the customer-managed encryption key (CMEK) that will be used by default to encrypt user data. |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#id DataformConfig#id}. |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#project DataformConfig#project}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#id DataformConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#project DataformConfig#project}. |
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts">DataformConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#region DataformConfig#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#region DataformConfig#region}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. A reference to the customer-managed encryption key (CMEK) that will be used by default to encrypt user data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#default_kms_key_name DataformConfig#default_kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#default_kms_key_name DataformConfig#default_kms_key_name}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#id DataformConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#id DataformConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#project DataformConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#project DataformConfig#project}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#timeouts DataformConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#timeouts DataformConfig#timeouts}
 
 ---
 
@@ -641,7 +641,7 @@ The construct id used in the generated config for the DataformConfig to import.
 
 The id of the existing DataformConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -982,8 +982,8 @@ DataformConfigConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.region">region</a></code> | <code>java.lang.String</code> | A reference to the region. |
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.defaultKmsKeyName">defaultKmsKeyName</a></code> | <code>java.lang.String</code> | Optional. A reference to the customer-managed encryption key (CMEK) that will be used by default to encrypt user data. |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#id DataformConfig#id}. |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#project DataformConfig#project}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#id DataformConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#project DataformConfig#project}. |
 | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts">DataformConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1068,7 +1068,7 @@ public java.lang.String getRegion();
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#region DataformConfig#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#region DataformConfig#region}
 
 ---
 
@@ -1082,7 +1082,7 @@ public java.lang.String getDefaultKmsKeyName();
 
 Optional. A reference to the customer-managed encryption key (CMEK) that will be used by default to encrypt user data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#default_kms_key_name DataformConfig#default_kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#default_kms_key_name DataformConfig#default_kms_key_name}
 
 ---
 
@@ -1094,7 +1094,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#id DataformConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#id DataformConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1109,7 +1109,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#project DataformConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#project DataformConfig#project}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public DataformConfigTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#timeouts DataformConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#timeouts DataformConfig#timeouts}
 
 ---
 
@@ -1145,9 +1145,9 @@ DataformConfigTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#create DataformConfig#create}. |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#delete DataformConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#update DataformConfig#update}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#create DataformConfig#create}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#delete DataformConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.dataformConfig.DataformConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#update DataformConfig#update}. |
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#create DataformConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#create DataformConfig#create}.
 
 ---
 
@@ -1171,7 +1171,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#delete DataformConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#delete DataformConfig#delete}.
 
 ---
 
@@ -1183,7 +1183,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.11.0/docs/resources/dataform_config#update DataformConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.12.0/docs/resources/dataform_config#update DataformConfig#update}.
 
 ---
 
